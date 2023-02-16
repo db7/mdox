@@ -1,0 +1,15 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "My Project"
+OUTPUT_DIRECTORY       = output
+STRIP_FROM_PATH        =
+STRIP_FROM_INC_PATH    =
+TAB_SIZE               = 4
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+EXTRACT_STATIC         = YES
+INPUT                  = src/include
+INPUT_ENCODING         = UTF-8
+RECURSIVE              = YES
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+GENERATE_XML           = YES
