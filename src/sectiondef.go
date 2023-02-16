@@ -2,8 +2,6 @@ package main
 
 import (
 	"encoding/xml"
-	"fmt"
-	"io"
 )
 
 type SectionDef struct {
@@ -27,7 +25,8 @@ type memberSelection struct {
 	header string
 }
 
-func (s *SectionDef) Dump(fd io.Writer, reg *Registry) error {
+// Dump all members of a section according to the section type.
+func (s *SectionDef) Dump(ctx DumpContext, w *Writer) error {
 	for _, p := range []memberSelection{
 		{"define", "Macros", "| Macro | Description |\n|-|-|"},
 		{"function", "Functions", "| Function | Description |\n|-|-|"},
@@ -37,17 +36,19 @@ func (s *SectionDef) Dump(fd io.Writer, reg *Registry) error {
 		if len(members) == 0 {
 			continue
 		}
-		fmt.Fprintf(fd, "## %s \n\n", p.title)
+		w.Println("---")
+		w.Printf("## %s \n\n", p.title)
 
-		fmt.Fprintf(fd, "%s\n", p.header)
+		w.Printf("%s\n", p.header)
 		for _, m := range members {
-			m.DumpRow(fd, reg)
+			m.DumpRow(ctx, w)
 		}
-		fmt.Fprintln(fd)
+		w.Println()
 
 		for _, m := range members {
-			m.Dump(fd, reg)
+			m.Dump(ctx, w)
 		}
+
 	}
 	return nil
 }

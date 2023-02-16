@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
+	"log"
 )
 
 type Attr struct {
@@ -19,7 +20,7 @@ type Element struct {
 }
 
 type Dumper interface {
-	Dump(fd io.Writer, reg *Registry) error
+	Dump(ctx DumpContext, w *Writer) error
 }
 
 func newElement(vals ...Dumper) Element {
@@ -28,9 +29,11 @@ func newElement(vals ...Dumper) Element {
 	}
 }
 
-func (e *Element) Dump(fd io.Writer, reg *Registry) error {
+func (e *Element) Dump(ctx DumpContext, w *Writer) error {
 	for _, v := range e.Values {
-		v.Dump(fd, reg)
+		if err := v.Dump(ctx, w); err != nil {
+			log.Fatalln(err)
+		}
 	}
 	return nil
 }
@@ -57,10 +60,14 @@ func (e *Element) DecodeElement(d *xml.Decoder, start xml.StartElement) (err err
 	case "orderedlist":
 		element = newText("\n")
 	case "itemizedlist":
-		element = newText("\n")
+		element = new(ItemizedList)
 
-	case "parameteritem", "listitem":
+	case "parameteritem":
 		element = new(Item)
+
+	case "listitem":
+		log.Println("listitem")
+		element = new(ListItem)
 
 	case "variablelist":
 		element = newText("\n")
@@ -111,6 +118,7 @@ func (e *Element) DecodeElement(d *xml.Decoder, start xml.StartElement) (err err
 		element = newText(" ")
 
 	default:
+		log.Printf("not implemented: %v", name)
 		return fmt.Errorf("not implemented: %v", name)
 	}
 

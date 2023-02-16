@@ -3,8 +3,9 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"io"
 	"log"
+	"path/filepath"
+	"strings"
 )
 
 type Ref struct {
@@ -23,18 +24,42 @@ func newRef(value string, refid string) *Ref {
 	}
 }
 
-func (r *Ref) Dump(fd io.Writer, reg *Registry) error {
+// Dump a reference as a markdown link, ie, `[text](url)`.
+func (r *Ref) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	if !reg.Option(References) {
-		r.Element.Dump(fd, reg)
+		r.Element.Dump(ctx, w)
 	} else {
-		fmt.Fprintf(fd, "[")
-		r.Element.Dump(fd, reg)
-		ref, err := reg.search(r.Attr.RefID)
-		if err != nil {
-			log.Fatal(err)
-			return err
+		url := r.Attr.RefID
+		if ref := reg.get(r.Attr.RefID); ref != nil {
+			switch ref.Kind {
+			case KindFile:
+				url = getRelativePath(ctx.Path, ref.Location)
+				url += ".md"
+			case KindGroup:
+				url = getRelativePath(ctx.Path, ref.Location)
+				log.Println("HHHH", url)
+			case KindPage:
+				url = getRelativePath(ctx.Path, ref.Location)
+			case KindDir:
+				path := filepath.Base(ref.Location)
+				url = path + "/README.md"
+			case KindMacro:
+				url = getRelativePath(ctx.Path, ref.Location)
+				url += ".md"
+				url = fmt.Sprintf("%s#macro-%s", url, strings.ToLower(ref.Name))
+			case KindFunc:
+				url = getRelativePath(ctx.Path, ref.Location)
+				url += ".md"
+				url = fmt.Sprintf("%s#function-%s", url, strings.ToLower(ref.Name))
+			default:
+				panic("what to do?")
+			}
 		}
-		fmt.Fprintf(fd, "](%s)", ref)
+
+		w.Printf("[")
+		r.Element.Dump(ctx, w)
+		w.Printf("](%s)", url)
 	}
 	return nil
 }
@@ -44,13 +69,15 @@ type Ulink struct {
 	Element
 }
 
-func (e *Ulink) Dump(fd io.Writer, reg *Registry) error {
+func (e *Ulink) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	if !reg.Option(References) {
-		e.Element.Dump(fd, reg)
+		e.Element.Dump(ctx, w)
 	} else {
-		fmt.Fprintf(fd, "[")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintf(fd, "](%s)", e.Attr.URL)
+		url := e.Attr.RefID
+		w.Printf("[")
+		e.Element.Dump(ctx, w)
+		w.Printf("](%s)", url)
 	}
 	return nil
 }

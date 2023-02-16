@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"os"
 	"strings"
 	"testing"
 
@@ -26,7 +25,7 @@ func Test_SimpleSect(t *testing.T) {
 		t.FailNow()
 	}
 	fmt.Println()
-	e.Dump(os.Stdout, nil)
+	e.Dump(DumpContext{}, nil)
 	//spew.Dump("Parsing:", para)
 }
 

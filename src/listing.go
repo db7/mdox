@@ -2,8 +2,6 @@ package main
 
 import (
 	"encoding/xml"
-	"fmt"
-	"io"
 )
 
 type Listing struct {
@@ -12,15 +10,16 @@ type Listing struct {
 	CodeLine []CodeLine `xml:"codeline"`
 }
 
-func (l *Listing) Dump(fd io.Writer, reg *Registry) error {
-	fmt.Fprintln(fd)
-	fmt.Fprint(fd, "```")
+func (l *Listing) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
+	w.Println()
+	w.Print("```")
 	switch l.Filename {
 	case ".c":
-		fmt.Fprint(fd, "c")
+		w.Print("c")
 	default:
 	}
-	fmt.Fprintln(fd)
+	w.Println()
 	if reg.Disable(ParaLine) {
 		defer reg.Enable(ParaLine)
 	}
@@ -29,14 +28,14 @@ func (l *Listing) Dump(fd io.Writer, reg *Registry) error {
 	}
 
 	for _, c := range l.CodeLine {
-		if err := c.Dump(fd, reg); err != nil {
+		if err := c.Dump(ctx, w); err != nil {
 			return err
 		}
-		fmt.Fprintln(fd)
+		w.Println()
 	}
-	fmt.Fprint(fd, "```")
-	fmt.Fprintln(fd)
-	fmt.Fprintln(fd)
+	w.Print("```")
+	w.Println()
+	w.Println()
 	return nil
 }
 
@@ -45,10 +44,11 @@ type CodeLine struct {
 	Element
 }
 
-func (c *CodeLine) Dump(fd io.Writer, reg *Registry) error {
+func (c *CodeLine) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	var style Style
 	style, reg.Style = reg.Style, SListing
-	c.Element.Dump(fd, reg)
+	c.Element.Dump(ctx, w)
 	reg.Style = style
 	return nil
 }

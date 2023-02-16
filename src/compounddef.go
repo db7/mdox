@@ -3,9 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"io"
 	"log"
-	"path/filepath"
 )
 
 type CompoundDef struct {
@@ -24,73 +22,74 @@ type CompoundDef struct {
 	Title        string       `xml:"title"`
 }
 
-func (c *CompoundDef) Dump(fd io.Writer, reg *Registry) (err error) {
+func (c *CompoundDef) Dump(ctx DumpContext, w *Writer) (err error) {
+	addGroups := false
 	switch c.Kind {
 	case "page":
-		err = c.DumpPage(fd, reg)
 	case "file":
-		err = c.DumpFile(fd, reg)
-	case "groupx":
-		err = c.DumpGroup(fd, reg)
+		addGroups = true
+	case "group":
 	case "dir":
-		err = c.DumpDir(fd, reg)
-		if err != nil {
-			panic(err)
-		}
 	default:
 	}
+
+	c.dumpContent(ctx, w)
+	c.dumpInnerFiles(ctx, w, addGroups)
+	c.dumpInnerDirs(ctx, w)
+	c.dumpSubgroups(ctx, w)
 	return
 }
 
-func (c *CompoundDef) DumpHeader(fd io.Writer, reg *Registry) error {
-	return nil
-}
-
-func (c *CompoundDef) DumpFile(fd io.Writer, reg *Registry) error {
-	//fmt.Fprint(fd, `<a id="top"></a>`)
+// dumpContent writes content of compound to w.
+func (c *CompoundDef) dumpContent(ctx DumpContext, w *Writer) {
+	// Prepare title with links to parent directories
 	e := elem(c.Location.File)
 	ee := &e
-	fmt.Fprintf(fd, "#  ")
-	ee.Dump(fd, reg)
-	fmt.Fprintf(fd, "\n\n")
-	if err := c.Brief.Dump(fd, reg); err != nil {
-		return err
-	}
-	if err := c.Detailed.Dump(fd, reg); err != nil {
-		return err
-	}
-	for _, s := range c.SectionDef {
-		if err := s.Dump(fd, reg); err != nil {
-			return err
+
+	// Dump page title
+	w.Print("#  ")
+	ee.Dump(ctx, w)
+	w.Println()
+
+	// Dump descriptions
+	ctx.Reg.Style = SEmphasis
+	c.Brief.Dump(ctx, w)
+	ctx.Reg.Style = Default
+
+	if groups := ctx.Reg.getGroupsWith(c.Id); len(groups) > 0 {
+		log.Println(groups)
+		w.Print("**Groups:** ")
+		for _, g := range groups {
+			gg := ctx.Reg._groups[g]
+			newRef(gg.Title, g).Dump(ctx, w)
 		}
+		w.Println()
+		w.Println()
 	}
-	return nil
+
+	c.Detailed.Dump(ctx, w)
+
+	// Dump the sections (functions, macros, etc)
+	for _, s := range c.SectionDef {
+		s.Dump(ctx, w)
+	}
 }
 
-func (c *CompoundDef) DumpDir(fd io.Writer, reg *Registry) error {
-	//fmt.Fprint(fd, `<a id="top"></a>`)
-	e := elem(c.Location.File)
-	ee := &e
-	fmt.Fprintf(fd, "#  ")
-	ee.Dump(fd, reg)
-	fmt.Fprintf(fd, "\n\n")
-
-	if err := c.Brief.Dump(fd, reg); err != nil {
-		return err
-	}
-	if err := c.Detailed.Dump(fd, reg); err != nil {
-		return err
-	}
+// dumpInnerFiles writes a table of innerFiles.
+func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool) {
+	reg := ctx.Reg
 	var gorder []string
 	groups := make(map[string]bool)
 	fileInGroups := make(map[string]bool)
-	for _, f := range c.InnerFile {
-		for _, g := range reg.getGroupsWith(f.RefID) {
-			if _, has := groups[g]; !has {
-				gorder = append(gorder, g)
-				groups[g] = true
+	if addGroups {
+		for _, f := range c.InnerFile {
+			for _, g := range ctx.Reg.getGroupsWith(f.RefID) {
+				if _, has := groups[g]; !has {
+					gorder = append(gorder, g)
+					groups[g] = true
+				}
+				fileInGroups[fmt.Sprintf("%s--%s", f.RefID, g)] = true
 			}
-			fileInGroups[fmt.Sprintf("%s--%s", f.RefID, g)] = true
 		}
 	}
 	tab := Table{
@@ -107,15 +106,20 @@ func (c *CompoundDef) DumpDir(fd io.Writer, reg *Registry) error {
 		tab.Row[0].Entry = append(tab.Row[0].Entry, e)
 	}
 	for _, f := range c.InnerFile {
+		if f.Name == "doc.h" {
+			continue
+		}
 		ff := reg.file(f.RefID)
-		target := filepath.Base(ff.Location.File) + ".md"
+		ensureNotNil(ff)
+
 		row := Row{
 			Entry: []Entry{
-				newEntry(newRef(f.Name, target)),
+				newEntry(newRef(f.Name, f.RefID)),
 				newEntry(&ff.Brief),
 			},
 		}
 		for _, g := range gorder {
+			log.Println(g)
 			var e Entry
 			if fileInGroups[fmt.Sprintf("%s--%s", f.RefID, g)] {
 				//e = newEntry(newText(" :heavy_check_mark: "))
@@ -127,9 +131,16 @@ func (c *CompoundDef) DumpDir(fd io.Writer, reg *Registry) error {
 		}
 		tab.Row = append(tab.Row, row)
 	}
-	tab.Dump(fd, reg)
+	if len(tab.Row) > 1 {
+		w.Println("---")
+		w.Println("## File Index")
+		tab.Dump(ctx, w)
+	}
+}
 
-	tab = Table{
+// dumpInnerDir writes a table of innerDirs.
+func (c *CompoundDef) dumpInnerDirs(ctx DumpContext, w *Writer) {
+	tab := Table{
 		Cols: 2,
 		Row: []Row{{
 			Entry: []Entry{
@@ -140,10 +151,14 @@ func (c *CompoundDef) DumpDir(fd io.Writer, reg *Registry) error {
 	}
 
 	for _, f := range c.InnerDir {
-		ff := reg.dir(f.RefID)
-		if ff == nil {
-			log.Fatal(f.RefID, "is nil")
+		if shouldIgnore(f.Name) {
+			continue
 		}
+
+		// Enforce references exist
+		ff := ctx.Reg.dir(f.RefID)
+		ensureNotNil(ff)
+
 		row := Row{
 			Entry: []Entry{
 				newEntry(newRef(f.Name, f.RefID)),
@@ -153,78 +168,28 @@ func (c *CompoundDef) DumpDir(fd io.Writer, reg *Registry) error {
 		tab.Row = append(tab.Row, row)
 	}
 
-	return tab.Dump(fd, reg)
+	if len(tab.Row) > 1 {
+		w.Println("---")
+		w.Println("## Directory Index")
+		tab.Dump(ctx, w)
+	}
 }
 
-func (c *CompoundDef) DumpGroup(fd io.Writer, reg *Registry) error {
-	//fmt.Fprint(fd, `<a id="top"></a>`)
-	fmt.Fprintf(fd, "#  GROUP %s\n\n", c.Title)
-	if err := c.Brief.Dump(fd, reg); err != nil {
-		return err
-	}
-	if err := c.Detailed.Dump(fd, reg); err != nil {
-		return err
-	}
+// dumpSubgroups writes a table with subgroups if available.
+func (c *CompoundDef) dumpSubgroups(ctx DumpContext, w *Writer) {
 	if len(c.InnerGroup) > 0 {
-		fmt.Fprintln(fd, "## Submodules")
-		fmt.Fprintln(fd)
+		w.Println("## Submodules")
+		w.Println()
 		for _, g := range c.InnerGroup {
-			fmt.Fprint(fd, "- ")
-			err := newRef(g.Name, g.RefID).Dump(fd, reg)
-			if err != nil {
-				return err
-			}
-			fmt.Fprintln(fd)
+			w.Print("- ")
+			newRef(g.Name, g.RefID).Dump(ctx, w)
+			w.Println()
 		}
-		fmt.Fprintln(fd)
+		w.Println()
 	}
-	if len(c.InnerFile) > 0 {
-		fmt.Fprintln(fd, "## Files")
-		fmt.Fprintln(fd)
-		tab := Table{
-			Cols: 2,
-			Rows: len(c.InnerFile) + 1,
-		}
-		row := Row{
-			Entry: []Entry{
-				newEntry(newText("File")),
-				newEntry(newText("Description")),
-			},
-		}
-		tab.Row = append(tab.Row, row)
-		for _, g := range c.InnerFile {
-			f := reg.file(g.RefID)
-			if f != nil {
-				return fmt.Errorf("not found: %v", g.RefID)
-			}
-			row := Row{
-				Entry: []Entry{
-					newEntry(newRef(f.Location.File, g.RefID)),
-					newEntry(&f.Brief),
-				},
-			}
-			tab.Row = append(tab.Row, row)
-
-			fmt.Fprintln(fd)
-		}
-		tab.Dump(fd, reg)
-	}
-	return nil
 }
 
-func (c *CompoundDef) DumpPage(fd io.Writer, reg *Registry) error {
-	//fmt.Fprint(fd, `<a id="top"></a>`)
-	fmt.Fprintf(fd, "#  PAGE %s\n\n", c.Title)
-	if err := c.Brief.Dump(fd, reg); err != nil {
-		return err
-	}
-	if err := c.Detailed.Dump(fd, reg); err != nil {
-		return err
-	}
-	for _, s := range c.SectionDef {
-		if err := s.Dump(fd, reg); err != nil {
-			return err
-		}
-	}
-	return nil
+// dumpSubpages writes a table with subpages if available.
+func (c *CompoundDef) dumpSubpages(ctx DumpContext, w *Writer) {
+	log.Fatal("not implemented")
 }

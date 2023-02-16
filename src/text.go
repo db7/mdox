@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"io"
-)
+import "strings"
 
 type Style int
 
@@ -44,12 +41,16 @@ func newStyleElementI(style Style) *StyleElement {
 	}
 }
 
-func (e *StyleElement) Dump(fd io.Writer, reg *Registry) error {
+func (e *StyleElement) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	style := reg.Style
-	if reg.Style == Default {
-		reg.Style = e.Style
-	}
-	err := e.Element.Dump(fd, reg)
+
+	// TODO(diogo): can we really disable this if?
+	//if reg.Style == Default {
+	reg.Style = e.Style
+	//}
+	err := e.Element.Dump(ctx, w)
+
 	reg.Style = style
 	return err
 }
@@ -58,7 +59,8 @@ type TextElement struct {
 	Text string
 }
 
-func (e *TextElement) start(fd io.Writer, reg *Registry) error {
+func (e *TextElement) start(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	var s string
 	switch reg.Style {
 	case SBold:
@@ -70,11 +72,12 @@ func (e *TextElement) start(fd io.Writer, reg *Registry) error {
 	case SListing:
 		return nil
 	}
-	fmt.Fprint(fd, s)
+	w.Print(s)
 	return nil
 }
 
-func (e *TextElement) end(fd io.Writer, reg *Registry) error {
+func (e *TextElement) end(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	var s string
 	switch reg.Style {
 	case SBold:
@@ -86,18 +89,39 @@ func (e *TextElement) end(fd io.Writer, reg *Registry) error {
 	case SListing:
 		return nil
 	}
-	fmt.Fprint(fd, s)
+	w.Print(s)
 	return nil
 }
 
-func (e *TextElement) Dump(fd io.Writer, reg *Registry) error {
+func (e *TextElement) Dump(ctx DumpContext, w *Writer) error {
 	if e == nil {
 		return nil
 	}
-	e.start(fd, reg)
-	_, err := fmt.Fprintf(fd, "%s", e.Text)
-	e.end(fd, reg)
-	return err
+	var (
+		text      = e.Text
+		postBlank bool
+	)
+
+	// In case a string start or ends with " ", we have to swap the blank with
+	// the emphasis or bold markers to have correctly rendered markdown.
+	if strings.HasPrefix(text, " ") {
+		text = text[1:]
+		w.Print(" ")
+	}
+
+	if strings.HasSuffix(text, " ") {
+		text = text[:len(text)-1]
+		postBlank = true
+	}
+
+	e.start(ctx, w)
+	w.Printf("%s", text)
+	e.end(ctx, w)
+	if postBlank {
+		w.Print(" ")
+	}
+
+	return nil
 }
 
 func newText(text string) *TextElement {

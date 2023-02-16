@@ -2,17 +2,35 @@ package main
 
 import (
 	"encoding/xml"
-	"fmt"
-	"io"
 )
 
 type Item struct {
 	Element
 }
 
-func (i *Item) Dump(fd io.Writer, reg *Registry) error {
-	fmt.Fprint(fd, "- ")
-	i.Element.Dump(fd, reg)
+func (i *Item) Dump(ctx DumpContext, w *Writer) error {
+	w.Print("- ")
+	i.Element.Dump(ctx, w)
+	return nil
+}
+
+type ListItem struct {
+	XMLName xml.Name `xml:"listitem"`
+	Item
+}
+
+type ItemizedList struct {
+	XMLName xml.Name   `xml:"itemizedlist"`
+	Item    []ListItem `xml:"listitem"`
+}
+
+func (il *ItemizedList) Dump(ctx DumpContext, w *Writer) error {
+	if ctx.Reg.Disable(ParaLine) {
+		defer ctx.Reg.Enable(ParaLine)
+	}
+	for _, i := range il.Item {
+		i.Dump(ctx, w)
+	}
 	return nil
 }
 
@@ -21,11 +39,11 @@ type ParameterList struct {
 	Element
 }
 
-func (s *ParameterList) Dump(fd io.Writer, reg *Registry) error {
-	fmt.Fprintln(fd)
+func (s *ParameterList) Dump(w *Writer, reg *Registry) error {
+	w.Println()
 	switch s.Attr.Kind {
 	case "param":
-		fmt.Fprintf(fd, "**Parameters:**\n ")
+		w.Printf("**Parameters:**\n ")
 	default:
 		//		log.Printf("not implemented: %v", s.Attr.Kind)
 	}
@@ -44,35 +62,33 @@ type Table struct {
 	Row     []Row    `xml:"row"`
 }
 
-func (t *Table) header(fd io.Writer) error {
-	fmt.Fprint(fd, "|")
+func (t *Table) header(w *Writer) {
+	w.Print("|")
 	for i := 0; i < t.Cols; i++ {
-		fmt.Fprint(fd, " --- |")
+		w.Print(" --- |")
 	}
-	fmt.Fprintln(fd)
-	return nil
+	w.Println()
 }
 
-func (t *Table) Dump(fd io.Writer, reg *Registry) error {
+func (t *Table) Dump(ctx DumpContext, w *Writer) error {
+	reg := ctx.Reg
 	if reg.Disable(ParaLine) {
 		defer reg.Enable(ParaLine)
 	}
 
 	header := false
-	fmt.Fprintln(fd)
-	fmt.Fprintln(fd)
+	w.Println()
+	w.Println()
 	for _, r := range t.Row {
-		if err := r.Dump(fd, reg); err != nil {
+		if err := r.Dump(ctx, w); err != nil {
 			return err
 		}
 		if !header {
-			if err := t.header(fd); err != nil {
-				return err
-			}
+			t.header(w)
 			header = true
 		}
 	}
-	fmt.Fprintln(fd)
+	w.Println()
 	return nil
 }
 
@@ -89,11 +105,11 @@ func newEntry(v ...Dumper) Entry {
 		},
 	}
 }
-func (e *Entry) Dump(fd io.Writer, reg *Registry) error {
+func (e *Entry) Dump(ctx DumpContext, w *Writer) error {
 	if e == nil {
 		return nil
 	}
-	return e.Para.Dump(fd, reg)
+	return e.Para.Dump(ctx, w)
 }
 
 func emptyEntries(n int) []Entry {
@@ -105,12 +121,12 @@ type Row struct {
 	Entry   []Entry  `xml:"entry"`
 }
 
-func (r *Row) Dump(fd io.Writer, reg *Registry) error {
-	fmt.Fprint(fd, "| ")
+func (r *Row) Dump(ctx DumpContext, w *Writer) error {
+	w.Print("| ")
 	for _, e := range r.Entry {
-		e.Dump(fd, reg)
-		fmt.Fprint(fd, "|")
+		e.Dump(ctx, w)
+		w.Print("|")
 	}
-	fmt.Fprintln(fd)
+	w.Println()
 	return nil
 }

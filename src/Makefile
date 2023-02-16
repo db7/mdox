@@ -2,13 +2,13 @@ TARGET=$(HOME)/.local
 
 all: install
 
-markdox:
-	go build -mod=vendor -o markdox .
+mdox:
+	go build -mod=vendor -o mdox .
 
-install: markdox
-	cp markdox $(TARGET)/bin
+install:mdox 
+	cp mdox $(TARGET)/bin
 
 clean:
-	rm -rf markdox
+	rm -rfmdox 
 
-.PHONY: all clean install
+.PHONY: all clean install mdox

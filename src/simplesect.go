@@ -2,8 +2,6 @@ package main
 
 import (
 	"encoding/xml"
-	"fmt"
-	"io"
 	"log"
 )
 
@@ -12,36 +10,37 @@ type SimpleSect struct {
 	Element
 }
 
-func (e *SimpleSect) Dump(fd io.Writer, reg *Registry) error {
+func (e *SimpleSect) Dump(ctx DumpContext, w *Writer) (err error) {
+	reg := ctx.Reg
 	if reg.Disable(ParaLine) {
 		defer reg.Enable(ParaLine)
 	}
 
 	switch e.Attr.Kind {
 	case "return":
-		fmt.Fprintf(fd, "\n**Returns:** ")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd)
+		w.Printf("\n**Returns:** ")
+		err = e.Element.Dump(ctx, w)
+		w.Println()
 	case "note":
-		fmt.Fprintf(fd, "\n**Note:** ")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd)
+		w.Printf("\n**Note:** ")
+		err = e.Element.Dump(ctx, w)
+		w.Println()
 	case "pre":
-		fmt.Fprintf(fd, "\n**Precondition:** ")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd)
+		w.Printf("\n**Precondition:** ")
+		err = e.Element.Dump(ctx, w)
+		w.Println()
 	case "post":
-		fmt.Fprintf(fd, "\n**Postcondition:** ")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd)
+		w.Printf("\n**Postcondition:** ")
+		err = e.Element.Dump(ctx, w)
+		w.Println()
 	case "see":
-		fmt.Fprintf(fd, " (see ")
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd, ")")
+		w.Printf(" (see ")
+		err = e.Element.Dump(ctx, w)
+		w.Println(")")
 	default:
-		e.Element.Dump(fd, reg)
-		fmt.Fprintln(fd)
+		err = e.Element.Dump(ctx, w)
+		w.Println()
 		log.Printf("not implemented: %v", e.Attr.Kind)
 	}
-	return nil
+	return
 }
