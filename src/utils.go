@@ -8,7 +8,6 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
-	"time"
 )
 
 func ensureNil(v any) {
@@ -275,23 +274,25 @@ func dirUp(depth int) (path string) {
 func DumpFooter(ctx DumpContext, w *Writer, depth int) error {
 	w.Println()
 	w.Println("---")
-	path := dirUp(depth)
-	entries := []Entry{
-		newEntry(newRef("Home", path+"README")),
-		newEntry(newRef("Modules", path+"INDEX_MODULES")),
-		newEntry(newRef("Files", path+"INDEX_FILES")),
-		newEntry(newText("Description")),
-	}
-	cols := len(entries)
-	tab := Table{
-		Cols: cols,
-		Row: []Row{
-			{Entry: emptyEntries(cols)},
-			{Entry: entries}},
-	}
+	return nil
 
-	w.Printf("_Last updated on %s._\n", time.Now().Format("2006.01.02 15:04:05"))
-	return tab.Dump(ctx, w)
+	// path := dirUp(depth)
+	// entries := []Entry{
+	// 	newEntry(newRef("Home", path+"README")),
+	// 	newEntry(newRef("Modules", path+"INDEX_MODULES")),
+	// 	newEntry(newRef("Files", path+"INDEX_FILES")),
+	// 	newEntry(newText("Description")),
+	// }
+	// cols := len(entries)
+	// tab := Table{
+	// 	Cols: cols,
+	// 	Row: []Row{
+	// 		{Entry: emptyEntries(cols)},
+	// 		{Entry: entries}},
+	// }
+
+	// w.Printf("_Last updated on %s._\n", time.Now().Format("2006.01.02 15:04:05"))
+	// return tab.Dump(ctx, w)
 }
 
 func dumpPages(reg *Registry) error {

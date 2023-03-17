@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"strings"
 )
 
 type Location struct {
@@ -79,6 +80,9 @@ func (m *MemberDef) nameString() (s string) {
 
 // Dump writes to w all the information about the memberdef.
 func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
+	if strings.HasPrefix(m.Name, "_") {
+		return nil
+	}
 	w.Print("### ")
 	w.Printf(" %s ", m.nameString())
 	w.Println()
@@ -121,6 +125,9 @@ func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
 
 // DumpRow writes to w the member as a row of table.
 func (m *MemberDef) DumpRow(ctx DumpContext, w *Writer) error {
+	if strings.HasPrefix(m.Name, "_") {
+		return nil
+	}
 	reg := ctx.Reg
 
 	// Disable paragraph new line. It will be controlled by table row.
