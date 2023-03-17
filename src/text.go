@@ -102,6 +102,12 @@ func (e *TextElement) Dump(ctx DumpContext, w *Writer) error {
 		postBlank bool
 	)
 
+	// If enabled, replace newlines with spaces.
+	if !ctx.Reg.Option(PreserveNewLines) && strings.HasSuffix(text, "\n") {
+		text = strings.TrimSuffix(text, "\n")
+		//postBlank = true
+	}
+
 	// In case a string start or ends with " ", we have to swap the blank with
 	// the emphasis or bold markers to have correctly rendered markdown.
 	if strings.HasPrefix(text, " ") {

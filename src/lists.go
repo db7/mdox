@@ -21,6 +21,7 @@ type ListItem struct {
 
 type ItemizedList struct {
 	XMLName xml.Name   `xml:"itemizedlist"`
+	Kind    string     `xml:"kind"`
 	Item    []ListItem `xml:"listitem"`
 }
 
@@ -39,20 +40,23 @@ type ParameterList struct {
 	Element
 }
 
-func (s *ParameterList) Dump(w *Writer, reg *Registry) error {
-	w.Println()
+func (s *ParameterList) Dump(ctx DumpContext, w *Writer) error {
 	switch s.Attr.Kind {
 	case "param":
-		w.Printf("**Parameters:**\n ")
+		w.Printf("**Parameters:**\n\n")
 	default:
 		//		log.Printf("not implemented: %v", s.Attr.Kind)
 	}
-	return nil
-}
+	//if ctx.Reg.Disable(ParaLine) {
+	//	defer ctx.Reg.Enable(ParaLine)
+	//}
+	if ctx.Reg.Disable(PreserveNewLines) {
+		defer ctx.Reg.Enable(PreserveNewLines)
+	}
+	s.Element.Dump(ctx, w)
+	w.Println()
 
-type ParameterItem struct {
-	XMLName xml.Name `xml:"parameteritem"`
-	Item
+	return nil
 }
 
 type Table struct {

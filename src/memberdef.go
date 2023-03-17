@@ -88,7 +88,6 @@ func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
 	ctx.Reg.Style = SEmphasis
 	m.Brief.Dump(ctx, w)
 	ctx.Reg.Style = s
-	m.Detailed.Dump(ctx, w)
 
 	/* TODO: add link to original source file
 	// Link to the source
@@ -111,6 +110,9 @@ func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
 	w.Printf( "[See source](%v)\n", filepath.Join(pth...))
 	log.Printf("source: %s", filepath.Join(pth...))
 	*/
+	// Detailed description
+	w.Println()
+	m.Detailed.Dump(ctx, w)
 
 	// Final space
 	w.Println()

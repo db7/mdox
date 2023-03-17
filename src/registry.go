@@ -185,6 +185,7 @@ type RegistryOption int
 
 const (
 	ParaLine RegistryOption = iota
+	PreserveNewLines
 	References
 )
 

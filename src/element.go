@@ -56,7 +56,7 @@ func (e *Element) DecodeElement(d *xml.Decoder, start xml.StartElement) (err err
 
 	// lists
 	case "parameterlist":
-		element = newText("\n")
+		element = new(ParameterList)
 	case "orderedlist":
 		element = newText("\n")
 	case "itemizedlist":
@@ -81,11 +81,13 @@ func (e *Element) DecodeElement(d *xml.Decoder, start xml.StartElement) (err err
 		element = newText("")
 
 	case "parameternamelist":
-		element = new(Item)
+		element = new(Element)
 	case "parametername":
-		element = new(Item)
+		element = newStyleElementI(SVerbatim)
 	case "parameterdescription":
-		element = new(Item)
+		el := new(Element)
+		el.add(newText(": "))
+		element = el
 
 	// table
 	case "table":
