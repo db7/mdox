@@ -27,3 +27,19 @@ func (d *Description) Dump(ctx DumpContext, w *Writer) error {
 	}
 	return nil
 }
+
+func (d *Description) Empty() bool {
+	if len(d.Para) > 0 {
+		return false
+	}
+	if len(d.Sect1) > 0 {
+		return false
+	}
+	if len(d.Sect2) > 0 {
+		return false
+	}
+	if len(d.Sect3) > 0 {
+		return false
+	}
+	return true
+}

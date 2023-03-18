@@ -125,7 +125,7 @@ func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
 
 // DumpRow writes to w the member as a row of table.
 func (m *MemberDef) DumpRow(ctx DumpContext, w *Writer) error {
-	if strings.HasPrefix(m.Name, "_") {
+	if strings.HasPrefix(m.Name, "_") || m.Brief.Para == nil {
 		return nil
 	}
 	reg := ctx.Reg

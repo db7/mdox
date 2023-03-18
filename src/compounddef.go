@@ -30,6 +30,7 @@ func (c *CompoundDef) Dump(ctx DumpContext, w *Writer) (err error) {
 		addGroups = true
 	case "group":
 	case "dir":
+		addGroups = true
 	default:
 	}
 
@@ -59,7 +60,10 @@ func (c *CompoundDef) dumpContent(ctx DumpContext, w *Writer) {
 	if groups := ctx.Reg.getGroupsWith(c.Id); len(groups) > 0 {
 		log.Println(groups)
 		w.Print("**Groups:** ")
-		for _, g := range groups {
+		for i, g := range groups {
+			if i > 0 {
+				w.Print(", ")
+			}
 			gg := ctx.Reg._groups[g]
 			newRef(gg.Title, g).Dump(ctx, w)
 		}
@@ -67,6 +71,10 @@ func (c *CompoundDef) dumpContent(ctx DumpContext, w *Writer) {
 		w.Println()
 	}
 
+	//w.Println("```c")
+	//w.Printf("#include <%s>\n", c.Location.File)
+	//w.Println("```")
+	//w.Println("# Description ")
 	c.Detailed.Dump(ctx, w)
 
 	// Dump the sections (functions, macros, etc)
@@ -125,7 +133,7 @@ func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool)
 				//e = newEntry(newText(" :heavy_check_mark: "))
 				e = newEntry(newText(" + "))
 			} else {
-				e = newEntry(newText(" - "))
+				e = newEntry(newText("   "))
 			}
 			row.Entry = append(row.Entry, e)
 		}

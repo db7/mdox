@@ -32,12 +32,19 @@ func (s *SectionDef) Dump(ctx DumpContext, w *Writer) error {
 		{"function", "Functions", "| Function | Description |\n|-|-|"},
 		//{"typedef", "Type definitons", "| Type | Description |\n|-|-|"},
 	} {
-		members := s.getMember(p.kind)
+		var members []MemberWrapper
+		// Pick only members with content
+		for _, m := range s.getMember(p.kind) {
+			if !m.Brief.Empty() {
+				members = append(members, m)
+			}
+		}
 		if len(members) == 0 {
 			continue
 		}
+
 		w.Println("---")
-		w.Printf("## %s \n\n", p.title)
+		w.Printf("# %s \n\n", p.title)
 
 		w.Printf("%s\n", p.header)
 		for _, m := range members {
