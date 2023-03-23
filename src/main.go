@@ -3,8 +3,6 @@ package main
 import (
 	"flag"
 	"log"
-	"os"
-	"path/filepath"
 )
 
 var (
@@ -49,15 +47,15 @@ func main() {
 		log.Fatal(err)
 	}
 
-	logStep("prepare indices")
-	if index, err := LoadIndex(*input); err != nil {
-		log.Fatal(err)
-	} else {
-		fd, err := os.Create(filepath.Join(*output, "INDEX.md"))
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer fd.Close()
-		index.Dump(fd)
-	}
+	// logStep("prepare indices")
+	// if index, err := LoadIndex(*input); err != nil {
+	// 	log.Fatal(err)
+	// } else {
+	// 	fd, err := os.Create(filepath.Join(*output, "INDEX.md"))
+	// 	if err != nil {
+	// 		log.Fatal(err)
+	// 	}
+	// 	defer fd.Close()
+	// 	index.Dump(fd)
+	// }
 }

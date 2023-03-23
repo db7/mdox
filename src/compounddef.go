@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"log"
+	"path/filepath"
 )
 
 type CompoundDef struct {
@@ -29,6 +30,7 @@ func (c *CompoundDef) Dump(ctx DumpContext, w *Writer) (err error) {
 	case "file":
 		addGroups = true
 	case "group":
+		addGroups = true
 	case "dir":
 		addGroups = true
 	default:
@@ -41,11 +43,41 @@ func (c *CompoundDef) Dump(ctx DumpContext, w *Writer) (err error) {
 	return
 }
 
+func (c *CompoundDef) getPath(ctx DumpContext) string {
+	if c.Kind == "group" {
+		var commonDir string
+		// find deepest common dir
+		for _, f := range c.InnerFile {
+			rel, _, has := ctx.Reg.getFilePath(f.RefID)
+			if !has {
+				continue
+			}
+			dir := filepath.Dir(rel)
+			if commonDir == "" {
+				commonDir = dir
+			} else {
+				commonDir = getCommonPrefix(commonDir, dir)
+			}
+		}
+		if d, _ := filepath.Split(c.Location.File); d != "" {
+			log.Fatal(c.Location.File, "has a directory")
+		}
+
+		return filepath.Join(commonDir, "GROUP_"+c.Location.File)
+	}
+	return c.Location.File
+}
+
 // dumpContent writes content of compound to w.
 func (c *CompoundDef) dumpContent(ctx DumpContext, w *Writer) {
 	// Prepare title with links to parent directories
-	e := elem(c.Location.File)
-	ee := &e
+	var ee Dumper
+	if c.Title != "" {
+		ee = newText(c.Title)
+	} else {
+		e := elem(c.Location.File)
+		ee = &e
+	}
 
 	// Dump page title
 	w.Print("#  ")
@@ -122,7 +154,7 @@ func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool)
 
 		row := Row{
 			Entry: []Entry{
-				newEntry(newRef(f.Name, f.RefID)),
+				newEntry(newRef(ff.Location.File, f.RefID)),
 				newEntry(&ff.Brief),
 			},
 		}

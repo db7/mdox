@@ -31,7 +31,7 @@ func (r *Ref) Dump(ctx DumpContext, w *Writer) error {
 		r.Element.Dump(ctx, w)
 	} else {
 		url := r.Attr.RefID
-		if ref := reg.get(r.Attr.RefID); ref != nil {
+		if ref := reg.get(ctx, r.Attr.RefID); ref != nil {
 			switch ref.Kind {
 			case KindFile:
 				url = getRelativePath(ctx.Path, ref.Location)

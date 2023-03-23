@@ -87,31 +87,31 @@ type RegEntry struct {
 	Name     string
 }
 
-func (r *Registry) get(id string) *RegEntry {
+func (r *Registry) get(ctx DumpContext, id string) *RegEntry {
 	if e, has := r._files[id]; has {
 		return &RegEntry{
-			Location: e.Location.File,
+			Location: e.getPath(ctx),
 			Kind:     KindFile,
 			Name:     id,
 		}
 	}
 	if e, has := r._groups[id]; has {
 		return &RegEntry{
-			Location: e.Location.File,
+			Location: e.getPath(ctx),
 			Kind:     KindGroup,
 			Name:     id,
 		}
 	}
 	if e, has := r._page[id]; has {
 		return &RegEntry{
-			Location: e.Location.File,
+			Location: e.getPath(ctx),
 			Kind:     KindPage,
 			Name:     id,
 		}
 	}
 	if e, has := r._dir[id]; has {
 		return &RegEntry{
-			Location: e.Location.File,
+			Location: e.getPath(ctx),
 			Kind:     KindDir,
 			Name:     id,
 		}

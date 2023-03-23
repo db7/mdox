@@ -230,11 +230,12 @@ func (reg *Registry) dumpGroups(inputDir, outputDir string) error {
 	w.Println("|--|--|")
 
 	for _, c := range reg._groups {
-		wfn := filepath.Join(outputDir, c.Location.File)
 		wctx := DumpContext{
 			Reg:  reg,
 			Path: c.Location.File,
 		}
+		wctx.Path = c.getPath(wctx)
+		wfn := filepath.Join(outputDir, wctx.Path)
 		log.Println("Processing group", c.CompoundName)
 		ww := new(Writer)
 		if err := c.Dump(wctx, ww); err != nil {
@@ -261,7 +262,7 @@ func (reg *Registry) dumpGroups(inputDir, outputDir string) error {
 	if err := DumpFooter(ctx, w, 1); err != nil {
 		return err
 	}
-	return w.Write(fn)
+	return nil //w.Write(fn)
 }
 
 func dirUp(depth int) (path string) {
