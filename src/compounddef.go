@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"sort"
 	"log"
 	"path/filepath"
 )
@@ -141,6 +142,7 @@ func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool)
 			}},
 		},
 	}
+	sort.Strings(gorder)
 	for _, g := range gorder {
 		e := newEntry(newText(reg.groupName(g)))
 		tab.Row[0].Entry = append(tab.Row[0].Entry, e)
