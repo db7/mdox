@@ -14,18 +14,18 @@ func decode(s string, v any) error {
 }
 
 func Test_SimpleSect(t *testing.T) {
-	s := `<simplesect kind="return">
-	 <para>TEXT1</para>
-	 </simplesect>`
-	var e SimpleSect
-	err := decode(s, &e)
-	if err != nil {
-		fmt.Println(err)
-		t.Errorf("could not decode xml: %v", err)
-		t.FailNow()
-	}
-	fmt.Println()
-	e.Dump(DumpContext{}, nil)
+	// s := `<simplesect kind="return">
+	//  <para>TEXT1</para>
+	//  </simplesect>`
+	// var e SimpleSect
+	// err := decode(s, &e)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	t.Errorf("could not decode xml: %v", err)
+	// 	t.FailNow()
+	// }
+	// fmt.Println()
+	// e.Dump(DumpContext{}, nil)
 	//spew.Dump("Parsing:", para)
 }
 

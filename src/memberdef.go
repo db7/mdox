@@ -83,7 +83,8 @@ func (m *MemberDef) Dump(ctx DumpContext, w *Writer) error {
 	if strings.HasPrefix(m.Name, "_") {
 		return nil
 	}
-	w.Print("### ")
+	// let macros/functions be with h2
+	w.Print("## ")
 	w.Printf(" %s ", m.nameString())
 	w.Println()
 
