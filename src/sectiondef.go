@@ -28,9 +28,9 @@ type memberSelection struct {
 // Dump all members of a section according to the section type.
 func (s *SectionDef) Dump(ctx DumpContext, w *Writer) error {
 	for _, p := range []memberSelection{
-		{"define", "Macros", "| Macro | Description |\n|-|-|"},
-		{"function", "Functions", "| Function | Description |\n|-|-|"},
-		//{"typedef", "Type definitons", "| Type | Description |\n|-|-|"},
+		{"define", "Macros", "| Macro | Description |\n|---|---|"},
+		{"function", "Functions", "| Function | Description |\n|---|---|"},
+		//{"typedef", "Type definitons", "| Type | Description |\n|---|---|"},
 	} {
 		var members []MemberWrapper
 		// Pick only members with content

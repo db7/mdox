@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-	"sort"
 	"log"
 	"path/filepath"
+	"sort"
 )
 
 type CompoundDef struct {
@@ -93,6 +93,7 @@ func (c *CompoundDef) dumpContent(ctx DumpContext, w *Writer) {
 	if groups := ctx.Reg.getGroupsWith(c.Id); len(groups) > 0 {
 		log.Println(groups)
 		w.Print("**Groups:** ")
+		sort.Strings(groups)
 		for i, g := range groups {
 			if i > 0 {
 				w.Print(", ")
@@ -148,7 +149,7 @@ func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool)
 		tab.Row[0].Entry = append(tab.Row[0].Entry, e)
 	}
 	for _, f := range c.InnerFile {
-		if f.Name == "doc.h" {
+		if shouldIgnoreFile(f.Name) {
 			continue
 		}
 		ff := reg.file(f.RefID)
@@ -164,10 +165,14 @@ func (c *CompoundDef) dumpInnerFiles(ctx DumpContext, w *Writer, addGroups bool)
 			log.Println(g)
 			var e Entry
 			if fileInGroups[fmt.Sprintf("%s--%s", f.RefID, g)] {
-				//e = newEntry(newText(" :heavy_check_mark: "))
-				e = newEntry(newText(" + "))
+				// this renders on everything but on code-hub looks too small
+				// similar to check mark
+				e = newEntry(newText(" &#x2714; "))
 			} else {
-				e = newEntry(newText("   "))
+				// note :x: will not render on git code
+				// so we use this instead
+				// https://www.compart.com/de/unicode/U+274C
+				e = newEntry(newText(" &#x274C; "))
 			}
 			row.Entry = append(row.Entry, e)
 		}

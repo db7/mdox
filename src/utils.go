@@ -61,7 +61,13 @@ func getDepth(path string) int {
 	if path == "" || path == "." {
 		return 0
 	}
-	path += "/"
+	/* we need to add / only for those that don't have it at the end already
+	 * for the case when common path = vsync/ we avoid to add an extra slash which will lead to false calculation
+	 */
+	if !strings.HasSuffix(path, "/") {
+		log.Println("adding suffix ", path)
+		path += "/"
+	}
 	return strings.Count(path, "/")
 }
 
@@ -192,9 +198,11 @@ func (reg *Registry) dumpDirs(inputDir, outputDir string) error {
 func (reg *Registry) dumpFiles(inputDir, outputDir string) error {
 	ctx := DumpContext{Reg: reg, InputDir: inputDir, OutputDir: outputDir}
 	for _, c := range reg._files {
+		if shouldIgnoreFile(c.Location.File) {
+			continue
+		}
 		log.Println("Processing", c.Location.File)
 		ctx.Path = c.Location.File
-
 		// The path of the generated file should match of the input file.
 		fnn := fmt.Sprintf("%s.md", c.Location.File)
 		fn := filepath.Join(outputDir, fnn)
@@ -227,14 +235,20 @@ func (reg *Registry) dumpGroups(inputDir, outputDir string) error {
 	w.Println("# Group Index")
 	w.Println()
 	w.Println("| Group | Description |")
-	w.Println("|--|--|")
+	w.Println("|---|---|")
 
 	for _, c := range reg._groups {
 		wctx := DumpContext{
 			Reg:  reg,
 			Path: c.Location.File,
 		}
-		wctx.Path = c.getPath(wctx)
+		path := c.getPath(wctx)
+		// If the group file path stayed intact it means no other file is referencing the group.
+		// In this case we don't want to dump that group file, or add it.
+		if path == "GROUP_"+wctx.Path {
+			continue
+		}
+		wctx.Path = path
 		wfn := filepath.Join(outputDir, wctx.Path)
 		log.Println("Processing group", c.CompoundName)
 		ww := new(Writer)
@@ -328,6 +342,9 @@ func dumpPages(reg *Registry) error {
 var (
 	blackListInternal = regexp.MustCompile(`.*/internal`)
 	blackListDoc      = regexp.MustCompile(`.*/doc.h$`)
+	blackListCommon   = regexp.MustCompile(`.*/common`)
+	blackListUtils    = regexp.MustCompile(`.*/utils`)
+	blackListCDs      = regexp.MustCompile(`.*/cds`)
 )
 
 // shouldIgnore returns true if the name is in the ignore black list.
@@ -335,9 +352,22 @@ func shouldIgnore(name string) bool {
 	switch {
 	case blackListDoc.MatchString(name):
 	case blackListInternal.MatchString(name):
+	case blackListCommon.MatchString(name):
+	case blackListUtils.MatchString(name):
 	default:
 		return false
 	}
 	// any matching case breaks here and returns true
 	return true
+}
+
+func shouldIgnoreFile(name string) bool {
+	ignore_list := []string{"vtypes.h", "vstdint.h", "doc.h"}
+	for _, ignore_exp := range ignore_list {
+		if strings.Contains(name, ignore_exp) {
+			log.Println("Ignoring ", name, " it matched ", ignore_exp)
+			return true
+		}
+	}
+	return false
 }

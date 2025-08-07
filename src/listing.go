@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/xml"
+	"strings"
 )
 
 type Listing struct {
@@ -13,11 +14,11 @@ type Listing struct {
 func (l *Listing) Dump(ctx DumpContext, w *Writer) error {
 	reg := ctx.Reg
 	w.Println()
+	w.Println()
 	w.Print("```")
-	switch l.Filename {
-	case ".c":
+	// add c style ```c for c files
+	if strings.Contains(l.Filename, ".c") {
 		w.Print("c")
-	default:
 	}
 	w.Println()
 	if reg.Disable(ParaLine) {

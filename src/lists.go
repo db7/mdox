@@ -29,8 +29,10 @@ func (il *ItemizedList) Dump(ctx DumpContext, w *Writer) error {
 	if ctx.Reg.Disable(ParaLine) {
 		defer ctx.Reg.Enable(ParaLine)
 	}
+	w.Print("\n")
 	for _, i := range il.Item {
 		i.Dump(ctx, w)
+		w.Print("\n")
 	}
 	return nil
 }
@@ -43,7 +45,7 @@ type ParameterList struct {
 func (s *ParameterList) Dump(ctx DumpContext, w *Writer) error {
 	switch s.Attr.Kind {
 	case "param":
-		w.Printf("**Parameters:**\n\n")
+		w.Printf("\n\n**Parameters:**\n\n")
 	default:
 		//		log.Printf("not implemented: %v", s.Attr.Kind)
 	}

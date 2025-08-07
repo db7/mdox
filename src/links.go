@@ -74,7 +74,7 @@ func (e *Ulink) Dump(ctx DumpContext, w *Writer) error {
 	if !reg.Option(References) {
 		e.Element.Dump(ctx, w)
 	} else {
-		url := e.Attr.RefID
+		url := e.Attr.URL
 		w.Printf("[")
 		e.Element.Dump(ctx, w)
 		w.Printf("](%s)", url)
