@@ -1,0 +1,49 @@
+
+name: Build and test
+
+on: [ push ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Setup
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.20'
+
+      - name: Build for Linux amd64
+        run: |
+          make -C src clean
+          make -C src mdox
+
+      - name: Build for Windows
+        run: |
+          make -C src clean
+          make -C src mdox GOOS=windows GOARCH=amd64
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Setup
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.20'
+
+      - name: Test
+        run: |
+          make -C src clean
+          cd src && go test
+
