@@ -1,4 +1,5 @@
 .vscode
+.gocache
 build/
 output/
 mdox

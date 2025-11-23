@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"path/filepath"
+	"strings"
 )
 
 type Registry struct {
@@ -33,15 +34,44 @@ func newRegistry(srcPath string) *Registry {
 }
 
 func getCommonPrefix(p1, p2 string) string {
-	shortLen := len(p1)
-	if l := len(p2); l < shortLen {
-		shortLen = l
+	if p1 == "" || p2 == "" {
+		return ""
 	}
-	i := 0
-	for ; i < shortLen && p1[i] == p2[i]; i++ {
-
+	clean := func(p string) []string {
+		p = filepath.ToSlash(filepath.Clean(p))
+		if p == "." {
+			return nil
+		}
+		p = strings.TrimPrefix(p, "/")
+		if p == "" {
+			return nil
+		}
+		return strings.Split(p, "/")
 	}
-	return p1[:i]
+	s1 := clean(p1)
+	s2 := clean(p2)
+	if len(s1) == 0 || len(s2) == 0 {
+		return ""
+	}
+	limit := len(s1)
+	if len(s2) < limit {
+		limit = len(s2)
+	}
+	var common []string
+	for i := 0; i < limit; i++ {
+		if s1[i] != s2[i] {
+			break
+		}
+		common = append(common, s1[i])
+	}
+	if len(common) == 0 {
+		return ""
+	}
+	prefix := strings.Join(common, "/")
+	if len(common) < len(s1) && len(common) < len(s2) {
+		prefix += "/"
+	}
+	return prefix
 }
 
 func (r *Registry) Register(c CompoundDef) {

@@ -75,31 +75,17 @@ func getRelativePath(from, to string) string {
 	if strings.HasSuffix(from, "/") {
 		panic("err")
 	}
-	from = filepath.Clean(from)
-	fromDir := filepath.Dir(from)
-
+	fromDir := filepath.Dir(filepath.Clean(from))
 	to = filepath.Clean(to)
-	toDir := filepath.Dir(to)
 
-	commonDir := getCommonPrefix(fromDir, toDir)
-	log.Println("++++", fromDir, toDir, commonDir, getDepth(fromDir), getDepth(commonDir))
-	path := []string{"."}
-	for i := 0; i < getDepth(fromDir)-getDepth(commonDir); i++ {
-		path = append(path, "..")
+	rel, err := filepath.Rel(fromDir, to)
+	if err != nil {
+		return to
 	}
-
-	toRel := strings.TrimPrefix(toDir, commonDir)
-	if toRel != "" {
-		path = append(path, toRel)
+	if rel == "." {
+		return filepath.Base(to)
 	}
-	path = append(path, filepath.Base(to))
-	ret := filepath.Join(path...)
-	ret = filepath.Clean(ret)
-	log.Println("===", ret+"")
-	//if to == "vsync/atomic.h" {
-	//	os.Exit(0)
-	//}
-	return ret
+	return filepath.ToSlash(rel)
 }
 
 func loadIndex() (*Index, error) {
@@ -354,6 +340,7 @@ func shouldIgnore(name string) bool {
 	case blackListInternal.MatchString(name):
 	case blackListCommon.MatchString(name):
 	case blackListUtils.MatchString(name):
+	case blackListCDs.MatchString(name):
 	default:
 		return false
 	}
