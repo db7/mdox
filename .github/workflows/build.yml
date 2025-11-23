@@ -1,7 +1,9 @@
 
-name: Build and test
+name: Release Build
 
-on: [ push ]
+on:
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -10,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.release.tag_name }}
 
       - name: Setup
         uses: actions/setup-go@v5
@@ -34,8 +34,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.release.tag_name }}
 
       - name: Setup
         uses: actions/setup-go@v5
@@ -45,5 +43,4 @@ jobs:
       - name: Test
         run: |
           make -C src clean
-          cd src && go test
-
+          make -C src test

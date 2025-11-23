@@ -1,6 +1,13 @@
+GO ?= go
+BINARY ?= mdox
+
+.PHONY: mdox clean test
+
 mdox:
-	go build -mod=vendor -o mdox .
+	$(GO) build -mod=vendor -o $(BINARY) .
+
+test:
+	$(GO) test ./...
 
 clean:
-	rm -rf mdox
-
+	rm -rf $(BINARY)
