@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bounded__spsc_8h" kind="file" language="C++">
+    <compoundname>bounded_spsc.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="bounded__ret_8h" local="no">vsync/queue/internal/bounded_ret.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/queue/internal/bounded_ret.h</label>
+        <link refid="bounded__ret_8h_source"/>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structbounded__spsc__t" prot="public">bounded_spsc_t</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bounded__spsc_8h_1a1f892a82cafe03deb5189dea4e6facc5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bounded_spsc_init</definition>
+        <argsstring>(bounded_spsc_t *q, void **b, vuint32_t s)</argsstring>
+        <name>bounded_spsc_init</name>
+        <param>
+          <type><ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given queue object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of an array of void* slots with size <computeroutput>s</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements in array b (does not have to be power of 2). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="43" column="1" bodyfile="vsync/queue/bounded_spsc.h" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="bounded__spsc_8h_1a1f7a3eeae196654e34e381d8ea59d526" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bounded_ret_t</type>
+        <definition>static bounded_ret_t bounded_spsc_enq</definition>
+        <argsstring>(bounded_spsc_t *q, void *v)</argsstring>
+        <name>bounded_spsc_enq</name>
+        <param>
+          <type><ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Tries to enqueue a value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of object to enqueue.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QUEUE_BOUNDED_OK if successful. </para>
+</simplesect>
+<simplesect kind="return"><para>QUEUE_BOUNDED_FULL if queue is full. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="64" column="1" bodyfile="vsync/queue/bounded_spsc.h" bodystart="64" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="bounded__spsc_8h_1a1176117134520a0a810c2d550c6afd7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bounded_ret_t</type>
+        <definition>static bounded_ret_t bounded_spsc_deq</definition>
+        <argsstring>(bounded_spsc_t *q, void **v)</argsstring>
+        <name>bounded_spsc_deq</name>
+        <param>
+          <type><ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Tries to dequeue a value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter of type (void**). Contains the address of the dequeued object, if the queue is not empty.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>QUEUE_BOUNDED_OK if successful. </para>
+</simplesect>
+<simplesect kind="return"><para>QUEUE_BOUNDED_EMPTY if queue is empty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="92" column="1" bodyfile="vsync/queue/bounded_spsc.h" bodystart="92" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Single-producer, single-consumer, wait-free bounded queue. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of the classic single-producer, single-consumer, wait-free bounded queue algorithm.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_bounded_spsc.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="bounded__spsc_8h" kindref="compound" tooltip="Single-producer, single-consumer, wait-free bounded queue.">vsync/queue/bounded_spsc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;malloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFF_SZ<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*g_buffer[BUFF_SZ];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref><sp/>g_queue;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">producer(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bounded_ret_t<sp/>result<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/><sp/><sp/>=<sp/><ref refid="bounded__spsc_8h_1a1f7a3eeae196654e34e381d8ea59d526" kindref="member" tooltip="Tries to enqueue a value.">bounded_spsc_enq</ref>(&amp;g_queue,<sp/>data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>==<sp/>QUEUE_BOUNDED_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[producer]<sp/>enq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>queue<sp/>is<sp/>full</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">consumer(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>bounded_ret_t<sp/>result<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="bounded__spsc_8h_1a1176117134520a0a810c2d550c6afd7b" kindref="member" tooltip="Tries to dequeue a value.">bounded_spsc_deq</ref>(&amp;g_queue,<sp/>&amp;data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result<sp/>==<sp/>QUEUE_BOUNDED_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[consumer]<sp/>deq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>((data_t<sp/>*)data)-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>t_consumer;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>t_producer;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bounded__spsc_8h_1a1f892a82cafe03deb5189dea4e6facc5" kindref="member" tooltip="Initializes the given queue object.">bounded_spsc_init</ref>(&amp;g_queue,<sp/>g_buffer,<sp/>BUFF_SZ);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_create(&amp;t_producer,<sp/>NULL,<sp/>producer,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_create(&amp;t_consumer,<sp/>NULL,<sp/>consumer,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_join(t_consumer,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_join(t_producer,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="bounded__spsc_8h_1a1176117134520a0a810c2d550c6afd7b" kindref="member" tooltip="Tries to dequeue a value.">bounded_spsc_deq</ref>(&amp;g_queue,<sp/>&amp;data)<sp/>!=<sp/>QUEUE_BOUNDED_EMPTY)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>L. Lamport. - [Specifying concurrent program modules] (ACM Transactions on Programming Languages and Systems, 5(2):190-222, 1983.) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_BOUNDED_SPSC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_BOUNDED_SPSC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/queue/internal/bounded_ret.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structbounded__spsc__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**buf;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>head;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>tail;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>size;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/><ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="bounded__spsc_8h_1a1f892a82cafe03deb5189dea4e6facc5" refkind="member"><highlight class="normal"><ref refid="bounded__spsc_8h_1a1f892a82cafe03deb5189dea4e6facc5" kindref="member" tooltip="Initializes the given queue object.">bounded_spsc_init</ref>(<ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**b,<sp/>vuint32_t<sp/>s)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(b<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;buffer<sp/>is<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(s<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;buffer<sp/>with<sp/>0<sp/>size&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;buf<sp/><sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;size<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;q-&gt;head,<sp/>0);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;q-&gt;tail,<sp/>0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>bounded_ret_t</highlight></codeline>
+<codeline lineno="64" refid="bounded__spsc_8h_1a1f7a3eeae196654e34e381d8ea59d526" refkind="member"><highlight class="normal"><ref refid="bounded__spsc_8h_1a1f7a3eeae196654e34e381d8ea59d526" kindref="member" tooltip="Tries to enqueue a value.">bounded_spsc_enq</ref>(<ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*v)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;q<sp/>==<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(v<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;v<sp/>==<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>tail<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;q-&gt;tail);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>head<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>it<sp/>is<sp/>full</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tail<sp/>-<sp/>head<sp/>==<sp/>q-&gt;size)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QUEUE_BOUNDED_FULL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>q-&gt;buf[tail<sp/>%<sp/>q-&gt;size]<sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(&amp;q-&gt;tail,<sp/>tail<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QUEUE_BOUNDED_OK;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>bounded_ret_t</highlight></codeline>
+<codeline lineno="92" refid="bounded__spsc_8h_1a1176117134520a0a810c2d550c6afd7b" refkind="member"><highlight class="normal"><ref refid="bounded__spsc_8h_1a1176117134520a0a810c2d550c6afd7b" kindref="member" tooltip="Tries to dequeue a value.">bounded_spsc_deq</ref>(<ref refid="structbounded__spsc__t" kindref="compound">bounded_spsc_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**v)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;q<sp/>==<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(v<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;v<sp/>==<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>head<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>tail<sp/>=<sp/><ref refid="core__u32_8h_1a4ea7e72d38e3ded17bb866fc2c2fef25" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_acq</ref>(&amp;q-&gt;tail);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>it<sp/>is<sp/>empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tail<sp/>-<sp/>head<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QUEUE_BOUNDED_EMPTY;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>*v<sp/>=<sp/>q-&gt;buf[head<sp/>%<sp/>q-&gt;size];</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(&amp;q-&gt;head,<sp/>head<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QUEUE_BOUNDED_OK;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/bounded_spsc.h"/>
+  </compounddef>
+</doxygen>

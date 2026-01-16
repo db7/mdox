@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvsimpleht__iter__s" kind="struct" language="C++" prot="public">
+    <compoundname>vsimpleht_iter_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvsimpleht__iter__s_1ace56c409a7dec935316c970691c4385e" prot="public" static="no" mutable="no">
+        <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+        <definition>vsimpleht_t* vsimpleht_iter_s::tbl</definition>
+        <argsstring></argsstring>
+        <name>tbl</name>
+        <qualifiedname>vsimpleht_iter_s::tbl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="97" column="17" bodyfile="vsync/map/simpleht.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__iter__s_1a5381bad4c8cd7dea54ed182b396986c2" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vsimpleht_iter_s::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <qualifiedname>vsimpleht_iter_s::idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="98" column="13" bodyfile="vsync/map/simpleht.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>rwlock_s</label>
+        <link refid="structrwlock__s"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>wb</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>semaphore_s</label>
+        <link refid="structsemaphore__s"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="4">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="3">
+        <label>vsimpleht_entry_s</label>
+        <link refid="structvsimpleht__entry__s"/>
+      </node>
+      <node id="1">
+        <label>vsimpleht_iter_s</label>
+        <link refid="structvsimpleht__iter__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tbl</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsimpleht_s</label>
+        <link refid="structvsimpleht__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>entries</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>deleted_count</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/simpleht.h" line="96" column="1" bodyfile="vsync/map/simpleht.h" bodystart="96" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structvsimpleht__iter__s_1a5381bad4c8cd7dea54ed182b396986c2" prot="public" virt="non-virtual"><scope>vsimpleht_iter_s</scope><name>idx</name></member>
+      <member refid="structvsimpleht__iter__s_1ace56c409a7dec935316c970691c4385e" prot="public" virt="non-virtual"><scope>vsimpleht_iter_s</scope><name>tbl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

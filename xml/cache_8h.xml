@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="cache_8h" kind="file" language="C++">
+    <compoundname>cache.h</compoundname>
+    <includedby refid="cached__pool_8h" local="no">vsync/pool/cached_pool.h</includedby>
+    <includedby refid="cachedq_8h" local="no">vsync/queue/cachedq.h</includedby>
+    <includedby refid="common_8h" local="no">vsync/queue/internal/bbq/common.h</includedby>
+    <includedby refid="ebr_8h" local="no">vsync/smr/ebr.h</includedby>
+    <includedby refid="smr__node_8h" local="no">vsync/smr/internal/smr_node.h</includedby>
+    <includedby refid="arraylock_8h" local="no">vsync/spinlock/arraylock.h</includedby>
+    <includedby refid="clhlock_8h" local="no">vsync/spinlock/clhlock.h</includedby>
+    <includedby refid="cnalock_8h" local="no">vsync/spinlock/cnalock.h</includedby>
+    <includedby refid="hemlock_8h" local="no">vsync/spinlock/hemlock.h</includedby>
+    <includedby refid="hmcslock_8h" local="no">vsync/spinlock/hmcslock.h</includedby>
+    <includedby refid="mcslock_8h" local="no">vsync/spinlock/mcslock.h</includedby>
+    <includedby refid="rec__mcslock_8h" local="no">vsync/spinlock/rec_mcslock.h</includedby>
+    <includedby refid="rec__seqlock_8h" local="no">vsync/spinlock/rec_seqlock.h</includedby>
+    <includedby refid="rec__spinlock_8h" local="no">vsync/spinlock/rec_spinlock.h</includedby>
+    <includedby refid="rec__ticketlock_8h" local="no">vsync/spinlock/rec_ticketlock.h</includedby>
+    <includedby refid="twalock_8h" local="no">vsync/spinlock/twalock.h</includedby>
+    <includedby refid="stack__core_8h" local="no">vsync/stack/internal/stack_core.h</includedby>
+    <includedby refid="abstract__lock_8h" local="no">vsync/utils/abstract_lock.h</includedby>
+    <includedby refid="recursive__lock_8h" local="no">vsync/utils/recursive_lock.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/map/listset_coarse.h</label>
+        <link refid="listset__coarse_8h"/>
+      </node>
+      <node id="31">
+        <label>vsync/map/listset_fine.h</label>
+        <link refid="listset__fine_8h"/>
+      </node>
+      <node id="32">
+        <label>vsync/map/listset_lazy.h</label>
+        <link refid="listset__lazy_8h"/>
+      </node>
+      <node id="33">
+        <label>vsync/map/listset_opt.h</label>
+        <link refid="listset__opt_8h"/>
+      </node>
+      <node id="2">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="6">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/queue/cachedq.h</label>
+        <link refid="cachedq_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="34">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+      <node id="21">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="27">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="7">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="8">
+        <label>vsync/smr/internal/smr_node.h</label>
+        <link refid="smr__node_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+      </node>
+      <node id="12">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+      </node>
+      <node id="13">
+        <label>vsync/spinlock/cnalock.h</label>
+        <link refid="cnalock_8h"/>
+      </node>
+      <node id="14">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="23">
+        <label>vsync/spinlock/twalock.h</label>
+        <link refid="twalock_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="29">
+        <label>vsync/utils/abstract_lock.h</label>
+        <link refid="abstract__lock_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="cache_8h_1a8a979fbbc380f8e95bbfccf3fa0ee3ef" prot="public" static="no">
+        <name>VSYNC_CACHELINE_SIZE</name>
+        <initializer>128</initializer>
+        <briefdescription>
+<para>This file provides cache macros to align and pad data structures to the cache line size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cache alignment is disabled if the code is compiled for verification (with VSYNC_VERIFICATION defined). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/common/cache.h" line="16" column="13" bodyfile="vsync/common/cache.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cache_8h_1ac9de73c33297d6e3b2fc4c83b7a3e24d" prot="public" static="no">
+        <name>VSYNC_CACHEALIGN</name>
+        <initializer>__attribute__((aligned(VSYNC_CACHELINE_SIZE)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/common/cache.h" line="23" column="13" bodyfile="vsync/common/cache.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cache_8h_1adf85ddd16a159e9e35094929136b27d1" prot="public" static="no">
+        <name>VSYNC_CACHEDIFF</name>
+        <param><defname>sz</defname></param>
+        <initializer>        ((VSYNC_CACHELINE_SIZE - ((sz) % VSYNC_CACHELINE_SIZE)) %              \
+         VSYNC_CACHELINE_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/common/cache.h" line="24" column="13" bodyfile="vsync/common/cache.h" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="define" id="cache_8h_1a1293e80e96e9148ad437939a6cdce8ff" prot="public" static="no">
+        <name>VSYNC_CACHEPAD</name>
+        <param><defname>typ</defname></param>
+        <param><defname>var</defname></param>
+        <initializer>char var[VSYNC_CACHEDIFF(sizeof(typ))]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/common/cache.h" line="27" column="13" bodyfile="vsync/common/cache.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_CACHE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_CACHE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_CACHELINE_SIZE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>L3<sp/>cache<sp/>line<sp/>size<sp/>for<sp/>ARM<sp/>processors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHELINE_SIZE<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHEALIGN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHEPAD(typ,<sp/>var)<sp/>typ<sp/>var</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>!<sp/>VSYNC_VERIFICATION<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHEALIGN<sp/>__attribute__((aligned(VSYNC_CACHELINE_SIZE)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHEDIFF(sz)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((VSYNC_CACHELINE_SIZE<sp/>-<sp/>((sz)<sp/>%<sp/>VSYNC_CACHELINE_SIZE))<sp/>%<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VSYNC_CACHELINE_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_CACHEPAD(typ,<sp/>var)<sp/>char<sp/>var[VSYNC_CACHEDIFF(sizeof(typ))]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!<sp/>VSYNC_VERIFICATION<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/common/cache.h"/>
+  </compounddef>
+</doxygen>

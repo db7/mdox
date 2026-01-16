@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_884f4cb5392dbe29e46e9c5ab70ea2b6" kind="dir">
+    <compoundname>vsync/utils/internal</compoundname>
+    <innerfile refid="internal_2math_8h">math.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/utils/internal/"/>
+  </compounddef>
+</doxygen>

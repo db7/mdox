@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvqueue__ub__s" kind="struct" language="C++" prot="public">
+    <compoundname>vqueue_ub_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvqueue__ub__s_1adcca04387a16f4f4296696a63fb74fba" prot="public" static="no" mutable="no">
+        <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref></type>
+        <definition>vqueue_ub_node_t vqueue_ub_s::sentinel</definition>
+        <argsstring></argsstring>
+        <name>sentinel</name>
+        <qualifiedname>vqueue_ub_s::sentinel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf.h" line="49" column="22" bodyfile="vsync/queue/unbounded_queue_lf.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__ub__s_1a87268c9a44779bf8d94533e58d89895b" prot="public" static="no" mutable="no">
+        <type>queue_lock_t</type>
+        <definition>queue_lock_t vqueue_ub_s::enq_l</definition>
+        <argsstring></argsstring>
+        <name>enq_l</name>
+        <qualifiedname>vqueue_ub_s::enq_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_total.h" line="43" column="18" bodyfile="vsync/queue/unbounded_queue_total.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__ub__s_1a282a8fd61df49ae0bc3e69035b8b3cd1" prot="public" static="no" mutable="no">
+        <type>queue_lock_t</type>
+        <definition>queue_lock_t vqueue_ub_s::deq_l</definition>
+        <argsstring></argsstring>
+        <name>deq_l</name>
+        <qualifiedname>vqueue_ub_s::deq_l</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_total.h" line="44" column="18" bodyfile="vsync/queue/unbounded_queue_total.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__ub__s_1a814d27d34d357a40b97dc92b915e5d4d" prot="public" static="no" mutable="no">
+        <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        <definition>vqueue_ub_node_t* vqueue_ub_s::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>vqueue_ub_s::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_total.h" line="45" column="22" bodyfile="vsync/queue/unbounded_queue_total.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__ub__s_1a0d295b2b86242bee600ff648b8dc1dd4" prot="public" static="no" mutable="no">
+        <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        <definition>vqueue_ub_node_t* vqueue_ub_s::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>vqueue_ub_s::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_total.h" line="46" column="22" bodyfile="vsync/queue/unbounded_queue_total.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvqueue__ub__s_1af6bbfc4cc30a76ed3f87f0c231e43e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vqueue_ub_s::vatomicptr</definition>
+        <argsstring>(vqueue_ub_node_t *) head</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>vqueue_ub_s::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structvqueue__ub__s_1a7b9014ecaf8c4f6e44a45adf582fcd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vqueue_ub_s::vatomicptr</definition>
+        <argsstring>(vqueue_ub_node_t *) tail</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>vqueue_ub_s::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structvqueue__ub__s_1a0380e4a87a8efbd419a7f51b8d02542b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vqueue_ub_s::vatomicptr_stamped</definition>
+        <argsstring>(vqueue_ub_node_t *) head</argsstring>
+        <name>vatomicptr_stamped</name>
+        <qualifiedname>vqueue_ub_s::vatomicptr_stamped</qualifiedname>
+        <param>
+          <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="65" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structvqueue__ub__s_1a97c0e6a12903d083b991bbe6c7808ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vqueue_ub_s::vatomicptr_stamped</definition>
+        <argsstring>(vqueue_ub_node_t *) tail</argsstring>
+        <name>vatomicptr_stamped</name>
+        <qualifiedname>vqueue_ub_s::vatomicptr_stamped</qualifiedname>
+        <param>
+          <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="66" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>smr_node_core_s</label>
+        <link refid="structsmr__node__core__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>smr_node_s</label>
+        <link refid="structsmr__node__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>destroy_fun</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vqueue_ub_node_s</label>
+        <link refid="structvqueue__ub__node__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>smr_node</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vqueue_ub_s</label>
+        <link refid="structvqueue__ub__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>head</edgelabel>
+          <edgelabel>sentinel</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/unbounded_queue_lf.h" line="46" column="1" bodyfile="vsync/queue/unbounded_queue_lf.h" bodystart="46" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structvqueue__ub__s_1a282a8fd61df49ae0bc3e69035b8b3cd1" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>deq_l</name></member>
+      <member refid="structvqueue__ub__s_1a87268c9a44779bf8d94533e58d89895b" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>enq_l</name></member>
+      <member refid="structvqueue__ub__s_1a814d27d34d357a40b97dc92b915e5d4d" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>head</name></member>
+      <member refid="structvqueue__ub__s_1adcca04387a16f4f4296696a63fb74fba" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>sentinel</name></member>
+      <member refid="structvqueue__ub__s_1a0d295b2b86242bee600ff648b8dc1dd4" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>tail</name></member>
+      <member refid="structvqueue__ub__s_1af6bbfc4cc30a76ed3f87f0c231e43e05" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>vatomicptr</name></member>
+      <member refid="structvqueue__ub__s_1a7b9014ecaf8c4f6e44a45adf582fcd16" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>vatomicptr</name></member>
+      <member refid="structvqueue__ub__s_1a0380e4a87a8efbd419a7f51b8d02542b" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>vatomicptr_stamped</name></member>
+      <member refid="structvqueue__ub__s_1a97c0e6a12903d083b991bbe6c7808ace" prot="public" virt="non-virtual"><scope>vqueue_ub_s</scope><name>vatomicptr_stamped</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_16f79010974527bdeb8ffa1f0d002862" kind="dir">
+    <compoundname>vsync/bitmap</compoundname>
+    <innerfile refid="bitmap_8h">bitmap.h</innerfile>
+    <briefdescription>
+<para>Bitmap implementations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/bitmap/"/>
+  </compounddef>
+</doxygen>

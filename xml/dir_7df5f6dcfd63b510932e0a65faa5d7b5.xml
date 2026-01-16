@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7df5f6dcfd63b510932e0a65faa5d7b5" kind="dir">
+    <compoundname>vsync/thread</compoundname>
+    <innerdir refid="dir_db082c6f4b83fcebed3a7e13430195b9">vsync/thread/internal</innerdir>
+    <innerdir refid="dir_88042d06bf3adc9b9d6d3cd90301ec00">vsync/thread/mutex</innerdir>
+    <innerfile refid="cond_8h">cond.h</innerfile>
+    <innerfile refid="mutex_8h">mutex.h</innerfile>
+    <innerfile refid="once_8h">once.h</innerfile>
+    <briefdescription>
+<para>Userspace synchronization primitives. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/thread/"/>
+  </compounddef>
+</doxygen>

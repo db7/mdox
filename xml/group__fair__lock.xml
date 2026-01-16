@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__fair__lock" kind="group">
+    <compoundname>fair_lock</compoundname>
+    <title>Fair locks</title>
+    <innerfile refid="arraylock_8h">arraylock.h</innerfile>
+    <innerfile refid="clhlock_8h">clhlock.h</innerfile>
+    <innerfile refid="cnalock_8h">cnalock.h</innerfile>
+    <innerfile refid="hclhlock_8h">hclhlock.h</innerfile>
+    <innerfile refid="hemlock_8h">hemlock.h</innerfile>
+    <innerfile refid="hmcslock_8h">hmcslock.h</innerfile>
+    <innerfile refid="mcslock_8h">mcslock.h</innerfile>
+    <innerfile refid="rec__mcslock_8h">rec_mcslock.h</innerfile>
+    <innerfile refid="rec__ticketlock_8h">rec_ticketlock.h</innerfile>
+    <innerfile refid="ticketlock_8h">ticketlock.h</innerfile>
+    <innerfile refid="twalock_8h">twalock.h</innerfile>
+    <briefdescription>
+<para>Group of starvation-free locks (fair locks). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

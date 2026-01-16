@@ -1,0 +1,1078 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="elimination__stack_8h" kind="file" language="C++">
+    <compoundname>elimination_stack.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="exchanger_8h" local="no">vsync/utils/exchanger.h</includes>
+    <includes refid="backoff_8h" local="no">vsync/utils/backoff.h</includes>
+    <includes refid="range__policy_8h" local="no">vsync/stack/internal/range_policy.h</includes>
+    <includes refid="stack__core_8h" local="no">vsync/stack/internal/stack_core.h</includes>
+    <includes refid="verify_8h" local="no">vsync/common/verify.h</includes>
+    <includedby refid="vqueue__prio__stack__array__based_8h" local="no">vsync/queue/vqueue_prio_stack_array_based.h</includedby>
+    <includedby refid="vqueue__prio__stack__tree__based_8h" local="no">vsync/queue/vqueue_prio_stack_tree_based.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="42">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="38">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/stack/internal/range_policy.h</label>
+        <link refid="range__policy_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structvstack__s" prot="public">vstack_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" prot="public" static="no">
+        <name>VSTACK_XCHG_SLOTS_COUNT</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+<para>Configures the stack to have the given number of slots. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the default value is <computeroutput>-DVSTACK_XCHG_SLOTS_COUNT=3</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="53" column="13" bodyfile="vsync/stack/elimination_stack.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="elimination__stack_8h_1abf1f98173e960700920d4c32cd168182" prot="public" static="no">
+        <name>VSTACK_XCHG_MAX_TRIALS</name>
+        <initializer>10000U</initializer>
+        <briefdescription>
+<para>Configures the stack to try to exchange for the given number of trials max. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the default value is <computeroutput>-DVSTACK_XCHG_MAX_TRIALS=10000</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="63" column="13" bodyfile="vsync/stack/elimination_stack.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="elimination__stack_8h_1af7c03fc4095ec4a3d0d19ba139d9a062" prot="public" static="no">
+        <type>struct <ref refid="structvstack__s" kindref="compound">vstack_s</ref></type>
+        <definition>typedef struct vstack_s vstack_t</definition>
+        <argsstring></argsstring>
+        <name>vstack_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="77" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref> *</type>
+        <definition>static vstack_node_t * _vstack_rendezvous</definition>
+        <argsstring>(vstack_t *stack, vstack_node_t *node, vuint32_t max, vbool_t *out_success)</argsstring>
+        <name>_vstack_rendezvous</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>vbool_t *</type>
+          <declname>out_success</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to rendezvous with another thread to exchange the given <computeroutput>node</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_node_t object if the calling thread is a pusher, NULL otherwise </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum index of the exchange slot that can be used in this exchange </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_success</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter indicating if the exchange was successful *out_success == true: successful exchange *out_success == false: failed exchange </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of vstack_node_t* object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="221" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="221" bodyend="235" declfile="vsync/stack/elimination_stack.h" declline="79" declcolumn="29"/>
+      </memberdef>
+      <memberdef kind="function" id="elimination__stack_8h_1aa3a80fa6bf53ab959be2af4343137267" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vstack_init</definition>
+        <argsstring>(vstack_t *stack, backoff_rand_fun_t rand_fun)</argsstring>
+        <name>vstack_init</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+          <declname>rand_fun</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given <computeroutput>stack</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rand_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer to a function that generates a random number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="91" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="elimination__stack_8h_1a0f0045ccb795e4685704b331bf66441a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vstack_push</definition>
+        <argsstring>(vstack_t *stack, vstack_node_t *node)</argsstring>
+        <name>vstack_push</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Pushes the given <computeroutput>node</computeroutput> to the top of the given <computeroutput>stack</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_node_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> this operation always succeeds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="112" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="112" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="elimination__stack_8h_1a87e410535f3825d08e7af840dacdccf0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref> *</type>
+        <definition>static vstack_node_t * vstack_pop</definition>
+        <argsstring>(vstack_t *stack)</argsstring>
+        <name>vstack_pop</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Pops the top of the given <computeroutput>stack</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of vstack_node_t object. If the stack is not empty. </para>
+</simplesect>
+<simplesect kind="return"><para>NULL on empty stack.</para>
+</simplesect>
+&gt; <bold>Note:</bold> must be called inside an SMR critical section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="165" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="165" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="elimination__stack_8h_1a4a4fb4d96c4d3ec20d59e2afb4a6eeb7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vstack_destroy</definition>
+        <argsstring>(vstack_t *stack, vstack_node_handler_t destroy, void *arg)</argsstring>
+        <name>vstack_destroy</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>vstack_node_handler_t</type>
+          <declname>destroy</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Pops all remaining nodes in the stack and calls <computeroutput>destroy</computeroutput> on them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function address of type vstack_node_handler_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>destroy</computeroutput>, can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="244" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="elimination__stack_8h_1a2225a360d416b5eb2d0456856add012e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vstack_visit</definition>
+        <argsstring>(vstack_t *stack, vstack_node_handler_t visitor, void *arg)</argsstring>
+        <name>_vstack_visit</name>
+        <param>
+          <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref> *</type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>vstack_node_handler_t</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Calls the given <computeroutput>visitor</computeroutput> function on each stack node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vstack_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function address of type vstack_node_handler_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>visitor</computeroutput>, can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="256" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="256" bodyend="259"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Unbounded lock-free stack with elimination backoff. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>When an attempt to pop/push fails, the calling thread will attempt to rendezvous with another thread. A thread that pushes may exchange the node that is trying to push with a thread that pops. A successful exchange happens when a pusher exchanges its node with a popper within a limited number of trials. If the exchange does not complete within the number of attempts/trials specified in <computeroutput>VSTACK_XCHG_MAX_TRIALS</computeroutput> the normal push/pop operation is reattempted.</para>
+<sect2 id="elimination__stack_8h_1autotoc_md17">
+<title>Configuration</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>-DVSTACK_XCHG_SLOTS_COUNT=3</computeroutput></para>
+</listitem><listitem><para><computeroutput>-DVSTACK_XCHG_MAX_TRIALS=10000</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+<para>Note that the right configuration depends on the contention, number of threads etc. We highly recommend you to benchmark the stack within your application with different configurations and choose the configuration resulting in the best performance.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_stack_elimination.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="elimination__stack_8h" kindref="compound" tooltip="Unbounded lock-free stack with elimination backoff.">vsync/stack/elimination_stack.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/smr/gdump.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>stack_node;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>smr_node;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">gdump_t<sp/>g_gdump;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>g_stack;</highlight></codeline>
+<codeline><highlight class="normal">pthread_rwlock_t<sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>g_stop<sp/>=<sp/><ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member" tooltip="Initializes an atomic variable with value v.">VATOMIC_INIT</ref>(0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_rdlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_wrlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structsmr__rwlock__lib__s" kindref="compound">smr_rwlock_lib_t</ref><sp/>g_rwlock_lib<sp/>=<sp/>{thread_rw_read_acq,<sp/>thread_rw_read_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_rw_write_acq,<sp/>thread_rw_write_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;g_lock};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">free_cb(<ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>smr_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_cb(<ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>stack_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">yield_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sched_yield();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">usleep_cb(vuint32_t<sp/>microsecond)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>usleep(microsecond);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>__thread<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g_thread_seed<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t</highlight></codeline>
+<codeline><highlight class="normal">rand_cb(vuint32_t<sp/>min,<sp/>vuint32_t<sp/>max)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(g_thread_seed<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_thread_seed<sp/>=<sp/>time(NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>rand_r(&amp;g_thread_seed);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(((vuint32_t)r)<sp/>%<sp/>(max<sp/>-<sp/>min<sp/>+<sp/>1))<sp/>+<sp/>min;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">reclaim(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1a4bd370c5cd89e15a2d4d38effbd85de3" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read</ref>(&amp;g_stop)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>count<sp/>=<sp/>gdump_recycle(&amp;g_gdump,<sp/>yield_cb,<sp/>NULL,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%zu<sp/>node(s)<sp/>were<sp/>reclaimed\n&quot;</highlight><highlight class="normal">,<sp/>count);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">consume(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_thread_t<sp/>thread<sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node<sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_register(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_enter(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/><ref refid="elimination__stack_8h_1a87e410535f3825d08e7af840dacdccf0" kindref="member" tooltip="Pops the top of the given stack.">vstack_pop</ref>(&amp;g_stack);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>stack_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>popped<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_exit(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_retire(&amp;g_gdump,<sp/>&amp;data-&gt;smr_node,<sp/>free_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_deregister(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">produce(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>pushing<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1a0f0045ccb795e4685704b331bf66441a" kindref="member" tooltip="Pushes the given node to the top of the given stack.">vstack_push</ref>(&amp;g_stack,<sp/>&amp;data-&gt;stack_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)(vuintptr_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tid<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reclaim();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tid<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>produce(tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>consume(tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>pthread_rwlock_init(&amp;g_lock,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_init(&amp;g_gdump,<sp/>g_rwlock_lib);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1aa3a80fa6bf53ab959be2af4343137267" kindref="member" tooltip="Initializes the given stack.">vstack_init</ref>(&amp;g_stack,<sp/>rand_cb);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>the<sp/>signal<sp/>to<sp/>stop<sp/>reclaiming</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a3a281f092a90e9be56044f35c3f3cbd2" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write</ref>(&amp;g_stop,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_join(threads[0],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1a4a4fb4d96c4d3ec20d59e2afb4a6eeb7" kindref="member" tooltip="Pops all remaining nodes in the stack and calls destroy on them.">vstack_destroy</ref>(&amp;g_stack,<sp/>destroy_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_destroy(&amp;g_gdump);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pthread_rwlock_destroy(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 11] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+</sect2>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSTACK_ELIMINATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSTACK_ELIMINATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="exchanger_8h" kindref="compound" tooltip="Lock-free object exchanger.">vsync/utils/exchanger.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="backoff_8h" kindref="compound" tooltip="Implements exponential backoff.">vsync/utils/backoff.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/stack/internal/range_policy.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/stack/internal/stack_core.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8h" kindref="compound" tooltip="Verification support.">vsync/common/verify.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSTACK_XCHG_SLOTS_COUNT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSTACK_XCHG_SLOTS_COUNT<sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSTACK_XCHG_MAX_TRIALS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="elimination__stack_8h_1abf1f98173e960700920d4c32cd168182" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSTACK_XCHG_MAX_TRIALS<sp/>10000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSYNC_VERIFICATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>VSTACK_XCHG_MAX_TRIALS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSTACK_XCHG_MAX_TRIALS<sp/>5U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73" refid="structvstack__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvstack__s" kindref="compound">vstack_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__core__s" kindref="compound">vstack_core_t</ref><sp/>core;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structexchanger__s" kindref="compound">exchanger_t</ref><sp/>elimination_array[<ref refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" kindref="member" tooltip="Configures the stack to have the given number of slots.">VSTACK_XCHG_SLOTS_COUNT</ref>];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/><ref refid="structvstack__s" kindref="compound">vstack_t</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*<ref refid="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" kindref="member" tooltip="Attempts to rendezvous with another thread to exchange the given node.">_vstack_rendezvous</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>max,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>*out_success);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="elimination__stack_8h_1aa3a80fa6bf53ab959be2af4343137267" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1aa3a80fa6bf53ab959be2af4343137267" kindref="member" tooltip="Initializes the given stack.">vstack_init</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,<sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(stack);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(rand_fun);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>stack-&gt;rand_fun<sp/>=<sp/>rand_fun;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initialize<sp/>stack<sp/>core<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>vstack_core_init(&amp;stack-&gt;core);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initialize<sp/>exchanger<sp/>slots<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" kindref="member" tooltip="Configures the stack to have the given number of slots.">VSTACK_XCHG_SLOTS_COUNT</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="exchanger_8h_1a4fbf2b79723d766226369e4a4195eae1" kindref="member" tooltip="Resets the given exchanger object to initial state.">exchanger_reset</ref>(&amp;stack-&gt;elimination_array[i]);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="elimination__stack_8h_1a0f0045ccb795e4685704b331bf66441a" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1a0f0045ccb795e4685704b331bf66441a" kindref="member" tooltip="Pushes the given node to the top of the given stack.">vstack_push</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,<sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>max<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*exchanged_node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>policy;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(stack);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>@note<sp/>in<sp/>the<sp/>book<sp/>this<sp/>is<sp/>a<sp/>thread<sp/>local<sp/>policy,<sp/>however<sp/>at<sp/>the<sp/>moment<sp/>we</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>use<sp/>a<sp/>new<sp/>instance<sp/>for<sp/>each<sp/>operation,<sp/>this<sp/>is<sp/>because<sp/>we<sp/>thread<sp/>local</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>storage<sp/>might<sp/>degrade<sp/>performance,<sp/>benchmarking<sp/>required<sp/>for<sp/>this.</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Determines<sp/>the<sp/>elimination<sp/>array<sp/>subrange<sp/>to<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>range_policy_record_init(&amp;policy,<sp/><ref refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" kindref="member" tooltip="Configures the stack to have the given number of slots.">VSTACK_XCHG_SLOTS_COUNT</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>try<sp/>the<sp/>normal<sp/>path<sp/>of<sp/>pushing<sp/>first<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vstack_core_try_push(&amp;stack-&gt;core,<sp/>node))<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>successful<sp/>push<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>range_policy_get_range(&amp;policy);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>try<sp/>to<sp/>exchange<sp/>with<sp/>another<sp/>some<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exchanged_node<sp/>=<sp/><ref refid="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" kindref="member" tooltip="Attempts to rendezvous with another thread to exchange the given node.">_vstack_rendezvous</ref>(stack,<sp/>node,<sp/>max,<sp/>&amp;success);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exchanged_node<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>returned<sp/>node<sp/>is<sp/>NULL<sp/>it<sp/>means<sp/>we<sp/>exchanged</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>with<sp/>a<sp/>popper<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_policy_record_success(&amp;policy);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>successful<sp/>exchange<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>exchanged<sp/>node<sp/>is<sp/>not<sp/>NULL,<sp/>it<sp/>means<sp/>we<sp/>exchanged<sp/>with</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>pusher,<sp/>in<sp/>that<sp/>case<sp/>we<sp/>need<sp/>to<sp/>reattempt<sp/>the<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>only<sp/>record<sp/>fail<sp/>on<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_policy_record_fail(&amp;policy);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="165" refid="elimination__stack_8h_1a87e410535f3825d08e7af840dacdccf0" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1a87e410535f3825d08e7af840dacdccf0" kindref="member" tooltip="Pops the top of the given stack.">vstack_pop</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>pop_success<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>max<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>policy;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(stack);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>range_policy_record_init(&amp;policy,<sp/><ref refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" kindref="member" tooltip="Configures the stack to have the given number of slots.">VSTACK_XCHG_SLOTS_COUNT</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>vstack_core_try_pop(&amp;stack-&gt;core,<sp/>&amp;pop_success);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pop_success)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>successful<sp/>pop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/><sp/>=<sp/>range_policy_get_range(&amp;policy);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/><ref refid="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" kindref="member" tooltip="Attempts to rendezvous with another thread to exchange the given node.">_vstack_rendezvous</ref>(stack,<sp/>NULL,<sp/>max,<sp/>&amp;success);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>success<sp/>means<sp/>the<sp/>exchange<sp/>is<sp/>complete<sp/>is<sp/>successful<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>returned<sp/>node<sp/>is<sp/>not<sp/>NULL<sp/>it<sp/>means<sp/>we<sp/>exchanged</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>with<sp/>a<sp/>pusher<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_policy_record_success(&amp;policy);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>successful<sp/>exchange<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>@note:<sp/>if<sp/>exchanged_node<sp/>is<sp/>NULL<sp/>this<sp/>means<sp/>we<sp/>exchanged<sp/>with</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>pop<sp/>and<sp/>thus<sp/>we<sp/>need<sp/>to<sp/>repeat<sp/>the<sp/>operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(!node);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>timeout<sp/>we<sp/>update<sp/>the<sp/>policy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_policy_record_fail(&amp;policy);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="221" refid="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1a099a1d12cfc7825cd309e8a8e05f6d7d" kindref="member" tooltip="Attempts to rendezvous with another thread to exchange the given node.">_vstack_rendezvous</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,<sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*node,<sp/>vuint32_t<sp/>max,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>*out_success)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structexchanger__s" kindref="compound">exchanger_t</ref><sp/>*exchanger<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/>*exchanged_node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>slot_idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>randomly<sp/>pick<sp/>a<sp/>slot<sp/>with<sp/>index<sp/>in<sp/>[0,<sp/>VSTACK_XCHG_SLOTS_COUNT]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>slot_idx<sp/>=<sp/>stack-&gt;rand_fun(0,<sp/>max);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(slot_idx<sp/>&lt;<sp/><ref refid="elimination__stack_8h_1a6fa705d5356a53b2a9ec40f71bc3ec85" kindref="member" tooltip="Configures the stack to have the given number of slots.">VSTACK_XCHG_SLOTS_COUNT</ref>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>exchanger<sp/>=<sp/>&amp;stack-&gt;elimination_array[slot_idx];</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>exchanged_node<sp/>=</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="exchanger_8h_1a4c82c47255f816da433d46fef8a18eb7" kindref="member" tooltip="Attempts to exchange the given object for a specified number of trials.">exchanger_xchg</ref>(exchanger,<sp/>node,<sp/><ref refid="elimination__stack_8h_1abf1f98173e960700920d4c32cd168182" kindref="member" tooltip="Configures the stack to try to exchange for the given number of trials max.">VSTACK_XCHG_MAX_TRIALS</ref>,<sp/>out_success);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>exchanged_node;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="elimination__stack_8h_1a4a4fb4d96c4d3ec20d59e2afb4a6eeb7" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1a4a4fb4d96c4d3ec20d59e2afb4a6eeb7" kindref="member" tooltip="Pops all remaining nodes in the stack and calls destroy on them.">vstack_destroy</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,<sp/>vstack_node_handler_t<sp/>destroy,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>vstack_core_destroy(&amp;stack-&gt;core,<sp/>destroy,<sp/>arg);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="elimination__stack_8h_1a2225a360d416b5eb2d0456856add012e" refkind="member"><highlight class="normal"><ref refid="elimination__stack_8h_1a2225a360d416b5eb2d0456856add012e" kindref="member" tooltip="Calls the given visitor function on each stack node.">_vstack_visit</ref>(<ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack,<sp/>vstack_node_handler_t<sp/>visitor,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>vstack_core_visit(&amp;stack-&gt;core,<sp/>visitor,<sp/>arg);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/stack/elimination_stack.h"/>
+  </compounddef>
+</doxygen>

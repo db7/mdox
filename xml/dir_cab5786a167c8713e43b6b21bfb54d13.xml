@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_cab5786a167c8713e43b6b21bfb54d13" kind="dir">
+    <compoundname>vsync/smr</compoundname>
+    <innerdir refid="dir_90612dc8bffca048317e7a9ca042e179">vsync/smr/internal</innerdir>
+    <innerfile refid="ebr_8h">ebr.h</innerfile>
+    <briefdescription>
+<para>Safe Memory Reclamation Schemes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/smr/"/>
+  </compounddef>
+</doxygen>

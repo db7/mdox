@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvatomicptr__s" kind="struct" language="C++" prot="public">
+    <compoundname>vatomicptr_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvatomicptr__s_1a06fdb5f8834e73f45a40a7531aec6910" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vatomicptr_s::_v</definition>
+        <argsstring></argsstring>
+        <name>_v</name>
+        <qualifiedname>vatomicptr_s::_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="44" column="10" bodyfile="vsync/atomic/internal/types.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/atomic/internal/types.h" line="43" column="1" bodyfile="vsync/atomic/internal/types.h" bodystart="43" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structvatomicptr__s_1a06fdb5f8834e73f45a40a7531aec6910" prot="public" virt="non-virtual"><scope>vatomicptr_s</scope><name>_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

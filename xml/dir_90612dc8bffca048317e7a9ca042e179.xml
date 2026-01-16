@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_90612dc8bffca048317e7a9ca042e179" kind="dir">
+    <compoundname>vsync/smr/internal</compoundname>
+    <innerfile refid="dbl__list_8h">dbl_list.h</innerfile>
+    <innerfile refid="smr__lock_8h">smr_lock.h</innerfile>
+    <innerfile refid="smr__node_8h">smr_node.h</innerfile>
+    <innerfile refid="smr__nodes__list_8h">smr_nodes_list.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/smr/internal/"/>
+  </compounddef>
+</doxygen>

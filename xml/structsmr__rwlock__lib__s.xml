@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsmr__rwlock__lib__s" kind="struct" language="C++" prot="public">
+    <compoundname>smr_rwlock_lib_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmr__rwlock__lib__s_1aa01881e99dfe5d8b679252ec3da20924" prot="public" static="no" mutable="no">
+        <type>smr_lock_fun_t</type>
+        <definition>smr_lock_fun_t smr_rwlock_lib_s::read_acq</definition>
+        <argsstring></argsstring>
+        <name>read_acq</name>
+        <qualifiedname>smr_rwlock_lib_s::read_acq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_lock.h" line="15" column="20" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__rwlock__lib__s_1ab1485ba89640489ce0e37cd27b92a99f" prot="public" static="no" mutable="no">
+        <type>smr_lock_fun_t</type>
+        <definition>smr_lock_fun_t smr_rwlock_lib_s::read_rel</definition>
+        <argsstring></argsstring>
+        <name>read_rel</name>
+        <qualifiedname>smr_rwlock_lib_s::read_rel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_lock.h" line="16" column="20" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__rwlock__lib__s_1ae5a7e42b8df10c3484e75aada056d1da" prot="public" static="no" mutable="no">
+        <type>smr_lock_fun_t</type>
+        <definition>smr_lock_fun_t smr_rwlock_lib_s::write_acq</definition>
+        <argsstring></argsstring>
+        <name>write_acq</name>
+        <qualifiedname>smr_rwlock_lib_s::write_acq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_lock.h" line="17" column="20" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__rwlock__lib__s_1a7802e45696bdab523b93b021960fdb5d" prot="public" static="no" mutable="no">
+        <type>smr_lock_fun_t</type>
+        <definition>smr_lock_fun_t smr_rwlock_lib_s::write_rel</definition>
+        <argsstring></argsstring>
+        <name>write_rel</name>
+        <qualifiedname>smr_rwlock_lib_s::write_rel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_lock.h" line="18" column="20" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__rwlock__lib__s_1aba246c93478d661349bb9f18e33ca989" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* smr_rwlock_lib_s::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <qualifiedname>smr_rwlock_lib_s::arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_lock.h" line="19" column="10" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/smr/internal/smr_lock.h" line="14" column="1" bodyfile="vsync/smr/internal/smr_lock.h" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structsmr__rwlock__lib__s_1aba246c93478d661349bb9f18e33ca989" prot="public" virt="non-virtual"><scope>smr_rwlock_lib_s</scope><name>arg</name></member>
+      <member refid="structsmr__rwlock__lib__s_1aa01881e99dfe5d8b679252ec3da20924" prot="public" virt="non-virtual"><scope>smr_rwlock_lib_s</scope><name>read_acq</name></member>
+      <member refid="structsmr__rwlock__lib__s_1ab1485ba89640489ce0e37cd27b92a99f" prot="public" virt="non-virtual"><scope>smr_rwlock_lib_s</scope><name>read_rel</name></member>
+      <member refid="structsmr__rwlock__lib__s_1ae5a7e42b8df10c3484e75aada056d1da" prot="public" virt="non-virtual"><scope>smr_rwlock_lib_s</scope><name>write_acq</name></member>
+      <member refid="structsmr__rwlock__lib__s_1a7802e45696bdab523b93b021960fdb5d" prot="public" virt="non-virtual"><scope>smr_rwlock_lib_s</scope><name>write_rel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

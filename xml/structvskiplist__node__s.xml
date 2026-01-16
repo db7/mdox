@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvskiplist__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>vskiplist_node_s</compoundname>
+    <includes refid="skiplist__types_8h" local="no">vsync/map/internal/skiplist/skiplist_types.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvskiplist__node__s_1a23e83982816787fa98a522438aeb841c" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t vskiplist_node_s::non_snipped_level</definition>
+        <argsstring></argsstring>
+        <name>non_snipped_level</name>
+        <qualifiedname>vskiplist_node_s::non_snipped_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="33" column="17" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__node__s_1ae9f8e189ffe82b08216a8ca8f7bc814f" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vskiplist_node_s::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>vskiplist_node_s::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="34" column="13" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvskiplist__node__s_1ab15c203e54d487f2db82231c2d723345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vskiplist_node_s::vatomicptr_markable</definition>
+        <argsstring>(vskiplist_node_t *) next[]</argsstring>
+        <name>vatomicptr_markable</name>
+        <qualifiedname>vskiplist_node_s::vatomicptr_markable</qualifiedname>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="35" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>&gt; <bold>Note:</bold> when embedding <computeroutput>vskiplist_node_t</computeroutput> in a container struct, place it as the last field. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="1">
+        <label>vskiplist_node_s</label>
+        <link refid="structvskiplist__node__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>non_snipped_level</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/internal/skiplist/skiplist_types.h" line="32" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structvskiplist__node__s_1ae9f8e189ffe82b08216a8ca8f7bc814f" prot="public" virt="non-virtual"><scope>vskiplist_node_s</scope><name>height</name></member>
+      <member refid="structvskiplist__node__s_1a23e83982816787fa98a522438aeb841c" prot="public" virt="non-virtual"><scope>vskiplist_node_s</scope><name>non_snipped_level</name></member>
+      <member refid="structvskiplist__node__s_1ab15c203e54d487f2db82231c2d723345" prot="public" virt="non-virtual"><scope>vskiplist_node_s</scope><name>vatomicptr_markable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

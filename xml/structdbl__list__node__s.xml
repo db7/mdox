@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structdbl__list__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>dbl_list_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdbl__list__node__s_1a416d553acfb984f62914e1056aa93152" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref> *</type>
+        <definition>struct dbl_list_node_s* dbl_list_node_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>dbl_list_node_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="13" column="26" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdbl__list__node__s_1ac5ecc6910088619e3b429b34f19b3580" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref> *</type>
+        <definition>struct dbl_list_node_s* dbl_list_node_s::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <qualifiedname>dbl_list_node_s::prev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="14" column="26" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dbl_list_node_s</label>
+        <link refid="structdbl__list__node__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/internal/dbl_list.h" line="12" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structdbl__list__node__s_1a416d553acfb984f62914e1056aa93152" prot="public" virt="non-virtual"><scope>dbl_list_node_s</scope><name>next</name></member>
+      <member refid="structdbl__list__node__s_1ac5ecc6910088619e3b429b34f19b3580" prot="public" virt="non-virtual"><scope>dbl_list_node_s</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

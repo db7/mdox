@@ -1,0 +1,1162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="cached__pool_8h" kind="file" language="C++">
+    <compoundname>cached_pool.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="34">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcached__pool__config__s" prot="public">cached_pool_config_s</innerclass>
+    <innerclass refid="structcached__pool__buffer__s" prot="public">cached_pool_buffer_s</innerclass>
+    <innerclass refid="structcached__pool__vunit__s" prot="public">cached_pool_vunit_s</innerclass>
+    <innerclass refid="structcached__pool__s" prot="public">cached_pool_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="cached__pool_8h_1ab43cd69a772d69dfb97f0599a5093d63" prot="public" static="no">
+        <name>CACHED_POOL_MAX_THRESHOLD_FACTOR</name>
+        <initializer>2U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="58" column="9" bodyfile="vsync/pool/cached_pool.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="cached__pool_8h_1a991e0cded95be287f00c403e6a1ee9d7" prot="public" static="no">
+        <name>cached_pool_memsize</name>
+        <param><defname>thread_num</defname></param>
+        <param><defname>entry_num</defname></param>
+        <param><defname>entry_size</defname></param>
+        <initializer>    (sizeof(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref>) + sizeof(<ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref>) * (thread_num) +      \
+     sizeof(<ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref>) + sizeof(void *) * (thread_num)*2 +          \
+     (thread_num) * ((((entry_num)-1U) / (thread_num) + 1U) &lt;&lt; 1U) *           \
+         ((entry_size) + sizeof(void *)))</initializer>
+        <briefdescription>
+<para>Calculate the needed memory space for creating a pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thread_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maxinum thread number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimal number of entires </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of each entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>needed memory space (in bytes) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="202" column="9" bodyfile="vsync/pool/cached_pool.h" bodystart="202" bodyend="206"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="cached__pool_8h_1a0d43af29999cdc01287f2f293814175d" prot="public" static="no">
+        <type>struct <ref refid="structcached__pool__config__s" kindref="compound">cached_pool_config_s</ref></type>
+        <definition>typedef struct cached_pool_config_s cached_pool_config_t</definition>
+        <argsstring></argsstring>
+        <name>cached_pool_config_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="32" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cached__pool_8h_1a3a79a4b4426204a3102fa85bcbed45d4" prot="public" static="no">
+        <type>vuintptr_t</type>
+        <definition>typedef vuintptr_t cached_pool_entry_t</definition>
+        <argsstring></argsstring>
+        <name>cached_pool_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="34" column="20" bodyfile="vsync/pool/cached_pool.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cached__pool_8h_1a42a80275c94f66cc767e7428fb1b14a7" prot="public" static="no">
+        <type>struct <ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_s</ref></type>
+        <definition>typedef struct cached_pool_buffer_s cached_pool_buffer_t</definition>
+        <argsstring></argsstring>
+        <name>cached_pool_buffer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="42" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cached__pool_8h_1a6ad430fed3944b484e6ce40bcae6d585" prot="public" static="no">
+        <type>struct <ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_s</ref></type>
+        <definition>typedef struct cached_pool_vunit_s cached_pool_vunit_t</definition>
+        <argsstring></argsstring>
+        <name>cached_pool_vunit_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="49" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="cached__pool_8h_1a96b2a08ef9560cd683a16d0ac2156ab4" prot="public" static="no">
+        <type>struct <ref refid="structcached__pool__s" kindref="compound">cached_pool_s</ref></type>
+        <definition>typedef struct cached_pool_s cached_pool_t</definition>
+        <argsstring></argsstring>
+        <name>cached_pool_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="56" column="32"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="cached__pool_8h_1a19b75264107514bebd479f428775db78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cached_pool_entry_t *</type>
+        <definition>static cached_pool_entry_t * _cached_pool_entry_get_next</definition>
+        <argsstring>(cached_pool_entry_t *e)</argsstring>
+        <name>_cached_pool_entry_get_next</name>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="62" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a09cfbe093ce3c5b82d7e4c10ef935dc6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _cached_pool_entry_set_next</definition>
+        <argsstring>(cached_pool_entry_t *entry, cached_pool_entry_t *next)</argsstring>
+        <name>_cached_pool_entry_set_next</name>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>entry</declname>
+        </param>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="68" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a96b86718306322a345fa022c5af69c05" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cached_pool_entry_t *</type>
+        <definition>static cached_pool_entry_t * _cached_pool_entry_find</definition>
+        <argsstring>(void *start, vsize_t size, vsize_t idx)</argsstring>
+        <name>_cached_pool_entry_find</name>
+        <param>
+          <type>void *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="75" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1abe094b5a32a10ca6644a8740bb339f7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * _cached_pool_entry_to_addr</definition>
+        <argsstring>(cached_pool_entry_t *entry)</argsstring>
+        <name>_cached_pool_entry_to_addr</name>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="81" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1ac226c47ab826c5c25cc35f09ae6da7c0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cached_pool_entry_t *</type>
+        <definition>static cached_pool_entry_t * _cached_pool_entry_from_addr</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>_cached_pool_entry_from_addr</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="87" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a7d1640ce248a4cb3d7eb00efa4929408" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _cached_pool_buffer_init</definition>
+        <argsstring>(cached_pool_buffer_t *buf)</argsstring>
+        <name>_cached_pool_buffer_init</name>
+        <param>
+          <type><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="94" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="94" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1ae73591de1a0b2b9b4c290099425a1af0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cached_pool_entry_t *</type>
+        <definition>static cached_pool_entry_t * _cached_pool_buffer_alloc</definition>
+        <argsstring>(cached_pool_t *a, cached_pool_buffer_t *buf)</argsstring>
+        <name>_cached_pool_buffer_alloc</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="103" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="103" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1ad8d75fbc0ea9171f9365fba1321dc176" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _cached_pool_buffer_free</definition>
+        <argsstring>(cached_pool_t *a, cached_pool_buffer_t *buf, cached_pool_entry_t *es)</argsstring>
+        <name>_cached_pool_buffer_free</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>es</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="125" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="125" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a05224bafc032d6d15aa5a5dae822ac8c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _cached_pool_vunit_init</definition>
+        <argsstring>(cached_pool_t *a, cached_pool_vunit_t *u, cached_pool_buffer_t *b, cached_pool_entry_t *es)</argsstring>
+        <name>_cached_pool_vunit_init</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>cached_pool_entry_t *</type>
+          <declname>es</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="143" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="143" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a65fc62cc62d25eeceb5517bf92ee80bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * _cached_pool_vunit_alloc</definition>
+        <argsstring>(cached_pool_t *a, cached_pool_vunit_t *u)</argsstring>
+        <name>_cached_pool_vunit_alloc</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="153" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="153" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1aa59e0d0bcf3dbec9f182694dd4a066d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _cached_pool_vunit_free</definition>
+        <argsstring>(cached_pool_t *a, cached_pool_vunit_t *u, void *p)</argsstring>
+        <name>_cached_pool_vunit_free</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="169" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="169" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1af959cb3de4c5c14dcef88e135fbd2345" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref> *</type>
+        <definition>static cached_pool_vunit_t * _cached_pool_vunit_find</definition>
+        <argsstring>(cached_pool_t *a, vuint32_t id)</argsstring>
+        <name>_cached_pool_vunit_find</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="187" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1af306b09b09b94eb8a69d484ad2a54f69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+        <definition>static cached_pool_t * cached_pool_init</definition>
+        <argsstring>(void *buf, vuint32_t thread_num, vuint32_t entry_num, vsize_t entry_size)</argsstring>
+        <name>cached_pool_init</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>thread_num</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>entry_num</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>entry_size</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make sure the buffer has enough size (calculated by cached_pool_memsize)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>thread_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maxinum thread number </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimal number of entires </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of each entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a pointer of the pool structure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="221" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="221" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a35268432dc607db306b50d528c99aa98" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * cached_pool_alloc</definition>
+        <argsstring>(cached_pool_t *a, vuint32_t id)</argsstring>
+        <name>cached_pool_alloc</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Allocate an entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cannot be called from different threads with the same id</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the pool data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>thread ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of the allocated entry (NULL if there is no space) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="294" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="cached__pool_8h_1a119e07f63a8d6d5e532618644496d2a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cached_pool_free</definition>
+        <argsstring>(cached_pool_t *a, vuint32_t id, void *p)</argsstring>
+        <name>cached_pool_free</name>
+        <param>
+          <type><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Free an entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Cannot be called from different threads with the same id</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the pool data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>thread ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the allocated entry </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="310" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="310" bodyend="313"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Multi-threaded, fixed size, and fixed capacity memory pool. </para>
+    </briefdescription>
+    <detaileddescription>
+<sect3 id="cached__pool_8h_1autotoc_md9">
+<title>Performance:</title>
+<para><itemizedlist>
+<listitem><para>No atomic operations in the fast path of alloc/free</para>
+</listitem><listitem><para>Increasing number of entries may have a better performance</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename="eg_cached_pool.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="cached__pool_8h" kindref="compound" tooltip="Multi-threaded, fixed size, and fixed capacity memory pool.">vsync/pool/cached_pool.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CACHEDP_NUM_ENTRIES<sp/>4096U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CACHEDP_MAX_THREAD<sp/><sp/>32U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*g_pool;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*g_buff;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">entry_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>x;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>y;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>entry_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CACHEDP_ENTRY_SIZE<sp/>sizeof(entry_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/>=<sp/><ref refid="cached__pool_8h_1a991e0cded95be287f00c403e6a1ee9d7" kindref="member" tooltip="Calculate the needed memory space for creating a pool.">cached_pool_memsize</ref>(CACHEDP_MAX_THREAD,<sp/>CACHEDP_NUM_ENTRIES,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CACHEDP_ENTRY_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_buff<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_pool<sp/>=<sp/><ref refid="cached__pool_8h_1af306b09b09b94eb8a69d484ad2a54f69" kindref="member" tooltip="Initialize the pool.">cached_pool_init</ref>(g_buff,<sp/>CACHEDP_MAX_THREAD,<sp/>CACHEDP_NUM_ENTRIES,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CACHEDP_ENTRY_SIZE);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">deinit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(g_pool);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>tid<sp/><sp/>=<sp/>(vuint64_t)(arg);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry_t<sp/>*entry<sp/>=<sp/><ref refid="cached__pool_8h_1a35268432dc607db306b50d528c99aa98" kindref="member" tooltip="Allocate an entry.">cached_pool_alloc</ref>(g_pool,<sp/>tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry-&gt;x<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>123;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry-&gt;y<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>456;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cached__pool_8h_1a119e07f63a8d6d5e532618644496d2a3" kindref="member" tooltip="Free an entry.">cached_pool_free</ref>(g_pool,<sp/>tid,<sp/>entry);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>init();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[CACHEDP_MAX_THREAD];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint64_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CACHEDP_MAX_THREAD;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint64_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CACHEDP_MAX_THREAD;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>deinit();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect3>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_CACHEDPOOL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_CACHEDPOOL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structcached__pool__config__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcached__pool__config__s" kindref="compound">cached_pool_config_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>entry_space;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>buffer_mask;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold_init;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold_link;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold_max;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structcached__pool__config__s" kindref="compound">cached_pool_config_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuintptr_t<sp/>cached_pool_entry_t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structcached__pool__buffer__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>phead<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>ptail<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>chead<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>ctail<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*nodes[]<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structcached__pool__vunit__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cnt;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*buf;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*top;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*mid;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structcached__pool__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcached__pool__s" kindref="compound">cached_pool_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcached__pool__config__s" kindref="compound">cached_pool_config_t</ref><sp/>conf<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*buf<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*entries<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>vunits[]<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CACHED_POOL_MAX_THRESHOLD_FACTOR<sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>cached_pool_entry_t<sp/>*</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">_cached_pool_entry_get_next(cached_pool_entry_t<sp/>*e)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cached_pool_entry_t<sp/>*)(*e);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">_cached_pool_entry_set_next(cached_pool_entry_t<sp/>*entry,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*next)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>*entry<sp/>=<sp/>(cached_pool_entry_t)next;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>cached_pool_entry_t<sp/>*</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">_cached_pool_entry_find(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*start,<sp/>vsize_t<sp/>size,<sp/>vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cached_pool_entry_t<sp/>*)(((vuintptr_t)start)<sp/>+<sp/>size<sp/>*<sp/>idx);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">_cached_pool_entry_to_addr(cached_pool_entry_t<sp/>*entry)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cached_pool_entry_t<sp/>*)(((vuintptr_t)entry)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>cached_pool_entry_t<sp/>*</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">_cached_pool_entry_from_addr(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cached_pool_entry_t<sp/>*)(((vuintptr_t)p)<sp/>-<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">_cached_pool_buffer_init(<ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*buf)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;buf-&gt;phead,<sp/>0);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;buf-&gt;ptail,<sp/>0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;buf-&gt;chead,<sp/>0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;buf-&gt;ctail,<sp/>0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>cached_pool_entry_t<sp/>*</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">_cached_pool_buffer_alloc(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*buf)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>ch<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>pt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(a);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(buf);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ch<sp/>=<sp/><ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;buf-&gt;chead);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>=<sp/><ref refid="core__u64_8h_1ab89b9411ca9f0fb17f4506129735d173" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_acq</ref>(&amp;buf-&gt;ptail);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ch<sp/>==<sp/>pt)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__u64_8h_1ae6710ca485ab82c6a28c5e4a6c03f48a" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic64_cmpxchg_rlx</ref>(&amp;buf-&gt;chead,<sp/>ch,<sp/>ch<sp/>+<sp/>1)<sp/>!=<sp/>ch);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*es<sp/>=<sp/>buf-&gt;nodes[ch<sp/>&amp;<sp/>a-&gt;conf.buffer_mask];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;buf-&gt;ctail)<sp/>!=<sp/>ch)<sp/>{}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a22c81a0cc47810f80cba86100362a587" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rel</ref>(&amp;buf-&gt;ctail,<sp/>ch<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>es;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">_cached_pool_buffer_free(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*buf,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*es)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>ph<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(a);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(buf);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ph<sp/>=<sp/><ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;buf-&gt;phead);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__u64_8h_1ae6710ca485ab82c6a28c5e4a6c03f48a" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic64_cmpxchg_rlx</ref>(&amp;buf-&gt;phead,<sp/>ph,<sp/>ph<sp/>+<sp/>1)<sp/>!=<sp/>ph);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>buf-&gt;nodes[ph<sp/>&amp;<sp/>a-&gt;conf.buffer_mask]<sp/>=<sp/>es;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;buf-&gt;ptail)<sp/>!=<sp/>ph)<sp/>{}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a22c81a0cc47810f80cba86100362a587" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rel</ref>(&amp;buf-&gt;ptail,<sp/>ph<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">_cached_pool_vunit_init(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>*u,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*b,<sp/>cached_pool_entry_t<sp/>*es)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;cnt<sp/>=<sp/>a-&gt;conf.threshold_init;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;buf<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;top<sp/>=<sp/>es;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;mid<sp/>=<sp/>es;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">_cached_pool_vunit_alloc(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>*u)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*es<sp/>=<sp/>u-&gt;top;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(!es))<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>es<sp/>=<sp/>_cached_pool_buffer_alloc(a,<sp/>u-&gt;buf);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(!es))<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;cnt<sp/>=<sp/>a-&gt;conf.threshold_init;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;top<sp/>=<sp/>_cached_pool_entry_get_next(es);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;cnt--;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_cached_pool_entry_to_addr(es);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">_cached_pool_vunit_free(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>*u,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*e<sp/>=<sp/>_cached_pool_entry_from_addr(p);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(e,<sp/>u-&gt;top);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;top<sp/>=<sp/>e;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>u-&gt;cnt++;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(u-&gt;cnt<sp/>==<sp/>a-&gt;conf.threshold_link))<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;mid<sp/>=<sp/>u-&gt;top;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(u-&gt;cnt<sp/>==<sp/>a-&gt;conf.threshold_max))<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;cnt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>a-&gt;conf.threshold_init;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*es<sp/>=<sp/>_cached_pool_entry_get_next(u-&gt;mid);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(u-&gt;mid,<sp/>NULL);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_buffer_free(a,<sp/>u-&gt;buf,<sp/>es);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">_cached_pool_vunit_find(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref><sp/>*)&amp;a-&gt;vunits[id];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="cached__pool_8h_1a991e0cded95be287f00c403e6a1ee9d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>cached_pool_memsize(thread_num,<sp/>entry_num,<sp/>entry_size)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(sizeof(cached_pool_t)<sp/>+<sp/>sizeof(cached_pool_vunit_t)<sp/>*<sp/>(thread_num)<sp/>+<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>sizeof(cached_pool_buffer_t)<sp/>+<sp/>sizeof(void<sp/>*)<sp/>*<sp/>(thread_num)*2<sp/>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>(thread_num)<sp/>*<sp/>((((entry_num)-1U)<sp/>/<sp/>(thread_num)<sp/>+<sp/>1U)<sp/>&lt;&lt;<sp/>1U)<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((entry_size)<sp/>+<sp/>sizeof(void<sp/>*)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="221" refid="cached__pool_8h_1af306b09b09b94eb8a69d484ad2a54f69" refkind="member"><highlight class="normal"><ref refid="cached__pool_8h_1af306b09b09b94eb8a69d484ad2a54f69" kindref="member" tooltip="Initialize the pool.">cached_pool_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/>vuint32_t<sp/>thread_num,<sp/>vuint32_t<sp/>entry_num,</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>entry_size)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cached_pool_head<sp/><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>buffer_head<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>buffer_size<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>buffer_head<sp/>+<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<sp/>*<sp/>thread_num<sp/>*<sp/>2);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>node_num<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(v_pow2_round_up(thread_num<sp/>*<sp/>2));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>((entry_num<sp/>-<sp/>1)<sp/>/<sp/>thread_num<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>vunit_size<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>vunits_size<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>vunit_size<sp/>*<sp/>thread_num;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>vunit_addr_offset<sp/>=<sp/>cached_pool_head;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>buf_addr_offset<sp/><sp/><sp/>=<sp/>vunit_addr_offset<sp/>+<sp/>vunits_size;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>entry_addr_offset<sp/>=<sp/>buf_addr_offset<sp/>+<sp/>buffer_size;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a<sp/>=<sp/>(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*)buf;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;buf<sp/><sp/><sp/><sp/><sp/>=<sp/>(<ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref><sp/>*)(((vuintptr_t)a)<sp/>+<sp/>buf_addr_offset);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;entries<sp/>=<sp/>(cached_pool_entry_t<sp/>*)(((vuintptr_t)a)<sp/>+<sp/>entry_addr_offset);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;conf.entry_space<sp/><sp/><sp/><sp/>=<sp/>entry_size<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;conf.buffer_mask<sp/><sp/><sp/><sp/>=<sp/>node_num<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;conf.threshold_init<sp/>=<sp/>threshold;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;conf.threshold_link<sp/>=<sp/>threshold<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;conf.threshold_max<sp/><sp/>=<sp/>threshold<sp/>*<sp/>CACHED_POOL_MAX_THRESHOLD_FACTOR;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>_cached_pool_buffer_init(a-&gt;buf);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>0;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>thread_num;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">++)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>start<sp/><sp/>=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>*<sp/>a-&gt;conf.threshold_max;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>middle<sp/>=<sp/>start<sp/>+<sp/>a-&gt;conf.threshold_init;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>end<sp/><sp/><sp/><sp/>=<sp/>middle<sp/>+<sp/>a-&gt;conf.threshold_init;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_vunit_init(</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a,<sp/>&amp;a-&gt;vunits[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">],<sp/>a-&gt;buf,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_find(a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>start));</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint32_t<sp/>idx<sp/>=<sp/>start;<sp/>idx<sp/>&lt;<sp/>middle<sp/>-<sp/>1;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*curr<sp/>=</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_find(a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>idx);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*next<sp/>=<sp/>_cached_pool_entry_find(</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>idx<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(curr,<sp/>next);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(_cached_pool_entry_find(a-&gt;entries,</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a-&gt;conf.entry_space,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>middle<sp/>-<sp/>1),</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_buffer_free(</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a,<sp/>a-&gt;buf,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_find(a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>middle));</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint32_t<sp/>idx<sp/>=<sp/>middle;<sp/>idx<sp/>&lt;<sp/>end<sp/>-<sp/>1;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*curr<sp/>=</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_find(a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>idx);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cached_pool_entry_t<sp/>*next<sp/>=<sp/>_cached_pool_entry_find(</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>idx<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(curr,<sp/>next);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_set_next(</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cached_pool_entry_find(a-&gt;entries,<sp/>a-&gt;conf.entry_space,<sp/>end<sp/>-<sp/>1),</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="294" refid="cached__pool_8h_1a35268432dc607db306b50d528c99aa98" refkind="member"><highlight class="normal"><ref refid="cached__pool_8h_1a35268432dc607db306b50d528c99aa98" kindref="member" tooltip="Allocate an entry.">cached_pool_alloc</ref>(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_cached_pool_vunit_alloc(a,<sp/>_cached_pool_vunit_find(a,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="cached__pool_8h_1a119e07f63a8d6d5e532618644496d2a3" refkind="member"><highlight class="normal"><ref refid="cached__pool_8h_1a119e07f63a8d6d5e532618644496d2a3" kindref="member" tooltip="Free an entry.">cached_pool_free</ref>(<ref refid="structcached__pool__s" kindref="compound">cached_pool_t</ref><sp/>*a,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p)</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>_cached_pool_vunit_free(a,<sp/>_cached_pool_vunit_find(a,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">),<sp/>p);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>CACHED_POOL_MAX_THRESHOLD_FACTOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/pool/cached_pool.h"/>
+  </compounddef>
+</doxygen>

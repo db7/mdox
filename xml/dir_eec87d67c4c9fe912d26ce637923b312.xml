@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_eec87d67c4c9fe912d26ce637923b312" kind="dir">
+    <compoundname>vsync/stack/internal</compoundname>
+    <innerfile refid="range__policy_8h">range_policy.h</innerfile>
+    <innerfile refid="stack__core_8h">stack_core.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/stack/internal/"/>
+  </compounddef>
+</doxygen>

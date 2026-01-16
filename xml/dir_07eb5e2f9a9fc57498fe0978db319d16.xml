@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_07eb5e2f9a9fc57498fe0978db319d16" kind="dir">
+    <compoundname>vsync/atomic/internal</compoundname>
+    <innerfile refid="arm32__v7_8h">arm32_v7.h</innerfile>
+    <innerfile refid="arm32__v8_8h">arm32_v8.h</innerfile>
+    <innerfile refid="arm64_8h">arm64.h</innerfile>
+    <innerfile refid="arm64__llsc_8h">arm64_llsc.h</innerfile>
+    <innerfile refid="arm64__lse_8h">arm64_lse.h</innerfile>
+    <innerfile refid="arm64__lxe_8h">arm64_lxe.h</innerfile>
+    <innerfile refid="builtins_8h">builtins.h</innerfile>
+    <innerfile refid="internal_2dispatch_8h">dispatch.h</innerfile>
+    <innerfile refid="fallback_8h">fallback.h</innerfile>
+    <innerfile refid="atomic_2internal_2macros_8h">macros.h</innerfile>
+    <innerfile refid="remap__fnc__rlx_8h">remap_fnc_rlx.h</innerfile>
+    <innerfile refid="remap__fnc__sc_8h">remap_fnc_sc.h</innerfile>
+    <innerfile refid="remap__ptr__rlx_8h">remap_ptr_rlx.h</innerfile>
+    <innerfile refid="remap__ptr__sc_8h">remap_ptr_sc.h</innerfile>
+    <innerfile refid="remap__sz__rlx_8h">remap_sz_rlx.h</innerfile>
+    <innerfile refid="remap__sz__sc_8h">remap_sz_sc.h</innerfile>
+    <innerfile refid="remap__u16__rlx_8h">remap_u16_rlx.h</innerfile>
+    <innerfile refid="remap__u16__sc_8h">remap_u16_sc.h</innerfile>
+    <innerfile refid="remap__u32__rlx_8h">remap_u32_rlx.h</innerfile>
+    <innerfile refid="remap__u32__sc_8h">remap_u32_sc.h</innerfile>
+    <innerfile refid="remap__u64__rlx_8h">remap_u64_rlx.h</innerfile>
+    <innerfile refid="remap__u64__sc_8h">remap_u64_sc.h</innerfile>
+    <innerfile refid="remap__u8__rlx_8h">remap_u8_rlx.h</innerfile>
+    <innerfile refid="remap__u8__sc_8h">remap_u8_sc.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <innerfile refid="undef_8h">undef.h</innerfile>
+    <innerfile refid="x86_8h">x86.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/atomic/internal/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structticketlock__s" kind="struct" language="C++" prot="public">
+    <compoundname>ticketlock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structticketlock__s_1a1ee6e2b5219c0076e0cad21b5f2e6abc" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t ticketlock_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>ticketlock_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="23" column="17" bodyfile="vsync/spinlock/ticketlock.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structticketlock__s_1a61bf0b5a847db0e40df45ccd79c8d2aa" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t ticketlock_s::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <qualifiedname>ticketlock_s::owner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="24" column="17" bodyfile="vsync/spinlock/ticketlock.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ticketlock_s</label>
+        <link refid="structticketlock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/ticketlock.h" line="22" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="22" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structticketlock__s_1a1ee6e2b5219c0076e0cad21b5f2e6abc" prot="public" virt="non-virtual"><scope>ticketlock_s</scope><name>next</name></member>
+      <member refid="structticketlock__s_1a61bf0b5a847db0e40df45ccd79c8d2aa" prot="public" virt="non-virtual"><scope>ticketlock_s</scope><name>owner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

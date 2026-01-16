@@ -1,0 +1,1120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vqueue__prio__stack__tree__based_8h" kind="file" language="C++">
+    <compoundname>vqueue_prio_stack_tree_based.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <includes refid="elimination__stack_8h" local="no">vsync/stack/elimination_stack.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="43">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="34">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>vsync/stack/internal/range_policy.h</label>
+        <link refid="range__policy_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvqueue__prio__tree__node__s" prot="public">vqueue_prio_tree_node_s</innerclass>
+    <innerclass refid="structvqueue__prio__s" prot="public">vqueue_prio_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1a99877a5255e3d94b03b2f372a2525782" prot="public" static="no">
+        <name>VQUEUE_PRIO_PRIORITY_RANGE</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+<para><computeroutput>VQUEUE_PRIO_PRIORITY_RANGE</computeroutput> configures the queue to accept priorities from [0:VQUEUE_PRIO_PRIORITY_RANGE-1] </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> <computeroutput>VQUEUE_PRIO_PRIORITY_RANGE</computeroutput> must be power of two. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="49" column="13" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1affa19bd9c812935c1de7852e4d31fc60" prot="public" static="no">
+        <name>VQUEUE_PRIO_STACK_TREE_LEN</name>
+        <initializer>((<ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member">VQUEUE_PRIO_PRIORITY_RANGE</ref> * 2U) - 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="54" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1a3d73dee7fd3ced9c4094851eb5a6399c" prot="public" static="no">
+        <name>VQUEUE_PRIO_ROOT_IDX</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="73" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1a9fccc6ac31fecf481e98be86e6a77f6c" prot="public" static="no">
+        <name>VQUEUE_PRIO_GET_LEAF_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>    ((_i_) + (<ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member">VQUEUE_PRIO_PRIORITY_RANGE</ref> - 1U))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="75" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="75" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1a1bc59c8d821438ffbfae7ec08e54db30" prot="public" static="no">
+        <name>VQUEUE_PRIO_GET_LEFT_CHILD_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>(((_i_)*2U) + 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="78" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1a3a2940e0df1efe9dedb2c0c85c0de6e6" prot="public" static="no">
+        <name>VQUEUE_PRIO_GET_RIGHT_CHILD_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>(((_i_)*2U) + 2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="80" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__stack__tree__based_8h_1ac7563e9d898db1a60d40dac6d892701b" prot="public" static="no">
+        <name>VQUEUE_PRIO_GET_PARENT_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>(((_i_)-1U) / 2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="82" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vqueue__prio__stack__tree__based_8h_1aff77a5cb9c286bf37bff88e508dd237f" prot="public" static="no">
+        <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref></type>
+        <definition>typedef vstack_node_t vqueue_prio_node_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="56" column="23" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__stack__tree__based_8h_1a329e1e2b79268d8c8330619b0d6c36bb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vqueue_prio_handle_node_t) (vqueue_prio_node_t *node, void *arg)</definition>
+        <argsstring>)(vqueue_prio_node_t *node, void *arg)</argsstring>
+        <name>vqueue_prio_handle_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="58" column="9" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__stack__tree__based_8h_1a5fe9912e02bc22e4959a4edbe56b96fd" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_s</ref></type>
+        <definition>typedef struct vqueue_prio_tree_node_s vqueue_prio_tree_node_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_tree_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="63" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__stack__tree__based_8h_1a186936058de6befe63c3f1b08a271126" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref></type>
+        <definition>typedef struct vqueue_prio_s vqueue_prio_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="70" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1ac221d4329cbd2f65177d672ecb61d254" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_tree_init</definition>
+        <argsstring>(vqueue_prio_t *pqueue, backoff_rand_fun_t rand_cb)</argsstring>
+        <name>_vqueue_prio_tree_init</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+          <declname>rand_cb</declname>
+          <defname>rand_fun</defname>
+        </param>
+        <briefdescription>
+<para>Private functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes the tree of counters into an array.</para>
+<para>Assume we have priority range of N=4 [0...3] We need (N*2 -1)=7 nodes for the tree The nodes reside into an array. e.g. this tree A / \ B C / \ / \ D E F G will be represented in an array as follows: A, B, C, D, E, F, G with indexes 0, ..., 7</para>
+<para>&gt; <bold>Note:</bold> only leaf nodes D, E, F, G hold references to stack bins and there the actual nodes associated with the priorities reside <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rand_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer to a function that generates a random number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="289" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="289" bodyend="312" declfile="vsync/queue/vqueue_prio_stack_tree_based.h" declline="87" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1ac1d11e3b854cdae91992646a1f30b661" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _vqueue_prio_is_leaf_node</definition>
+        <argsstring>(vqueue_prio_tree_node_t *node)</argsstring>
+        <name>_vqueue_prio_is_leaf_node</name>
+        <param>
+          <type><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the given tree node is a leaf node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_node_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the given node is a leaf </para>
+</simplesect>
+<simplesect kind="return"><para>false the given node isn&apos;t a leaf </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="321" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="321" bodyend="324" declfile="vsync/queue/vqueue_prio_stack_tree_based.h" declline="89" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1ac4f1d4163c483bcfaec9beb57a5d170d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint32_t</type>
+        <definition>static vuint32_t _vqueue_prio_bounded_get_dec</definition>
+        <argsstring>(vatomic32_t *a)</argsstring>
+        <name>_vqueue_prio_bounded_get_dec</name>
+        <param>
+          <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Decrements the given vatomic32_t iff it is not zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint32_t the value before decrementing the counter </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="244" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="244" bodyend="266" declfile="vsync/queue/vqueue_prio_stack_tree_based.h" declline="90" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1ad5104d99cddb6851719ab631f44fa951" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_init</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t retire_cb, void *retire_cb_arg, backoff_rand_fun_t rand_fun)</argsstring>
+        <name>vqueue_prio_init</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>retire_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>retire_cb_arg</declname>
+        </param>
+        <param>
+          <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+          <declname>rand_fun</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function used for retiring detached nodes to the SMR. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second parameter of <computeroutput>retire_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rand_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function pointer to a function that generates a random number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="106" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="106" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_destroy</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t destroy_cb, void *args)</argsstring>
+        <name>vqueue_prio_destroy</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>destroy_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Calls the given callback on all remaining nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Nodes can be freed in <computeroutput>destroy_cb</computeroutput></para>
+<para>&gt; <bold>Note:</bold> this is not thread safe and must be called if and only if all threads are done accessing the queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of a callback function to call on each remaining node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>destroy_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="137" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1a99e4a6b4aef3357fe0265a721d49d21f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_add</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_node_t *pnode, vsize_t priority)</argsstring>
+        <name>vqueue_prio_add</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+          <declname>pnode</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Enqueues the given <computeroutput>node</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority associated with <computeroutput>node</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="153" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="153" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1a33fbeb8a0d35265aba6527370afb49eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+        <definition>static vqueue_prio_node_t * vqueue_prio_remove_min</definition>
+        <argsstring>(vqueue_prio_t *pqueue)</argsstring>
+        <name>vqueue_prio_remove_min</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <briefdescription>
+<para>Dequeues a node with highest priority available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vqueue_prio_node_t* address of dequeued object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="191" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="191" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__stack__tree__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_visit</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t visitor, void *arg)</argsstring>
+        <name>_vqueue_prio_visit</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Calls the given <computeroutput>visitor</computeroutput> function on each pqueue node object residing the given <computeroutput>pqueue</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the function to call on every visited node </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="226" column="1" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="226" bodyend="236"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_PRIO_TREE_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_TREE_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="elimination__stack_8h" kindref="compound" tooltip="Unbounded lock-free stack with elimination backoff.">vsync/stack/elimination_stack.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VQUEUE_PRIO_PRIORITY_RANGE)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VQUEUE_PRIO_PRIORITY_RANGE<sp/>16U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>calculate<sp/>how<sp/>many<sp/>tree<sp/>nodes<sp/>are<sp/>needed<sp/>to<sp/>support<sp/>the<sp/>given<sp/>priority</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>range<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_STACK_TREE_LEN<sp/>((VQUEUE_PRIO_PRIORITY_RANGE<sp/>*<sp/>2U)<sp/>-<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vqueue_prio_handle_node_t)(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structvqueue__prio__tree__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>counter;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*bin;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>tree[VQUEUE_PRIO_STACK_TREE_LEN];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>leaves[<ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member" tooltip="VQUEUE_PRIO_PRIORITY_RANGE configures the queue to accept priorities from [0:VQUEUE_PRIO_PRIORITY_RAN...">VQUEUE_PRIO_PRIORITY_RANGE</ref>];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_handle_node_t<sp/>retire_cb;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*retire_cb_arg;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ROOT<sp/>index<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_ROOT_IDX<sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>maps<sp/>the<sp/>given<sp/>priority<sp/>`_i_`<sp/>to<sp/>a<sp/>leaf<sp/>index<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_GET_LEAF_IDX(_i_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((_i_)<sp/>+<sp/>(VQUEUE_PRIO_PRIORITY_RANGE<sp/>-<sp/>1U))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>calculates<sp/>the<sp/>left<sp/>child<sp/>index<sp/>from<sp/>the<sp/>parent<sp/>index<sp/>`_i_`<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_GET_LEFT_CHILD_IDX(_i_)<sp/>(((_i_)*2U)<sp/>+<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>calculates<sp/>the<sp/>right<sp/>child<sp/>index<sp/>from<sp/>the<sp/>parent<sp/>index<sp/>`_i_`<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_GET_RIGHT_CHILD_IDX(_i_)<sp/>(((_i_)*2U)<sp/>+<sp/>2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>calculates<sp/>the<sp/>parent<sp/>index<sp/>from<sp/>the<sp/>child<sp/>index<sp/>`_i_`<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_GET_PARENT_IDX(_i_)<sp/>(((_i_)-1U)<sp/>/<sp/>2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_vqueue_prio_tree_init(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_cb);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t<sp/>_vqueue_prio_is_leaf_node(<ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t<sp/>_vqueue_prio_bounded_get_dec(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*a);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_vqueue_prio_verify_print_tree(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">vqueue_prio_init(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>retire_cb,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*retire_cb_arg,<sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(retire_cb);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>V_STATIC_ASSERT(V_IS_POWER_OF_TWO(VQUEUE_PRIO_PRIORITY_RANGE),</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VQUEUE_PRIO_PRIORITY_RANGE<sp/>should<sp/>be<sp/>power<sp/>of<sp/>two&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb<sp/><sp/><sp/><sp/><sp/>=<sp/>retire_cb;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb_arg<sp/>=<sp/>retire_cb_arg;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>_vqueue_prio_tree_init(pqueue,<sp/>rand_fun);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>_vqueue_prio_verify_print_tree(pqueue);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">vqueue_prio_destroy(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>destroy_cb,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member" tooltip="VQUEUE_PRIO_PRIORITY_RANGE configures the queue to accept priorities from [0:VQUEUE_PRIO_PRIORITY_RAN...">VQUEUE_PRIO_PRIORITY_RANGE</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1a4a4fb4d96c4d3ec20d59e2afb4a6eeb7" kindref="member" tooltip="Pops all remaining nodes in the stack and calls destroy on them.">vstack_destroy</ref>(&amp;pqueue-&gt;leaves[i],<sp/>destroy_cb,<sp/>args);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">vqueue_prio_add(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>priority)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*parent<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*bin<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>parent_idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(priority<sp/>&lt;<sp/>VQUEUE_PRIO_PRIORITY_RANGE);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>bin<sp/>=<sp/>&amp;pqueue-&gt;leaves[priority];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1a0f0045ccb795e4685704b331bf66441a" kindref="member" tooltip="Pushes the given node to the top of the given stack.">vstack_push</ref>(bin,<sp/>pnode);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>VQUEUE_PRIO_GET_LEAF_IDX(priority);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Traverse<sp/>up<sp/>the<sp/>tree,<sp/>incrementing<sp/>the<sp/>counters<sp/>in<sp/>the<sp/>nodes<sp/>when</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>they<sp/>ascend<sp/>from<sp/>the<sp/>left<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(idx<sp/>!=<sp/>VQUEUE_PRIO_ROOT_IDX)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent_idx<sp/>=<sp/>VQUEUE_PRIO_GET_PARENT_IDX(idx);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>the<sp/>current<sp/>node<sp/>is<sp/>to<sp/>the<sp/>left<sp/>of<sp/>its<sp/>parents,<sp/>if<sp/>so</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>increase<sp/>the<sp/>count<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>==<sp/>VQUEUE_PRIO_GET_LEFT_CHILD_IDX(parent_idx))<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent<sp/>=<sp/>&amp;pqueue-&gt;tree[parent_idx];</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a5a92931342d3b8e5101b757b9400edfc" kindref="member" tooltip="Increments the value of a.">vatomic32_inc</ref>(&amp;parent-&gt;counter);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>parent_idx;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">vqueue_prio_remove_min(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>VQUEUE_PRIO_ROOT_IDX;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*node<sp/>=<sp/>&amp;pqueue-&gt;tree[idx];</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>are<sp/>looking<sp/>for<sp/>a<sp/>leaf<sp/>bin<sp/>that<sp/>contains<sp/>nodes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!_vqueue_prio_is_leaf_node(node))<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>current<sp/>counter<sp/>is<sp/>greater<sp/>than<sp/>zero,<sp/>it<sp/>means<sp/>for<sp/>sure<sp/>there</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>are<sp/>nodes<sp/>on<sp/>the<sp/>left<sp/>so<sp/>we<sp/>go<sp/>left<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_vqueue_prio_bounded_get_dec(&amp;node-&gt;counter)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>VQUEUE_PRIO_GET_LEFT_CHILD_IDX(idx);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>go<sp/>right<sp/>if<sp/>there<sp/>is<sp/>nothing<sp/>on<sp/>the<sp/>left<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>VQUEUE_PRIO_GET_RIGHT_CHILD_IDX(idx);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&amp;pqueue-&gt;tree[idx];</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node-&gt;bin);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>pop<sp/>from<sp/>the<sp/>current<sp/>bin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*qnode<sp/>=<sp/><ref refid="elimination__stack_8h_1a87e410535f3825d08e7af840dacdccf0" kindref="member" tooltip="Pops the top of the given stack.">vstack_pop</ref>(node-&gt;bin);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(qnode)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb(qnode,<sp/>pqueue-&gt;retire_cb_arg);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>qnode;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">_vqueue_prio_visit(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>visitor,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__s" kindref="compound">vstack_t</ref><sp/>*stack<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member" tooltip="VQUEUE_PRIO_PRIORITY_RANGE configures the queue to accept priorities from [0:VQUEUE_PRIO_PRIORITY_RAN...">VQUEUE_PRIO_PRIORITY_RANGE</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stack<sp/>=<sp/>&amp;pqueue-&gt;leaves[i];</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1a2225a360d416b5eb2d0456856add012e" kindref="member" tooltip="Calls the given visitor function on each stack node.">_vstack_visit</ref>(stack,<sp/>visitor,<sp/>arg);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">_vqueue_prio_bounded_get_dec(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*a)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>new_val<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>old_val<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cur_val<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>old_val<sp/>=<sp/><ref refid="core__u32_8h_1a11f2069d6e217a187132517169309d0b" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read</ref>(a);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(old_val<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_val<sp/>=<sp/>old_val<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_val<sp/>=<sp/><ref refid="core__u32_8h_1a22b98df0acfefca441f5bf147e08f4dd" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic32_cmpxchg</ref>(a,<sp/>old_val,<sp/>new_val);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur_val<sp/>==<sp/>old_val)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>old_val;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old_val<sp/>=<sp/>cur_val;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">_vqueue_prio_tree_init(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*tree<sp/>=<sp/>pqueue-&gt;tree;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_STACK_TREE_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;tree[i].counter,<sp/>0);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tree[i].bin<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="vqueue__prio__stack__array__based_8h_1a99877a5255e3d94b03b2f372a2525782" kindref="member" tooltip="VQUEUE_PRIO_PRIORITY_RANGE configures the queue to accept priorities from [0:VQUEUE_PRIO_PRIORITY_RAN...">VQUEUE_PRIO_PRIORITY_RANGE</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>VQUEUE_PRIO_GET_LEAF_IDX(i);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DBG_BLUE(</highlight><highlight class="stringliteral">&quot;leaf<sp/>%zu<sp/>index<sp/>in<sp/>the<sp/>tree<sp/>is<sp/>%zu&quot;</highlight><highlight class="normal">,<sp/>i,<sp/>idx);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&gt;=<sp/>(VQUEUE_PRIO_PRIORITY_RANGE<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>VQUEUE_PRIO_STACK_TREE_LEN);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="elimination__stack_8h_1aa3a80fa6bf53ab959be2af4343137267" kindref="member" tooltip="Initializes the given stack.">vstack_init</ref>(&amp;pqueue-&gt;leaves[i],<sp/>rand_fun);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tree[idx].bin<sp/>=<sp/>&amp;pqueue-&gt;leaves[i];</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">_vqueue_prio_is_leaf_node(<ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;bin<sp/>!=<sp/>NULL;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal">_vqueue_prio_verify_print_tree(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*tree<sp/>=<sp/>pqueue-&gt;tree;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref><sp/>*node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>l<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>r<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>num_leaves<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>num_non_leaves<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>DBG_YELLOW(</highlight><highlight class="stringliteral">&quot;#<sp/>of<sp/>nodes<sp/>=<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>VQUEUE_PRIO_STACK_TREE_LEN);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(idx<sp/>=<sp/>0;<sp/>idx<sp/>&lt;<sp/>VQUEUE_PRIO_STACK_TREE_LEN;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&amp;tree[idx];</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/>VQUEUE_PRIO_GET_LEFT_CHILD_IDX(idx);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>VQUEUE_PRIO_GET_RIGHT_CHILD_IDX(idx);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(VQUEUE_PRIO_GET_PARENT_IDX(l)<sp/>==<sp/>idx);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(VQUEUE_PRIO_GET_PARENT_IDX(r)<sp/>==<sp/>idx);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_vqueue_prio_is_leaf_node(node))<sp/>{</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DBG_COLOR(COL_L_YELLOW,<sp/></highlight><highlight class="stringliteral">&quot;I<sp/>am<sp/>%zu<sp/>a<sp/>leaf<sp/>node<sp/>without<sp/>children&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(VQUEUE_PRIO_GET_LEAF_IDX(num_leaves)<sp/>==<sp/>idx);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_leaves++;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DBG_COLOR(COL_L_CYAN,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;I<sp/>am<sp/>%zu<sp/>my<sp/>left<sp/>child<sp/>is<sp/>%zu<sp/>my<sp/>right<sp/>is<sp/>%zu&quot;</highlight><highlight class="normal">,<sp/>idx,<sp/>l,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_non_leaves++;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(num_leaves<sp/>==<sp/>VQUEUE_PRIO_PRIORITY_RANGE);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(VQUEUE_PRIO_PRIORITY_RANGE<sp/>-<sp/>1<sp/>==<sp/>num_non_leaves);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_STACK_TREE_LEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_ROOT_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_GET_LEAF_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_GET_LEFT_CHILD_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_GET_RIGHT_CHILD_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_GET_PARENT_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/vqueue_prio_stack_tree_based.h"/>
+  </compounddef>
+</doxygen>

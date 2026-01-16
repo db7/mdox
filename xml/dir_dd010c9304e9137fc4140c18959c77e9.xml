@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_dd010c9304e9137fc4140c18959c77e9" kind="dir">
+    <compoundname>vsync/map</compoundname>
+    <innerdir refid="dir_9f47f6883b903fd4930f925c08c1d504">vsync/map/internal</innerdir>
+    <innerfile refid="hashtable__standard_8h">hashtable_standard.h</innerfile>
+    <innerfile refid="listset__coarse_8h">listset_coarse.h</innerfile>
+    <innerfile refid="listset__fine_8h">listset_fine.h</innerfile>
+    <innerfile refid="listset__lazy_8h">listset_lazy.h</innerfile>
+    <innerfile refid="listset__lf_8h">listset_lf.h</innerfile>
+    <innerfile refid="listset__opt_8h">listset_opt.h</innerfile>
+    <innerfile refid="simpleht_8h">simpleht.h</innerfile>
+    <innerfile refid="skiplist__lf_8h">skiplist_lf.h</innerfile>
+    <innerfile refid="treeset__bst__coarse_8h">treeset_bst_coarse.h</innerfile>
+    <innerfile refid="treeset__bst__fine_8h">treeset_bst_fine.h</innerfile>
+    <innerfile refid="treeset__rb__coarse_8h">treeset_rb_coarse.h</innerfile>
+    <innerfile refid="treeset__rb__fine_8h">treeset_rb_fine.h</innerfile>
+    <briefdescription>
+<para>This is a collection of algos that implement map interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/"/>
+  </compounddef>
+</doxygen>

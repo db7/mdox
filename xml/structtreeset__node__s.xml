@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtreeset__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>treeset_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtreeset__node__s_1a6106fa8319ccb967f1beffa53ff64962" prot="public" static="no" mutable="no">
+        <type>treeset_key_t</type>
+        <definition>treeset_key_t treeset_node_s::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>treeset_node_s::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="45" column="19" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__node__s_1ae6effc0c5d8950708b6bafeee9a043d3" prot="public" static="no" mutable="no">
+        <type>vbool_t</type>
+        <definition>vbool_t treeset_node_s::external</definition>
+        <argsstring></argsstring>
+        <name>external</name>
+        <qualifiedname>treeset_node_s::external</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="46" column="13" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__node__s_1ad3046af48435e9e8d3544267fbe539d6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structtreeset__node__s" kindref="compound">treeset_node_s</ref> *</type>
+        <definition>struct treeset_node_s * treeset_node_s::child</definition>
+        <argsstring>[2]</argsstring>
+        <name>child</name>
+        <qualifiedname>treeset_node_s::child</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="47" column="25" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__node__s_1a9a4ce8862e115af80d2373121eef1621" prot="public" static="no" mutable="no">
+        <type><ref refid="structlock__s" kindref="compound">lock_t</ref></type>
+        <definition>lock_t treeset_node_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>treeset_node_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_fine.h" line="30" column="12" bodyfile="vsync/map/treeset_bst_fine.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__node__s_1abf3759d3a0ab0e30ca29024fe4176a02" prot="public" static="no" mutable="no">
+        <type>vbool_t</type>
+        <definition>vbool_t treeset_node_s::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <qualifiedname>treeset_node_s::red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_rb_coarse.h" line="29" column="13" bodyfile="vsync/map/treeset_rb_coarse.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lock_s</label>
+        <link refid="structlock__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rwlock_s</label>
+        <link refid="structrwlock__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>wb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>semaphore_s</label>
+        <link refid="structsemaphore__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>treeset_node_s</label>
+        <link refid="structtreeset__node__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>child</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ttaslock_s</label>
+        <link refid="structttaslock__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/treeset_bst_coarse.h" line="44" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="44" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structtreeset__node__s_1ad3046af48435e9e8d3544267fbe539d6" prot="public" virt="non-virtual"><scope>treeset_node_s</scope><name>child</name></member>
+      <member refid="structtreeset__node__s_1ae6effc0c5d8950708b6bafeee9a043d3" prot="public" virt="non-virtual"><scope>treeset_node_s</scope><name>external</name></member>
+      <member refid="structtreeset__node__s_1a6106fa8319ccb967f1beffa53ff64962" prot="public" virt="non-virtual"><scope>treeset_node_s</scope><name>key</name></member>
+      <member refid="structtreeset__node__s_1a9a4ce8862e115af80d2373121eef1621" prot="public" virt="non-virtual"><scope>treeset_node_s</scope><name>lock</name></member>
+      <member refid="structtreeset__node__s_1abf3759d3a0ab0e30ca29024fe4176a02" prot="public" virt="non-virtual"><scope>treeset_node_s</scope><name>red</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

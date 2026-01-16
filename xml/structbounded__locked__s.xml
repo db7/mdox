@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbounded__locked__s" kind="struct" language="C++" prot="public">
+    <compoundname>bounded_locked_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbounded__locked__s_1a352108d8817bcfe4f01843b0c1580465" prot="public" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** bounded_locked_s::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>bounded_locked_s::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_locked.h" line="31" column="10" bodyfile="vsync/queue/bounded_locked.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__locked__s_1af47b39d50fcf629c3c7a76ac8457d06d" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t bounded_locked_s::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>bounded_locked_s::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_locked.h" line="32" column="15" bodyfile="vsync/queue/bounded_locked.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__locked__s_1a5df77a8f1f325b3bd2c87ea6db1ffd7e" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t bounded_locked_s::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>bounded_locked_s::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_locked.h" line="33" column="15" bodyfile="vsync/queue/bounded_locked.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__locked__s_1a7d8a1ab6cbcfa7e7f7f1ffe250b52cd6" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t bounded_locked_s::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>bounded_locked_s::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_locked.h" line="34" column="15" bodyfile="vsync/queue/bounded_locked.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__locked__s_1a0e2ddc8b7e1fe741048b1bbdcfb66b80" prot="public" static="no" mutable="no">
+        <type><ref refid="structcaslock__s" kindref="compound">caslock_t</ref></type>
+        <definition>caslock_t bounded_locked_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>bounded_locked_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_locked.h" line="35" column="15" bodyfile="vsync/queue/bounded_locked.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>bounded_locked_s</label>
+        <link refid="structbounded__locked__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>caslock_s</label>
+        <link refid="structcaslock__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/bounded_locked.h" line="30" column="1" bodyfile="vsync/queue/bounded_locked.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structbounded__locked__s_1a352108d8817bcfe4f01843b0c1580465" prot="public" virt="non-virtual"><scope>bounded_locked_s</scope><name>buf</name></member>
+      <member refid="structbounded__locked__s_1af47b39d50fcf629c3c7a76ac8457d06d" prot="public" virt="non-virtual"><scope>bounded_locked_s</scope><name>head</name></member>
+      <member refid="structbounded__locked__s_1a0e2ddc8b7e1fe741048b1bbdcfb66b80" prot="public" virt="non-virtual"><scope>bounded_locked_s</scope><name>lock</name></member>
+      <member refid="structbounded__locked__s_1a7d8a1ab6cbcfa7e7f7f1ffe250b52cd6" prot="public" virt="non-virtual"><scope>bounded_locked_s</scope><name>size</name></member>
+      <member refid="structbounded__locked__s_1a5df77a8f1f325b3bd2c87ea6db1ffd7e" prot="public" virt="non-virtual"><scope>bounded_locked_s</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

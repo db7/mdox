@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="clhlock_8h" kind="file" language="C++">
+    <compoundname>clhlock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structclh__qnode__s" prot="public">clh_qnode_s</innerclass>
+    <innerclass refid="structclh__node__s" prot="public">clh_node_s</innerclass>
+    <innerclass refid="structclhlock__s" prot="public">clhlock_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" prot="public" static="no">
+        <type>struct <ref refid="structclh__qnode__s" kindref="compound">clh_qnode_s</ref></type>
+        <definition>typedef struct clh_qnode_s clh_qnode_t</definition>
+        <argsstring></argsstring>
+        <name>clh_qnode_t</name>
+        <briefdescription>
+<para>Each thread has its own qnode (<computeroutput>clh_qnode_t</computeroutput>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When <computeroutput>locked</computeroutput> is set to 1, the thread wants to enter the critical section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="29" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clhlock_8h_1a0d78fc3294a2153312be8547a49a8289" prot="public" static="no">
+        <type>struct <ref refid="structclh__node__s" kindref="compound">clh_node_s</ref></type>
+        <definition>typedef struct clh_node_s clh_node_t</definition>
+        <argsstring></argsstring>
+        <name>clh_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="35" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" prot="public" static="no">
+        <type>struct <ref refid="structclhlock__s" kindref="compound">clhlock_s</ref></type>
+        <definition>typedef struct clhlock_s clhlock_t</definition>
+        <argsstring></argsstring>
+        <name>clhlock_t</name>
+        <briefdescription>
+<para>The lock holds a pointer to the tail of the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="41" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="clhlock_8h_1a435f900f94e1c76920a2b31d342989b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clhlock_node_init</definition>
+        <argsstring>(clh_node_t *node)</argsstring>
+        <name>clhlock_node_init</name>
+        <param>
+          <type><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clh_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="49" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="clhlock_8h_1a1cd39ceb8d98278b35a8b0221c86b7d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clhlock_init</definition>
+        <argsstring>(clhlock_t *lock)</argsstring>
+        <name>clhlock_init</name>
+        <param>
+          <type><ref refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" kindref="member">clhlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clhlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="61" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="clhlock_8h_1af174e4bb9e1aac979f7a59a688813471" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clhlock_acquire</definition>
+        <argsstring>(clhlock_t *lock, clh_node_t *node)</argsstring>
+        <name>clhlock_acquire</name>
+        <param>
+          <type><ref refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" kindref="member">clhlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clhlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clh_node_t object associated with the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> <computeroutput>node</computeroutput> has to continue to exist even if the thread dies. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="75" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="75" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="clhlock_8h_1a2b94655aa7bcd619be24b65d4424de08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clhlock_release</definition>
+        <argsstring>(clhlock_t *lock, clh_node_t *node)</argsstring>
+        <name>clhlock_release</name>
+        <param>
+          <type><ref refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" kindref="member">clhlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Releases the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clhlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clh_node_t object associated with the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> It hijacks its predecessor&apos;s queue node as its own. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="99" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="99" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="clhlock_8h_1ae90f152a8444daa17aa5891a904dc0c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t clhlock_has_waiters</definition>
+        <argsstring>(clhlock_t *lock, clh_node_t *node)</argsstring>
+        <name>clhlock_has_waiters</name>
+        <param>
+          <type><ref refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" kindref="member">clhlock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether there is a thread waiting to acquire the clhlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should only be called by the current owner of the lock.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clhlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of clh_node_t object associated with the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there are waiters. </para>
+</simplesect>
+<simplesect kind="return"><para>false if there are no waiters.</para>
+</simplesect>
+&gt; <bold>Note:</bold> this function is not part of the standard lock API. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="123" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="123" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>List-based lock attributed to Craig, Landin and Hagersten. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_clhlock.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="clhlock_8h" kindref="compound" tooltip="List-based lock attributed to Craig, Landin and Hagersten.">vsync/spinlock/clhlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_THREADS<sp/><sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref><sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref><sp/>g_nodes[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="clhlock_8h_1a435f900f94e1c76920a2b31d342989b5" kindref="member" tooltip="Initializes the given node.">clhlock_node_init</ref>(&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="clhlock_8h_1af174e4bb9e1aac979f7a59a688813471" kindref="member" tooltip="Acquires the lock.">clhlock_acquire</ref>(&amp;g_lock,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="clhlock_8h_1a2b94655aa7bcd619be24b65d4424de08" kindref="member" tooltip="Releases the lock.">clhlock_release</ref>(&amp;g_lock,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="clhlock_8h_1a1cd39ceb8d98278b35a8b0221c86b7d3" kindref="member" tooltip="Initializes the given lock.">clhlock_init</ref>(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 7.5] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_CLHLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_CLHLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structclh__qnode__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>locked;</highlight></codeline>
+<codeline lineno="29" refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" kindref="member" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structclh__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structclh__node__s" kindref="compound">clh_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>*pred;<sp/><sp/></highlight><highlight class="comment">/*<sp/>points<sp/>to<sp/>the<sp/>pred<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>*qnode;<sp/></highlight><highlight class="comment">/*<sp/>points<sp/>to<sp/>the<sp/>used<sp/>qnode<sp/>by<sp/>the<sp/>owner<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>_qnode;<sp/></highlight><highlight class="comment">/*<sp/>inital<sp/>own<sp/>qnode,<sp/>later<sp/>is<sp/>used<sp/>by<sp/>other<sp/>threads<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structclhlock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>tail;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>initial;</highlight></codeline>
+<codeline lineno="41" refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" refkind="member"><highlight class="normal">}<sp/><ref refid="clhlock_8h_1ab0e28d9d02948072f29c5b72ba37ce62" kindref="member" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="clhlock_8h_1a435f900f94e1c76920a2b31d342989b5" refkind="member"><highlight class="normal"><ref refid="clhlock_8h_1a435f900f94e1c76920a2b31d342989b5" kindref="member" tooltip="Initializes the given node.">clhlock_node_init</ref>(<ref refid="structclh__node__s" kindref="compound">clh_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;node-&gt;_qnode.locked,<sp/>0);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;qnode<sp/>=<sp/>&amp;node-&gt;_qnode;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;pred<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="clhlock_8h_1a1cd39ceb8d98278b35a8b0221c86b7d3" refkind="member"><highlight class="normal"><ref refid="clhlock_8h_1a1cd39ceb8d98278b35a8b0221c86b7d3" kindref="member" tooltip="Initializes the given lock.">clhlock_init</ref>(<ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref><sp/>*lock)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;lock-&gt;initial.locked,<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;lock-&gt;tail,<sp/>&amp;lock-&gt;initial);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="clhlock_8h_1af174e4bb9e1aac979f7a59a688813471" refkind="member"><highlight class="normal"><ref refid="clhlock_8h_1af174e4bb9e1aac979f7a59a688813471" kindref="member" tooltip="Acquires the lock.">clhlock_acquire</ref>(<ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref><sp/>*lock,<sp/><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>declare<sp/>your<sp/>intention<sp/>of<sp/>acquiring<sp/>the<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;node-&gt;qnode-&gt;locked,<sp/>1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>out,<sp/>who<sp/>has<sp/>acquired<sp/>the<sp/>lock<sp/>before<sp/>me</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>tail<sp/>always<sp/>points<sp/>to<sp/>the<sp/>thread<sp/>infront<sp/>of<sp/>me</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>put<sp/>me<sp/>inline<sp/>and<sp/>let<sp/>the<sp/>tail<sp/>points<sp/>to<sp/>me</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;pred<sp/>=<sp/>(<ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>*)<ref refid="core__ptr_8h_1a274649a698a8a2c6a87e82c64d6968e9" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg</ref>(&amp;lock-&gt;tail,<sp/>node-&gt;qnode);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>on<sp/>my<sp/>predecessor<sp/>to<sp/>free<sp/>the<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="await__u32_8h_1abd427e63ba008c5acf2ce310c3048660" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to v.">vatomic32_await_eq_acq</ref>(&amp;node-&gt;pred-&gt;locked,<sp/>0);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I<sp/>have<sp/>the<sp/>lock<sp/>by<sp/>now</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="clhlock_8h_1a2b94655aa7bcd619be24b65d4424de08" refkind="member"><highlight class="normal"><ref refid="clhlock_8h_1a2b94655aa7bcd619be24b65d4424de08" kindref="member" tooltip="Releases the lock.">clhlock_release</ref>(<ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref><sp/>*lock,<sp/><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>the<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(&amp;node-&gt;qnode-&gt;locked,<sp/>0);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>node<sp/>recycling:<sp/>use<sp/>your<sp/>predecessor<sp/>node<sp/>as<sp/>your<sp/>own<sp/>in<sp/>future<sp/>runs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;qnode<sp/>=<sp/>node-&gt;pred;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(lock);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="123" refid="clhlock_8h_1ae90f152a8444daa17aa5891a904dc0c6" refkind="member"><highlight class="normal"><ref refid="clhlock_8h_1ae90f152a8444daa17aa5891a904dc0c6" kindref="member" tooltip="Returns whether there is a thread waiting to acquire the clhlock.">clhlock_has_waiters</ref>(<ref refid="structclhlock__s" kindref="compound" tooltip="The lock holds a pointer to the tail of the queue.">clhlock_t</ref><sp/>*lock,<sp/><ref refid="structclh__node__s" kindref="compound">clh_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>*tail<sp/>=<sp/>(<ref refid="structclh__qnode__s" kindref="compound" tooltip="Each thread has its own qnode (clh_qnode_t).">clh_qnode_t</ref><sp/>*)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;lock-&gt;tail);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tail<sp/>!=<sp/>node-&gt;qnode;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VSYNC_CLHLOCK_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/clhlock.h"/>
+  </compounddef>
+</doxygen>

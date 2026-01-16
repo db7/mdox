@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhclh__lock__s" kind="struct" language="C++" prot="public">
+    <compoundname>hclh_lock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhclh__lock__s_1a77725e2c1bd43ebce3fd8729e9adf65b" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t hclh_lock_s::local_queues[HCLH_MAX_CLUSTERS]</definition>
+        <argsstring>[HCLH_MAX_CLUSTERS]</argsstring>
+        <name>local_queues</name>
+        <qualifiedname>hclh_lock_s::local_queues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="86" column="18" bodyfile="vsync/spinlock/hclhlock.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhclh__lock__s_1accce7a8e0d54345f45bd186c99f40ec1" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t hclh_lock_s::global_queue</definition>
+        <argsstring></argsstring>
+        <name>global_queue</name>
+        <qualifiedname>hclh_lock_s::global_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="88" column="18" bodyfile="vsync/spinlock/hclhlock.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhclh__lock__s_1a685994f04ddf295ebe9caadfd777e34e" prot="public" static="no" mutable="no">
+        <type><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref></type>
+        <definition>hclh_qnode_t hclh_lock_s::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>hclh_lock_s::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="89" column="18" bodyfile="vsync/spinlock/hclhlock.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hclh_lock_s</label>
+        <link refid="structhclh__lock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>global_queue</edgelabel>
+          <edgelabel>local_queues</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>head</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hclh_qnode_s</label>
+        <link refid="structhclh__qnode__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="2">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/hclhlock.h" line="85" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="85" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structhclh__lock__s_1accce7a8e0d54345f45bd186c99f40ec1" prot="public" virt="non-virtual"><scope>hclh_lock_s</scope><name>global_queue</name></member>
+      <member refid="structhclh__lock__s_1a685994f04ddf295ebe9caadfd777e34e" prot="public" virt="non-virtual"><scope>hclh_lock_s</scope><name>head</name></member>
+      <member refid="structhclh__lock__s_1a77725e2c1bd43ebce3fd8729e9adf65b" prot="public" virt="non-virtual"><scope>hclh_lock_s</scope><name>local_queues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

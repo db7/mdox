@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsmr__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>smr_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmr__node__s_1a69ded9e30b698deb63b9008d73e38b7a" prot="public" static="no" mutable="no">
+        <type><ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_t</ref></type>
+        <definition>smr_node_core_t smr_node_s::core</definition>
+        <argsstring></argsstring>
+        <name>core</name>
+        <qualifiedname>smr_node_s::core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="21" column="21" bodyfile="vsync/smr/internal/smr_node.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__node__s_1a8e31f97978d5a308e143f772bb6fbec0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int smr_node_s::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>smr_node_s::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="22" column="9" bodyfile="vsync/smr/internal/smr_node.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__node__s_1af99a6bcad1d60e5bbd73f786e601809f" prot="public" static="no" mutable="no">
+        <type>smr_node_destroy_fun</type>
+        <definition>smr_node_destroy_fun smr_node_s::destroy_fun</definition>
+        <argsstring></argsstring>
+        <name>destroy_fun</name>
+        <qualifiedname>smr_node_s::destroy_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="24" column="26" bodyfile="vsync/smr/internal/smr_node.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__node__s_1aaca35be2c0bba30ded2335a361ce6e26" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* smr_node_s::destroy_fun_arg</definition>
+        <argsstring></argsstring>
+        <name>destroy_fun_arg</name>
+        <qualifiedname>smr_node_s::destroy_fun_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="25" column="10" bodyfile="vsync/smr/internal/smr_node.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>smr_node_core_s</label>
+        <link refid="structsmr__node__core__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>smr_node_s</label>
+        <link refid="structsmr__node__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>destroy_fun</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/internal/smr_node.h" line="20" column="1" bodyfile="vsync/smr/internal/smr_node.h" bodystart="20" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structsmr__node__s_1a69ded9e30b698deb63b9008d73e38b7a" prot="public" virt="non-virtual"><scope>smr_node_s</scope><name>core</name></member>
+      <member refid="structsmr__node__s_1af99a6bcad1d60e5bbd73f786e601809f" prot="public" virt="non-virtual"><scope>smr_node_s</scope><name>destroy_fun</name></member>
+      <member refid="structsmr__node__s_1aaca35be2c0bba30ded2335a361ce6e26" prot="public" virt="non-virtual"><scope>smr_node_s</scope><name>destroy_fun_arg</name></member>
+      <member refid="structsmr__node__s_1a8e31f97978d5a308e143f772bb6fbec0" prot="public" virt="non-virtual"><scope>smr_node_s</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

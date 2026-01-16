@@ -1,0 +1,1516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vtypes_8h" kind="file" language="C++">
+    <compoundname>vtypes.h</compoundname>
+    <includes local="yes">vfreestanding.h</includes>
+    <includedby refid="atomicptr__markable_8h" local="no">vsync/atomic/atomicptr_markable.h</includedby>
+    <includedby refid="atomicptr__stamped_8h" local="no">vsync/atomic/atomicptr_stamped.h</includedby>
+    <includedby refid="fallback_8h" local="no">vsync/atomic/internal/fallback.h</includedby>
+    <includedby refid="atomic_2internal_2macros_8h" local="no">vsync/atomic/internal/macros.h</includedby>
+    <includedby refid="types_8h" local="no">vsync/atomic/internal/types.h</includedby>
+    <includedby refid="assert_8h" local="no">vsync/common/assert.h</includedby>
+    <includedby refid="compiler_8h" local="no">vsync/common/compiler.h</includedby>
+    <includedby refid="verify_8h" local="no">vsync/common/verify.h</includedby>
+    <includedby refid="listset__common_8h" local="no">vsync/map/internal/listset/listset_common.h</includedby>
+    <includedby refid="skiplist__types_8h" local="no">vsync/map/internal/skiplist/skiplist_types.h</includedby>
+    <includedby refid="treeset__common_8h" local="no">vsync/map/internal/treeset/treeset_common.h</includedby>
+    <includedby refid="listset__coarse_8h" local="no">vsync/map/listset_coarse.h</includedby>
+    <includedby refid="listset__fine_8h" local="no">vsync/map/listset_fine.h</includedby>
+    <includedby refid="listset__lazy_8h" local="no">vsync/map/listset_lazy.h</includedby>
+    <includedby refid="listset__lf_8h" local="no">vsync/map/listset_lf.h</includedby>
+    <includedby refid="listset__opt_8h" local="no">vsync/map/listset_opt.h</includedby>
+    <includedby refid="skiplist__lf_8h" local="no">vsync/map/skiplist_lf.h</includedby>
+    <includedby refid="treeset__bst__coarse_8h" local="no">vsync/map/treeset_bst_coarse.h</includedby>
+    <includedby refid="treeset__bst__fine_8h" local="no">vsync/map/treeset_bst_fine.h</includedby>
+    <includedby refid="treeset__rb__coarse_8h" local="no">vsync/map/treeset_rb_coarse.h</includedby>
+    <includedby refid="treeset__rb__fine_8h" local="no">vsync/map/treeset_rb_fine.h</includedby>
+    <includedby refid="bbq__mpmc_8h" local="no">vsync/queue/bbq_mpmc.h</includedby>
+    <includedby refid="bbq__spsc_8h" local="no">vsync/queue/bbq_spsc.h</includedby>
+    <includedby refid="bounded__locked_8h" local="no">vsync/queue/bounded_locked.h</includedby>
+    <includedby refid="cachedq_8h" local="no">vsync/queue/cachedq.h</includedby>
+    <includedby refid="unbounded__queue__lf_8h" local="no">vsync/queue/unbounded_queue_lf.h</includedby>
+    <includedby refid="unbounded__queue__lf__recycle_8h" local="no">vsync/queue/unbounded_queue_lf_recycle.h</includedby>
+    <includedby refid="unbounded__queue__total_8h" local="no">vsync/queue/unbounded_queue_total.h</includedby>
+    <includedby refid="vqueue__prio__heap__based_8h" local="no">vsync/queue/vqueue_prio_heap_based.h</includedby>
+    <includedby refid="vqueue__prio__skiplist__based_8h" local="no">vsync/queue/vqueue_prio_skiplist_based.h</includedby>
+    <includedby refid="vqueue__prio__stack__tree__based_8h" local="no">vsync/queue/vqueue_prio_stack_tree_based.h</includedby>
+    <includedby refid="smr__lock_8h" local="no">vsync/smr/internal/smr_lock.h</includedby>
+    <includedby refid="smr__nodes__list_8h" local="no">vsync/smr/internal/smr_nodes_list.h</includedby>
+    <includedby refid="caslock_8h" local="no">vsync/spinlock/caslock.h</includedby>
+    <includedby refid="cnalock_8h" local="no">vsync/spinlock/cnalock.h</includedby>
+    <includedby refid="hclhlock_8h" local="no">vsync/spinlock/hclhlock.h</includedby>
+    <includedby refid="hmcslock_8h" local="no">vsync/spinlock/hmcslock.h</includedby>
+    <includedby refid="mcslock_8h" local="no">vsync/spinlock/mcslock.h</includedby>
+    <includedby refid="rec__spinlock_8h" local="no">vsync/spinlock/rec_spinlock.h</includedby>
+    <includedby refid="rec__ticketlock_8h" local="no">vsync/spinlock/rec_ticketlock.h</includedby>
+    <includedby refid="rwlock_8h" local="no">vsync/spinlock/rwlock.h</includedby>
+    <includedby refid="semaphore_8h" local="no">vsync/spinlock/semaphore.h</includedby>
+    <includedby refid="seqcount_8h" local="no">vsync/spinlock/seqcount.h</includedby>
+    <includedby refid="seqlock_8h" local="no">vsync/spinlock/seqlock.h</includedby>
+    <includedby refid="ticketlock_8h" local="no">vsync/spinlock/ticketlock.h</includedby>
+    <includedby refid="ttaslock_8h" local="no">vsync/spinlock/ttaslock.h</includedby>
+    <includedby refid="range__policy_8h" local="no">vsync/stack/internal/range_policy.h</includedby>
+    <includedby refid="stack__core_8h" local="no">vsync/stack/internal/stack_core.h</includedby>
+    <includedby refid="quack_8h" local="no">vsync/stack/quack.h</includedby>
+    <includedby refid="cond_8h" local="no">vsync/thread/cond.h</includedby>
+    <includedby refid="alloc_8h" local="no">vsync/utils/alloc.h</includedby>
+    <includedby refid="backoff_8h" local="no">vsync/utils/backoff.h</includedby>
+    <includedby refid="exchanger_8h" local="no">vsync/utils/exchanger.h</includedby>
+    <includedby refid="internal_2math_8h" local="no">vsync/utils/internal/math.h</includedby>
+    <includedby refid="math_8h" local="no">vsync/utils/math.h</includedby>
+    <includedby refid="recursive__lock_8h" local="no">vsync/utils/recursive_lock.h</includedby>
+    <includedby refid="string_8h" local="no">vsync/utils/string.h</includedby>
+    <includedby refid="string__helpers_8h" local="no">vsync/utils/string_helpers.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/atomic/atomicptr_stamped.h</label>
+        <link refid="atomicptr__stamped_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>vsync/atomic/internal/macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>vsync/atomic/internal/remap_fnc_rlx.h</label>
+        <link refid="remap__fnc__rlx_8h_source"/>
+      </node>
+      <node id="84">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>vsync/atomic/internal/remap_ptr_rlx.h</label>
+        <link refid="remap__ptr__rlx_8h_source"/>
+      </node>
+      <node id="86">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>vsync/atomic/internal/remap_sz_rlx.h</label>
+        <link refid="remap__sz__rlx_8h_source"/>
+      </node>
+      <node id="88">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>vsync/atomic/internal/remap_u16_rlx.h</label>
+        <link refid="remap__u16__rlx_8h_source"/>
+      </node>
+      <node id="90">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>vsync/atomic/internal/remap_u32_rlx.h</label>
+        <link refid="remap__u32__rlx_8h_source"/>
+      </node>
+      <node id="92">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>vsync/atomic/internal/remap_u64_rlx.h</label>
+        <link refid="remap__u64__rlx_8h_source"/>
+      </node>
+      <node id="94">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>vsync/atomic/internal/remap_u8_rlx.h</label>
+        <link refid="remap__u8__rlx_8h_source"/>
+      </node>
+      <node id="96">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/bitmap/bitmap.h</label>
+        <link refid="bitmap_8h"/>
+      </node>
+      <node id="99">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/map/hashtable_standard.h</label>
+        <link refid="hashtable__standard_8h"/>
+      </node>
+      <node id="115">
+        <label>vsync/map/internal/listset/listset_common.h</label>
+        <link refid="listset__common_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>vsync/map/internal/treeset/treeset_common.h</label>
+        <link refid="treeset__common_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vsync/map/internal/treeset/treeset_lock_rw.h</label>
+        <link refid="treeset__lock__rw_8h_source"/>
+      </node>
+      <node id="58">
+        <label>vsync/map/internal/treeset/treeset_lock_ttas.h</label>
+        <link refid="treeset__lock__ttas_8h_source"/>
+      </node>
+      <node id="59">
+        <label>vsync/map/listset_coarse.h</label>
+        <link refid="listset__coarse_8h"/>
+      </node>
+      <node id="60">
+        <label>vsync/map/listset_fine.h</label>
+        <link refid="listset__fine_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/map/listset_lazy.h</label>
+        <link refid="listset__lazy_8h"/>
+      </node>
+      <node id="8">
+        <label>vsync/map/listset_lf.h</label>
+        <link refid="listset__lf_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/map/listset_opt.h</label>
+        <link refid="listset__opt_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/map/simpleht.h</label>
+        <link refid="simpleht_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>vsync/map/treeset_bst_coarse.h</label>
+        <link refid="treeset__bst__coarse_8h"/>
+      </node>
+      <node id="101">
+        <label>vsync/map/treeset_bst_fine.h</label>
+        <link refid="treeset__bst__fine_8h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>vsync/map/treeset_rb_coarse.h</label>
+        <link refid="treeset__rb__coarse_8h"/>
+      </node>
+      <node id="103">
+        <label>vsync/map/treeset_rb_fine.h</label>
+        <link refid="treeset__rb__fine_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/queue/bounded_locked.h</label>
+        <link refid="bounded__locked_8h"/>
+      </node>
+      <node id="27">
+        <label>vsync/queue/bounded_mpmc.h</label>
+        <link refid="bounded__mpmc_8h"/>
+      </node>
+      <node id="28">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+      </node>
+      <node id="29">
+        <label>vsync/queue/cachedq.h</label>
+        <link refid="cachedq_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/queue/chaselev.h</label>
+        <link refid="chaselev_8h"/>
+      </node>
+      <node id="109">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+      </node>
+      <node id="32">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+      <node id="39">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="6">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+      <node id="12">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="13">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="104">
+        <label>vsync/smr/internal/dbl_list.h</label>
+        <link refid="dbl__list_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>vsync/smr/internal/smr_lock.h</label>
+        <link refid="smr__lock_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>vsync/smr/internal/smr_node.h</label>
+        <link refid="smr__node_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+      </node>
+      <node id="36">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+      </node>
+      <node id="43">
+        <label>vsync/spinlock/cnalock.h</label>
+        <link refid="cnalock_8h"/>
+      </node>
+      <node id="44">
+        <label>vsync/spinlock/hclhlock.h</label>
+        <link refid="hclhlock_8h"/>
+      </node>
+      <node id="45">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+      </node>
+      <node id="46">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+      </node>
+      <node id="47">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="49">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="37">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="51">
+        <label>vsync/spinlock/rwlock.h</label>
+        <link refid="rwlock_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>vsync/spinlock/semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vsync/spinlock/seqcount.h</label>
+        <link refid="seqcount_8h"/>
+      </node>
+      <node id="55">
+        <label>vsync/spinlock/seqlock.h</label>
+        <link refid="seqlock_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>vsync/spinlock/ttaslock.h</label>
+        <link refid="ttaslock_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>vsync/spinlock/twalock.h</label>
+        <link refid="twalock_8h"/>
+      </node>
+      <node id="11">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>vsync/stack/internal/range_policy.h</label>
+        <link refid="range__policy_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>vsync/stack/quack.h</label>
+        <link refid="quack_8h"/>
+      </node>
+      <node id="63">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="65">
+        <label>vsync/thread/cond.h</label>
+        <link refid="cond_8h"/>
+      </node>
+      <node id="66">
+        <label>vsync/thread/internal/futex.h</label>
+        <link refid="futex_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/thread/internal/futex_mock_liveness.h</label>
+        <link refid="futex__mock__liveness_8h_source"/>
+      </node>
+      <node id="41">
+        <label>vsync/thread/internal/futex_mock_liveness_simple.h</label>
+        <link refid="futex__mock__liveness__simple_8h_source"/>
+      </node>
+      <node id="72">
+        <label>vsync/thread/internal/futex_mock_safety.h</label>
+        <link refid="futex__mock__safety_8h_source"/>
+      </node>
+      <node id="69">
+        <label>vsync/thread/mutex.h</label>
+        <link refid="mutex_8h"/>
+      </node>
+      <node id="67">
+        <label>vsync/thread/mutex/musl.h</label>
+        <link refid="musl_8h"/>
+      </node>
+      <node id="68">
+        <label>vsync/thread/mutex/slim.h</label>
+        <link refid="slim_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>vsync/thread/mutex/tristate.h</label>
+        <link refid="tristate_8h"/>
+      </node>
+      <node id="71">
+        <label>vsync/thread/once.h</label>
+        <link refid="once_8h"/>
+      </node>
+      <node id="73">
+        <label>vsync/utils/abstract_lock.h</label>
+        <link refid="abstract__lock_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>vsync/utils/alloc.h</label>
+        <link refid="alloc_8h_source"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>vsync/utils/internal/math.h</label>
+        <link refid="internal_2math_8h_source"/>
+      </node>
+      <node id="108">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>vsync/utils/string.h</label>
+        <link refid="string_8h_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>vsync/utils/string_helpers.h</label>
+        <link refid="string__helpers_8h_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>vsync/utils/xbo.h</label>
+        <link refid="xbo_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="vtypes_8h_1a70bfd14c2b5bda8ba38c1739b4925e61" prot="public" static="no">
+        <name>VSYNC_ENABLE_FREESTANDING</name>
+        <briefdescription>
+<para>includes <computeroutput>vfreestanding.h</computeroutput> to define <computeroutput>vuint{8,16,32,64,ptr}_t</computeroutput> types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, use <computeroutput>vuint32_t</computeroutput> and <computeroutput>vuint64_t</computeroutput> types from <computeroutput>stdint.h</computeroutput>. Define VSYNC_ENABLE_FREESTANDING to customize this definitions by providing a file <computeroutput>vfreestanding.h</computeroutput> defining these types in . </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="18" column="13" bodyfile="vsync/vtypes.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a16779ec847bc5a53243557160e28f1a0" prot="public" static="no">
+        <name>V_UNSIGNED_INT_MAX</name>
+        <param><defname>T</defname></param>
+        <initializer>((T) ~(T)0)</initializer>
+        <briefdescription>
+<para>define stdint types </para>
+        </briefdescription>
+        <detaileddescription>
+<para>MAX and WIDTH </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="60" column="9" bodyfile="vsync/vtypes.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1afd80f645ca9690de6af0bdb80d59e147" prot="public" static="no">
+        <name>V_SIGNED_INT_MAX</name>
+        <param><defname>T</defname></param>
+        <initializer>(T)((1ULL &lt;&lt; ((sizeof(T) * 8ULL) - 1ULL)) - 1ULL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="61" column="9" bodyfile="vsync/vtypes.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1ab9dbe54f8ef243242e3b0cbebf6c3954" prot="public" static="no">
+        <name>VUINT8_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vuint8_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="66" column="14" bodyfile="vsync/vtypes.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a28274a88db1810dbb505273558c7947e" prot="public" static="no">
+        <name>VUINT16_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vuint16_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="72" column="14" bodyfile="vsync/vtypes.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a59837de03575e1d85dda6f02086b83e3" prot="public" static="no">
+        <name>VUINT32_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vuint32_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="78" column="14" bodyfile="vsync/vtypes.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a645c8bcdb14566ec42a9c7579640c23c" prot="public" static="no">
+        <name>VUINT64_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vuint64_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="84" column="14" bodyfile="vsync/vtypes.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a36d7bba757d1252099dd2149c85bf400" prot="public" static="no">
+        <name>VUINTPTR_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vuintptr_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="90" column="14" bodyfile="vsync/vtypes.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1ad7fb7387cf44485812cb3f37f76d06fc" prot="public" static="no">
+        <name>VSIZE_MAX</name>
+        <initializer>V_UNSIGNED_INT_MAX(vsize_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="96" column="14" bodyfile="vsync/vtypes.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1ad82dcdca7f99a60e4c6a65d595e64482" prot="public" static="no">
+        <name>VUINT64_WIDTH</name>
+        <initializer>(sizeof(vuint64_t) * 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="105" column="14" bodyfile="vsync/vtypes.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1ad93b85ce7a0b0fc43ab79ff37f329783" prot="public" static="no">
+        <name>VUINTPTR_WIDTH</name>
+        <initializer>(sizeof(vuintptr_t) * 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="113" column="14" bodyfile="vsync/vtypes.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a59bb7810680148c189a3c9ae12d18ba5" prot="public" static="no">
+        <name>VINT8_MAX</name>
+        <initializer>V_SIGNED_INT_MAX(vint8_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="119" column="14" bodyfile="vsync/vtypes.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1aa2156e84158f47e74be306392b57eeeb" prot="public" static="no">
+        <name>VINT16_MAX</name>
+        <initializer>V_SIGNED_INT_MAX(vint16_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="125" column="14" bodyfile="vsync/vtypes.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a65268358c2f4c4dfe6ff076520d6fc5e" prot="public" static="no">
+        <name>VINT32_MAX</name>
+        <initializer>V_SIGNED_INT_MAX(vint32_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="131" column="14" bodyfile="vsync/vtypes.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a832d669e01929daac58c6b5237f1f933" prot="public" static="no">
+        <name>VINT64_MAX</name>
+        <initializer>V_SIGNED_INT_MAX(vint64_t)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="137" column="14" bodyfile="vsync/vtypes.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a9f55f5fb4dfc334728ee69ad260ad711" prot="public" static="no">
+        <name>VUINTPTR_FORMAT</name>
+        <initializer>&quot;lu&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="148" column="13" bodyfile="vsync/vtypes.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1ab907418b58eb4a1f82e22b133b7f141a" prot="public" static="no">
+        <name>VUINT64_FORMAT</name>
+        <initializer>&quot;lu&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="149" column="13" bodyfile="vsync/vtypes.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtypes_8h_1a622215fb72923d55d0ec98c4f45fe356" prot="public" static="no">
+        <name>VUINT32_FORMAT</name>
+        <initializer>&quot;u&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/vtypes.h" line="150" column="13" bodyfile="vsync/vtypes.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_VTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_VTYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_ENABLE_FREESTANDING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(VSYNC_FREESTANDING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSYNC_ENABLE_FREESTANDING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSYNC_ENABLE_FREESTANDING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;vfreestanding.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined(__APPLE__)<sp/>&amp;&amp;<sp/>!defined(__STDC_FORMAT_MACROS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>github&apos;s<sp/>runner<sp/>this<sp/>is<sp/>not<sp/>really<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>However,<sp/>there<sp/>has<sp/>been<sp/>cases<sp/>mentioned<sp/>on<sp/>the<sp/>internet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>where<sp/>one<sp/>needs<sp/>to<sp/>define<sp/>this<sp/>for<sp/>e.g.<sp/>PRIuPTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>defined<sp/>in<sp/>`inttypes.h`.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://stackoverflow.com/questions/26182336/priuptr-preprocessor-bug-in-gcc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>__STDC_FORMAT_MACROS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/>vuint8_t;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/>vuint16_t;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>vuint32_t;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint64_t<sp/>vuint64_t;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uintptr_t<sp/>vuintptr_t;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int8_t<sp/>vint8_t;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int16_t<sp/>vint16_t;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/>vint32_t;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int64_t<sp/>vint64_t;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>intptr_t<sp/>vintptr_t;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vsize_t;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vbool_t;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Max<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_UNSIGNED_INT_MAX(T)<sp/>((T)<sp/>~(T)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SIGNED_INT_MAX(T)<sp/><sp/><sp/>(T)((1ULL<sp/>&lt;&lt;<sp/>((sizeof(T)<sp/>*<sp/>8ULL)<sp/>-<sp/>1ULL))<sp/>-<sp/>1ULL)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINT8_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT8_MAX<sp/>UINT8_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT8_MAX<sp/>V_UNSIGNED_INT_MAX(vuint8_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINT16_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT16_MAX<sp/>UINT16_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT16_MAX<sp/>V_UNSIGNED_INT_MAX(vuint16_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINT32_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT32_MAX<sp/>UINT32_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT32_MAX<sp/>V_UNSIGNED_INT_MAX(vuint32_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINT64_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_MAX<sp/>UINT64_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_MAX<sp/>V_UNSIGNED_INT_MAX(vuint64_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINTPTR_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_MAX<sp/>UINTPTR_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_MAX<sp/>V_UNSIGNED_INT_MAX(vuintptr_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(SIZE_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSIZE_MAX<sp/>SIZE_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSIZE_MAX<sp/>V_UNSIGNED_INT_MAX(vsize_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Width<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINT64_WIDTH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_WIDTH<sp/>UINT64_WIDTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__UINT64_WIDTH__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_WIDTH<sp/>__UINT64_WIDTH__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_WIDTH<sp/>(sizeof(vuint64_t)<sp/>*<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UINTPTR_WIDTH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_WIDTH<sp/>UINTPTR_WIDTH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__UINTPTR_WIDTH__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_WIDTH<sp/>__UINTPTR_WIDTH__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_WIDTH<sp/>(sizeof(vuintptr_t)<sp/>*<sp/>8)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(INT8_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT8_MAX<sp/>INT8_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT8_MAX<sp/>V_SIGNED_INT_MAX(vint8_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(INT16_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT16_MAX<sp/>INT16_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT16_MAX<sp/>V_SIGNED_INT_MAX(vint16_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(INT32_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT32_MAX<sp/>INT32_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT32_MAX<sp/>V_SIGNED_INT_MAX(vint32_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(INT64_MAX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT64_MAX<sp/>INT64_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VINT64_MAX<sp/>V_SIGNED_INT_MAX(vint64_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Format<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSYNC_ENABLE_FREESTANDING)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_FORMAT<sp/>PRIuPTR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_FORMAT<sp/><sp/>PRIu64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT32_FORMAT<sp/><sp/>PRIu32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>using<sp/>FREESTANDING,<sp/>we<sp/>have<sp/>no<sp/>way<sp/>how<sp/>to<sp/>define<sp/>these<sp/>format</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>properly.<sp/>Here<sp/>we<sp/>do<sp/>our<sp/>best<sp/>shot<sp/>at<sp/>the<sp/>moment.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINTPTR_FORMAT<sp/>&quot;lu&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT64_FORMAT<sp/><sp/>&quot;lu&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VUINT32_FORMAT<sp/><sp/>&quot;u&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/vtypes.h"/>
+  </compounddef>
+</doxygen>

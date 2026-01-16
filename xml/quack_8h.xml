@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="quack_8h" kind="file" language="C++">
+    <compoundname>quack.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/stack/quack.h</label>
+        <link refid="quack_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structquack__node__s" prot="public">quack_node_s</innerclass>
+    <innerclass refid="structquack__t" prot="public">quack_t</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="quack_8h_1ad97de1a51e425c27f93bccf9c7573b23" prot="public" static="no">
+        <name>QUACK_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .head = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0)                                                \
+    }</initializer>
+        <briefdescription>
+<para>Initializer of quack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="57" column="9" bodyfile="vsync/stack/quack.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="quack_8h_1a78040b49924641dc6aa1b268f9dd6d2d" prot="public" static="no">
+        <type>struct <ref refid="structquack__node__s" kindref="compound">quack_node_s</ref></type>
+        <definition>typedef struct quack_node_s quack_node_t</definition>
+        <argsstring></argsstring>
+        <name>quack_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="50" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="quack_8h_1a82b6ce8d735436acf01f2cc10401e396" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void quack_init</definition>
+        <argsstring>(quack_t *s)</argsstring>
+        <name>quack_init</name>
+        <param>
+          <type><ref refid="structquack__t" kindref="compound">quack_t</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Initializes quack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quack data structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="68" column="1" bodyfile="vsync/stack/quack.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="quack_8h_1a79214dae0a6ea13975e877b70118f472" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void quack_push</definition>
+        <argsstring>(quack_t *q, quack_node_t *n)</argsstring>
+        <name>quack_push</name>
+        <param>
+          <type><ref refid="structquack__t" kindref="compound">quack_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref> *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Pushes node into the quack. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quack data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node element </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="80" column="1" bodyfile="vsync/stack/quack.h" bodystart="80" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="quack_8h_1ae08657750d66cffc5f31f9a5a83fcd2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t quack_is_empty</definition>
+        <argsstring>(quack_t *const q)</argsstring>
+        <name>quack_is_empty</name>
+        <param>
+          <type><ref refid="structquack__t" kindref="compound">quack_t</ref> *const</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Checks if quack is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quack data structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there is an element in quack, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="96" column="1" bodyfile="vsync/stack/quack.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="quack_8h_1a1e06506b104702719b7c6e397da2a0be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref> *</type>
+        <definition>static quack_node_t * quack_popall</definition>
+        <argsstring>(quack_t *q)</argsstring>
+        <name>quack_popall</name>
+        <param>
+          <type><ref refid="structquack__t" kindref="compound">quack_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Pops all elements from the quack in LIFO order. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The user is responsible for iterating over the elements (accessible with <computeroutput>next</computeroutput> pointer).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quack data structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>head of quack </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="109" column="1" bodyfile="vsync/stack/quack.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="quack_8h_1a533b7a76080dae3dd4d3a93a46a0fab2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref> *</type>
+        <definition>static quack_node_t * quack_reverse</definition>
+        <argsstring>(quack_node_t *n)</argsstring>
+        <name>quack_reverse</name>
+        <param>
+          <type><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref> *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Reverse order of elements taken from the quack (from LIFO to FIFO or vice-versa). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>head or tail of quack </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>tail or head of quack </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="122" column="1" bodyfile="vsync/stack/quack.h" bodystart="122" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Lockfree concurrent stack/queue (Treiber stack) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It&apos;s a queue! It&apos;s a stack! No, it&apos;s a quack!</para>
+<para>Quack is a concurrent stack that can be accessed as queue. It is also known as Treiber stack. The producers call <ref refid="quack_8h_1a79214dae0a6ea13975e877b70118f472" kindref="member">quack_push()</ref> to add new elements to the stack. The consumers call <ref refid="quack_8h_1a1e06506b104702719b7c6e397da2a0be" kindref="member">quack_popall()</ref> to return a singled-linked list in LIFO order (as a stack). The caller can change the order to FIFO order by calling <ref refid="quack_8h_1a533b7a76080dae3dd4d3a93a46a0fab2" kindref="member">quack_reverse()</ref>. The caller is reposible for iterating over the elements of the list.</para>
+<sect2 id="quack_8h_1autotoc_md18">
+<title>Example quack</title>
+<para><programlisting><codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>n;<sp/></highlight><highlight class="comment">//<sp/>embed<sp/>quack_node<sp/>in<sp/>your<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>node_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structquack__t" kindref="compound">quack_t</ref><sp/>stack;</highlight></codeline>
+<codeline><highlight class="normal">node_t<sp/>*mynode;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>push<sp/>into<sp/>the<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="quack_8h_1a79214dae0a6ea13975e877b70118f472" kindref="member" tooltip="Pushes node into the quack.">quack_push</ref>(&amp;stack,<sp/>&amp;mynode-&gt;n);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>pop<sp/>from<sp/>and<sp/>iterate<sp/>in<sp/>FIFO<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*n<sp/>=<sp/><ref refid="quack_8h_1a533b7a76080dae3dd4d3a93a46a0fab2" kindref="member" tooltip="Reverse order of elements taken from the quack (from LIFO to FIFO or vice-versa).">quack_reverse</ref>(<ref refid="quack_8h_1a1e06506b104702719b7c6e397da2a0be" kindref="member" tooltip="Pops all elements from the quack in LIFO order.">quack_popall</ref>(&amp;stack));</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;<sp/>n<sp/>!=<sp/>NULL;<sp/>n<sp/>=<sp/>n-&gt;next)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node_t<sp/>*nn<sp/>=<sp/>(node_t*)<sp/>n;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect2>
+<sect2 id="quack_8h_1autotoc_md19">
+<title>Reference</title>
+<para>Treiber, R.K., 1986. Systems programming: Coping with parallelism. </para>
+</sect2>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_QUACK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_QUACK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structquack__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquack__node__s" kindref="compound">quack_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquack__node__s" kindref="compound">quack_node_s</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structquack__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(<ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*)<sp/>head;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/><ref refid="structquack__t" kindref="compound">quack_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="quack_8h_1ad97de1a51e425c27f93bccf9c7573b23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QUACK_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.head<sp/>=<sp/>VATOMIC_INIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="quack_8h_1a82b6ce8d735436acf01f2cc10401e396" refkind="member"><highlight class="normal"><ref refid="quack_8h_1a82b6ce8d735436acf01f2cc10401e396" kindref="member" tooltip="Initializes quack.">quack_init</ref>(<ref refid="structquack__t" kindref="compound">quack_t</ref><sp/>*s)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;s-&gt;head,<sp/>NULL);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="quack_8h_1a79214dae0a6ea13975e877b70118f472" refkind="member"><highlight class="normal"><ref refid="quack_8h_1a79214dae0a6ea13975e877b70118f472" kindref="member" tooltip="Pushes node into the quack.">quack_push</ref>(<ref refid="structquack__t" kindref="compound">quack_t</ref><sp/>*q,<sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*n)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/><sp/><sp/><sp/>=<sp/>(<ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;next<sp/>=<sp/>next;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1aca37d07a0eac3d5abdb833c773e1da92" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_rel</ref>(&amp;q-&gt;head,<sp/>next,<sp/>n)<sp/>!=<sp/>next);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="96" refid="quack_8h_1ae08657750d66cffc5f31f9a5a83fcd2b" refkind="member"><highlight class="normal"><ref refid="quack_8h_1ae08657750d66cffc5f31f9a5a83fcd2b" kindref="member" tooltip="Checks if quack is empty.">quack_is_empty</ref>(<ref refid="structquack__t" kindref="compound">quack_t</ref><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>q)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;q-&gt;head)<sp/>==<sp/>NULL;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="109" refid="quack_8h_1a1e06506b104702719b7c6e397da2a0be" refkind="member"><highlight class="normal"><ref refid="quack_8h_1a1e06506b104702719b7c6e397da2a0be" kindref="member" tooltip="Pops all elements from the quack in LIFO order.">quack_popall</ref>(<ref refid="structquack__t" kindref="compound">quack_t</ref><sp/>*q)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1aa5637e10ff9729ebaf7245d88ce0a8ff" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg_acq</ref>(&amp;q-&gt;head,<sp/>NULL);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="122" refid="quack_8h_1a533b7a76080dae3dd4d3a93a46a0fab2" refkind="member"><highlight class="normal"><ref refid="quack_8h_1a533b7a76080dae3dd4d3a93a46a0fab2" kindref="member" tooltip="Reverse order of elements taken from the quack (from LIFO to FIFO or vice-versa).">quack_reverse</ref>(<ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*n)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref><sp/>*curr<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>curr-&gt;next;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr-&gt;next<sp/>=<sp/>prev;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>next;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prev;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/stack/quack.h"/>
+  </compounddef>
+</doxygen>

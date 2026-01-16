@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="arraylock_8h" kind="file" language="C++">
+    <compoundname>arraylock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structarraylock__flag__s" prot="public">arraylock_flag_s</innerclass>
+    <innerclass refid="structarraylock__s" prot="public">arraylock_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="arraylock_8h_1aadbf46a151c059091142f3020e157607" prot="public" static="no">
+        <type>struct <ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_s</ref></type>
+        <definition>typedef struct arraylock_flag_s arraylock_flag_t</definition>
+        <argsstring></argsstring>
+        <name>arraylock_flag_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="38" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="arraylock_8h_1a8abffc0374342a79c417e7e1b254ffc7" prot="public" static="no">
+        <type>struct <ref refid="structarraylock__s" kindref="compound">arraylock_s</ref></type>
+        <definition>typedef struct arraylock_s arraylock_t</definition>
+        <argsstring></argsstring>
+        <name>arraylock_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="46" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="arraylock_8h_1a3ad5b79c5058640c8bfc4c36b5f99144" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void arraylock_init</definition>
+        <argsstring>(arraylock_t *lock, arraylock_flag_t *flags, const vuint32_t len)</argsstring>
+        <name>arraylock_init</name>
+        <param>
+          <type><ref refid="structarraylock__s" kindref="compound">arraylock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref> *</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const vuint32_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given lock object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of arraylock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of arraylock_flag_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>next power of two greater or equal to the maximum number of threads. Length of <computeroutput>flags</computeroutput>array.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> <computeroutput>len</computeroutput> MUST BE A POWER OF TWO. This is required because we use a circular array and take advantage of unsigned integers &quot;overflow&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="60" column="1" bodyfile="vsync/spinlock/arraylock.h" bodystart="60" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="arraylock_8h_1a5d327e61a1432a00cf5a98995e2c7eb3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void arraylock_acquire</definition>
+        <argsstring>(arraylock_t *lock, vuint32_t *slot)</argsstring>
+        <name>arraylock_acquire</name>
+        <param>
+          <type><ref refid="structarraylock__s" kindref="compound">arraylock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>vuint32_t *</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the given lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of arraylock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter. Stores the index of the slot associates with the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> the same value returned in <computeroutput>slot</computeroutput> must be passed intact to <computeroutput>arraylock_release</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="89" column="1" bodyfile="vsync/spinlock/arraylock.h" bodystart="89" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="arraylock_8h_1ab99ea0cb7000dbef05e24dc3c9eeb6ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void arraylock_release</definition>
+        <argsstring>(arraylock_t *lock, vuint32_t slot)</argsstring>
+        <name>arraylock_release</name>
+        <param>
+          <type><ref refid="structarraylock__s" kindref="compound">arraylock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Releases the given lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of arraylock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the slot associates with the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="109" column="1" bodyfile="vsync/spinlock/arraylock.h" bodystart="109" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple array-based queue lock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The array lock has an array of flags, each slot is associated with a thread. If we have <computeroutput>N</computeroutput> threads then the array has <computeroutput>N</computeroutput> slots. Each slot represents a boolean flag indicating the associated thread&apos;s permission to acquire the lock. The thread waits on its flag to become <computeroutput>true</computeroutput> to acquire the lock. The thread releases the lock, by giving away its permission to the next thread, i.e. sets its own flag to <computeroutput>false</computeroutput> and the flag of the one next in line to <computeroutput>true</computeroutput>.</para>
+<para>Initially the first flag is set to <computeroutput>true</computeroutput> and the rest to <computeroutput>false</computeroutput>, and the tail holds the index of the first slot.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_arraylock.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="arraylock_8h" kindref="compound" tooltip="Simple array-based queue lock.">vsync/spinlock/arraylock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEXT_POWER_2<sp/>16U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref><sp/>g_flags[NEXT_POWER_2];</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structarraylock__s" kindref="compound">arraylock_t</ref><sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>slot<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arraylock_8h_1a5d327e61a1432a00cf5a98995e2c7eb3" kindref="member" tooltip="Acquires the given lock.">arraylock_acquire</ref>(&amp;g_lock,<sp/>&amp;slot);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arraylock_8h_1ab99ea0cb7000dbef05e24dc3c9eeb6ed" kindref="member" tooltip="Releases the given lock.">arraylock_release</ref>(&amp;g_lock,<sp/>slot);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="arraylock_8h_1a3ad5b79c5058640c8bfc4c36b5f99144" kindref="member" tooltip="Initializes the given lock object.">arraylock_init</ref>(&amp;g_lock,<sp/>g_flags,<sp/>NEXT_POWER_2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 7.5.1] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_ARRAYLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_ARRAYLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structarraylock__flag__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>flag;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structarraylock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structarraylock__s" kindref="compound">arraylock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>tail;<sp/></highlight><highlight class="comment">/*<sp/>The<sp/>virtual<sp/>index<sp/>of<sp/>the<sp/>slot<sp/>that<sp/>belongs<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref><sp/>*flags;<sp/></highlight><highlight class="comment">/*<sp/>An<sp/>array<sp/>that<sp/>holds<sp/>a<sp/>slot<sp/>for<sp/>each<sp/>thread,</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indicating<sp/>its<sp/>permission<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>flags_len;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>length<sp/>of<sp/>flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/><ref refid="structarraylock__s" kindref="compound">arraylock_t</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="arraylock_8h_1a3ad5b79c5058640c8bfc4c36b5f99144" refkind="member"><highlight class="normal"><ref refid="arraylock_8h_1a3ad5b79c5058640c8bfc4c36b5f99144" kindref="member" tooltip="Initializes the given lock object.">arraylock_init</ref>(<ref refid="structarraylock__s" kindref="compound">arraylock_t</ref><sp/>*lock,<sp/><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref><sp/>*flags,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vuint32_t<sp/>len)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a4b55f6d5450964a5ebd3092c98cd69d0" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic8_init</ref>(&amp;lock-&gt;tail,<sp/>0);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(len<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(V_IS_POWER_OF_TWO(len));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>lock-&gt;flags_len<sp/>=<sp/>len;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>lock-&gt;flags<sp/><sp/><sp/><sp/><sp/>=<sp/>flags;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>first<sp/>slot<sp/>init<sp/>as<sp/>one<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a4b55f6d5450964a5ebd3092c98cd69d0" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic8_init</ref>(&amp;lock-&gt;flags[0].flag,<sp/>1);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>rest<sp/>init<sp/>as<sp/>zeros<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>lock-&gt;flags_len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a4b55f6d5450964a5ebd3092c98cd69d0" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic8_init</ref>(&amp;lock-&gt;flags[i].flag,<sp/>0);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="arraylock_8h_1a5d327e61a1432a00cf5a98995e2c7eb3" refkind="member"><highlight class="normal"><ref refid="arraylock_8h_1a5d327e61a1432a00cf5a98995e2c7eb3" kindref="member" tooltip="Acquires the given lock.">arraylock_acquire</ref>(<ref refid="structarraylock__s" kindref="compound">arraylock_t</ref><sp/>*lock,<sp/>vuint32_t<sp/>*slot)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>take<sp/>the<sp/>slot<sp/>with<sp/>the<sp/>tail<sp/>index,<sp/>and<sp/>increment<sp/>the<sp/>tail<sp/>by<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>note<sp/>that<sp/>if<sp/>we<sp/>reached<sp/>the<sp/>maximum<sp/>index<sp/>we<sp/>will<sp/>go<sp/>back<sp/>to<sp/>index<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thus<sp/>slot<sp/>=<sp/>tail<sp/>%<sp/>lock-&gt;size.<sp/>Because<sp/>of<sp/>unsigned<sp/>overflow,<sp/>lock-&gt;size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>a<sp/>power<sp/>of<sp/>two,<sp/>and<sp/>this<sp/>was<sp/>ensured<sp/>in<sp/>the<sp/>initialization.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>tail<sp/>=<sp/><ref refid="core__u8_8h_1a4f593689fc0d06a57b2b858f6e7ad523" kindref="member" tooltip="Increments the value of a and returns the old value.">vatomic8_get_inc</ref>(&amp;lock-&gt;tail);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>*slot<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>tail<sp/>%<sp/>lock-&gt;flags_len;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>you<sp/>have<sp/>permission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__u8_8h_1af592a72a7f0d738834f9baaf89835067" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read_acq</ref>(&amp;lock-&gt;flags[*slot].flag)<sp/>==<sp/>0U)<sp/>{}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="arraylock_8h_1ab99ea0cb7000dbef05e24dc3c9eeb6ed" refkind="member"><highlight class="normal"><ref refid="arraylock_8h_1ab99ea0cb7000dbef05e24dc3c9eeb6ed" kindref="member" tooltip="Releases the given lock.">arraylock_release</ref>(<ref refid="structarraylock__s" kindref="compound">arraylock_t</ref><sp/>*lock,<sp/>vuint32_t<sp/>slot)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>next<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Give<sp/>away<sp/>permission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a3a73dc4a8d2431807bfd541f78a901e7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write_rlx</ref>(&amp;lock-&gt;flags[slot].flag,<sp/>0);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>the<sp/>index<sp/>of<sp/>the<sp/>next<sp/>in<sp/>line<sp/>thread&apos;s<sp/>slot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>next<sp/>=<sp/>(slot<sp/>+<sp/>1)<sp/>%<sp/>lock-&gt;flags_len;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Grant<sp/>the<sp/>permission<sp/>to<sp/>the<sp/>next<sp/>in<sp/>line<sp/>thread</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a156b6b44366010858161ed43db89b172" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write_rel</ref>(&amp;lock-&gt;flags[next].flag,<sp/>1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/arraylock.h"/>
+  </compounddef>
+</doxygen>

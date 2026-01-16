@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="range__policy_8h" kind="file" language="C++">
+    <compoundname>range_policy.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="elimination__stack_8h" local="no">vsync/stack/elimination_stack.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/stack/internal/range_policy.h</label>
+        <link refid="range__policy_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="2">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/stack/internal/range_policy.h</label>
+        <link refid="range__policy_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrange__policy__s" prot="public">range_policy_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="range__policy_8h_1a2fb51d2b1767c209c7c8854c6f4bd1bc" prot="public" static="no">
+        <type>struct <ref refid="structrange__policy__s" kindref="compound">range_policy_s</ref></type>
+        <definition>typedef struct range_policy_s range_policy_t</definition>
+        <argsstring></argsstring>
+        <name>range_policy_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="16" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="range__policy_8h_1ae8623b0f7b40f9cc723061ee3f433e4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void range_policy_record_init</definition>
+        <argsstring>(range_policy_t *policy, vuint32_t max)</argsstring>
+        <name>range_policy_record_init</name>
+        <param>
+          <type><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given <computeroutput>policy</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum allowed range </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="25" column="1" bodyfile="vsync/stack/internal/range_policy.h" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="range__policy_8h_1a27fbe9df509777f84c03d0819c920a18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint32_t</type>
+        <definition>static vuint32_t range_policy_get_range</definition>
+        <argsstring>(range_policy_t *policy)</argsstring>
+        <name>range_policy_get_range</name>
+        <param>
+          <type><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <computeroutput>range_policy_t</computeroutput> object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint32_t current range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="41" column="1" bodyfile="vsync/stack/internal/range_policy.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="range__policy_8h_1ab82cab691f4c5e0f80bf3c5f8f9e587b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void range_policy_record_success</definition>
+        <argsstring>(range_policy_t *policy)</argsstring>
+        <name>range_policy_record_success</name>
+        <param>
+          <type><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Records a successful operation, and expands the range as a result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <computeroutput>range_policy_t</computeroutput> object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="52" column="1" bodyfile="vsync/stack/internal/range_policy.h" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="range__policy_8h_1a7a09546faac3895148707ac9e184ab72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void range_policy_record_fail</definition>
+        <argsstring>(range_policy_t *policy)</argsstring>
+        <name>range_policy_record_fail</name>
+        <param>
+          <type><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Records a failed operation, and shrinks the range as a result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of <computeroutput>range_policy_t</computeroutput> object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="67" column="1" bodyfile="vsync/stack/internal/range_policy.h" bodystart="67" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_RANGE_POLICY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_RANGE_POLICY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structrange__policy__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structrange__policy__s" kindref="compound">range_policy_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>max;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>range;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>successful_operations;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>failed_operations;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">range_policy_record_init(<ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>*policy,<sp/>vuint32_t<sp/>max)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(policy);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;range<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>max;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;max<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>max;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;successful_operations<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;failed_operations<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(policy-&gt;range<sp/>&lt;=<sp/>policy-&gt;max);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">range_policy_get_range(<ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>*policy)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(policy);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>policy-&gt;range;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">range_policy_record_success(<ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>*policy)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(policy);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;successful_operations++;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(policy-&gt;range<sp/>&lt;<sp/>policy-&gt;max)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>policy-&gt;range++;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">range_policy_record_fail(<ref refid="structrange__policy__s" kindref="compound">range_policy_t</ref><sp/>*policy)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(policy);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>policy-&gt;failed_operations++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(policy-&gt;range<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>policy-&gt;range--;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/stack/internal/range_policy.h"/>
+  </compounddef>
+</doxygen>

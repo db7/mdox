@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="backoff_8h" kind="file" language="C++">
+    <compoundname>backoff.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="verify_8h" local="no">vsync/common/verify.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includedby refid="elimination__stack_8h" local="no">vsync/stack/elimination_stack.h</includedby>
+    <includedby refid="xbo__stack_8h" local="no">vsync/stack/xbo_stack.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="5">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="6">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="2">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structbackoff__s" prot="public">backoff_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* backoff_usleep_fun_t) (vuint32_t microseconds)</definition>
+        <argsstring>)(vuint32_t microseconds)</argsstring>
+        <name>backoff_usleep_fun_t</name>
+        <briefdescription>
+<para>A function pointer to a function that sleeps for the given microseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>microseconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>amount of sleep in microseconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0, on no error. </para>
+</simplesect>
+<simplesect kind="return"><para>-1, on error.</para>
+</simplesect>
+&gt; <bold>Note:</bold> Use usleep on platforms where <computeroutput>usleep</computeroutput> is available. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="34" column="9" bodyfile="vsync/utils/backoff.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="backoff_8h_1a02acb03657e320b7069b5d2333af9241" prot="public" static="no">
+        <type>vuint32_t(*</type>
+        <definition>typedef vuint32_t(* backoff_rand_fun_t) (vuint32_t min, vuint32_t max)</definition>
+        <argsstring>)(vuint32_t min, vuint32_t max)</argsstring>
+        <name>backoff_rand_fun_t</name>
+        <briefdescription>
+<para>A function pointer to a function that generates a random number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The generated random number should be in <computeroutput>[min, max]</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound of the random number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upper bound of the random number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the generated random number in <computeroutput>[min, max]</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="44" column="9" bodyfile="vsync/utils/backoff.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="backoff_8h_1a33e46922e30fcc62ae5f31e55225d049" prot="public" static="no">
+        <type>struct <ref refid="structbackoff__s" kindref="compound">backoff_s</ref></type>
+        <definition>typedef struct backoff_s backoff_t</definition>
+        <argsstring></argsstring>
+        <name>backoff_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="54" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="backoff_8h_1add931a3465e02f3a653b54c743f95672" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void xbobackoff_init</definition>
+        <argsstring>(backoff_t *backoff, vuint32_t min, vuint32_t max, backoff_usleep_fun_t usleep_fun, backoff_rand_fun_t rand_fun)</argsstring>
+        <name>xbobackoff_init</name>
+        <param>
+          <type><ref refid="structbackoff__s" kindref="compound">backoff_t</ref> *</type>
+          <declname>backoff</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type><ref refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" kindref="member">backoff_usleep_fun_t</ref></type>
+          <declname>usleep_fun</declname>
+        </param>
+        <param>
+          <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+          <declname>rand_fun</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given exponential <computeroutput>backoff</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of backoff_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum amount of microseconds a thread is allowed to sleep. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum allowed amount of microseconds to sleep. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usleep_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a function that sleeps for the given microseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rand_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer to a function that generates a random number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="68" column="1" bodyfile="vsync/utils/backoff.h" bodystart="68" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="backoff_8h_1acbfc8bd09651891789598de42afaf8b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void xbobackoff_backoff</definition>
+        <argsstring>(backoff_t *backoff)</argsstring>
+        <name>xbobackoff_backoff</name>
+        <param>
+          <type><ref refid="structbackoff__s" kindref="compound">backoff_t</ref> *</type>
+          <declname>backoff</declname>
+        </param>
+        <briefdescription>
+<para>Puts the calling thread to sleep for a random number of microseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the sleep cannot exceed the given <computeroutput>max</computeroutput> in <computeroutput>xbobackoff_init</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of backoff_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="88" column="1" bodyfile="vsync/utils/backoff.h" bodystart="88" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Implements exponential backoff. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 7.4] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_BACKOFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_BACKOFF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8h" kindref="compound" tooltip="Verification support.">vsync/common/verify.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" kindref="member" tooltip="A function pointer to a function that sleeps for the given microseconds.">backoff_usleep_fun_t</ref>)(vuint32_t<sp/>microseconds);</highlight></codeline>
+<codeline lineno="44" refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuint32_t<sp/>(*<ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref>)(vuint32_t<sp/>min,<sp/>vuint32_t<sp/>max);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structbackoff__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbackoff__s" kindref="compound">backoff_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>max_delay;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>has<sp/>to<sp/>be<sp/>atomic<sp/>to<sp/>avoid<sp/>data-race<sp/>and<sp/>undefined<sp/>behavior</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@note<sp/>in<sp/>java<sp/>defining<sp/>this<sp/>as<sp/>atomic<sp/>is<sp/>not<sp/>necessary</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>limit;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" kindref="member" tooltip="A function pointer to a function that sleeps for the given microseconds.">backoff_usleep_fun_t</ref><sp/>usleep_fun;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/><ref refid="structbackoff__s" kindref="compound">backoff_t</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="backoff_8h_1add931a3465e02f3a653b54c743f95672" refkind="member"><highlight class="normal"><ref refid="backoff_8h_1add931a3465e02f3a653b54c743f95672" kindref="member" tooltip="Initializes the given exponential backoff object.">xbobackoff_init</ref>(<ref refid="structbackoff__s" kindref="compound">backoff_t</ref><sp/>*backoff,<sp/>vuint32_t<sp/>min,<sp/>vuint32_t<sp/>max,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" kindref="member" tooltip="A function pointer to a function that sleeps for the given microseconds.">backoff_usleep_fun_t</ref><sp/>usleep_fun,<sp/><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member" tooltip="A function pointer to a function that generates a random number.">backoff_rand_fun_t</ref><sp/>rand_fun)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(backoff);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(usleep_fun);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(min<sp/>&lt;<sp/>max);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>backoff-&gt;max_delay<sp/><sp/>=<sp/>max;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>backoff-&gt;usleep_fun<sp/>=<sp/>usleep_fun;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>backoff-&gt;rand_fun<sp/><sp/><sp/>=<sp/>rand_fun;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;backoff-&gt;limit,<sp/>min);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="backoff_8h_1acbfc8bd09651891789598de42afaf8b8" refkind="member"><highlight class="normal"><ref refid="backoff_8h_1acbfc8bd09651891789598de42afaf8b8" kindref="member" tooltip="Puts the calling thread to sleep for a random number of microseconds.">xbobackoff_backoff</ref>(<ref refid="structbackoff__s" kindref="compound">backoff_t</ref><sp/>*backoff)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>limit<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;backoff-&gt;limit);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>delay<sp/><sp/><sp/><sp/><sp/>=<sp/>backoff-&gt;rand_fun(0,<sp/>limit);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>new_limit<sp/>=<sp/>VMIN(backoff-&gt;max_delay,<sp/>(2<sp/>*<sp/>limit));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>limit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;backoff-&gt;limit,<sp/>new_limit);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>sleep<sp/>in<sp/>microseconds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>backoff-&gt;usleep_fun(delay);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/utils/backoff.h"/>
+  </compounddef>
+</doxygen>

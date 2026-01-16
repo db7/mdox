@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_efb53ea499cd296f78d8befa59ed13bf" kind="dir">
+    <compoundname>vsync/stack</compoundname>
+    <innerdir refid="dir_eec87d67c4c9fe912d26ce637923b312">vsync/stack/internal</innerdir>
+    <innerfile refid="elimination__stack_8h">elimination_stack.h</innerfile>
+    <innerfile refid="quack_8h">quack.h</innerfile>
+    <innerfile refid="xbo__stack_8h">xbo_stack.h</innerfile>
+    <briefdescription>
+<para>Concurrent stacks. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/stack/"/>
+  </compounddef>
+</doxygen>

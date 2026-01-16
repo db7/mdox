@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_9f47f6883b903fd4930f925c08c1d504" kind="dir">
+    <compoundname>vsync/map/internal</compoundname>
+    <innerdir refid="dir_1568be98b5811a335b2217c2c8a1514f">vsync/map/internal/hashtable</innerdir>
+    <innerdir refid="dir_fb6a5d03b5184031f891eae0e65c8d82">vsync/map/internal/listset</innerdir>
+    <innerdir refid="dir_c567344791f4755b045ee0c7419e07fc">vsync/map/internal/skiplist</innerdir>
+    <innerdir refid="dir_6bdb6f7525de4a4416e80cc15f7aab17">vsync/map/internal/treeset</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/internal/"/>
+  </compounddef>
+</doxygen>

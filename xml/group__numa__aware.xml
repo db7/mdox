@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__numa__aware" kind="group">
+    <compoundname>numa_aware</compoundname>
+    <title>Numa-aware</title>
+    <innerfile refid="cnalock_8h">cnalock.h</innerfile>
+    <innerfile refid="hclhlock_8h">hclhlock.h</innerfile>
+    <innerfile refid="hmcslock_8h">hmcslock.h</innerfile>
+    <briefdescription>
+<para>Group of numa-aware algorithms. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

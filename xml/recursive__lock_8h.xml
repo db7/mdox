@@ -1,0 +1,956 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="recursive__lock_8h" kind="file" language="C++">
+    <compoundname>recursive_lock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="rec__mcslock_8h" local="no">vsync/spinlock/rec_mcslock.h</includedby>
+    <includedby refid="rec__seqlock_8h" local="no">vsync/spinlock/rec_seqlock.h</includedby>
+    <includedby refid="rec__spinlock_8h" local="no">vsync/spinlock/rec_spinlock.h</includedby>
+    <includedby refid="rec__ticketlock_8h" local="no">vsync/spinlock/rec_ticketlock.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="2">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="recursive__lock_8h_1a64081d1276957aab315d28b7dcd0b301" prot="public" static="no">
+        <name>REC_MACRO_EVAL</name>
+        <param><defname>...</defname></param>
+        <initializer>__VA_ARGS__</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="46" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a4066c4e80b3fd40ce2eea367447ed240" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK</name>
+        <param><defname>name</defname></param>
+        <param><defname>lock_type</defname></param>
+        <param><defname>lock_init</defname></param>
+        <param><defname>lock_acquire</defname></param>
+        <param><defname>lock_release</defname></param>
+        <param><defname>tryacquire_sel</defname></param>
+        <param><defname>context_sel</defname></param>
+        <initializer>    <ref refid="recursive__lock_8h_1a0c43611100be645ea4fcb88b42aca955" kindref="member">DEF_RECURSIVE_LOCK_TYPE</ref>(name, lock_type);                                  \
+    <ref refid="recursive__lock_8h_1a5cc298e9f2c2fced9940ab8d5f0923a8" kindref="member">DEF_RECURSIVE_LOCK_INIT</ref>(name, lock_init)                                   \
+    <ref refid="recursive__lock_8h_1abc90b8e39a4a32739a43eaca00bdb6ec" kindref="member">DEF_RECURSIVE_LOCK_RELEASE</ref>(name, lock_release, context_sel)                \
+    <ref refid="recursive__lock_8h_1ab4560813e4bbc4c5751216fcd5d73b17" kindref="member">DEF_RECURSIVE_LOCK_ACQUIRE</ref>(name, lock_acquire, context_sel)                \
+    <ref refid="recursive__lock_8h_1aa3c3fae4be72a8d38186ac32aae030bd" kindref="member">DEF_RECURSIVE_LOCK_TRYACQUIRE</ref>(name, tryacquire_sel, context_sel)</initializer>
+        <briefdescription>
+<para>Defines a recursive lock type and functions to initialize, acquire, and release it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization function of the base lock </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_acquire</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock acquire function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_release</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock release function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tryacquire_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" kindref="member">WITHOUT_TRYACQUIRE</ref> or <ref refid="recursive__lock_8h_1ab33557c9aa48f3830e4bc27779b9e923" kindref="member">WITH_TRYACQUIRE(lock_tryacquire)</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref> or <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="62" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a0c43611100be645ea4fcb88b42aca955" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK_TYPE</name>
+        <param><defname>name</defname></param>
+        <param><defname>lock_type</defname></param>
+        <initializer>    typedef struct name##_s {                                                  \
+        lock_type lock;                                                        \
+        <ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref> owner;                                                     \
+        vuint32_t count;                                                       \
+    } VSYNC_CACHEALIGN name##_t</initializer>
+        <briefdescription>
+<para>Defines <computeroutput>struct name_s</computeroutput> and <computeroutput>name_t</computeroutput> as recursive lock embedding <computeroutput>lock_type</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="75" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a51c008325a84902ed1511ab4205d15e7" prot="public" static="no">
+        <name>RECURSIVE_LOCK_NOCPU</name>
+        <initializer>VUINT32_MAX</initializer>
+        <briefdescription>
+<para>Invalid CPU ID used to represent a released lock. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="83" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a85754bbd6b199bf6ca47bda519988135" prot="public" static="no">
+        <name>RECURSIVE_LOCK_INIT</name>
+        <param><defname>LOCK_INIT</defname></param>
+        <initializer>    {                                                                          \
+        .lock  = REC_MACRO_EVAL(LOCK_INIT),                                    \
+        .owner = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(<ref refid="recursive__lock_8h_1a51c008325a84902ed1511ab4205d15e7" kindref="member">RECURSIVE_LOCK_NOCPU</ref>), .count = 0,               \
+    }</initializer>
+        <briefdescription>
+<para>Initializer of the recursive and the base lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LOCK_INIT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initializer of the base lock. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="90" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a5cc298e9f2c2fced9940ab8d5f0923a8" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK_INIT</name>
+        <param><defname>name</defname></param>
+        <param><defname>lock_init</defname></param>
+        <initializer>    static inline void name##_init(name##_t *l)                                \
+    {                                                                          \
+        lock_init(&amp;l-&gt;lock);                                                   \
+        <ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member">vatomic32_init</ref>(&amp;l-&gt;owner, <ref refid="recursive__lock_8h_1a51c008325a84902ed1511ab4205d15e7" kindref="member">RECURSIVE_LOCK_NOCPU</ref>);                       \
+        l-&gt;count = 0;                                                          \
+    }</initializer>
+        <briefdescription>
+<para>Defines the init function of the recursive lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>initialization function of the base lock</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The defined init function initializes the recursive lock, also calling <computeroutput>lock_init</computeroutput> of the base lock. The function declaration is as follows:</para>
+<para><programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>name##_init(name##_t<sp/>*l);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="111" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="111" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1ab4560813e4bbc4c5751216fcd5d73b17" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK_ACQUIRE</name>
+        <param><defname>name</defname></param>
+        <param><defname>lock_acquire</defname></param>
+        <param><defname>context_sel</defname></param>
+        <initializer>    V_DEF_RECURSIVE_LOCK_ACQUIRE(                                              \
+        name, SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_acquire, context_sel),   \
+        SELECT_RECURSIVE_LOCK_CONTEXT(context_sel))</initializer>
+        <briefdescription>
+<para>Defines the acquire function of the recursive lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_acquire</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock acquire function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref> or <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The defined acquire function calls <computeroutput>lock_acquire</computeroutput> of the base lock if the caller thread is not already the owner of the lock. A counter is used to keep track of the number of recursions.</para>
+<para>When defined <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref>, the acquire declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>name##_acquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para>When defined <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref>, the acquire declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>name##_acquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>ctx_type<sp/>*ctx)</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>thread ID or core ID of the caller </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context of the caller thread/core </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="144" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1abc90b8e39a4a32739a43eaca00bdb6ec" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK_RELEASE</name>
+        <param><defname>name</defname></param>
+        <param><defname>lock_release</defname></param>
+        <param><defname>context_sel</defname></param>
+        <initializer>    V_DEF_RECURSIVE_LOCK_RELEASE(                                              \
+        name, SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_release, context_sel),   \
+        SELECT_RECURSIVE_LOCK_CONTEXT(context_sel))</initializer>
+        <briefdescription>
+<para>Defines the release function of the recursive lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lock_release</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>base lock release function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref> or <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The defined release function decreases the recursion counter, calling <computeroutput>lock_release</computeroutput> of the base lock once the counter is zero.</para>
+<para>When defined <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref>, the release declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>name##_release(name##_t<sp/>*l)</highlight></codeline>
+</programlisting></para>
+<para>When defined <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref>, the release declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>name##_release(name##_t<sp/>*l,<sp/>ctx_type<sp/>*ctx)</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context of the caller thread/core </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="172" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1aa3c3fae4be72a8d38186ac32aae030bd" prot="public" static="no">
+        <name>DEF_RECURSIVE_LOCK_TRYACQUIRE</name>
+        <param><defname>name</defname></param>
+        <param><defname>tryacquire_sel</defname></param>
+        <param><defname>context_sel</defname></param>
+        <initializer>    RECURSIVE_LOCK_EVAL(SELECT_RECURSIVE_LOCK_TRYACQUIRE, name,                \
+                        RECURSIVE_LOCK_PREFIX(tryacquire_sel), context_sel)</initializer>
+        <briefdescription>
+<para>Defines the tryacquire function of the recursive lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tryacquire_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" kindref="member">WITHOUT_TRYACQUIRE</ref> or <ref refid="recursive__lock_8h_1ab33557c9aa48f3830e4bc27779b9e923" kindref="member">WITH_TRYACQUIRE(lock_tryacquire)</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context_sel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref> or <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<ref refid="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" kindref="member">WITHOUT_TRYACQUIRE</ref> disables the definition of the tryacquire function. Selecting <ref refid="recursive__lock_8h_1ab33557c9aa48f3830e4bc27779b9e923" kindref="member">WITH_TRYACQUIRE(lock_tryacquire)</ref> defines the tryacquire function, which tries to acquire the recursive lock, calling <computeroutput>lock_tryacquire</computeroutput> of the base lock. If the caller is already the owner of the lock, the recursion counter is incremented.</para>
+<para>When defined <ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member">WITHOUT_CONTEXT</ref>, the tryacquire declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>name##_tryacquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+</programlisting> When defined <ref refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" kindref="member">WITH_CONTEXT(ctx_type)</ref>, the tryacquire declaration is as follows: <programlisting filename=".c"><codeline><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>name##_tryacquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>ctx_type<sp/>*ctx)</highlight></codeline>
+</programlisting> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>recursive lock </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>thread ID or core ID of the caller </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>context of the caller thread/core </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if recursive lock was acquired, otherwise 0.</para>
+</simplesect>
+<blockquote><para><zwj/><bold>Note:</bold> the return values of the tryacquire of the base lock <bold>must</bold> be the same as described here: 1 for success, 0 for failure. </para>
+</blockquote></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="208" column="9" bodyfile="vsync/utils/recursive_lock.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" prot="public" static="no">
+        <name>WITHOUT_TRYACQUIRE</name>
+        <briefdescription>
+<para>internal macros </para>
+        </briefdescription>
+        <detaileddescription>
+<para>macros for documentation only Option to disable the definition of a tryacquire function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="304" column="13" bodyfile="vsync/utils/recursive_lock.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1ab33557c9aa48f3830e4bc27779b9e923" prot="public" static="no">
+        <name>WITH_TRYACQUIRE</name>
+        <param><defname>lock_tryacquire</defname></param>
+        <briefdescription>
+<para>Option to enable the definition of a tryacquire function, calling the base <computeroutput>lock_tryacquire</computeroutput> function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="310" column="13" bodyfile="vsync/utils/recursive_lock.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" prot="public" static="no">
+        <name>WITHOUT_CONTEXT</name>
+        <briefdescription>
+<para>Option to disable the use of context in acquire and release functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="315" column="13" bodyfile="vsync/utils/recursive_lock.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" prot="public" static="no">
+        <name>WITH_CONTEXT</name>
+        <param><defname>context_type</defname></param>
+        <briefdescription>
+<para>Option to add a context argument to acquire and release functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/recursive_lock.h" line="320" column="13" bodyfile="vsync/utils/recursive_lock.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Wrapper for defining recursive locks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Recursive embeds libvsync locks, making them recursive (or reentrant). Recursive employs a set of macros, which declare a new recursive lock type and functions to initialize, acquire, and release the lock.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para>The following example shows how to make a recursive ticketlock. The <computeroutput>name</computeroutput> of the new lock is <computeroutput>rec_ticketlock</computeroutput>.</para>
+<para><programlisting filename=".c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ticketlock_8h" kindref="compound" tooltip="Classic ticketlock with two 32-bit variables (owner and next).">vsync/spinlock/ticketlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="recursive__lock_8h" kindref="compound" tooltip="Wrapper for defining recursive locks.">vsync/utils/recursive_lock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="recursive__lock_8h_1a4066c4e80b3fd40ce2eea367447ed240" kindref="member" tooltip="Defines a recursive lock type and functions to initialize, acquire, and release it.">DEF_RECURSIVE_LOCK</ref><sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/>rec_ticketlock,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>prefix<sp/>for<sp/>type<sp/>and<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structticketlock__s" kindref="compound">ticketlock_s</ref>,<sp/></highlight><highlight class="comment">//<sp/>the<sp/>type<sp/>of<sp/>the<sp/>base<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="ticketlock_8h_1ac3d4fe569733d86bcbf7718076315f73" kindref="member" tooltip="Initializes the ticketlock.">ticketlock_init</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init,<sp/>acquire<sp/>and<sp/>release<sp/>of<sp/>the<sp/>base<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="ticketlock_8h_1a0dd64bcd770b5a1dc3bcf77e62b33733" kindref="member" tooltip="Acquires the ticketlock.">ticketlock_acquire</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="ticketlock_8h_1a32c25963b2b0cf25ce3dfb407aa8f844" kindref="member" tooltip="Releases the ticketlock.">ticketlock_release</ref>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" kindref="member" tooltip="internal macros">WITHOUT_TRYACQUIRE</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>whether<sp/>or<sp/>not<sp/>to<sp/>define<sp/>tryacquire</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><ref refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" kindref="member" tooltip="Option to disable the use of context in acquire and release functions.">WITHOUT_CONTEXT</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>whether<sp/>or<sp/>not<sp/>the<sp/>base<sp/>lock<sp/>needs<sp/>context</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+</programlisting></para>
+<para>This defines <computeroutput>struct rec_ticketlock_s</computeroutput> as well as a type <computeroutput>rec_ticketlock_t</computeroutput>. It also defines <computeroutput>_init</computeroutput>, <computeroutput>_acquire</computeroutput>, and <computeroutput>_release</computeroutput> functions with the <computeroutput>rec_ticketlock</computeroutput> prefix. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_RECURSIVE_LOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_RECURSIVE_LOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REC_MACRO_EVAL(...)<sp/>__VA_ARGS__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="recursive__lock_8h_1a4066c4e80b3fd40ce2eea367447ed240" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK(name,<sp/>lock_type,<sp/>lock_init,<sp/>lock_acquire,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lock_release,<sp/>tryacquire_sel,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_TYPE(name,<sp/>lock_type);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_INIT(name,<sp/>lock_init)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_RELEASE(name,<sp/>lock_release,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_ACQUIRE(name,<sp/>lock_acquire,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_TRYACQUIRE(name,<sp/>tryacquire_sel,<sp/>context_sel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="recursive__lock_8h_1a0c43611100be645ea4fcb88b42aca955" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_TYPE(name,<sp/>lock_type)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>typedef<sp/>struct<sp/>name##_s<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lock_type<sp/>lock;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_t<sp/>owner;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>count;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>VSYNC_CACHEALIGN<sp/>name##_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="recursive__lock_8h_1a51c008325a84902ed1511ab4205d15e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_NOCPU<sp/>VUINT32_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="recursive__lock_8h_1a85754bbd6b199bf6ca47bda519988135" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_INIT(LOCK_INIT)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.lock<sp/><sp/>=<sp/>REC_MACRO_EVAL(LOCK_INIT),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.owner<sp/>=<sp/>VATOMIC_INIT(RECURSIVE_LOCK_NOCPU),<sp/>.count<sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="recursive__lock_8h_1a5cc298e9f2c2fced9940ab8d5f0923a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_INIT(name,<sp/>lock_init)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>void<sp/>name##_init(name##_t<sp/>*l)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lock_init(&amp;l-&gt;lock);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_init(&amp;l-&gt;owner,<sp/>RECURSIVE_LOCK_NOCPU);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;count<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="recursive__lock_8h_1ab4560813e4bbc4c5751216fcd5d73b17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_ACQUIRE(name,<sp/>lock_acquire,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_DEF_RECURSIVE_LOCK_ACQUIRE(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_acquire,<sp/>context_sel),<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT_RECURSIVE_LOCK_CONTEXT(context_sel))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="recursive__lock_8h_1abc90b8e39a4a32739a43eaca00bdb6ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_RELEASE(name,<sp/>lock_release,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_DEF_RECURSIVE_LOCK_RELEASE(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_release,<sp/>context_sel),<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT_RECURSIVE_LOCK_CONTEXT(context_sel))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="recursive__lock_8h_1aa3c3fae4be72a8d38186ac32aae030bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_TRYACQUIRE(name,<sp/>tryacquire_sel,<sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>RECURSIVE_LOCK_EVAL(SELECT_RECURSIVE_LOCK_TRYACQUIRE,<sp/>name,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RECURSIVE_LOCK_PREFIX(tryacquire_sel),<sp/>context_sel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEF_RECURSIVE_LOCK_TRYACQUIRE(name,<sp/>lock_tryacquire,<sp/>context)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>vbool_t<sp/>name##_tryacquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/>id<sp/>context)<sp/>\</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>owner<sp/>=<sp/>vatomic32_read_rlx(&amp;l-&gt;owner);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(id<sp/>!=<sp/>RECURSIVE_LOCK_NOCPU<sp/>&amp;&amp;<sp/>&quot;this<sp/>value<sp/>is<sp/>reserved&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(owner<sp/>==<sp/>id)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;count++;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>true;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(owner<sp/>!=<sp/>RECURSIVE_LOCK_NOCPU)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!(lock_tryacquire))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_write_rlx(&amp;l-&gt;owner,<sp/>id);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>true;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEF_RECURSIVE_LOCK_ACQUIRE(name,<sp/>lock_acquire,<sp/>context)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>void<sp/>name##_acquire(name##_t<sp/>*l,<sp/>vuint32_t<sp/>id<sp/>context)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(id<sp/>!=<sp/>RECURSIVE_LOCK_NOCPU<sp/>&amp;&amp;<sp/>&quot;this<sp/>value<sp/>is<sp/>reserved&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(vatomic32_read_rlx(&amp;l-&gt;owner)<sp/>==<sp/>id)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;count++;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(lock_acquire);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_write_rlx(&amp;l-&gt;owner,<sp/>id);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEF_RECURSIVE_LOCK_RELEASE(name,<sp/>lock_release,<sp/>context)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>inline<sp/>void<sp/>name##_release(name##_t<sp/>*l<sp/>context)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(l-&gt;count<sp/>==<sp/>0)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_write_rlx(&amp;l-&gt;owner,<sp/>RECURSIVE_LOCK_NOCPU);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="257"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(lock_release);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="258"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;count--;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="260"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="261"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>context<sp/>selectors<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_WITH_CONTEXT(ctx_type)<sp/>,<sp/>REC_MACRO_EVAL(ctx_type)<sp/>*<sp/>ctx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_WITHOUT_CONTEXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_CALL_WITH_CONTEXT(ctx_type)<sp/>,<sp/>ctx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_CALL_WITHOUT_CONTEXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SELECT_RECURSIVE_LOCK_CONTEXT(selector)<sp/>RECURSIVE_LOCK_PREFIX(selector)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_call,<sp/>selector)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="273"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>lock_call(&amp;l-&gt;lock<sp/>RECURSIVE_LOCK_PREFIX(CALL_##selector))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>try<sp/>acquire<sp/>selector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_WITH_TRYACQUIRE(lock_tryacquire)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>WITH_TRYACQUIRE,<sp/>(lock_tryacquire)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_WITHOUT_TRYACQUIRE<sp/>WITHOUT_TRYACQUIRE,<sp/>none</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_WITHOUT_TRYACQUIRE(name,<sp/>lock_tryacquire,<sp/>context)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEF_RECURSIVE_LOCK_WITH_TRYACQUIRE(name,<sp/>lock_tryacquire,<sp/>context_sel)<sp/>\</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_DEF_RECURSIVE_LOCK_TRYACQUIRE(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="283"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT_RECURSIVE_LOCK_CALL_CONTEXT(lock_tryacquire,<sp/>context_sel),<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT_RECURSIVE_LOCK_CONTEXT(context_sel))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SELECT_RECURSIVE_LOCK_TRYACQUIRE(name,<sp/>SELECT,<sp/>lock_tryacquire,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="288"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context_sel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>DEF_RECURSIVE_LOCK_##SELECT(name,<sp/>lock_tryacquire,<sp/>context_sel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>helper<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_PREFIX(SUFFIX)<sp/><sp/><sp/>RECURSIVE_LOCK_##SUFFIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECURSIVE_LOCK_EVAL(A,<sp/>B,<sp/>C,<sp/>D)<sp/>A(B,<sp/>C,<sp/>D)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DOCUMENTATION</highlight></codeline>
+<codeline lineno="304" refid="recursive__lock_8h_1a2921f78333ded3a055189091ad9455bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WITHOUT_TRYACQUIRE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="recursive__lock_8h_1ab33557c9aa48f3830e4bc27779b9e923" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WITH_TRYACQUIRE(lock_tryacquire)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="recursive__lock_8h_1a3ae7153a75fefc15930fca3e62fcd092" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WITHOUT_CONTEXT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="recursive__lock_8h_1a95753d5963619b35d0d76f0123274812" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>WITH_CONTEXT(context_type)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DOCUMENTATION<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/utils/recursive_lock.h"/>
+  </compounddef>
+</doxygen>

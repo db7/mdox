@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_16420932d779a28446ef6babf0c9e159" kind="dir">
+    <compoundname>vsync/spinlock</compoundname>
+    <innerfile refid="arraylock_8h">arraylock.h</innerfile>
+    <innerfile refid="caslock_8h">caslock.h</innerfile>
+    <innerfile refid="clhlock_8h">clhlock.h</innerfile>
+    <innerfile refid="cnalock_8h">cnalock.h</innerfile>
+    <innerfile refid="spinlock_2doc_8h">doc.h</innerfile>
+    <innerfile refid="hclhlock_8h">hclhlock.h</innerfile>
+    <innerfile refid="hemlock_8h">hemlock.h</innerfile>
+    <innerfile refid="hmcslock_8h">hmcslock.h</innerfile>
+    <innerfile refid="mcslock_8h">mcslock.h</innerfile>
+    <innerfile refid="rec__mcslock_8h">rec_mcslock.h</innerfile>
+    <innerfile refid="rec__seqlock_8h">rec_seqlock.h</innerfile>
+    <innerfile refid="rec__spinlock_8h">rec_spinlock.h</innerfile>
+    <innerfile refid="rec__ticketlock_8h">rec_ticketlock.h</innerfile>
+    <innerfile refid="rwlock_8h">rwlock.h</innerfile>
+    <innerfile refid="semaphore_8h">semaphore.h</innerfile>
+    <innerfile refid="seqcount_8h">seqcount.h</innerfile>
+    <innerfile refid="seqlock_8h">seqlock.h</innerfile>
+    <innerfile refid="ticketlock_8h">ticketlock.h</innerfile>
+    <innerfile refid="ttaslock_8h">ttaslock.h</innerfile>
+    <innerfile refid="twalock_8h">twalock.h</innerfile>
+    <briefdescription>
+<para>Spinlocks for kernel and userspace. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/spinlock/"/>
+  </compounddef>
+</doxygen>

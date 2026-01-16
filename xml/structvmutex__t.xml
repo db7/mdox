@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvmutex__t" kind="struct" language="C++" prot="public">
+    <compoundname>vmutex_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvmutex__t_1a29ec2762b1369628629029fdff75f55c" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t vmutex_t::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>vmutex_t::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/mutex/musl.h" line="44" column="17" bodyfile="vsync/thread/mutex/musl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvmutex__t_1a7539f93a3fad88dcd981fc156674fd7e" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t vmutex_t::waiters</definition>
+        <argsstring></argsstring>
+        <name>waiters</name>
+        <qualifiedname>vmutex_t::waiters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/mutex/musl.h" line="45" column="17" bodyfile="vsync/thread/mutex/musl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="1">
+        <label>vmutex_t</label>
+        <link refid="structvmutex__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lock</edgelabel>
+          <edgelabel>waiters</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/thread/mutex/musl.h" line="43" column="1" bodyfile="vsync/thread/mutex/musl.h" bodystart="43" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structvmutex__t_1a29ec2762b1369628629029fdff75f55c" prot="public" virt="non-virtual"><scope>vmutex_t</scope><name>lock</name></member>
+      <member refid="structvmutex__t_1a7539f93a3fad88dcd981fc156674fd7e" prot="public" virt="non-virtual"><scope>vmutex_t</scope><name>waiters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

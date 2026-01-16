@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_fb6a5d03b5184031f891eae0e65c8d82" kind="dir">
+    <compoundname>vsync/map/internal/listset</compoundname>
+    <innerfile refid="listset__common_8h">listset_common.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/internal/listset/"/>
+  </compounddef>
+</doxygen>

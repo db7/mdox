@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="chaselev_8h" kind="file" language="C++">
+    <compoundname>chaselev.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/chaselev.h</label>
+        <link refid="chaselev_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvdeque__array__s" prot="public">vdeque_array_s</innerclass>
+    <innerclass refid="structvdeque__s" prot="public">vdeque_s</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="chaselev_8h_1ad73101144da4f6f48ac7ea45c45e025e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>vdeque_state_e</name>
+        <enumvalue id="chaselev_8h_1ad73101144da4f6f48ac7ea45c45e025eae27c2426769fce4f07de9ae4c23f32c2" prot="public">
+          <name>VDEQUE_STATE_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="chaselev_8h_1ad73101144da4f6f48ac7ea45c45e025ea2ab6260df74cdbafa26a78e1a0610382" prot="public">
+          <name>VDEQUE_STATE_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="chaselev_8h_1ad73101144da4f6f48ac7ea45c45e025ea2d05fd5c3a881007a5abd0a864805318" prot="public">
+          <name>VDEQUE_STATE_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="chaselev_8h_1ad73101144da4f6f48ac7ea45c45e025ea2f3e8348b6fccbabb563c83f63ecf843" prot="public">
+          <name>VDEQUE_STATE_ABORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="43" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="chaselev_8h_1aa385ead9811e393f1da3f41c9e49a626" prot="public" static="no">
+        <type>struct <ref refid="structvdeque__array__s" kindref="compound">vdeque_array_s</ref></type>
+        <definition>typedef struct vdeque_array_s vdeque_array_t</definition>
+        <argsstring></argsstring>
+        <name>vdeque_array_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="chaselev_8h_1a6110ae9841be44f1003c8437fd7189c5" prot="public" static="no">
+        <type>struct <ref refid="structvdeque__s" kindref="compound">vdeque_s</ref></type>
+        <definition>typedef struct vdeque_s vdeque_t</definition>
+        <argsstring></argsstring>
+        <name>vdeque_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="typedef" id="chaselev_8h_1a6efec11a1f4daf876b2460655335cfed" prot="public" static="no">
+        <type>enum vdeque_state_e</type>
+        <definition>typedef enum vdeque_state_e vdeque_state_t</definition>
+        <argsstring></argsstring>
+        <name>vdeque_state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="48" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="chaselev_8h_1a22e3a65fe9e7751729fc55f87bf6e3c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vdeque_init</definition>
+        <argsstring>(vdeque_t *q, vdeque_array_t *a, vsize_t len)</argsstring>
+        <name>vdeque_init</name>
+        <param>
+          <type><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Initializes chase-lev deque. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vdeque_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vdeque_array_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of array <computeroutput>a</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="58" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="58" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="chaselev_8h_1ae88aa1cfedcfebe6b9864c4e3b5410ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t vdeque_memsize</definition>
+        <argsstring>(vsize_t cap)</argsstring>
+        <name>vdeque_memsize</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+<para>Returns array struct memory size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>capacity of buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>size of the array struct with a buffer of capacity <computeroutput>cap</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="81" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="chaselev_8h_1ae6e316448656c8072378ab6a1afa9aa2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vdeque_state_t</type>
+        <definition>static vdeque_state_t vdeque_push_bottom</definition>
+        <argsstring>(vdeque_t *q, void *in_obj)</argsstring>
+        <name>vdeque_push_bottom</name>
+        <param>
+          <type><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>in_obj</declname>
+        </param>
+        <briefdescription>
+<para>Tries to push a value to the bottom. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vdeque_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of object to push.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VDEQUE_STATE_OK if successful. </para>
+</simplesect>
+<simplesect kind="return"><para>VDEQUE_STATE_FULL if deque is full. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="95" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="95" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="chaselev_8h_1af7619ae08c94de7436c2d52c6a93fae3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vdeque_state_t</type>
+        <definition>static vdeque_state_t vdeque_pop_bottom</definition>
+        <argsstring>(vdeque_t *q, void **out_obj)</argsstring>
+        <name>vdeque_pop_bottom</name>
+        <param>
+          <type><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>out_obj</declname>
+        </param>
+        <briefdescription>
+<para>Tries to pop a value from the bottom. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vdeque_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter address of popped object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VDEQUE_STATE_OK if successful. </para>
+</simplesect>
+<simplesect kind="return"><para>VDEQUE_STATE_EMPTY if deque is empty, or if it failed to take the last element. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="128" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="128" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="chaselev_8h_1a0321979fb65d645820908399dce65487" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vdeque_state_t</type>
+        <definition>static vdeque_state_t vdeque_steal</definition>
+        <argsstring>(vdeque_t *q, void **out_obj)</argsstring>
+        <name>vdeque_steal</name>
+        <param>
+          <type><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>out_obj</declname>
+        </param>
+        <briefdescription>
+<para>Tries to (steal) pop a value from the top. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vdeque_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter address of popped object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VDEQUE_STATE_OK if successful. </para>
+</simplesect>
+<simplesect kind="return"><para>VDEQUE_STATE_EMPTY if deque is empty. </para>
+</simplesect>
+<simplesect kind="return"><para>VDEQUE_STATE_ABORT if failed to pop because of contention. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="183" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="183" bodyend="205"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Chase-Lev Work-Stealing bounded deque. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The deque has a bounded size and returns errors in case the deque is full, empty, or if there is contention while trying to pop/steal.</para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>David Chase, Yossi Lev - [Dynamic Circular Work-Stealing Deque] (<ulink url="https://dl.acm.org/doi/pdf/10.1145/1073970.1073974">https://dl.acm.org/doi/pdf/10.1145/1073970.1073974</ulink>)</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_chaselev.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;malloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="chaselev_8h" kindref="compound" tooltip="Chase-Lev Work-Stealing bounded deque.">vsync/queue/chaselev.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARRAY_SIZE<sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_THREADS<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref><sp/>q;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">owner_thread(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>d<sp/><sp/><sp/><sp/>=<sp/>tid;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NUM_THREADS;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/>=<sp/>d++;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="chaselev_8h_1ae6e316448656c8072378ab6a1afa9aa2" kindref="member" tooltip="Tries to push a value to the bottom.">vdeque_push_bottom</ref>(&amp;q,<sp/>data)<sp/>!=<sp/>VDEQUE_STATE_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>either<sp/>full/<sp/>busy</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="chaselev_8h_1af7619ae08c94de7436c2d52c6a93fae3" kindref="member" tooltip="Tries to pop a value from the bottom.">vdeque_pop_bottom</ref>(&amp;q,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)&amp;data)<sp/>==<sp/>VDEQUE_STATE_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(data<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>deq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">stealing_thread(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="chaselev_8h_1a0321979fb65d645820908399dce65487" kindref="member" tooltip="Tries to (steal) pop a value from the top.">vdeque_steal</ref>(&amp;q,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)&amp;data)<sp/>==<sp/>VDEQUE_STATE_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(data<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>stole<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;<sp/>NUM_THREADS);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>one<sp/>thread<sp/>is<sp/>owner</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>owner_thread(i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stealing_thread(i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[NUM_THREADS];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>array<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>array_size<sp/>=<sp/><ref refid="chaselev_8h_1ae88aa1cfedcfebe6b9864c4e3b5410ee" kindref="member" tooltip="Returns array struct memory size.">vdeque_memsize</ref>(ARRAY_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*a<sp/><sp/><sp/><sp/>=<sp/>(<ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*)malloc(array_size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(a<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>deque</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="chaselev_8h_1a22e3a65fe9e7751729fc55f87bf6e3c5" kindref="member" tooltip="Initializes chase-lev deque.">vdeque_init</ref>(&amp;q,<sp/>a,<sp/>ARRAY_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>threads</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NUM_THREADS;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Join<sp/>threads</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>NUM_THREADS;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VDEQUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VDEQUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structvdeque__array__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>size;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>buffer[];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structvdeque__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvdeque__s" kindref="compound">vdeque_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>top;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>bottom;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array;<sp/></highlight><highlight class="comment">/*<sp/>Current<sp/>implementation<sp/>provides<sp/>atomic<sp/>array<sp/>pointer<sp/>in<sp/>order</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>accommodate<sp/>growth<sp/>of<sp/>the<sp/>array<sp/>buffer<sp/>in<sp/>the<sp/>future.<sp/>Note:</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this<sp/>will<sp/>cause<sp/>for<sp/>some<sp/>of<sp/>the<sp/>barriers<sp/>proposed<sp/>in<sp/>this</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>implementation<sp/>to<sp/>be<sp/>changed,<sp/>once<sp/>growth<sp/>is<sp/>supported.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="structvdeque__s" kindref="compound">vdeque_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>vdeque_state_e<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>VDEQUE_STATE_OK,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>VDEQUE_STATE_EMPTY,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>VDEQUE_STATE_FULL,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>VDEQUE_STATE_ABORT</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/>vdeque_state_t;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="chaselev_8h_1a22e3a65fe9e7751729fc55f87bf6e3c5" refkind="member"><highlight class="normal"><ref refid="chaselev_8h_1a22e3a65fe9e7751729fc55f87bf6e3c5" kindref="member" tooltip="Initializes chase-lev deque.">vdeque_init</ref>(<ref refid="structvdeque__s" kindref="compound">vdeque_t</ref><sp/>*q,<sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*a,<sp/>vsize_t<sp/>len)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;deque<sp/>is<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(a<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;array<sp/>is<sp/>NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(len<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;array<sp/>with<sp/>0<sp/>size&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa8124441652c1e6e506fa9d2c5d0f322" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicsz_init</ref>(&amp;a-&gt;size,<sp/>len);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;q-&gt;array,<sp/>a);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa8124441652c1e6e506fa9d2c5d0f322" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicsz_init</ref>(&amp;q-&gt;top,<sp/>0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa8124441652c1e6e506fa9d2c5d0f322" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicsz_init</ref>(&amp;q-&gt;bottom,<sp/>0);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initialize<sp/>the<sp/>array<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;a-&gt;buffer[i],<sp/>NULL);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="81" refid="chaselev_8h_1ae88aa1cfedcfebe6b9864c4e3b5410ee" refkind="member"><highlight class="normal"><ref refid="chaselev_8h_1ae88aa1cfedcfebe6b9864c4e3b5410ee" kindref="member" tooltip="Returns array struct memory size.">vdeque_memsize</ref>(vsize_t<sp/>cap)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref>)<sp/>+<sp/>(cap<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref>));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vdeque_state_t</highlight></codeline>
+<codeline lineno="95" refid="chaselev_8h_1ae6e316448656c8072378ab6a1afa9aa2" refkind="member"><highlight class="normal"><ref refid="chaselev_8h_1ae6e316448656c8072378ab6a1afa9aa2" kindref="member" tooltip="Tries to push a value to the bottom.">vdeque_push_bottom</ref>(<ref refid="structvdeque__s" kindref="compound">vdeque_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*in_obj)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bottom<sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;q-&gt;bottom);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1a81700989e51b7a1d72a317d874197dd1" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_acq</ref>(&amp;q-&gt;top);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*a<sp/>=<sp/>(<ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;q-&gt;array);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;a-&gt;size);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(size<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cmp_size<sp/>=<sp/>size<sp/>-<sp/>1U;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>if<sp/>deque<sp/>is<sp/>full.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bottom<sp/>-<sp/>top)<sp/>&gt;<sp/>cmp_size)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VDEQUE_STATE_FULL;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/>=<sp/>bottom<sp/>%<sp/>size;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;a-&gt;buffer[idx],<sp/>in_obj);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1af5edfafda1fc01eeebd67e6eccb830e8" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rel</ref>(&amp;q-&gt;bottom,<sp/>bottom<sp/>+<sp/>1U);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VDEQUE_STATE_OK;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vdeque_state_t</highlight></codeline>
+<codeline lineno="128" refid="chaselev_8h_1af7619ae08c94de7436c2d52c6a93fae3" refkind="member"><highlight class="normal"><ref refid="chaselev_8h_1af7619ae08c94de7436c2d52c6a93fae3" kindref="member" tooltip="Tries to pop a value from the bottom.">vdeque_pop_bottom</ref>(<ref refid="structvdeque__s" kindref="compound">vdeque_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**out_obj)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(out_obj);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bottom<sp/>=<sp/><ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;q-&gt;bottom);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>original<sp/>implementation<sp/>in<sp/>the<sp/>paper<sp/>does<sp/>not<sp/>take<sp/>into<sp/>account<sp/>a</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>scenario<sp/>where<sp/>the<sp/>thread<sp/>might<sp/>try<sp/>to<sp/>take<sp/>when<sp/>the<sp/>deque<sp/>is<sp/>empty<sp/>and</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>at<sp/>the<sp/>same<sp/>time<sp/>the<sp/>bottom<sp/>index<sp/>is<sp/>0.<sp/>In<sp/>this<sp/>case,<sp/>because<sp/>we<sp/>are</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>using<sp/>unsigned<sp/>integers,<sp/>we<sp/>do<sp/>not<sp/>have<sp/>proper<sp/>comparison<sp/>and<sp/>the</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>program<sp/>may<sp/>enter<sp/>the<sp/>second<sp/>if<sp/>statement,<sp/>which<sp/>violates<sp/>correctness<sp/>and</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>reads<sp/>from<sp/>uninitialized<sp/>memory.<sp/>As<sp/>a<sp/>workaround,<sp/>the<sp/>below<sp/>if<sp/>statement</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>has<sp/>been<sp/>added,<sp/>in<sp/>order<sp/>to<sp/>return<sp/>immediately<sp/>when<sp/>this<sp/>scenario</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>occurs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bottom<sp/>==<sp/>0U)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Empty<sp/>deque.<sp/>Return<sp/>before<sp/>modifying<sp/>bottom.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VDEQUE_STATE_EMPTY;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>bottom<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>bottom<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*a<sp/>=<sp/>(<ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;q-&gt;array);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1a1752a693194aa02141ff685e54120226" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write</ref>(&amp;q-&gt;bottom,<sp/>bottom);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1abc2020751cd4f8f85be2301651548ad9" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read</ref>(&amp;q-&gt;top);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>vdeque_state_t<sp/>state<sp/>=<sp/>VDEQUE_STATE_OK;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(top<sp/>&lt;=<sp/>bottom)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Non-empty<sp/>deque.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/>=<sp/><ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;a-&gt;size);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/>=<sp/>bottom<sp/>%<sp/>size;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*out_obj<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;a-&gt;buffer[idx]);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(top<sp/>==<sp/>bottom)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Single<sp/>last<sp/>element<sp/>in<sp/>deque.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__sz_8h_1a35495993f82fffd24bbe37c3d8da845f" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicsz_cmpxchg</ref>(&amp;q-&gt;top,<sp/>top,<sp/>top<sp/>+<sp/>1U)<sp/>!=<sp/>top)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Failed<sp/>race.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/>VDEQUE_STATE_EMPTY;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa5750236f7e4e0360b30b0a33e323e18" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rlx</ref>(&amp;q-&gt;bottom,<sp/>bottom<sp/>+<sp/>1U);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Empty<sp/>deque.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/>VDEQUE_STATE_EMPTY;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa5750236f7e4e0360b30b0a33e323e18" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rlx</ref>(&amp;q-&gt;bottom,<sp/>bottom<sp/>+<sp/>1U);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vdeque_state_t</highlight></codeline>
+<codeline lineno="183" refid="chaselev_8h_1a0321979fb65d645820908399dce65487" refkind="member"><highlight class="normal"><ref refid="chaselev_8h_1a0321979fb65d645820908399dce65487" kindref="member" tooltip="Tries to (steal) pop a value from the top.">vdeque_steal</ref>(<ref refid="structvdeque__s" kindref="compound">vdeque_t</ref><sp/>*q,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**out_obj)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>vdeque_state_t<sp/>state<sp/>=<sp/>VDEQUE_STATE_EMPTY;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(out_obj);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top<sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1abc2020751cd4f8f85be2301651548ad9" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read</ref>(&amp;q-&gt;top);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bottom<sp/>=<sp/><ref refid="core__sz_8h_1abc2020751cd4f8f85be2301651548ad9" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read</ref>(&amp;q-&gt;bottom);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(top<sp/>&lt;<sp/>bottom)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Non-empty<sp/>deque.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*a<sp/>=<sp/>(<ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref><sp/>*)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;q-&gt;array);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;a-&gt;size);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>top<sp/>%<sp/>size;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*out_obj<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;a-&gt;buffer[idx]);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>VDEQUE_STATE_OK;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__sz_8h_1a35495993f82fffd24bbe37c3d8da845f" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicsz_cmpxchg</ref>(&amp;q-&gt;top,<sp/>top,<sp/>top<sp/>+<sp/>1U)<sp/>!=<sp/>top)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Failed<sp/>race.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VDEQUE_STATE_ABORT;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/chaselev.h"/>
+  </compounddef>
+</doxygen>

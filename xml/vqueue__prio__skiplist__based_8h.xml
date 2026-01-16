@@ -1,0 +1,1383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vqueue__prio__skiplist__based_8h" kind="file" language="C++">
+    <compoundname>vqueue_prio_skiplist_based.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="skiplist__lf_8h" local="no">vsync/map/skiplist_lf.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="37">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="4">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="6">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvqueue__prio__node__s" prot="public">vqueue_prio_node_s</innerclass>
+    <innerclass refid="structvqueue__prio__s" prot="public">vqueue_prio_s</innerclass>
+    <innerclass refid="structvqueue__destroy__cb__param__s" prot="public">vqueue_destroy_cb_param_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="vqueue__prio__skiplist__based_8h_1a0ef47aa48553d4a0b0c0e80a308d44ab" prot="public" static="no">
+        <name>VQUEUE_PRIO_SENTINEL_SZ</name>
+        <initializer>VSKIPLIST_SENTINEL_SZ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="56" column="9" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vqueue__prio__skiplist__based_8h_1aff3c747379200bcfe662d60799153de3" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__node__s" kindref="compound">vqueue_prio_node_s</ref></type>
+        <definition>typedef struct vqueue_prio_node_s vqueue_prio_node_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="39" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__skiplist__based_8h_1a2c2e5a5e91904613a42a40248faca39d" prot="public" static="no">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref></type>
+        <definition>typedef vskiplist_node_t vqueue_prio_sentinel_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_sentinel_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="41" column="26" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__skiplist__based_8h_1a329e1e2b79268d8c8330619b0d6c36bb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vqueue_prio_handle_node_t) (vqueue_prio_node_t *node, void *arg)</definition>
+        <argsstring>)(vqueue_prio_node_t *node, void *arg)</argsstring>
+        <name>vqueue_prio_handle_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="43" column="9" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__skiplist__based_8h_1a186936058de6befe63c3f1b08a271126" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref></type>
+        <definition>typedef struct vqueue_prio_s vqueue_prio_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="49" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__skiplist__based_8h_1ac3458035235fb8894c1bad1561c0c15c" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_s</ref></type>
+        <definition>typedef struct vqueue_destroy_cb_param_s vqueue_destroy_cb_param_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_destroy_cb_param_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="54" column="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1ae50c85ec5d397b78c785110c2a856ed7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+        <definition>static vqueue_prio_node_t * _vqueue_prio_find_and_mark_min</definition>
+        <argsstring>(vqueue_prio_t *pqueue)</argsstring>
+        <name>_vqueue_prio_find_and_mark_min</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <briefdescription>
+<para>Internal functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds the node with highest priority and marks it as removed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vqueue_prio_node_t* address of vqueue_prio_node_t object that has the highest priority </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="240" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="240" bodyend="266" declfile="vsync/queue/vqueue_prio_skiplist_based.h" declline="62" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1ad07da2af2aaee14368ad86851ed66b9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int _vqueue_prio_cmp_priority</definition>
+        <argsstring>(vskiplist_node_t *, vskiplist_key_t)</argsstring>
+        <name>_vqueue_prio_cmp_priority</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <defname>snode</defname>
+        </param>
+        <param>
+          <type>vskiplist_key_t</type>
+          <defname>priority</defname>
+        </param>
+        <briefdescription>
+<para>Internal callback functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a callback function used for sorting nodes in the skiplist.</para>
+<para>&gt; <bold>Note:</bold> in order to allow for insertion of multiple nodes with the same priority, we tread equality same as less than <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>priority to compare against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int return <computeroutput>-1</computeroutput> if the given priority is less than or equal to the given nodes&apos; priority, returns <computeroutput>1</computeroutput> otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="277" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="277" bodyend="288" declfile="vsync/queue/vqueue_prio_skiplist_based.h" declline="66" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a62932c3a0bf60655d5f293ba5c0bfd84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_visit_node</definition>
+        <argsstring>(vskiplist_node_t *snode, vbool_t removed, void *arg)</argsstring>
+        <name>_vqueue_prio_visit_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <defname>snode</defname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <defname>removed</defname>
+        </param>
+        <param>
+          <type>void *</type>
+          <defname>arg</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function used for visiting skiplist nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>removed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates if the node was marked for removal </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of void* args </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="317" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="317" bodyend="336" declfile="vsync/queue/vqueue_prio_skiplist_based.h" declline="68" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a2b6d232b3705c49acd4b4c4b36df0111" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_destroy_node</definition>
+        <argsstring>(vskiplist_node_t *node, vbool_t marked, void *args)</argsstring>
+        <name>_vqueue_prio_destroy_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>marked</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>This is a callback function called by <computeroutput>vqueue_prio_destroy</computeroutput> it destroys both the given node and the data associated with it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>removed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indicates if the node was marked for removal </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of void* args </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="346" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="346" bodyend="357" declfile="vsync/queue/vqueue_prio_skiplist_based.h" declline="70" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a5d2ea1fb103666bf6b4d0283711eef66" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_redirect_retire_cb</definition>
+        <argsstring>(vskiplist_node_t *snode, void *arg)</argsstring>
+        <name>_vqueue_prio_redirect_retire_cb</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <defname>snode</defname>
+        </param>
+        <param>
+          <type>void *</type>
+          <defname>arg</defname>
+        </param>
+        <briefdescription>
+<para>This is a callback function used for redirecting the freeing of skiplist node to pqueue node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> this is a callback function <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>snode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="297" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="297" bodyend="308" declfile="vsync/queue/vqueue_prio_skiplist_based.h" declline="73" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a822eb4c1314b595dc79ff68eb6d08259" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_init</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t retire_cb, void *retire_cb_arg, vuint32_t rand_seed, vqueue_prio_sentinel_t *head, vqueue_prio_sentinel_t *tail)</argsstring>
+        <name>vqueue_prio_init</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>retire_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>retire_cb_arg</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>rand_seed</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vqueue_prio_sentinel_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vqueue_prio_sentinel_t</ref> *</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function used for retiring detached nodes to the SMR. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second parameter of <computeroutput>retire_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rand_seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed down to the skiplist for random height generation.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the dynamically allocated head sentinel object of size <computeroutput>VQUEUE_PRIO_SENTINEL_SZ</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address of the dynamically allocated tail sentinel object of size <computeroutput>VQUEUE_PRIO_SENTINEL_SZ</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> both <computeroutput>head</computeroutput> and <computeroutput>tail</computeroutput> must have size <computeroutput>VQUEUE_PRIO_SENTINEL_SZ</computeroutput>.</para>
+<para>&gt; <bold>Note:</bold> <computeroutput>head</computeroutput> and <computeroutput>tail</computeroutput> must never be modified directly by the user, and they must be allocated before <computeroutput>vqueue_prio_init</computeroutput>. They can be freed only after <computeroutput>vqueue_prio_destroy</computeroutput>. i.e. they must have a life span larger or equal to <computeroutput>pqueue</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="96" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_destroy</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t destroy_cb, void *args)</argsstring>
+        <name>vqueue_prio_destroy</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>destroy_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Calls the given callback on all remaining nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Nodes can be freed in <computeroutput>destroy_cb</computeroutput></para>
+<para>&gt; <bold>Note:</bold> this is not thread safe and must be called if and only if all threads are done accessing the queue</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of a callback function to call on each remaining node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>destroy_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="122" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="122" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a30538284b14493794f6a0a7720dab27f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t vqueue_prio_calc_node_sz</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vsize_t container_sz, vsize_t *height)</argsstring>
+        <name>vqueue_prio_calc_node_sz</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>container_sz</declname>
+        </param>
+        <param>
+          <type>vsize_t *</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the required size and height of <computeroutput>vqueue_prio_node_t</computeroutput> container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>container_sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the container object returned by sizeof. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter. Indicates to how many levels the node will be connected to in the skiplist.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vsize_t the minimum required size of the container object of <computeroutput>vqueue_prio_node_t</computeroutput>.</para>
+</simplesect>
+&gt; <bold>Note:</bold> users must call this function everytime they wish to add a new node to the priority queue. see <computeroutput>vqueue_prio_add</computeroutput>.</para>
+<para>&gt; <bold>Note:</bold> if the queue node is not embedded in a container struct. Pass <computeroutput>container_sz</computeroutput> as <computeroutput>sizeof(vqueue_prio_node_t)</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="154" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="154" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1ab15e6be688f99107ac8f6f429efbac10" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_add</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_node_t *node, vuint32_t priority, vsize_t height)</argsstring>
+        <name>vqueue_prio_add</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>priority</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Enqueues the given <computeroutput>node</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority associated with <computeroutput>node</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of the output param <computeroutput>height</computeroutput> updated by <computeroutput>vqueue_prio_calc_node_sz</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> see <computeroutput>vqueue_prio_calc_node_sz</computeroutput> for container size calculation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="171" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="171" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1a33fbeb8a0d35265aba6527370afb49eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+        <definition>static vqueue_prio_node_t * vqueue_prio_remove_min</definition>
+        <argsstring>(vqueue_prio_t *pqueue)</argsstring>
+        <name>vqueue_prio_remove_min</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <briefdescription>
+<para>Dequeues a node with highest priority available. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vqueue_prio_node_t* address of dequeued object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="196" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="196" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__skiplist__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_visit</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t visitor, void *arg)</argsstring>
+        <name>_vqueue_prio_visit</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Visits all available nodes in the given priority queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> don&apos;t use while threads are running <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function address of node visitor function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>visitor</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="219" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="219" bodyend="231"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Skiplist-based priority queue implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This implementation uses a lock-free skiplist (see <ref refid="skiplist__lf_8h" kindref="compound">skiplist_lf.h</ref>) to implement the priority queue. It has unbounded priority range and unbounded capacity.</para>
+<para>It requires SMR (see gdump.h)</para>
+<sect3 id="vqueue__prio__skiplist__based_8h_1autotoc_md16">
+<title>Configuration</title>
+<para>Check <ref refid="skiplist__lf_8h" kindref="compound">skiplist_lf.h</ref> for configuring the number of levels of the skiplist.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_queue_prio_skiplist.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="vqueue__prio__skiplist__based_8h" kindref="compound" tooltip="Skiplist-based priority queue implementation.">vsync/queue/vqueue_prio_skiplist_based.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/smr/gdump.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>smr_node;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>qnode;<sp/></highlight><highlight class="comment">/*<sp/>embed<sp/>as<sp/>last<sp/>field<sp/>it<sp/>contains<sp/>VLA<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">gdump_t<sp/>g_gdump;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>g_queue;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vqueue_prio_sentinel_t</ref><sp/>*g_head;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vqueue_prio_sentinel_t</ref><sp/>*g_tail;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pthread_rwlock_t<sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_rdlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_wrlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structsmr__rwlock__lib__s" kindref="compound">smr_rwlock_lib_t</ref><sp/>g_rwlock_lib<sp/>=<sp/>{thread_rw_read_acq,<sp/>thread_rw_read_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_rw_write_acq,<sp/>thread_rw_write_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;g_lock};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">free_cb(<ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>smr_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">retire_cb(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>qnode);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_retire(&amp;g_gdump,<sp/>&amp;data-&gt;smr_node,<sp/>free_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_cb(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>qnode);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>g_stop<sp/>=<sp/><ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member" tooltip="Initializes an atomic variable with value v.">VATOMIC_INIT</ref>(0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">yield_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sched_yield();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">reclaim(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1a4bd370c5cd89e15a2d4d38effbd85de3" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read</ref>(&amp;g_stop)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>count<sp/>=<sp/>gdump_recycle(&amp;g_gdump,<sp/>yield_cb,<sp/>NULL,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%zu<sp/>node(s)<sp/>were<sp/>reclaimed\n&quot;</highlight><highlight class="normal">,<sp/>count);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_thread_t<sp/>thread;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tid<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reclaim();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_register(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_enter(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/><ref refid="vqueue__prio__heap__based_8h_1abd9878f5211eb3e839a9beb060d21e4e" kindref="member" tooltip="Retrieves an object with the highest available priority.">vqueue_prio_remove_min</ref>(&amp;g_queue);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>height<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>sz<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__skiplist__based_8h_1a30538284b14493794f6a0a7720dab27f" kindref="member" tooltip="Calculates the required size and height of vqueue_prio_node_t container.">vqueue_prio_calc_node_sz</ref>(&amp;g_queue,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t),<sp/>&amp;height);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(sz);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a26ab68549ddf4a358babf832f350b952" kindref="member" tooltip="Inserts the given object data into the heap.">vqueue_prio_add</ref>(&amp;g_queue,<sp/>&amp;data-&gt;qnode,<sp/>i,<sp/>height);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>enq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>data_t,<sp/>qnode);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>deq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_exit(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_deregister(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>pthread_rwlock_init(&amp;g_lock,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_init(&amp;g_gdump,<sp/>g_rwlock_lib);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_head<sp/>=<sp/>malloc(VQUEUE_PRIO_SENTINEL_SZ);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_tail<sp/>=<sp/>malloc(VQUEUE_PRIO_SENTINEL_SZ);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a7a06b917e8e65f1239b1ca35a43c628b" kindref="member" tooltip="Initializes the given priority queue object pqueue.">vqueue_prio_init</ref>(&amp;g_queue,<sp/>retire_cb,<sp/>NULL,<sp/>(vuint32_t)rand(),<sp/>g_head,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_tail);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a3a281f092a90e9be56044f35c3f3cbd2" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write</ref>(&amp;g_stop,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_join(threads[0],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" kindref="member" tooltip="Destroys all remaining enqueued objects.">vqueue_prio_destroy</ref>(&amp;g_queue,<sp/>destroy_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_destroy(&amp;g_gdump);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(g_head);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(g_tail);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pthread_rwlock_destroy(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 15.5] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+</sect3>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_PRIO_SKIPLIST_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_SKIPLIST_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="skiplist__lf_8h" kindref="compound" tooltip="Lock-free concurrent skiplist.">vsync/map/skiplist_lf.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structvqueue__prio__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__node__s" kindref="compound">vqueue_prio_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>vskiplist_key_t<sp/>priority;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>marked;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>skip_node;<sp/></highlight><highlight class="comment">/*<sp/>keep<sp/>last<sp/>contains<sp/>VLA<sp/>field<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vqueue_prio_sentinel_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vqueue_prio_handle_node_t)(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>lst;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_handle_node_t<sp/>retire_cb;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*retire_cb_arg;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structvqueue__destroy__cb__param__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_handle_node_t<sp/>destroy_cb;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*destroy_cb_arg;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/><ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_SENTINEL_SZ<sp/>VSKIPLIST_SENTINEL_SZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1ae50c85ec5d397b78c785110c2a856ed7" kindref="member" tooltip="Internal functions.">_vqueue_prio_find_and_mark_min</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__skiplist__based_8h_1ad07da2af2aaee14368ad86851ed66b9e" kindref="member" tooltip="Internal callback functions.">_vqueue_prio_cmp_priority</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vskiplist_key_t);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__skiplist__based_8h_1a62932c3a0bf60655d5f293ba5c0bfd84" kindref="member" tooltip="This is a callback function used for visiting skiplist nodes.">_vqueue_prio_visit_node</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,<sp/>vbool_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__skiplist__based_8h_1a2b6d232b3705c49acd4b4c4b36df0111" kindref="member" tooltip="This is a callback function called by vqueue_prio_destroy it destroys both the given node and the dat...">_vqueue_prio_destroy_node</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>marked,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__skiplist__based_8h_1a5d2ea1fb103666bf6b4d0283711eef66" kindref="member" tooltip="This is a callback function used for redirecting the freeing of skiplist node to pqueue node.">_vqueue_prio_redirect_retire_cb</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="vqueue__prio__skiplist__based_8h_1a822eb4c1314b595dc79ff68eb6d08259" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a822eb4c1314b595dc79ff68eb6d08259" kindref="member" tooltip="Initializes the queue.">vqueue_prio_init</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>retire_cb,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*retire_cb_arg,<sp/>vuint32_t<sp/>rand_seed,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vqueue_prio_sentinel_t</ref><sp/>*head,<sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vqueue_prio_sentinel_t</ref><sp/>*tail)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(retire_cb);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb<sp/><sp/><sp/><sp/><sp/>=<sp/>retire_cb;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb_arg<sp/>=<sp/>retire_cb_arg;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="skiplist__lf_8h_1aadb91d0e7135a2bf42a0e3403359efde" kindref="member" tooltip="Initializes the skiplist.">vskiplist_init</ref>(&amp;pqueue-&gt;lst,<sp/><ref refid="vqueue__prio__skiplist__based_8h_1ad07da2af2aaee14368ad86851ed66b9e" kindref="member" tooltip="Internal callback functions.">_vqueue_prio_cmp_priority</ref>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__skiplist__based_8h_1a5d2ea1fb103666bf6b4d0283711eef66" kindref="member" tooltip="This is a callback function used for redirecting the freeing of skiplist node to pqueue node.">_vqueue_prio_redirect_retire_cb</ref>,<sp/>pqueue,<sp/>rand_seed,<sp/>head,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tail);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="vqueue__prio__skiplist__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" kindref="member" tooltip="Calls the given callback on all remaining nodes.">vqueue_prio_destroy</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>destroy_cb,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top_level<sp/>=<sp/>VSKIPLIST_MAX_HEIGHT<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_t</ref><sp/>params;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>params.destroy_cb<sp/><sp/><sp/><sp/><sp/>=<sp/>destroy_cb;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>params.destroy_cb_arg<sp/>=<sp/>args;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>visit<sp/>and<sp/>pqueue_destroy<sp/>all<sp/>remaining<sp/>nodes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>top_level;<sp/>i<sp/>&lt;=<sp/>top_level;<sp/>i--)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_vskiplist_visit_level(&amp;pqueue-&gt;lst,<sp/>i,<sp/><ref refid="vqueue__prio__skiplist__based_8h_1a2b6d232b3705c49acd4b4c4b36df0111" kindref="member" tooltip="This is a callback function called by vqueue_prio_destroy it destroys both the given node and the dat...">_vqueue_prio_destroy_node</ref>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;params);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="154" refid="vqueue__prio__skiplist__based_8h_1a30538284b14493794f6a0a7720dab27f" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a30538284b14493794f6a0a7720dab27f" kindref="member" tooltip="Calculates the required size and height of vqueue_prio_node_t container.">vqueue_prio_calc_node_sz</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>container_sz,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>*height)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="skiplist__lf_8h_1adfbdcc5872290537ffb5d47d44fc13db" kindref="member" tooltip="Calculates the required size and height of vskiplist_node_t container.">vskiplist_calc_node_sz</ref>(&amp;pqueue-&gt;lst,<sp/>container_sz,<sp/>height);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="vqueue__prio__skiplist__based_8h_1ab15e6be688f99107ac8f6f429efbac10" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1ab15e6be688f99107ac8f6f429efbac10" kindref="member" tooltip="Enqueues the given node.">vqueue_prio_add</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>priority,<sp/>vsize_t<sp/>height)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pqueue);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initializing<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;priority<sp/>=<sp/>priority;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a3a281f092a90e9be56044f35c3f3cbd2" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write</ref>(&amp;node-&gt;marked,<sp/>0);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>success<sp/>=</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="skiplist__lf_8h_1a701e2113352c7b5413ceeeae3cbf08a8" kindref="member" tooltip="Inserts node into the skiplist.">vskiplist_add</ref>(&amp;pqueue-&gt;lst,<sp/>priority,<sp/>&amp;node-&gt;skip_node,<sp/>NULL,<sp/>height);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(success<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;we<sp/>should<sp/>allow<sp/>for<sp/>inserting<sp/>nodes<sp/>with<sp/>same<sp/>priority<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="196" refid="vqueue__prio__skiplist__based_8h_1a33fbeb8a0d35265aba6527370afb49eb" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a33fbeb8a0d35265aba6527370afb49eb" kindref="member" tooltip="Dequeues a node with highest priority available.">vqueue_prio_remove_min</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*skip_node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>pnode<sp/>=<sp/><ref refid="vqueue__prio__skiplist__based_8h_1ae50c85ec5d397b78c785110c2a856ed7" kindref="member" tooltip="Internal functions.">_vqueue_prio_find_and_mark_min</ref>(pqueue);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pnode)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skip_node<sp/>=<sp/>&amp;pnode-&gt;skip_node;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>physically<sp/>detach<sp/>the<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_vskiplist_detach_node(&amp;pqueue-&gt;lst,<sp/>pnode-&gt;priority,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pnode;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="vqueue__prio__skiplist__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" kindref="member" tooltip="Visits all available nodes in the given priority queue.">_vqueue_prio_visit</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>visitor,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arguments[2];</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pqueue);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(visitor);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>arguments[0]<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)visitor;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>arguments[1]<sp/>=<sp/>arg;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>_vskiplist_visit_level(&amp;pqueue-&gt;lst,<sp/>0,<sp/><ref refid="vqueue__prio__skiplist__based_8h_1a62932c3a0bf60655d5f293ba5c0bfd84" kindref="member" tooltip="This is a callback function used for visiting skiplist nodes.">_vqueue_prio_visit_node</ref>,<sp/>arguments);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="240" refid="vqueue__prio__skiplist__based_8h_1ae50c85ec5d397b78c785110c2a856ed7" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1ae50c85ec5d397b78c785110c2a856ed7" kindref="member" tooltip="Internal functions.">_vqueue_prio_find_and_mark_min</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*head<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pqueue);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>lst<sp/>=<sp/>&amp;pqueue-&gt;lst;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(head<sp/>=<sp/><ref refid="skiplist__lf_8h_1af7d82164f7bc5a8927cc2cb5a7a2e245" kindref="member" tooltip="Returns the first node in the given lst.">vskiplist_get_first</ref>(lst),<sp/>head)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pnode<sp/>=<sp/>V_CONTAINER_OF(head,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>unmarked<sp/>node<sp/>is<sp/>found<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1a4bd370c5cd89e15a2d4d38effbd85de3" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read</ref>(&amp;pnode-&gt;marked)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>attempt<sp/>to<sp/>mark<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1afcb8299ff35fe7dd7b43adcfc90104a1" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic8_cmpxchg</ref>(&amp;pnode-&gt;marked,<sp/>0,<sp/>1)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>marked<sp/>it<sp/>successfully<sp/>it<sp/>is<sp/>ours,<sp/>we<sp/>can<sp/>proceed<sp/>to</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>remove<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pnode;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="vqueue__prio__skiplist__based_8h_1ad07da2af2aaee14368ad86851ed66b9e" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1ad07da2af2aaee14368ad86851ed66b9e" kindref="member" tooltip="Internal callback functions.">_vqueue_prio_cmp_priority</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*snode,<sp/>vskiplist_key_t<sp/>priority)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(snode);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>pnode<sp/>=<sp/>V_CONTAINER_OF(snode,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pnode-&gt;priority<sp/>&lt;=<sp/>priority)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="vqueue__prio__skiplist__based_8h_1a5d2ea1fb103666bf6b4d0283711eef66" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a5d2ea1fb103666bf6b4d0283711eef66" kindref="member" tooltip="This is a callback function used for redirecting the freeing of skiplist node to pqueue node.">_vqueue_prio_redirect_retire_cb</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*snode,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue<sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(arg);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(snode);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>pnode<sp/><sp/>=<sp/>V_CONTAINER_OF(snode,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue<sp/>=<sp/>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*)arg;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;retire_cb(pnode,<sp/>pqueue-&gt;retire_cb_arg);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="vqueue__prio__skiplist__based_8h_1a62932c3a0bf60655d5f293ba5c0bfd84" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a62932c3a0bf60655d5f293ba5c0bfd84" kindref="member" tooltip="This is a callback function used for visiting skiplist nodes.">_vqueue_prio_visit_node</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*snode,<sp/>vbool_t<sp/>removed,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_handle_node_t<sp/>public_visitor<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**args<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)arg;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(snode);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(args);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>public_visitor<sp/>=<sp/>(vqueue_prio_handle_node_t)args[0];</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*param<sp/><sp/><sp/><sp/>=<sp/>args[1];</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>pnode<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>V_CONTAINER_OF(snode,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>visit<sp/>only<sp/>not<sp/>marked<sp/>nodes<sp/>!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1a4bd370c5cd89e15a2d4d38effbd85de3" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read</ref>(&amp;pnode-&gt;marked)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(removed<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>public_visitor(pnode,<sp/>param);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(removed);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="vqueue__prio__skiplist__based_8h_1a2b6d232b3705c49acd4b4c4b36df0111" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__skiplist__based_8h_1a2b6d232b3705c49acd4b4c4b36df0111" kindref="member" tooltip="This is a callback function called by vqueue_prio_destroy it destroys both the given node and the dat...">_vqueue_prio_destroy_node</ref>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node,<sp/>vbool_t<sp/>marked,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_t</ref><sp/>*param<sp/>=<sp/>(<ref refid="structvqueue__destroy__cb__param__s" kindref="compound">vqueue_destroy_cb_param_t</ref><sp/>*)args;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>here<sp/>we<sp/>pqueue_destroy<sp/>the<sp/>node<sp/>directly<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>fully_disconnected<sp/>=<sp/>_vskiplist_disconnect_node(node);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fully_disconnected)<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*pnode<sp/>=</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_CONTAINER_OF(node,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>,<sp/>skip_node);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>param-&gt;destroy_cb(pnode,<sp/>param-&gt;destroy_cb_arg);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(marked);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/vqueue_prio_skiplist_based.h"/>
+  </compounddef>
+</doxygen>

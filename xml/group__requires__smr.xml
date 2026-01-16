@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__requires__smr" kind="group">
+    <compoundname>requires_smr</compoundname>
+    <title>SMR-required</title>
+    <innerfile refid="hashtable__standard_8h">hashtable_standard.h</innerfile>
+    <innerfile refid="listset__coarse_8h">listset_coarse.h</innerfile>
+    <innerfile refid="listset__fine_8h">listset_fine.h</innerfile>
+    <innerfile refid="listset__lazy_8h">listset_lazy.h</innerfile>
+    <innerfile refid="listset__lf_8h">listset_lf.h</innerfile>
+    <innerfile refid="listset__opt_8h">listset_opt.h</innerfile>
+    <innerfile refid="skiplist__lf_8h">skiplist_lf.h</innerfile>
+    <innerfile refid="unbounded__queue__lf_8h">unbounded_queue_lf.h</innerfile>
+    <innerfile refid="vqueue__prio__skiplist__based_8h">vqueue_prio_skiplist_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__array__based_8h">vqueue_prio_stack_array_based.h</innerfile>
+    <innerfile refid="elimination__stack_8h">elimination_stack.h</innerfile>
+    <innerfile refid="xbo__stack_8h">xbo_stack.h</innerfile>
+    <briefdescription>
+<para>Group of algorithms that require safe memory reclamation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Users are expected to couple the usage of these algorithms with an SMR scheme from vsync/smr e.g. vsync/smr/gdump.h . Detached/retired nodes of these algorithms must be retired to the SMR and not freed/recycled directly. Operations of these algorithms should be called within the critical section of the SMR within enter/exit, unless stated otherwise. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

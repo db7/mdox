@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcnalock__s" kind="struct" language="C++" prot="public">
+    <compoundname>cnalock_s</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcnalock__s_1a6251f7bc04b5691e06223936c5901dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cnalock_s::vatomicptr</definition>
+        <argsstring>(struct cna_node_s *) tail</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>cnalock_s::vatomicptr</qualifiedname>
+        <param>
+          <type>struct <ref refid="structcna__node__s" kindref="compound">cna_node_s</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/cnalock.h" line="37" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/spinlock/cnalock.h" line="36" column="1" bodyfile="vsync/spinlock/cnalock.h" bodystart="36" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structcnalock__s_1a6251f7bc04b5691e06223936c5901dc8" prot="public" virt="non-virtual"><scope>cnalock_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

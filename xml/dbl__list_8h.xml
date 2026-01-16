@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dbl__list_8h" kind="file" language="C++">
+    <compoundname>dbl_list.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includedby refid="ebr_8h" local="no">vsync/smr/ebr.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/smr/internal/dbl_list.h</label>
+        <link refid="dbl__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/smr/internal/dbl_list.h</label>
+        <link refid="dbl__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdbl__list__node__s" prot="public">dbl_list_node_s</innerclass>
+    <innerclass refid="structdbl__list__s" prot="public">dbl_list_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="dbl__list_8h_1a7603f4441bbf3a7f6edd41af3a98d672" prot="public" static="no">
+        <name>DBL_LIST_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .head = NULL, .count = 0                                               \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="22" column="9" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="dbl__list_8h_1a1000a43cd48c5eb925a393a41e36363d" prot="public" static="no">
+        <type>struct <ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref></type>
+        <definition>typedef struct dbl_list_node_s dbl_list_node_t</definition>
+        <argsstring></argsstring>
+        <name>dbl_list_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="15" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dbl__list_8h_1af06b1620fec42d27d139f3a2555ba97c" prot="public" static="no">
+        <type>struct <ref refid="structdbl__list__s" kindref="compound">dbl_list_s</ref></type>
+        <definition>typedef struct dbl_list_s dbl_list_t</definition>
+        <argsstring></argsstring>
+        <name>dbl_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="20" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="dbl__list_8h_1aa6bb2f928fa6bdabfa50b7ad87856376" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* dbl_list_visitor) (dbl_list_node_t *node, void *args)</definition>
+        <argsstring>)(dbl_list_node_t *node, void *args)</argsstring>
+        <name>dbl_list_visitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="27" column="9" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dbl__list_8h_1a56536e868474d3b1467465af85b32032" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dbl_list_init</definition>
+        <argsstring>(dbl_list_t *list)</argsstring>
+        <name>dbl_list_init</name>
+        <param>
+          <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="30" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1ac6d707efbd197db794a0c51e32ac6df0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dbl_list_add</definition>
+        <argsstring>(dbl_list_t *list, dbl_list_node_t *node)</argsstring>
+        <name>dbl_list_add</name>
+        <param>
+          <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="38" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="38" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1adfe0206da5720034a84a602e8163b549" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dbl_list_rem</definition>
+        <argsstring>(dbl_list_t *list, dbl_list_node_t *node)</argsstring>
+        <name>dbl_list_rem</name>
+        <param>
+          <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="53" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="53" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1a5965c8b1bab0f8f5122563bfa0b15dfd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dbl_list_visit_forward</definition>
+        <argsstring>(dbl_list_node_t *node, dbl_list_visitor visitor, void *args)</argsstring>
+        <name>dbl_list_visit_forward</name>
+        <param>
+          <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>dbl_list_visitor</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="79" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1ad58db3565aa6db91403a5dc39b56b919" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dbl_list_visit_backward</definition>
+        <argsstring>(dbl_list_node_t *node, dbl_list_visitor visitor, void *args)</argsstring>
+        <name>dbl_list_visit_backward</name>
+        <param>
+          <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>dbl_list_visitor</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="94" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="94" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1add8c477fbfe10a839621969e631f1ec9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t dbl_list_get_length</definition>
+        <argsstring>(dbl_list_t *list)</argsstring>
+        <name>dbl_list_get_length</name>
+        <param>
+          <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="109" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1a19f4de96494e58a7a0daa39dc78c26b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+        <definition>static dbl_list_node_t * dbl_list_get_head</definition>
+        <argsstring>(dbl_list_t *list)</argsstring>
+        <name>dbl_list_get_head</name>
+        <param>
+          <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="116" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="dbl__list_8h_1a2b2448ee33d78b9862be8ecbaf39e1fc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+        <definition>static dbl_list_node_t * dbl_list_get_next</definition>
+        <argsstring>(dbl_list_node_t *node)</argsstring>
+        <name>dbl_list_get_next</name>
+        <param>
+          <type><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/dbl_list.h" line="122" column="1" bodyfile="vsync/smr/internal/dbl_list.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOUBLE_LINKED_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOUBLE_LINKED_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="structdbl__list__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_s</ref><sp/>*prev;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structdbl__list__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdbl__list__s" kindref="compound">dbl_list_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*head;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>count;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<sp/><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DBL_LIST_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.head<sp/>=<sp/>NULL,<sp/>.count<sp/>=<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*dbl_list_visitor)(<ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">dbl_list_init(<ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(list);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;head<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">dbl_list_add(<ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref><sp/>*list,<sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(list);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;next<sp/>=<sp/>list-&gt;head;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list-&gt;head)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list-&gt;head-&gt;prev<sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;head<sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;count++;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">dbl_list_rem(<ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref><sp/>*list,<sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(list);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*succ<sp/>=<sp/>node-&gt;next;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*prev<sp/>=<sp/>node-&gt;prev;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prev)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(prev-&gt;next<sp/>==<sp/>node);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(list-&gt;head<sp/>!=<sp/>node);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev-&gt;next<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(list-&gt;head<sp/>==<sp/>node);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list-&gt;head<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(succ)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(succ-&gt;prev<sp/>==<sp/>node);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ-&gt;prev<sp/>=<sp/>prev;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>list-&gt;count--;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">dbl_list_visit_forward(<ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node,<sp/>dbl_list_visitor<sp/>visitor,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>curr-&gt;next;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitor(curr,<sp/>args);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">dbl_list_visit_backward(<ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node,<sp/>dbl_list_visitor<sp/>visitor,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>node;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/>curr-&gt;prev;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitor(curr,<sp/>args);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>prev;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">dbl_list_get_length(<ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(list);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list-&gt;count;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">dbl_list_get_head(<ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>list-&gt;head;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">dbl_list_get_next(<ref refid="structdbl__list__node__s" kindref="compound">dbl_list_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;next;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/smr/internal/dbl_list.h"/>
+  </compounddef>
+</doxygen>

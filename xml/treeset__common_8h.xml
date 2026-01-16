@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="treeset__common_8h" kind="file" language="C++">
+    <compoundname>treeset_common.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includedby refid="treeset__bst__coarse_8h" local="no">vsync/map/treeset_bst_coarse.h</includedby>
+    <includedby refid="treeset__bst__fine_8h" local="no">vsync/map/treeset_bst_fine.h</includedby>
+    <includedby refid="treeset__rb__coarse_8h" local="no">vsync/map/treeset_rb_coarse.h</includedby>
+    <includedby refid="treeset__rb__fine_8h" local="no">vsync/map/treeset_rb_fine.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/map/internal/treeset/treeset_common.h</label>
+        <link refid="treeset__common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/map/internal/treeset/treeset_common.h</label>
+        <link refid="treeset__common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/treeset_bst_coarse.h</label>
+        <link refid="treeset__bst__coarse_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/map/treeset_bst_fine.h</label>
+        <link refid="treeset__bst__fine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/map/treeset_rb_coarse.h</label>
+        <link refid="treeset__rb__coarse_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/map/treeset_rb_fine.h</label>
+        <link refid="treeset__rb__fine_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="treeset__common_8h_1a1b1e3c58e991d0df3184ae75a27f30b2" prot="public" static="no">
+        <type>vuintptr_t</type>
+        <definition>typedef vuintptr_t treeset_key_t</definition>
+        <argsstring></argsstring>
+        <name>treeset_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_common.h" line="13" column="20" bodyfile="vsync/map/internal/treeset/treeset_common.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="treeset__common_8h_1a7722d46ca45c54e86db8c261b998db3b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* treeset_visitor) (treeset_key_t key, void *value, void *arg)</definition>
+        <argsstring>)(treeset_key_t key, void *value, void *arg)</argsstring>
+        <name>treeset_visitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_common.h" line="17" column="9" bodyfile="vsync/map/internal/treeset/treeset_common.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_TREESET_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_TREESET_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuintptr_t<sp/>treeset_key_t;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtreeset__node__s" kindref="compound">treeset_node_s</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*treeset_visitor)(treeset_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/internal/treeset/treeset_common.h"/>
+  </compounddef>
+</doxygen>

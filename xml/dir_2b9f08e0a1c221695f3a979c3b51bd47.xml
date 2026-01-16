@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_2b9f08e0a1c221695f3a979c3b51bd47" kind="dir">
+    <compoundname>vsync/utils</compoundname>
+    <innerdir refid="dir_884f4cb5392dbe29e46e9c5ab70ea2b6">vsync/utils/internal</innerdir>
+    <innerfile refid="abstract__lock_8h">abstract_lock.h</innerfile>
+    <innerfile refid="alloc_8h">alloc.h</innerfile>
+    <innerfile refid="backoff_8h">backoff.h</innerfile>
+    <innerfile refid="exchanger_8h">exchanger.h</innerfile>
+    <innerfile refid="math_8h">math.h</innerfile>
+    <innerfile refid="recursive__lock_8h">recursive_lock.h</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="string__helpers_8h">string_helpers.h</innerfile>
+    <innerfile refid="xbo_8h">xbo.h</innerfile>
+    <briefdescription>
+<para>Utilities and supporting algorithms. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/utils/"/>
+  </compounddef>
+</doxygen>

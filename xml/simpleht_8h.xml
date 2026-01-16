@@ -1,0 +1,1599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="simpleht_8h" kind="file" language="C++">
+    <compoundname>simpleht.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="rwlock_8h" local="no">vsync/spinlock/rwlock.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/map/simpleht.h</label>
+        <link refid="simpleht_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/spinlock/rwlock.h</label>
+        <link refid="rwlock_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/spinlock/semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvsimpleht__entry__s" prot="public">vsimpleht_entry_s</innerclass>
+    <innerclass refid="structvsimpleht__s" prot="public">vsimpleht_s</innerclass>
+    <innerclass refid="structvsimpleht__iter__s" prot="public">vsimpleht_iter_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="simpleht_8h_1a399adbf2649b75daddd49e85fe7e8d9e" prot="public" static="no">
+        <name>VSIMPLEHT_RELATIVE_THRESHOLD</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+<para>Controls when the rebalancing of the hashtable is triggered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Everytime the number of removed nodes is equal to capacity/VSIMPLEHT_RELATIVE_THRESHOLD. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="71" column="13" bodyfile="vsync/map/simpleht.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="simpleht_8h_1a396a6b08d46e19f3a3871a23e7625dc9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>vsimpleht_ret_e</name>
+        <enumvalue id="simpleht_8h_1a396a6b08d46e19f3a3871a23e7625dc9ab2eca5de537e0d85c6e790a1eaf23fb0" prot="public">
+          <name>VSIMPLEHT_RET_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="simpleht_8h_1a396a6b08d46e19f3a3871a23e7625dc9a06e53a77d079e031742ca734051777c6" prot="public">
+          <name>VSIMPLEHT_RET_TBL_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="simpleht_8h_1a396a6b08d46e19f3a3871a23e7625dc9a97cd1432285d1ba5e3a46a1f295e7ece" prot="public">
+          <name>VSIMPLEHT_RET_KEY_EXISTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="simpleht_8h_1a396a6b08d46e19f3a3871a23e7625dc9a931241304606c415f5b568705d96d650" prot="public">
+          <name>VSIMPLEHT_RET_KEY_DNE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="101" column="1" bodyfile="vsync/map/simpleht.h" bodystart="101" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="simpleht_8h_1a65cb6f03385a1a5e859f77a07eea1a12" prot="public" static="no">
+        <type>vint8_t(*</type>
+        <definition>typedef vint8_t(* vsimpleht_cmp_key_t) (vuintptr_t key_a, vuintptr_t key_b)</definition>
+        <argsstring>)(vuintptr_t key_a, vuintptr_t key_b)</argsstring>
+        <name>vsimpleht_cmp_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="74" column="9" bodyfile="vsync/map/simpleht.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1ad9a2a20443443efeb59df6a59dfc8b12" prot="public" static="no">
+        <type>vuint64_t(*</type>
+        <definition>typedef vuint64_t(* vsimpleht_hash_key_t) (vuintptr_t key)</definition>
+        <argsstring>)(vuintptr_t key)</argsstring>
+        <name>vsimpleht_hash_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="75" column="9" bodyfile="vsync/map/simpleht.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1a26db3ddb95d071a3efc0d0a1d3c8e5e7" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vsimpleht_destroy_entry_t) (void *entry)</definition>
+        <argsstring>)(void *entry)</argsstring>
+        <name>vsimpleht_destroy_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="76" column="9" bodyfile="vsync/map/simpleht.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1a74b8c849b6bfb97a993bb9c2ce6d6320" prot="public" static="no">
+        <type>struct <ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_s</ref></type>
+        <definition>typedef struct vsimpleht_entry_s vsimpleht_entry_t</definition>
+        <argsstring></argsstring>
+        <name>vsimpleht_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="81" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1a2dba6349f80f8447cc4d831c0785dc94" prot="public" static="no">
+        <type>struct <ref refid="structvsimpleht__s" kindref="compound">vsimpleht_s</ref></type>
+        <definition>typedef struct vsimpleht_s vsimpleht_t</definition>
+        <argsstring></argsstring>
+        <name>vsimpleht_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="94" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1a09bddcc15c7993388d3c52e9a706e27f" prot="public" static="no">
+        <type>struct <ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_s</ref></type>
+        <definition>typedef struct vsimpleht_iter_s vsimpleht_iter_t</definition>
+        <argsstring></argsstring>
+        <name>vsimpleht_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="simpleht_8h_1a3ea37ae4556896c6f4945abedc007760" prot="public" static="no">
+        <type>enum vsimpleht_ret_e</type>
+        <definition>typedef enum vsimpleht_ret_e vsimpleht_ret_t</definition>
+        <argsstring></argsstring>
+        <name>vsimpleht_ret_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="106" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vsimpleht_cleanup</definition>
+        <argsstring>(vsimpleht_t *tbl, void *val)</argsstring>
+        <name>_vsimpleht_cleanup</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Prototypes - internal functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructs val, and rebalances the hashtable buckets if the threshold is met.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the removed object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> this is a blocking operation, acquires the lock in write-mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="516" column="1" bodyfile="vsync/map/simpleht.h" bodystart="516" bodyend="519" declfile="vsync/map/simpleht.h" declline="110" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1ae7562b4758027487ba58c1b0c02c406b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vsimpleht_trigger_cleanup</definition>
+        <argsstring>(vsimpleht_t *tbl, void *val)</argsstring>
+        <name>_vsimpleht_trigger_cleanup</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Releases the reader-lock, triggers cleaning if needed and then reacquires the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the removed object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="501" column="1" bodyfile="vsync/map/simpleht.h" bodystart="501" bodyend="513" declfile="vsync/map/simpleht.h" declline="111" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vsimpleht_give_cleanup_a_chance</definition>
+        <argsstring>(vsimpleht_t *tbl)</argsstring>
+        <name>_vsimpleht_give_cleanup_a_chance</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <briefdescription>
+<para>Releases the reader lock briefly if there is a writer waiting to acquire it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> this gives the cleaner thread a chance to rebalance the table and free the removed node.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="479" column="1" bodyfile="vsync/map/simpleht.h" bodystart="479" bodyend="492" declfile="vsync/map/simpleht.h" declline="112" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsimpleht_ret_t</type>
+        <definition>static vsimpleht_ret_t _vsimpleht_add</definition>
+        <argsstring>(vsimpleht_t *tbl, vuintptr_t key, void *value)</argsstring>
+        <name>_vsimpleht_add</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>vuintptr_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the given value into the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key of the value to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the object to insert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VSIMPLEHT_RET_OK key does not exist, value was added. </para>
+</simplesect>
+<simplesect kind="return"><para>VSIMPLEHT_RET_KEY_EXISTS key exists, value was not added. </para>
+</simplesect>
+<simplesect kind="return"><para>VSIMPLEHT_RET_TBL_FULL table is full.</para>
+</simplesect>
+&gt; <bold>Note:</bold> neither key can be 0 nor value can be NULL.</para>
+<para>&gt; <bold>Note:</bold> this API is internal and should not be called by users. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="416" column="1" bodyfile="vsync/map/simpleht.h" bodystart="416" bodyend="469" declfile="vsync/map/simpleht.h" declline="113" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1ad058f3b06050166e430017db294be585" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t vsimpleht_buff_size</definition>
+        <argsstring>(vsize_t capacity)</argsstring>
+        <name>vsimpleht_buff_size</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size of the buffer needed by the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>capacity of the hashtable. Maximum number of items to be inserted in the hashtable. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vsize_t required buffer size to fit <computeroutput>len</computeroutput> items.</para>
+</simplesect>
+&gt; <bold>Note:</bold> capacity must be power of two. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="126" column="1" bodyfile="vsync/map/simpleht.h" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1affc9b1e771fab1f9b5761b2fcf270919" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vsimpleht_init</definition>
+        <argsstring>(vsimpleht_t *tbl, void *buff, vsize_t capacity, vsimpleht_cmp_key_t cmp_fun, vsimpleht_hash_key_t hash_fun, vsimpleht_destroy_entry_t destroy_cb)</argsstring>
+        <name>vsimpleht_init</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>vsimpleht_cmp_key_t</type>
+          <declname>cmp_fun</declname>
+        </param>
+        <param>
+          <type>vsimpleht_hash_key_t</type>
+          <declname>hash_fun</declname>
+        </param>
+        <param>
+          <type>vsimpleht_destroy_entry_t</type>
+          <declname>destroy_cb</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the hashtable buffer. Allocated by the user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>capacity of the hashtable. Same value passed to vsimpleht_buff_size. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>compare key callback function address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of callback function. Used to hash the key. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of destroy callback function. Used to destroy the hashtable stored objects. Called via <computeroutput>vsimpleht_remove</computeroutput> and <computeroutput>vsimpleht_destroy</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="146" column="1" bodyfile="vsync/map/simpleht.h" bodystart="146" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a96e6efd3cd915ec4c791fc3f4062dc05" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vsimpleht_destroy</definition>
+        <argsstring>(vsimpleht_t *tbl)</argsstring>
+        <name>vsimpleht_destroy</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <briefdescription>
+<para>Destroys the stored hashtable values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="178" column="1" bodyfile="vsync/map/simpleht.h" bodystart="178" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a4165503c631d9901160e8b07c2c00389" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vsimpleht_thread_register</definition>
+        <argsstring>(vsimpleht_t *tbl)</argsstring>
+        <name>vsimpleht_thread_register</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <briefdescription>
+<para>Registers the caller thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> should be called once per thread, before the calling thread accesses the hashtable for the first time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="200" column="1" bodyfile="vsync/map/simpleht.h" bodystart="200" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1aa1d97378c591dabae0432504be671481" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vsimpleht_thread_deregister</definition>
+        <argsstring>(vsimpleht_t *tbl)</argsstring>
+        <name>vsimpleht_thread_deregister</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <briefdescription>
+<para>Deregisters the caller thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> should be called once per thread, after the calling thread accesses the hashtable for the last time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="217" column="1" bodyfile="vsync/map/simpleht.h" bodystart="217" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a8b265fc99b888ae72713b9c9d6d3c9f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsimpleht_ret_t</type>
+        <definition>static vsimpleht_ret_t vsimpleht_add</definition>
+        <argsstring>(vsimpleht_t *tbl, vuintptr_t key, void *value)</argsstring>
+        <name>vsimpleht_add</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>vuintptr_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the given value into the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key of the value to add. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the object to insert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VSIMPLEHT_RET_OK key does not exist, value was added. </para>
+</simplesect>
+<simplesect kind="return"><para>VSIMPLEHT_RET_KEY_EXISTS key exists, value was not added. </para>
+</simplesect>
+<simplesect kind="return"><para>VSIMPLEHT_RET_TBL_FULL table is full. Consider<itemizedlist>
+<listitem><para>increasing the capacity</para>
+</listitem><listitem><para>decreasing VSIMPLEHT_RELATIVE_THRESHOLD</para>
+</listitem><listitem><para>removing items from the table</para>
+<para>&gt; <bold>Note:</bold> neither key can be 0 nor value can be NULL. </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="241" column="1" bodyfile="vsync/map/simpleht.h" bodystart="241" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a49aca29e1b9d9d5436b723889ea58233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * vsimpleht_get</definition>
+        <argsstring>(vsimpleht_t *tbl, vuintptr_t key)</argsstring>
+        <name>vsimpleht_get</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>vuintptr_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Searches the hashtable for a value associated with the given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key to search for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* address of the object associated with the given key if exists. </para>
+</simplesect>
+<simplesect kind="return"><para>NULL if there is no value found associated with given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="257" column="1" bodyfile="vsync/map/simpleht.h" bodystart="257" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a2440b4907d18b7bc47888ba4b892398e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vsimpleht_iter_init</definition>
+        <argsstring>(vsimpleht_t *tbl, vsimpleht_iter_t *iter)</argsstring>
+        <name>vsimpleht_iter_init</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given iterator object <computeroutput>iter</computeroutput> for operating <computeroutput>tbl</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_iter_t object to initialize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="280" column="1" bodyfile="vsync/map/simpleht.h" bodystart="280" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1ad03f567329b46e6c70883b2b1102bd40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vsimpleht_iter_next</definition>
+        <argsstring>(vsimpleht_iter_t *iter, vuintptr_t *key, void **val)</argsstring>
+        <name>vsimpleht_iter_next</name>
+        <param>
+          <type><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>vuintptr_t *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Reads the current entry (key/value) the iterator has reached. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>After the values are read, the iterator advances to the next entry.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_iter_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter where the current key value is stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter where the current object value is stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the current output of key and val is valid. </para>
+</simplesect>
+<simplesect kind="return"><para>false there are no more objects to iterate. Stored values in key, val parameters should be ignored by the user.</para>
+</simplesect>
+<simplesect kind="pre"><para>iter must be initalized via vsimpleht_iter_init.</para>
+</simplesect>
+&gt; <bold>Note:</bold> the iterator is mainly meant for sequential setting. When called in parallel the results might not be consistent.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">vuintptr_t<sp/>key<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">data_t<sp/>*date<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref><sp/>iter;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="simpleht_8h_1a2440b4907d18b7bc47888ba4b892398e" kindref="member" tooltip="Initializes the given iterator object iter for operating tbl object.">vsimpleht_iter_init</ref>(&amp;g_simpleht,<sp/>&amp;iter);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="simpleht_8h_1ad03f567329b46e6c70883b2b1102bd40" kindref="member" tooltip="Reads the current entry (key/value) the iterator has reached.">vsimpleht_iter_next</ref>(&amp;iter,<sp/>&amp;key,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**)&amp;data))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>access<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>access<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/>}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="317" column="1" bodyfile="vsync/map/simpleht.h" bodystart="317" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="simpleht_8h_1a54bc426b60bd235ff09e7664098f1b6a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsimpleht_ret_t</type>
+        <definition>static vsimpleht_ret_t vsimpleht_remove</definition>
+        <argsstring>(vsimpleht_t *tbl, vuintptr_t key)</argsstring>
+        <name>vsimpleht_remove</name>
+        <param>
+          <type><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref> *</type>
+          <declname>tbl</declname>
+        </param>
+        <param>
+          <type>vuintptr_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes the node associated with the given key from the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tbl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vsimpleht_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>key to remove the value associated with. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VSIMPLEHT_RET_OK key exists, node was removed. </para>
+</simplesect>
+<simplesect kind="return"><para>VSIMPLEHT_RET_KEY_DNE key does not exist.</para>
+</simplesect>
+&gt; <bold>Note:</bold> this operation is not lock-free, if the the removal is successful. It can be super-slow, and the associated value can be freed via the destroy callback registered at <computeroutput>vsimpleht_init</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="354" column="1" bodyfile="vsync/map/simpleht.h" bodystart="354" bodyend="401"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple lock-free hashtable. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an adaptation of the simple lock-free hashtable mentioned in the reference. The adaptation allow for remove operation if users need it. Users should be aware that enabling the remove incurs overhead on add/get operations. The remove operation can be quite slow as it rebalances the hashtable and when that happens lock-freedom is compromised.</para>
+<para>This hashtable is ideal for when no remove operations are needed, in that case users should disable the support of remove by compiling with <computeroutput>-DVSIMPLEHT_DISABLE_REMOVE</computeroutput>. Or keep it, and make sure remove is rarely called.</para>
+<sect1 id="simpleht_8h_1autotoc_md8">
+<title>Operating Conditions</title>
+<para>The hashtable is supposed to keep gaps for optimal performance. Users should create the table with at least a capacity of 2*N, where N is the maximum number of entries to be inserted.</para>
+<para>As long as the hashtable is not full, every search is guaranteed to finish either by locating the desired key, or by locating an entry whose key is zero, which means that the desired key does not exist in the hashtable.</para>
+<para>There is a tradeoff between performance and the number of empty slots in the hashtable. The performance degrades as the hashtable fills. lock-freedom of add is compromised if the hashtable becomes full.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_simpleht.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="simpleht_8h" kindref="compound" tooltip="Simple lock-free hashtable.">vsync/map/simpleht.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HASHTABLE_CAPACITY<sp/>32U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_KEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_KEY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(HASHTABLE_CAPACITY<sp/>/<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>g_hashtable;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint64_t</highlight></codeline>
+<codeline><highlight class="normal">hash_cb(vuintptr_t<sp/>key)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>h<sp/>=<sp/>key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>^=<sp/>h<sp/>&gt;&gt;<sp/>16;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>*=<sp/>0x85ebca6b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>^=<sp/>h<sp/>&gt;&gt;<sp/>13;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>*=<sp/>0xc2b2ae35;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>^=<sp/>h<sp/>&gt;&gt;<sp/>16;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>h;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vint8_t</highlight></codeline>
+<codeline><highlight class="normal">cmp_key_cb(vuintptr_t<sp/>a,<sp/>vuintptr_t<sp/>b)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;<sp/>b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&gt;<sp/>b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(vsize_t)(vuintptr_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsimpleht_ret_t<sp/>ret<sp/>=<sp/>VSIMPLEHT_RET_OK;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1a4165503c631d9901160e8b07c2c00389" kindref="member" tooltip="Registers the caller thread.">vsimpleht_thread_register</ref>(&amp;g_hashtable);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vuintptr_t<sp/>key<sp/>=<sp/>MIN_KEY;<sp/>key<sp/>&lt;<sp/>MAX_KEY;<sp/>key++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="simpleht_8h_1a49aca29e1b9d9d5436b723889ea58233" kindref="member" tooltip="Searches the hashtable for a value associated with the given key.">vsimpleht_get</ref>(&amp;g_hashtable,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>found<sp/>key<sp/>%lu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(data-&gt;key<sp/>==<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/><ref refid="simpleht_8h_1a54bc426b60bd235ff09e7664098f1b6a" kindref="member" tooltip="Removes the node associated with the given key from the hashtable.">vsimpleht_remove</ref>(&amp;g_hashtable,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>VSIMPLEHT_RET_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>removed<sp/>key<sp/>%lu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>key<sp/>%lu<sp/>does<sp/>not<sp/>exist\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;key<sp/>=<sp/>key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="simpleht_8h_1a8b265fc99b888ae72713b9c9d6d3c9f4" kindref="member" tooltip="Inserts the given value into the hashtable.">vsimpleht_add</ref>(&amp;g_hashtable,<sp/>key,<sp/>data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>VSIMPLEHT_RET_OK)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>added<sp/>key<sp/>%lu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>VSIMPLEHT_RET_TBL_FULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>table<sp/>is<sp/>full!<sp/>cannot<sp/>add\n&quot;</highlight><highlight class="normal">,<sp/>tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>VSIMPLEHT_RET_KEY_EXISTS)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;T%zu:<sp/>key<sp/>%lu<sp/>already<sp/>exists\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1aa1d97378c591dabae0432504be671481" kindref="member" tooltip="Deregisters the caller thread.">vsimpleht_thread_deregister</ref>(&amp;g_hashtable);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/>=<sp/><ref refid="simpleht_8h_1ad058f3b06050166e430017db294be585" kindref="member" tooltip="Calculates the size of the buffer needed by the hashtable.">vsimpleht_buff_size</ref>(HASHTABLE_CAPACITY);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buffer<sp/>=<sp/>malloc(size);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1affc9b1e771fab1f9b5761b2fcf270919" kindref="member" tooltip="Initializes the hashtable.">vsimpleht_init</ref>(&amp;g_hashtable,<sp/>buffer,<sp/>HASHTABLE_CAPACITY,<sp/>cmp_key_cb,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hash_cb,<sp/>destroy_cb);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1a96e6efd3cd915ec4c791fc3f4062dc05" kindref="member" tooltip="Destroys the stored hashtable values.">vsimpleht_destroy</ref>(&amp;g_hashtable);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(buffer);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>[The World&apos;s Simplest Lock-Free Hash Table] (<ulink url="https://preshing.com/20130605/the-worlds-simplest-lock-free-hash-table/">https://preshing.com/20130605/the-worlds-simplest-lock-free-hash-table/</ulink>) </para>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSIMPLE_HT_LF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSIMPLE_HT_LF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined(VSYNC_VERIFICATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;verify/rwlock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#include<sp/>&lt;<ref refid="rwlock_8h" kindref="compound" tooltip="Write-preferring rwlock based on semaphore and an atomic vbool_t.">vsync/spinlock/rwlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSIMPLEHT_RELATIVE_THRESHOLD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="simpleht_8h_1a399adbf2649b75daddd49e85fe7e8d9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VSIMPLEHT_RELATIVE_THRESHOLD<sp/>4U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vint8_t<sp/>(*vsimpleht_cmp_key_t)(vuintptr_t<sp/>key_a,<sp/>vuintptr_t<sp/>key_b);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuint64_t<sp/>(*vsimpleht_hash_key_t)(vuintptr_t<sp/>key);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vsimpleht_destroy_entry_t)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*entry);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="structvsimpleht__entry__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(vuintptr_t)<sp/>key;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<sp/>value;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structvsimpleht__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>capacity;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref><sp/>*entries;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>vsimpleht_cmp_key_t<sp/>cmp_key;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>vsimpleht_hash_key_t<sp/>hash_key;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vsimpleht_destroy_entry_t<sp/>cb_destroy;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cleaning_threshold;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>deleted_count;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structrwlock__s" kindref="compound">rwlock_t</ref><sp/>lock;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structvsimpleht__iter__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>vsimpleht_ret_e<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>VSIMPLEHT_RET_OK,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>VSIMPLEHT_RET_TBL_FULL,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>VSIMPLEHT_RET_KEY_EXISTS,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>VSIMPLEHT_RET_KEY_DNE,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}<sp/>vsimpleht_ret_t;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" kindref="member" tooltip="Prototypes - internal functions.">_vsimpleht_cleanup</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simpleht_8h_1ae7562b4758027487ba58c1b0c02c406b" kindref="member" tooltip="Releases the reader-lock, triggers cleaning if needed and then reacquires the lock.">_vsimpleht_trigger_cleanup</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" kindref="member" tooltip="Releases the reader lock briefly if there is a writer waiting to acquire it.">_vsimpleht_give_cleanup_a_chance</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsimpleht_ret_t<sp/><ref refid="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" kindref="member" tooltip="Inserts the given value into the hashtable.">_vsimpleht_add</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/>vuintptr_t<sp/>key,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="126" refid="simpleht_8h_1ad058f3b06050166e430017db294be585" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1ad058f3b06050166e430017db294be585" kindref="member" tooltip="Calculates the size of the buffer needed by the hashtable.">vsimpleht_buff_size</ref>(vsize_t<sp/>capacity)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(capacity<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT((capacity<sp/>&amp;<sp/>(capacity<sp/>-<sp/>1))<sp/>==<sp/>0<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;capacity<sp/>must<sp/>be<sp/>power<sp/>of<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref>)<sp/>*<sp/>capacity;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="simpleht_8h_1affc9b1e771fab1f9b5761b2fcf270919" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1affc9b1e771fab1f9b5761b2fcf270919" kindref="member" tooltip="Initializes the hashtable.">vsimpleht_init</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buff,<sp/>vsize_t<sp/>capacity,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsimpleht_cmp_key_t<sp/>cmp_fun,<sp/>vsimpleht_hash_key_t<sp/>hash_fun,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsimpleht_destroy_entry_t<sp/>destroy_cb)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tbl);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(buff);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(capacity<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT((capacity<sp/>&amp;<sp/>(capacity<sp/>-<sp/>1))<sp/>==<sp/>0<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;Array<sp/>size<sp/>must<sp/>be<sp/>power<sp/>of<sp/>2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;capacity<sp/><sp/><sp/>=<sp/>capacity;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;entries<sp/><sp/><sp/><sp/>=<sp/>buff;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;cmp_key<sp/><sp/><sp/><sp/>=<sp/>cmp_fun;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;hash_key<sp/><sp/><sp/>=<sp/>hash_fun;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;cb_destroy<sp/>=<sp/>destroy_cb;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tbl-&gt;capacity;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;tbl-&gt;entries[i].key,<sp/>NULL);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;tbl-&gt;entries[i].value,<sp/>NULL);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;cleaning_threshold<sp/>=<sp/>(capacity<sp/>/<sp/><ref refid="simpleht_8h_1a399adbf2649b75daddd49e85fe7e8d9e" kindref="member" tooltip="Controls when the rebalancing of the hashtable is triggered.">VSIMPLEHT_RELATIVE_THRESHOLD</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa5750236f7e4e0360b30b0a33e323e18" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rlx</ref>(&amp;tbl-&gt;deleted_count,<sp/>0);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1aff58bc45fc52b04d2083be30270bfb2e" kindref="member" tooltip="Initializes the rwlock.">rwlock_init</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="simpleht_8h_1a96e6efd3cd915ec4c791fc3f4062dc05" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a96e6efd3cd915ec4c791fc3f4062dc05" kindref="member" tooltip="Destroys the stored hashtable values.">vsimpleht_destroy</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref><sp/>*entry<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tbl);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tbl-&gt;capacity;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entry<sp/>=<sp/>&amp;tbl-&gt;entries[i];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj<sp/><sp/><sp/>=<sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;entry-&gt;value);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tbl-&gt;cb_destroy(obj);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="simpleht_8h_1a4165503c631d9901160e8b07c2c00389" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a4165503c631d9901160e8b07c2c00389" kindref="member" tooltip="Registers the caller thread.">vsimpleht_thread_register</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1aaa18630e45b73805eb7b31383548b9cd" kindref="member" tooltip="Acquires the read lock.">rwlock_read_acquire</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="simpleht_8h_1aa1d97378c591dabae0432504be671481" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1aa1d97378c591dabae0432504be671481" kindref="member" tooltip="Deregisters the caller thread.">vsimpleht_thread_deregister</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1a49c732e8102eaeeca4b5e565dbb5d7e4" kindref="member" tooltip="Releases the read lock.">rwlock_read_release</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsimpleht_ret_t</highlight></codeline>
+<codeline lineno="241" refid="simpleht_8h_1a8b265fc99b888ae72713b9c9d6d3c9f4" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a8b265fc99b888ae72713b9c9d6d3c9f4" kindref="member" tooltip="Inserts the given value into the hashtable.">vsimpleht_add</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/>vuintptr_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(key<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(value<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" kindref="member" tooltip="Releases the reader lock briefly if there is a writer waiting to acquire it.">_vsimpleht_give_cleanup_a_chance</ref>(tbl);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" kindref="member" tooltip="Inserts the given value into the hashtable.">_vsimpleht_add</ref>(tbl,<sp/>key,<sp/>value);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="257" refid="simpleht_8h_1a49aca29e1b9d9d5436b723889ea58233" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a49aca29e1b9d9d5436b723889ea58233" kindref="member" tooltip="Searches the hashtable for a value associated with the given key.">vsimpleht_get</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/>vuintptr_t<sp/>key)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>probed_key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" kindref="member" tooltip="Releases the reader lock briefly if there is a writer waiting to acquire it.">_vsimpleht_give_cleanup_a_chance</ref>(tbl);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(index<sp/>=<sp/>tbl-&gt;hash_key(key);;<sp/>index++)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>&amp;=<sp/>tbl-&gt;capacity<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(index<sp/>&lt;<sp/>tbl-&gt;capacity);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probed_key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;tbl-&gt;entries[index].key);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probed_key<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tbl-&gt;cmp_key(key,<sp/>probed_key)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(&amp;tbl-&gt;entries[index].value);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="simpleht_8h_1a2440b4907d18b7bc47888ba4b892398e" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a2440b4907d18b7bc47888ba4b892398e" kindref="member" tooltip="Initializes the given iterator object iter for operating tbl object.">vsimpleht_iter_init</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/><ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref><sp/>*iter)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tbl);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(iter);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;tbl<sp/>=<sp/>tbl;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="317" refid="simpleht_8h_1ad03f567329b46e6c70883b2b1102bd40" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1ad03f567329b46e6c70883b2b1102bd40" kindref="member" tooltip="Reads the current entry (key/value) the iterator has reached.">vsimpleht_iter_next</ref>(<ref refid="structvsimpleht__iter__s" kindref="compound">vsimpleht_iter_t</ref><sp/>*iter,<sp/>vuintptr_t<sp/>*key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**val)</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>k<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*v<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref><sp/>*entries<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(iter);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(iter-&gt;tbl);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(key);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(val);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>entries<sp/>=<sp/>iter-&gt;tbl-&gt;entries;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(entries);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>iter-&gt;idx;<sp/>i<sp/>&lt;<sp/>iter-&gt;tbl-&gt;capacity;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;entries[i].key);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/><ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;entries[i].value);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k<sp/>&amp;&amp;<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter-&gt;idx<sp/>=<sp/>i<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*key<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*val<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>v;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsimpleht_ret_t</highlight></codeline>
+<codeline lineno="354" refid="simpleht_8h_1a54bc426b60bd235ff09e7664098f1b6a" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a54bc426b60bd235ff09e7664098f1b6a" kindref="member" tooltip="Removes the node associated with the given key from the hashtable.">vsimpleht_remove</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/>vuintptr_t<sp/>key)</highlight></codeline>
+<codeline lineno="355"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(0<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;vsimpleht_remove<sp/>has<sp/>no<sp/>effect<sp/>when<sp/>VSIMPLEHT_DISABLE_REMOVE<sp/>is<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;defined.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl,<sp/>key);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_KEY_DNE;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>probed_key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*probed_value<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>start_index<sp/><sp/><sp/>=<sp/>tbl-&gt;hash_key(key);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>start_index<sp/>&amp;<sp/>(tbl-&gt;capacity<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" kindref="member" tooltip="Releases the reader lock briefly if there is a writer waiting to acquire it.">_vsimpleht_give_cleanup_a_chance</ref>(tbl);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probed_key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;tbl-&gt;entries[index].key);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probed_key<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>we<sp/>reached<sp/>the<sp/>end<sp/>of<sp/>the<sp/>bucket</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>then<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_KEY_DNE;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tbl-&gt;cmp_key(key,<sp/>probed_key)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probed_value<sp/>=<sp/><ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(&amp;tbl-&gt;entries[index].value);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>found<sp/>the<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>check<sp/>if<sp/>the<sp/>value<sp/>exists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probed_value<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>item<sp/>was<sp/>there<sp/>but<sp/>is<sp/>logically<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_KEY_DNE;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>logically<sp/>remove<sp/>the<sp/>entry<sp/>by<sp/>marking<sp/>the<sp/>value<sp/>as<sp/>NULL<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1aca37d07a0eac3d5abdb833c773e1da92" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_rel</ref>(&amp;tbl-&gt;entries[index].value,<sp/>probed_value,</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL)<sp/>==<sp/>probed_value)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1a54a9c6acb7a992212a01960c551cb49d" kindref="member" tooltip="Increments the value of a.">vatomicsz_inc_rlx</ref>(&amp;tbl-&gt;deleted_count);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>logical<sp/>removal<sp/>is<sp/>successful,<sp/>we<sp/>trigger<sp/>actual<sp/>cleanup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1ae7562b4758027487ba58c1b0c02c406b" kindref="member" tooltip="Releases the reader-lock, triggers cleaning if needed and then reacquires the lock.">_vsimpleht_trigger_cleanup</ref>(tbl,<sp/>probed_value);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_OK;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_KEY_DNE;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>&amp;=<sp/>tbl-&gt;capacity<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(index<sp/>!=<sp/>start_index);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>we<sp/>circled<sp/>around<sp/>once<sp/>the<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>does<sp/>not<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_KEY_DNE;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsimpleht_ret_t</highlight></codeline>
+<codeline lineno="416" refid="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" kindref="member" tooltip="Inserts the given value into the hashtable.">_vsimpleht_add</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/>vuintptr_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value)</highlight></codeline>
+<codeline lineno="417"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>probed_key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cnt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(key<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;NULL<sp/>key<sp/>is<sp/>not<sp/>allowed!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(value<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;NULL<sp/>value<sp/>is<sp/>not<sp/>allowed!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>linear<sp/>search<sp/>at<sp/>an<sp/>index<sp/>determined<sp/>by<sp/>hashing<sp/>the<sp/>key.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>scan<sp/>the<sp/>array<sp/>and<sp/>store<sp/>the<sp/>item<sp/>in<sp/>the<sp/>first<sp/>entry<sp/>whose</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>existing<sp/>key<sp/>is<sp/>either<sp/>0,<sp/>or<sp/>matches<sp/>the<sp/>desired<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(index<sp/>=<sp/>tbl-&gt;hash_key(key);<sp/>cnt<sp/>&lt;<sp/>tbl-&gt;capacity;<sp/>cnt++,<sp/>index++)<sp/>{</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>keep<sp/>the<sp/>index<sp/>within<sp/>the<sp/>array<sp/>boundaries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>&amp;=<sp/>tbl-&gt;capacity<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(index<sp/>&lt;<sp/>tbl-&gt;capacity);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>the<sp/>key<sp/>that<sp/>was<sp/>there.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probed_key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;tbl-&gt;entries[index].key);</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="435"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>There<sp/>is<sp/>no<sp/>key<sp/>in<sp/>this<sp/>slot,<sp/>so<sp/>we<sp/>try</highlight></codeline>
+<codeline lineno="436"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>occupy<sp/>it.</highlight></codeline>
+<codeline lineno="437"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probed_key<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>probed_key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;tbl-&gt;entries[index].key,<sp/>NULL,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)key);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>someone<sp/>stole<sp/>it,<sp/>and<sp/>inserted<sp/>a<sp/>different<sp/>key<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(probed_key<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>tbl-&gt;cmp_key(key,<sp/>probed_key)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tbl-&gt;cmp_key(key,<sp/>probed_key)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>There<sp/>exists<sp/>a<sp/>key<sp/>at<sp/>this<sp/>slot,<sp/>but<sp/>it<sp/>is<sp/>not<sp/>equal</highlight></codeline>
+<codeline lineno="447"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>the<sp/>one<sp/>we<sp/>want<sp/>to<sp/>insert,<sp/>so<sp/>we<sp/>move<sp/>on<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(tbl-&gt;cmp_key(key,<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;tbl-&gt;entries[index].key))<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="453"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>we<sp/>reach<sp/>here<sp/>under<sp/>the<sp/>following<sp/>circumstances</highlight></codeline>
+<codeline lineno="454"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>There<sp/>is<sp/>a<sp/>key<sp/>in<sp/>this<sp/>slot<sp/>that<sp/>is<sp/>equal<sp/>to<sp/>ours.</highlight></codeline>
+<codeline lineno="455"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>There<sp/>was<sp/>no<sp/>key<sp/>and<sp/>we<sp/>managed<sp/>to<sp/>insert<sp/>ours.</highlight></codeline>
+<codeline lineno="456"><highlight class="comment"></highlight></codeline>
+<codeline lineno="457"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>so<sp/>we<sp/>try<sp/>to<sp/>insert<sp/>the<sp/>value:</highlight></codeline>
+<codeline lineno="458"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.<sp/>there<sp/>is<sp/>already<sp/>a<sp/>value<sp/>we<sp/>fail</highlight></codeline>
+<codeline lineno="459"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>there<sp/>is<sp/>no<sp/>value,<sp/>entry<sp/>has<sp/>either<sp/>been<sp/>deleted,<sp/>so</highlight></codeline>
+<codeline lineno="460"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>we<sp/>just<sp/>reuse<sp/>the<sp/>slot.<sp/>or<sp/>someone<sp/>with<sp/>the<sp/>same<sp/>key<sp/>is</highlight></codeline>
+<codeline lineno="461"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>the<sp/>process<sp/>of<sp/>inserting<sp/>its<sp/>value<sp/>in<sp/>that<sp/>case<sp/>she<sp/>fails</highlight></codeline>
+<codeline lineno="462"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>and<sp/>we<sp/>succeed.</highlight></codeline>
+<codeline lineno="463"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>We<sp/>use<sp/>cas<sp/>with<sp/>expected<sp/>old<sp/>value<sp/>NULL</highlight></codeline>
+<codeline lineno="464"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>=<sp/><ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(&amp;tbl-&gt;entries[index].value,<sp/>NULL,<sp/>value);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(val<sp/>==<sp/>NULL)<sp/>?<sp/>VSIMPLEHT_RET_OK<sp/>:<sp/>VSIMPLEHT_RET_KEY_EXISTS;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VSIMPLEHT_RET_TBL_FULL;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479" refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1aac5be84abdad8f21600405d8e2160b37" kindref="member" tooltip="Releases the reader lock briefly if there is a writer waiting to acquire it.">_vsimpleht_give_cleanup_a_chance</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl)</highlight></codeline>
+<codeline lineno="480"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl);</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="rwlock_8h_1a73d3a8d0c0cbcc433d8ba3cf0f5c158b" kindref="member" tooltip="Returns true if a writer has acquired the lock, or waiting on the readers to release it.">rwlock_acquired_by_writer</ref>(&amp;tbl-&gt;lock))<sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(<ref refid="rwlock_8h_1a86b216700dddde37186ae94ef3907e78" kindref="member" tooltip="Returns true if the lock is acquired by readers.">rwlock_acquired_by_readers</ref>(&amp;tbl-&gt;lock)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;You<sp/>seem<sp/>to<sp/>have<sp/>forgotten<sp/>to<sp/>call<sp/>the<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>thread<sp/>register<sp/>function&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1a49c732e8102eaeeca4b5e565dbb5d7e4" kindref="member" tooltip="Releases the read lock.">rwlock_read_release</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1aaa18630e45b73805eb7b31383548b9cd" kindref="member" tooltip="Acquires the read lock.">rwlock_read_acquire</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="simpleht_8h_1ae7562b4758027487ba58c1b0c02c406b" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1ae7562b4758027487ba58c1b0c02c406b" kindref="member" tooltip="Releases the reader-lock, triggers cleaning if needed and then reacquires the lock.">_vsimpleht_trigger_cleanup</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl,<sp/>val);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(<ref refid="rwlock_8h_1a86b216700dddde37186ae94ef3907e78" kindref="member" tooltip="Returns true if the lock is acquired by readers.">rwlock_acquired_by_readers</ref>(&amp;tbl-&gt;lock)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;You<sp/>seem<sp/>to<sp/>have<sp/>forgotten<sp/>to<sp/>call<sp/>the<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>thread<sp/>register<sp/>function&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1a49c732e8102eaeeca4b5e565dbb5d7e4" kindref="member" tooltip="Releases the read lock.">rwlock_read_release</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" kindref="member" tooltip="Prototypes - internal functions.">_vsimpleht_cleanup</ref>(tbl,<sp/>val);</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1aaa18630e45b73805eb7b31383548b9cd" kindref="member" tooltip="Acquires the read lock.">rwlock_read_acquire</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(VSIMPLEHT_DISABLE_REMOVE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516" refid="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" refkind="member"><highlight class="normal"><ref refid="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" kindref="member" tooltip="Prototypes - internal functions.">_vsimpleht_cleanup</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="517"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(tbl,<sp/>val);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><ref refid="simpleht_8h_1a7709e48bec4d6deb70aaa7157be1e9b4" kindref="member" tooltip="Prototypes - internal functions.">_vsimpleht_cleanup</ref>(<ref refid="structvsimpleht__s" kindref="compound">vsimpleht_t</ref><sp/>*tbl,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*val)</highlight></codeline>
+<codeline lineno="531"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>e<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>key<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>len<sp/>=<sp/>tbl-&gt;capacity;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref><sp/>*entries<sp/>=<sp/>tbl-&gt;entries;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>start_index<sp/>=<sp/>len<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ret;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>have<sp/>to<sp/>go<sp/>through<sp/>the<sp/>lock<sp/>now<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1abae549c51d57ae721bb77b04e871276a" kindref="member" tooltip="Acquires the write lock.">rwlock_write_acquire</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>double<sp/>check<sp/>if<sp/>we<sp/>got<sp/>lucky<sp/>in<sp/>the<sp/>meantime,<sp/>someone<sp/>else<sp/>did<sp/>the</highlight></codeline>
+<codeline lineno="544"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>job<sp/>for<sp/>us<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__sz_8h_1a22f357bd12a011667007d1516d61872e" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicsz_read_rlx</ref>(&amp;tbl-&gt;deleted_count)<sp/>&lt;<sp/>tbl-&gt;cleaning_threshold)<sp/>{</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>CLEANUP_EXIT;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>avoid<sp/>bug<sp/>in<sp/>the<sp/>next<sp/>loop<sp/>in<sp/>which<sp/>we<sp/>first<sp/>pass<sp/>an<sp/>element<sp/>that</highlight></codeline>
+<codeline lineno="549"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>needs<sp/>to<sp/>be<sp/>resettled,<sp/>but<sp/>due<sp/>to<sp/>wrap-around<sp/>of<sp/>the<sp/>bucket<sp/>the</highlight></codeline>
+<codeline lineno="550"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>position<sp/>into<sp/>which<sp/>it<sp/>should<sp/>be<sp/>resettled<sp/>(logically<sp/>deleted)<sp/>has</highlight></codeline>
+<codeline lineno="551"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>not<sp/>yet<sp/>been<sp/>seen<sp/>by<sp/>the<sp/>loop<sp/>and<sp/>freed.</highlight></codeline>
+<codeline lineno="552"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>To<sp/>avoid<sp/>this<sp/>we<sp/>make<sp/>sure<sp/>we<sp/>start<sp/>the<sp/>next<sp/>loop<sp/>at<sp/>the<sp/>beginning<sp/>of</highlight></codeline>
+<codeline lineno="553"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>bucket<sp/>not<sp/>in<sp/>the<sp/>middle.</highlight></codeline>
+<codeline lineno="554"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Find<sp/>a<sp/>beginning<sp/>of<sp/>a<sp/>bucket.</highlight></codeline>
+<codeline lineno="555"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(e<sp/>=<sp/>0;<sp/>e<sp/>&lt;<sp/>len;<sp/>e++)<sp/>{</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;entries[e].key);</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;entries[e].value);</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(key<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_index<sp/>=<sp/>e;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>scan<sp/>the<sp/>whole<sp/>array<sp/>starting<sp/>from<sp/>the<sp/>start_index<sp/>(index<sp/>of<sp/>first</highlight></codeline>
+<codeline lineno="565"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>bucket<sp/>found<sp/>above),<sp/>delete<sp/>logically<sp/>removed<sp/>items,<sp/>and<sp/>resettle</highlight></codeline>
+<codeline lineno="566"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>existing<sp/>items.<sp/>Resettling<sp/>is<sp/>important,<sp/>to<sp/>avoid<sp/>having<sp/>a<sp/>gap<sp/>within</highlight></codeline>
+<codeline lineno="567"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>a<sp/>bucket.<sp/>The<sp/>end<sp/>of<sp/>the<sp/>bucket<sp/>is<sp/>recognized<sp/>as<sp/>a<sp/>slot<sp/>with<sp/>an<sp/>empty</highlight></codeline>
+<codeline lineno="568"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>key.<sp/>If<sp/>a<sp/>bucket<sp/>has<sp/>a<sp/>gap,<sp/>we<sp/>will<sp/>mistake<sp/>elements<sp/>of<sp/>the<sp/>bucket</highlight></codeline>
+<codeline lineno="569"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>as<sp/>not<sp/>existing<sp/>when<sp/>they<sp/>are<sp/>placed<sp/>after<sp/>the<sp/>gap.</highlight></codeline>
+<codeline lineno="570"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(e<sp/>=<sp/>0;<sp/>e<sp/>&lt;<sp/>len;<sp/>e++)<sp/>{</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>(e<sp/>+<sp/>start_index)<sp/>&amp;<sp/>(len<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>key<sp/>=<sp/>(vuintptr_t)<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;entries[i].key);</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;entries[i].value);</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(key<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>value<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>addition<sp/>may<sp/>fail<sp/>if<sp/>the<sp/>resettled<sp/>position<sp/>is<sp/>equal<sp/>to</highlight></codeline>
+<codeline lineno="577"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>current<sp/>position.<sp/>In<sp/>that<sp/>case,<sp/>we<sp/>just<sp/>leave<sp/>the<sp/>entry</highlight></codeline>
+<codeline lineno="578"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>intact.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/><ref refid="simpleht_8h_1ada1e3399c8efc2f2794fd00e8b1d5e46" kindref="member" tooltip="Inserts the given value into the hashtable.">_vsimpleht_add</ref>(tbl,<sp/>key,<sp/>value);</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>VSIMPLEHT_RET_OK)<sp/>{</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;entries[i].key,<sp/>NULL);</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;entries[i].value,<sp/>NULL);</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(ret<sp/>!=<sp/>VSIMPLEHT_RET_TBL_FULL<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;since<sp/>we<sp/>are<sp/>inserting<sp/>what<sp/>is<sp/>already<sp/>in<sp/>the<sp/>table,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;this<sp/>should<sp/>never<sp/>happen&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(key<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>value<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;entries[i].key,<sp/>NULL);</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa5750236f7e4e0360b30b0a33e323e18" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rlx</ref>(&amp;tbl-&gt;deleted_count,<sp/>0);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal">CLEANUP_EXIT:</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>tbl-&gt;cb_destroy(val);</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rwlock_8h_1a16ca0eaa90416088bfd9974a70706cb5" kindref="member" tooltip="Releases the write lock.">rwlock_write_release</ref>(&amp;tbl-&gt;lock);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/simpleht.h"/>
+  </compounddef>
+</doxygen>

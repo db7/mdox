@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="await__ptr_8h" local="no">vsync/atomic/await_ptr.h</includedby>
+    <includedby refid="await__u32_8h" local="no">vsync/atomic/await_u32.h</includedby>
+    <includedby refid="await__u64_8h" local="no">vsync/atomic/await_u64.h</includedby>
+    <includedby refid="core_8h" local="no">vsync/atomic/core.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/atomicptr_stamped.h</label>
+        <link refid="atomicptr__stamped_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>vsync/atomic/internal/remap_fnc_rlx.h</label>
+        <link refid="remap__fnc__rlx_8h_source"/>
+      </node>
+      <node id="78">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>vsync/atomic/internal/remap_ptr_rlx.h</label>
+        <link refid="remap__ptr__rlx_8h_source"/>
+      </node>
+      <node id="81">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>vsync/atomic/internal/remap_sz_rlx.h</label>
+        <link refid="remap__sz__rlx_8h_source"/>
+      </node>
+      <node id="83">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>vsync/atomic/internal/remap_u16_rlx.h</label>
+        <link refid="remap__u16__rlx_8h_source"/>
+      </node>
+      <node id="85">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>vsync/atomic/internal/remap_u32_rlx.h</label>
+        <link refid="remap__u32__rlx_8h_source"/>
+      </node>
+      <node id="87">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>vsync/atomic/internal/remap_u64_rlx.h</label>
+        <link refid="remap__u64__rlx_8h_source"/>
+      </node>
+      <node id="89">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>vsync/atomic/internal/remap_u8_rlx.h</label>
+        <link refid="remap__u8__rlx_8h_source"/>
+      </node>
+      <node id="91">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/bitmap/bitmap.h</label>
+        <link refid="bitmap_8h"/>
+      </node>
+      <node id="12">
+        <label>vsync/map/hashtable_standard.h</label>
+        <link refid="hashtable__standard_8h"/>
+      </node>
+      <node id="7">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vsync/map/internal/treeset/treeset_lock_rw.h</label>
+        <link refid="treeset__lock__rw_8h_source"/>
+      </node>
+      <node id="58">
+        <label>vsync/map/internal/treeset/treeset_lock_ttas.h</label>
+        <link refid="treeset__lock__ttas_8h_source"/>
+      </node>
+      <node id="59">
+        <label>vsync/map/listset_coarse.h</label>
+        <link refid="listset__coarse_8h"/>
+      </node>
+      <node id="60">
+        <label>vsync/map/listset_fine.h</label>
+        <link refid="listset__fine_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/map/listset_lazy.h</label>
+        <link refid="listset__lazy_8h"/>
+      </node>
+      <node id="11">
+        <label>vsync/map/listset_lf.h</label>
+        <link refid="listset__lf_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/map/listset_opt.h</label>
+        <link refid="listset__opt_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/map/simpleht.h</label>
+        <link refid="simpleht_8h"/>
+      </node>
+      <node id="8">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/queue/bounded_locked.h</label>
+        <link refid="bounded__locked_8h"/>
+      </node>
+      <node id="27">
+        <label>vsync/queue/bounded_mpmc.h</label>
+        <link refid="bounded__mpmc_8h"/>
+      </node>
+      <node id="28">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+      </node>
+      <node id="29">
+        <label>vsync/queue/cachedq.h</label>
+        <link refid="cachedq_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/queue/chaselev.h</label>
+        <link refid="chaselev_8h"/>
+      </node>
+      <node id="38">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+      </node>
+      <node id="32">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+      <node id="39">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="9">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="34">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+      </node>
+      <node id="36">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+      </node>
+      <node id="43">
+        <label>vsync/spinlock/cnalock.h</label>
+        <link refid="cnalock_8h"/>
+      </node>
+      <node id="44">
+        <label>vsync/spinlock/hclhlock.h</label>
+        <link refid="hclhlock_8h"/>
+      </node>
+      <node id="45">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+      </node>
+      <node id="46">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+      </node>
+      <node id="47">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="49">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="37">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="51">
+        <label>vsync/spinlock/rwlock.h</label>
+        <link refid="rwlock_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>vsync/spinlock/semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vsync/spinlock/seqcount.h</label>
+        <link refid="seqcount_8h"/>
+      </node>
+      <node id="55">
+        <label>vsync/spinlock/seqlock.h</label>
+        <link refid="seqlock_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>vsync/spinlock/ttaslock.h</label>
+        <link refid="ttaslock_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>vsync/spinlock/twalock.h</label>
+        <link refid="twalock_8h"/>
+      </node>
+      <node id="14">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>vsync/stack/quack.h</label>
+        <link refid="quack_8h"/>
+      </node>
+      <node id="63">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="65">
+        <label>vsync/thread/cond.h</label>
+        <link refid="cond_8h"/>
+      </node>
+      <node id="66">
+        <label>vsync/thread/internal/futex.h</label>
+        <link refid="futex_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/thread/internal/futex_mock_liveness.h</label>
+        <link refid="futex__mock__liveness_8h_source"/>
+      </node>
+      <node id="41">
+        <label>vsync/thread/internal/futex_mock_liveness_simple.h</label>
+        <link refid="futex__mock__liveness__simple_8h_source"/>
+      </node>
+      <node id="72">
+        <label>vsync/thread/internal/futex_mock_safety.h</label>
+        <link refid="futex__mock__safety_8h_source"/>
+      </node>
+      <node id="69">
+        <label>vsync/thread/mutex.h</label>
+        <link refid="mutex_8h"/>
+      </node>
+      <node id="67">
+        <label>vsync/thread/mutex/musl.h</label>
+        <link refid="musl_8h"/>
+      </node>
+      <node id="68">
+        <label>vsync/thread/mutex/slim.h</label>
+        <link refid="slim_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>vsync/thread/mutex/tristate.h</label>
+        <link refid="tristate_8h"/>
+      </node>
+      <node id="71">
+        <label>vsync/thread/once.h</label>
+        <link refid="once_8h"/>
+      </node>
+      <node id="73">
+        <label>vsync/utils/abstract_lock.h</label>
+        <link refid="abstract__lock_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>vsync/utils/xbo.h</label>
+        <link refid="xbo_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structvatomic8__s" prot="public">vatomic8_s</innerclass>
+    <innerclass refid="structvatomic16__s" prot="public">vatomic16_s</innerclass>
+    <innerclass refid="structvatomic32__s" prot="public">vatomic32_s</innerclass>
+    <innerclass refid="structvatomic64__s" prot="public">vatomic64_s</innerclass>
+    <innerclass refid="structvatomicptr__s" prot="public">vatomicptr_s</innerclass>
+    <innerclass refid="structvatomicsz__s" prot="public">vatomicsz_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8h_1a846ed1a3a73c07e21dca866a7423f539" prot="public" static="no">
+        <type>struct <ref refid="structvatomic8__s" kindref="compound">vatomic8_s</ref></type>
+        <definition>typedef struct vatomic8_s vatomic8_t</definition>
+        <argsstring></argsstring>
+        <name>vatomic8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="25" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a1653741fe1d8593ca480ac87453a0729" prot="public" static="no">
+        <type>struct <ref refid="structvatomic16__s" kindref="compound">vatomic16_s</ref></type>
+        <definition>typedef struct vatomic16_s vatomic16_t</definition>
+        <argsstring></argsstring>
+        <name>vatomic16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="30" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a7b14a2ec8bd1e6b1866f407ecf41cc6c" prot="public" static="no">
+        <type>struct <ref refid="structvatomic32__s" kindref="compound">vatomic32_s</ref></type>
+        <definition>typedef struct vatomic32_s vatomic32_t</definition>
+        <argsstring></argsstring>
+        <name>vatomic32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="35" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a23906a08a6f78fb19741c7607265ad5c" prot="public" static="no">
+        <type>struct <ref refid="structvatomic64__s" kindref="compound">vatomic64_s</ref></type>
+        <definition>typedef struct vatomic64_s vatomic64_t</definition>
+        <argsstring></argsstring>
+        <name>vatomic64_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="40" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a750347910c8134862b457418be5b1bc3" prot="public" static="no">
+        <type>struct <ref refid="structvatomicptr__s" kindref="compound">vatomicptr_s</ref></type>
+        <definition>typedef struct vatomicptr_s vatomicptr_t</definition>
+        <argsstring></argsstring>
+        <name>vatomicptr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="45" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="types_8h_1a5a8e73bd791b058bba96cc90c5c1eb4c" prot="public" static="no">
+        <type>struct <ref refid="structvatomicsz__s" kindref="compound">vatomicsz_s</ref></type>
+        <definition>typedef struct vatomicsz_s vatomicsz_t</definition>
+        <argsstring></argsstring>
+        <name>vatomicsz_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="50" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VATOMIC_TYPED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VATOMIC_TYPED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Basic<sp/>atomic<sp/>types</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_ALIGNED2<sp/><sp/>__attribute__((aligned(2)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_ALIGNED4<sp/><sp/>__attribute__((aligned(4)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_ALIGNED8<sp/><sp/>__attribute__((aligned(8)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_ALIGNEDP<sp/><sp/>__attribute__((aligned(sizeof(void<sp/>*))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_ALIGNEDSZ<sp/>__attribute__((aligned(sizeof(vsize_t))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>8-bit<sp/>unsigned<sp/>atomic<sp/>type.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structvatomic8__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomic8__s" kindref="compound">vatomic8_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>_v;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>16-bit<sp/>unsigned<sp/>atomic<sp/>type,<sp/>aligned<sp/>at<sp/>2<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structvatomic16__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomic16__s" kindref="compound">vatomic16_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>_v;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/>V_ALIGNED2<sp/><ref refid="structvatomic16__s" kindref="compound">vatomic16_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>32-bit<sp/>unsigned<sp/>atomic<sp/>type,<sp/>aligned<sp/>at<sp/>4<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structvatomic32__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomic32__s" kindref="compound">vatomic32_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>_v;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/>V_ALIGNED4<sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>64-bit<sp/>unsigned<sp/>atomic<sp/>type,<sp/>aligned<sp/>at<sp/>8<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structvatomic64__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomic64__s" kindref="compound">vatomic64_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>_v;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/>V_ALIGNED8<sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>architecture-dependent<sp/>pointer<sp/>atomic<sp/>type,<sp/>aligned<sp/>at<sp/>4<sp/>or<sp/>8<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structvatomicptr__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_v;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}<sp/>V_ALIGNEDP<sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>architecture-dependent<sp/>vsize_t<sp/>atomic<sp/>type,<sp/>aligned<sp/>at<sp/>4<sp/>or<sp/>8<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structvatomicsz__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>_v;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/>V_ALIGNEDSZ<sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/atomic/internal/types.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1037 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bbq__mpmc_8h" kind="file" language="C++">
+    <compoundname>bbq_mpmc.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="string_8h" local="no">vsync/utils/string.h</includes>
+    <includes refid="common_8h" local="no">vsync/queue/internal/bbq/common.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="40">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="39">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/utils/string.h</label>
+        <link refid="string_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vsync/utils/string_helpers.h</label>
+        <link refid="string__helpers_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structbbq__mpmc__block__s" prot="public">bbq_mpmc_block_s</innerclass>
+    <innerclass refid="structbbq__mpmc__s" prot="public">bbq_mpmc_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" prot="public" static="no">
+        <name>BBQ_BLOCK_NUM_LOG</name>
+        <initializer>3U</initializer>
+        <briefdescription>
+<para>Define this macro with <computeroutput>-DBBQ_BLOCK_NUM_LOG=N</computeroutput> to define the total number of blocks equals to <computeroutput>2^N</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> default value is <computeroutput>3U</computeroutput> -&gt; (<computeroutput>8</computeroutput> blocks) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="44" column="13" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" prot="public" static="no">
+        <name>BBQ_ENTRY_SIZE_LOG</name>
+        <initializer>v_log2(sizeof(vuintptr_t))</initializer>
+        <briefdescription>
+<para>Define this macro with <computeroutput>-BBQ_ENTRY_SIZE_LOG=N</computeroutput> to define an entry size equals to <computeroutput>2^N</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> default value is <computeroutput>log2(sizeof(vuintptr_t))</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="57" column="13" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1ab10a846fd9ea91aff8c111159fb724e2" prot="public" static="no">
+        <name>BBQ_BLOCK_MPMC_INIT_VALUE</name>
+        <initializer>BBQ_BLOCK_INIT_VALUE(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="78" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1a837869a0e1ed2ab42c04728341508503" prot="public" static="no">
+        <name>BBQ_MPMC_WRITE_PROD</name>
+        <param><defname>k</defname></param>
+        <param><defname>v</defname></param>
+        <initializer>(<ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member">vatomic64_write</ref>(&amp;(k), v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="82" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1aadab69d7fd69a4a66d7fbf85530d5747" prot="public" static="no">
+        <name>BBQ_MPMC_WRITE_CONS</name>
+        <param><defname>k</defname></param>
+        <param><defname>v</defname></param>
+        <initializer>(<ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member">vatomic64_write</ref>(&amp;(k), v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="83" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1a61e7bdc3cee2f40bce2caeec4a40bd51" prot="public" static="no">
+        <name>BBQ_MPMC_READ_PROD</name>
+        <param><defname>k</defname></param>
+        <initializer>(<ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member">vatomic64_read</ref>(&amp;(k)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="84" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1a3e68ace3ebe2aec155fe0aa24fef522c" prot="public" static="no">
+        <name>BBQ_MPMC_READ_CONS</name>
+        <param><defname>k</defname></param>
+        <initializer>(<ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member">vatomic64_read</ref>(&amp;(k)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="85" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bbq__mpmc_8h_1a755905246ca26247846feb333e8eec0c" prot="public" static="no">
+        <name>BBQ_MPMC_COUNT</name>
+        <param><defname>q</defname></param>
+        <initializer>BBQ_COUNT(q, mpmc, MPMC)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="86" column="9" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bbq__mpmc_8h_1a3a83d6249e476992dff38beea4764a3d" prot="public" static="no">
+        <type>struct <ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_s</ref></type>
+        <definition>typedef struct bbq_mpmc_block_s bbq_mpmc_block_t</definition>
+        <argsstring></argsstring>
+        <name>bbq_mpmc_block_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="68" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="bbq__mpmc_8h_1a9e7277ab78601cb271f788b178f288c0" prot="public" static="no">
+        <type>struct <ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_s</ref></type>
+        <definition>typedef struct bbq_mpmc_s bbq_mpmc_t</definition>
+        <argsstring></argsstring>
+        <name>bbq_mpmc_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="75" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bbq__mpmc_8h_1a9f74a18cbd71841b58ef7316fb109a4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _bbq_mpmc_enqueue</definition>
+        <argsstring>(struct bbq_mpmc_s *q, vuintptr_t **buf, vuint32_t *count)</argsstring>
+        <name>_bbq_mpmc_enqueue</name>
+        <param>
+          <type>struct <ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_s</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vuintptr_t **</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>vuint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="251" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="251" bodyend="299" declfile="vsync/queue/bbq_mpmc.h" declline="88" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1ac2f47bb4bf10440a606042c6320bd3d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _bbq_mpmc_dequeue</definition>
+        <argsstring>(bbq_mpmc_t *q, vuintptr_t **buf, vuint32_t *count)</argsstring>
+        <name>_bbq_mpmc_dequeue</name>
+        <param>
+          <type><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vuintptr_t **</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>vuint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="302" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="302" bodyend="364" declfile="vsync/queue/bbq_mpmc.h" declline="90" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1ac56f8c0d6eb32abd39fa387b61623aa2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _bbq_mpmc_block_init</definition>
+        <argsstring>(bbq_mpmc_block_t *blk, vsize_t idx, vuint16_t block_size)</argsstring>
+        <name>_bbq_mpmc_block_init</name>
+        <param>
+          <type><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref> *</type>
+          <declname>blk</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>vuint16_t</type>
+          <declname>block_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="239" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="239" bodyend="247" declfile="vsync/queue/bbq_mpmc.h" declline="92" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1a3273c7ea743b6eded6ab145083fb6cde" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint32_t</type>
+        <definition>static vuint32_t bbq_mpmc_enqueue</definition>
+        <argsstring>(bbq_mpmc_t *q, vuintptr_t *buf, vuint32_t count, vbool_t wait)</argsstring>
+        <name>bbq_mpmc_enqueue</name>
+        <param>
+          <type><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vuintptr_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>wait</declname>
+        </param>
+        <briefdescription>
+<para>Enqueues one or more entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiple entries can be enqueued if <computeroutput>src</computeroutput> points to an array. Use <computeroutput>count</computeroutput> to indicate how many entries should be enqueueed, starting from <computeroutput>src</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to bbq_mpmc data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to first entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of entries to enqueue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should wait for space to be available</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of enqueued entries </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="109" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="109" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1a94a7435f16c3d9d787b7354487245b78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint32_t</type>
+        <definition>static vuint32_t bbq_mpmc_dequeue</definition>
+        <argsstring>(bbq_mpmc_t *q, vuintptr_t *buf, vuint32_t count, vbool_t wait)</argsstring>
+        <name>bbq_mpmc_dequeue</name>
+        <param>
+          <type><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vuintptr_t *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>wait</declname>
+        </param>
+        <briefdescription>
+<para>Dequeues one or more entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiple entries can be dequeued if <computeroutput>src</computeroutput> points to an array. Use <computeroutput>count</computeroutput> to indicate how many entries should be dequeued.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to bbq_mpmc data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to preallocated memory for the first entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of entries to dequeue </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should wait for entries to be available</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of dequeued entries </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="150" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="150" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1a31b8ace80f15874852a1a717f748e75e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t bbq_mpmc_memsize</definition>
+        <argsstring>(vsize_t capacity)</argsstring>
+        <name>bbq_mpmc_memsize</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size of the bbq queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum number of entries that can fit in the queue </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>size to be allocated in bytes </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="184" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="184" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="bbq__mpmc_8h_1ac7b3660ff82da9b9cab19b79caf7d75c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t bbq_mpmc_init</definition>
+        <argsstring>(bbq_mpmc_t *rb, vsize_t size)</argsstring>
+        <name>bbq_mpmc_init</name>
+        <param>
+          <type><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref> *</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a bbq data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to bbq data structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bytes allocated for bbq data structure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true initialization succeeded. </para>
+</simplesect>
+<simplesect kind="return"><para>false initialization failed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="207" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="207" bodyend="236"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Block-based Bounded Queue multi-producer/multi-consumer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A highly performant bounded queue that splits the buffer in multiple blocks.</para>
+<sect3 id="bbq__mpmc_8h_1autotoc_md10">
+<title>Remarks:</title>
+<para>In this implementations, values have the fixed size (pointer size). This implementation does not support DROP_OLD mode as described in the original paper.</para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+ <ulink url="https://www.usenix.org/conference/atc22/presentation/wang-jiawei">BBQ: A Block-based Bounded Queue for Exchanging Data and Profiling</ulink></para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_bbq_mpmc.c"></programlisting> </para>
+</sect3>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2026.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_BBQ_MPMC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_BBQ_MPMC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BBQ_BLOCK_NUM_LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_BLOCK_NUM_LOG<sp/>3U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BBQ_ENTRY_SIZE_LOG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_ENTRY_SIZE_LOG<sp/>v_log2(sizeof(vuintptr_t))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/queue/internal/bbq/common.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structbbq__mpmc__block__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>allocated<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>committed<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>reserved<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>consumed<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>entry[]<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structbbq__mpmc__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbbq__config__s" kindref="compound">bbq_config_t</ref><sp/>config<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>widx<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>ridx<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>blk[]<sp/>VSYNC_CACHEALIGN;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>block<sp/>cursor<sp/>init<sp/>value<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_BLOCK_MPMC_INIT_VALUE<sp/>BBQ_BLOCK_INIT_VALUE(bbq_mpmc_block_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Note:The<sp/>following<sp/>macros<sp/>are<sp/>used<sp/>inside<sp/>bbq/common.h<sp/>in<sp/>BBQ_COUNT</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>definition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MPMC_WRITE_PROD(k,<sp/>v)<sp/>(vatomic64_write(&amp;(k),<sp/>v))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MPMC_WRITE_CONS(k,<sp/>v)<sp/>(vatomic64_write(&amp;(k),<sp/>v))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MPMC_READ_PROD(k)<sp/><sp/><sp/><sp/><sp/>(vatomic64_read(&amp;(k)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MPMC_READ_CONS(k)<sp/><sp/><sp/><sp/><sp/>(vatomic64_read(&amp;(k)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MPMC_COUNT(q)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_COUNT(q,<sp/>mpmc,<sp/>MPMC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t<sp/>_bbq_mpmc_enqueue(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_s</ref><sp/>*q,<sp/>vuintptr_t<sp/>**buf,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>*count);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t<sp/>_bbq_mpmc_dequeue(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*q,<sp/>vuintptr_t<sp/>**buf,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>*count);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_bbq_mpmc_block_init(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*blk,<sp/>vsize_t<sp/>idx,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint16_t<sp/>block_size);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t</highlight></codeline>
+<codeline lineno="109" refid="bbq__mpmc_8h_1a3273c7ea743b6eded6ab145083fb6cde" refkind="member"><highlight class="normal"><ref refid="bbq__mpmc_8h_1a3273c7ea743b6eded6ab145083fb6cde" kindref="member" tooltip="Enqueues one or more entries.">bbq_mpmc_enqueue</ref>(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*q,<sp/>vuintptr_t<sp/>*buf,<sp/>vuint32_t<sp/>count,<sp/>vbool_t<sp/>wait)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>rest<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>count;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>*rest_buf<sp/>=<sp/>buf;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>retry;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>following<sp/>is<sp/>equivalent<sp/>to</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>while(bbq_mpmc_enqueue_internal(q,<sp/>&amp;rest_buf,<sp/>&amp;rest)<sp/>||<sp/>(wait<sp/>&amp;&amp;<sp/>rest));</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retry<sp/>=<sp/>_bbq_mpmc_enqueue(q,<sp/>&amp;rest_buf,<sp/>&amp;rest);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Help<sp/>model<sp/>checker<sp/>in<sp/>case<sp/>the<sp/>queue<sp/>is<sp/>empty</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>condition<sp/>to<sp/>leave<sp/>the<sp/>loop<sp/>is</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>retry&apos;<sp/>==<sp/>true<sp/>or<sp/>rest&apos;<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>rest&apos;<sp/>==<sp/>0<sp/>=&gt;<sp/>rest<sp/>#<sp/>0<sp/>/\<sp/>retry&apos;<sp/>=<sp/>true</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>It<sp/>is<sp/>sufficient<sp/>to<sp/>observe<sp/>retry<sp/>only</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await_while<sp/>(!retry<sp/>&amp;&amp;<sp/>wait<sp/>&amp;&amp;<sp/>rest)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retry<sp/>=<sp/>_bbq_mpmc_enqueue(q,<sp/>&amp;rest_buf,<sp/>&amp;rest);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(retry);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count<sp/>-<sp/>rest;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t</highlight></codeline>
+<codeline lineno="150" refid="bbq__mpmc_8h_1a94a7435f16c3d9d787b7354487245b78" refkind="member"><highlight class="normal"><ref refid="bbq__mpmc_8h_1a94a7435f16c3d9d787b7354487245b78" kindref="member" tooltip="Dequeues one or more entries.">bbq_mpmc_dequeue</ref>(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*q,<sp/>vuintptr_t<sp/>*buf,<sp/>vuint32_t<sp/>count,<sp/>vbool_t<sp/>wait)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>rest<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>count;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>*rest_buf<sp/>=<sp/>buf;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>retry;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>following<sp/>is<sp/>equivalent<sp/>to</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>while(bbq_mpmc_dequeue_internal(q,<sp/>&amp;rest_buf,<sp/>&amp;rest)<sp/>||<sp/>(wait<sp/>&amp;&amp;<sp/>rest));</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retry<sp/>=<sp/>_bbq_mpmc_dequeue(q,<sp/>&amp;rest_buf,<sp/>&amp;rest);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Help<sp/>model<sp/>checker<sp/>in<sp/>case<sp/>the<sp/>queue<sp/>is<sp/>empty</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>condition<sp/>to<sp/>leave<sp/>the<sp/>loop<sp/>is</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>retry&apos;<sp/>==<sp/>true<sp/>or<sp/>rest&apos;<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>rest&apos;<sp/>==<sp/>0<sp/>=&gt;<sp/>rest<sp/>#<sp/>0<sp/>/\<sp/>retry&apos;<sp/>=<sp/>true</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>It<sp/>is<sp/>sufficient<sp/>to<sp/>observe<sp/>retry<sp/>only</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>await_while<sp/>(!retry<sp/>&amp;&amp;<sp/>wait<sp/>&amp;&amp;<sp/>rest)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retry<sp/>=<sp/>_bbq_mpmc_dequeue(q,<sp/>&amp;rest_buf,<sp/>&amp;rest);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(retry);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count<sp/>-<sp/>rest;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="184" refid="bbq__mpmc_8h_1a31b8ace80f15874852a1a717f748e75e" refkind="member"><highlight class="normal"><ref refid="bbq__mpmc_8h_1a31b8ace80f15874852a1a717f748e75e" kindref="member" tooltip="Calculates the size of the bbq queue.">bbq_mpmc_memsize</ref>(vsize_t<sp/>capacity)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cnt_each_blk<sp/>=<sp/>(capacity)<sp/>&gt;&gt;<sp/><ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cnt_each_blk<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cnt_each_blk<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>mem_each_blk<sp/>=</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref>)<sp/>+<sp/>(cnt_each_blk<sp/>&lt;&lt;<sp/><ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member" tooltip="Define this macro with -BBQ_ENTRY_SIZE_LOG=N to define an entry size equals to 2^N">BBQ_ENTRY_SIZE_LOG</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>mem_each_blk_log<sp/>=</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v_pow2_round_down(mem_each_blk<sp/>*<sp/>2<sp/>-<sp/>1);<sp/></highlight><highlight class="comment">/*<sp/>align<sp/>up<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>mem_buf<sp/>=</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref>)<sp/>+<sp/>(mem_each_blk_log<sp/>&lt;&lt;<sp/><ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref>);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mem_buf;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="207" refid="bbq__mpmc_8h_1ac7b3660ff82da9b9cab19b79caf7d75c" refkind="member"><highlight class="normal"><ref refid="bbq__mpmc_8h_1ac7b3660ff82da9b9cab19b79caf7d75c" kindref="member" tooltip="Initializes a bbq data structure.">bbq_mpmc_init</ref>(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*rb,<sp/>vsize_t<sp/>size)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(rb<sp/>==<sp/>NULL)<sp/>||<sp/>unlikely(BBQ_ENTRY_SIZE<sp/>&lt;<sp/>BBQ_MIN_ENTRY_SIZE)<sp/>||</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlikely(BBQ_ENTRY_SIZE<sp/>&gt;<sp/>BBQ_MAX_ENTRY_SIZE)<sp/>||</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlikely(<ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref><sp/>&lt;<sp/>BBQ_MIN_BLOCK_NUM_LOG)<sp/>||</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlikely(<ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref><sp/>&gt;<sp/>BBQ_MAX_BLOCK_NUM_LOG))<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>blks_total_size<sp/>=<sp/>(size)<sp/>-<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>blk_size<sp/>=<sp/>v_pow2_round_down(blks_total_size<sp/>&gt;&gt;<sp/><ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref>);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(blk_size<sp/>&lt;=<sp/>BBQ_BLOCK_INIT_VALUE(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref>)))<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>blk_size_log<sp/>=<sp/>v_log2(blk_size);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>BBQ_BLK_SZ_VERIFICATION(mpmc);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(blk_size_log<sp/>&lt;<sp/>BBQ_MIN_BLOCK_SIZE_LOG)<sp/>||</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unlikely(blk_size_log<sp/>&gt;=<sp/>BBQ_MAX_BLOCK_SIZE_LOG))<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>(rb)-&gt;config.blk_size<sp/><sp/><sp/><sp/><sp/>=<sp/>blk_size;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>(rb)-&gt;config.blk_size_log<sp/>=<sp/>blk_size_log;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>BBQ_MPMC_WRITE_PROD((rb)-&gt;widx,<sp/>0);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>BBQ_MPMC_WRITE_CONS((rb)-&gt;ridx,<sp/>0);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(1UL<sp/>&lt;&lt;<sp/><ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member" tooltip="Define this macro with -DBBQ_BLOCK_NUM_LOG=N to define the total number of blocks equals to 2^N">BBQ_BLOCK_NUM_LOG</ref>);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_bbq_mpmc_block_init(</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*)((rb)-&gt;blk<sp/>+<sp/>(i<sp/>&lt;&lt;<sp/>blk_size_log)),<sp/>i,<sp/>blk_size);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal">_bbq_mpmc_block_init(<ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*blk,<sp/>vsize_t<sp/>idx,<sp/>vuint16_t<sp/>block_size)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>it<sp/>is<sp/>not<sp/>the<sp/>first<sp/>block,<sp/>set<sp/>to<sp/>invalid<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>init_value<sp/>=<sp/>likely(idx)<sp/>?<sp/>block_size<sp/>:<sp/>BBQ_BLOCK_MPMC_INIT_VALUE;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;blk-&gt;allocated,<sp/>init_value);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;blk-&gt;committed,<sp/>init_value);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;blk-&gt;reserved,<sp/>init_value);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;blk-&gt;consumed,<sp/>init_value);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>return<sp/>means<sp/>retry<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">_bbq_mpmc_enqueue(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*q,<sp/>vuintptr_t<sp/>**buf,<sp/>vuint32_t<sp/>*count)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*count<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>get<sp/>the<sp/>address<sp/>of<sp/>the<sp/>alloc<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>widx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;q-&gt;widx);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>block_idx<sp/><sp/><sp/>=<sp/>BBQ_GLOBAL_IDX(widx);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*blk<sp/>=<sp/>BBQ_GET_BLOCK(q,<sp/>block_idx);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>precheck<sp/>once<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>block_size<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>q-&gt;config.blk_size;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>allocated<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;blk-&gt;allocated);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>allocated_space<sp/>=<sp/>BBQ_LOCAL_IDX(allocated);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>entry_total_size<sp/><sp/>=<sp/>(*count)<sp/>&lt;&lt;<sp/><ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member" tooltip="Define this macro with -BBQ_ENTRY_SIZE_LOG=N to define an entry size equals to 2^N">BBQ_ENTRY_SIZE_LOG</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>out<sp/>of<sp/>bound,<sp/>we<sp/>don&apos;t<sp/>add<sp/>the<sp/>space,<sp/>but<sp/>help<sp/>to<sp/>move<sp/>the<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(likely(allocated_space<sp/>&lt;<sp/>block_size))<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>update<sp/>the<sp/>allocated<sp/>index<sp/>using<sp/>FAA<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>old_allocated<sp/>=</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a9fa87d891d4ffc7d78d9e6b4be4a9a39" kindref="member" tooltip="Adds v to the value of a and returns the old value.">vatomic64_get_add</ref>(&amp;blk-&gt;allocated,<sp/>entry_total_size);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>have<sp/>some<sp/>space<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>old_local_space<sp/>=<sp/>BBQ_LOCAL_IDX(old_allocated);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(likely(old_local_space<sp/>&lt;<sp/>block_size))<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint16_t<sp/>space<sp/>=</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VMIN(entry_total_size,<sp/>block_size<sp/>-<sp/>old_local_space);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*entry<sp/>=<sp/>BBQ_GET_ENTRY(blk,<sp/>old_local_space);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>memcpy_s(entry,<sp/>space,<sp/>*buf,<sp/>space);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUG_ON(r<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a775c9c14e097686e40590f185ac1e68d" kindref="member" tooltip="Adds v to the value of a.">vatomic64_add</ref>(&amp;blk-&gt;committed,<sp/>space);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint16_t<sp/>offset<sp/>=<sp/>space<sp/>&gt;&gt;<sp/><ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member" tooltip="Define this macro with -BBQ_ENTRY_SIZE_LOG=N to define an entry size equals to 2^N">BBQ_ENTRY_SIZE_LOG</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*buf<sp/>+=<sp/>offset;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*count<sp/>-=<sp/>offset;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>slow<sp/>path,<sp/>all<sp/>writers<sp/>help<sp/>to<sp/>move<sp/>to<sp/>next<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*nblk<sp/>=<sp/>BBQ_GET_NEXT_BLOCK(q,<sp/>block_idx);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>global_vsn<sp/><sp/><sp/>=<sp/>BBQ_GLOBAL_VSN(widx);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!BBQ_BLOCK_FULLY_CONSUMED_WITH_VSN(nblk,<sp/>block_size,<sp/>global_vsn)))<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>reset<sp/>cursor<sp/>and<sp/>advance<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>bbq_reset_block_cursor_heavy(&amp;nblk-&gt;committed,<sp/>global_vsn<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_BLOCK_MPMC_INIT_VALUE);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>bbq_reset_block_cursor_heavy(&amp;nblk-&gt;allocated,<sp/>global_vsn<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_BLOCK_MPMC_INIT_VALUE);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>BBQ_ADVANCE_HEAD(&amp;q-&gt;widx,<sp/>widx,<sp/>widx<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>return<sp/>means<sp/>retry<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">_bbq_mpmc_dequeue(<ref refid="structbbq__mpmc__s" kindref="compound">bbq_mpmc_t</ref><sp/>*q,<sp/>vuintptr_t<sp/>**buf,<sp/>vuint32_t<sp/>*count)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*count<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>get<sp/>the<sp/>address<sp/>of<sp/>the<sp/>occupy<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>ridx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;q-&gt;ridx);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>block_idx<sp/><sp/><sp/>=<sp/>BBQ_GLOBAL_IDX(ridx);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*blk<sp/>=<sp/>BBQ_GET_BLOCK(q,<sp/>block_idx);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>the<sp/>block<sp/>is<sp/>fully<sp/>reserved<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>block_size<sp/><sp/><sp/><sp/><sp/>=<sp/>q-&gt;config.blk_size;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>reserved<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;blk-&gt;reserved);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>reserved_space<sp/>=<sp/>BBQ_LOCAL_IDX(reserved);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(likely(reserved_space<sp/>&lt;<sp/>block_size))<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>committed<sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;blk-&gt;committed);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>if<sp/>we<sp/>have<sp/>an<sp/>entry<sp/>to<sp/>occupy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>committed_space<sp/>=<sp/>BBQ_LOCAL_IDX(committed);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(reserved_space<sp/>&gt;=<sp/>committed_space))<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>the<sp/>version<sp/>is<sp/>strictly<sp/>monotic<sp/>and<sp/>may<sp/>not<sp/>wrap.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(reserved<sp/>&lt;=<sp/>committed<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;reserved<sp/>must<sp/>be<sp/>&lt;=<sp/>committed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint16_t<sp/>entry_total_size<sp/>=<sp/>VMIN((*count)<sp/>&lt;&lt;<sp/><ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member" tooltip="Define this macro with -BBQ_ENTRY_SIZE_LOG=N to define an entry size equals to 2^N">BBQ_ENTRY_SIZE_LOG</ref>,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>committed_space<sp/>-<sp/>reserved_space);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(committed_space<sp/>!=<sp/>block_size))<sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>allocated<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;blk-&gt;allocated);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>allocated_space<sp/>=<sp/>BBQ_LOCAL_IDX(allocated);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(likely(allocated_space<sp/>!=<sp/>committed_space))<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__u64_8h_1a53395a4a31f6a9349dcb30ceec00473c" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic64_cmpxchg</ref>(&amp;blk-&gt;reserved,<sp/>reserved,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reserved<sp/>+<sp/>entry_total_size)<sp/>!=<sp/>reserved)<sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>got<sp/>the<sp/>entry<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*entry<sp/>=<sp/>BBQ_GET_ENTRY(blk,<sp/>BBQ_LOCAL_IDX(reserved));</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>memcpy_s(*buf,<sp/>entry_total_size,<sp/>entry,<sp/>entry_total_size);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BUG_ON(r<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>consume<sp/>after<sp/>copy<sp/>the<sp/>data<sp/>back<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a775c9c14e097686e40590f185ac1e68d" kindref="member" tooltip="Adds v to the value of a.">vatomic64_add</ref>(&amp;blk-&gt;consumed,<sp/>entry_total_size);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint16_t<sp/>offset<sp/>=<sp/>entry_total_size<sp/>&gt;&gt;<sp/><ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member" tooltip="Define this macro with -BBQ_ENTRY_SIZE_LOG=N to define an entry size equals to 2^N">BBQ_ENTRY_SIZE_LOG</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*buf<sp/>+=<sp/>offset;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*count<sp/>-=<sp/>offset;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>need<sp/>to<sp/>advance<sp/>the<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbbq__mpmc__block__s" kindref="compound">bbq_mpmc_block_t</ref><sp/>*nblk<sp/>=<sp/>BBQ_GET_NEXT_BLOCK(q,<sp/>block_idx);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>r_head<sp/>never<sp/>pass<sp/>the<sp/>w_head<sp/>and<sp/>r_tail<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>next_consumer_vsn<sp/>=<sp/>BBQ_LOCAL_VSN(reserved)<sp/>-<sp/>(block_idx<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>next_producer_vsn<sp/>=</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_LOCAL_VSN(<ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;nblk-&gt;committed));</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(next_producer_vsn<sp/>!=<sp/>next_consumer_vsn<sp/>+<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>reset<sp/>the<sp/>cursor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>bbq_reset_block_cursor_heavy(&amp;nblk-&gt;consumed,<sp/>next_consumer_vsn<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_BLOCK_MPMC_INIT_VALUE);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>bbq_reset_block_cursor_heavy(&amp;nblk-&gt;reserved,<sp/>next_consumer_vsn<sp/>+<sp/>1,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_BLOCK_MPMC_INIT_VALUE);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>BBQ_ADVANCE_HEAD(&amp;q-&gt;ridx,<sp/>ridx,<sp/>ridx<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/bbq_mpmc.h"/>
+  </compounddef>
+</doxygen>

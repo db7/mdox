@@ -1,0 +1,1185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="atomic_2internal_2macros_8h" kind="file" language="C++">
+    <compoundname>macros.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="common_2macros_8h" local="no">vsync/common/macros.h</includes>
+    <includedby refid="internal_2dispatch_8h" local="yes">vsync/atomic/internal/dispatch.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>vsync/atomic/internal/macros.h</label>
+        <link refid="atomic_2internal_2macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/atomicptr_stamped.h</label>
+        <link refid="atomicptr__stamped_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/atomic/internal/macros.h</label>
+        <link refid="atomic_2internal_2macros_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/bitmap/bitmap.h</label>
+        <link refid="bitmap_8h"/>
+      </node>
+      <node id="12">
+        <label>vsync/map/hashtable_standard.h</label>
+        <link refid="hashtable__standard_8h"/>
+      </node>
+      <node id="7">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vsync/map/internal/treeset/treeset_lock_rw.h</label>
+        <link refid="treeset__lock__rw_8h_source"/>
+      </node>
+      <node id="58">
+        <label>vsync/map/internal/treeset/treeset_lock_ttas.h</label>
+        <link refid="treeset__lock__ttas_8h_source"/>
+      </node>
+      <node id="59">
+        <label>vsync/map/listset_coarse.h</label>
+        <link refid="listset__coarse_8h"/>
+      </node>
+      <node id="60">
+        <label>vsync/map/listset_fine.h</label>
+        <link refid="listset__fine_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/map/listset_lazy.h</label>
+        <link refid="listset__lazy_8h"/>
+      </node>
+      <node id="11">
+        <label>vsync/map/listset_lf.h</label>
+        <link refid="listset__lf_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/map/listset_opt.h</label>
+        <link refid="listset__opt_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/map/simpleht.h</label>
+        <link refid="simpleht_8h"/>
+      </node>
+      <node id="8">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/queue/bounded_locked.h</label>
+        <link refid="bounded__locked_8h"/>
+      </node>
+      <node id="27">
+        <label>vsync/queue/bounded_mpmc.h</label>
+        <link refid="bounded__mpmc_8h"/>
+      </node>
+      <node id="28">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+      </node>
+      <node id="29">
+        <label>vsync/queue/cachedq.h</label>
+        <link refid="cachedq_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/queue/chaselev.h</label>
+        <link refid="chaselev_8h"/>
+      </node>
+      <node id="38">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+      </node>
+      <node id="32">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+      <node id="39">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="9">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="34">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+      </node>
+      <node id="36">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+      </node>
+      <node id="43">
+        <label>vsync/spinlock/cnalock.h</label>
+        <link refid="cnalock_8h"/>
+      </node>
+      <node id="44">
+        <label>vsync/spinlock/hclhlock.h</label>
+        <link refid="hclhlock_8h"/>
+      </node>
+      <node id="45">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+      </node>
+      <node id="46">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+      </node>
+      <node id="47">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="49">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="37">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="51">
+        <label>vsync/spinlock/rwlock.h</label>
+        <link refid="rwlock_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>vsync/spinlock/semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vsync/spinlock/seqcount.h</label>
+        <link refid="seqcount_8h"/>
+      </node>
+      <node id="55">
+        <label>vsync/spinlock/seqlock.h</label>
+        <link refid="seqlock_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>vsync/spinlock/ttaslock.h</label>
+        <link refid="ttaslock_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>vsync/spinlock/twalock.h</label>
+        <link refid="twalock_8h"/>
+      </node>
+      <node id="14">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>vsync/stack/quack.h</label>
+        <link refid="quack_8h"/>
+      </node>
+      <node id="63">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="65">
+        <label>vsync/thread/cond.h</label>
+        <link refid="cond_8h"/>
+      </node>
+      <node id="66">
+        <label>vsync/thread/internal/futex.h</label>
+        <link refid="futex_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/thread/internal/futex_mock_liveness.h</label>
+        <link refid="futex__mock__liveness_8h_source"/>
+      </node>
+      <node id="41">
+        <label>vsync/thread/internal/futex_mock_liveness_simple.h</label>
+        <link refid="futex__mock__liveness__simple_8h_source"/>
+      </node>
+      <node id="72">
+        <label>vsync/thread/internal/futex_mock_safety.h</label>
+        <link refid="futex__mock__safety_8h_source"/>
+      </node>
+      <node id="69">
+        <label>vsync/thread/mutex.h</label>
+        <link refid="mutex_8h"/>
+      </node>
+      <node id="67">
+        <label>vsync/thread/mutex/musl.h</label>
+        <link refid="musl_8h"/>
+      </node>
+      <node id="68">
+        <label>vsync/thread/mutex/slim.h</label>
+        <link refid="slim_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>vsync/thread/mutex/tristate.h</label>
+        <link refid="tristate_8h"/>
+      </node>
+      <node id="71">
+        <label>vsync/thread/once.h</label>
+        <link refid="once_8h"/>
+      </node>
+      <node id="73">
+        <label>vsync/utils/abstract_lock.h</label>
+        <link refid="abstract__lock_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>vsync/utils/xbo.h</label>
+        <link refid="xbo_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a22b2057c1bc28a8351e348959d1259ec" prot="public" static="no">
+        <name>V_SUFFIX</name>
+        <param><defname>mo</defname></param>
+        <initializer>V_CONCAT(V_SUFFIX_, mo)</initializer>
+        <briefdescription>
+<para>memory order function suffix </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="17" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a7c3d6b0785d37f33d666e5a60a3d1477" prot="public" static="no">
+        <name>V_SUFFIX_mo_seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="18" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a6927af10fa87caf72369fd9b53ed46dc" prot="public" static="no">
+        <name>V_SUFFIX_mo_acq</name>
+        <initializer>_acq</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="19" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a1acac59d5524911b7fd57e66b6c1e194" prot="public" static="no">
+        <name>V_SUFFIX_mo_rel</name>
+        <initializer>_rel</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="20" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ae16b0ffa3911ddf8a440527332b0b35b" prot="public" static="no">
+        <name>V_SUFFIX_mo_rlx</name>
+        <initializer>_rlx</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="21" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aaad96a9eba53ed696ee7444c357bf17b" prot="public" static="no">
+        <name>V_MAP_A</name>
+        <param><defname>P</defname></param>
+        <initializer>V_CONCAT(V_MAP_A_, P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="25" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a92d0db24998d546b78fe49eba68d0d04" prot="public" static="no">
+        <name>V_MAP_A_vatomic8</name>
+        <initializer><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="26" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a43dbcfbaeac929769b1bddab984b73d7" prot="public" static="no">
+        <name>V_MAP_A_vatomic16</name>
+        <initializer><ref refid="structvatomic16__s" kindref="compound">vatomic16_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="27" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ac46344a834dee2ff56d39df35c1aae17" prot="public" static="no">
+        <name>V_MAP_A_vatomic32</name>
+        <initializer><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="28" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1af93085f16de53fa544c8d6d892e36228" prot="public" static="no">
+        <name>V_MAP_A_vatomic64</name>
+        <initializer><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="29" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1acbd7e1b5e98e05943bc763bbd095a5b1" prot="public" static="no">
+        <name>V_MAP_A_vatomicptr</name>
+        <initializer><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="30" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a69797a0cc7825c11a63ae9882e9a3322" prot="public" static="no">
+        <name>V_MAP_A_vatomicsz</name>
+        <initializer><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="31" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a87b457dbcd020f4460538383d7e1a63a" prot="public" static="no">
+        <name>V_MAP_T</name>
+        <param><defname>P</defname></param>
+        <initializer>V_CONCAT(V_MAP_T_, P)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="35" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a5412393252e4b2a67bb7536d16ef4ddf" prot="public" static="no">
+        <name>V_MAP_T_vatomic8</name>
+        <initializer>vuint8_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="36" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1afab2a21ad45ba2b73295701861b90c4b" prot="public" static="no">
+        <name>V_MAP_T_vatomic16</name>
+        <initializer>vuint16_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="37" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aad8d35f68b94b076cf95e5aaee9ac85d" prot="public" static="no">
+        <name>V_MAP_T_vatomic32</name>
+        <initializer>vuint32_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="38" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aab2b269e5d090b15010ee572d5a17b87" prot="public" static="no">
+        <name>V_MAP_T_vatomic64</name>
+        <initializer>vuint64_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="39" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ab9994e99be8909071c3108e7b2334f07" prot="public" static="no">
+        <name>V_MAP_T_vatomicptr</name>
+        <initializer>void *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="40" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a92fd0b93c07a2e55e25684fdc852634f" prot="public" static="no">
+        <name>V_MAP_T_vatomicsz</name>
+        <initializer>vsize_t</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="41" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a1565366c35ee72bc79c84839f2310228" prot="public" static="no">
+        <name>V_FUNC</name>
+        <param><defname>...</defname></param>
+        <initializer>V_NR_VARS(_vatomic_func_, __VA_ARGS__)(__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>function name generators </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="47" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a39891aee27a715701cabf137d6516cec" prot="public" static="no">
+        <name>_vatomic_func_5</name>
+        <param><defname>x</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>V_JOIN(x, _vatomic_func_4(__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="48" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a73b96068df685a733c5c8ba21d4539d7" prot="public" static="no">
+        <name>_vatomic_func_4</name>
+        <param><defname>x</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>V_JOIN(x, _vatomic_func_3(__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="49" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a243f751b71be9a331c4a43862ccf8607" prot="public" static="no">
+        <name>_vatomic_func_3</name>
+        <param><defname>x</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>V_JOIN(x, _vatomic_func_2(__VA_ARGS__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="50" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aaa8b28f9b66e101bfab6e3a6a08dbcd5" prot="public" static="no">
+        <name>_vatomic_func_2</name>
+        <param><defname>x</defname></param>
+        <param><defname>mo</defname></param>
+        <initializer>V_CONCAT(x, V_SUFFIX(mo))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="51" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ab09ec9a090ceaf213d7a1e3324d4fe66" prot="public" static="no">
+        <name>V_DEFINE_FUNC</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_NR_VARS(V_DEFINE_FUNC_, __VA_ARGS__)(P, F, mo, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>function definition selector </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="57" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="57" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a62cfb7dc2c096075ca031a8f57b79b77" prot="public" static="no">
+        <name>V_DEFINE_FUNC_6</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>suf</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_JOIN(V_DEFINE, F)(P, mo, suf) V_DEFINE_FUNC_5(P, F, mo, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="59" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="59" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a51ef3bbaf67b3cc0bc9ca61051dc1c35" prot="public" static="no">
+        <name>V_DEFINE_FUNC_5</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>suf</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_JOIN(V_DEFINE, F)(P, mo, suf) V_DEFINE_FUNC_4(P, F, mo, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="61" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="61" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aeaf2a41967aeb3965ea93197ec2530aa" prot="public" static="no">
+        <name>V_DEFINE_FUNC_4</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>suf</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_JOIN(V_DEFINE, F)(P, mo, suf) V_DEFINE_FUNC_3(P, F, mo, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="63" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="63" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1aae57029d603ee7a4bcc5ec4d1443e4da" prot="public" static="no">
+        <name>V_DEFINE_FUNC_3</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>suf</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_JOIN(V_DEFINE, F)(P, mo, suf) V_DEFINE_FUNC_2(P, F, mo, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="65" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="65" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a608a93bb0c4eba4cf1c63cedebb0f672" prot="public" static="no">
+        <name>V_DEFINE_FUNC_2</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>suf</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    V_JOIN(V_DEFINE, F)(P, mo, suf) V_DEFINE_FUNC_1(P, F, mo, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="67" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="67" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a8c5aa7202f14e911c7f255c5e4a53227" prot="public" static="no">
+        <name>V_DEFINE_FUNC_1</name>
+        <param><defname>P</defname></param>
+        <param><defname>F</defname></param>
+        <param><defname>mo</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>V_JOIN(V_DEFINE, F)(P, mo, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="69" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a05f2258acd304b5a31c30f098ca3461f" prot="public" static="no">
+        <name>V_CAST_INT</name>
+        <param><defname>T</defname></param>
+        <param><defname>v</defname></param>
+        <initializer>((T)(v))</initializer>
+        <briefdescription>
+<para>a plain cast applicable to integer casting </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target type vuint32_t or vuint64_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to cast </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="78" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ae3c49daa1b9ce1966112ff71b7106035" prot="public" static="no">
+        <name>V_CAST</name>
+        <param><defname>T</defname></param>
+        <param><defname>v</defname></param>
+        <initializer>((V_CAST_UNION(T, __typeof__(v))){.in = v}.out)</initializer>
+        <briefdescription>
+<para>powerful cast applicable to integers and pointers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target type vatomic32_t, vuint32_t, vuint64_t, void*, ... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to cast </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="87" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a4dc20643ebbd2d55509c25b7e82508ff" prot="public" static="no">
+        <name>V_CAST_UNION</name>
+        <param><defname>out_type</defname></param>
+        <param><defname>in_type</defname></param>
+        <initializer>    union {                                                                    \
+        vuint64_t clear;                                                       \
+                                                                               \
+        V_ASSERT(sizeof(out_type) &lt;= sizeof(vuint64_t), out_larger_than64);    \
+        V_ASSERT(sizeof(in_type) &lt;= sizeof(vuint64_t), in_larger_than64);      \
+                                                                               \
+        out_type out;                                                          \
+        struct {                                                               \
+            char pad[V_CAST_PAD_SIZE(out_type, in_type)];                      \
+            in_type in;                                                        \
+        };                                                                     \
+    }</initializer>
+        <briefdescription>
+<para>Creates an union to safely convert an in_type value to an out_type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usage example:</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">out_type<sp/>o<sp/>=<sp/>_CAST_UNION(out_type,<sp/>in_type){0,<sp/>.in<sp/>=<sp/>in}.out;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="99" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="99" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a9fb6130d48e9a4671d7821644bfebabb" prot="public" static="no">
+        <name>V_CAST_SZGE</name>
+        <param><defname>out_type</defname></param>
+        <param><defname>in_type</defname></param>
+        <initializer>(sizeof(out_type) &gt;= sizeof(in_type))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="114" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1a8c56cd9809e120b3985d2accee444f59" prot="public" static="no">
+        <name>V_CAST_SZDIFF</name>
+        <param><defname>out_type</defname></param>
+        <param><defname>in_type</defname></param>
+        <initializer>(sizeof(out_type) - sizeof(in_type))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="117" column="9" bodyfile="vsync/atomic/internal/macros.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="atomic_2internal_2macros_8h_1ab35567b4c8c4cbf4b30234daef841c47" prot="public" static="no">
+        <name>V_CAST_PAD_SIZE</name>
+        <param><defname>out_type</defname></param>
+        <param><defname>in_type</defname></param>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/macros.h" line="121" column="13" bodyfile="vsync/atomic/internal/macros.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VATOMIC_INTERNAL_MACROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VATOMIC_INTERNAL_MACROS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/macros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>function<sp/>suffix<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SUFFIX(mo)<sp/>V_CONCAT(V_SUFFIX_,<sp/>mo)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SUFFIX_mo_seq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SUFFIX_mo_acq<sp/>_acq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SUFFIX_mo_rel<sp/>_rel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_SUFFIX_mo_rlx<sp/>_rlx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>V_MAP_A(pfx):<sp/>maps<sp/>a<sp/>prefix<sp/>P<sp/>to<sp/>atomic<sp/>type<sp/>A,<sp/>eg,<sp/>vatomic32<sp/>to<sp/>vatomic32_t</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A(P)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_CONCAT(V_MAP_A_,<sp/>P)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomic8<sp/><sp/><sp/>vatomic8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomic16<sp/><sp/>vatomic16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomic32<sp/><sp/>vatomic32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomic64<sp/><sp/>vatomic64_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomicptr<sp/>vatomicptr_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_A_vatomicsz<sp/><sp/>vatomicsz_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>V_MAP_T(pfx):<sp/>maps<sp/>a<sp/>prefix<sp/>P<sp/>to<sp/>variable<sp/>type<sp/>T,<sp/>eg,<sp/>vatomic32<sp/>to<sp/>vuint32_t</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T(P)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_CONCAT(V_MAP_T_,<sp/>P)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomic8<sp/><sp/><sp/>vuint8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomic16<sp/><sp/>vuint16_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomic32<sp/><sp/>vuint32_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomic64<sp/><sp/>vuint64_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomicptr<sp/>void<sp/>*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_MAP_T_vatomicsz<sp/><sp/>vsize_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_FUNC(...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_NR_VARS(_vatomic_func_,<sp/>__VA_ARGS__)(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_vatomic_func_5(x,<sp/>...)<sp/>V_JOIN(x,<sp/>_vatomic_func_4(__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_vatomic_func_4(x,<sp/>...)<sp/>V_JOIN(x,<sp/>_vatomic_func_3(__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_vatomic_func_3(x,<sp/>...)<sp/>V_JOIN(x,<sp/>_vatomic_func_2(__VA_ARGS__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_vatomic_func_2(x,<sp/>mo)<sp/><sp/>V_CONCAT(x,<sp/>V_SUFFIX(mo))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC(P,<sp/>F,<sp/>mo,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_NR_VARS(V_DEFINE_FUNC_,<sp/>__VA_ARGS__)(P,<sp/>F,<sp/>mo,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_6(P,<sp/>F,<sp/>mo,<sp/>suf,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>suf)<sp/>V_DEFINE_FUNC_5(P,<sp/>F,<sp/>mo,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_5(P,<sp/>F,<sp/>mo,<sp/>suf,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>suf)<sp/>V_DEFINE_FUNC_4(P,<sp/>F,<sp/>mo,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_4(P,<sp/>F,<sp/>mo,<sp/>suf,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>suf)<sp/>V_DEFINE_FUNC_3(P,<sp/>F,<sp/>mo,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_3(P,<sp/>F,<sp/>mo,<sp/>suf,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>suf)<sp/>V_DEFINE_FUNC_2(P,<sp/>F,<sp/>mo,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_2(P,<sp/>F,<sp/>mo,<sp/>suf,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>suf)<sp/>V_DEFINE_FUNC_1(P,<sp/>F,<sp/>mo,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_DEFINE_FUNC_1(P,<sp/>F,<sp/>mo,<sp/>...)<sp/>V_JOIN(V_DEFINE,<sp/>F)(P,<sp/>mo,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_CAST_INT(T,<sp/>v)<sp/>((T)(v))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_CAST(T,<sp/>v)<sp/>((V_CAST_UNION(T,<sp/>__typeof__(v))){.in<sp/>=<sp/>v}.out)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_CAST_UNION(out_type,<sp/>in_type)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>union<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>clear;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_ASSERT(sizeof(out_type)<sp/>&lt;=<sp/>sizeof(vuint64_t),<sp/>out_larger_than64);<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_ASSERT(sizeof(in_type)<sp/>&lt;=<sp/>sizeof(vuint64_t),<sp/>in_larger_than64);<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_type<sp/>out;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>pad[V_CAST_PAD_SIZE(out_type,<sp/>in_type)];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_type<sp/>in;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>size<sp/>greater<sp/>or<sp/>equal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_CAST_SZGE(out_type,<sp/>in_type)<sp/>(sizeof(out_type)<sp/>&gt;=<sp/>sizeof(in_type))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>size<sp/>difference<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_CAST_SZDIFF(out_type,<sp/>in_type)<sp/>(sizeof(out_type)<sp/>-<sp/>sizeof(in_type))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>padding<sp/>for<sp/>big<sp/>endian<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__BYTE_ORDER__<sp/>==<sp/>__ORDER_LITTLE_ENDIAN__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_CAST_PAD_SIZE(out_type,<sp/>in_type)<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>V_CAST_PAD_SIZE(out_type,<sp/>in_type)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(V_CAST_SZGE(out_type,<sp/>in_type)<sp/>?<sp/>V_CAST_SZDIFF(out_type,<sp/>in_type)<sp/>:<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VATOMIC_INTERNAL_MACROS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="vsync/atomic/internal/macros.h"/>
+  </compounddef>
+</doxygen>

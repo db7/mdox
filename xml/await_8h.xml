@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="await_8h" kind="file" language="C++">
+    <compoundname>await.h</compoundname>
+    <includes refid="await__u32_8h" local="no">vsync/atomic/await_u32.h</includes>
+    <includes refid="await__u64_8h" local="no">vsync/atomic/await_u64.h</includes>
+    <includes refid="await__ptr_8h" local="no">vsync/atomic/await_ptr.h</includes>
+    <includedby refid="atomic_8h" local="no">vsync/atomic.h</includedby>
+    <includedby refid="remap__fnc__rlx_8h" local="no">vsync/atomic/internal/remap_fnc_rlx.h</includedby>
+    <includedby refid="remap__fnc__sc_8h" local="no">vsync/atomic/internal/remap_fnc_sc.h</includedby>
+    <includedby refid="remap__ptr__rlx_8h" local="no">vsync/atomic/internal/remap_ptr_rlx.h</includedby>
+    <includedby refid="remap__ptr__sc_8h" local="no">vsync/atomic/internal/remap_ptr_sc.h</includedby>
+    <includedby refid="remap__sz__rlx_8h" local="no">vsync/atomic/internal/remap_sz_rlx.h</includedby>
+    <includedby refid="remap__sz__sc_8h" local="no">vsync/atomic/internal/remap_sz_sc.h</includedby>
+    <includedby refid="remap__u16__rlx_8h" local="no">vsync/atomic/internal/remap_u16_rlx.h</includedby>
+    <includedby refid="remap__u16__sc_8h" local="no">vsync/atomic/internal/remap_u16_sc.h</includedby>
+    <includedby refid="remap__u32__rlx_8h" local="no">vsync/atomic/internal/remap_u32_rlx.h</includedby>
+    <includedby refid="remap__u32__sc_8h" local="no">vsync/atomic/internal/remap_u32_sc.h</includedby>
+    <includedby refid="remap__u64__rlx_8h" local="no">vsync/atomic/internal/remap_u64_rlx.h</includedby>
+    <includedby refid="remap__u64__sc_8h" local="no">vsync/atomic/internal/remap_u64_sc.h</includedby>
+    <includedby refid="remap__u8__rlx_8h" local="no">vsync/atomic/internal/remap_u8_rlx.h</includedby>
+    <includedby refid="remap__u8__sc_8h" local="no">vsync/atomic/internal/remap_u8_sc.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/atomicptr_stamped.h</label>
+        <link refid="atomicptr__stamped_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>vsync/atomic/internal/remap_fnc_rlx.h</label>
+        <link refid="remap__fnc__rlx_8h_source"/>
+      </node>
+      <node id="76">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>vsync/atomic/internal/remap_ptr_rlx.h</label>
+        <link refid="remap__ptr__rlx_8h_source"/>
+      </node>
+      <node id="79">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>vsync/atomic/internal/remap_sz_rlx.h</label>
+        <link refid="remap__sz__rlx_8h_source"/>
+      </node>
+      <node id="81">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>vsync/atomic/internal/remap_u16_rlx.h</label>
+        <link refid="remap__u16__rlx_8h_source"/>
+      </node>
+      <node id="83">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>vsync/atomic/internal/remap_u32_rlx.h</label>
+        <link refid="remap__u32__rlx_8h_source"/>
+      </node>
+      <node id="85">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>vsync/atomic/internal/remap_u64_rlx.h</label>
+        <link refid="remap__u64__rlx_8h_source"/>
+      </node>
+      <node id="87">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>vsync/atomic/internal/remap_u8_rlx.h</label>
+        <link refid="remap__u8__rlx_8h_source"/>
+      </node>
+      <node id="89">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/bitmap/bitmap.h</label>
+        <link refid="bitmap_8h"/>
+      </node>
+      <node id="10">
+        <label>vsync/map/hashtable_standard.h</label>
+        <link refid="hashtable__standard_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>vsync/map/internal/treeset/treeset_lock_rw.h</label>
+        <link refid="treeset__lock__rw_8h_source"/>
+      </node>
+      <node id="56">
+        <label>vsync/map/internal/treeset/treeset_lock_ttas.h</label>
+        <link refid="treeset__lock__ttas_8h_source"/>
+      </node>
+      <node id="57">
+        <label>vsync/map/listset_coarse.h</label>
+        <link refid="listset__coarse_8h"/>
+      </node>
+      <node id="58">
+        <label>vsync/map/listset_fine.h</label>
+        <link refid="listset__fine_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/map/listset_lazy.h</label>
+        <link refid="listset__lazy_8h"/>
+      </node>
+      <node id="9">
+        <label>vsync/map/listset_lf.h</label>
+        <link refid="listset__lf_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/map/listset_opt.h</label>
+        <link refid="listset__opt_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/map/simpleht.h</label>
+        <link refid="simpleht_8h"/>
+      </node>
+      <node id="6">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/pool/cached_pool.h</label>
+        <link refid="cached__pool_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="23">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/queue/bounded_locked.h</label>
+        <link refid="bounded__locked_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/queue/bounded_mpmc.h</label>
+        <link refid="bounded__mpmc_8h"/>
+      </node>
+      <node id="26">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+      </node>
+      <node id="27">
+        <label>vsync/queue/cachedq.h</label>
+        <link refid="cachedq_8h"/>
+      </node>
+      <node id="28">
+        <label>vsync/queue/chaselev.h</label>
+        <link refid="chaselev_8h"/>
+      </node>
+      <node id="36">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+      <node id="37">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+      </node>
+      <node id="7">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+      <node id="13">
+        <label>vsync/queue/vqueue_prio_stack_array_based.h</label>
+        <link refid="vqueue__prio__stack__array__based_8h"/>
+      </node>
+      <node id="14">
+        <label>vsync/queue/vqueue_prio_stack_tree_based.h</label>
+        <link refid="vqueue__prio__stack__tree__based_8h_source"/>
+      </node>
+      <node id="31">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="32">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/spinlock/arraylock.h</label>
+        <link refid="arraylock_8h"/>
+      </node>
+      <node id="34">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/spinlock/clhlock.h</label>
+        <link refid="clhlock_8h"/>
+      </node>
+      <node id="41">
+        <label>vsync/spinlock/cnalock.h</label>
+        <link refid="cnalock_8h"/>
+      </node>
+      <node id="42">
+        <label>vsync/spinlock/hclhlock.h</label>
+        <link refid="hclhlock_8h"/>
+      </node>
+      <node id="43">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+      </node>
+      <node id="44">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+      </node>
+      <node id="45">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+      <node id="47">
+        <label>vsync/spinlock/rec_seqlock.h</label>
+        <link refid="rec__seqlock_8h"/>
+      </node>
+      <node id="35">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="49">
+        <label>vsync/spinlock/rwlock.h</label>
+        <link refid="rwlock_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>vsync/spinlock/semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vsync/spinlock/seqcount.h</label>
+        <link refid="seqcount_8h"/>
+      </node>
+      <node id="53">
+        <label>vsync/spinlock/seqlock.h</label>
+        <link refid="seqlock_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>vsync/spinlock/ttaslock.h</label>
+        <link refid="ttaslock_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>vsync/spinlock/twalock.h</label>
+        <link refid="twalock_8h"/>
+      </node>
+      <node id="12">
+        <label>vsync/stack/elimination_stack.h</label>
+        <link refid="elimination__stack_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>vsync/stack/internal/stack_core.h</label>
+        <link refid="stack__core_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>vsync/stack/quack.h</label>
+        <link refid="quack_8h"/>
+      </node>
+      <node id="61">
+        <label>vsync/stack/xbo_stack.h</label>
+        <link refid="xbo__stack_8h"/>
+      </node>
+      <node id="63">
+        <label>vsync/thread/cond.h</label>
+        <link refid="cond_8h"/>
+      </node>
+      <node id="64">
+        <label>vsync/thread/internal/futex.h</label>
+        <link refid="futex_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>vsync/thread/internal/futex_mock_liveness.h</label>
+        <link refid="futex__mock__liveness_8h_source"/>
+      </node>
+      <node id="39">
+        <label>vsync/thread/internal/futex_mock_liveness_simple.h</label>
+        <link refid="futex__mock__liveness__simple_8h_source"/>
+      </node>
+      <node id="70">
+        <label>vsync/thread/internal/futex_mock_safety.h</label>
+        <link refid="futex__mock__safety_8h_source"/>
+      </node>
+      <node id="67">
+        <label>vsync/thread/mutex.h</label>
+        <link refid="mutex_8h"/>
+      </node>
+      <node id="65">
+        <label>vsync/thread/mutex/musl.h</label>
+        <link refid="musl_8h"/>
+      </node>
+      <node id="66">
+        <label>vsync/thread/mutex/slim.h</label>
+        <link refid="slim_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>vsync/thread/mutex/tristate.h</label>
+        <link refid="tristate_8h"/>
+      </node>
+      <node id="69">
+        <label>vsync/thread/once.h</label>
+        <link refid="once_8h"/>
+      </node>
+      <node id="71">
+        <label>vsync/utils/abstract_lock.h</label>
+        <link refid="abstract__lock_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>vsync/utils/backoff.h</label>
+        <link refid="backoff_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/utils/exchanger.h</label>
+        <link refid="exchanger_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>vsync/utils/xbo.h</label>
+        <link refid="xbo_8h"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Atomic await functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Await functions are used to politely await a condition on an atomic variable. Moreover, some await functions also perform write to memroy at the end of the spinning. Functions of the form <computeroutput>await_COND</computeroutput> only await a condition and functions of the form <computeroutput>await_COND_OP</computeroutput> await and perform a write operation.</para>
+<sect3 id="await_8h_1autotoc_md0">
+<title>Supported conditions:</title>
+<para><table rows="7" cols="3"><row>
+<entry thead="yes"><para>COND   </para>
+</entry><entry thead="yes"><para>Condition   </para>
+</entry><entry thead="yes"><para>Atomic types    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>lt   </para>
+</entry><entry thead="no"><para>(*a &lt; v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>le   </para>
+</entry><entry thead="no"><para>(*a &lt;= v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>gt   </para>
+</entry><entry thead="no"><para>(*a &gt; v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>ge   </para>
+</entry><entry thead="no"><para>(*a &gt;= v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>eq   </para>
+</entry><entry thead="no"><para>(*a == v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t, vatomicptr_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>neq   </para>
+</entry><entry thead="no"><para>(*a != v)   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t, vatomicptr_t   </para>
+</entry></row>
+</table>
+</para>
+<para>The following example waits for the pointer me-&gt;next to be different than NULL. The variable next contains the value that satisfied the condition. The operation has an acquire barrier.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">node_t<sp/>*next<sp/>=<sp/><ref refid="await__ptr_8h_1afc990e03810e876b748196b272372a89" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomicptr_await_neq_acq</ref>(me-&gt;next,<sp/>NULL);</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="await_8h_1autotoc_md1">
+<title>Supported operations:</title>
+<para><table rows="4" cols="3"><row>
+<entry thead="yes"><para>OP   </para>
+</entry><entry thead="yes"><para>Operation   </para>
+</entry><entry thead="yes"><para>Atomic types    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>add   </para>
+</entry><entry thead="no"><para>*a += v   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>sub   </para>
+</entry><entry thead="no"><para>*a -= v   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>set   </para>
+</entry><entry thead="no"><para>*a = v   </para>
+</entry><entry thead="no"><para>vatomic32_t, vatomic64_t, vatomicptr_t   </para>
+</entry></row>
+</table>
+</para>
+<para>The following example waits for the pointer me-&gt;next to be equal to pred. Once the condition is met, write NULL in me-&gt;next. The variable next contains the value that satisfied the condition. The operation has a release barrier.</para>
+<para><programlisting filename=".c"><codeline><highlight class="normal">node_t<sp/>*next<sp/>=<sp/><ref refid="await__ptr_8h_1a228171bca11c1f2fad1e8eaac758987d" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to c, setting v to a once the condition is satisfi...">vatomicptr_await_eq_set_rel</ref>(me-&gt;next,<sp/>pred,<sp/>NULL);</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="await_8h_1autotoc_md2">
+<title>Return value</title>
+<para>The return value is (typically) the first read value that satisfies the condition. Exception are functions with <computeroutput>eq</computeroutput> condition. Those return the last previously read value different than the expected value (if any). This twist can be used to identify whether the operation had to spin at all.</para>
+</sect3>
+<sect3 id="await_8h_1autotoc_md3">
+<title>Detailed documentation:</title>
+<para>The declaration and documentation of all await operations is split into files based on the atomic type operated by the function as follows:</para>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para>File   </para>
+</entry><entry thead="yes"><para>Type    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="await__u32_8h" kindref="compound">await_u32.h</ref>   </para>
+</entry><entry thead="no"><para>vatomic32_t and vuint32_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="await__u64_8h" kindref="compound">await_u64.h</ref>   </para>
+</entry><entry thead="no"><para>vatomic64_t and vuint64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="await__ptr_8h" kindref="compound">await_ptr.h</ref>   </para>
+</entry><entry thead="no"><para>vatomicptr_t and void *   </para>
+</entry></row>
+</table>
+</para>
+</sect3>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VATOMIC_AWAIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VATOMIC_AWAIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>!!!Warning:<sp/>File<sp/>generated<sp/>by<sp/>tmplr;<sp/>DO<sp/>NOT<sp/>EDIT.!!!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="await__u32_8h" kindref="compound" tooltip="Atomic await functions for vatomic32_t variables.">vsync/atomic/await_u32.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="await__u64_8h" kindref="compound" tooltip="Atomic await functions for vatomic64_t variables.">vsync/atomic/await_u64.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="await__ptr_8h" kindref="compound" tooltip="Atomic await functions for vatomicptr_t variables.">vsync/atomic/await_ptr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VATOMIC_AWAIT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="vsync/atomic/await.h"/>
+  </compounddef>
+</doxygen>

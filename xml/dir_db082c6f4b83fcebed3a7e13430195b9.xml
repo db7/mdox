@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_db082c6f4b83fcebed3a7e13430195b9" kind="dir">
+    <compoundname>vsync/thread/internal</compoundname>
+    <innerfile refid="futex_8h">futex.h</innerfile>
+    <innerfile refid="futex__mock__liveness_8h">futex_mock_liveness.h</innerfile>
+    <innerfile refid="futex__mock__liveness__simple_8h">futex_mock_liveness_simple.h</innerfile>
+    <innerfile refid="futex__mock__safety_8h">futex_mock_safety.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/thread/internal/"/>
+  </compounddef>
+</doxygen>

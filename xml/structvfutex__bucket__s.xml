@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvfutex__bucket__s" kind="struct" language="C++" prot="public">
+    <compoundname>vfutex_bucket_s</compoundname>
+    <includes refid="futex__mock__liveness__simple_8h" local="no">vsync/thread/internal/futex_mock_liveness_simple.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvfutex__bucket__s_1a234e2ce52fd0de90d6521a618daf717d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vfutex_bucket_s::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <qualifiedname>vfutex_bucket_s::addr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="24" column="10" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvfutex__bucket__s_1a173d852b35a21e27d6d5c23abbcbdbd5" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t vfutex_bucket_s::grant</definition>
+        <argsstring></argsstring>
+        <name>grant</name>
+        <qualifiedname>vfutex_bucket_s::grant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="25" column="17" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvfutex__bucket__s_1ae8920c7e11a6faea87f78ead83bd95aa" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t vfutex_bucket_s::ticket</definition>
+        <argsstring></argsstring>
+        <name>ticket</name>
+        <qualifiedname>vfutex_bucket_s::ticket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="26" column="15" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A simple futex mock for verifying safety and liveness. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This mock has less overhead than <computeroutput><ref refid="futex__mock__liveness_8h_source" kindref="compound">futex_mock_liveness.h</ref></computeroutput> one, but at the cost of not supporting futex_requeue operations and verification failures when two futexes hash to the same bucket. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="1">
+        <label>vfutex_bucket_s</label>
+        <link refid="structvfutex__bucket__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>grant</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="23" column="1" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structvfutex__bucket__s_1a234e2ce52fd0de90d6521a618daf717d" prot="public" virt="non-virtual"><scope>vfutex_bucket_s</scope><name>addr</name></member>
+      <member refid="structvfutex__bucket__s_1a173d852b35a21e27d6d5c23abbcbdbd5" prot="public" virt="non-virtual"><scope>vfutex_bucket_s</scope><name>grant</name></member>
+      <member refid="structvfutex__bucket__s_1ae8920c7e11a6faea87f78ead83bd95aa" prot="public" virt="non-virtual"><scope>vfutex_bucket_s</scope><name>ticket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

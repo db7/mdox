@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhmcs__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>hmcs_node_s</compoundname>
+    <includes refid="hmcslock_8h" local="no">vsync/spinlock/hmcslock.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhmcs__node__s_1a67aa420eab0327f55c69ef8b4193364a" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></type>
+        <definition>vatomic64_t hmcs_node_s::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>hmcs_node_s::status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="61" column="17" bodyfile="vsync/spinlock/hmcslock.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhmcs__node__s_1ad392d891a313b734e2ce68fb37f5ae90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hmcs_node_s::vatomicptr</definition>
+        <argsstring>(struct hmcs_node_s *) next</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>hmcs_node_s::vatomicptr</qualifiedname>
+        <param>
+          <type>struct <ref refid="structhmcs__node__s" kindref="compound">hmcs_node_s</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="60" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>MACROS/CONSTANTS. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Data Types </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hmcs_node_s</label>
+        <link refid="structhmcs__node__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/hmcslock.h" line="59" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="59" bodyend="62"/>
+    <listofallmembers>
+      <member refid="structhmcs__node__s_1a67aa420eab0327f55c69ef8b4193364a" prot="public" virt="non-virtual"><scope>hmcs_node_s</scope><name>status</name></member>
+      <member refid="structhmcs__node__s_1ad392d891a313b734e2ce68fb37f5ae90" prot="public" virt="non-virtual"><scope>hmcs_node_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

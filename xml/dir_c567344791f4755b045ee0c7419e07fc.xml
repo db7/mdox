@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_c567344791f4755b045ee0c7419e07fc" kind="dir">
+    <compoundname>vsync/map/internal/skiplist</compoundname>
+    <innerfile refid="skiplist__helper_8h">skiplist_helper.h</innerfile>
+    <innerfile refid="skiplist__internal__fun_8h">skiplist_internal_fun.h</innerfile>
+    <innerfile refid="skiplist__types_8h">skiplist_types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/internal/skiplist/"/>
+  </compounddef>
+</doxygen>

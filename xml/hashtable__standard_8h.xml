@@ -1,0 +1,950 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hashtable__standard_8h" kind="file" language="C++">
+    <compoundname>hashtable_standard.h</compoundname>
+    <includes refid="listset__lf_8h" local="no">vsync/map/listset_lf.h</includes>
+    <includes refid="hashtable__config_8h" local="no">vsync/map/internal/hashtable/hashtable_config.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="34">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="17">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="16">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/map/hashtable_standard.h</label>
+        <link refid="hashtable__standard_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vsync/map/internal/hashtable/hashtable_config.h</label>
+        <link refid="hashtable__config_8h_source"/>
+      </node>
+      <node id="6">
+        <label>vsync/map/internal/listset/listset_common.h</label>
+        <link refid="listset__common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/listset_lf.h</label>
+        <link refid="listset__lf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvhashtable__s" prot="public">vhashtable_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hashtable__standard_8h_1a74966be68d10f192dad6da3bbb95c49d" prot="public" static="no">
+        <type><ref refid="structvlistset__s" kindref="compound">vlistset_t</ref></type>
+        <definition>typedef vlistset_t vbucket_t</definition>
+        <argsstring></argsstring>
+        <name>vbucket_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="36" column="20" bodyfile="vsync/map/hashtable_standard.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hashtable__standard_8h_1af7091ee47010347e37eb06bef15e5bc4" prot="public" static="no">
+        <type>vlistset_key_t</type>
+        <definition>typedef vlistset_key_t vhashtable_key_t</definition>
+        <argsstring></argsstring>
+        <name>vhashtable_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="37" column="24" bodyfile="vsync/map/hashtable_standard.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hashtable__standard_8h_1acef798c37c1a42ab8949a790419c9e65" prot="public" static="no">
+        <type><ref refid="structvlistset__node__s" kindref="compound">vlistset_node_t</ref></type>
+        <definition>typedef vlistset_node_t vhashtable_entry_t</definition>
+        <argsstring></argsstring>
+        <name>vhashtable_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="38" column="25" bodyfile="vsync/map/hashtable_standard.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hashtable__standard_8h_1ab0a1c4f657059b4bbc3958fec01da766" prot="public" static="no">
+        <type>vlistset_cmp_key_t</type>
+        <definition>typedef vlistset_cmp_key_t vhashtable_cmp_key_t</definition>
+        <argsstring></argsstring>
+        <name>vhashtable_cmp_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="39" column="28" bodyfile="vsync/map/hashtable_standard.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hashtable__standard_8h_1a1ebc47d843ede6570b8bdbba2bb142ae" prot="public" static="no">
+        <type>vlistset_handle_node_t</type>
+        <definition>typedef vlistset_handle_node_t vhashtable_entry_retire_t</definition>
+        <argsstring></argsstring>
+        <name>vhashtable_entry_retire_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="40" column="32" bodyfile="vsync/map/hashtable_standard.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hashtable__standard_8h_1a5942899f05d0f5dd7a0b1f41c855660d" prot="public" static="no">
+        <type>struct <ref refid="structvhashtable__s" kindref="compound">vhashtable_s</ref></type>
+        <definition>typedef struct vhashtable_s vhashtable_t</definition>
+        <argsstring></argsstring>
+        <name>vhashtable_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="45" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="hashtable__standard_8h_1aa3a2a3286479287b27234a490abe8da7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vhashtable_init</definition>
+        <argsstring>(vhashtable_t *table, vhashtable_entry_retire_t retire_cb, void *retire_cb_arg, vhashtable_cmp_key_t cmp_cb)</argsstring>
+        <name>vhashtable_init</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>vhashtable_entry_retire_t</type>
+          <declname>retire_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>retire_cb_arg</declname>
+        </param>
+        <param>
+          <type>vhashtable_cmp_key_t</type>
+          <declname>cmp_cb</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of a callback function of type <computeroutput>vhashtable_entry_retire_t</computeroutput>. The function is called whenever an entry is detached from the hashtable. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire_cb_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of an extra argument of <computeroutput>retire_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmp_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of callback function of type <computeroutput>vhashtable_cmp_key_t</computeroutput>. Used for comparing an entry key to a given key.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> must be called before threads start accessing the hashtable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="60" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="60" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="hashtable__standard_8h_1a23e3cba301c42319f57ab50d15619ebc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vhashtable_destroy</definition>
+        <argsstring>(vhashtable_t *table)</argsstring>
+        <name>vhashtable_destroy</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+<para>Retires all entries in the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> this function is not thread-safe, can be called iff all threads are done accessing the hashtable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="76" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="hashtable__standard_8h_1aa96ef1098ef6a786db039ab73c5bd87b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vhashtable_insert</definition>
+        <argsstring>(vhashtable_t *table, vhashtable_key_t key, vhashtable_entry_t *val, vsize_t hash_idx)</argsstring>
+        <name>vhashtable_insert</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>vhashtable_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref> *</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>hash_idx</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the given <computeroutput>entry</computeroutput> into the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the key object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_entry_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a hash value of the key used as a bucket index. must be <computeroutput>&lt; VHASHTABLE_BUCKET_COUNT</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true successful insertion. </para>
+</simplesect>
+<simplesect kind="return"><para>false failed insertion, an entry associated with the given <computeroutput>key</computeroutput> already exists.</para>
+</simplesect>
+&gt; <bold>Note:</bold> this function must be called inside an SMR critical section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="97" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="97" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="hashtable__standard_8h_1aad273b2b725b11ab1b24d26c6e78a89d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref> *</type>
+        <definition>static vhashtable_entry_t * vhashtable_get</definition>
+        <argsstring>(vhashtable_t *table, vhashtable_key_t key, vsize_t hash_idx)</argsstring>
+        <name>vhashtable_get</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>vhashtable_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>hash_idx</declname>
+        </param>
+        <briefdescription>
+<para>Looks for the entry associated with the given <computeroutput>key</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the key object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a hash value of the key used as a bucket index. must be <computeroutput>&lt; VHASHTABLE_BUCKET_COUNT</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vhashtable_entry_t* address of the <computeroutput>vhashtable_entry_t</computeroutput> object associated with the given key, if found. </para>
+</simplesect>
+<simplesect kind="return"><para><computeroutput>NULL</computeroutput> if key is not found.</para>
+</simplesect>
+&gt; <bold>Note:</bold> this function must be called inside an SMR critical section. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="122" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="hashtable__standard_8h_1aa0114e31fac5e8d3408dbc889b0a4257" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vhashtable_remove</definition>
+        <argsstring>(vhashtable_t *table, vhashtable_key_t key, vsize_t hash_idx)</argsstring>
+        <name>vhashtable_remove</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>vhashtable_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>hash_idx</declname>
+        </param>
+        <briefdescription>
+<para>Removes the entry associated with the given key from the the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the key object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hash_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a hash value of the key used as a bucket index. must be <computeroutput>&lt; VHASHTABLE_BUCKET_COUNT</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true successful remove, the entry associated with the given key was removed. </para>
+</simplesect>
+<simplesect kind="return"><para>false failed remove, no entry associated with the given key exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="140" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="140" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="hashtable__standard_8h_1aa8c75cae1420440e958bffbdf11d5da5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint64_t</type>
+        <definition>static vuint64_t vhashtable_get_entries_count</definition>
+        <argsstring>(vhashtable_t *table)</argsstring>
+        <name>vhashtable_get_entries_count</name>
+        <param>
+          <type><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+<para>Returns the count of entries currently available in the hashtable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vhashtable_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint64_t an approximate count of the entries available in the hashtable. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="158" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="158" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is a lock-free listset based hashtable. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This hashtable uses a lock-free listset per bucket. The listset is ordered by keys, and keys are expected to be unique.</para>
+<para>The table consists of <computeroutput>VHASHTABLE_BUCKET_COUNT</computeroutput> number of buckets with a default value of <computeroutput>1024</computeroutput>. This can be overwritten by the user by compiling with <computeroutput>-DVHASHTABLE_BUCKET_COUNT=N</computeroutput>. User control the mapping between keys and buckets by passing <computeroutput>hash_idx</computeroutput> to the APIs. It is expected that users use their own hash functions that map a key to a certain bucket index. Thus the given <computeroutput>hash_idx</computeroutput> is expected to be <computeroutput>&lt; VHASHTABLE_BUCKET_COUNT</computeroutput>.</para>
+<para>&gt; <bold>Note:</bold> users may easily build their own hashtables e.g. when dynamic allocation of the table is needed. Users can use <ref refid="listset__lf_8h" kindref="compound">vsync/map/listset_lf.h</ref> or any other listset e.g. <ref refid="listset__lazy_8h" kindref="compound">vsync/map/listset_lazy.h</ref> depending on the user needs. <ref refid="listset__lf_8h" kindref="compound">listset_lf.h</ref> and <ref refid="listset__lazy_8h" kindref="compound">listset_lazy.h</ref> can provide performance benefits under high contention and oversubscription scenarios. If memory overhead is not an issue and the buckets can grow long then <ref refid="skiplist__lf_8h" kindref="compound">skiplist_lf.h</ref> can be a better fit.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_hashtable_standard.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;vsync/smr/gdump.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hashtable__standard_8h" kindref="compound" tooltip="This is a lock-free listset based hashtable.">vsync/map/hashtable_standard.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ITER<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">entry_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>ht_entry;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vhashtable_key_t<sp/>key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>smr_node;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>entry_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pthread_rwlock_t<sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>g_hash_tbl;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">gdump_t<sp/>g_gdump;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref><sp/>g_stop<sp/>=<sp/><ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member" tooltip="Initializes an atomic variable with value v.">VATOMIC_INIT</ref>(0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_rdlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_read_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_acq(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_wrlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">thread_rw_write_rel(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_rwlock_t<sp/>*lock<sp/>=<sp/>(pthread_rwlock_t<sp/>*)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>pthread_rwlock_unlock(lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structsmr__rwlock__lib__s" kindref="compound">smr_rwlock_lib_t</ref><sp/>g_rwlock_lib<sp/>=<sp/>{thread_rw_read_acq,<sp/>thread_rw_read_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thread_rw_write_acq,<sp/>thread_rw_write_rel,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;g_lock};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">free_callback(<ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry_t<sp/>*entry<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>entry_t,<sp/>smr_node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(entry);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(arg);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">retire_callback(<ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry_t<sp/>*entry<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>entry_t,<sp/>ht_entry);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_retire(&amp;g_gdump,<sp/>&amp;entry-&gt;smr_node,<sp/>free_callback,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(arg);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">cmp_callback(<ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>*node,<sp/>vhashtable_key_t<sp/>key)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry_t<sp/>*entry<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>entry_t,<sp/>ht_entry);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(entry-&gt;key<sp/>==<sp/>key)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(entry-&gt;key<sp/>&lt;<sp/>key)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vsize_t</highlight></codeline>
+<codeline><highlight class="normal">hashit(vhashtable_key_t<sp/>key)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>key<sp/>%<sp/>VHASHTABLE_BUCKET_COUNT;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">reader_writer(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_thread_t<sp/>thread;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry_t<sp/>*entry<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_register(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>ITER;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vhashtable_key_t<sp/>key<sp/>=<sp/>(vhashtable_key_t)i;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_enter(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>*node<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hashtable__standard_8h_1aad273b2b725b11ab1b24d26c6e78a89d" kindref="member" tooltip="Looks for the entry associated with the given key.">vhashtable_get</ref>(&amp;g_hash_tbl,<sp/>key,<sp/>hashit(key));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entry<sp/>=<sp/>V_CONTAINER_OF(node,<sp/>entry_t,<sp/>ht_entry);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;entry<sp/>with<sp/>key<sp/>%lu<sp/>exists\n&quot;</highlight><highlight class="normal">,<sp/>entry-&gt;key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(key<sp/>==<sp/>entry-&gt;key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success<sp/>=<sp/><ref refid="hashtable__standard_8h_1aa0114e31fac5e8d3408dbc889b0a4257" kindref="member" tooltip="Removes the entry associated with the given key from the the hashtable.">vhashtable_remove</ref>(&amp;g_hash_tbl,<sp/>key,<sp/>hashit(key));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;removed<sp/>entry<sp/>with<sp/>key<sp/>%lu<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>entry-&gt;key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entry<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(entry_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entry-&gt;key<sp/>=<sp/>key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success<sp/><sp/><sp/><sp/>=<sp/><ref refid="hashtable__standard_8h_1aa96ef1098ef6a786db039ab73c5bd87b" kindref="member" tooltip="Inserts the given entry into the hashtable.">vhashtable_insert</ref>(&amp;g_hash_tbl,<sp/>key,<sp/>&amp;entry-&gt;ht_entry,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hashit(key));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;added<sp/>entry<sp/>with<sp/>key<sp/>%lu<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>entry-&gt;key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(entry);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gdump_exit(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_deregister(&amp;g_gdump,<sp/>&amp;thread);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">yield_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sched_yield();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">reclaim(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="core__u8_8h_1a4bd370c5cd89e15a2d4d38effbd85de3" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic8_read</ref>(&amp;g_stop)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>count<sp/>=<sp/>gdump_recycle(&amp;g_gdump,<sp/>yield_cb,<sp/>NULL,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%zu<sp/>node(s)<sp/>were<sp/>reclaimed\n&quot;</highlight><highlight class="normal">,<sp/>count);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tid<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reclaim();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader_writer();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>pthread_rwlock_init(&amp;g_lock,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_init(&amp;g_gdump,<sp/>g_rwlock_lib);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hashtable__standard_8h_1aa3a2a3286479287b27234a490abe8da7" kindref="member" tooltip="Initializes the hashtable.">vhashtable_init</ref>(&amp;g_hash_tbl,<sp/>retire_callback,<sp/>NULL,<sp/>cmp_callback);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u8_8h_1a3a281f092a90e9be56044f35c3f3cbd2" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic8_write</ref>(&amp;g_stop,<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_join(threads[0],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hashtable__standard_8h_1a23e3cba301c42319f57ab50d15619ebc" kindref="member" tooltip="Retires all entries in the hashtable.">vhashtable_destroy</ref>(&amp;g_hash_tbl);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>gdump_destroy(&amp;g_gdump);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>pthread_rwlock_destroy(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(ret<sp/>==<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VHASHTABLE_STANDARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VHASHTABLE_STANDARD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="listset__lf_8h" kindref="compound" tooltip="Lock-free implementation of listset.">vsync/map/listset_lf.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/map/internal/hashtable/hashtable_config.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structvlistset__s" kindref="compound">vlistset_t</ref><sp/><ref refid="structvlistset__s" kindref="compound">vbucket_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vlistset_key_t<sp/>vhashtable_key_t;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structvlistset__node__s" kindref="compound">vlistset_node_t</ref><sp/><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vlistset_cmp_key_t<sp/>vhashtable_cmp_key_t;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vlistset_handle_node_t<sp/>vhashtable_entry_retire_t;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structvhashtable__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvhashtable__s" kindref="compound">vhashtable_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvlistset__s" kindref="compound">vbucket_t</ref><sp/>buckets[VHASHTABLE_BUCKET_COUNT];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>num_entries;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}<sp/><ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="hashtable__standard_8h_1aa3a2a3286479287b27234a490abe8da7" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1aa3a2a3286479287b27234a490abe8da7" kindref="member" tooltip="Initializes the hashtable.">vhashtable_init</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table,<sp/>vhashtable_entry_retire_t<sp/>retire_cb,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*retire_cb_arg,<sp/>vhashtable_cmp_key_t<sp/>cmp_cb)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>VHASHTABLE_BUCKET_COUNT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="listset__coarse_8h_1aef8cb6bcf462db38974caf37b17fdf28" kindref="member" tooltip="Initializes the given vlistset_t object lst.">vlistset_init</ref>(&amp;table-&gt;buckets[i],<sp/>retire_cb,<sp/>retire_cb_arg,<sp/>cmp_cb);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="hashtable__standard_8h_1a23e3cba301c42319f57ab50d15619ebc" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1a23e3cba301c42319f57ab50d15619ebc" kindref="member" tooltip="Retires all entries in the hashtable.">vhashtable_destroy</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>VHASHTABLE_BUCKET_COUNT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="listset__coarse_8h_1a9417906ed716b9cf5d17b6683fe7ca6c" kindref="member" tooltip="Destroys all the remaining nodes in the listset.">vlistset_destroy</ref>(&amp;table-&gt;buckets[i]);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="97" refid="hashtable__standard_8h_1aa96ef1098ef6a786db039ab73c5bd87b" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1aa96ef1098ef6a786db039ab73c5bd87b" kindref="member" tooltip="Inserts the given entry into the hashtable.">vhashtable_insert</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table,<sp/>vhashtable_key_t<sp/>key,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>*val,<sp/>vsize_t<sp/>hash_idx)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(val);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(hash_idx<sp/>&lt;<sp/>VHASHTABLE_BUCKET_COUNT);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/>=<sp/><ref refid="listset__coarse_8h_1ab7def1d9ca1c82a4add5b41b150cc329" kindref="member" tooltip="Inserts the given node into the listset.">vlistset_add</ref>(&amp;table-&gt;buckets[hash_idx],<sp/>key,<sp/>val);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a61e6b0629cac1d7255f80237bcd267a4" kindref="member" tooltip="Increments the value of a.">vatomic64_inc_rlx</ref>(&amp;table-&gt;num_entries);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvlistset__node__s" kindref="compound">vhashtable_entry_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="122" refid="hashtable__standard_8h_1aad273b2b725b11ab1b24d26c6e78a89d" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1aad273b2b725b11ab1b24d26c6e78a89d" kindref="member" tooltip="Looks for the entry associated with the given key.">vhashtable_get</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table,<sp/>vhashtable_key_t<sp/>key,<sp/>vsize_t<sp/>hash_idx)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(hash_idx<sp/>&lt;<sp/>VHASHTABLE_BUCKET_COUNT);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="listset__coarse_8h_1a95330736de1c02bcd21796dac7200fc1" kindref="member" tooltip="Looks for the listset node associated with the given key.">vlistset_get</ref>(&amp;table-&gt;buckets[hash_idx],<sp/>key);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="140" refid="hashtable__standard_8h_1aa0114e31fac5e8d3408dbc889b0a4257" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1aa0114e31fac5e8d3408dbc889b0a4257" kindref="member" tooltip="Removes the entry associated with the given key from the the hashtable.">vhashtable_remove</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table,<sp/>vhashtable_key_t<sp/>key,<sp/>vsize_t<sp/>hash_idx)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(hash_idx<sp/>&lt;<sp/>VHASHTABLE_BUCKET_COUNT);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/>=<sp/><ref refid="listset__coarse_8h_1ab8ca17d86f085c6734122050cee04a58" kindref="member" tooltip="Removes the node associated with the given key from the listset.">vlistset_remove</ref>(&amp;table-&gt;buckets[hash_idx],<sp/>key);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1aae58ae8cfcc20b774d25aa265291ba37" kindref="member" tooltip="Decrements the value of a.">vatomic64_dec_rlx</ref>(&amp;table-&gt;num_entries);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint64_t</highlight></codeline>
+<codeline lineno="158" refid="hashtable__standard_8h_1aa8c75cae1420440e958bffbdf11d5da5" refkind="member"><highlight class="normal"><ref refid="hashtable__standard_8h_1aa8c75cae1420440e958bffbdf11d5da5" kindref="member" tooltip="Returns the count of entries currently available in the hashtable.">vhashtable_get_entries_count</ref>(<ref refid="structvhashtable__s" kindref="compound">vhashtable_t</ref><sp/>*table)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(table);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;table-&gt;num_entries);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/hashtable_standard.h"/>
+  </compounddef>
+</doxygen>

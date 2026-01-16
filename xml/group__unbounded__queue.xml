@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__unbounded__queue" kind="group">
+    <compoundname>unbounded_queue</compoundname>
+    <title>Unbounded-Queue</title>
+    <innerfile refid="unbounded__queue__lf_8h">unbounded_queue_lf.h</innerfile>
+    <innerfile refid="unbounded__queue__lf__recycle_8h">unbounded_queue_lf_recycle.h</innerfile>
+    <innerfile refid="unbounded__queue__total_8h">unbounded_queue_total.h</innerfile>
+    <innerfile refid="vqueue__prio__skiplist__based_8h">vqueue_prio_skiplist_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__array__based_8h">vqueue_prio_stack_array_based.h</innerfile>
+    <briefdescription>
+<para>Group of Unbounded Queues. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These queues have no capacity limit and thus enqueue operations shall always succeed. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

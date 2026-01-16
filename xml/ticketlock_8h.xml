@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ticketlock_8h" kind="file" language="C++">
+    <compoundname>ticketlock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="rec__ticketlock_8h" local="no">vsync/spinlock/rec_ticketlock.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/spinlock/rec_ticketlock.h</label>
+        <link refid="rec__ticketlock_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/ticketlock.h</label>
+        <link refid="ticketlock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structticketlock__s" prot="public">ticketlock_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ticketlock_8h_1a5e92b3aaaf02203f2d1abe0f668714ed" prot="public" static="no">
+        <name>TICKETLOCK_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .next = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0), .owner = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0)                      \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="28" column="9" bodyfile="vsync/spinlock/ticketlock.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="ticketlock_8h_1a4f9f8acc4a0347884639fea256d3be96" prot="public" static="no">
+        <type>struct <ref refid="structticketlock__s" kindref="compound">ticketlock_s</ref></type>
+        <definition>typedef struct ticketlock_s ticketlock_t</definition>
+        <argsstring></argsstring>
+        <name>ticketlock_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="25" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ticketlock_8h_1ac3d4fe569733d86bcbf7718076315f73" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ticketlock_init</definition>
+        <argsstring>(ticketlock_t *l)</argsstring>
+        <name>ticketlock_init</name>
+        <param>
+          <type><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the ticketlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of ticketlock_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> alternatively use <computeroutput>TICKETLOCK_INIT</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="41" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="ticketlock_8h_1a0dd64bcd770b5a1dc3bcf77e62b33733" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ticketlock_acquire</definition>
+        <argsstring>(ticketlock_t *l)</argsstring>
+        <name>ticketlock_acquire</name>
+        <param>
+          <type><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the ticketlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of ticketlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="52" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="ticketlock_8h_1aaa94462de9f9e38124f88e07da1ecea2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t ticketlock_tryacquire</definition>
+        <argsstring>(ticketlock_t *l)</argsstring>
+        <name>ticketlock_tryacquire</name>
+        <param>
+          <type><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Tries to acquire the ticketlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of ticketlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, if lock is acquired successfully. </para>
+</simplesect>
+<simplesect kind="return"><para>false, if failed to acquire the lock. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="65" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="ticketlock_8h_1a32c25963b2b0cf25ce3dfb407aa8f844" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ticketlock_release</definition>
+        <argsstring>(ticketlock_t *l)</argsstring>
+        <name>ticketlock_release</name>
+        <param>
+          <type><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Releases the ticketlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of ticketlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="77" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="ticketlock_8h_1a0c1165a7b7f20d8efef6bb0588d183ee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t ticketlock_has_waiters</definition>
+        <argsstring>(ticketlock_t *l)</argsstring>
+        <name>ticketlock_has_waiters</name>
+        <param>
+          <type><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether there are threads waiting to acquire the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can only be called by the thread holding the lock, ie, after acquire but before release.</para>
+<para><simplesect kind="return"><para>true, if threads are waiting to acquire the lock. </para>
+</simplesect>
+<simplesect kind="return"><para>false, otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ticketlock.h" line="92" column="1" bodyfile="vsync/spinlock/ticketlock.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Classic ticketlock with two 32-bit variables (owner and next). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Ticketlock is a simple, fair lock (guarantees FIFO order).</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_ticketlock.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ticketlock_8h" kindref="compound" tooltip="Classic ticketlock with two 32-bit variables (owner and next).">vsync/spinlock/ticketlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>g_lock<sp/>=<sp/>TICKETLOCK_INIT();</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ticketlock_8h_1a0dd64bcd770b5a1dc3bcf77e62b33733" kindref="member" tooltip="Acquires the ticketlock.">ticketlock_acquire</ref>(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ticketlock_8h_1a32c25963b2b0cf25ce3dfb407aa8f844" kindref="member" tooltip="Releases the ticketlock.">ticketlock_release</ref>(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_TICKETLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_TICKETLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structticketlock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structticketlock__s" kindref="compound">ticketlock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>next;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>owner;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initializer<sp/>of<sp/>`ticketlock_t`.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TICKETLOCK_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.next<sp/>=<sp/>VATOMIC_INIT(0),<sp/>.owner<sp/>=<sp/>VATOMIC_INIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="ticketlock_8h_1ac3d4fe569733d86bcbf7718076315f73" refkind="member"><highlight class="normal"><ref refid="ticketlock_8h_1ac3d4fe569733d86bcbf7718076315f73" kindref="member" tooltip="Initializes the ticketlock.">ticketlock_init</ref>(<ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;l-&gt;next,<sp/>0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a13a88db8473a8fdc87b09583df0a632b" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic32_init</ref>(&amp;l-&gt;owner,<sp/>0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="ticketlock_8h_1a0dd64bcd770b5a1dc3bcf77e62b33733" refkind="member"><highlight class="normal"><ref refid="ticketlock_8h_1a0dd64bcd770b5a1dc3bcf77e62b33733" kindref="member" tooltip="Acquires the ticketlock.">ticketlock_acquire</ref>(<ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>ticket<sp/>=<sp/><ref refid="core__u32_8h_1ad2d45ba91ff5893fcc8bb2226d6fe8bf" kindref="member" tooltip="Increments the value of a and returns the old value.">vatomic32_get_inc_rlx</ref>(&amp;l-&gt;next);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="await__u32_8h_1abd427e63ba008c5acf2ce310c3048660" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to v.">vatomic32_await_eq_acq</ref>(&amp;l-&gt;owner,<sp/>ticket);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="65" refid="ticketlock_8h_1aaa94462de9f9e38124f88e07da1ecea2" refkind="member"><highlight class="normal"><ref refid="ticketlock_8h_1aaa94462de9f9e38124f88e07da1ecea2" kindref="member" tooltip="Tries to acquire the ticketlock.">ticketlock_tryacquire</ref>(<ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>o<sp/>=<sp/><ref refid="core__u32_8h_1a4ea7e72d38e3ded17bb866fc2c2fef25" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_acq</ref>(&amp;l-&gt;owner);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>n<sp/>=<sp/><ref refid="core__u32_8h_1a8eadbd152a888a0006868c0a9dacc923" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic32_cmpxchg_rlx</ref>(&amp;l-&gt;next,<sp/>o,<sp/>o<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n<sp/>==<sp/>o;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="ticketlock_8h_1a32c25963b2b0cf25ce3dfb407aa8f844" refkind="member"><highlight class="normal"><ref refid="ticketlock_8h_1a32c25963b2b0cf25ce3dfb407aa8f844" kindref="member" tooltip="Releases the ticketlock.">ticketlock_release</ref>(<ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>owner<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;l-&gt;owner);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(&amp;l-&gt;owner,<sp/>owner<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="92" refid="ticketlock_8h_1a0c1165a7b7f20d8efef6bb0588d183ee" refkind="member"><highlight class="normal"><ref refid="ticketlock_8h_1a0c1165a7b7f20d8efef6bb0588d183ee" kindref="member" tooltip="Checks whether there are threads waiting to acquire the lock.">ticketlock_has_waiters</ref>(<ref refid="structticketlock__s" kindref="compound">ticketlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;l-&gt;next)<sp/>-<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;l-&gt;owner))<sp/>&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/ticketlock.h"/>
+  </compounddef>
+</doxygen>

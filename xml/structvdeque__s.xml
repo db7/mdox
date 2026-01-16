@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvdeque__s" kind="struct" language="C++" prot="public">
+    <compoundname>vdeque_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvdeque__s_1a8571642a04c78966263ffcd3c05f527a" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t vdeque_s::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <qualifiedname>vdeque_s::top</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="34" column="17" bodyfile="vsync/queue/chaselev.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvdeque__s_1a30cbf0548376679f30d14a7fa89b10a7" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t vdeque_s::bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <qualifiedname>vdeque_s::bottom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="35" column="17" bodyfile="vsync/queue/chaselev.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvdeque__s_1aa4c38be8e4470e411eb0627c852437c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vdeque_s::vatomicptr</definition>
+        <argsstring>(struct vdeque_array_t *) array</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>vdeque_s::vatomicptr</qualifiedname>
+        <param>
+          <type>struct <ref refid="structvdeque__array__s" kindref="compound">vdeque_array_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="36" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="1">
+        <label>vdeque_s</label>
+        <link refid="structvdeque__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bottom</edgelabel>
+          <edgelabel>top</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/chaselev.h" line="33" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="33" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structvdeque__s_1a30cbf0548376679f30d14a7fa89b10a7" prot="public" virt="non-virtual"><scope>vdeque_s</scope><name>bottom</name></member>
+      <member refid="structvdeque__s_1a8571642a04c78966263ffcd3c05f527a" prot="public" virt="non-virtual"><scope>vdeque_s</scope><name>top</name></member>
+      <member refid="structvdeque__s_1aa4c38be8e4470e411eb0627c852437c0" prot="public" virt="non-virtual"><scope>vdeque_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structclh__qnode__s" kind="struct" language="C++" prot="public">
+    <compoundname>clh_qnode_s</compoundname>
+    <includes refid="clhlock_8h" local="no">vsync/spinlock/clhlock.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structclh__qnode__s_1a854d08f82eabc0e88362c89bbef0f973" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t clh_qnode_s::locked</definition>
+        <argsstring></argsstring>
+        <name>locked</name>
+        <qualifiedname>clh_qnode_s::locked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="28" column="17" bodyfile="vsync/spinlock/clhlock.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Each thread has its own qnode (<computeroutput>clh_qnode_t</computeroutput>). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>When <computeroutput>locked</computeroutput> is set to 1, the thread wants to enter the critical section. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>clh_qnode_s</label>
+        <link refid="structclh__qnode__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>locked</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/clhlock.h" line="27" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="27" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structclh__qnode__s_1a854d08f82eabc0e88362c89bbef0f973" prot="public" virt="non-virtual"><scope>clh_qnode_s</scope><name>locked</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

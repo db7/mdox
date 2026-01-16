@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtwalock__s" kind="struct" language="C++" prot="public">
+    <compoundname>twalock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtwalock__s_1a32cfa3ca879a253409871aaf7034d09c" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t twalock_s::ticket</definition>
+        <argsstring></argsstring>
+        <name>ticket</name>
+        <qualifiedname>twalock_s::ticket</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/twalock.h" line="54" column="17" bodyfile="vsync/spinlock/twalock.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtwalock__s_1aa0b70c0392a452b53b6a770a8c19c337" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t twalock_s::grant</definition>
+        <argsstring></argsstring>
+        <name>grant</name>
+        <qualifiedname>twalock_s::grant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/twalock.h" line="55" column="17" bodyfile="vsync/spinlock/twalock.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>twalock_s</label>
+        <link refid="structtwalock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>grant</edgelabel>
+          <edgelabel>ticket</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/twalock.h" line="53" column="1" bodyfile="vsync/spinlock/twalock.h" bodystart="53" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structtwalock__s_1aa0b70c0392a452b53b6a770a8c19c337" prot="public" virt="non-virtual"><scope>twalock_s</scope><name>grant</name></member>
+      <member refid="structtwalock__s_1a32cfa3ca879a253409871aaf7034d09c" prot="public" virt="non-virtual"><scope>twalock_s</scope><name>ticket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

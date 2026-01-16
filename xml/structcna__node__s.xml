@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcna__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>cna_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcna__node__s_1a54e971141ee2d2a7d3733ae7347e9bff" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t cna_node_s::spin</definition>
+        <argsstring></argsstring>
+        <name>spin</name>
+        <qualifiedname>cna_node_s::spin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/cnalock.h" line="31" column="18" bodyfile="vsync/spinlock/cnalock.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcna__node__s_1ad9580ff19324f2f11f6f8154593c28a5" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t cna_node_s::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>cna_node_s::node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/cnalock.h" line="33" column="17" bodyfile="vsync/spinlock/cnalock.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcna__node__s_1ae125af7695d7961efdfc067a65f7bc8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cna_node_s::vatomicptr</definition>
+        <argsstring>(struct cna_node_s *) next</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>cna_node_s::vatomicptr</qualifiedname>
+        <param>
+          <type>struct <ref refid="structcna__node__s" kindref="compound">cna_node_s</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/cnalock.h" line="32" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cna_node_s</label>
+        <link refid="structcna__node__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>spin</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>node</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="2">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/cnalock.h" line="30" column="1" bodyfile="vsync/spinlock/cnalock.h" bodystart="30" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structcna__node__s_1ad9580ff19324f2f11f6f8154593c28a5" prot="public" virt="non-virtual"><scope>cna_node_s</scope><name>node</name></member>
+      <member refid="structcna__node__s_1a54e971141ee2d2a7d3733ae7347e9bff" prot="public" virt="non-virtual"><scope>cna_node_s</scope><name>spin</name></member>
+      <member refid="structcna__node__s_1ae125af7695d7961efdfc067a65f7bc8d" prot="public" virt="non-virtual"><scope>cna_node_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

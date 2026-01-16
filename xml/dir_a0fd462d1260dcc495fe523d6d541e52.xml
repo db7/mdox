@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a0fd462d1260dcc495fe523d6d541e52" kind="dir">
+    <compoundname>vsync/queue/internal</compoundname>
+    <innerdir refid="dir_bc3ccffa6b931a145fcce7b65d29e907">vsync/queue/internal/bbq</innerdir>
+    <innerdir refid="dir_10a6657268091a8a12b207bf32006abc">vsync/queue/internal/ub</innerdir>
+    <innerfile refid="bounded__ret_8h">bounded_ret.h</innerfile>
+    <innerfile refid="vqueue__prio__lock_8h">vqueue_prio_lock.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/queue/internal/"/>
+  </compounddef>
+</doxygen>

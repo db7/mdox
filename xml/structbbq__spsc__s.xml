@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbbq__spsc__s" kind="struct" language="C++" prot="public">
+    <compoundname>bbq_spsc_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbbq__spsc__s_1afd478f13f164b88ef261089d876b43d9" prot="public" static="no" mutable="no">
+        <type><ref refid="structbbq__config__s" kindref="compound">bbq_config_t</ref> config</type>
+        <definition>bbq_config_t config bbq_spsc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_spsc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_spsc.h" line="76" column="25" bodyfile="vsync/queue/bbq_spsc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__spsc__s_1a5248ca262f689df8361f746782b541a6" prot="public" static="no" mutable="no">
+        <type>vuint64_t widx</type>
+        <definition>vuint64_t widx bbq_spsc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_spsc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_spsc.h" line="77" column="20" bodyfile="vsync/queue/bbq_spsc.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__spsc__s_1a1591aa5de3269df2cf48f23cce6196b1" prot="public" static="no" mutable="no">
+        <type>vuint64_t ridx</type>
+        <definition>vuint64_t ridx bbq_spsc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_spsc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_spsc.h" line="78" column="20" bodyfile="vsync/queue/bbq_spsc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__spsc__s_1a6af72090b4e764b174731a9ffcb5ab0d" prot="public" static="no" mutable="no">
+        <type>vuint8_t blk[]</type>
+        <definition>vuint8_t blk [] bbq_spsc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_spsc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_spsc.h" line="79" column="18" bodyfile="vsync/queue/bbq_spsc.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>bbq_config_s</label>
+        <link refid="structbbq__config__s"/>
+      </node>
+      <node id="1">
+        <label>bbq_spsc_s</label>
+        <link refid="structbbq__spsc__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/bbq_spsc.h" line="75" column="1" bodyfile="vsync/queue/bbq_spsc.h" bodystart="75" bodyend="80"/>
+    <listofallmembers>
+      <member refid="structbbq__spsc__s_1afd478f13f164b88ef261089d876b43d9" prot="public" virt="non-virtual"><scope>bbq_spsc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__spsc__s_1a5248ca262f689df8361f746782b541a6" prot="public" virt="non-virtual"><scope>bbq_spsc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__spsc__s_1a1591aa5de3269df2cf48f23cce6196b1" prot="public" virt="non-virtual"><scope>bbq_spsc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__spsc__s_1a6af72090b4e764b174731a9ffcb5ab0d" prot="public" virt="non-virtual"><scope>bbq_spsc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

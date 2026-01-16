@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvdeque__array__s" kind="struct" language="C++" prot="public">
+    <compoundname>vdeque_array_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvdeque__array__s_1af0eb8d8730bebb8a23cfb812fa6cdd01" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t vdeque_array_s::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>vdeque_array_s::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="29" column="17" bodyfile="vsync/queue/chaselev.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvdeque__array__s_1aa0b2a841de29fc26cc2670e9e988bafe" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t vdeque_array_s::buffer[]</definition>
+        <argsstring>[]</argsstring>
+        <name>buffer</name>
+        <qualifiedname>vdeque_array_s::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/chaselev.h" line="30" column="18" bodyfile="vsync/queue/chaselev.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+      <node id="2">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="1">
+        <label>vdeque_array_s</label>
+        <link refid="structvdeque__array__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/chaselev.h" line="28" column="1" bodyfile="vsync/queue/chaselev.h" bodystart="28" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structvdeque__array__s_1aa0b2a841de29fc26cc2670e9e988bafe" prot="public" virt="non-virtual"><scope>vdeque_array_s</scope><name>buffer</name></member>
+      <member refid="structvdeque__array__s_1af0eb8d8730bebb8a23cfb812fa6cdd01" prot="public" virt="non-virtual"><scope>vdeque_array_s</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

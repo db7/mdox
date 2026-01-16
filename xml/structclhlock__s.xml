@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structclhlock__s" kind="struct" language="C++" prot="public">
+    <compoundname>clhlock_s</compoundname>
+    <includes refid="clhlock_8h" local="no">vsync/spinlock/clhlock.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structclhlock__s_1a136d013437c94dd3a8f91b5435a24b1e" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t clhlock_s::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>clhlock_s::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="39" column="18" bodyfile="vsync/spinlock/clhlock.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structclhlock__s_1aa03d4a8fd436cf4774819258020b147d" prot="public" static="no" mutable="no">
+        <type><ref refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" kindref="member">clh_qnode_t</ref></type>
+        <definition>clh_qnode_t clhlock_s::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <qualifiedname>clhlock_s::initial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="40" column="17" bodyfile="vsync/spinlock/clhlock.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The lock holds a pointer to the tail of the queue. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>clh_qnode_s</label>
+        <link refid="structclh__qnode__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>locked</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>clhlock_s</label>
+        <link refid="structclhlock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tail</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>initial</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="2">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/clhlock.h" line="38" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="38" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structclhlock__s_1aa03d4a8fd436cf4774819258020b147d" prot="public" virt="non-virtual"><scope>clhlock_s</scope><name>initial</name></member>
+      <member refid="structclhlock__s_1a136d013437c94dd3a8f91b5435a24b1e" prot="public" virt="non-virtual"><scope>clhlock_s</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

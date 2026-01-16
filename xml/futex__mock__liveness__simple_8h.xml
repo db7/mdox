@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="futex__mock__liveness__simple_8h" kind="file" language="C++">
+    <compoundname>futex_mock_liveness_simple.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="caslock_8h" local="no">vsync/spinlock/caslock.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="14">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/thread/internal/futex_mock_liveness_simple.h</label>
+        <link refid="futex__mock__liveness__simple_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvfutex__bucket__s" prot="public">vfutex_bucket_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="futex__mock__liveness__simple_8h_1a533942e0074d1bddbb3d3b090f3c66c3" prot="public" static="no">
+        <name>VFUTEX_BUCKET_COUNT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="29" column="9" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="futex__mock__liveness__simple_8h_1a05a83eafa9d01f77fda379d230b06a90" prot="public" static="no">
+        <name>VFUTEX_ADDR_HASH_DIV</name>
+        <initializer>sizeof(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="30" column="9" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="futex__mock__liveness__simple_8h_1a5cc94e29e6d725c4f948f34e0d95aec5" prot="public" static="no">
+        <type>struct <ref refid="structvfutex__bucket__s" kindref="compound">vfutex_bucket_s</ref></type>
+        <definition>typedef struct vfutex_bucket_s vfutex_bucket_t</definition>
+        <argsstring></argsstring>
+        <name>vfutex_bucket_t</name>
+        <briefdescription>
+<para>A simple futex mock for verifying safety and liveness. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This mock has less overhead than <computeroutput><ref refid="futex__mock__liveness_8h_source" kindref="compound">futex_mock_liveness.h</ref></computeroutput> one, but at the cost of not supporting futex_requeue operations and verification failures when two futexes hash to the same bucket. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="27" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="futex__mock__liveness__simple_8h_1abce0d2b13407e3b0690851f394d2067b" prot="public" static="yes" mutable="no">
+        <type><ref refid="structvfutex__bucket__s" kindref="compound">vfutex_bucket_t</ref></type>
+        <definition>vfutex_bucket_t g_vfutex_buckets[VFUTEX_BUCKET_COUNT]</definition>
+        <argsstring>[VFUTEX_BUCKET_COUNT]</argsstring>
+        <name>g_vfutex_buckets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="32" column="24" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="futex__mock__liveness__simple_8h_1a94e1160c07a9a7471ac08faa0833ddb6" prot="public" static="yes" mutable="no">
+        <type><ref refid="structcaslock__s" kindref="compound">caslock_t</ref></type>
+        <definition>caslock_t g_vfutex_lock</definition>
+        <argsstring></argsstring>
+        <name>g_vfutex_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="33" column="18" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="futex__mock__liveness__simple_8h_1a65e96368d1ec4737ecb42e4f90f24fad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vfutex_wait</definition>
+        <argsstring>(vatomic32_t *a, vuint32_t v)</argsstring>
+        <name>vfutex_wait</name>
+        <param>
+          <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="36" column="1" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="36" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="futex__mock__liveness__simple_8h_1ab04a63b17da90570f6e5a15568cf036a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vfutex_wake</definition>
+        <argsstring>(void *a, vuint32_t v)</argsstring>
+        <name>vfutex_wake</name>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness_simple.h" line="59" column="1" bodyfile="vsync/thread/internal/futex_mock_liveness_simple.h" bodystart="59" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VTHREAD_FUTEX_MOCK_LIVENESS_SIMPLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VTHREAD_FUTEX_MOCK_LIVENESS_SIMPLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="caslock_8h" kindref="compound" tooltip="Simple spinlock based on compare-and-swap (CAS).">vsync/spinlock/caslock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structvfutex__bucket__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvfutex__bucket__s" kindref="compound" tooltip="A simple futex mock for verifying safety and liveness.">vfutex_bucket_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*addr;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>grant;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>ticket;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/><ref refid="structvfutex__bucket__s" kindref="compound" tooltip="A simple futex mock for verifying safety and liveness.">vfutex_bucket_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VFUTEX_BUCKET_COUNT<sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VFUTEX_ADDR_HASH_DIV<sp/>sizeof(vatomic32_t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structvfutex__bucket__s" kindref="compound" tooltip="A simple futex mock for verifying safety and liveness.">vfutex_bucket_t</ref><sp/>g_vfutex_buckets[VFUTEX_BUCKET_COUNT];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcaslock__s" kindref="compound">caslock_t</ref><sp/>g_vfutex_lock;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">vfutex_wait(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*a,<sp/>vuint32_t<sp/>v)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>b_idx<sp/>=</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((vuintptr_t)a<sp/>/<sp/>VFUTEX_ADDR_HASH_DIV)<sp/>%<sp/>VFUTEX_BUCKET_COUNT;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvfutex__bucket__s" kindref="compound" tooltip="A simple futex mock for verifying safety and liveness.">vfutex_bucket_t</ref><sp/>*b<sp/>=<sp/>&amp;g_vfutex_buckets[b_idx];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="caslock_8h_1ae0af4a1db1977fcec330196f590e04a9" kindref="member" tooltip="Acquires the CAS lock.">caslock_acquire</ref>(&amp;g_vfutex_lock);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__u32_8h_1a11f2069d6e217a187132517169309d0b" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read</ref>(a)<sp/>!=<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="caslock_8h_1ab57fd7ab8223f82063181abc1fc52e6e" kindref="member" tooltip="Releases the CAS lock.">caslock_release</ref>(&amp;g_vfutex_lock);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b-&gt;addr<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b-&gt;addr<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)a;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(b-&gt;addr<sp/>==<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)a<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Collision<sp/>of<sp/>futex<sp/>address<sp/>hashes<sp/>--<sp/>aborting.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>t<sp/>=<sp/>b-&gt;ticket++;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="caslock_8h_1ab57fd7ab8223f82063181abc1fc52e6e" kindref="member" tooltip="Releases the CAS lock.">caslock_release</ref>(&amp;g_vfutex_lock);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="await__u32_8h_1a3f72f393f627c456b448e3dcb938b0ff" kindref="member" tooltip="Politely awaits the value pointed by a to be greater than or equal to v.">vatomic32_await_ge</ref>(&amp;b-&gt;grant,<sp/>t);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">vfutex_wake(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*a,<sp/>vuint32_t<sp/>v)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>vuintptr_t<sp/>b_idx<sp/>=</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((vuintptr_t)a<sp/>/<sp/>VFUTEX_ADDR_HASH_DIV)<sp/>%<sp/>VFUTEX_BUCKET_COUNT;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvfutex__bucket__s" kindref="compound" tooltip="A simple futex mock for verifying safety and liveness.">vfutex_bucket_t</ref><sp/>*b<sp/>=<sp/>&amp;g_vfutex_buckets[b_idx];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="caslock_8h_1ae0af4a1db1977fcec330196f590e04a9" kindref="member" tooltip="Acquires the CAS lock.">caslock_acquire</ref>(&amp;g_vfutex_lock);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b-&gt;addr)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(b-&gt;addr<sp/>==<sp/>a);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>g<sp/>=<sp/><ref refid="core__u32_8h_1a11f2069d6e217a187132517169309d0b" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read</ref>(&amp;b-&gt;grant);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b-&gt;ticket<sp/>&gt;<sp/>g)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1af3c4aef85bb6583973a4f860529b539f" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write</ref>(&amp;b-&gt;grant,<sp/>g<sp/>+<sp/>VMIN(b-&gt;ticket<sp/>-<sp/>g,<sp/>v));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="caslock_8h_1ab57fd7ab8223f82063181abc1fc52e6e" kindref="member" tooltip="Releases the CAS lock.">caslock_release</ref>(&amp;g_vfutex_lock);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VTHREAD_FUTEX_MOCK_LIVENESS_SIMPLE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="vsync/thread/internal/futex_mock_liveness_simple.h"/>
+  </compounddef>
+</doxygen>

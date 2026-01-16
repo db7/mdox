@@ -1,0 +1,1613 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vqueue__prio__heap__based_8h" kind="file" language="C++">
+    <compoundname>vqueue_prio_heap_based.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="verify_8h" local="no">vsync/common/verify.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <includes refid="vqueue__prio__lock_8h" local="no">vsync/queue/internal/vqueue_prio_lock.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="36">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="39">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="9">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="5">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/queue/internal/vqueue_prio_lock.h</label>
+        <link refid="vqueue__prio__lock_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/queue/vqueue_prio_heap_based.h</label>
+        <link refid="vqueue__prio__heap__based_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>vsync/spinlock/caslock.h</label>
+        <link refid="caslock_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/spinlock/rec_spinlock.h</label>
+        <link refid="rec__spinlock_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>vsync/utils/recursive_lock.h</label>
+        <link refid="recursive__lock_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvqueue__prio__heap__node__s" prot="public">vqueue_prio_heap_node_s</innerclass>
+    <innerclass refid="structvqueue__prio__s" prot="public">vqueue_prio_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" prot="public" static="no">
+        <name>VQUEUE_PRIO_HEAP_CAPACITY</name>
+        <initializer>1024U</initializer>
+        <briefdescription>
+<para><computeroutput>VQUEUE_PRIO_HEAP_CAPACITY</computeroutput> is equal to <computeroutput>1024</computeroutput> by default. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Users may overwrite it by defining <computeroutput>VQUEUE_PRIO_HEAP_CAPACITY=N</computeroutput>. This value determines how many nodes can be stored in the queue.</para>
+<para>&gt; <bold>Note:</bold> <computeroutput>VQUEUE_PRIO_HEAP_CAPACITY</computeroutput> must be power of two. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="47" column="17" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1aa6eafd36263056e6499f4d746f3b3e96" prot="public" static="no">
+        <name>VQUEUE_PRIO_HEAP_LEN</name>
+        <initializer>(<ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member">VQUEUE_PRIO_HEAP_CAPACITY</ref> + 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="51" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a81668f73415ab126151b639239c248a6" prot="public" static="no">
+        <name>VQUEUE_PRIO_ROOT</name>
+        <initializer>1U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="52" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a97ae423045c0eb14ef180ca91c439131" prot="public" static="no">
+        <name>VQUEUE_PRIO_NO_ONE</name>
+        <initializer>VUINT32_MAX</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="53" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1ac489f941b45d385d7f4d7cd9b1fc3677" prot="public" static="no">
+        <name>VQUEUE_PRIO_HEAP_LCK_IDX</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="54" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a9b2a8d256b55d6526fb9f04e578cdaf9" prot="public" static="no">
+        <name>VQUEUE_PRIO_CALC_LCHILD</name>
+        <param><defname>_p_</defname></param>
+        <initializer>((_p_)*2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="55" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a812e24c8a3b08464942d252d28214560" prot="public" static="no">
+        <name>VQUEUE_PRIO_CALC_RCHILD</name>
+        <param><defname>_p_</defname></param>
+        <initializer>(((_p_)*2U) + 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="56" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1ab9be6a1f4fd6e327af563e88c935e1a0" prot="public" static="no">
+        <name>VQUEUE_PRIO_CALC_PARENT</name>
+        <param><defname>_c_</defname></param>
+        <initializer>((_c_) / 2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="57" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vqueue__prio__heap__based_8h_1a4a524fc9c4ce533aa810bb9504169eda" prot="public" static="no">
+        <name>VQUEUE_PRIO_MID_IDX</name>
+        <initializer>(<ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member">VQUEUE_PRIO_HEAP_CAPACITY</ref> / 2U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="58" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="vqueue__prio__heap__based_8h_1ae25ed98cc6275ea9de323aa662790d47" prot="public" static="no" strong="no">
+        <type></type>
+        <name>vqueue_prio_node_status_e</name>
+        <enumvalue id="vqueue__prio__heap__based_8h_1ae25ed98cc6275ea9de323aa662790d47ab74a7d6f2e2a93195518de7490e98188" prot="public">
+          <name>NODE_TAG_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vqueue__prio__heap__based_8h_1ae25ed98cc6275ea9de323aa662790d47ad0b1699302c5e8c8ebe8bc8473fafdaa" prot="public">
+          <name>NODE_TAG_AVAILABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="vqueue__prio__heap__based_8h_1ae25ed98cc6275ea9de323aa662790d47a23db83a3eeeff0d76cc7eb6c9bea77c2" prot="public">
+          <name>NODE_TAG_BUSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="60" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vqueue__prio__heap__based_8h_1a7eed06c3f3e7520886b03b5343b61b6f" prot="public" static="no">
+        <type>enum vqueue_prio_node_status_e</type>
+        <definition>typedef enum vqueue_prio_node_status_e vqueue_prio_node_tag_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_node_tag_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="65" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__heap__based_8h_1af31bab7c8382fa82ef2dc9d82d9b032f" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_heap_node_s</ref></type>
+        <definition>typedef struct vqueue_prio_heap_node_s vqueue_prio_node_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="74" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__heap__based_8h_1ae29dea06e28db442098a459226233d52" prot="public" static="no">
+        <type>vuint32_t(*</type>
+        <definition>typedef vuint32_t(* vqueue_prio_fun_get_tid) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>vqueue_prio_fun_get_tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="76" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__heap__based_8h_1a22b6b468d48bc6c95f8bdd011b4a034d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vqueue_prio_handle_node_t) (void *, void *)</definition>
+        <argsstring>)(void *, void *)</argsstring>
+        <name>vqueue_prio_handle_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="77" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="vqueue__prio__heap__based_8h_1a186936058de6befe63c3f1b08a271126" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref></type>
+        <definition>typedef struct vqueue_prio_s vqueue_prio_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_prio_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="89" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_lock</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vsize_t idx)</argsstring>
+        <name>_vqueue_prio_lock</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Internal functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquires the lock associated with the given index.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lock index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="565" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="565" bodyend="586" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="94" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_unlock</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vsize_t idx)</argsstring>
+        <name>_vqueue_prio_unlock</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Releases the lock associated with the given index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lock index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="595" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="595" bodyend="610" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="95" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a3254b0d625c4e27b0dc0a004797c2caf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_node_init</definition>
+        <argsstring>(vqueue_prio_node_t *node)</argsstring>
+        <name>_vqueue_prio_node_init</name>
+        <param>
+          <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given <computeroutput>node</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="479" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="479" bodyend="486" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="96" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_node_swap</definition>
+        <argsstring>(vqueue_prio_node_t *a, vqueue_prio_node_t *b)</argsstring>
+        <name>_vqueue_prio_node_swap</name>
+        <param>
+          <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Swaps the content of the two given nodes <computeroutput>a</computeroutput> and <computeroutput>b</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> The lock field is not among the swapped fields.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_node_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_node_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="428" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="428" bodyend="452" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="97" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _vqueue_prio_node_am_owner</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vsize_t idx)</argsstring>
+        <name>_vqueue_prio_node_am_owner</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> a node can only be owned when its tag is busy <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the calling thread is the owner of the given node </para>
+</simplesect>
+<simplesect kind="return"><para>false the calling thread is not the owner of the given node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="409" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="409" bodyend="418" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="99" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a658ddf97d438e2af0645ac5073c94c63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_node_occupy</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vsize_t idx, void *data, vuint32_t priority)</argsstring>
+        <name>_vqueue_prio_node_occupy</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>score</declname>
+          <defname>priority</defname>
+        </param>
+        <briefdescription>
+<para>Occupies/reserves the given <computeroutput>node</computeroutput>, by changing its status to busy and sets its data and priority fields to the given values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="462" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="462" bodyend="471" declfile="vsync/queue/vqueue_prio_heap_based.h" declline="101" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a7a06b917e8e65f1239b1ca35a43c628b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_init</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_fun_get_tid get_tid_fun)</argsstring>
+        <name>vqueue_prio_init</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_fun_get_tid</type>
+          <declname>get_tid_fun</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given priority queue object <computeroutput>pqueue</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>get_tid_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer that returns the calling thread id <computeroutput>vuint32_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="112" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="112" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_prio_destroy</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t destroy_cb, void *args)</argsstring>
+        <name>vqueue_prio_destroy</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>destroy_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Destroys all remaining enqueued objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> this is not thread safe and must be called iff all threads are done accessing the queue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of a callback function to call on each queue object to destroy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument of <computeroutput>destroy_cb</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="147" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="147" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1a26ab68549ddf4a358babf832f350b952" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vqueue_prio_add</definition>
+        <argsstring>(vqueue_prio_t *pqueue, void *data, vsize_t priority)</argsstring>
+        <name>vqueue_prio_add</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the given object <computeroutput>data</computeroutput> into the heap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>priority of the given object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the object to enqueue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true insertion succeeded. </para>
+</simplesect>
+<simplesect kind="return"><para>false insertion failed the heap is full. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="174" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="174" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1abd9878f5211eb3e839a9beb060d21e4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * vqueue_prio_remove_min</definition>
+        <argsstring>(vqueue_prio_t *pqueue)</argsstring>
+        <name>vqueue_prio_remove_min</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves an object with the highest available priority. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void* address of the retrieved object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="263" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="263" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="vqueue__prio__heap__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_prio_visit</definition>
+        <argsstring>(vqueue_prio_t *pqueue, vqueue_prio_handle_node_t visitor, void *arg)</argsstring>
+        <name>_vqueue_prio_visit</name>
+        <param>
+          <type><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref> *</type>
+          <declname>pqueue</declname>
+        </param>
+        <param>
+          <type>vqueue_prio_handle_node_t</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Calls <computeroutput>visitor</computeroutput> function on all available nodes in the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> this function is not thread-safe and does not acquire any locks prior to reading the heap content. It is there for testing reasons only and should not be called while more than one thread is accessing the heap.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pqueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_prio_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback function to call on available nodes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second parameter of <computeroutput>visitor</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="500" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="500" bodyend="539"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Unbounded heap-based priority queue. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a fine-grained blocking implementation, which uses <ref refid="rec__spinlock_8h" kindref="compound">rec_spinlock.h</ref>. It has an unbounded priority range, and bounded capacity.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_queue_prio_heap.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="vqueue__prio__heap__based_8h" kindref="compound" tooltip="Unbounded heap-based priority queue.">vsync/queue/vqueue_prio_heap_based.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">__thread<sp/>vuint32_t<sp/>my_tid;<sp/></highlight><highlight class="comment">/*<sp/>this<sp/>is<sp/>just<sp/>an<sp/>example,<sp/>thread<sp/>local<sp/>storage<sp/>is</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>not<sp/>the<sp/>best<sp/>option<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>g_queue;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>a<sp/>unique<sp/>number<sp/>for<sp/>the<sp/>tid<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t</highlight></codeline>
+<codeline><highlight class="normal">get_tid_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>my_tid;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*node,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>cast<sp/>is<sp/>not<sp/>necessary<sp/>it<sp/>is<sp/>just<sp/>to<sp/>emphasize<sp/>that<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>object<sp/>you<sp/>get<sp/>here<sp/>is<sp/>the<sp/>same<sp/>as<sp/>what<sp/>has<sp/>been<sp/>inserted<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>(data_t<sp/>*)node;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>this<sp/>cast<sp/>is<sp/>not<sp/>recommended<sp/>it<sp/>is<sp/>just<sp/>to<sp/>demonstrate<sp/>that<sp/>each<sp/>thread</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>has<sp/>a<sp/>unique<sp/>id<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>my_tid<sp/>=<sp/>(vuint32_t)(vuintptr_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>(data_t<sp/>*)<ref refid="vqueue__prio__heap__based_8h_1abd9878f5211eb3e839a9beb060d21e4e" kindref="member" tooltip="Retrieves an object with the highest available priority.">vqueue_prio_remove_min</ref>(&amp;g_queue);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>success<sp/>=<sp/><ref refid="vqueue__prio__heap__based_8h_1a26ab68549ddf4a358babf832f350b952" kindref="member" tooltip="Inserts the given object data into the heap.">vqueue_prio_add</ref>(&amp;g_queue,<sp/>data,<sp/>i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%u]<sp/>enq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>my_tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;The<sp/>queue<sp/>is<sp/>full&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%u]<sp/>deq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>my_tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a7a06b917e8e65f1239b1ca35a43c628b" kindref="member" tooltip="Initializes the given priority queue object pqueue.">vqueue_prio_init</ref>(&amp;g_queue,<sp/>get_tid_cb);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" kindref="member" tooltip="Destroys all remaining enqueued objects.">vqueue_prio_destroy</ref>(&amp;g_queue,<sp/>destroy_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>&gt; <bold>Note:</bold> If you wish to use this implementation in user-space. Contact the authors for recursive <computeroutput>pthread_mutex</computeroutput> support.</para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 15.4] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_PRIO_HEAP_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_HEAP_BASED_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8h" kindref="compound" tooltip="Verification support.">vsync/common/verify.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/queue/internal/vqueue_prio_lock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VQUEUE_PRIO_HEAP_CAPACITY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined(VSYNC_VERIFICATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>VQUEUE_PRIO_HEAP_CAPACITY<sp/>4U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="47" refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>VQUEUE_PRIO_HEAP_CAPACITY<sp/>1024U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_HEAP_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(VQUEUE_PRIO_HEAP_CAPACITY<sp/>+<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_ROOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_NO_ONE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VUINT32_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_HEAP_LCK_IDX<sp/><sp/><sp/><sp/><sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_CALC_LCHILD(_p_)<sp/>((_p_)*2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_CALC_RCHILD(_p_)<sp/>(((_p_)*2U)<sp/>+<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_CALC_PARENT(_c_)<sp/>((_c_)<sp/>/<sp/>2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_PRIO_MID_IDX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(VQUEUE_PRIO_HEAP_CAPACITY<sp/>/<sp/>2U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>vqueue_prio_node_status_e<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>NODE_TAG_EMPTY,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>node<sp/>is<sp/>not<sp/>in<sp/>use<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>NODE_TAG_AVAILABLE,<sp/></highlight><highlight class="comment">/*<sp/>the<sp/>node<sp/>holds<sp/>data<sp/>and<sp/>priority<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>NODE_TAG_BUSY<sp/></highlight><highlight class="comment">/*<sp/>the<sp/>node<sp/>is<sp/>being<sp/>percolated<sp/>up<sp/>tree,<sp/>and<sp/>is<sp/>not<sp/>yet<sp/>in</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>its<sp/>proper<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/>vqueue_prio_node_tag_t;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structvqueue__prio__heap__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_heap_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_lock_t<sp/>lock;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_node_tag_t<sp/>tag;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>score;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>owner;<sp/></highlight><highlight class="comment">/*<sp/>while<sp/>the<sp/>nodes&apos;<sp/>tag<sp/>is<sp/>busy,<sp/>the<sp/>owner<sp/>field<sp/>holds</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>ID<sp/>of<sp/>the<sp/>thread<sp/>responsible<sp/>for<sp/>moving<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuint32_t<sp/>(*vqueue_prio_fun_get_tid)(void);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vqueue_prio_handle_node_t)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structvqueue__prio__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>next;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>index<sp/>of<sp/>the<sp/>first<sp/>unused<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_lock_t<sp/>*heap_lock;<sp/></highlight><highlight class="comment">/*<sp/>heap<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvstack__node__s" kindref="compound">vqueue_prio_node_t</ref></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[VQUEUE_PRIO_HEAP_LEN];<sp/></highlight><highlight class="comment">/*<sp/>the<sp/>binary<sp/>heap<sp/>is<sp/>represented<sp/>by<sp/>an</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array<sp/>of<sp/>nodes.<sp/>The<sp/>tree<sp/>VQUEUE_PRIO_ROOT<sp/>resides<sp/>at</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index<sp/>1,<sp/>the<sp/>right<sp/>and<sp/>left<sp/>children<sp/>of<sp/>array<sp/>entry<sp/>i</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>are<sp/>entries<sp/>2*i<sp/>and<sp/>(2*i)<sp/>+1<sp/>respectively<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_fun_get_tid<sp/>get_tid_fun;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__heap__based_8h_1a3254b0d625c4e27b0dc0a004797c2caf" kindref="member" tooltip="Initializes the given node.">_vqueue_prio_node_init</ref>(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" kindref="member" tooltip="Swaps the content of the two given nodes a and b.">_vqueue_prio_node_swap</ref>(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*a,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*b);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t<sp/><ref refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" kindref="member" tooltip="Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread.">_vqueue_prio_node_am_owner</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>idx);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="vqueue__prio__heap__based_8h_1a658ddf97d438e2af0645ac5073c94c63" kindref="member" tooltip="Occupies/reserves the given node, by changing its status to busy and sets its data and priority field...">_vqueue_prio_node_occupy</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>vuint32_t<sp/>score);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="vqueue__prio__heap__based_8h_1a7a06b917e8e65f1239b1ca35a43c628b" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a7a06b917e8e65f1239b1ca35a43c628b" kindref="member" tooltip="Initializes the given priority queue object pqueue.">vqueue_prio_init</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_fun_get_tid<sp/>get_tid_fun)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>V_STATIC_ASSERT(V_IS_POWER_OF_TWO(<ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member" tooltip="VQUEUE_PRIO_HEAP_CAPACITY is equal to 1024 by default.">VQUEUE_PRIO_HEAP_CAPACITY</ref>),</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VQUEUE_PRIO_HEAP_CAPACITY<sp/>should<sp/>be<sp/>power<sp/>of<sp/>two&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>note<sp/>that<sp/>insertion<sp/>starts<sp/>at<sp/>index<sp/>1<sp/>which<sp/>is<sp/>equal<sp/>to<sp/>VQUEUE_PRIO_ROOT</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;next<sp/>=<sp/>VQUEUE_PRIO_ROOT;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>initialize<sp/>all<sp/>nodes<sp/>and<sp/>their<sp/>locks<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3254b0d625c4e27b0dc0a004797c2caf" kindref="member" tooltip="Initializes the given node.">_vqueue_prio_node_init</ref>(&amp;pqueue-&gt;heap[i]);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(get_tid_fun);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>since<sp/>first<sp/>node<sp/>is<sp/>never<sp/>used,<sp/>we<sp/>use<sp/>its<sp/>lock<sp/>as<sp/>a<sp/>heap<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;heap_lock<sp/><sp/><sp/>=<sp/>&amp;pqueue-&gt;heap[0].lock;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;get_tid_fun<sp/>=<sp/>get_tid_fun;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="vqueue__prio__heap__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1afcb7d07a0c9d6eb7a64557ffe2b71263" kindref="member" tooltip="Destroys all remaining enqueued objects.">vqueue_prio_destroy</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>destroy_cb,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(destroy_cb)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;heap[i].tag<sp/>!=<sp/>NODE_TAG_EMPTY)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destroy_cb(pqueue-&gt;heap[i].data,<sp/>args);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>pqueue_destroy<sp/>all<sp/>locks<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vqueue_prio_lock_destroy(&amp;pqueue-&gt;heap[i].lock);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="174" refid="vqueue__prio__heap__based_8h_1a26ab68549ddf4a358babf832f350b952" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a26ab68549ddf4a358babf832f350b952" kindref="member" tooltip="Inserts the given object data into the heap.">vqueue_prio_add</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/>vsize_t<sp/>priority)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>old_child<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>child<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>parent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*heap<sp/>=<sp/>&amp;pqueue-&gt;heap[0];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acquire<sp/>the<sp/>heap<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;next<sp/>&gt;=<sp/>VQUEUE_PRIO_HEAP_LEN)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>heap<sp/>is<sp/>full<sp/>we<sp/>cannot<sp/>insert<sp/>more<sp/>items<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>where<sp/>you<sp/>can<sp/>insert<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>child<sp/>=<sp/>pqueue-&gt;next++;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acquire<sp/>the<sp/>lock<sp/>of<sp/>the<sp/>child<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>child);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>own<sp/>the<sp/>child<sp/>node,<sp/>mark<sp/>it<sp/>as<sp/>busy<sp/>and<sp/>fill<sp/>in<sp/>data<sp/>and<sp/>priority<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(priority<sp/>&lt;=<sp/>VUINT32_MAX<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;unsound<sp/>conversion&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a658ddf97d438e2af0645ac5073c94c63" kindref="member" tooltip="Occupies/reserves the given node, by changing its status to busy and sets its data and priority field...">_vqueue_prio_node_occupy</ref>(pqueue,<sp/>child,<sp/>data,<sp/>(vuint32_t)priority);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unlock<sp/>the<sp/>heap<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unlock<sp/>the<sp/>child<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>child);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>percolate<sp/>child<sp/>up<sp/>the<sp/>tree<sp/>to<sp/>find<sp/>the<sp/>right<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(child<sp/>&gt;<sp/>VQUEUE_PRIO_ROOT)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent<sp/>=<sp/>VQUEUE_PRIO_CALC_PARENT(child);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>parent);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>child);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old_child<sp/>=<sp/>child;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>parent<sp/>is<sp/>available<sp/>and<sp/>the<sp/>child<sp/>is<sp/>owned<sp/>by<sp/>the<sp/>caller<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[parent].tag<sp/>==<sp/>NODE_TAG_AVAILABLE<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" kindref="member" tooltip="Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread.">_vqueue_prio_node_am_owner</ref>(pqueue,<sp/>child))<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[child].score<sp/>&lt;<sp/>heap[parent].score)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>child<sp/>has<sp/>higher<sp/>priority<sp/>than<sp/>the<sp/>parent<sp/>then<sp/>we<sp/>swap</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>child<sp/>with<sp/>its<sp/>parent<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" kindref="member" tooltip="Swaps the content of the two given nodes a and b.">_vqueue_prio_node_swap</ref>(&amp;heap[child],<sp/>&amp;heap[parent]);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>move<sp/>up<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>parent;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>child<sp/>has<sp/>the<sp/>right<sp/>position<sp/>already,<sp/>i.e.<sp/>having<sp/>a</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>priority<sp/>lower<sp/>than<sp/>the<sp/>parent.<sp/>Then<sp/>we<sp/>are<sp/>done.<sp/>We<sp/>make<sp/>the</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>child<sp/>available<sp/>now<sp/>and<sp/>release<sp/>ownership.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[child].tag<sp/><sp/><sp/>=<sp/>NODE_TAG_AVAILABLE;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[child].owner<sp/>=<sp/>VQUEUE_PRIO_NO_ONE;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>old_child);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>parent);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" kindref="member" tooltip="Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread.">_vqueue_prio_node_am_owner</ref>(pqueue,<sp/>child))<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>child<sp/>is<sp/>not<sp/>owned<sp/>by<sp/>the<sp/>caller,<sp/>then<sp/>the<sp/>node<sp/>must<sp/>have</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>been<sp/>moved<sp/>up<sp/>by<sp/>a<sp/>concurrent<sp/>removeMin()<sp/>call,<sp/>so<sp/>we<sp/>move<sp/>up<sp/>the</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>tree<sp/>to<sp/>search<sp/>for<sp/>our<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>parent;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>old_child);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>parent);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>as<sp/>long<sp/>as<sp/>we<sp/>did<sp/>not<sp/>read<sp/>the<sp/>VQUEUE_PRIO_ROOT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>we<sp/>are<sp/>at<sp/>VQUEUE_PRIO_ROOT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(child<sp/>==<sp/>VQUEUE_PRIO_ROOT)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" kindref="member" tooltip="Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread.">_vqueue_prio_node_am_owner</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT))<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[VQUEUE_PRIO_ROOT].tag<sp/>=<sp/>NODE_TAG_AVAILABLE;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[child].owner<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>VQUEUE_PRIO_NO_ONE;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="263" refid="vqueue__prio__heap__based_8h_1abd9878f5211eb3e839a9beb060d21e4e" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1abd9878f5211eb3e839a9beb060d21e4e" kindref="member" tooltip="Retrieves an object with the highest available priority.">vqueue_prio_remove_min</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bottom<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>child<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>left<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>right<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>parent<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*heap<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pqueue);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>heap<sp/>=<sp/>&amp;pqueue-&gt;heap[0];</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acquire<sp/>heap<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>handle<sp/>empty<sp/>heap<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;next<sp/>==<sp/>VQUEUE_PRIO_ROOT)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>heap<sp/>is<sp/>empty<sp/>release<sp/>heap<sp/>lock<sp/>and<sp/>return<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;next<sp/>&gt;<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>the<sp/>index<sp/>of<sp/>leaf<sp/>node<sp/>to<sp/>replace<sp/>the<sp/>node<sp/>you<sp/>are<sp/>about<sp/>to<sp/>consume</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>bottom<sp/>=<sp/>--pqueue-&gt;next;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>acquire<sp/>the<sp/>lock<sp/>of<sp/>the<sp/>VQUEUE_PRIO_ROOT<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>lock<sp/>the<sp/>bottom<sp/>item<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>bottom);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>release<sp/>heap<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_HEAP_LCK_IDX);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>there<sp/>is<sp/>nothing<sp/>to<sp/>consume<sp/>at<sp/>the<sp/>VQUEUE_PRIO_ROOT<sp/>return<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[VQUEUE_PRIO_ROOT].tag<sp/>==<sp/>NODE_TAG_EMPTY)<sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>bottom);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>VQUEUE_PRIO_ROOT<sp/>is<sp/>not<sp/>empty,<sp/>we<sp/>will<sp/>consume<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>heap[VQUEUE_PRIO_ROOT].data;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>heap[VQUEUE_PRIO_ROOT].tag<sp/><sp/><sp/>=<sp/>NODE_TAG_EMPTY;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>heap[VQUEUE_PRIO_ROOT].owner<sp/>=<sp/>VQUEUE_PRIO_NO_ONE;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TODO:<sp/>check<sp/>if<sp/>the<sp/>following<sp/>is<sp/>valid</highlight></codeline>
+<codeline lineno="315"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>this<sp/>problem<sp/>is<sp/>not<sp/>handled<sp/>in<sp/>the<sp/>original<sp/>algorithm</highlight></codeline>
+<codeline lineno="316"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>it<sp/>is<sp/>possible<sp/>that<sp/>an<sp/>item<sp/>gets<sp/>added<sp/>with<sp/>busy<sp/>tag</highlight></codeline>
+<codeline lineno="317"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>unlocked,<sp/>before<sp/>it<sp/>is<sp/>resorted<sp/>to<sp/>settle<sp/>in<sp/>the<sp/>correct<sp/>location</highlight></codeline>
+<codeline lineno="318"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>meanwhile<sp/>remove<sp/>swaps<sp/>it,<sp/>before<sp/>its<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>available.</highlight></codeline>
+<codeline lineno="319"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>this<sp/>is<sp/>a<sp/>quick-fix<sp/>that<sp/>need<sp/>to<sp/>be<sp/>thoroughly<sp/>tested/verified</highlight></codeline>
+<codeline lineno="320"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[bottom].tag<sp/>==<sp/>NODE_TAG_BUSY<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[bottom].owner<sp/>!=<sp/>VQUEUE_PRIO_NO_ONE)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[bottom].tag<sp/><sp/><sp/>=<sp/>NODE_TAG_AVAILABLE;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[bottom].owner<sp/>=<sp/>VQUEUE_PRIO_NO_ONE;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>swap<sp/>bottom<sp/>with<sp/>VQUEUE_PRIO_ROOT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" kindref="member" tooltip="Swaps the content of the two given nodes a and b.">_vqueue_prio_node_swap</ref>(&amp;heap[bottom],<sp/>&amp;heap[VQUEUE_PRIO_ROOT]);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>bottom<sp/>is<sp/>now<sp/>empty<sp/>we<sp/>release<sp/>its<sp/>lock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>bottom);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>VQUEUE_PRIO_ROOT<sp/>is<sp/>empty<sp/>(bottom/leaf<sp/>is<sp/>the<sp/>same<sp/>as</highlight></codeline>
+<codeline lineno="334"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>VQUEUE_PRIO_ROOT)<sp/>after<sp/>swapping<sp/>then<sp/>we<sp/>are<sp/>done<sp/>as<sp/>there<sp/>are<sp/>no<sp/>other</highlight></codeline>
+<codeline lineno="335"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>nodes<sp/>in<sp/>the<sp/>heap<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[VQUEUE_PRIO_ROOT].tag<sp/>==<sp/>NODE_TAG_EMPTY)<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>node<sp/>in<sp/>the<sp/>VQUEUE_PRIO_ROOT<sp/>might<sp/>not<sp/>be<sp/>in<sp/>the<sp/>right<sp/>position<sp/>we</highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>need<sp/>to<sp/>percolate<sp/>it<sp/>down<sp/>the<sp/>tree<sp/>until<sp/>it<sp/>reaches<sp/>its<sp/>proper<sp/>position</highlight></codeline>
+<codeline lineno="343"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>parent<sp/>=<sp/>VQUEUE_PRIO_ROOT;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(parent<sp/>&lt;<sp/>VQUEUE_PRIO_MID_IDX)<sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>left<sp/><sp/>=<sp/>VQUEUE_PRIO_CALC_LCHILD(parent);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>right<sp/>=<sp/>VQUEUE_PRIO_CALC_RCHILD(parent);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(left<sp/>&lt;<sp/><ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member" tooltip="VQUEUE_PRIO_HEAP_CAPACITY is equal to 1024 by default.">VQUEUE_PRIO_HEAP_CAPACITY</ref>);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(right<sp/>&lt;<sp/><ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member" tooltip="VQUEUE_PRIO_HEAP_CAPACITY is equal to 1024 by default.">VQUEUE_PRIO_HEAP_CAPACITY</ref>);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>left);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(pqueue,<sp/>right);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[left].tag<sp/>==<sp/>NODE_TAG_EMPTY)<sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>left<sp/>is<sp/>empty,<sp/>we<sp/>unlock<sp/>both<sp/>children<sp/>and<sp/>return<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>right);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>left);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[right].tag<sp/>==<sp/>NODE_TAG_EMPTY<sp/>||</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[left].score<sp/>&lt;<sp/>heap[right].score)<sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>right<sp/>child<sp/>is<sp/>empty<sp/>or<sp/>the<sp/>left<sp/>child<sp/>has<sp/>higher</highlight></codeline>
+<codeline lineno="364"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>priority,<sp/>then<sp/>we<sp/>can<sp/>release<sp/>the<sp/>right.<sp/>Left<sp/>is<sp/>the<sp/>candidate</highlight></codeline>
+<codeline lineno="365"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>for<sp/>swap<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>right);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>left;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>right<sp/>child<sp/>is<sp/>not<sp/>empty<sp/>and<sp/>has<sp/>a<sp/>higher<sp/>priority<sp/>than<sp/>the</highlight></codeline>
+<codeline lineno="370"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>left,<sp/>we<sp/>can<sp/>release<sp/>the<sp/>left.<sp/>Right<sp/>is<sp/>the<sp/>candidate<sp/>for<sp/>swap</highlight></codeline>
+<codeline lineno="371"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>left);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child<sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>check<sp/>if<sp/>the<sp/>child<sp/>need<sp/>to<sp/>be<sp/>swapped<sp/>with<sp/>its<sp/>parent,<sp/>i.e.<sp/>has</highlight></codeline>
+<codeline lineno="376"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>higher<sp/>priority<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap[child].score<sp/>&lt;<sp/>heap[parent].score<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>heap[child].tag<sp/>!=<sp/>NODE_TAG_EMPTY)<sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" kindref="member" tooltip="Swaps the content of the two given nodes a and b.">_vqueue_prio_node_swap</ref>(&amp;heap[parent],<sp/>&amp;heap[child]);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(heap[child].score<sp/>&gt;=<sp/>heap[parent].score);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>release<sp/>the<sp/>parent<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>parent);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>process<sp/>the<sp/>child<sp/>as<sp/>the<sp/>new<sp/>parent<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent<sp/>=<sp/>child;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(heap[child].score<sp/>&gt;=<sp/>heap[parent].score);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>parent<sp/>has<sp/>the<sp/>correct<sp/>position<sp/>no<sp/>need<sp/>to<sp/>swap<sp/>we<sp/>are<sp/>done</highlight></codeline>
+<codeline lineno="388"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>child);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(pqueue,<sp/>parent);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="409" refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a34780140c9cdb41569847deb95565c42" kindref="member" tooltip="Returns true iff the node&apos;s tag is BUSY and the owner is the calling thread.">_vqueue_prio_node_am_owner</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&gt;=<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;heap[idx].tag<sp/>==<sp/>NODE_TAG_BUSY<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pqueue-&gt;heap[idx].owner<sp/>==<sp/>pqueue-&gt;get_tid_fun())<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a0fe5b625b95e25f1ce1fd1cf79fe4bab" kindref="member" tooltip="Swaps the content of the two given nodes a and b.">_vqueue_prio_node_swap</ref>(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*a,<sp/><ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*b)</highlight></codeline>
+<codeline lineno="429"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>owner<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>score<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_node_tag_t<sp/>tag<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>copy<sp/>a<sp/>to<sp/>tmp<sp/>vars<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>score<sp/>=<sp/>a-&gt;score;</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>owner<sp/>=<sp/>a-&gt;owner;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>tag<sp/><sp/><sp/>=<sp/>a-&gt;tag;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/><sp/>=<sp/>a-&gt;data;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>copy<sp/>b<sp/>to<sp/>a<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;score<sp/>=<sp/>b-&gt;score;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;owner<sp/>=<sp/>b-&gt;owner;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;tag<sp/><sp/><sp/>=<sp/>b-&gt;tag;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>a-&gt;data<sp/><sp/>=<sp/>b-&gt;data;</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>tmp<sp/>var<sp/>to<sp/>a<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>b-&gt;score<sp/>=<sp/>score;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>b-&gt;owner<sp/>=<sp/>owner;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>b-&gt;tag<sp/><sp/><sp/>=<sp/>tag;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/>b-&gt;data<sp/><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462" refid="vqueue__prio__heap__based_8h_1a658ddf97d438e2af0645ac5073c94c63" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a658ddf97d438e2af0645ac5073c94c63" kindref="member" tooltip="Occupies/reserves the given node, by changing its status to busy and sets its data and priority field...">_vqueue_prio_node_occupy</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>priority)</highlight></codeline>
+<codeline lineno="464"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&gt;=<sp/>VQUEUE_PRIO_ROOT);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;heap[idx].score<sp/>=<sp/>priority;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;heap[idx].data<sp/><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;heap[idx].owner<sp/>=<sp/>pqueue-&gt;get_tid_fun();</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>pqueue-&gt;heap[idx].tag<sp/><sp/><sp/>=<sp/>NODE_TAG_BUSY;</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479" refid="vqueue__prio__heap__based_8h_1a3254b0d625c4e27b0dc0a004797c2caf" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a3254b0d625c4e27b0dc0a004797c2caf" kindref="member" tooltip="Initializes the given node.">_vqueue_prio_node_init</ref>(<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="480"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;tag<sp/><sp/><sp/>=<sp/>NODE_TAG_EMPTY;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;owner<sp/>=<sp/>VQUEUE_PRIO_NO_ONE;</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;data<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_lock_init(&amp;node-&gt;lock);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="500" refid="vqueue__prio__heap__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1aeb16d6cf8d42cbddcdf5ef248dabd876" kindref="member" tooltip="Calls visitor function on all available nodes in the queue.">_vqueue_prio_visit</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vqueue_prio_handle_node_t<sp/>visitor,</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>left<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>right<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>VQUEUE_PRIO_ROOT;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;heap[i].tag<sp/>!=<sp/>NODE_TAG_BUSY);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;heap[i].owner<sp/>==<sp/>VQUEUE_PRIO_NO_ONE);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>left<sp/><sp/>=<sp/>VQUEUE_PRIO_CALC_LCHILD(i);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>right<sp/>=<sp/>VQUEUE_PRIO_CALC_RCHILD(i);</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(left<sp/>&lt;<sp/><ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member" tooltip="VQUEUE_PRIO_HEAP_CAPACITY is equal to 1024 by default.">VQUEUE_PRIO_HEAP_CAPACITY</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>right<sp/>&lt;<sp/><ref refid="vqueue__prio__heap__based_8h_1a046efebb5c0e2ee35896a678932739d3" kindref="member" tooltip="VQUEUE_PRIO_HEAP_CAPACITY is equal to 1024 by default.">VQUEUE_PRIO_HEAP_CAPACITY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;heap[left].tag<sp/>==<sp/>NODE_TAG_AVAILABLE)<sp/>{</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;heap[left].score<sp/>&gt;=<sp/>pqueue-&gt;heap[i].score);</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;heap[right].tag<sp/>==<sp/>NODE_TAG_AVAILABLE)<sp/>{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;heap[right].score<sp/>&gt;=<sp/>pqueue-&gt;heap[i].score);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(pqueue-&gt;heap[right].tag<sp/>==<sp/>NODE_TAG_EMPTY);</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pqueue-&gt;heap[i].tag<sp/>==<sp/>NODE_TAG_AVAILABLE)<sp/>{</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitor((<ref refid="structvqueue__prio__heap__node__s" kindref="compound">vqueue_prio_node_t</ref><sp/>*)pqueue-&gt;heap[i].data,<sp/>arg);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*status<sp/>=<sp/>pqueue-&gt;heap[i].tag<sp/>==<sp/>NODE_TAG_AVAILABLE<sp/>?</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;avail&quot;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pqueue-&gt;heap[i].tag<sp/>==<sp/>NODE_TAG_EMPTY<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;empty&quot;</highlight><highlight class="normal"><sp/>:</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;busy&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_UNUSED(status);</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DBG_GREEN(</highlight><highlight class="stringliteral">&quot;[%zu]<sp/>Tag:<sp/>%s<sp/>Priority:%u<sp/>&quot;</highlight><highlight class="normal">,<sp/>i,<sp/>status,</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pqueue-&gt;heap[i].score);</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="539"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>active<sp/>only<sp/>during<sp/>testing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ensure<sp/>locks<sp/>are<sp/>always<sp/>acquired<sp/>in<sp/>order<sp/>and<sp/>no<sp/>dead<sp/>lock<sp/>can<sp/>happen</highlight></codeline>
+<codeline lineno="543"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>because<sp/>genmc<sp/>is<sp/>buggy<sp/>we<sp/>need<sp/>a<sp/>work<sp/>around</highlight></codeline>
+<codeline lineno="546"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>#genmc_bug<sp/>https://github.com/MPI-SWS/genmc/issues/49</highlight></codeline>
+<codeline lineno="547"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>+2<sp/>because<sp/>ids<sp/>start<sp/>from<sp/>1,<sp/>and<sp/>we<sp/>also<sp/>want<sp/>to<sp/>count<sp/>for<sp/>main</highlight></codeline>
+<codeline lineno="548"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>thread</highlight></codeline>
+<codeline lineno="549"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>NUM_THREADS<sp/>(NTHREADS<sp/>+<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>locked_child[VQUEUE_PRIO_HEAP_LEN][NUM_THREADS];</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal">__thread<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>locked_child[VQUEUE_PRIO_HEAP_LEN];</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1ac9f985ff3f1fc31bb59bc38c72790e08" kindref="member" tooltip="Internal functions.">_vqueue_prio_lock</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="566"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>tid<sp/>=<sp/>pqueue-&gt;get_tid_fun();</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN);</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tid<sp/>&lt;<sp/>NUM_THREADS);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>idx<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(!locked_child[i][tid]);</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/>locked_child[idx][tid]++;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>idx<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(!locked_child[i]);</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/>locked_child[idx]++;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_lock_acquire(&amp;pqueue-&gt;heap[idx].lock,<sp/>tid);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="595" refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" refkind="member"><highlight class="normal"><ref refid="vqueue__prio__heap__based_8h_1a3434f7d4697ac6dc1b90b116edaac1ab" kindref="member" tooltip="Releases the lock associated with the given index.">_vqueue_prio_unlock</ref>(<ref refid="structvqueue__prio__s" kindref="compound">vqueue_prio_t</ref><sp/>*pqueue,<sp/>vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="596"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>tid<sp/>=<sp/>pqueue-&gt;get_tid_fun();</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>VQUEUE_PRIO_HEAP_LEN);</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VQUEUE_PRIO_TESTING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tid<sp/>&lt;<sp/>NUM_THREADS);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>locked_child[idx][tid]--;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/>locked_child[idx]--;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/>vqueue_prio_lock_release(&amp;pqueue-&gt;heap[idx].lock,<sp/>tid);</highlight></codeline>
+<codeline lineno="610"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_MID_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_CALC_LCHILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_CALC_RCHILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_CALC_PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_HEAP_LEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_ROOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_NO_ONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VQUEUE_PRIO_HEAP_LCK_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/vqueue_prio_heap_based.h"/>
+  </compounddef>
+</doxygen>

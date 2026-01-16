@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structexchanger__s" kind="struct" language="C++" prot="public">
+    <compoundname>exchanger_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexchanger__s_1a2c1e979ddd706dde6f96ca8e8670d246" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref></type>
+        <definition>vatomicptr_t exchanger_s::slot</definition>
+        <argsstring></argsstring>
+        <name>slot</name>
+        <qualifiedname>exchanger_s::slot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/exchanger.h" line="25" column="18" bodyfile="vsync/utils/exchanger.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>exchanger_s</label>
+        <link refid="structexchanger__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>slot</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/utils/exchanger.h" line="24" column="1" bodyfile="vsync/utils/exchanger.h" bodystart="24" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structexchanger__s_1a2c1e979ddd706dde6f96ca8e8670d246" prot="public" virt="non-virtual"><scope>exchanger_s</scope><name>slot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

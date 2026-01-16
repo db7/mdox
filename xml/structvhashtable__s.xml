@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvhashtable__s" kind="struct" language="C++" prot="public">
+    <compoundname>vhashtable_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvhashtable__s_1a547a4bf7da29ec8390a8966ceebb9c7c" prot="public" static="no" mutable="no">
+        <type><ref refid="structvlistset__s" kindref="compound">vbucket_t</ref></type>
+        <definition>vbucket_t vhashtable_s::buckets[VHASHTABLE_BUCKET_COUNT]</definition>
+        <argsstring>[VHASHTABLE_BUCKET_COUNT]</argsstring>
+        <name>buckets</name>
+        <qualifiedname>vhashtable_s::buckets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="43" column="15" bodyfile="vsync/map/hashtable_standard.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvhashtable__s_1a8ff433bc9322cb3f682dd9cd14d56814" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></type>
+        <definition>vatomic64_t vhashtable_s::num_entries</definition>
+        <argsstring></argsstring>
+        <name>num_entries</name>
+        <qualifiedname>vhashtable_s::num_entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/hashtable_standard.h" line="44" column="17" bodyfile="vsync/map/hashtable_standard.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+      <node id="1">
+        <label>vhashtable_s</label>
+        <link refid="structvhashtable__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buckets</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>num_entries</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vlistset_node_s</label>
+        <link refid="structvlistset__node__s"/>
+      </node>
+      <node id="2">
+        <label>vlistset_s</label>
+        <link refid="structvlistset__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cmp_fun</edgelabel>
+          <edgelabel>head_sentinel</edgelabel>
+          <edgelabel>retire_fun</edgelabel>
+          <edgelabel>tail_sentinel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/hashtable_standard.h" line="42" column="1" bodyfile="vsync/map/hashtable_standard.h" bodystart="42" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structvhashtable__s_1a547a4bf7da29ec8390a8966ceebb9c7c" prot="public" virt="non-virtual"><scope>vhashtable_s</scope><name>buckets</name></member>
+      <member refid="structvhashtable__s_1a8ff433bc9322cb3f682dd9cd14d56814" prot="public" virt="non-virtual"><scope>vhashtable_s</scope><name>num_entries</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

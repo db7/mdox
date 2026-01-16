@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structquack__t" kind="struct" language="C++" prot="public">
+    <compoundname>quack_t</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquack__t_1abadfda129066a05b50b04f26b935b5fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>quack_t::vatomicptr</definition>
+        <argsstring>(quack_node_t *) head</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>quack_t::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="structquack__node__s" kindref="compound">quack_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="53" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/stack/quack.h" line="52" column="1" bodyfile="vsync/stack/quack.h" bodystart="52" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structquack__t_1abadfda129066a05b50b04f26b935b5fd" prot="public" virt="non-virtual"><scope>quack_t</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1067 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hclhlock_8h" kind="file" language="C++">
+    <compoundname>hclhlock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/hclhlock.h</label>
+        <link refid="hclhlock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structhclh__qnode__s" prot="public">hclh_qnode_s</innerclass>
+    <innerclass refid="structhclh__lock__s" prot="public">hclh_lock_s</innerclass>
+    <innerclass refid="structhclh__tnode__s" prot="public">hclh_tnode_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" prot="public" static="no">
+        <name>HCLH_MAX_CLUSTERS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+<para>configures the number of available clusters in HCLH lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each cluster has a local queue. Each thread must be associated with a cluster value in <computeroutput>[0: HCLH_MAX_CLUSTERS -1]</computeroutput></para>
+<para>A cluster can be thought of as a NUMA node or cache group. Threads running on cores that belong to the same cache-group or NUMA node are expected to be associated with the same cluster.</para>
+<para>&gt; <bold>Note:</bold> by default 32 clusters are defined. Users can redefine it using: <computeroutput>-DHCLH_MAX_CLUSTERS=N</computeroutput>, where <computeroutput>N</computeroutput> is the number of clusters the user wishes to set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="43" column="13" bodyfile="vsync/spinlock/hclhlock.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1a003f0680552c066182d3c91897a188d4" prot="public" static="no">
+        <name>HCLH_TWS_MASK</name>
+        <initializer>0x80000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="50" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1a2ad344421754a0d8aa6c0a3f4c0db27d" prot="public" static="no">
+        <name>HCLH_SET_TWS_TRUE</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((_s_) |= HCLH_TWS_MASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="51" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1ae3cf480355d6fb79a821c15fa8a24385" prot="public" static="no">
+        <name>HCLH_SET_TWS_FALSE</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((_s_) &amp;= (~HCLH_TWS_MASK))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="52" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1a43569cd1221d10ca877f57a56457a95a" prot="public" static="no">
+        <name>HCLH_IS_TWS</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((((_s_)&amp;HCLH_TWS_MASK) &gt;&gt; 31U) == 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="53" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1ac754d83e21cc338cc6bbae6f82473c6a" prot="public" static="no">
+        <name>HCLH_SMW_MASK</name>
+        <initializer>0x40000000U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="59" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1ac9dec285268969e7077d5d05f9d130ba" prot="public" static="no">
+        <name>HCLH_SET_SMW_TRUE</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((_s_) |= HCLH_SMW_MASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="60" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1a5608529858dee29f81d1784dae1289cc" prot="public" static="no">
+        <name>HCLH_SET_SMW_FALSE</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((_s_) &amp;= (~HCLH_SMW_MASK))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="61" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1aff1ba5e8ab7301b8edcfe70382e25822" prot="public" static="no">
+        <name>HCLH_IS_SMW</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((((_s_)&amp;HCLH_SMW_MASK) &gt;&gt; 30U) == 1U)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="62" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1afb716e717e1f3d8ad0771be8ba37e844" prot="public" static="no">
+        <name>HCLH_CLUSTER_MASK</name>
+        <initializer>0x3FFFFFFFU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="68" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1ac9b242743c7e0c77a1f438c502bf0acb" prot="public" static="no">
+        <name>HCLH_SET_CLUSTER</name>
+        <param><defname>_s_</defname></param>
+        <param><defname>_c_</defname></param>
+        <initializer>    ((_s_) = ((_s_) &amp; (~HCLH_CLUSTER_MASK)) | (_c_))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="69" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="69" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="define" id="hclhlock_8h_1a21401b69a4fb3806eee34d1dff6f56b6" prot="public" static="no">
+        <name>HCLH_GET_CLUSTER</name>
+        <param><defname>_s_</defname></param>
+        <initializer>((_s_)&amp;HCLH_CLUSTER_MASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="71" column="9" bodyfile="vsync/spinlock/hclhlock.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hclhlock_8h_1a427f5414252b1916e4c2412e8c0af72e" prot="public" static="no">
+        <type>struct <ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_s</ref></type>
+        <definition>typedef struct hclh_qnode_s hclh_qnode_t</definition>
+        <argsstring></argsstring>
+        <name>hclh_qnode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="83" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hclhlock_8h_1a79a498dc6f45dc5924319560ac76c94b" prot="public" static="no">
+        <type>struct <ref refid="structhclh__lock__s" kindref="compound">hclh_lock_s</ref></type>
+        <definition>typedef struct hclh_lock_s hclh_lock_t</definition>
+        <argsstring></argsstring>
+        <name>hclh_lock_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="90" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hclhlock_8h_1a8cdbc87b10a6911a621e8c1b40f46655" prot="public" static="no">
+        <type>struct <ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_s</ref></type>
+        <definition>typedef struct hclh_tnode_s hclh_tnode_t</definition>
+        <argsstring></argsstring>
+        <name>hclh_tnode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="95" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="hclhlock_8h_1a43280d16bf3ab48a82d28b77bd084ae9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hclhlock_qnode_hijack</definition>
+        <argsstring>(hclh_tnode_t *, vuint32_t)</argsstring>
+        <name>_hclhlock_qnode_hijack</name>
+        <param>
+          <type><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref> *</type>
+          <defname>tnode</defname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <defname>cluster</defname>
+        </param>
+        <briefdescription>
+<para>Internal functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reinitializes the given state.</para>
+<para>Sets the cluster id and resets the flags SMW and TWS.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the state to reinitialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cluster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster of the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="266" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="266" bodyend="296" declfile="vsync/spinlock/hclhlock.h" declline="100" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint32_t</type>
+        <definition>static vuint32_t _hclh_lock_get_default_state</definition>
+        <argsstring>(vuint32_t cluster)</argsstring>
+        <name>_hclh_lock_get_default_state</name>
+        <param>
+          <type>vuint32_t</type>
+          <defname>cluster</defname>
+        </param>
+        <briefdescription>
+<para>Returns default state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cluster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cluster of calling thread. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint32_t default state value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="350" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="350" bodyend="362" declfile="vsync/spinlock/hclhlock.h" declline="102" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a229a14cee0e7a6edf62c244eb6433f42" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _hclh_await_grant_or_cluster_master</definition>
+        <argsstring>(vatomic32_t *state, vuint32_t cluster)</argsstring>
+        <name>_hclh_await_grant_or_cluster_master</name>
+        <param>
+          <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref> *</type>
+          <defname>state</defname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <defname>cluster</defname>
+        </param>
+        <briefdescription>
+<para>Waits on the given state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A blocking function that waits till either of the following is met:<itemizedlist>
+<listitem><para>the predecessor node is from the same cluster and TWS=SMW=0,</para>
+</listitem><listitem><para>the predecessor node is from a different cluster and TWS=1.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the predecessor&apos;s state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state of the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true pred is from same cluster, SMW=false &amp; TWS=false. </para>
+</simplesect>
+<simplesect kind="return"><para>false pred is not from the same cluster, or TWS=true. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Predecessor state Predecessor is in the same cluster and It Successor must wait is set to false and tail when spliced is set to false</para>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="312" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="312" bodyend="342" declfile="vsync/spinlock/hclhlock.h" declline="104" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a147b50b742baf52fb32644108ea52107" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hclhlock_init</definition>
+        <argsstring>(hclh_lock_t *hclh_lock)</argsstring>
+        <name>hclhlock_init</name>
+        <param>
+          <type><ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref> *</type>
+          <declname>hclh_lock</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hclh_lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hclh_lock object to be initialized. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="113" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="113" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a8831e25ad881ff570d49b737a508f21d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hclhlock_init_tnode</definition>
+        <argsstring>(hclh_tnode_t *tnode, hclh_qnode_t *qnode, vuint32_t cluster)</argsstring>
+        <name>hclhlock_init_tnode</name>
+        <param>
+          <type><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref> *</type>
+          <declname>tnode</declname>
+        </param>
+        <param>
+          <type><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>cluster</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given <computeroutput>tnode</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the hclh_tnode_t object associated with the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the hclh_qnode_t object associated with the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cluster</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the cluster to which the calling thread belongs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> Must be called once before the first call of <computeroutput>hclhlock_acquire</computeroutput>.</para>
+<para>&gt; <bold>Note:</bold> <computeroutput>qnode</computeroutput> must live as long as the system is running and not be freed. The reason is that on release qnodes get passed to successor threads.</para>
+<para>&gt; <bold>Note:</bold> <computeroutput>tnode</computeroutput> should live as long as the associated thread lives. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="138" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="138" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a391983f16114fc44abeba635b3cd6be0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hclhlock_acquire</definition>
+        <argsstring>(hclh_lock_t *lock, hclh_tnode_t *tnode)</argsstring>
+        <name>hclhlock_acquire</name>
+        <param>
+          <type><ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref> *</type>
+          <declname>tnode</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the lock to be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the hclh_tnode_t object associated with the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> <computeroutput>hclhlock_init_tnode</computeroutput> must be called on the given <computeroutput>tnode</computeroutput>, before <computeroutput>hclhlock_acquire</computeroutput> is called for the first time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="163" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="163" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="hclhlock_8h_1a02cf22ac420e1afe71b25f4dc6b90fa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hclhlock_release</definition>
+        <argsstring>(hclh_tnode_t *tnode)</argsstring>
+        <name>hclhlock_release</name>
+        <param>
+          <type><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref> *</type>
+          <declname>tnode</declname>
+        </param>
+        <briefdescription>
+<para>Releases the lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the hclh_tnode_t object associated with the calling thread. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="231" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="231" bodyend="254"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hierarchical CLH Queue Lock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_hclh.c"><codeline><highlight class="comment">/*<sp/>you<sp/>can<sp/>use<sp/>the<sp/>default<sp/>value<sp/>or<sp/>redefine<sp/>it<sp/>to<sp/>indicate<sp/>how<sp/>many<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clusters<sp/>you<sp/>need<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_MAX_CLUSTERS<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hclhlock_8h" kindref="compound" tooltip="Hierarchical CLH Queue Lock.">vsync/spinlock/hclhlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>(N)<sp/>*<sp/>(IT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref><sp/>g_lock;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>g_qnode[N]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>g_tnode[N]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>this<sp/>should<sp/>be<sp/>assigned<sp/>to<sp/>either<sp/>numa<sp/>group<sp/>or<sp/>cache<sp/>group<sp/>where<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>thread<sp/>is<sp/>running<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cluster<sp/>=<sp/>tid<sp/>%<sp/><ref refid="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" kindref="member" tooltip="configures the number of available clusters in HCLH lock.">HCLH_MAX_CLUSTERS</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hclhlock_8h_1a8831e25ad881ff570d49b737a508f21d" kindref="member" tooltip="Initializes the given tnode.">hclhlock_init_tnode</ref>(&amp;g_tnode[tid],<sp/>&amp;g_qnode[tid],<sp/>cluster);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hclhlock_8h_1a391983f16114fc44abeba635b3cd6be0" kindref="member" tooltip="Acquires the lock.">hclhlock_acquire</ref>(&amp;g_lock,<sp/>&amp;g_tnode[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hclhlock_8h_1a02cf22ac420e1afe71b25f4dc6b90fa4" kindref="member" tooltip="Releases the lock.">hclhlock_release</ref>(&amp;g_tnode[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hclhlock_8h_1a147b50b742baf52fb32644108ea52107" kindref="member" tooltip="Initializes the lock.">hclhlock_init</ref>(&amp;g_lock);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x,<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 7.8.2] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_HCLHLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_HCLHLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HCLH_MAX_CLUSTERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>HCLH_MAX_CLUSTERS<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>TWS:<sp/>Tail<sp/>When<sp/>Spliced</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>MSB<sp/><sp/>bits[31:31]<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_TWS_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SET_TWS_TRUE(_s_)<sp/><sp/>((_s_)<sp/>|=<sp/>HCLH_TWS_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SET_TWS_FALSE(_s_)<sp/>((_s_)<sp/>&amp;=<sp/>(~HCLH_TWS_MASK))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_IS_TWS(_s_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((_s_)&amp;HCLH_TWS_MASK)<sp/>&gt;&gt;<sp/>31U)<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>SMW:<sp/>Successor<sp/>Must<sp/>Wait</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>bits[30:30]<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SMW_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40000000U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SET_SMW_TRUE(_s_)<sp/><sp/>((_s_)<sp/>|=<sp/>HCLH_SMW_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SET_SMW_FALSE(_s_)<sp/>((_s_)<sp/>&amp;=<sp/>(~HCLH_SMW_MASK))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_IS_SMW(_s_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((_s_)&amp;HCLH_SMW_MASK)<sp/>&gt;&gt;<sp/>30U)<sp/>==<sp/>1U)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>Cluster<sp/>value<sp/>in</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>bits<sp/>[29:00]</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_CLUSTER_MASK<sp/>0x3FFFFFFFU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_SET_CLUSTER(_s_,<sp/>_c_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((_s_)<sp/>=<sp/>((_s_)<sp/>&amp;<sp/>(~HCLH_CLUSTER_MASK))<sp/>|<sp/>(_c_))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HCLH_GET_CLUSTER(_s_)<sp/>((_s_)&amp;HCLH_CLUSTER_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structhclh__qnode__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state;<sp/></highlight><highlight class="comment">/*<sp/>State<sp/>encodes<sp/>the<sp/>following<sp/>information</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>-<sp/>state[31:31]:<sp/>TWS<sp/>(Tail<sp/>When<sp/>Spliced)<sp/>indicates</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>whether<sp/>the<sp/>node<sp/>is<sp/>the<sp/>last<sp/>node<sp/>in<sp/>the<sp/>sequence</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>being<sp/>spliced<sp/>onto<sp/>the<sp/>global<sp/>queue.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>-<sp/>state[30:30]:<sp/>SMW<sp/>(Successor<sp/>Must<sp/>Wait)<sp/>indicates</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>whether<sp/>the<sp/>successor<sp/>thread<sp/>must<sp/>wait.</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>-<sp/>state[29:00]:<sp/>indicates<sp/>to<sp/>which<sp/>cluster<sp/>the<sp/>thread<sp/>belongs</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}<sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structhclh__lock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhclh__lock__s" kindref="compound">hclh_lock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>local_queues[<ref refid="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" kindref="member" tooltip="configures the number of available clusters in HCLH lock.">HCLH_MAX_CLUSTERS</ref>];<sp/></highlight><highlight class="comment">/*<sp/>tails<sp/>of<sp/>local<sp/>queues,<sp/>one</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>queue<sp/>per<sp/>cluster<sp/>needed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>global_queue;<sp/></highlight><highlight class="comment">/*<sp/>the<sp/>tail<sp/>of<sp/>the<sp/>global<sp/>queue<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>head;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>inital<sp/>node<sp/>in<sp/>the<sp/>global<sp/>queue<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structhclh__tnode__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*pred;<sp/><sp/></highlight><highlight class="comment">/*<sp/>predecessor&apos;s<sp/>qnode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*qnode;<sp/></highlight><highlight class="comment">/*<sp/>thread&apos;s<sp/>qnode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hclhlock_8h_1a43280d16bf3ab48a82d28b77bd084ae9" kindref="member" tooltip="Internal functions.">_hclhlock_qnode_hijack</ref>(<ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>*,<sp/>vuint32_t);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t<sp/><ref refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" kindref="member" tooltip="Returns default state.">_hclh_lock_get_default_state</ref>(vuint32_t);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t<sp/><ref refid="hclhlock_8h_1a229a14cee0e7a6edf62c244eb6433f42" kindref="member" tooltip="Waits on the given state.">_hclh_await_grant_or_cluster_master</ref>(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="hclhlock_8h_1a147b50b742baf52fb32644108ea52107" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a147b50b742baf52fb32644108ea52107" kindref="member" tooltip="Initializes the lock.">hclhlock_init</ref>(<ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref><sp/>*hclh_lock)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;hclh_lock-&gt;head.state,<sp/>0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;hclh_lock-&gt;global_queue,<sp/>&amp;hclh_lock-&gt;head);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" kindref="member" tooltip="configures the number of available clusters in HCLH lock.">HCLH_MAX_CLUSTERS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;hclh_lock-&gt;local_queues[i],<sp/>NULL);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="hclhlock_8h_1a8831e25ad881ff570d49b737a508f21d" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a8831e25ad881ff570d49b737a508f21d" kindref="member" tooltip="Initializes the given tnode.">hclhlock_init_tnode</ref>(<ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>*tnode,<sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*qnode,<sp/>vuint32_t<sp/>cluster)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(qnode);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(cluster<sp/>&lt;<sp/><ref refid="hclhlock_8h_1abfe50f54add6ef7026799c855c490df9" kindref="member" tooltip="configures the number of available clusters in HCLH lock.">HCLH_MAX_CLUSTERS</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" kindref="member" tooltip="Returns default state.">_hclh_lock_get_default_state</ref>(cluster);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;qnode-&gt;state,<sp/>state);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thread&apos;s<sp/>qnode<sp/><sp/>must<sp/>point<sp/>to<sp/>the<sp/>given<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>tnode-&gt;qnode<sp/>=<sp/>qnode;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>tnode-&gt;pred<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="hclhlock_8h_1a391983f16114fc44abeba635b3cd6be0" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a391983f16114fc44abeba635b3cd6be0" kindref="member" tooltip="Acquires the lock.">hclhlock_acquire</ref>(<ref refid="structhclh__lock__s" kindref="compound">hclh_lock_t</ref><sp/>*lock,<sp/><ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>*tnode)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>*local_queue<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*pred<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*local_tail<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref><sp/>*exp_tail<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>state<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cluster<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>succ_state<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>granted<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lock);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;tnode-&gt;qnode-&gt;state);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>cluster<sp/><sp/><sp/><sp/><sp/>=<sp/>HCLH_GET_CLUSTER(state);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>local_queue<sp/>=<sp/>&amp;lock-&gt;local_queues[cluster];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>splice<sp/>my<sp/>qnode<sp/>into<sp/>my<sp/>cluster&apos;s<sp/>local<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp_tail<sp/>=<sp/>pred;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(local_queue,<sp/>exp_tail,<sp/>tnode-&gt;qnode);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pred<sp/>!=<sp/>exp_tail);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>I<sp/>have<sp/>a<sp/>predecessor<sp/>I<sp/>will<sp/>wait<sp/>till<sp/>its<sp/>done<sp/>or<sp/>I<sp/>am<sp/>the<sp/>cluster</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>master</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>granted<sp/>=<sp/><ref refid="hclhlock_8h_1a229a14cee0e7a6edf62c244eb6433f42" kindref="member" tooltip="Waits on the given state.">_hclh_await_grant_or_cluster_master</ref>(&amp;pred-&gt;state,<sp/>cluster);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(granted)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tnode-&gt;pred<sp/>=<sp/>pred;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>I<sp/>have<sp/>been<sp/>granted<sp/>the<sp/>permission<sp/>to<sp/>enter<sp/>the<sp/>CS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>I<sp/>am<sp/>the<sp/>head<sp/>of<sp/>the<sp/>queue,<sp/>I<sp/>am<sp/>the<sp/>cluster<sp/>master<sp/>and<sp/>I<sp/>am<sp/>responsible</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>for<sp/>splicing<sp/>the<sp/>local<sp/>queue<sp/>onto<sp/>the<sp/>global<sp/>queue</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>splice<sp/>my<sp/>qnode<sp/>into<sp/>the<sp/>global<sp/>queue</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_tail<sp/>=<sp/><ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(local_queue);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp_tail<sp/><sp/><sp/>=<sp/>pred;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred<sp/>=<sp/><ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(&amp;lock-&gt;global_queue,<sp/>exp_tail,<sp/>local_tail);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pred<sp/>!=<sp/>exp_tail);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>inform<sp/>successor<sp/>it<sp/>is<sp/>the<sp/>new<sp/>master<sp/>(the<sp/>head<sp/>of<sp/>the<sp/>local<sp/>queue)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>succ_state<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(&amp;local_tail-&gt;state);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>tail<sp/>when<sp/>spliced<sp/>to<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_TWS_TRUE(succ_state);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;local_tail-&gt;state,<sp/>succ_state);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>as<sp/>long<sp/>as<sp/>successor<sp/>must<sp/>wait<sp/>in<sp/>our<sp/>pred<sp/>state<sp/>is<sp/>set,<sp/>we<sp/>wait<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="core__u32_8h_1a4ea7e72d38e3ded17bb866fc2c2fef25" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_acq</ref>(&amp;pred-&gt;state);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HCLH_IS_SMW(state))<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>wait<sp/>for<sp/>the<sp/>state<sp/>to<sp/>change<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>state<sp/>=<sp/><ref refid="await__u32_8h_1a58d3071e90664c660ebce9e0c1c5b8e1" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomic32_await_neq_acq</ref>(&amp;pred-&gt;state,<sp/>state);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>tnode-&gt;pred<sp/>=<sp/>pred;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="hclhlock_8h_1a02cf22ac420e1afe71b25f4dc6b90fa4" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a02cf22ac420e1afe71b25f4dc6b90fa4" kindref="member" tooltip="Releases the lock.">hclhlock_release</ref>(<ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>*tnode)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*state<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cur_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cluster<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode-&gt;qnode);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>=<sp/>&amp;tnode-&gt;qnode-&gt;state;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_state<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(state);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>extract<sp/>cluster</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>cluster<sp/>=<sp/>HCLH_GET_CLUSTER(cur_state);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>successor<sp/>must<sp/>wait<sp/>to<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_SMW_FALSE(cur_state);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(state,<sp/>cur_state);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rest<sp/>the<sp/>state<sp/>and<sp/>take<sp/>the<sp/>qnode<sp/>from<sp/>pred</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hclhlock_8h_1a43280d16bf3ab48a82d28b77bd084ae9" kindref="member" tooltip="Internal functions.">_hclhlock_qnode_hijack</ref>(tnode,<sp/>cluster);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="hclhlock_8h_1a43280d16bf3ab48a82d28b77bd084ae9" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a43280d16bf3ab48a82d28b77bd084ae9" kindref="member" tooltip="Internal functions.">_hclhlock_qnode_hijack</ref>(<ref refid="structhclh__tnode__s" kindref="compound">hclh_tnode_t</ref><sp/>*tnode,<sp/>vuint32_t<sp/>cluster)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cur_state<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/>current<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>exp_state<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/>expected<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>new_state<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/>new<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*state<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tnode-&gt;pred);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(cluster<sp/>&lt;<sp/>HCLH_CLUSTER_MASK);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>state<sp/>=<sp/>&amp;tnode-&gt;pred-&gt;state;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>new_state<sp/>=<sp/><ref refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" kindref="member" tooltip="Returns default state.">_hclh_lock_get_default_state</ref>(cluster);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_state<sp/>=<sp/><ref refid="core__u32_8h_1a68e309d4c8d4c9bd741974508d7114bc" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_rlx</ref>(state);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp_state<sp/>=<sp/>cur_state;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_state<sp/>=<sp/><ref refid="core__u32_8h_1a8eadbd152a888a0006868c0a9dacc923" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic32_cmpxchg_rlx</ref>(state,<sp/>exp_state,<sp/>new_state);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cur_state<sp/>!=<sp/>exp_state);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>NOTE:<sp/>GenMC<sp/>0.9<sp/>has<sp/>a<sp/>bug<sp/>that<sp/>does<sp/>not<sp/>consider<sp/>the<sp/>write<sp/>even<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>successful<sp/>cas<sp/>on<sp/>hclhlock.c<sp/>client<sp/>when<sp/>REACQUIRE<sp/>is<sp/>enabled<sp/>A</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>workaround<sp/>would<sp/>be<sp/>to<sp/>trick<sp/>it<sp/>with<sp/>adding:</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vatomic32_write_rlx(state,<sp/>new_state);</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Right<sp/>now<sp/>the<sp/>REACQUIRE<sp/>is<sp/>disabled,<sp/>and<sp/>should<sp/>be<sp/>re-enabled</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>after<sp/>GenMC<sp/>is<sp/>fixed.</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>tnode-&gt;qnode<sp/>=<sp/>tnode-&gt;pred;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="312" refid="hclhlock_8h_1a229a14cee0e7a6edf62c244eb6433f42" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a229a14cee0e7a6edf62c244eb6433f42" kindref="member" tooltip="Waits on the given state.">_hclh_await_grant_or_cluster_master</ref>(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*state,<sp/>vuint32_t<sp/>cluster)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>cur_state<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/>curr<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>required_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(state);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(cluster<sp/>&lt;<sp/>HCLH_CLUSTER_MASK);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>required_state<sp/>=<sp/><ref refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" kindref="member" tooltip="Returns default state.">_hclh_lock_get_default_state</ref>(cluster);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_SMW_FALSE(required_state);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_state<sp/>=<sp/><ref refid="core__u32_8h_1a4ea7e72d38e3ded17bb866fc2c2fef25" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read_acq</ref>(state);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>same<sp/>cluster,<sp/>SMW=TWS=0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur_state<sp/>==<sp/>required_state)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>diff<sp/>cluster<sp/>or<sp/>TWS=1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(HCLH_GET_CLUSTER(cur_state)<sp/>!=<sp/>cluster<sp/>||<sp/>HCLH_IS_TWS(cur_state))<sp/>{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>a<sp/>new<sp/>update<sp/>to<sp/>occur.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_state<sp/>=<sp/><ref refid="await__u32_8h_1a58d3071e90664c660ebce9e0c1c5b8e1" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomic32_await_neq_acq</ref>(state,<sp/>cur_state);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint32_t</highlight></codeline>
+<codeline lineno="350" refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" refkind="member"><highlight class="normal"><ref refid="hclhlock_8h_1a6a67bc2c8f165c70bf468eab8511ce1e" kindref="member" tooltip="Returns default state.">_hclh_lock_get_default_state</ref>(vuint32_t<sp/>cluster)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(cluster<sp/>&lt;<sp/>HCLH_CLUSTER_MASK);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>cluster<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_CLUSTER(state,<sp/>cluster);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>successor<sp/>must<sp/>wait<sp/>to<sp/>one<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_SMW_TRUE(state);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>set<sp/>tail<sp/>when<sp/>spliced<sp/>to<sp/>false<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>HCLH_SET_TWS_FALSE(state);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>state;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_TWS_MASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SET_TWS_TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SET_TWS_FALSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_IS_TWS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SMW_MASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SET_SMW_TRUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SET_SMW_FALSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_IS_SMW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_CLUSTER_MASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_SET_CLUSTER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HCLH_GET_CLUSTER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/hclhlock.h"/>
+  </compounddef>
+</doxygen>

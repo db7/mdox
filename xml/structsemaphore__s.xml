@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsemaphore__s" kind="struct" language="C++" prot="public">
+    <compoundname>semaphore_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsemaphore__s_1a5c9e9b8b1a7ddd101ba4dc67a3bf7fa8" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t semaphore_s::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <qualifiedname>semaphore_s::s</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/semaphore.h" line="22" column="17" bodyfile="vsync/spinlock/semaphore.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>semaphore_s</label>
+        <link refid="structsemaphore__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/semaphore.h" line="21" column="1" bodyfile="vsync/spinlock/semaphore.h" bodystart="21" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structsemaphore__s_1a5c9e9b8b1a7ddd101ba4dc67a3bf7fa8" prot="public" virt="non-virtual"><scope>semaphore_s</scope><name>s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

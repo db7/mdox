@@ -1,0 +1,1057 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="unbounded__queue__lf__recycle_8h" kind="file" language="C++">
+    <compoundname>unbounded_queue_lf_recycle.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="atomicptr__stamped_8h" local="no">vsync/atomic/atomicptr_stamped.h</includes>
+    <includes refid="verify_8h" local="no">vsync/common/verify.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="vqueue__ub__common_8h" local="no">vsync/queue/internal/ub/vqueue_ub_common.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/atomicptr_stamped.h</label>
+        <link refid="atomicptr__stamped_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/queue/internal/ub/vqueue_ub_common.h</label>
+        <link refid="vqueue__ub__common_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvqueue__ub__node__s" prot="public">vqueue_ub_node_s</innerclass>
+    <innerclass refid="structvqueue__ub__s" prot="public">vqueue_ub_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="unbounded__queue__lf__recycle_8h_1a6417780400235bc045157b90a467be19" prot="public" static="no">
+        <name>RECYCLE_QUEUE_NODE_ALIGNMENT</name>
+        <initializer>V_ATOMICPTR_STAMPED_REQUIRED_ALIGNMENT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="57" column="9" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="unbounded__queue__lf__recycle_8h_1adc620a4c15baab0d865edcf986f30b5e" prot="public" static="no">
+        <type>struct <ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_s</ref></type>
+        <definition>typedef struct vqueue_ub_s vqueue_ub_t</definition>
+        <argsstring></argsstring>
+        <name>vqueue_ub_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="68" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="unbounded__queue__lf__recycle_8h_1a735984d41155bc1032e09bece8f8d66d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="0" column="10" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="0" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1aa068186cc522b6ff402c819630ae9224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref></type>
+        <definition>struct vqueue_ub_node_s __attribute__</definition>
+        <argsstring>((aligned(RECYCLE_QUEUE_NODE_ALIGNMENT))) vqueue_ub_node_t</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(aligned(RECYCLE_QUEUE_NODE_ALIGNMENT))</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="1" column="0" declfile="vsync/queue/unbounded_queue_lf_recycle.h" declline="1" declcolumn="0"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1aed5e367ddc10b8b2b15efdcc90ae6993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>__attribute__::vatomicptr_stamped</definition>
+        <argsstring>(struct vqueue_ub_node_s *) next</argsstring>
+        <name>vatomicptr_stamped</name>
+        <param>
+          <type>struct <ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="1" column="5" declfile="vsync/queue/unbounded_queue_lf_recycle.h" declline="1" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1aeb78e90b50ad586d1dcd6210713ffe2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_ub_init</definition>
+        <argsstring>(vqueue_ub_t *q)</argsstring>
+        <name>vqueue_ub_init</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> Function must be called before threads start operating on the queue.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="78" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1a697e302b166fca179c4bedaafa343ee0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_ub_destroy</definition>
+        <argsstring>(vqueue_ub_t *q, vqueue_ub_node_handler_t retire, void *arg)</argsstring>
+        <name>vqueue_ub_destroy</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vqueue_ub_node_handler_t</type>
+          <declname>retire</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Destroys all remaining nodes in the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> call only after all threads finished operating on the queue.</para>
+<para>&gt; <bold>Note:</bold> NOT THREAD-SAFE.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer of the callback that handles recycling/freeing the remaining nodes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra parameter passed to <computeroutput>retire</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="98" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="98" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1aff51c541400560e4f8580c43e2548356" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vqueue_ub_enq</definition>
+        <argsstring>(vqueue_ub_t *q, vqueue_ub_node_t *qnode, void *data)</argsstring>
+        <name>vqueue_ub_enq</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Enqueue the given node <computeroutput>qnode</computeroutput> in the given queue <computeroutput>q</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_node_t </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of data object to enqueue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="121" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="121" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1a3d9ebb932d40a5c5b0f6d074b6b5fe5f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vqueue_ub_empty</definition>
+        <argsstring>(vqueue_ub_t *q)</argsstring>
+        <name>vqueue_ub_empty</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Check if the queue is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> Use function with caution. It is subject to ABA problems and might return empty when the queue is not empty.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the queue is empty </para>
+</simplesect>
+<simplesect kind="return"><para>false the queue is not empty </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="198" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="198" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1a768d6d39ac315d92e64bc898b327108e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void * vqueue_ub_deq</definition>
+        <argsstring>(vqueue_ub_t *q, vqueue_ub_node_handler_t retire, void *arg)</argsstring>
+        <name>vqueue_ub_deq</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vqueue_ub_node_handler_t</type>
+          <declname>retire</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Dequeue a node from the given queue <computeroutput>q</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>retire</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer of the callback that recycles a detached <computeroutput>vqueue_ub_node_t</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra parameter passed to <computeroutput>retire</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL when the queue is empty. </para>
+</simplesect>
+<simplesect kind="return"><para>a non NULL address of the dequeued data object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="220" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="220" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1a2d067e3520bce7fc3557abbbb38f4f37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t vqueue_ub_get_length</definition>
+        <argsstring>(vqueue_ub_t *q)</argsstring>
+        <name>vqueue_ub_get_length</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+<para>Iterate through the queue nodes and count them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> returns an atomic snapshot of the length, which may be stale</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vsize_t the length of the queue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="276" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="276" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="unbounded__queue__lf__recycle_8h_1afa595e1c477739c0e75a3b93aa393bf2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vqueue_ub_visit_nodes</definition>
+        <argsstring>(vqueue_ub_t *q, vqueue_ub_node_handler_t visitor, void *arg)</argsstring>
+        <name>_vqueue_ub_visit_nodes</name>
+        <param>
+          <type><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>vqueue_ub_node_handler_t</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Visit all available nodes in the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> NOT-THREAD-SAFE. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vqueue_ub_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer of visitor function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra argument passed to visitor function if needed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/unbounded_queue_lf_recycle.h" line="312" column="1" bodyfile="vsync/queue/unbounded_queue_lf_recycle.h" bodystart="312" bodyend="330"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Lock-free recycle unbounded queue. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>&gt; <bold>Note:</bold> Retired Nodes of this queue <bold>cannot</bold> be freed, but can be recycled This queue makes sure that the occurrence of ABA problem is improbable, by using the 7 LSB bits of nodes addresses as a stamp. <computeroutput>cas</computeroutput> can succeed iff the stamps match.</para>
+<para>&gt; <bold>Note:</bold> <computeroutput>vqueue_ub_node_t</computeroutput> objects must be 128byte aligned (i.e. the 7 LSB of their addresses are always zeros). i.e. allocate using <computeroutput>memalign</computeroutput></para>
+<para>&gt; <bold>Note:</bold> maintain a thread local free node list that you place retired nodes on and reuse them for new allocations, unless the list is empty</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_unbounded_queue_lf_recycle.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="unbounded__queue__lf__recycle_8h" kindref="compound" tooltip="Lock-free recycle unbounded queue.">vsync/queue/unbounded_queue_lf_recycle.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;malloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>this<sp/>is<sp/>just<sp/>a<sp/>proof<sp/>of<sp/>concept<sp/>and<sp/>not<sp/>an<sp/>optimal.<sp/>Each<sp/>thread<sp/>shall<sp/>have<sp/>a</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>its<sp/>own<sp/>pool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*local_pools[N]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">data_s<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>id;</highlight></codeline>
+<codeline><highlight class="normal">}<sp/>data_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>g_queue;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_pools(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>local_pools[i];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;curr-&gt;next);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(curr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>succ;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">destroy_cb(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*qnode,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Nodes<sp/>can<sp/>be<sp/>freed<sp/>only<sp/>after<sp/>queue<sp/>destruction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(qnode);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">retire_cb(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*qnode,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>@note:<sp/>Users<sp/>should<sp/>not<sp/>rely<sp/>on<sp/>the<sp/>qnode<sp/>internal<sp/>fields,<sp/>they<sp/>should</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>have<sp/>an<sp/>independent<sp/>pool.<sp/>The<sp/>following<sp/>is<sp/>just<sp/>a<sp/>proof<sp/>of<sp/>concept.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>retired<sp/>nodes<sp/>are<sp/>added<sp/>to<sp/>the<sp/>local<sp/>pool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>current_stamp<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)<ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;qnode-&gt;next,<sp/>&amp;current_stamp);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>connect<sp/>the<sp/>retired<sp/>node<sp/>to<sp/>the<sp/>local<sp/>pool<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1ab2d7a038b5343816a5ef781a6fccd66d" kindref="member" tooltip="Sets the address and stamp of a to the given v and stamp.">vatomicptr_stamped_set</ref>(&amp;qnode-&gt;next,<sp/>local_pools[tid],<sp/>current_stamp<sp/>+<sp/>1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>local_pools[tid]<sp/>=<sp/>qnode;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">alloc_qnode(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*qnode<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(local_pools[tid])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qnode<sp/>=<sp/>local_pools[tid];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>local<sp/>pool<sp/>is<sp/>not<sp/>empty<sp/>use<sp/>a<sp/>node<sp/>from<sp/>there<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>local_pools[tid]<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;local_pools[tid]-&gt;next);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Recycle<sp/>allocation\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>otherwise<sp/>allocated<sp/>an<sp/>aligned<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qnode<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memalign(RECYCLE_QUEUE_NODE_ALIGNMENT,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref>));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;New<sp/>allocation\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(qnode);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>qnode;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/><sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><ref refid="unbounded__queue__lf_8h_1a7687633ae683ef9358ada71a7711cad2" kindref="member" tooltip="Dequeues a node from the given queue q.">vqueue_ub_deq</ref>(&amp;g_queue,<sp/>retire_cb,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data-&gt;id<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>i;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*qnode<sp/>=<sp/>alloc_qnode(tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>enq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="unbounded__queue__lf_8h_1aff51c541400560e4f8580c43e2548356" kindref="member" tooltip="Enqueues the given node qnode in the given queue q.">vqueue_ub_enq</ref>(&amp;g_queue,<sp/>qnode,<sp/>data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[T%zu]<sp/>deq<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>data-&gt;id);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unbounded__queue__lf_8h_1aeb78e90b50ad586d1dcd6210713ffe2e" kindref="member" tooltip="Initializes the queue.">vqueue_ub_init</ref>(&amp;g_queue);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>dequeue<sp/>all<sp/>remaining<sp/>nodes,<sp/>to<sp/>be<sp/>able<sp/>to<sp/>destroy<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(data<sp/>=<sp/><ref refid="unbounded__queue__lf_8h_1a7687633ae683ef9358ada71a7711cad2" kindref="member" tooltip="Dequeues a node from the given queue q.">vqueue_ub_deq</ref>(&amp;g_queue,<sp/>destroy_cb,<sp/>NULL),<sp/>data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>destroy<sp/>the<sp/>queue<sp/>to<sp/>destroy<sp/>the<sp/>remaining<sp/>sentinel<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unbounded__queue__lf_8h_1a697e302b166fca179c4bedaafa343ee0" kindref="member" tooltip="Destroys all remaining nodes in the queue.">vqueue_ub_destroy</ref>(&amp;g_queue,<sp/>destroy_cb,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>destroy<sp/>local<sp/>pools<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>destroy_pools();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<sect3 id="unbounded__queue__lf__recycle_8h_1autotoc_md14">
+<title>Operating conditions</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>vqueue_ub_node_t</computeroutput> objects must be 128byte aligned</para>
+</listitem><listitem><para>Nodes cannot be freed, they can only be recycled</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="unbounded__queue__lf__recycle_8h_1autotoc_md15">
+<title>Recycling tips</title>
+<para><itemizedlist>
+<listitem><para>maintain local pool per thread</para>
+</listitem><listitem><para>when a thread retires a node, add the node to the local pool</para>
+</listitem><listitem><para>when a thread wants to allocate a new node fetch a node from the local unless it is not empty. If it is empty, allocate it with your normal allocator e.g. memalign</para>
+<para>&gt; <bold>Note:</bold> the above suggestions works well for threads that perform roughly the same number of enqueues and dequeues. If that is not the case, a thread needs a strategy of stealing nodes from other pools.</para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Maurice Herlihy, Nir Shavit - [The Art of Multiprocessor Programming 10.6] (<ulink url="https://dl.acm.org/doi/pdf/10.5555/2385452">https://dl.acm.org/doi/pdf/10.5555/2385452</ulink>) </para>
+</sect3>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_UB_LF_RECYCLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_UB_LF_RECYCLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomicptr__stamped_8h" kindref="compound" tooltip="C implementation of AtomicstampedReference in Java.">vsync/atomic/atomicptr_stamped.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8h" kindref="compound" tooltip="Verification support.">vsync/common/verify.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/queue/internal/ub/vqueue_ub_common.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>alignment<sp/>in<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECYCLE_QUEUE_NODE_ALIGNMENT<sp/>V_ATOMICPTR_STAMPED_REQUIRED_ALIGNMENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>vatomicptr_stamped(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref><sp/>*)<sp/>next;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/>__attribute__((aligned(RECYCLE_QUEUE_NODE_ALIGNMENT)))<sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>vatomicptr_stamped(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*)<sp/>head;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>vatomicptr_stamped(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*)<sp/>tail;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>sentinel;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="unbounded__queue__lf__recycle_8h_1aeb78e90b50ad586d1dcd6210713ffe2e" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1aeb78e90b50ad586d1dcd6210713ffe2e" kindref="member" tooltip="Initialize the queue.">vqueue_ub_init</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1a51307cc2e8a84ce2631bf44d2fa2c418" kindref="member" tooltip="Sets the address and stamp of a to the given v and stamp.">vatomicptr_stamped_set_rlx</ref>(&amp;q-&gt;sentinel.next,<sp/>NULL,<sp/>0);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1a51307cc2e8a84ce2631bf44d2fa2c418" kindref="member" tooltip="Sets the address and stamp of a to the given v and stamp.">vatomicptr_stamped_set_rlx</ref>(&amp;q-&gt;head,<sp/>&amp;q-&gt;sentinel,<sp/>0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1a51307cc2e8a84ce2631bf44d2fa2c418" kindref="member" tooltip="Sets the address and stamp of a to the given v and stamp.">vatomicptr_stamped_set_rlx</ref>(&amp;q-&gt;tail,<sp/>&amp;q-&gt;sentinel,<sp/>0);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="unbounded__queue__lf__recycle_8h_1a697e302b166fca179c4bedaafa343ee0" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1a697e302b166fca179c4bedaafa343ee0" kindref="member" tooltip="Destroys all remaining nodes in the queue.">vqueue_ub_destroy</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q,<sp/>vqueue_ub_node_handler_t<sp/>retire,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;curr-&gt;next);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>&amp;q-&gt;sentinel)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retire(curr,<sp/>arg);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>next;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="unbounded__queue__lf__recycle_8h_1aff51c541400560e4f8580c43e2548356" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1aff51c541400560e4f8580c43e2548356" kindref="member" tooltip="Enqueue the given node qnode in the given queue q.">vqueue_ub_enq</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q,<sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*qnode,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*last<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>l_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>next_stamp<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>t_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>cas_succeeded<sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(qnode);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>qnode-&gt;data<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(VSYNC_VERIFICATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>skip<sp/>this<sp/>read<sp/>for<sp/>verification,<sp/>because<sp/>it<sp/>will<sp/>fail<sp/>on<sp/>reading</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uninitialized<sp/>memory.<sp/>Which<sp/>is<sp/>true<sp/>when<sp/>qnode<sp/>is<sp/>freshly<sp/>allocation<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>recycled.<sp/>Nevertheless,<sp/>we<sp/>know<sp/>in<sp/>reality<sp/>the<sp/>trashy<sp/>stamp<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>will<sp/>not<sp/>be<sp/>an<sp/>issue.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;qnode-&gt;next,<sp/>&amp;stamp);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Because<sp/>qnode<sp/>might<sp/>be<sp/>recycled,<sp/>we<sp/>don&apos;t<sp/>want<sp/>to<sp/>reset<sp/>the<sp/>stamp<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>increase<sp/>ABA<sp/>chances.<sp/>So<sp/>we<sp/>keep<sp/>the<sp/>stamp<sp/>value<sp/>as<sp/>is.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>it<sp/>is<sp/>used<sp/>for<sp/>the<sp/>first<sp/>time<sp/>it<sp/>will<sp/>still<sp/>be<sp/>ok<sp/>to<sp/>have<sp/>a<sp/>trashy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stamp,<sp/>we<sp/>can<sp/>start<sp/>the<sp/>count<sp/>from<sp/>any<sp/>place<sp/>that<sp/>is<sp/>not<sp/>zero.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1ab2d7a038b5343816a5ef781a6fccd66d" kindref="member" tooltip="Sets the address and stamp of a to the given v and stamp.">vatomicptr_stamped_set</ref>(&amp;qnode-&gt;next,<sp/>NULL,<sp/>stamp);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;q-&gt;tail,<sp/>&amp;l_stamp);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;last-&gt;next,<sp/>&amp;next_stamp);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(last<sp/>==<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;q-&gt;tail,<sp/>&amp;t_stamp)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l_stamp<sp/>==<sp/>t_stamp)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>the<sp/>node<sp/>has<sp/>a<sp/>successor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(next<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>append<sp/>the<sp/>new<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tail-&gt;next<sp/>=<sp/>n</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="atomicptr__stamped_8h_1ad819a7651a4f3d3bc6885644acdcda31" kindref="member" tooltip="Compares and exchanges the address and stamp value in a.">vatomicptr_stamped_cmpxchg</ref>(&amp;last-&gt;next,<sp/>next,<sp/>next_stamp,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qnode,<sp/>(next_stamp<sp/>+<sp/>1)))<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>advance<sp/>the<sp/>tail<sp/>to<sp/>the<sp/>new<sp/>node.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tail<sp/>=<sp/>n</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>this<sp/>cas<sp/>succeeds<sp/>it<sp/>means</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>managed<sp/>to<sp/>advance<sp/>the<sp/>tail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>it<sp/>fails,<sp/>then<sp/>someone<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>already<sp/>helped<sp/>advancing<sp/>the<sp/>tail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>either<sp/>way<sp/>it<sp/>is<sp/>a<sp/>success.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cas_succeeded<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1ad819a7651a4f3d3bc6885644acdcda31" kindref="member" tooltip="Compares and exchanges the address and stamp value in a.">vatomicptr_stamped_cmpxchg</ref>(</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;q-&gt;tail,<sp/>last,<sp/>l_stamp,<sp/>qnode,<sp/>(l_stamp<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(void)cas_succeeded;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_assume(cas_succeeded);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>is<sp/>a<sp/>successor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>help<sp/>advance<sp/>the<sp/>tail<sp/>to<sp/>the<sp/>successor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>someone<sp/>else<sp/>is<sp/>in<sp/>the<sp/>process<sp/>of<sp/>attaching</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>its<sp/>node.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LP<sp/>for<sp/>the<sp/>thread<sp/>that<sp/>I<sp/>am<sp/>helping<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1ad819a7651a4f3d3bc6885644acdcda31" kindref="member" tooltip="Compares and exchanges the address and stamp value in a.">vatomicptr_stamped_cmpxchg</ref>(&amp;q-&gt;tail,<sp/>last,<sp/>l_stamp,<sp/>next,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(l_stamp<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="198" refid="unbounded__queue__lf__recycle_8h_1a3d9ebb932d40a5c5b0f6d074b6b5fe5f" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1a3d9ebb932d40a5c5b0f6d074b6b5fe5f" kindref="member" tooltip="Check if the queue is empty.">vqueue_ub_empty</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*first<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*last<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>first<sp/>=<sp/>(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*)<ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>last<sp/><sp/>=<sp/>(<ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*)<ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;tail);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(first<sp/>==<sp/>last);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="220" refid="unbounded__queue__lf__recycle_8h_1a768d6d39ac315d92e64bc898b327108e" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1a768d6d39ac315d92e64bc898b327108e" kindref="member" tooltip="Dequeue a node from the given queue q.">vqueue_ub_deq</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q,<sp/>vqueue_ub_node_handler_t<sp/>retire,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*first<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*last<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*next<sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>f_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>l_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>n_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint8_t<sp/>t_stamp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>first<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;q-&gt;head,<sp/>&amp;f_stamp);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last<sp/><sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;q-&gt;tail,<sp/>&amp;l_stamp);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/><sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;first-&gt;next,<sp/>&amp;n_stamp);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>check<sp/>things<sp/>are<sp/>still<sp/>consistent<sp/>with<sp/>what<sp/>we<sp/>read<sp/>above<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(first<sp/>==<sp/><ref refid="atomicptr__stamped_8h_1a1025c92efe39bb8e7dbaf17e2e624788" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get</ref>(&amp;q-&gt;head,<sp/>&amp;t_stamp)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t_stamp<sp/>==<sp/>f_stamp)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(first<sp/>==<sp/>last)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>queue<sp/>is<sp/>empty<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(next<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Help<sp/>current<sp/>enqueuer<sp/>by<sp/>advancing<sp/>tail,<sp/>tail<sp/>=<sp/>tail-&gt;next<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="atomicptr__stamped_8h_1ad819a7651a4f3d3bc6885644acdcda31" kindref="member" tooltip="Compares and exchanges the address and stamp value in a.">vatomicptr_stamped_cmpxchg</ref>(&amp;q-&gt;tail,<sp/>last,<sp/>l_stamp,<sp/>next,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(l_stamp<sp/>+<sp/>1));</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>extract<sp/>data<sp/>before<sp/>dequeuing,<sp/>because<sp/>the<sp/>node<sp/>next<sp/>is</highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>going<sp/>to<sp/>be<sp/>a<sp/>sentinel<sp/>and<sp/>some<sp/>other<sp/>thread<sp/>might</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>recycle/free<sp/>before<sp/>we<sp/>read<sp/>it,<sp/>if<sp/>we<sp/>move<sp/>this<sp/>statement</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>after<sp/>the<sp/>cas<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>next-&gt;data;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="atomicptr__stamped_8h_1ad819a7651a4f3d3bc6885644acdcda31" kindref="member" tooltip="Compares and exchanges the address and stamp value in a.">vatomicptr_stamped_cmpxchg</ref>(&amp;q-&gt;head,<sp/>first,<sp/>f_stamp,<sp/>next,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(f_stamp<sp/>+<sp/>1)))<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(first<sp/>!=<sp/>&amp;q-&gt;sentinel)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retire(first,<sp/>arg);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>if<sp/>consistent<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>while</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="276" refid="unbounded__queue__lf__recycle_8h_1a2d067e3520bce7fc3557abbbb38f4f37" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1a2d067e3520bce7fc3557abbbb38f4f37" kindref="member" tooltip="Iterate through the queue nodes and count them.">vqueue_ub_get_length</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>count<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*head<sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*tail<sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*curr<sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>is_sentinel_behind<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(q);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>head<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>tail<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;tail);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(head<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;head<sp/>should<sp/>always<sp/>point<sp/>to<sp/>a<sp/>sentinel&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(!is_sentinel_behind<sp/>||<sp/>curr<sp/>!=<sp/>&amp;q-&gt;sentinel);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;curr-&gt;next);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_sentinel_behind<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(is_sentinel_behind);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="unbounded__queue__lf__recycle_8h_1afa595e1c477739c0e75a3b93aa393bf2" refkind="member"><highlight class="normal"><ref refid="unbounded__queue__lf__recycle_8h_1afa595e1c477739c0e75a3b93aa393bf2" kindref="member" tooltip="Visit all available nodes in the queue.">_vqueue_ub_visit_nodes</ref>(<ref refid="structvqueue__ub__s" kindref="compound">vqueue_ub_t</ref><sp/>*q,<sp/>vqueue_ub_node_handler_t<sp/>visitor,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(visitor);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;q-&gt;head);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(curr);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>skip<sp/>the<sp/>sentinel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;curr-&gt;next);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>=<sp/><ref refid="atomicptr__stamped_8h_1a102370d0dce3883d8ed12302c201f8e1" kindref="member" tooltip="Returns the address value of a.">vatomicptr_stamped_get_pointer</ref>(&amp;curr-&gt;next);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visitor(curr,<sp/>arg);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>next;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/unbounded_queue_lf_recycle.h"/>
+  </compounddef>
+</doxygen>

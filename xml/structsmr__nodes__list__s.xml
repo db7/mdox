@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsmr__nodes__list__s" kind="struct" language="C++" prot="public">
+    <compoundname>smr_nodes_list_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmr__nodes__list__s_1a7922409441c624b162658da07ff51534" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></type>
+        <definition>vatomic64_t smr_nodes_list_s::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>smr_nodes_list_s::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="18" column="17" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsmr__nodes__list__s_1aa0e0c5521efd43e823ea83e47ca7bbdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>smr_nodes_list_s::vatomicptr</definition>
+        <argsstring>(void *) list</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>smr_nodes_list_s::vatomicptr</qualifiedname>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="17" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>smr_nodes_list_s</label>
+        <link refid="structsmr__nodes__list__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>count</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/internal/smr_nodes_list.h" line="16" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structsmr__nodes__list__s_1a7922409441c624b162658da07ff51534" prot="public" virt="non-virtual"><scope>smr_nodes_list_s</scope><name>count</name></member>
+      <member refid="structsmr__nodes__list__s_1aa0e0c5521efd43e823ea83e47ca7bbdd" prot="public" virt="non-virtual"><scope>smr_nodes_list_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcached__pool__s" kind="struct" language="C++" prot="public">
+    <compoundname>cached_pool_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcached__pool__s_1a30a378aa77ee88d6e61ca546ef69a597" prot="public" static="no" mutable="no">
+        <type><ref refid="structcached__pool__config__s" kindref="compound">cached_pool_config_t</ref> conf</type>
+        <definition>cached_pool_config_t conf cached_pool_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="52" column="31" bodyfile="vsync/pool/cached_pool.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__s_1a0a45281072dc485c40c9acfdd95fa2ad" prot="public" static="no" mutable="no">
+        <type><ref refid="structcached__pool__buffer__s" kindref="compound">cached_pool_buffer_t</ref> *buf</type>
+        <definition>cached_pool_buffer_t* buf cached_pool_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="53" column="30" bodyfile="vsync/pool/cached_pool.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__s_1a736ed0945be5dc41cd7547eeb90e6e71" prot="public" static="no" mutable="no">
+        <type>cached_pool_entry_t *entries</type>
+        <definition>cached_pool_entry_t* entries cached_pool_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="54" column="33" bodyfile="vsync/pool/cached_pool.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__s_1a6c9bb0c942188c0ddd79e26e25842da1" prot="public" static="no" mutable="no">
+        <type><ref refid="structcached__pool__vunit__s" kindref="compound">cached_pool_vunit_t</ref> vunits[]</type>
+        <definition>cached_pool_vunit_t vunits [] cached_pool_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="55" column="32" bodyfile="vsync/pool/cached_pool.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>cached_pool_buffer_s</label>
+        <link refid="structcached__pool__buffer__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cached_pool_config_s</label>
+        <link refid="structcached__pool__config__s"/>
+      </node>
+      <node id="1">
+        <label>cached_pool_s</label>
+        <link refid="structcached__pool__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cached_pool_vunit_s</label>
+        <link refid="structcached__pool__vunit__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/pool/cached_pool.h" line="51" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="51" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structcached__pool__s_1a30a378aa77ee88d6e61ca546ef69a597" prot="public" virt="non-virtual"><scope>cached_pool_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__s_1a0a45281072dc485c40c9acfdd95fa2ad" prot="public" virt="non-virtual"><scope>cached_pool_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__s_1a736ed0945be5dc41cd7547eeb90e6e71" prot="public" virt="non-virtual"><scope>cached_pool_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__s_1a6c9bb0c942188c0ddd79e26e25842da1" prot="public" virt="non-virtual"><scope>cached_pool_s</scope><name>VSYNC_CACHEALIGN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

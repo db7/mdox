@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtreeset__s" kind="struct" language="C++" prot="public">
+    <compoundname>treeset_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtreeset__s_1ad78c1902c76438112c29eb0dc7f916b1" prot="public" static="no" mutable="no">
+        <type><ref refid="structlock__s" kindref="compound">lock_t</ref></type>
+        <definition>lock_t treeset_s::coarse_lock</definition>
+        <argsstring></argsstring>
+        <name>coarse_lock</name>
+        <qualifiedname>treeset_s::coarse_lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="51" column="12" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__s_1adadba618f5a8ae8949de8cd07fbf4071" prot="public" static="no" mutable="no">
+        <type><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref></type>
+        <definition>treeset_node_t treeset_s::head_sentinel</definition>
+        <argsstring></argsstring>
+        <name>head_sentinel</name>
+        <qualifiedname>treeset_s::head_sentinel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="52" column="20" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtreeset__s_1ac4793e03586f179024955a6361b1ae1d" prot="public" static="no" mutable="no">
+        <type><ref refid="structvmem__lib__s" kindref="compound">vmem_lib_t</ref></type>
+        <definition>vmem_lib_t treeset_s::mem_lib</definition>
+        <argsstring></argsstring>
+        <name>mem_lib</name>
+        <qualifiedname>treeset_s::mem_lib</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="53" column="16" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>lock_s</label>
+        <link refid="structlock__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rwlock_s</label>
+        <link refid="structrwlock__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>wb</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>semaphore_s</label>
+        <link refid="structsemaphore__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>treeset_node_s</label>
+        <link refid="structtreeset__node__s"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>child</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>treeset_s</label>
+        <link refid="structtreeset__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coarse_lock</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>head_sentinel</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mem_lib</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ttaslock_s</label>
+        <link refid="structttaslock__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="8">
+        <label>vmem_lib_s</label>
+        <link refid="structvmem__lib__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/treeset_bst_coarse.h" line="50" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="50" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structtreeset__s_1ad78c1902c76438112c29eb0dc7f916b1" prot="public" virt="non-virtual"><scope>treeset_s</scope><name>coarse_lock</name></member>
+      <member refid="structtreeset__s_1adadba618f5a8ae8949de8cd07fbf4071" prot="public" virt="non-virtual"><scope>treeset_s</scope><name>head_sentinel</name></member>
+      <member refid="structtreeset__s_1ac4793e03586f179024955a6361b1ae1d" prot="public" virt="non-virtual"><scope>treeset_s</scope><name>mem_lib</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

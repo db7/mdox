@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvbitmap__iter__s" kind="struct" language="C++" prot="public">
+    <compoundname>vbitmap_iter_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvbitmap__iter__s_1a384738680fdbd96fc767aa9956c9c74b" prot="public" static="no" mutable="no">
+        <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+        <definition>vbitmap_t* vbitmap_iter_s::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <qualifiedname>vbitmap_iter_s::map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="33" column="15" bodyfile="vsync/bitmap/bitmap.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbitmap__iter__s_1ac01344d65cc8bd7e9917442b159f6c64" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vbitmap_iter_s::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <qualifiedname>vbitmap_iter_s::idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="34" column="13" bodyfile="vsync/bitmap/bitmap.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbitmap__iter__s_1a8bff477fcf2a7e7fb4ebd589e6164278" prot="public" static="no" mutable="no">
+        <type>vuint64_t</type>
+        <definition>vuint64_t vbitmap_iter_s::last_val</definition>
+        <argsstring></argsstring>
+        <name>last_val</name>
+        <qualifiedname>vbitmap_iter_s::last_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="35" column="15" bodyfile="vsync/bitmap/bitmap.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+      <node id="1">
+        <label>vbitmap_iter_s</label>
+        <link refid="structvbitmap__iter__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vbitmap_s</label>
+        <link refid="structvbitmap__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>maps</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/bitmap/bitmap.h" line="32" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="32" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structvbitmap__iter__s_1ac01344d65cc8bd7e9917442b159f6c64" prot="public" virt="non-virtual"><scope>vbitmap_iter_s</scope><name>idx</name></member>
+      <member refid="structvbitmap__iter__s_1a8bff477fcf2a7e7fb4ebd589e6164278" prot="public" virt="non-virtual"><scope>vbitmap_iter_s</scope><name>last_val</name></member>
+      <member refid="structvbitmap__iter__s_1a384738680fdbd96fc767aa9956c9c74b" prot="public" virt="non-virtual"><scope>vbitmap_iter_s</scope><name>map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="skiplist__types_8h" kind="file" language="C++">
+    <compoundname>skiplist_types.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="atomicptr__markable_8h" local="no">vsync/atomic/atomicptr_markable.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includedby refid="skiplist__helper_8h" local="no">vsync/map/internal/skiplist/skiplist_helper.h</includedby>
+    <includedby refid="skiplist__internal__fun_8h" local="no">vsync/map/internal/skiplist/skiplist_internal_fun.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/map/internal/skiplist/skiplist_helper.h</label>
+        <link refid="skiplist__helper_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structvskiplist__node__s" prot="public">vskiplist_node_s</innerclass>
+    <innerclass refid="structskiplist__seed__s" prot="public">skiplist_seed_s</innerclass>
+    <innerclass refid="structvskiplist__s" prot="public">vskiplist_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="skiplist__types_8h_1a950e75ab047be76e50737abfec221b3f" prot="public" static="no">
+        <name>VSKIPLIST_MAX_HEIGHT</name>
+        <initializer>32U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="18" column="22" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="skiplist__types_8h_1a26611d2256cb7850cee5e24dc7c9f3cb" prot="public" static="no">
+        <name>VSKIPLIST_SENTINEL_SZ</name>
+        <initializer>    (sizeof(<ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref>) +                                                \
+     (sizeof(<ref refid="structvatomicptr__s" kindref="compound">vatomicptr_markable_t</ref>) * VSKIPLIST_MAX_HEIGHT))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="55" column="9" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="skiplist__types_8h_1ab056ac8c71ad06416e7ad69bd0efebdd" prot="public" static="no">
+        <type>vuintptr_t</type>
+        <definition>typedef vuintptr_t vskiplist_key_t</definition>
+        <argsstring></argsstring>
+        <name>vskiplist_key_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="25" column="20" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="skiplist__types_8h_1ae6ef1f32090859647367d39349d208c8" prot="public" static="no">
+        <type>struct <ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_s</ref></type>
+        <definition>typedef struct vskiplist_node_s vskiplist_node_t</definition>
+        <argsstring></argsstring>
+        <name>vskiplist_node_t</name>
+        <briefdescription>
+<para>&gt; <bold>Note:</bold> when embedding <computeroutput>vskiplist_node_t</computeroutput> in a container struct, place it as the last field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="skiplist__types_8h_1a2236a7d9e6cc2b9dcb2c594029aa6c46" prot="public" static="no">
+        <type>struct <ref refid="structskiplist__seed__s" kindref="compound">skiplist_seed_s</ref></type>
+        <definition>typedef struct skiplist_seed_s vskiplist_seed_t</definition>
+        <argsstring></argsstring>
+        <name>vskiplist_seed_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="41" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="skiplist__types_8h_1ac113d43ea7c0405ebf07348a1febdf2e" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* vskiplist_cmp_node_t) (vskiplist_node_t *, vskiplist_key_t)</definition>
+        <argsstring>)(vskiplist_node_t *, vskiplist_key_t)</argsstring>
+        <name>vskiplist_cmp_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="43" column="9" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="skiplist__types_8h_1aa0045919f8d6ef2b27f2a66349ae68cb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vskiplist_handle_node_t) (vskiplist_node_t *, void *)</definition>
+        <argsstring>)(vskiplist_node_t *, void *)</argsstring>
+        <name>vskiplist_handle_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="44" column="9" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="skiplist__types_8h_1a2bc1ce7e6fae64cd4cf28e7a91d9b974" prot="public" static="no">
+        <type>struct <ref refid="structvskiplist__s" kindref="compound">vskiplist_s</ref></type>
+        <definition>typedef struct vskiplist_s vskiplist_t</definition>
+        <argsstring></argsstring>
+        <name>vskiplist_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="53" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="skiplist__types_8h_1a25d22ff4b50f71583196527e393be09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>V_STATIC_ASSERT</definition>
+        <argsstring>(VSKIPLIST_MAX_HEIGHT&lt;=VUINT8_MAX, &quot;VSKIPLIST_MAX_HEIGHT must be &lt;= VUINT8_MAX&quot;)</argsstring>
+        <name>V_STATIC_ASSERT</name>
+        <param>
+          <type>VSKIPLIST_MAX_HEIGHT&lt;=</type>
+          <declname>VUINT8_MAX</declname>
+        </param>
+        <param>
+          <type>&quot;VSKIPLIST_MAX_HEIGHT must be &lt;= VUINT8_MAX&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="22" column="1" declfile="vsync/map/internal/skiplist/skiplist_types.h" declline="22" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__types_8h_1a20660eccd24f7bdac6f3cd6a37786082" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>static vskiplist_node_t * _vskiplist_head</definition>
+        <argsstring>(vskiplist_t *lst)</argsstring>
+        <name>_vskiplist_head</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="60" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__types_8h_1ae4b7942b10a199a4f1a280b79bacf838" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>static vskiplist_node_t * _vskiplist_tail</definition>
+        <argsstring>(vskiplist_t *lst)</argsstring>
+        <name>_vskiplist_tail</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="66" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSKIPLIST_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSKIPLIST_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomicptr__markable_8h" kindref="compound" tooltip="C implementation of AtomicMarkableReference in Java.">vsync/atomic/atomicptr_markable.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSKIPLIST_MAX_HEIGHT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#if<sp/>defined(VSYNC_VERIFICATION)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>VSKIPLIST_MAX_HEIGHT<sp/>4U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>VSKIPLIST_MAX_HEIGHT<sp/>32U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">V_STATIC_ASSERT(VSKIPLIST_MAX_HEIGHT<sp/>&lt;=<sp/>VUINT8_MAX,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;VSKIPLIST_MAX_HEIGHT<sp/>must<sp/>be<sp/>&lt;=<sp/>VUINT8_MAX&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuintptr_t<sp/>vskiplist_key_t;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structvskiplist__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>non_snipped_level;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>height;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vatomicptr_markable(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<sp/>next[];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structskiplist__seed__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structskiplist__seed__s" kindref="compound">skiplist_seed_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>max_height;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref><sp/>seed;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="structskiplist__seed__s" kindref="compound">vskiplist_seed_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*vskiplist_cmp_node_t)(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,<sp/>vskiplist_key_t);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vskiplist_handle_node_t)(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structvskiplist__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvskiplist__s" kindref="compound">vskiplist_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*head;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*tail;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structskiplist__seed__s" kindref="compound">vskiplist_seed_t</ref><sp/>seed;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>vskiplist_cmp_node_t<sp/>fun_cmp;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>vskiplist_handle_node_t<sp/>fun_retire;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*fun_retire_arg;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSKIPLIST_SENTINEL_SZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(sizeof(vskiplist_node_t)<sp/>+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>(sizeof(vatomicptr_markable_t)<sp/>*<sp/>VSKIPLIST_MAX_HEIGHT))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">_vskiplist_head(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lst-&gt;head;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">_vskiplist_tail(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lst-&gt;tail;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/internal/skiplist/skiplist_types.h"/>
+  </compounddef>
+</doxygen>

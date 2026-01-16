@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a2d0a257ccc78443a3c0586342940af8" kind="dir">
+    <compoundname>vsync/atomic</compoundname>
+    <innerdir refid="dir_07eb5e2f9a9fc57498fe0978db319d16">vsync/atomic/internal</innerdir>
+    <innerfile refid="atomicptr__markable_8h">atomicptr_markable.h</innerfile>
+    <innerfile refid="atomicptr__stamped_8h">atomicptr_stamped.h</innerfile>
+    <innerfile refid="await_8h">await.h</innerfile>
+    <innerfile refid="await__ptr_8h">await_ptr.h</innerfile>
+    <innerfile refid="await__u32_8h">await_u32.h</innerfile>
+    <innerfile refid="await__u64_8h">await_u64.h</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <innerfile refid="core__ptr_8h">core_ptr.h</innerfile>
+    <innerfile refid="core__sz_8h">core_sz.h</innerfile>
+    <innerfile refid="core__u16_8h">core_u16.h</innerfile>
+    <innerfile refid="core__u32_8h">core_u32.h</innerfile>
+    <innerfile refid="core__u64_8h">core_u64.h</innerfile>
+    <innerfile refid="core__u8_8h">core_u8.h</innerfile>
+    <innerfile refid="dispatch_8h">dispatch.h</innerfile>
+    <innerfile refid="atomic_2doc_8h">doc.h</innerfile>
+    <briefdescription>
+<para>Rich interface of atomic operations and fences. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>VSync atomics (VAtomics) implements a rich interface of atomic operations and fences. It employs efficient custom assembly for supported architectures, and falls back to compiler builtins otherwise.</para>
+<sect3 id="/home/diogo/Workspaces/libvsync/build/installed/include/vsync/atomic/doc.h_1autotoc_md4">
+<title>Atomic types</title>
+<para><ref refid="core_8h" kindref="compound">core.h</ref> implements the following atomic types:</para>
+<para><table rows="6" cols="2"><row>
+<entry thead="yes"><para>Atomic type (A)   </para>
+</entry><entry thead="yes"><para>Related type (T)    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>vatomic8_t   </para>
+</entry><entry thead="no"><para>vuint8_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>vatomic16_t   </para>
+</entry><entry thead="no"><para>vuint16_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>vatomic32_t   </para>
+</entry><entry thead="no"><para>vuint32_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>vatomic64_t   </para>
+</entry><entry thead="no"><para>vuint64_t    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>vatomicptr_t   </para>
+</entry><entry thead="no"><para>void*   </para>
+</entry></row>
+</table>
+</para>
+<para>Functions are always prefixed with the atomic type, e.g., <ref refid="core__u32_8h_1a11f2069d6e217a187132517169309d0b" kindref="member">vatomic32_read()</ref>, <ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member">vatomic64_read()</ref>, <ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member">vatomicptr_read()</ref>. Arguments or return values typically are of related types, e.g., <computeroutput><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member">vatomic64_write(vatomic64_t *a, vuint64_t v)</ref></computeroutput>.</para>
+<para>The types <computeroutput>vuint32_t</computeroutput> and <computeroutput>vuint64_t</computeroutput> map to equivalent types from &lt;stdint.h&gt; unless VSYNC_ENABLE_FREESTANDING is defined.</para>
+<para>Note that a few functions are not defined for vatomicptr_t, e.g., add, sub, etc.</para>
+</sect3>
+<sect3 id="/home/diogo/Workspaces/libvsync/build/installed/include/vsync/atomic/doc.h_1autotoc_md5">
+<title>Memory orders</title>
+<para>By default, atomic functions are <emphasis>seq_cst</emphasis> (sequentially consistent). To specify another memory order, add the corresponding suffix to the function name:</para>
+<para><table rows="4" cols="2"><row>
+<entry thead="yes"><para>Mode   </para>
+</entry><entry thead="yes"><para>Suffix    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>acquire   </para>
+</entry><entry thead="no"><para><computeroutput>_acq</computeroutput>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>release   </para>
+</entry><entry thead="no"><para><computeroutput>_rel</computeroutput>    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>relaxed   </para>
+</entry><entry thead="no"><para><computeroutput>_rlx</computeroutput>   </para>
+</entry></row>
+</table>
+</para>
+<para>&gt; <bold>Note:</bold> Not all functions support every memory order. See the function documentation for more information.</para>
+</sect3>
+<sect3 id="/home/diogo/Workspaces/libvsync/build/installed/include/vsync/atomic/doc.h_1autotoc_md6">
+<title>Components</title>
+<para>VSync atomics are divided in several components.</para>
+<para>For the declaration and definition of the core atomic operations and fences, include <ref refid="core_8h" kindref="compound">core.h</ref> (as in <computeroutput>#include &lt;<ref refid="core_8h" kindref="compound">vsync/atomic/core.h</ref>&gt;</computeroutput>).</para>
+<para>For a set of advanced atomic operations optimized for politely waiting (spinning), include <ref refid="await_8h" kindref="compound">await.h</ref>.</para>
+<para>For readability and ease of use, include <ref refid="internal_2dispatch_8h" kindref="compound">dispatch.h</ref>. It introduces several macro dispatchers prefixed with vatomic_. These dispatchers map to the call to the respective vatomic8_, vatomic16_, vatomic32_ or vatomi64_ functions depending on the type/size of the arguments. For example, <ref refid="dispatch_8h_1ac6366ed21a38b0d8daa8f1f746365207" kindref="member">vatomic_read(a)</ref> is the same as vatomic32_read(a) if the type of <computeroutput>a</computeroutput> is vatomic32_t.</para>
+<para>More advanced stamped and marked atomic pointers are available in <ref refid="atomicptr__stamped_8h" kindref="compound">atomicptr_stamped.h</ref> and <ref refid="atomicptr__markable_8h" kindref="compound">atomicptr_markable.h</ref>.</para>
+</sect3>
+<sect3 id="/home/diogo/Workspaces/libvsync/build/installed/include/vsync/atomic/doc.h_1autotoc_md7">
+<title>Implementation variants</title>
+<para>Optimized atomic implementations are available for ARMv7 (32 and 64 bits) and ARMv8 (32 and 64 bits). For all other architectures, including x86_64, the fallback is <computeroutput>__atomic</computeroutput> compiler builtins. To force the use of compiler builtins, define VATOMIC_BUILTINS.</para>
+<para>For further configuration flags, please refer to <ref refid="config_8h" kindref="compound">config.h</ref>.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_core.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>var;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvatomicptr__s" kindref="compound">vatomicptr_t</ref><sp/>ptr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">foo(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1af3c4aef85bb6583973a4f860529b539f" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write</ref>(&amp;var,<sp/>1000);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a0652540f70408d96a8741a3126b7a74e" kindref="member" tooltip="Adds v to the value of a.">vatomic32_add</ref>(&amp;var,<sp/>10);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>val<sp/>=<sp/><ref refid="core__u32_8h_1a11f2069d6e217a187132517169309d0b" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic32_read</ref>(&amp;var);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(val<sp/>==<sp/>1010);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(<ref refid="core__u32_8h_1a22b98df0acfefca441f5bf147e08f4dd" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomic32_cmpxchg</ref>(&amp;var,<sp/>val,<sp/>0)<sp/>==<sp/>val);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>123;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a305c975afa453b26d513aadbe0cc5dfc" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write</ref>(&amp;ptr,<sp/>&amp;x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*y<sp/>=<sp/><ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;ptr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(*y)++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(*y<sp/>==<sp/>x);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;passed\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>foo();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+</sect3>
+    </detaileddescription>
+    <location file="vsync/atomic/"/>
+  </compounddef>
+</doxygen>

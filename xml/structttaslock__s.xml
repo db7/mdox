@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structttaslock__s" kind="struct" language="C++" prot="public">
+    <compoundname>ttaslock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structttaslock__s_1abc286dcaa494cd253a4d9913dd52f2e4" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t ttaslock_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>ttaslock_s::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/ttaslock.h" line="24" column="17" bodyfile="vsync/spinlock/ttaslock.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ttaslock_s</label>
+        <link refid="structttaslock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/ttaslock.h" line="23" column="1" bodyfile="vsync/spinlock/ttaslock.h" bodystart="23" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structttaslock__s_1abc286dcaa494cd253a4d9913dd52f2e4" prot="public" virt="non-virtual"><scope>ttaslock_s</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

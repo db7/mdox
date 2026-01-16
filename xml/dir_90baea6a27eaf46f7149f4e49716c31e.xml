@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_90baea6a27eaf46f7149f4e49716c31e" kind="dir">
+    <compoundname>vsync</compoundname>
+    <innerdir refid="dir_a2d0a257ccc78443a3c0586342940af8">vsync/atomic</innerdir>
+    <innerdir refid="dir_16f79010974527bdeb8ffa1f0d002862">vsync/bitmap</innerdir>
+    <innerdir refid="dir_d5b0ab69e65e2c61d5bf76eab6798130">vsync/common</innerdir>
+    <innerdir refid="dir_dd010c9304e9137fc4140c18959c77e9">vsync/map</innerdir>
+    <innerdir refid="dir_a01909e94b5b9147c34d98a758e0ea29">vsync/pool</innerdir>
+    <innerdir refid="dir_b1373b290610f6875240f5e4afc7d65f">vsync/queue</innerdir>
+    <innerdir refid="dir_cab5786a167c8713e43b6b21bfb54d13">vsync/smr</innerdir>
+    <innerdir refid="dir_16420932d779a28446ef6babf0c9e159">vsync/spinlock</innerdir>
+    <innerdir refid="dir_efb53ea499cd296f78d8befa59ed13bf">vsync/stack</innerdir>
+    <innerdir refid="dir_7df5f6dcfd63b510932e0a65faa5d7b5">vsync/thread</innerdir>
+    <innerdir refid="dir_2b9f08e0a1c221695f3a979c3b51bd47">vsync/utils</innerdir>
+    <innerfile refid="atomic_8h">atomic.h</innerfile>
+    <innerfile refid="doc_8h">doc.h</innerfile>
+    <innerfile refid="vtypes_8h">vtypes.h</innerfile>
+    <briefdescription>
+<para>libvsync is library of robust atomics, synchronization primitives, concurrent data structures and safe memory reclamation schemes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/"/>
+  </compounddef>
+</doxygen>

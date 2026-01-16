@@ -1,0 +1,1020 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="skiplist__internal__fun_8h" kind="file" language="C++">
+    <compoundname>skiplist_internal_fun.h</compoundname>
+    <includes refid="skiplist__types_8h" local="no">vsync/map/internal/skiplist/skiplist_types.h</includes>
+    <includedby refid="skiplist__lf_8h" local="no">vsync/map/skiplist_lf.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/atomic/atomicptr_markable.h</label>
+        <link refid="atomicptr__markable_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="14">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/internal/skiplist/skiplist_types.h</label>
+        <link refid="skiplist__types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/map/internal/skiplist/skiplist_internal_fun.h</label>
+        <link refid="skiplist__internal__fun_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/skiplist_lf.h</label>
+        <link refid="skiplist__lf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/queue/vqueue_prio_skiplist_based.h</label>
+        <link refid="vqueue__prio__skiplist__based_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1a1fde1bb6826d0a0dc9cc3de4d5244a9e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vskiplist_init_node</definition>
+        <argsstring>(vskiplist_node_t *node, vsize_t height)</argsstring>
+        <name>_vskiplist_init_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>initializes the given skiplist node </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of a skiplist node to initialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the height of the given node, i.e. to how many skiplist levels it is going to connect to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="19" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1acecf440da2e65256d0a21511acf0c2bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>static vskiplist_node_t * _vskiplist_find</definition>
+        <argsstring>(vskiplist_t *lst, vskiplist_key_t key, vskiplist_node_t **preds, vskiplist_node_t **succs, vbool_t find_specific, vskiplist_node_t *node)</argsstring>
+        <name>_vskiplist_find</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>vskiplist_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> **</type>
+          <declname>preds</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> **</type>
+          <declname>succs</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>find_specific</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Looks for a given key and returns its associated node along with all of its successors in <computeroutput>succs</computeroutput> and predecessors in <computeroutput>preds</computeroutput> on all levels connected to node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used by add and remove operations to locate the node. In addition to locating the sought node, it also physically detaches all logically removed (marked) nodes that preced the sought node and retires them</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key to look for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>preds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter array of found node&apos;s predecessors </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>succs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output parameter array of found node&apos;s successors </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vskiplist_node_t* address of the node associated with the given key NULL: no node associated with the given key was found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="46" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="46" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1a1cc83d55901cb12118e67f9156d738a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>static vskiplist_node_t * _vskiplist_lookup</definition>
+        <argsstring>(vskiplist_t *lst, vskiplist_key_t key, vbool_t accept_next_gt_key)</argsstring>
+        <name>_vskiplist_lookup</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>vskiplist_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>accept_next_gt_key</declname>
+        </param>
+        <briefdescription>
+<para>Returns the skiplist node associated with the given key if found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If it was not found and <computeroutput>accept_next_gt_key</computeroutput> was set to <computeroutput>true</computeroutput> the node associated with next greater key than the given key is returned instead. If no such node exists NULL is returned</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key to look for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accept_next_gt_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true: if no node associated with the given key is found, return the node with the next greater key instead false: if no node associated with the given key is found, return NULL </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vskiplist_node_t* depending on the value of <computeroutput>accept_next_gt_key</computeroutput> can be:<itemizedlist>
+<listitem><para>NULL: <computeroutput>accept_next_gt_key == false?</computeroutput> no node associated with the given key was found</para>
+</listitem><listitem><para>NULL: <computeroutput>accept_next_gt_key == true?</computeroutput> neither a node associated with the given key nor a node associated with a greater key was found</para>
+</listitem><listitem><para>address of the skiplist node associated with the given key, if such node is found</para>
+</listitem><listitem><para>address of the skiplist node associated with the next greater key than the given key, if the associated node is not found and <computeroutput>accept_next_gt_key = true</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="190" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="190" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1ade2d2281faeb6ba7918f20748252522c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _vskiplist_logically_remove_node</definition>
+        <argsstring>(vskiplist_node_t *node)</argsstring>
+        <name>_vskiplist_logically_remove_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Marks the given node as logically removed on all levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t node object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the calling thread is the one who marked the bottom level </para>
+</simplesect>
+<simplesect kind="return"><para>false some other thread already marked the bottom level </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="264" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="264" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1a1a7759f61864d2bc00840dc7c41fa8b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _vskiplist_detach_node</definition>
+        <argsstring>(vskiplist_t *lst, vskiplist_key_t key, vskiplist_node_t *node)</argsstring>
+        <name>_vskiplist_detach_node</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>vskiplist_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>physically detaches the given <computeroutput>node</computeroutput> from the skiplist </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key value associated withe node </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t node object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true node is removed successfully </para>
+</simplesect>
+<simplesect kind="return"><para>false node is not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="314" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="314" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1a33a6a0e9ff049113474cb87ffa29cdee" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vskiplist_visit_level</definition>
+        <argsstring>(vskiplist_t *lst, vsize_t level, void(*visit)(vskiplist_node_t *, vbool_t, void *), void *args)</argsstring>
+        <name>_vskiplist_visit_level</name>
+        <param>
+          <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>void(*)(<ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *, vbool_t, void *)</type>
+          <declname>visit</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>A visitor function, iterates over all nodes connected to the given level of the skiplist and calls <computeroutput>visit</computeroutput> on them. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_t object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level must be less than the skiplist height, and it indicates the level to visit </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function pointer, takes a skiplist node address and a vbool_t as parameters. The vbool_t parameter indicates if the node is logically removed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the third parameter of the callback function <computeroutput>visit</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="339" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="339" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1a0ce0692e38b980f5c2aad06c65cc3b6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t _vskiplist_disconnect_node</definition>
+        <argsstring>(vskiplist_node_t *node)</argsstring>
+        <name>_vskiplist_disconnect_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Decrements the <computeroutput>non_snipped_level</computeroutput> count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true <computeroutput>non_snipped_level = 0</computeroutput> </para>
+</simplesect>
+<simplesect kind="return"><para>false <computeroutput>non_snipped_level != 0</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="383" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="383" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="skiplist__internal__fun_8h_1ae69f5d30136a2cd7c453f993e648cedf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vskiplist_destroy_node</definition>
+        <argsstring>(vskiplist_node_t *node, vbool_t marked, void *args)</argsstring>
+        <name>_vskiplist_destroy_node</name>
+        <param>
+          <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>marked</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Retires the given node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marked</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag when set indicates that node is logically removed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vskiplist_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h" line="397" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_internal_fun.h" bodystart="397" bodyend="405"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSKIPLIST_INTERNAL_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSKIPLIST_INTERNAL_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/map/internal/skiplist/skiplist_types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">_vskiplist_init_node(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node,<sp/>vsize_t<sp/>height)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(height<sp/>&lt;=<sp/>VSKIPLIST_MAX_HEIGHT);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;height<sp/>=<sp/>height;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>node<sp/>is<sp/>going<sp/>to<sp/>be<sp/>connected<sp/>to<sp/>`height`<sp/>levels,<sp/>we<sp/>set<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>non_snipped_level<sp/>to<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__sz_8h_1aa5750236f7e4e0360b30b0a33e323e18" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicsz_write_rlx</ref>(&amp;node-&gt;non_snipped_level,<sp/>height);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">_vskiplist_find(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst,<sp/>vskiplist_key_t<sp/>key,<sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>**preds,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>**succs,<sp/>vbool_t<sp/>find_specific,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top_level<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lst-&gt;seed.max_height<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>level<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>marked<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>snip<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*tail<sp/>=<sp/>_vskiplist_tail(lst);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*head<sp/>=<sp/>_vskiplist_head(lst);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>o_non_snip_lvl<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">RETRY:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>makes<sp/>sure<sp/>that<sp/>it<sp/>was<sp/>initialized<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(pred-&gt;height<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>starting<sp/>from<sp/>the<sp/>head<sp/>ending<sp/>at<sp/>the<sp/>tail,<sp/>we<sp/>search<sp/>from<sp/>top<sp/>to</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>bottom.</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>loop<sp/>shall<sp/>visit<sp/>nodes<sp/>on<sp/>each<sp/>level<sp/>\in<sp/>[top_level,<sp/>0].<sp/>We<sp/>write<sp/>the</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>condition<sp/>of<sp/>the<sp/>loop<sp/>as<sp/>`&lt;=<sp/>top_level`<sp/>instead<sp/>of<sp/>`&gt;=<sp/>0`,<sp/>because</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>vsize_t<sp/>is<sp/>unsigned<sp/>and<sp/>overflow<sp/>can<sp/>occur<sp/>on<sp/>level--.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(level<sp/>=<sp/>top_level;<sp/>level<sp/>&lt;=<sp/>top_level;<sp/>level--)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>cast<sp/>should<sp/>be<sp/>safe<sp/>because<sp/>the<sp/>height<sp/>cannot<sp/>be<sp/>that<sp/>large</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(level<sp/>&lt;<sp/>pred-&gt;height);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a43b4bc939e6ee1786993205673933719" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get_pointer</ref>(</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;pred-&gt;next[level]);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;curr-&gt;next[level],<sp/>&amp;marked);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>curr<sp/>is<sp/>marked,<sp/>we<sp/>are<sp/>going<sp/>to<sp/>detach<sp/>all<sp/>the<sp/>marked<sp/>nodes</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>we<sp/>encounter<sp/>on<sp/>our<sp/>way<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(marked)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>attempt<sp/>to<sp/>detach<sp/>the<sp/>node<sp/>pred-&gt;next[level]<sp/>=<sp/>succ<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snip<sp/>=<sp/><ref refid="atomicptr__markable_8h_1a4bf6eecd5f69cd0af82a109400e9b759" kindref="member" tooltip="Compares and exchanges the address and mark value in a.">vatomicptr_markable_cmpxchg</ref>(&amp;pred-&gt;next[level],<sp/>curr,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>succ,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!snip)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>failed<sp/>to<sp/>detach<sp/>retry<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>RETRY;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>decrease<sp/>the<sp/>number<sp/>of<sp/>non<sp/>snipped<sp/>level.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Relaxing<sp/>the<sp/>barrier<sp/>causes<sp/>a<sp/>WMM<sp/>#bug.<sp/>Meaning,<sp/>the</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>effect<sp/>of<sp/>this<sp/>decrement<sp/>can<sp/>be<sp/>visible<sp/>before<sp/>the<sp/>cas</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>above,<sp/>which<sp/>will<sp/>result<sp/>into<sp/>handing<sp/>the<sp/>node<sp/>to<sp/>the<sp/>SMR</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>before<sp/>it<sp/>has<sp/>been<sp/>detached.<sp/>This<sp/>can<sp/>cause<sp/>access<sp/>to</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>freed<sp/>memory!!<sp/>DO<sp/>NOT<sp/>RELAX<sp/>THE<sp/>BARRIER<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>o_non_snip_lvl<sp/>=<sp/><ref refid="core__sz_8h_1aa450a8d0a3e93363a48c1a05d70fc7aa" kindref="member" tooltip="Decrements the value of a and returns the old value.">vatomicsz_get_dec</ref>(&amp;curr-&gt;non_snipped_level);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(o_non_snip_lvl<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(o_non_snip_lvl<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>previous<sp/>value<sp/>is<sp/>1,<sp/>it<sp/>means<sp/>we<sp/>just<sp/>snipped<sp/>the</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>last<sp/>remaining<sp/>link<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(o_non_snip_lvl<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>know<sp/>at<sp/>this<sp/>point<sp/>that<sp/>the<sp/>insertion<sp/>of<sp/>this<sp/>node</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>has<sp/>completed<sp/>at<sp/>all<sp/>levels<sp/>and<sp/>so<sp/>is<sp/>the<sp/>snipping.</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>The<sp/>node<sp/>is<sp/>now<sp/>completely<sp/>detached<sp/>from<sp/>the</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>skip-list<sp/>and<sp/>can<sp/>be<sp/>handed<sp/>in<sp/>to<sp/>the<sp/>SMR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>head);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>tail);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>retire<sp/>the<sp/>node<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lst-&gt;fun_retire(curr,<sp/>lst-&gt;fun_retire_arg);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>move<sp/>forward<sp/>on<sp/>this<sp/>level<sp/>-&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a43b4bc939e6ee1786993205673933719" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get_pointer</ref>(</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;pred-&gt;next[level]);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;curr-&gt;next[level],<sp/>&amp;marked);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>while(marked)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>head);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail<sp/>&amp;&amp;<sp/>lst-&gt;fun_cmp(curr,<sp/>key)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unlikely(find_specific))<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>==<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>relevant<sp/>to<sp/>the<sp/>priority<sp/>queue<sp/>API<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>either<sp/>reached<sp/>the<sp/>end<sp/>of<sp/>this<sp/>level,<sp/>or<sp/>encountered<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>node<sp/>with<sp/>key<sp/>greater<sp/>or<sp/>equal<sp/>to<sp/>the<sp/>key<sp/>we<sp/>are<sp/>looking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for.<sp/>we<sp/>break<sp/>the<sp/>while<sp/>and<sp/>go<sp/>forward<sp/>with<sp/>the<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>moving<sp/>down<sp/>a<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>\<sp/>/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>while(true)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>update<sp/>succ<sp/>and<sp/>pred<sp/>for<sp/>this<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>preds[level]<sp/>=<sp/>pred;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succs[level]<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>for<sp/>levels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(curr);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>head);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>at<sp/>this<sp/>point<sp/>we<sp/>reached<sp/>the<sp/>lowest<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail<sp/>&amp;&amp;<sp/>lst-&gt;fun_cmp(curr,<sp/>key)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>found<sp/>the<sp/>node<sp/>associated<sp/>with<sp/>the<sp/>given<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>curr;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">_vskiplist_lookup(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst,<sp/>vskiplist_key_t<sp/>key,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>accept_next_gt_key)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top_level<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>lst-&gt;seed.max_height<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>level<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>marked<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*head<sp/>=<sp/>_vskiplist_head(lst);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*tail<sp/>=<sp/>_vskiplist_tail(lst);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>start<sp/>searching<sp/>from<sp/>the<sp/>head<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>from<sp/>the<sp/>top<sp/>level<sp/>to<sp/>the<sp/>bottom</highlight></codeline>
+<codeline lineno="206"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>loop<sp/>shall<sp/>visit<sp/>nodes<sp/>on<sp/>each<sp/>level<sp/>\in<sp/>[top_level,<sp/>0].<sp/>We<sp/>write<sp/>the</highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>condition<sp/>of<sp/>the<sp/>loop<sp/>as<sp/>`&lt;=<sp/>top_level`<sp/>instead<sp/>of<sp/>`&gt;=<sp/>0`,<sp/>because</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>vsize_t<sp/>is<sp/>unsigned<sp/>and<sp/>overflow<sp/>can<sp/>occur<sp/>on<sp/>level--.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(level<sp/>=<sp/>top_level;<sp/>level<sp/>&lt;=<sp/>top_level;<sp/>level--)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a43b4bc939e6ee1786993205673933719" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get_pointer</ref>(</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;pred-&gt;next[level]);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;curr-&gt;next[level],<sp/>&amp;marked);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>skip<sp/>all<sp/>logically<sp/>removed<sp/>(marked)<sp/>nodes<sp/>in<sp/>this<sp/>level</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(marked)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a43b4bc939e6ee1786993205673933719" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get_pointer</ref>(</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;curr-&gt;next[level]);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;curr-&gt;next[level],<sp/>&amp;marked);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>while(marked)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>head);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>we<sp/>reach<sp/>here,<sp/>it<sp/>means<sp/>curr<sp/>is<sp/>not<sp/>marked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail<sp/>&amp;&amp;<sp/>lst-&gt;fun_cmp(curr,<sp/>key)<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>continue<sp/>moving<sp/>forward<sp/>on<sp/>this<sp/>level<sp/>-&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>encountered<sp/>a<sp/>node<sp/>with<sp/>key<sp/>k<sp/>&gt;=<sp/>key<sp/>or<sp/>reached<sp/>the<sp/>end</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>we<sp/>break<sp/>the<sp/>while<sp/>loop,<sp/>and<sp/>continue<sp/>with<sp/>the<sp/>for<sp/>loop</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>checking<sp/>for<sp/>the<sp/>existence<sp/>on<sp/>the<sp/>lower<sp/>levels</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>|</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>\<sp/>/</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>while(true)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>levels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>the<sp/>key<sp/>exists,<sp/>then<sp/>we<sp/>found<sp/>the<sp/>node<sp/>with<sp/>the<sp/>associated<sp/>key.</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>However,<sp/>if<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist,<sp/>it<sp/>means<sp/>curr-&gt;key<sp/>&gt;<sp/>key,<sp/>and<sp/>that</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>there<sp/>is<sp/>no<sp/>node<sp/>s.t.<sp/>key<sp/>&gt;<sp/>node-&gt;key<sp/>&gt;<sp/>curr-&gt;key.</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>allows<sp/>us<sp/>to<sp/>return<sp/>curr<sp/>if<sp/>the<sp/>next<sp/>larger<sp/>key<sp/>is<sp/>requested</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(curr<sp/>!=<sp/>head);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail<sp/>&amp;&amp;<sp/>(lst-&gt;fun_cmp(curr,<sp/>key)<sp/>==<sp/>0<sp/>||<sp/>accept_next_gt_key))<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>curr;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">_vskiplist_logically_remove_node(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>level<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>node_marked<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>i_marked_it<sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node-&gt;height<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>top_level<sp/>=<sp/>node-&gt;height<sp/>-<sp/>1U;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>mark<sp/>from<sp/>top<sp/>to<sp/>bottom</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>the<sp/>loop<sp/>shall<sp/>visit<sp/>nodes<sp/>on<sp/>each<sp/>level<sp/>\in<sp/>[top_level,<sp/>0].<sp/>We<sp/>write<sp/>the</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>condition<sp/>of<sp/>the<sp/>loop<sp/>as<sp/>`&lt;=<sp/>top_level`<sp/>instead<sp/>of<sp/>`&gt;=<sp/>0`,<sp/>because</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>vsize_t<sp/>is<sp/>unsigned<sp/>and<sp/>overflow<sp/>can<sp/>occur<sp/>on<sp/>level--.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(level<sp/>=<sp/>top_level;<sp/>level<sp/>&lt;=<sp/>top_level;<sp/>level--)<sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TODO:<sp/>once<sp/>vatomicptr_or<sp/>is<sp/>supported<sp/>we<sp/>can<sp/>use<sp/>that<sp/>to<sp/>mark<sp/>the<sp/>top</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>levels<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_marked_it<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>out<sp/>the<sp/>current<sp/>state<sp/>of<sp/>node<sp/>and<sp/>what<sp/>succ<sp/>it<sp/>has<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;node-&gt;next[level],<sp/>&amp;node_marked);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node_marked)<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>already<sp/>marked,<sp/>someone<sp/>else<sp/>marked<sp/>it<sp/>on<sp/>this<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_ignore();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>this<sp/>cmpxchg<sp/>succeeds<sp/>it<sp/>means<sp/>we<sp/>are<sp/>the<sp/>ones<sp/>who<sp/>marked<sp/>the</highlight></codeline>
+<codeline lineno="295"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>node<sp/>on<sp/>this<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_marked_it<sp/>=<sp/><ref refid="atomicptr__markable_8h_1a4bf6eecd5f69cd0af82a109400e9b759" kindref="member" tooltip="Compares and exchanges the address and mark value in a.">vatomicptr_markable_cmpxchg</ref>(&amp;node-&gt;next[level],<sp/>succ,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>succ,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!i_marked_it);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">/*<sp/>for<sp/>all<sp/>levels<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>return<sp/>the<sp/>result<sp/>of<sp/>marking<sp/>the<sp/>bottom<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i_marked_it;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">_vskiplist_detach_node(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst,<sp/>vskiplist_key_t<sp/>key,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*succs[VSKIPLIST_MAX_HEIGHT];</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*preds[VSKIPLIST_MAX_HEIGHT];</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>marked<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>marked<sp/>=<sp/>_vskiplist_logically_remove_node(node);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(marked)<sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_vskiplist_find(lst,<sp/>key,<sp/>preds,<sp/>succs,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>node);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>marked;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal">_vskiplist_visit_level(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst,<sp/>vsize_t<sp/>level,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*visit)(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*,<sp/>vbool_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*),</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*head<sp/>=<sp/>_vskiplist_head(lst);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*tail<sp/>=<sp/>_vskiplist_tail(lst);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*curr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*succ<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>marked<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(level<sp/>&lt;<sp/>head-&gt;height);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>next<sp/>of<sp/>head<sp/>is<sp/>never<sp/>marked,<sp/>because<sp/>the<sp/>head<sp/>is<sp/>a<sp/>sentinel<sp/>and</highlight></codeline>
+<codeline lineno="353"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>never<sp/>removed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>curr<sp/>=</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a43b4bc939e6ee1786993205673933719" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get_pointer</ref>(&amp;head-&gt;next[level]);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(curr);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curr<sp/>==<sp/>tail)<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>succ<sp/>(curr-&gt;next)<sp/>is<sp/>marked,<sp/>then</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>curr<sp/>is<sp/>logically<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*)<ref refid="atomicptr__markable_8h_1a4f09d68e7337eccdb9ec747520abdcbb" kindref="member" tooltip="Returns the address value of a.">vatomicptr_markable_get</ref>(&amp;curr-&gt;next[level],</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;marked);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visit(curr,<sp/>marked,<sp/>args);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/>succ;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>tail);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="383"><highlight class="normal">_vskiplist_disconnect_node(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="384"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>non_snipped<sp/>=<sp/><ref refid="core__sz_8h_1afe0804f4136fca40922f85a25d9289e2" kindref="member" tooltip="Decrements the value of a and returns the new value.">vatomicsz_dec_get_rlx</ref>(&amp;node-&gt;non_snipped_level);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(non_snipped<sp/>&lt;=<sp/>VSKIPLIST_MAX_HEIGHT);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>non_snipped<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal">_vskiplist_destroy_node(<ref refid="structvskiplist__node__s" kindref="compound" tooltip="&gt; Note: when embedding vskiplist_node_t in a container struct, place it as the last field.">vskiplist_node_t</ref><sp/>*node,<sp/>vbool_t<sp/>marked,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline lineno="398"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*lst<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(<ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref><sp/>*)args;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>fully_disconnected<sp/>=<sp/>_vskiplist_disconnect_node(node);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fully_disconnected)<sp/>{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lst-&gt;fun_retire(node,<sp/>lst-&gt;fun_retire_arg);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(marked);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/internal/skiplist/skiplist_internal_fun.h"/>
+  </compounddef>
+</doxygen>

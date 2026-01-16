@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__lock__free" kind="group">
+    <compoundname>lock_free</compoundname>
+    <title>Lock-free</title>
+    <innerfile refid="hashtable__standard_8h">hashtable_standard.h</innerfile>
+    <innerfile refid="listset__lf_8h">listset_lf.h</innerfile>
+    <innerfile refid="simpleht_8h">simpleht.h</innerfile>
+    <innerfile refid="skiplist__lf_8h">skiplist_lf.h</innerfile>
+    <innerfile refid="bbq__spsc_8h">bbq_spsc.h</innerfile>
+    <innerfile refid="bounded__spsc_8h">bounded_spsc.h</innerfile>
+    <innerfile refid="chaselev_8h">chaselev.h</innerfile>
+    <innerfile refid="unbounded__queue__lf_8h">unbounded_queue_lf.h</innerfile>
+    <innerfile refid="unbounded__queue__lf__recycle_8h">unbounded_queue_lf_recycle.h</innerfile>
+    <innerfile refid="vqueue__prio__skiplist__based_8h">vqueue_prio_skiplist_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__array__based_8h">vqueue_prio_stack_array_based.h</innerfile>
+    <innerfile refid="elimination__stack_8h">elimination_stack.h</innerfile>
+    <innerfile refid="quack_8h">quack.h</innerfile>
+    <innerfile refid="xbo__stack_8h">xbo_stack.h</innerfile>
+    <briefdescription>
+<para>Group of algorithms with lock-free progress condition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

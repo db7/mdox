@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvsimpleht__s" kind="struct" language="C++" prot="public">
+    <compoundname>vsimpleht_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvsimpleht__s_1a5cfbb4c95c63db3b36379c4d5ad13858" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vsimpleht_s::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <qualifiedname>vsimpleht_s::capacity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="84" column="13" bodyfile="vsync/map/simpleht.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1a929d9cfdabdec3df855797cbc86d93ec" prot="public" static="no" mutable="no">
+        <type><ref refid="structvsimpleht__entry__s" kindref="compound">vsimpleht_entry_t</ref> *</type>
+        <definition>vsimpleht_entry_t* vsimpleht_s::entries</definition>
+        <argsstring></argsstring>
+        <name>entries</name>
+        <qualifiedname>vsimpleht_s::entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="85" column="23" bodyfile="vsync/map/simpleht.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1aa3b015d00b0928c8acaa6ba74418d779" prot="public" static="no" mutable="no">
+        <type>vsimpleht_cmp_key_t</type>
+        <definition>vsimpleht_cmp_key_t vsimpleht_s::cmp_key</definition>
+        <argsstring></argsstring>
+        <name>cmp_key</name>
+        <qualifiedname>vsimpleht_s::cmp_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="86" column="25" bodyfile="vsync/map/simpleht.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1a633a69df92e276c9a185be7f69efe274" prot="public" static="no" mutable="no">
+        <type>vsimpleht_hash_key_t</type>
+        <definition>vsimpleht_hash_key_t vsimpleht_s::hash_key</definition>
+        <argsstring></argsstring>
+        <name>hash_key</name>
+        <qualifiedname>vsimpleht_s::hash_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="87" column="26" bodyfile="vsync/map/simpleht.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1a7ff9fe4c45f0bdd7b3ed88da23c420e5" prot="public" static="no" mutable="no">
+        <type>vsimpleht_destroy_entry_t</type>
+        <definition>vsimpleht_destroy_entry_t vsimpleht_s::cb_destroy</definition>
+        <argsstring></argsstring>
+        <name>cb_destroy</name>
+        <qualifiedname>vsimpleht_s::cb_destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="88" column="31" bodyfile="vsync/map/simpleht.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1a6701144123255cdfaf9efedfdea988ec" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vsimpleht_s::cleaning_threshold</definition>
+        <argsstring></argsstring>
+        <name>cleaning_threshold</name>
+        <qualifiedname>vsimpleht_s::cleaning_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="90" column="13" bodyfile="vsync/map/simpleht.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1ac444fdc0914ebb87432b6e81131ce438" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t vsimpleht_s::deleted_count</definition>
+        <argsstring></argsstring>
+        <name>deleted_count</name>
+        <qualifiedname>vsimpleht_s::deleted_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="91" column="17" bodyfile="vsync/map/simpleht.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvsimpleht__s_1a239a940777dcdf1e00a4531c6cc60dfc" prot="public" static="no" mutable="no">
+        <type><ref refid="structrwlock__s" kindref="compound">rwlock_t</ref></type>
+        <definition>rwlock_t vsimpleht_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>vsimpleht_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/simpleht.h" line="92" column="14" bodyfile="vsync/map/simpleht.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>rwlock_s</label>
+        <link refid="structrwlock__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>wb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>rs</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>semaphore_s</label>
+        <link refid="structsemaphore__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="3">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="2">
+        <label>vsimpleht_entry_s</label>
+        <link refid="structvsimpleht__entry__s"/>
+      </node>
+      <node id="1">
+        <label>vsimpleht_s</label>
+        <link refid="structvsimpleht__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>entries</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>deleted_count</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/simpleht.h" line="83" column="1" bodyfile="vsync/map/simpleht.h" bodystart="83" bodyend="94"/>
+    <listofallmembers>
+      <member refid="structvsimpleht__s_1a5cfbb4c95c63db3b36379c4d5ad13858" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>capacity</name></member>
+      <member refid="structvsimpleht__s_1a7ff9fe4c45f0bdd7b3ed88da23c420e5" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>cb_destroy</name></member>
+      <member refid="structvsimpleht__s_1a6701144123255cdfaf9efedfdea988ec" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>cleaning_threshold</name></member>
+      <member refid="structvsimpleht__s_1aa3b015d00b0928c8acaa6ba74418d779" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>cmp_key</name></member>
+      <member refid="structvsimpleht__s_1ac444fdc0914ebb87432b6e81131ce438" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>deleted_count</name></member>
+      <member refid="structvsimpleht__s_1a929d9cfdabdec3df855797cbc86d93ec" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>entries</name></member>
+      <member refid="structvsimpleht__s_1a633a69df92e276c9a185be7f69efe274" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>hash_key</name></member>
+      <member refid="structvsimpleht__s_1a239a940777dcdf1e00a4531c6cc60dfc" prot="public" virt="non-virtual"><scope>vsimpleht_s</scope><name>lock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

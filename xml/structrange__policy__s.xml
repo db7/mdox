@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structrange__policy__s" kind="struct" language="C++" prot="public">
+    <compoundname>range_policy_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrange__policy__s_1a46e301733bf75df62ac3dcc8d960c738" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t range_policy_s::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>range_policy_s::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="12" column="15" bodyfile="vsync/stack/internal/range_policy.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrange__policy__s_1a3f886e374d5a523a03511c632d54add2" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t range_policy_s::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <qualifiedname>range_policy_s::range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="13" column="15" bodyfile="vsync/stack/internal/range_policy.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrange__policy__s_1abd411fb94e3502ace5a6b701336c3f63" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t range_policy_s::successful_operations</definition>
+        <argsstring></argsstring>
+        <name>successful_operations</name>
+        <qualifiedname>range_policy_s::successful_operations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="14" column="15" bodyfile="vsync/stack/internal/range_policy.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrange__policy__s_1a74b0ac28adca1cb51ffb6d3cb5967eb6" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t range_policy_s::failed_operations</definition>
+        <argsstring></argsstring>
+        <name>failed_operations</name>
+        <qualifiedname>range_policy_s::failed_operations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/range_policy.h" line="15" column="15" bodyfile="vsync/stack/internal/range_policy.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/stack/internal/range_policy.h" line="11" column="1" bodyfile="vsync/stack/internal/range_policy.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structrange__policy__s_1a74b0ac28adca1cb51ffb6d3cb5967eb6" prot="public" virt="non-virtual"><scope>range_policy_s</scope><name>failed_operations</name></member>
+      <member refid="structrange__policy__s_1a46e301733bf75df62ac3dcc8d960c738" prot="public" virt="non-virtual"><scope>range_policy_s</scope><name>max</name></member>
+      <member refid="structrange__policy__s_1a3f886e374d5a523a03511c632d54add2" prot="public" virt="non-virtual"><scope>range_policy_s</scope><name>range</name></member>
+      <member refid="structrange__policy__s_1abd411fb94e3502ace5a6b701336c3f63" prot="public" virt="non-virtual"><scope>range_policy_s</scope><name>successful_operations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

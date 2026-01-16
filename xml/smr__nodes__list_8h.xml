@@ -1,0 +1,862 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="smr__nodes__list_8h" kind="file" language="C++">
+    <compoundname>smr_nodes_list.h</compoundname>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="smr__node_8h" local="no">vsync/smr/internal/smr_node.h</includes>
+    <includes refid="verify_8h" local="no">vsync/common/verify.h</includes>
+    <includedby refid="ebr_8h" local="no">vsync/smr/ebr.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="35">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="14">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/smr/internal/smr_node.h</label>
+        <link refid="smr__node_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/smr/ebr.h</label>
+        <link refid="ebr_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/smr/internal/smr_nodes_list.h</label>
+        <link refid="smr__nodes__list_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsmr__nodes__list__s" prot="public">smr_nodes_list_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="smr__nodes__list_8h_1a138a460182d1386784dd0a6f5ad04202" prot="public" static="no">
+        <name>SMR_NODES_LIST_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .list = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(NULL), .count = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0)                   \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="21" column="9" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="smr__nodes__list_8h_1a79af9f840fe1ffac5a325760ad19aeb8" prot="public" static="no">
+        <type>struct <ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_s</ref></type>
+        <definition>typedef struct smr_nodes_list_s smr_nodes_list_t</definition>
+        <argsstring></argsstring>
+        <name>smr_nodes_list_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="19" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="smr__nodes__list_8h_1a0140c29ccd832e4824c10c394f7d7916" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void smr_nodes_list_init</definition>
+        <argsstring>(smr_nodes_list_t *lst)</argsstring>
+        <name>smr_nodes_list_init</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="32" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1afd9d6c1de70b56a40484b74d1cb97e30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t smr_nodes_list_is_empty</definition>
+        <argsstring>(smr_nodes_list_t *lst)</argsstring>
+        <name>smr_nodes_list_is_empty</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the list is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the list is empty </para>
+</simplesect>
+<simplesect kind="return"><para>false the list has at least one node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="46" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1a493110cc6fb33fb439250c0a713cc249" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint64_t</type>
+        <definition>static vuint64_t smr_nodes_list_get_length</definition>
+        <argsstring>(smr_nodes_list_t *lst)</argsstring>
+        <name>smr_nodes_list_get_length</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+<para>Returns the count of the nodes in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the count may not be always accurate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint64_t approximately count of nodes in the list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="59" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1ae87abed69af89f0b745b15e6da557ccc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _smr_nodes_list_connect</definition>
+        <argsstring>(smr_nodes_list_t *lst, smr_node_core_t *head, smr_node_core_t *tail)</argsstring>
+        <name>_smr_nodes_list_connect</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_t</ref> *</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+<para>Connects the given list <computeroutput>new_head</computeroutput>-&gt;...-&gt;<computeroutput>connector</computeroutput> to <computeroutput>lst</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> to connect only one node pass <computeroutput>new_head = tail</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="72" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="72" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1a5d5d95a3569adc0819ad79d6bb43c90f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void smr_nodes_list_add</definition>
+        <argsstring>(smr_nodes_list_t *lst, smr_node_t *node, smr_node_destroy_fun destroy_fun, void *destroy_fun_arg)</argsstring>
+        <name>smr_nodes_list_add</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>smr_node_destroy_fun</type>
+          <declname>destroy_fun</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>destroy_fun_arg</declname>
+        </param>
+        <briefdescription>
+<para>Adds <computeroutput>node</computeroutput> to the head of the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of destructor function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_fun_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra argument passed to <computeroutput>destroy_fun</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="107" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="107" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1a6cd3280823466b40cb88fb8d6e08a7b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void smr_nodes_list_add_with_type</definition>
+        <argsstring>(smr_nodes_list_t *lst, smr_node_t *node, int type, smr_node_destroy_fun destroy_fun, void *destroy_fun_arg)</argsstring>
+        <name>smr_nodes_list_add_with_type</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>smr_node_destroy_fun</type>
+          <declname>destroy_fun</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>destroy_fun_arg</declname>
+        </param>
+        <briefdescription>
+<para>Adds <computeroutput>node</computeroutput> to the head of the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set on type field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_fun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of destructor function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroy_fun_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>extra argument passed to <computeroutput>destroy_fun</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> This function will retire after <computeroutput>kcleanup.h</computeroutput> refactor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="132" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="132" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1a2174bbce34cbb3dcd940a693ad6bb2f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void smr_nodes_list_merge</definition>
+        <argsstring>(smr_nodes_list_t *lst, smr_node_t *head, smr_node_t *tail, vuint64_t count)</argsstring>
+        <name>smr_nodes_list_merge</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <param>
+          <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+          <declname>tail</declname>
+        </param>
+        <param>
+          <type>vuint64_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Merges the given <computeroutput>head-&gt;...-&gt;tail</computeroutput> list to <computeroutput>lst</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object. The list to merge into. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. The head of the list to merge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tail</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. The tail of the list to merge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length of the list to merge. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="157" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="157" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1a4a61530825a3c269a1e8f7067becc7cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+        <definition>static smr_node_t * smr_nodes_list_get_and_empty</definition>
+        <argsstring>(smr_nodes_list_t *lst)</argsstring>
+        <name>smr_nodes_list_get_and_empty</name>
+        <param>
+          <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref> *</type>
+          <declname>lst</declname>
+        </param>
+        <briefdescription>
+<para>Empties the list, and returns the head. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_nodes_list_t object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of smr_node_t object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="175" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="175" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="smr__nodes__list_8h_1af4a112b306b4a8402cbcf19c5507335a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t smr_nodes_list_destroy</definition>
+        <argsstring>(smr_node_t *head)</argsstring>
+        <name>smr_nodes_list_destroy</name>
+        <param>
+          <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+<para>Calls each nodes destructor starting from head node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>head</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of smr_node_t object. The head of the list to destroy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vsize_t count of destroyed objects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_nodes_list.h" line="188" column="1" bodyfile="vsync/smr/internal/smr_nodes_list.h" bodystart="188" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSMR_NODES_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSMR_NODES_LIST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/smr/internal/smr_node.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="verify_8h" kindref="compound" tooltip="Verification support.">vsync/common/verify.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structsmr__nodes__list__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)<sp/>list;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>count;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SMR_NODES_LIST_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.list<sp/>=<sp/>VATOMIC_INIT(NULL),<sp/>.count<sp/>=<sp/>VATOMIC_INIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">smr_nodes_list_init(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1ae189e898d63234e1ee0c4d67cedd81b1" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomicptr_init</ref>(&amp;lst-&gt;list,<sp/>NULL);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;lst-&gt;count,<sp/>0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">smr_nodes_list_is_empty(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;lst-&gt;list)<sp/>==<sp/>NULL);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint64_t</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">smr_nodes_list_get_length(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;lst-&gt;count);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">_smr_nodes_list_connect(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst,<sp/><ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_t</ref><sp/>*head,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_t</ref><sp/>*tail)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*old<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cmp<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(head);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tail);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>&lt;node*&gt;<sp/>=<sp/>zero<sp/>or<sp/>more<sp/>nodes</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Desired<sp/>outcome:</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>new_head<sp/>-&gt;<sp/>&lt;node*&gt;<sp/>-&gt;<sp/>tail<sp/>-&gt;<sp/>old_head<sp/><sp/>-&gt;<sp/>&lt;node*&gt;</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>if<sp/>new_head<sp/>is<sp/>the<sp/>same<sp/>as<sp/>tail<sp/>then:</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>new_head<sp/>-&gt;<sp/>old_head<sp/>-&gt;<sp/>&lt;node*&gt;</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>old<sp/>=<sp/><ref refid="core__ptr_8h_1ae6abaae6d90037704842a1a65a9691fe" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read</ref>(&amp;lst-&gt;list);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>old;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tail-&gt;next<sp/>=<sp/>cmp;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="core__ptr_8h_1aca37d07a0eac3d5abdb833c773e1da92" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_rel</ref>(&amp;lst-&gt;list,<sp/>cmp,<sp/>head);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verification_assume(old<sp/>==<sp/>cmp);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cmp<sp/>!=<sp/>old);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">smr_nodes_list_add(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst,<sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smr_node_destroy_fun<sp/>destroy_fun,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*destroy_fun_arg)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(destroy_fun);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;destroy_fun<sp/><sp/><sp/><sp/><sp/>=<sp/>destroy_fun;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;destroy_fun_arg<sp/>=<sp/>destroy_fun_arg;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;core.next<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>_smr_nodes_list_connect(lst,<sp/>&amp;node-&gt;core,<sp/>&amp;node-&gt;core);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a61e6b0629cac1d7255f80237bcd267a4" kindref="member" tooltip="Increments the value of a.">vatomic64_inc_rlx</ref>(&amp;lst-&gt;count);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">smr_nodes_list_add_with_type(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst,<sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smr_node_destroy_fun<sp/>destroy_fun,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*destroy_fun_arg)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(node);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(destroy_fun);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;core.next<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;destroy_fun<sp/><sp/><sp/><sp/><sp/>=<sp/>destroy_fun;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>node-&gt;destroy_fun_arg<sp/>=<sp/>destroy_fun_arg;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>_smr_nodes_list_connect(lst,<sp/>&amp;node-&gt;core,<sp/>&amp;node-&gt;core);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a61e6b0629cac1d7255f80237bcd267a4" kindref="member" tooltip="Increments the value of a.">vatomic64_inc_rlx</ref>(&amp;lst-&gt;count);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">smr_nodes_list_merge(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst,<sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*head,<sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*tail,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>count)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lst);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(head);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tail);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tail-&gt;core.next<sp/>==<sp/>NULL);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>_smr_nodes_list_connect(lst,<sp/>&amp;head-&gt;core,<sp/>&amp;tail-&gt;core);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a8d4e16faff9e4f85286fb1a9b3479c04" kindref="member" tooltip="Adds v to the value of a.">vatomic64_add_rlx</ref>(&amp;lst-&gt;count,<sp/>count);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">smr_nodes_list_get_and_empty(<ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref><sp/>*lst)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*node<sp/>=<sp/><ref refid="core__ptr_8h_1aa5637e10ff9729ebaf7245d88ce0a8ff" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg_acq</ref>(&amp;lst-&gt;list,<sp/>NULL);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rlx</ref>(&amp;lst-&gt;count,<sp/>0);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">smr_nodes_list_destroy(<ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*head)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>count<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*curr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*freed_node<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr)<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>freed_node<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(<ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref><sp/>*)curr-&gt;core.next;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(freed_node-&gt;destroy_fun);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>freed_node-&gt;destroy_fun(freed_node,<sp/>freed_node-&gt;destroy_fun_arg);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/smr/internal/smr_nodes_list.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvmem__lib__s" kind="struct" language="C++" prot="public">
+    <compoundname>vmem_lib_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvmem__lib__s_1a061a1c72fc3fb80af70fe436b85b4b0e" prot="public" static="no" mutable="no">
+        <type>vmem_free_fun_t</type>
+        <definition>vmem_free_fun_t vmem_lib_s::free_fun</definition>
+        <argsstring></argsstring>
+        <name>free_fun</name>
+        <qualifiedname>vmem_lib_s::free_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/alloc.h" line="16" column="21" bodyfile="vsync/utils/alloc.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvmem__lib__s_1a330ab5ffd8c3e152bb28523f61a12323" prot="public" static="no" mutable="no">
+        <type>vmem_malloc_fun_t</type>
+        <definition>vmem_malloc_fun_t vmem_lib_s::malloc_fun</definition>
+        <argsstring></argsstring>
+        <name>malloc_fun</name>
+        <qualifiedname>vmem_lib_s::malloc_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/alloc.h" line="17" column="23" bodyfile="vsync/utils/alloc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvmem__lib__s_1a0ffdb3fcb19a0343ca20def5f89b14a2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vmem_lib_s::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <qualifiedname>vmem_lib_s::arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/alloc.h" line="18" column="10" bodyfile="vsync/utils/alloc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/utils/alloc.h" line="15" column="1" bodyfile="vsync/utils/alloc.h" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structvmem__lib__s_1a0ffdb3fcb19a0343ca20def5f89b14a2" prot="public" virt="non-virtual"><scope>vmem_lib_s</scope><name>arg</name></member>
+      <member refid="structvmem__lib__s_1a061a1c72fc3fb80af70fe436b85b4b0e" prot="public" virt="non-virtual"><scope>vmem_lib_s</scope><name>free_fun</name></member>
+      <member refid="structvmem__lib__s_1a330ab5ffd8c3e152bb28523f61a12323" prot="public" virt="non-virtual"><scope>vmem_lib_s</scope><name>malloc_fun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

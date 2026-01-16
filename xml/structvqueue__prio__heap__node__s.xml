@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvqueue__prio__heap__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>vqueue_prio_heap_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvqueue__prio__heap__node__s_1a77f4217d7e19860dd555bbf786c104f5" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_lock_t</type>
+        <definition>vqueue_prio_lock_t vqueue_prio_heap_node_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>vqueue_prio_heap_node_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="68" column="24" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__heap__node__s_1a2caf2b61a79755354e4f6cad5bcc4803" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_node_tag_t</type>
+        <definition>vqueue_prio_node_tag_t vqueue_prio_heap_node_s::tag</definition>
+        <argsstring></argsstring>
+        <name>tag</name>
+        <qualifiedname>vqueue_prio_heap_node_s::tag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="69" column="28" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__heap__node__s_1aeb4db05d88b54ee79de2a9b7eacd3e2c" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t vqueue_prio_heap_node_s::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>vqueue_prio_heap_node_s::score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="70" column="15" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__heap__node__s_1ad3631b22670cb0ec33be582bbdbc6cbb" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t vqueue_prio_heap_node_s::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <qualifiedname>vqueue_prio_heap_node_s::owner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="71" column="15" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__heap__node__s_1a3384a0ea76cfe2d5111015d54e32fafe" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vqueue_prio_heap_node_s::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>vqueue_prio_heap_node_s::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="73" column="10" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/queue/vqueue_prio_heap_based.h" line="67" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="67" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structvqueue__prio__heap__node__s_1a3384a0ea76cfe2d5111015d54e32fafe" prot="public" virt="non-virtual"><scope>vqueue_prio_heap_node_s</scope><name>data</name></member>
+      <member refid="structvqueue__prio__heap__node__s_1a77f4217d7e19860dd555bbf786c104f5" prot="public" virt="non-virtual"><scope>vqueue_prio_heap_node_s</scope><name>lock</name></member>
+      <member refid="structvqueue__prio__heap__node__s_1ad3631b22670cb0ec33be582bbdbc6cbb" prot="public" virt="non-virtual"><scope>vqueue_prio_heap_node_s</scope><name>owner</name></member>
+      <member refid="structvqueue__prio__heap__node__s_1aeb4db05d88b54ee79de2a9b7eacd3e2c" prot="public" virt="non-virtual"><scope>vqueue_prio_heap_node_s</scope><name>score</name></member>
+      <member refid="structvqueue__prio__heap__node__s_1a2caf2b61a79755354e4f6cad5bcc4803" prot="public" virt="non-virtual"><scope>vqueue_prio_heap_node_s</scope><name>tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

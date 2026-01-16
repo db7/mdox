@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structskiplist__seed__s" kind="struct" language="C++" prot="public">
+    <compoundname>skiplist_seed_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structskiplist__seed__s_1a9af573dd5b73b98c2ccc26c25ebff3c4" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t skiplist_seed_s::max_height</definition>
+        <argsstring></argsstring>
+        <name>max_height</name>
+        <qualifiedname>skiplist_seed_s::max_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="39" column="13" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structskiplist__seed__s_1aa4b1c83283f020d30456e46189ede310" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomicsz__s" kindref="compound">vatomicsz_t</ref></type>
+        <definition>vatomicsz_t skiplist_seed_s::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>skiplist_seed_s::seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="40" column="17" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>skiplist_seed_s</label>
+        <link refid="structskiplist__seed__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>seed</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/internal/skiplist/skiplist_types.h" line="38" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="38" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structskiplist__seed__s_1a9af573dd5b73b98c2ccc26c25ebff3c4" prot="public" virt="non-virtual"><scope>skiplist_seed_s</scope><name>max_height</name></member>
+      <member refid="structskiplist__seed__s_1aa4b1c83283f020d30456e46189ede310" prot="public" virt="non-virtual"><scope>skiplist_seed_s</scope><name>seed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

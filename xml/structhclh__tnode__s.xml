@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhclh__tnode__s" kind="struct" language="C++" prot="public">
+    <compoundname>hclh_tnode_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhclh__tnode__s_1a8775b4804908a7ecbf7f59daa9b47d04" prot="public" static="no" mutable="no">
+        <type><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref> *</type>
+        <definition>hclh_qnode_t* hclh_tnode_s::pred</definition>
+        <argsstring></argsstring>
+        <name>pred</name>
+        <qualifiedname>hclh_tnode_s::pred</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="93" column="18" bodyfile="vsync/spinlock/hclhlock.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhclh__tnode__s_1a3b24cd2885f9a0020c6b19197757fb17" prot="public" static="no" mutable="no">
+        <type><ref refid="structhclh__qnode__s" kindref="compound">hclh_qnode_t</ref> *</type>
+        <definition>hclh_qnode_t* hclh_tnode_s::qnode</definition>
+        <argsstring></argsstring>
+        <name>qnode</name>
+        <qualifiedname>hclh_tnode_s::qnode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hclhlock.h" line="94" column="18" bodyfile="vsync/spinlock/hclhlock.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>hclh_qnode_s</label>
+        <link refid="structhclh__qnode__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hclh_tnode_s</label>
+        <link refid="structhclh__tnode__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pred</edgelabel>
+          <edgelabel>qnode</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/hclhlock.h" line="92" column="1" bodyfile="vsync/spinlock/hclhlock.h" bodystart="92" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structhclh__tnode__s_1a8775b4804908a7ecbf7f59daa9b47d04" prot="public" virt="non-virtual"><scope>hclh_tnode_s</scope><name>pred</name></member>
+      <member refid="structhclh__tnode__s_1a3b24cd2885f9a0020c6b19197757fb17" prot="public" virt="non-virtual"><scope>hclh_tnode_s</scope><name>qnode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_b1373b290610f6875240f5e4afc7d65f" kind="dir">
+    <compoundname>vsync/queue</compoundname>
+    <innerdir refid="dir_a0fd462d1260dcc495fe523d6d541e52">vsync/queue/internal</innerdir>
+    <innerfile refid="bbq__mpmc_8h">bbq_mpmc.h</innerfile>
+    <innerfile refid="bbq__spsc_8h">bbq_spsc.h</innerfile>
+    <innerfile refid="bounded__locked_8h">bounded_locked.h</innerfile>
+    <innerfile refid="bounded__mpmc_8h">bounded_mpmc.h</innerfile>
+    <innerfile refid="bounded__spsc_8h">bounded_spsc.h</innerfile>
+    <innerfile refid="cachedq_8h">cachedq.h</innerfile>
+    <innerfile refid="chaselev_8h">chaselev.h</innerfile>
+    <innerfile refid="unbounded__queue__lf_8h">unbounded_queue_lf.h</innerfile>
+    <innerfile refid="unbounded__queue__lf__recycle_8h">unbounded_queue_lf_recycle.h</innerfile>
+    <innerfile refid="unbounded__queue__total_8h">unbounded_queue_total.h</innerfile>
+    <innerfile refid="vqueue__prio__heap__based_8h">vqueue_prio_heap_based.h</innerfile>
+    <innerfile refid="vqueue__prio__skiplist__based_8h">vqueue_prio_skiplist_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__array__based_8h">vqueue_prio_stack_array_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__tree__based_8h">vqueue_prio_stack_tree_based.h</innerfile>
+    <briefdescription>
+<para>Queues, priority queues and ringbuffers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/queue/"/>
+  </compounddef>
+</doxygen>

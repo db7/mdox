@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hemlock_8h" kind="file" language="C++">
+    <compoundname>hemlock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/hemlock.h</label>
+        <link refid="hemlock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structhem__node__s" prot="public">hem_node_s</innerclass>
+    <innerclass refid="structhemlock__s" prot="public">hemlock_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="hemlock_8h_1af39594fa1038e58f0333aec86d1089e5" prot="public" static="no">
+        <name>HEMLOCK_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .tail = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0)                                                \
+    }</initializer>
+        <briefdescription>
+<para>Initializer of <computeroutput>hemlock_t</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="35" column="9" bodyfile="vsync/spinlock/hemlock.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" prot="public" static="no">
+        <type>struct <ref refid="structhem__node__s" kindref="compound">hem_node_s</ref></type>
+        <definition>typedef struct hem_node_s hem_node_t</definition>
+        <argsstring></argsstring>
+        <name>hem_node_t</name>
+        <briefdescription>
+<para>Node of a thread/core for all Hemlock instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="27" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" prot="public" static="no">
+        <type>struct <ref refid="structhemlock__s" kindref="compound">hemlock_s</ref></type>
+        <definition>typedef struct hemlock_s hemlock_t</definition>
+        <argsstring></argsstring>
+        <name>hemlock_t</name>
+        <briefdescription>
+<para>Hemlock data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="32" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="hemlock_8h_1a058a7cef610bf44aed5cc4b94a9cce4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hemlock_init</definition>
+        <argsstring>(hemlock_t *l)</argsstring>
+        <name>hemlock_init</name>
+        <param>
+          <type><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member">hemlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given lock object <computeroutput>l</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hemlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="46" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="hemlock_8h_1a793fb78fd072d42168b50d8f09d54e1a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int hemlock_tryacquire</definition>
+        <argsstring>(hemlock_t *l, hem_node_t *node)</argsstring>
+        <name>hemlock_tryacquire</name>
+        <param>
+          <type><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member">hemlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member">hem_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Tries to acquire the Hemlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hemlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hem_node_t object. Associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 on success, 0 on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="59" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="hemlock_8h_1adb6fae8c527f2016bf68b0832f3a1839" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hemlock_acquire</definition>
+        <argsstring>(hemlock_t *l, hem_node_t *node)</argsstring>
+        <name>hemlock_acquire</name>
+        <param>
+          <type><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member">hemlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member">hem_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the Hemlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hemlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hem_node_t object. Associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="75" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="75" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="hemlock_8h_1a71721593b6ca88be4c3798adf007fdde" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hemlock_release</definition>
+        <argsstring>(hemlock_t *l, hem_node_t *node)</argsstring>
+        <name>hemlock_release</name>
+        <param>
+          <type><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member">hemlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member">hem_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Releases the Hemlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hemlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hem_node_t object. Associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="101" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="101" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="hemlock_8h_1a00cc28c6d61999df24bb5a72362842a6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int hemlock_has_waiters</definition>
+        <argsstring>(hemlock_t *l, hem_node_t *node)</argsstring>
+        <name>hemlock_has_waiters</name>
+        <param>
+          <type><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member">hemlock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member">hem_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether there is a thread waiting to acquire the Hemlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should only be called by the current owner of the lock.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hemlock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hem_node_t object. Associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="131" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hemlock by Dice and Kogan. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_hemlock.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hemlock_8h" kindref="compound" tooltip="Hemlock by Dice and Kogan.">vsync/spinlock/hemlock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_THREADS<sp/><sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>g_lock_a<sp/>=<sp/><ref refid="hemlock_8h_1af39594fa1038e58f0333aec86d1089e5" kindref="member" tooltip="Initializer of hemlock_t.">HEMLOCK_INIT</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>g_lock_b<sp/>=<sp/><ref refid="hemlock_8h_1af39594fa1038e58f0333aec86d1089e5" kindref="member" tooltip="Initializer of hemlock_t.">HEMLOCK_INIT</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>g_nodes[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>same<sp/>thread<sp/>context<sp/>object<sp/>can<sp/>be<sp/>used<sp/>with<sp/>multiple<sp/>instances<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hemlock</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1adb6fae8c527f2016bf68b0832f3a1839" kindref="member" tooltip="Acquires the Hemlock.">hemlock_acquire</ref>(&amp;g_lock_a,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1adb6fae8c527f2016bf68b0832f3a1839" kindref="member" tooltip="Acquires the Hemlock.">hemlock_acquire</ref>(&amp;g_lock_b,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1a71721593b6ca88be4c3798adf007fdde" kindref="member" tooltip="Releases the Hemlock.">hemlock_release</ref>(&amp;g_lock_b,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1a71721593b6ca88be4c3798adf007fdde" kindref="member" tooltip="Releases the Hemlock.">hemlock_release</ref>(&amp;g_lock_a,<sp/>&amp;g_nodes[tid]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>this<sp/>function<sp/>as<sp/>an<sp/>alternative<sp/>to<sp/>HEMLOCK_INIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1a058a7cef610bf44aed5cc4b94a9cce4b" kindref="member" tooltip="Initializes the given lock object l.">hemlock_init</ref>(&amp;g_lock_a);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hemlock_8h_1a058a7cef610bf44aed5cc4b94a9cce4b" kindref="member" tooltip="Initializes the given lock object l.">hemlock_init</ref>(&amp;g_lock_b);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>Dice and Kogan - [Hemlock : Compact and Scalable Mutual Exclusion] (<ulink url="https://arxiv.org/abs/2102.03863">https://arxiv.org/abs/2102.03863</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_HEMLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_HEMLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="structhem__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_s</ref><sp/>*)<sp/>grant;</highlight></codeline>
+<codeline lineno="27" refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structhemlock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(<ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*)<sp/>tail;</highlight></codeline>
+<codeline lineno="32" refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="hemlock_8h_1a9b5cee91b95766eac5ddc27ad8ea4d7c" kindref="member" tooltip="Hemlock data structure.">hemlock_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="hemlock_8h_1af39594fa1038e58f0333aec86d1089e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HEMLOCK_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tail<sp/>=<sp/>VATOMIC_INIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="hemlock_8h_1a058a7cef610bf44aed5cc4b94a9cce4b" refkind="member"><highlight class="normal"><ref refid="hemlock_8h_1a058a7cef610bf44aed5cc4b94a9cce4b" kindref="member" tooltip="Initializes the given lock object l.">hemlock_init</ref>(<ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a305c975afa453b26d513aadbe0cc5dfc" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write</ref>(&amp;l-&gt;tail,<sp/>NULL);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="hemlock_8h_1a793fb78fd072d42168b50d8f09d54e1a" refkind="member"><highlight class="normal"><ref refid="hemlock_8h_1a793fb78fd072d42168b50d8f09d54e1a" kindref="member" tooltip="Tries to acquire the Hemlock.">hemlock_tryacquire</ref>(<ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>*l,<sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;node-&gt;grant,<sp/>NULL);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1ac4150e5ec3ea6e0b6b4d1f69c6e88a24" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_acq</ref>(&amp;l-&gt;tail,<sp/>NULL,<sp/>node);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pred<sp/>==<sp/>NULL;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="hemlock_8h_1adb6fae8c527f2016bf68b0832f3a1839" refkind="member"><highlight class="normal"><ref refid="hemlock_8h_1adb6fae8c527f2016bf68b0832f3a1839" kindref="member" tooltip="Acquires the Hemlock.">hemlock_acquire</ref>(<ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>*l,<sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;node-&gt;grant,<sp/>NULL);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a274649a698a8a2c6a87e82c64d6968e9" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg</ref>(&amp;l-&gt;tail,<sp/>node);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(HEMLOCK_USE_CTR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="await__ptr_8h_1aff8376234fc708857fa89c6d3b78b11b" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to v.">vatomicptr_await_eq_acq</ref>(&amp;pred-&gt;grant,<sp/>l);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;pred-&gt;grant,<sp/>NULL);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__ptr_8h_1ac4150e5ec3ea6e0b6b4d1f69c6e88a24" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_acq</ref>(&amp;pred-&gt;grant,<sp/>l,<sp/>NULL)<sp/>!=<sp/>l)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a47c7772a1e1f63137acceb44236712ed" kindref="member" tooltip="Calls CPU pause instruction if available, e.g., PAUSE in x86.">vatomic_cpu_pause</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="hemlock_8h_1a71721593b6ca88be4c3798adf007fdde" refkind="member"><highlight class="normal"><ref refid="hemlock_8h_1a71721593b6ca88be4c3798adf007fdde" kindref="member" tooltip="Releases the Hemlock.">hemlock_release</ref>(<ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>*l,<sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;l-&gt;tail)<sp/>==<sp/>node<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1aca37d07a0eac3d5abdb833c773e1da92" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_rel</ref>(&amp;l-&gt;tail,<sp/>node,<sp/>NULL)<sp/>==<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1abea122b4023bf683adb30d72dba12c67" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rel</ref>(&amp;node-&gt;grant,<sp/>l);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(HEMLOCK_USE_CTR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="await__ptr_8h_1ab369e3b82a3bca6f001a193f81fc8a68" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to v.">vatomicptr_await_eq_rlx</ref>(&amp;node-&gt;grant,<sp/>NULL);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>__SIZEOF_POINTER__<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>*grant<sp/>=<sp/>(<ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>*)&amp;node-&gt;grant;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__u64_8h_1ac13ec5443d14a50dff19a345756ac480" kindref="member" tooltip="Adds v to the value of a and returns the old value.">vatomic64_get_add_rlx</ref>(grant,<sp/>0)<sp/>!=<sp/>(vuint64_t)NULL)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a47c7772a1e1f63137acceb44236712ed" kindref="member" tooltip="Calls CPU pause instruction if available, e.g., PAUSE in x86.">vatomic_cpu_pause</ref>();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*grant<sp/>=<sp/>(<ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>*)&amp;node-&gt;grant;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>await_while<sp/>(<ref refid="core__u32_8h_1a615f3ede1a8b4527e3bff13edd5aa0b3" kindref="member" tooltip="Adds v to the value of a and returns the old value.">vatomic32_get_add_rlx</ref>(&amp;node-&gt;grant,<sp/>0)<sp/>!=<sp/>(vuint32_t)NULL)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a47c7772a1e1f63137acceb44236712ed" kindref="member" tooltip="Calls CPU pause instruction if available, e.g., PAUSE in x86.">vatomic_cpu_pause</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="hemlock_8h_1a00cc28c6d61999df24bb5a72362842a6" refkind="member"><highlight class="normal"><ref refid="hemlock_8h_1a00cc28c6d61999df24bb5a72362842a6" kindref="member" tooltip="Returns whether there is a thread waiting to acquire the Hemlock.">hemlock_has_waiters</ref>(<ref refid="structhemlock__s" kindref="compound" tooltip="Hemlock data structure.">hemlock_t</ref><sp/>*l,<sp/><ref refid="structhem__node__s" kindref="compound" tooltip="Node of a thread/core for all Hemlock instances.">hem_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;l-&gt;tail)<sp/>!=<sp/>node;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/hemlock.h"/>
+  </compounddef>
+</doxygen>

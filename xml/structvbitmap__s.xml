@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvbitmap__s" kind="struct" language="C++" prot="public">
+    <compoundname>vbitmap_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvbitmap__s_1ae5daddbc2bd67b7a6fc5ec63ec200f1d" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vbitmap_s::maps_cnt</definition>
+        <argsstring></argsstring>
+        <name>maps_cnt</name>
+        <qualifiedname>vbitmap_s::maps_cnt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="27" column="13" bodyfile="vsync/bitmap/bitmap.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbitmap__s_1a181608140ce24396af58fa19a962c066" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vbitmap_s::bit_cnt</definition>
+        <argsstring></argsstring>
+        <name>bit_cnt</name>
+        <qualifiedname>vbitmap_s::bit_cnt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="28" column="13" bodyfile="vsync/bitmap/bitmap.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbitmap__s_1ad48e40ac6c8a685f0aacb4a37e18af85" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></type>
+        <definition>vatomic64_t vbitmap_s::maps[]</definition>
+        <argsstring>[]</argsstring>
+        <name>maps</name>
+        <qualifiedname>vbitmap_s::maps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="29" column="17" bodyfile="vsync/bitmap/bitmap.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+      <node id="1">
+        <label>vbitmap_s</label>
+        <link refid="structvbitmap__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>maps</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/bitmap/bitmap.h" line="26" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="26" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structvbitmap__s_1a181608140ce24396af58fa19a962c066" prot="public" virt="non-virtual"><scope>vbitmap_s</scope><name>bit_cnt</name></member>
+      <member refid="structvbitmap__s_1ad48e40ac6c8a685f0aacb4a37e18af85" prot="public" virt="non-virtual"><scope>vbitmap_s</scope><name>maps</name></member>
+      <member refid="structvbitmap__s_1ae5daddbc2bd67b7a6fc5ec63ec200f1d" prot="public" virt="non-virtual"><scope>vbitmap_s</scope><name>maps_cnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

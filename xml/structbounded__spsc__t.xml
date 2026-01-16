@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbounded__spsc__t" kind="struct" language="C++" prot="public">
+    <compoundname>bounded_spsc_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbounded__spsc__t_1a04ea0ccd73473cec8dc68bc711721f83" prot="public" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** bounded_spsc_t::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>bounded_spsc_t::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="29" column="10" bodyfile="vsync/queue/bounded_spsc.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__spsc__t_1a7a7e8a0989402fbd274bef97510bedef" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t bounded_spsc_t::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>bounded_spsc_t::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="30" column="17" bodyfile="vsync/queue/bounded_spsc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__spsc__t_1ad66d6fed24f103f2826189a2b30afdd5" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t bounded_spsc_t::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>bounded_spsc_t::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="31" column="17" bodyfile="vsync/queue/bounded_spsc.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbounded__spsc__t_1ae3da62ba1eedadde50fe36f62b6158d1" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t bounded_spsc_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>bounded_spsc_t::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bounded_spsc.h" line="32" column="15" bodyfile="vsync/queue/bounded_spsc.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>bounded_spsc_t</label>
+        <link refid="structbounded__spsc__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/bounded_spsc.h" line="28" column="1" bodyfile="vsync/queue/bounded_spsc.h" bodystart="28" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structbounded__spsc__t_1a04ea0ccd73473cec8dc68bc711721f83" prot="public" virt="non-virtual"><scope>bounded_spsc_t</scope><name>buf</name></member>
+      <member refid="structbounded__spsc__t_1a7a7e8a0989402fbd274bef97510bedef" prot="public" virt="non-virtual"><scope>bounded_spsc_t</scope><name>head</name></member>
+      <member refid="structbounded__spsc__t_1ae3da62ba1eedadde50fe36f62b6158d1" prot="public" virt="non-virtual"><scope>bounded_spsc_t</scope><name>size</name></member>
+      <member refid="structbounded__spsc__t_1ad66d6fed24f103f2826189a2b30afdd5" prot="public" virt="non-virtual"><scope>bounded_spsc_t</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

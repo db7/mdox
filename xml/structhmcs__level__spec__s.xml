@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhmcs__level__spec__s" kind="struct" language="C++" prot="public">
+    <compoundname>hmcs_level_spec_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhmcs__level__spec__s_1a96b0da316dbc1c2c21ac5b3e44bd2394" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t hmcs_level_spec_s::num_nodes_per_parent</definition>
+        <argsstring></argsstring>
+        <name>num_nodes_per_parent</name>
+        <qualifiedname>hmcs_level_spec_s::num_nodes_per_parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="73" column="13" bodyfile="vsync/spinlock/hmcslock.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmcs__level__spec__s_1a1daefd8cfcb12833ee6d203a21c0bb11" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t hmcs_level_spec_s::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>hmcs_level_spec_s::threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="74" column="15" bodyfile="vsync/spinlock/hmcslock.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/spinlock/hmcslock.h" line="72" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="72" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structhmcs__level__spec__s_1a96b0da316dbc1c2c21ac5b3e44bd2394" prot="public" virt="non-virtual"><scope>hmcs_level_spec_s</scope><name>num_nodes_per_parent</name></member>
+      <member refid="structhmcs__level__spec__s_1a1daefd8cfcb12833ee6d203a21c0bb11" prot="public" virt="non-virtual"><scope>hmcs_level_spec_s</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

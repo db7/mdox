@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvskiplist__s" kind="struct" language="C++" prot="public">
+    <compoundname>vskiplist_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvskiplist__s_1a58d8221fed31697645a62868cbd916ef" prot="public" static="no" mutable="no">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>vskiplist_node_t* vskiplist_s::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>vskiplist_s::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="47" column="22" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__s_1a8da07742ca8960af180cc2092e8f918f" prot="public" static="no" mutable="no">
+        <type><ref refid="structvskiplist__node__s" kindref="compound">vskiplist_node_t</ref> *</type>
+        <definition>vskiplist_node_t* vskiplist_s::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>vskiplist_s::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="48" column="22" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__s_1a6f1a64e1367bbe402dfe5ca947286522" prot="public" static="no" mutable="no">
+        <type><ref refid="structskiplist__seed__s" kindref="compound">vskiplist_seed_t</ref></type>
+        <definition>vskiplist_seed_t vskiplist_s::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>vskiplist_s::seed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="49" column="22" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__s_1a5a103cc20d50de3ff8ba43583b72770a" prot="public" static="no" mutable="no">
+        <type>vskiplist_cmp_node_t</type>
+        <definition>vskiplist_cmp_node_t vskiplist_s::fun_cmp</definition>
+        <argsstring></argsstring>
+        <name>fun_cmp</name>
+        <qualifiedname>vskiplist_s::fun_cmp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="50" column="26" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__s_1a350763948448fb918e0e19f6a6c4c6b8" prot="public" static="no" mutable="no">
+        <type>vskiplist_handle_node_t</type>
+        <definition>vskiplist_handle_node_t vskiplist_s::fun_retire</definition>
+        <argsstring></argsstring>
+        <name>fun_retire</name>
+        <qualifiedname>vskiplist_s::fun_retire</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="51" column="29" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvskiplist__s_1a0fda035fff6ca76bfbca4ab304fb4f6a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vskiplist_s::fun_retire_arg</definition>
+        <argsstring></argsstring>
+        <name>fun_retire_arg</name>
+        <qualifiedname>vskiplist_s::fun_retire_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/skiplist/skiplist_types.h" line="52" column="10" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>skiplist_seed_s</label>
+        <link refid="structskiplist__seed__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>seed</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="2">
+        <label>vskiplist_node_s</label>
+        <link refid="structvskiplist__node__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>non_snipped_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vskiplist_s</label>
+        <link refid="structvskiplist__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fun_cmp</edgelabel>
+          <edgelabel>fun_retire</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>seed</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/internal/skiplist/skiplist_types.h" line="46" column="1" bodyfile="vsync/map/internal/skiplist/skiplist_types.h" bodystart="46" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structvskiplist__s_1a5a103cc20d50de3ff8ba43583b72770a" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>fun_cmp</name></member>
+      <member refid="structvskiplist__s_1a350763948448fb918e0e19f6a6c4c6b8" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>fun_retire</name></member>
+      <member refid="structvskiplist__s_1a0fda035fff6ca76bfbca4ab304fb4f6a" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>fun_retire_arg</name></member>
+      <member refid="structvskiplist__s_1a58d8221fed31697645a62868cbd916ef" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>head</name></member>
+      <member refid="structvskiplist__s_1a6f1a64e1367bbe402dfe5ca947286522" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>seed</name></member>
+      <member refid="structvskiplist__s_1a8da07742ca8960af180cc2092e8f918f" prot="public" virt="non-virtual"><scope>vskiplist_s</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

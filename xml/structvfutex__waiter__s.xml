@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvfutex__waiter__s" kind="struct" language="C++" prot="public">
+    <compoundname>vfutex_waiter_s</compoundname>
+    <includes refid="futex__mock__liveness_8h" local="no">vsync/thread/internal/futex_mock_liveness.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvfutex__waiter__s_1a6acbe17b003f8e20a6cf4254c04953fc" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t vfutex_waiter_s::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>vfutex_waiter_s::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness.h" line="22" column="17" bodyfile="vsync/thread/internal/futex_mock_liveness.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvfutex__waiter__s_1a605095dfa3def0b9617cedad35b98395" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref> *</type>
+        <definition>vatomic32_t* vfutex_waiter_s::futex</definition>
+        <argsstring></argsstring>
+        <name>futex</name>
+        <qualifiedname>vfutex_waiter_s::futex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness.h" line="23" column="17" bodyfile="vsync/thread/internal/futex_mock_liveness.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvfutex__waiter__s_1a8ac514a35ac8e511e13000eadff77452" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structvfutex__waiter__s" kindref="compound">vfutex_waiter_s</ref> *</type>
+        <definition>struct vfutex_waiter_s* vfutex_waiter_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>vfutex_waiter_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/internal/futex_mock_liveness.h" line="24" column="26" bodyfile="vsync/thread/internal/futex_mock_liveness.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>futex mock for verifying safety and liveness. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a mock that accurately models the behavior of futex operations inside kernel, but at the cost of higher overhead for model checkers. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="1">
+        <label>vfutex_waiter_s</label>
+        <link refid="structvfutex__waiter__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>futex</edgelabel>
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/thread/internal/futex_mock_liveness.h" line="21" column="1" bodyfile="vsync/thread/internal/futex_mock_liveness.h" bodystart="21" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structvfutex__waiter__s_1a605095dfa3def0b9617cedad35b98395" prot="public" virt="non-virtual"><scope>vfutex_waiter_s</scope><name>futex</name></member>
+      <member refid="structvfutex__waiter__s_1a8ac514a35ac8e511e13000eadff77452" prot="public" virt="non-virtual"><scope>vfutex_waiter_s</scope><name>next</name></member>
+      <member refid="structvfutex__waiter__s_1a6acbe17b003f8e20a6cf4254c04953fc" prot="public" virt="non-virtual"><scope>vfutex_waiter_s</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

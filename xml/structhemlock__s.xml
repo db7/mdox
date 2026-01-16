@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhemlock__s" kind="struct" language="C++" prot="public">
+    <compoundname>hemlock_s</compoundname>
+    <includes refid="hemlock_8h" local="no">vsync/spinlock/hemlock.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhemlock__s_1a216b77d9ff1c77282f29d3cc7f2104b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hemlock_s::vatomicptr</definition>
+        <argsstring>(hem_node_t *) tail</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>hemlock_s::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="hemlock_8h_1a9be47def70d7935afc26eee7e925cadd" kindref="member">hem_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hemlock.h" line="31" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hemlock data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/spinlock/hemlock.h" line="30" column="1" bodyfile="vsync/spinlock/hemlock.h" bodystart="30" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structhemlock__s_1a216b77d9ff1c77282f29d3cc7f2104b2" prot="public" virt="non-virtual"><scope>hemlock_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

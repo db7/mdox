@@ -1,0 +1,1313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bitmap_8h" kind="file" language="C++">
+    <compoundname>bitmap.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/bitmap/bitmap.h</label>
+        <link refid="bitmap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="35">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvbitmap__s" prot="public">vbitmap_s</innerclass>
+    <innerclass refid="structvbitmap__iter__s" prot="public">vbitmap_iter_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="bitmap_8h_1a81c748b42718749996c190f62e46d5dc" prot="public" static="no">
+        <name>VBITMAP_CALC_SLOT_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>((_i_) / ((vsize_t)VUINT64_WIDTH))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="38" column="9" bodyfile="vsync/bitmap/bitmap.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bitmap_8h_1abe40a8b435a69ddd1513b4cb8dc9091b" prot="public" static="no">
+        <name>VBITMAP_CALC_BIT_SLOT_IDX</name>
+        <param><defname>_i_</defname></param>
+        <initializer>((_i_) % ((vsize_t)VUINT64_WIDTH))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="39" column="9" bodyfile="vsync/bitmap/bitmap.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bitmap_8h_1a323170ed78c4e93a2e78ca2ed8276df3" prot="public" static="no">
+        <name>VBITMAP_BIT_MASK</name>
+        <param><defname>_i_</defname></param>
+        <initializer>(((vuint64_t)1) &lt;&lt; VBITMAP_CALC_BIT_SLOT_IDX(_i_))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="40" column="9" bodyfile="vsync/bitmap/bitmap.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bitmap_8h_1a13ef38265d98f236be8dae8fc99fca05" prot="public" static="no">
+        <type>struct <ref refid="structvbitmap__s" kindref="compound">vbitmap_s</ref></type>
+        <definition>typedef struct vbitmap_s vbitmap_t</definition>
+        <argsstring></argsstring>
+        <name>vbitmap_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="30" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="bitmap_8h_1a4178ff953b60f49984edb6babfb0a4c2" prot="public" static="no">
+        <type>struct <ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_s</ref></type>
+        <definition>typedef struct vbitmap_iter_s vbitmap_iter_t</definition>
+        <argsstring></argsstring>
+        <name>vbitmap_iter_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="36" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bitmap_8h_1a026f5135c69f6011575bb962fca4c4e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint64_t</type>
+        <definition>static vuint64_t _vbitmap_lsb_mask</definition>
+        <argsstring>(vsize_t idx)</argsstring>
+        <name>_vbitmap_lsb_mask</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the mask for setting bits in [idx: 63]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LSB index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint64_t mask. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="49" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1aba51793c4c9ca98773248e17d61c205f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint64_t</type>
+        <definition>static vuint64_t _vbitmap_msb_mask</definition>
+        <argsstring>(vsize_t idx)</argsstring>
+        <name>_vbitmap_msb_mask</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the mask for setting bits in [0: idx]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MSB index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint64_t mask. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="63" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a49a555c0ffd2241f5a39a7d886f83e52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vuint64_t</type>
+        <definition>static vuint64_t _vbitmap_range_mask</definition>
+        <argsstring>(vsize_t from, vsize_t to)</argsstring>
+        <name>_vbitmap_range_mask</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Returns mask for setting bits in [from, to]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LSB index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MSB index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vuint64_t mask. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="78" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a597d976f74bd3dd4ab3690e7bf8c1372" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vsize_t</type>
+        <definition>static vsize_t vbitmap_size</definition>
+        <argsstring>(vsize_t bit_count)</argsstring>
+        <name>vbitmap_size</name>
+        <param>
+          <type>vsize_t</type>
+          <declname>bit_count</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size of vbitmap_t object based on the given number of bits. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bit_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vsize_t size of vbitmap_t object needed to accommodate <computeroutput>bit_count</computeroutput> of bits. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="93" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a333abfeb0e57225926a923ffcfb96107" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_init</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t bit_count, vbool_t set)</argsstring>
+        <name>vbitmap_init</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>bit_count</declname>
+        </param>
+        <param>
+          <type>vbool_t</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given <computeroutput>bitmap</computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All bits are unset initially.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bits. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if all bits should be set, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="108" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="108" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1ad348afdcc0a3a183b4bae6e1f9149e62" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_clear</definition>
+        <argsstring>(vbitmap_t *bitmap)</argsstring>
+        <name>vbitmap_clear</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Clears all bits in the given bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="123" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vbitmap_get</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t bit_idx)</argsstring>
+        <name>vbitmap_get</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>bit_idx</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value of the bit at index <computeroutput>bit_idx</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the bit to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true the bit is set. </para>
+</simplesect>
+<simplesect kind="return"><para>false the bit is unset. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="138" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a85ed5ccc245ac57858e0dfab42a694b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_set_bit</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t bit_idx)</argsstring>
+        <name>vbitmap_set_bit</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>bit_idx</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bit at index <computeroutput>bit_idx</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the bit to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="156" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="156" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vbitbmap_set_slot</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t idx, vuint64_t mask)</argsstring>
+        <name>_vbitbmap_set_slot</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>vuint64_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Sets bits in slot idx using the given mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mask of bits to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="174" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _vbitbmap_clr_slot</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t idx, vuint64_t mask)</argsstring>
+        <name>_vbitbmap_clr_slot</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>vuint64_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Clears bits in slot idx using the given mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>slot index. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mask of bits to clear. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="187" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="187" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1ae1372d2df9b86245cea217fc880b9494" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_set_range</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t from, vsize_t to)</argsstring>
+        <name>vbitmap_set_range</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Sets all bits with indexes that are in range <computeroutput>[from:to]</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the range is inclusive both bits at index <computeroutput>from</computeroutput> and index <computeroutput>to</computeroutput> will be set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the LSB in the range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the MSB in the range.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> This function is not atomic. Bits inside the range might not be raised at once. Raising bits occur in multiple steps. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="206" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="206" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1afce37fa94a2a1756530e34ab23f63e3d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_clr_range</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t from, vsize_t to)</argsstring>
+        <name>vbitmap_clr_range</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Clears all bits with indexes that are in range <computeroutput>[from:to]</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> the range is inclusive both bits at index <computeroutput>from</computeroutput> and index <computeroutput>to</computeroutput> will be set.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the LSB in the range. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the MSB in the range.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> This function is not atomic. Bits inside the range might not be cleared at once. Clearing bits occur in multiple steps. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="254" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="254" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1acbb5323383be148df89789b124c5ecfd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_clr_bit</definition>
+        <argsstring>(vbitmap_t *bitmap, vsize_t bit_idx)</argsstring>
+        <name>vbitmap_clr_bit</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>bit_idx</declname>
+        </param>
+        <briefdescription>
+<para>Clears the bit at index <computeroutput>bit_idx</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the bit to unset. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="295" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="295" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1a15a96130d8e524abbbde8b62c0ae640e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void vbitmap_iter_init</definition>
+        <argsstring>(vbitmap_t *bitmap, vbitmap_iter_t *iter)</argsstring>
+        <name>vbitmap_iter_init</name>
+        <param>
+          <type><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the given vbitmap_iter_t object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_t to iterate over. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_iter_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="312" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="312" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8h_1ad220991f2a34a69a9aa196b7026113a3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t vbitmap_iter_next</definition>
+        <argsstring>(vbitmap_iter_t *iter, vsize_t *out_bit_idx)</argsstring>
+        <name>vbitmap_iter_next</name>
+        <param>
+          <type><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref> *</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>vsize_t *</type>
+          <declname>out_bit_idx</declname>
+        </param>
+        <briefdescription>
+<para>Iterates to the next set bit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of vbitmap_iter_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_bit_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the next set bit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true next set bit is found. </para>
+</simplesect>
+<simplesect kind="return"><para>false no more set bits are found.</para>
+</simplesect>
+<simplesect kind="pre"><para>call <computeroutput>vbitmap_iter_init</computeroutput> to initialize <computeroutput>iter</computeroutput> before first use. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/bitmap/bitmap.h" line="333" column="1" bodyfile="vsync/bitmap/bitmap.h" bodystart="333" bodyend="367"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A bitmap implementation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Bitmap with basic functionality.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_bitmap.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="bitmap_8h" kindref="compound" tooltip="A bitmap implementation.">vsync/bitmap/bitmap.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WRITER_COUNT<sp/>11U</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(WRITER_COUNT<sp/>+<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_COUNT<sp/><sp/><sp/><sp/>(VUINT64_WIDTH<sp/>*<sp/>WRITER_COUNT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*g_bitmap;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">reader(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref><sp/>iter<sp/><sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>signal_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>expected<sp/><sp/><sp/><sp/><sp/>=<sp/>BIT_COUNT<sp/>-<sp/>WRITER_COUNT;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(signal_count<sp/>&lt;<sp/>expected)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signal_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a15a96130d8e524abbbde8b62c0ae640e" kindref="member" tooltip="Initializes the given vbitmap_iter_t object.">vbitmap_iter_init</ref>(g_bitmap,<sp/>&amp;iter);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="bitmap_8h_1ad220991f2a34a69a9aa196b7026113a3" kindref="member" tooltip="Iterates to the next set bit.">vbitmap_iter_next</ref>(&amp;iter,<sp/>&amp;idx))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signal_count++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%zu<sp/>bits<sp/>were<sp/>raised,<sp/>expected<sp/>%zu\n&quot;</highlight><highlight class="normal">,<sp/>signal_count,<sp/>expected);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">writer(vsize_t<sp/>tid)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>set<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>each<sp/>writer<sp/>sets<sp/>64<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>from<sp/>=<sp/>tid<sp/>*<sp/>VUINT64_WIDTH;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>to<sp/><sp/><sp/>=<sp/>from<sp/>+<sp/>VUINT64_WIDTH<sp/>-<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1ae1372d2df9b86245cea217fc880b9494" kindref="member" tooltip="Sets all bits with indexes that are in range [from:to].">vbitmap_set_range</ref>(g_bitmap,<sp/>from,<sp/>to);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>set<sp/>=<sp/><ref refid="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" kindref="member" tooltip="Returns the value of the bit at index bit_idx.">vbitmap_get</ref>(g_bitmap,<sp/>from);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(set<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1acbb5323383be148df89789b124c5ecfd" kindref="member" tooltip="Clears the bit at index bit_idx.">vbitmap_clr_bit</ref>(g_bitmap,<sp/>from);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>set<sp/>=<sp/><ref refid="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" kindref="member" tooltip="Returns the value of the bit at index bit_idx.">vbitmap_get</ref>(g_bitmap,<sp/>from);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(set<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a85ed5ccc245ac57858e0dfab42a694b9" kindref="member" tooltip="Sets the bit at index bit_idx.">vbitmap_set_bit</ref>(g_bitmap,<sp/>from);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>set<sp/>=<sp/><ref refid="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" kindref="member" tooltip="Returns the value of the bit at index bit_idx.">vbitmap_get</ref>(g_bitmap,<sp/>from);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(set<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)(vuintptr_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tid<sp/>==<sp/>WRITER_COUNT)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer(tid);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>size<sp/>=<sp/><ref refid="bitmap_8h_1a597d976f74bd3dd4ab3690e7bf8c1372" kindref="member" tooltip="Calculates the size of vbitmap_t object based on the given number of bits.">vbitmap_size</ref>(BIT_COUNT);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_bitmap<sp/><sp/><sp/><sp/><sp/>=<sp/>malloc(size);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a333abfeb0e57225926a923ffcfb96107" kindref="member" tooltip="Initializes the given bitmap object.">vbitmap_init</ref>(g_bitmap,<sp/>BIT_COUNT,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(g_bitmap);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>The interface is inspired by and similar to [ck_bitmap] (<ulink url="https://github.com/concurrencykit/ck/blob/master/include/ck_bitmap.h">https://github.com/concurrencykit/ck/blob/master/include/ck_bitmap.h</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_VBITMAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_VBITMAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structvbitmap__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvbitmap__s" kindref="compound">vbitmap_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>maps_cnt;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bit_cnt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>maps[];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structvbitmap__iter__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*map;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>last_val;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VBITMAP_CALC_SLOT_IDX(_i_)<sp/><sp/><sp/><sp/><sp/>((_i_)<sp/>/<sp/>((vsize_t)VUINT64_WIDTH))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VBITMAP_CALC_BIT_SLOT_IDX(_i_)<sp/>((_i_)<sp/>%<sp/>((vsize_t)VUINT64_WIDTH))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VBITMAP_BIT_MASK(_i_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((vuint64_t)1)<sp/>&lt;&lt;<sp/>VBITMAP_CALC_BIT_SLOT_IDX(_i_))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint64_t</highlight></codeline>
+<codeline lineno="49" refid="bitmap_8h_1a026f5135c69f6011575bb962fca4c4e2" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a026f5135c69f6011575bb962fca4c4e2" kindref="member" tooltip="Returns the mask for setting bits in [idx: 63].">_vbitmap_lsb_mask</ref>(vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>mask<sp/>&lt;&lt;<sp/>((vuint64_t)idx);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>mask--;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>~mask;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint64_t</highlight></codeline>
+<codeline lineno="63" refid="bitmap_8h_1aba51793c4c9ca98773248e17d61c205f" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1aba51793c4c9ca98773248e17d61c205f" kindref="member" tooltip="Returns the mask for setting bits in [0: idx].">_vbitmap_msb_mask</ref>(vsize_t<sp/>idx)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>mask<sp/>&lt;&lt;<sp/>((vuint64_t)idx);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>mask<sp/>+<sp/>(mask<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mask;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vuint64_t</highlight></codeline>
+<codeline lineno="78" refid="bitmap_8h_1a49a555c0ffd2241f5a39a7d886f83e52" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a49a555c0ffd2241f5a39a7d886f83e52" kindref="member" tooltip="Returns mask for setting bits in [from, to].">_vbitmap_range_mask</ref>(vsize_t<sp/>from,<sp/>vsize_t<sp/>to)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>lsb<sp/><sp/>=<sp/><ref refid="bitmap_8h_1a026f5135c69f6011575bb962fca4c4e2" kindref="member" tooltip="Returns the mask for setting bits in [idx: 63].">_vbitmap_lsb_mask</ref>(from);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>msb<sp/><sp/>=<sp/><ref refid="bitmap_8h_1aba51793c4c9ca98773248e17d61c205f" kindref="member" tooltip="Returns the mask for setting bits in [0: idx].">_vbitmap_msb_mask</ref>(to);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>msb<sp/>&amp;<sp/>lsb;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mask;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="93" refid="bitmap_8h_1a597d976f74bd3dd4ab3690e7bf8c1372" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a597d976f74bd3dd4ab3690e7bf8c1372" kindref="member" tooltip="Calculates the size of vbitmap_t object based on the given number of bits.">vbitmap_size</ref>(vsize_t<sp/>bit_count)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>arr_sz<sp/>=<sp/>VCEIL_DIV(bit_count,<sp/>VUINT64_WIDTH)<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref>)<sp/>+<sp/>arr_sz);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="bitmap_8h_1a333abfeb0e57225926a923ffcfb96107" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a333abfeb0e57225926a923ffcfb96107" kindref="member" tooltip="Initializes the given bitmap object.">vbitmap_init</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>bit_count,<sp/>vbool_t<sp/>set)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>init_val<sp/>=<sp/>set<sp/>?<sp/>VUINT64_MAX<sp/>:<sp/>0U;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>bitmap-&gt;bit_cnt<sp/><sp/><sp/><sp/>=<sp/>bit_count;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>bitmap-&gt;maps_cnt<sp/><sp/><sp/>=<sp/>VCEIL_DIV(bit_count,<sp/>VUINT64_WIDTH);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>bitmap-&gt;maps_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1acb77fba19367ebdaf95ef732d5b8795f" kindref="member" tooltip="Initializes the atomic variable a with value v.">vatomic64_init</ref>(&amp;bitmap-&gt;maps[i],<sp/>init_val);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="bitmap_8h_1ad348afdcc0a3a183b4bae6e1f9149e62" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1ad348afdcc0a3a183b4bae6e1f9149e62" kindref="member" tooltip="Clears all bits in the given bitmap.">vbitmap_clear</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>bitmap-&gt;maps_cnt;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;bitmap-&gt;maps[i],<sp/>0U);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="138" refid="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1abe6e99342e7f0a122de5b0690bd94289" kindref="member" tooltip="Returns the value of the bit at index bit_idx.">vbitmap_get</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>bit_idx)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bit_idx<sp/>&lt;<sp/>bitmap-&gt;bit_cnt);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(bit_idx);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>VBITMAP_BIT_MASK(bit_idx);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>val<sp/><sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;bitmap-&gt;maps[idx]);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>is_set<sp/>=<sp/>(val<sp/>&amp;<sp/>mask)<sp/>==<sp/>mask;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_set;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="bitmap_8h_1a85ed5ccc245ac57858e0dfab42a694b9" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a85ed5ccc245ac57858e0dfab42a694b9" kindref="member" tooltip="Sets the bit at index bit_idx.">vbitmap_set_bit</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>bit_idx)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bit_idx<sp/>&lt;<sp/>bitmap-&gt;bit_cnt);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(bit_idx);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>VBITMAP_BIT_MASK(bit_idx);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>val<sp/><sp/>=<sp/><ref refid="core__u64_8h_1a45d3845f307fbb7ae102470e5cf049e8" kindref="member" tooltip="Applies bitwise or operation with v to the value of a and returns the new value.">vatomic64_or_get</ref>(&amp;bitmap-&gt;maps[idx],<sp/>mask);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT((val<sp/>&amp;<sp/>mask)<sp/>==<sp/>mask);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" kindref="member" tooltip="Sets bits in slot idx using the given mask.">_vbitbmap_set_slot</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>idx,<sp/>vuint64_t<sp/>mask)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a51faee826137927343269d10cd6acc94" kindref="member" tooltip="Applies bitwise or operation with v to the value of a.">vatomic64_or</ref>(&amp;bitmap-&gt;maps[idx],<sp/>mask);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" kindref="member" tooltip="Clears bits in slot idx using the given mask.">_vbitbmap_clr_slot</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>idx,<sp/>vuint64_t<sp/>mask)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ae5ff432fbba0f27290367ee298744414" kindref="member" tooltip="Applies bitwise and operation with v to the value of a.">vatomic64_and</ref>(&amp;bitmap-&gt;maps[idx],<sp/>mask);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="bitmap_8h_1ae1372d2df9b86245cea217fc880b9494" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1ae1372d2df9b86245cea217fc880b9494" kindref="member" tooltip="Sets all bits with indexes that are in range [from:to].">vbitmap_set_range</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>from,<sp/>vsize_t<sp/>to)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>lsb_slot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>msb_slot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>lsb_idx<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>msb_idx<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(from<sp/>&lt;=<sp/>to);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(to<sp/>&lt;<sp/>bitmap-&gt;bit_cnt);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>lsb_slot<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(from);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>msb_slot<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(to);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>lsb_idx<sp/><sp/>=<sp/>VBITMAP_CALC_BIT_SLOT_IDX(from);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>msb_idx<sp/><sp/>=<sp/>VBITMAP_CALC_BIT_SLOT_IDX(to);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lsb_slot<sp/>&lt;=<sp/>msb_slot);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(msb_slot<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LSB<sp/>and<sp/>MSB<sp/>are<sp/>within<sp/>the<sp/>same<sp/>slot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lsb_slot<sp/>==<sp/>msb_slot)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/><ref refid="bitmap_8h_1a49a555c0ffd2241f5a39a7d886f83e52" kindref="member" tooltip="Returns mask for setting bits in [from, to].">_vbitmap_range_mask</ref>(lsb_idx,<sp/>msb_idx);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" kindref="member" tooltip="Sets bits in slot idx using the given mask.">_vbitbmap_set_slot</ref>(bitmap,<sp/>lsb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/><ref refid="bitmap_8h_1a026f5135c69f6011575bb962fca4c4e2" kindref="member" tooltip="Returns the mask for setting bits in [idx: 63].">_vbitmap_lsb_mask</ref>(lsb_idx);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" kindref="member" tooltip="Sets bits in slot idx using the given mask.">_vbitbmap_set_slot</ref>(bitmap,<sp/>lsb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>lsb_slot<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>msb_slot;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;bitmap-&gt;maps[i],<sp/>VUINT64_MAX);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/><ref refid="bitmap_8h_1aba51793c4c9ca98773248e17d61c205f" kindref="member" tooltip="Returns the mask for setting bits in [0: idx].">_vbitmap_msb_mask</ref>(msb_idx);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a1103ed5d2db5f33c114aeacff0b39e99" kindref="member" tooltip="Sets bits in slot idx using the given mask.">_vbitbmap_set_slot</ref>(bitmap,<sp/>msb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="bitmap_8h_1afce37fa94a2a1756530e34ab23f63e3d" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1afce37fa94a2a1756530e34ab23f63e3d" kindref="member" tooltip="Clears all bits with indexes that are in range [from:to].">vbitmap_clr_range</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>from,<sp/>vsize_t<sp/>to)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>lsb_slot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>msb_slot<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>lsb_idx<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>msb_idx<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(from<sp/>&lt;=<sp/>to);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(to<sp/>&lt;<sp/>bitmap-&gt;bit_cnt);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>lsb_slot<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(from);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>msb_slot<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(to);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>lsb_idx<sp/><sp/>=<sp/>VBITMAP_CALC_BIT_SLOT_IDX(from);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>msb_idx<sp/><sp/>=<sp/>VBITMAP_CALC_BIT_SLOT_IDX(to);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(lsb_slot<sp/>&lt;=<sp/>msb_slot);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(msb_slot<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>LSB<sp/>and<sp/>MSB<sp/>are<sp/>within<sp/>the<sp/>same<sp/>slot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lsb_slot<sp/>==<sp/>msb_slot)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>~_vbitmap_range_mask(lsb_idx,<sp/>msb_idx);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" kindref="member" tooltip="Clears bits in slot idx using the given mask.">_vbitbmap_clr_slot</ref>(bitmap,<sp/>lsb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>~_vbitmap_lsb_mask(lsb_idx);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" kindref="member" tooltip="Clears bits in slot idx using the given mask.">_vbitbmap_clr_slot</ref>(bitmap,<sp/>lsb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>lsb_slot<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>msb_slot;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a940203472a688fff78b84376cd10d203" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write</ref>(&amp;bitmap-&gt;maps[i],<sp/>0UL);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>~_vbitmap_msb_mask(msb_idx);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitmap_8h_1a0e9c6b6f1445b1227d82c82cdbd4b3be" kindref="member" tooltip="Clears bits in slot idx using the given mask.">_vbitbmap_clr_slot</ref>(bitmap,<sp/>msb_slot,<sp/>mask);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="bitmap_8h_1acbb5323383be148df89789b124c5ecfd" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1acbb5323383be148df89789b124c5ecfd" kindref="member" tooltip="Clears the bit at index bit_idx.">vbitmap_clr_bit</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/>vsize_t<sp/>bit_idx)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bit_idx<sp/>&lt;<sp/>bitmap-&gt;bit_cnt);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/>=<sp/>VBITMAP_CALC_SLOT_IDX(bit_idx);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(idx<sp/>&lt;<sp/>bitmap-&gt;maps_cnt);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>mask<sp/>=<sp/>VBITMAP_BIT_MASK(bit_idx);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>val<sp/><sp/>=<sp/><ref refid="core__u64_8h_1afa69611f00ea55f2a85bdfd6b921251d" kindref="member" tooltip="Applies bitwise and operation with v to the value of a and returns the new value.">vatomic64_and_get</ref>(&amp;bitmap-&gt;maps[idx],<sp/>~mask);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT((val<sp/>&amp;<sp/>mask)<sp/>==<sp/>0UL);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="bitmap_8h_1a15a96130d8e524abbbde8b62c0ae640e" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1a15a96130d8e524abbbde8b62c0ae640e" kindref="member" tooltip="Initializes the given vbitmap_iter_t object.">vbitmap_iter_init</ref>(<ref refid="structvbitmap__s" kindref="compound">vbitmap_t</ref><sp/>*bitmap,<sp/><ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref><sp/>*iter)</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(iter);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(bitmap-&gt;maps_cnt<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;map<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>bitmap;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;idx<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;last_val<sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;bitmap-&gt;maps[0]);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="333" refid="bitmap_8h_1ad220991f2a34a69a9aa196b7026113a3" refkind="member"><highlight class="normal"><ref refid="bitmap_8h_1ad220991f2a34a69a9aa196b7026113a3" kindref="member" tooltip="Iterates to the next set bit.">vbitmap_iter_next</ref>(<ref refid="structvbitmap__iter__s" kindref="compound">vbitmap_iter_t</ref><sp/>*iter,<sp/>vsize_t<sp/>*out_bit_idx)</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>*maps<sp/>=<sp/>iter-&gt;map-&gt;maps;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>maps_cnt<sp/><sp/>=<sp/>iter-&gt;map-&gt;maps_cnt;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>bit_idx<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>idx<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>out_idx<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iter-&gt;last_val<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>search<sp/>for<sp/>the<sp/>next<sp/>slot<sp/>where<sp/>there<sp/>is<sp/>a<sp/>bit<sp/>set<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(idx<sp/>=<sp/>iter-&gt;idx<sp/>+<sp/>1;<sp/>idx<sp/>&lt;<sp/>maps_cnt;<sp/>idx++)<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter-&gt;last_val<sp/>=<sp/><ref refid="core__u64_8h_1a8dcdb5386dc52969ef74efec7dbc8db8" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read</ref>(&amp;maps[idx]);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iter-&gt;last_val)<sp/>{</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter-&gt;idx<sp/>=<sp/>idx;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>VBITMAP_LBL_VAL;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>such<sp/>slot<sp/>is<sp/>found<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>process<sp/>non<sp/>zero<sp/>val,<sp/>find<sp/>the<sp/>set<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal">VBITMAP_LBL_VAL:</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>the<sp/>index<sp/>of<sp/>the<sp/>first<sp/>set<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>bit_idx<sp/>=<sp/>(vsize_t)__builtin_ctzll(iter-&gt;last_val);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>out_idx<sp/>=<sp/>(VUINT64_WIDTH<sp/>*<sp/>iter-&gt;idx)<sp/>+<sp/>bit_idx;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(out_idx<sp/>&gt;=<sp/>iter-&gt;map-&gt;bit_cnt)<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>calc<sp/>and<sp/>save<sp/>the<sp/>set<sp/>bit<sp/>index<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>*out_bit_idx<sp/>=<sp/>out_idx;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>save<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>value<sp/>without<sp/>the<sp/>currently<sp/>detected<sp/>bit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>iter-&gt;last_val<sp/>&amp;=<sp/>~VBITMAP_BIT_MASK(bit_idx);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VBITMAP_CALC_SLOT_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VBITMAP_CALC_BIT_SLOT_IDX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>VBITMAP_BIT_MASK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/bitmap/bitmap.h"/>
+  </compounddef>
+</doxygen>

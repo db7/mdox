@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbackoff__s" kind="struct" language="C++" prot="public">
+    <compoundname>backoff_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbackoff__s_1a5e69232af87f4d1a241abd1a02761fce" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t backoff_s::max_delay</definition>
+        <argsstring></argsstring>
+        <name>max_delay</name>
+        <qualifiedname>backoff_s::max_delay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="47" column="15" bodyfile="vsync/utils/backoff.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbackoff__s_1a843e1b06f425b7201d9cd35a07bda43b" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t backoff_s::limit</definition>
+        <argsstring></argsstring>
+        <name>limit</name>
+        <qualifiedname>backoff_s::limit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="51" column="17" bodyfile="vsync/utils/backoff.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbackoff__s_1a4fe019a3a6a8a190277408fb7457020f" prot="public" static="no" mutable="no">
+        <type><ref refid="backoff_8h_1af6a106c54cdfef17b9f277ac400bffbe" kindref="member">backoff_usleep_fun_t</ref></type>
+        <definition>backoff_usleep_fun_t backoff_s::usleep_fun</definition>
+        <argsstring></argsstring>
+        <name>usleep_fun</name>
+        <qualifiedname>backoff_s::usleep_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="52" column="26" bodyfile="vsync/utils/backoff.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbackoff__s_1ab4691bed363b828060905e7e88ecae4b" prot="public" static="no" mutable="no">
+        <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+        <definition>backoff_rand_fun_t backoff_s::rand_fun</definition>
+        <argsstring></argsstring>
+        <name>rand_fun</name>
+        <qualifiedname>backoff_s::rand_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/backoff.h" line="53" column="24" bodyfile="vsync/utils/backoff.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>backoff_s</label>
+        <link refid="structbackoff__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/utils/backoff.h" line="46" column="1" bodyfile="vsync/utils/backoff.h" bodystart="46" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structbackoff__s_1a843e1b06f425b7201d9cd35a07bda43b" prot="public" virt="non-virtual"><scope>backoff_s</scope><name>limit</name></member>
+      <member refid="structbackoff__s_1a5e69232af87f4d1a241abd1a02761fce" prot="public" virt="non-virtual"><scope>backoff_s</scope><name>max_delay</name></member>
+      <member refid="structbackoff__s_1ab4691bed363b828060905e7e88ecae4b" prot="public" virt="non-virtual"><scope>backoff_s</scope><name>rand_fun</name></member>
+      <member refid="structbackoff__s_1a4fe019a3a6a8a190277408fb7457020f" prot="public" virt="non-virtual"><scope>backoff_s</scope><name>usleep_fun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

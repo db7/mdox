@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvstack__core__s" kind="struct" language="C++" prot="public">
+    <compoundname>vstack_core_s</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structvstack__core__s_1ab6bd4029bcb7d7446bd37879e847a809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vstack_core_s::vatomicptr</definition>
+        <argsstring>(vstack_node_t *) top</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>vstack_core_s::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="structvstack__node__s" kindref="compound">vstack_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/stack_core.h" line="21" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/stack/internal/stack_core.h" line="20" column="1" bodyfile="vsync/stack/internal/stack_core.h" bodystart="20" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structvstack__core__s_1ab6bd4029bcb7d7446bd37879e847a809" prot="public" virt="non-virtual"><scope>vstack_core_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

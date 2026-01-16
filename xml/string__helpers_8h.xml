@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="string__helpers_8h" kind="file" language="C++">
+    <compoundname>string_helpers.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="string_8h" local="no">vsync/utils/string.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>vsync/utils/string_helpers.h</label>
+        <link refid="string__helpers_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/utils/string.h</label>
+        <link refid="string_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/utils/string_helpers.h</label>
+        <link refid="string__helpers_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="string__helpers_8h_1aec2d8562cddb9bd352c736c2543697f1" prot="public" static="no">
+        <name>V_UTILS_MEMORY_NO_WRAP</name>
+        <param><defname>src</defname></param>
+        <param><defname>sz</defname></param>
+        <initializer>    ((vuintptr_t)(src) &lt; (vuintptr_t)(src) + (sz))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/string_helpers.h" line="11" column="9" bodyfile="vsync/utils/string_helpers.h" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="define" id="string__helpers_8h_1ae56d330ea9e16a208741b7cec258d48f" prot="public" static="no">
+        <name>V_UTILS_MEMORY_NO_OVERLAP</name>
+        <param><defname>src</defname></param>
+        <param><defname>src_sz</defname></param>
+        <param><defname>dst</defname></param>
+        <param><defname>dst_sz</defname></param>
+        <initializer>    (((src) &lt; (dst) &amp;&amp; ((vuintptr_t)(src) + (src_sz)) &lt;= (vuintptr_t)(dst)) || \
+     ((dst) &lt; (src) &amp;&amp; ((vuintptr_t)(dst) + (dst_sz)) &lt;= (vuintptr_t)(src)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/string_helpers.h" line="14" column="9" bodyfile="vsync/utils/string_helpers.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="string__helpers_8h_1a3cfd4eea3d38e92342e5bb5c068af008" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t v_memcpy_s_params_ok</definition>
+        <argsstring>(void *dst, vsize_t dst_sz, const void *src, vsize_t src_sz)</argsstring>
+        <name>v_memcpy_s_params_ok</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>dst_sz</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>src_sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/string_helpers.h" line="19" column="1" bodyfile="vsync/utils/string_helpers.h" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="string__helpers_8h_1a5ad3d82a682e72d333349e1d2a8a7984" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int v_memset_s_params_ok</definition>
+        <argsstring>(void *dst, vsize_t dst_size, int ch, vsize_t count)</argsstring>
+        <name>v_memset_s_params_ok</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>dst_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/string_helpers.h" line="27" column="1" bodyfile="vsync/utils/string_helpers.h" bodystart="27" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_UTILS_STRING_HELPERS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_UTILS_STRING_HELPERS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_UTILS_MEMORY_NO_WRAP(src,<sp/>sz)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((vuintptr_t)(src)<sp/>&lt;<sp/>(vuintptr_t)(src)<sp/>+<sp/>(sz))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>V_UTILS_MEMORY_NO_OVERLAP(src,<sp/>src_sz,<sp/>dst,<sp/>dst_sz)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(((src)<sp/>&lt;<sp/>(dst)<sp/>&amp;&amp;<sp/>((vuintptr_t)(src)<sp/>+<sp/>(src_sz))<sp/>&lt;=<sp/>(vuintptr_t)(dst))<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>((dst)<sp/>&lt;<sp/>(src)<sp/>&amp;&amp;<sp/>((vuintptr_t)(dst)<sp/>+<sp/>(dst_sz))<sp/>&lt;=<sp/>(vuintptr_t)(src)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">v_memcpy_s_params_ok(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dst,<sp/>vsize_t<sp/>dst_sz,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*src,<sp/>vsize_t<sp/>src_sz)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>src<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>dst<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>V_UTILS_MEMORY_NO_WRAP(src,<sp/>src_sz)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_UTILS_MEMORY_NO_WRAP(dst,<sp/>dst_sz)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_UTILS_MEMORY_NO_OVERLAP(src,<sp/>src_sz,<sp/>dst,<sp/>dst_sz);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">v_memset_s_params_ok(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dst,<sp/>vsize_t<sp/>dst_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ch,<sp/>vsize_t<sp/>count)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>(void)ch;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dst<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>dst_size<sp/>&gt;=<sp/>count<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_UTILS_MEMORY_NO_WRAP(dst,<sp/>dst_size);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>V_UTILS_MEMORY_NO_WRAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>V_UTILS_MEMORY_NO_OVERLAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/utils/string_helpers.h"/>
+  </compounddef>
+</doxygen>

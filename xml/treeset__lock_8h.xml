@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="treeset__lock_8h" kind="file" language="C++">
+    <compoundname>treeset_lock.h</compoundname>
+    <includedby refid="treeset__bst__coarse_8h" local="no">vsync/map/treeset_bst_coarse.h</includedby>
+    <includedby refid="treeset__bst__fine_8h" local="no">vsync/map/treeset_bst_fine.h</includedby>
+    <includedby refid="treeset__rb__coarse_8h" local="no">vsync/map/treeset_rb_coarse.h</includedby>
+    <includedby refid="treeset__rb__fine_8h" local="no">vsync/map/treeset_rb_fine.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/map/internal/treeset/treeset_lock.h</label>
+        <link refid="treeset__lock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/treeset_bst_coarse.h</label>
+        <link refid="treeset__bst__coarse_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/map/treeset_bst_fine.h</label>
+        <link refid="treeset__bst__fine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/map/treeset_rb_coarse.h</label>
+        <link refid="treeset__rb__coarse_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/map/treeset_rb_fine.h</label>
+        <link refid="treeset__rb__fine_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="treeset__lock_8h_1a2198421248ef6dc882cfbf934c5f784f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_init</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_init</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="15" column="20" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="15" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__lock_8h_1a2a94c392c90eb53d6a6ff87ea2ef9113" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_destroy</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_destroy</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="17" column="20" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="17" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__lock_8h_1ac06c418b83cf4daa4930f115fddaf1ed" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_acquire</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_acquire</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="19" column="20" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="19" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__lock_8h_1a2775922b79dc9856c5a074df1a9e013f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_release</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_release</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="21" column="20" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="21" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__lock_8h_1a0355c18c0be1ba8bf3b5672cadb95415" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_reader_acquire</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_reader_acquire</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="42" column="1" bodyfile="vsync/map/internal/treeset/treeset_lock.h" bodystart="42" bodyend="45" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="23" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__lock_8h_1a4e674749ebcab4eb6d4914218e47df5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void l_reader_release</definition>
+        <argsstring>(struct lock_s *lock)</argsstring>
+        <name>l_reader_release</name>
+        <param>
+          <type>struct <ref refid="structlock__s" kindref="compound">lock_s</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_lock.h" line="48" column="1" bodyfile="vsync/map/internal/treeset/treeset_lock.h" bodystart="48" bodyend="51" declfile="vsync/map/internal/treeset/treeset_lock.h" declline="25" declcolumn="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_TREESET_LOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_TREESET_LOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>TREESET_LOCK_PTHREAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlock__s" kindref="compound">lock_s</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_destroy(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_acquire(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_release(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_reader_acquire(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>l_reader_release(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structlock__s" kindref="compound">lock_s</ref><sp/>*lock);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>TREESET_LOCK_PTHREAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vsync/map/internal/treeset/treeset_lock_pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>TREESET_LOCK_TTAS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vsync/map/internal/treeset/treeset_lock_ttas.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>TREESET_LOCK_RW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vsync/map/internal/treeset/treeset_lock_rw.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>TREESET_LOCK_FAKE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vsync/map/internal/treeset/treeset_lock_fake.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;Choose<sp/>lock<sp/>implementation<sp/>by<sp/>setting<sp/>TREESET_LOCK_*&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TREESET_RW_LOCK_DEFINED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">l_reader_acquire(<ref refid="structlock__s" kindref="compound">lock_t</ref><sp/>*lock)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>l_acquire(lock);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">l_reader_release(<ref refid="structlock__s" kindref="compound">lock_t</ref><sp/>*lock)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>l_release(lock);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/internal/treeset/treeset_lock.h"/>
+  </compounddef>
+</doxygen>

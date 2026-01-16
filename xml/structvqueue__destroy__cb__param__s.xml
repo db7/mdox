@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvqueue__destroy__cb__param__s" kind="struct" language="C++" prot="public">
+    <compoundname>vqueue_destroy_cb_param_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvqueue__destroy__cb__param__s_1a6d44d5e3c59b287d45ff23106cb32456" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_handle_node_t</type>
+        <definition>vqueue_prio_handle_node_t vqueue_destroy_cb_param_s::destroy_cb</definition>
+        <argsstring></argsstring>
+        <name>destroy_cb</name>
+        <qualifiedname>vqueue_destroy_cb_param_s::destroy_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="52" column="31" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__destroy__cb__param__s_1a0b16cf3fba26331bf0bc0c5e8d3b2592" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vqueue_destroy_cb_param_s::destroy_cb_arg</definition>
+        <argsstring></argsstring>
+        <name>destroy_cb_arg</name>
+        <qualifiedname>vqueue_destroy_cb_param_s::destroy_cb_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="53" column="10" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="51" column="1" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="51" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structvqueue__destroy__cb__param__s_1a6d44d5e3c59b287d45ff23106cb32456" prot="public" virt="non-virtual"><scope>vqueue_destroy_cb_param_s</scope><name>destroy_cb</name></member>
+      <member refid="structvqueue__destroy__cb__param__s_1a0b16cf3fba26331bf0bc0c5e8d3b2592" prot="public" virt="non-virtual"><scope>vqueue_destroy_cb_param_s</scope><name>destroy_cb_arg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

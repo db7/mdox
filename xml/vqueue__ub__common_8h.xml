@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vqueue__ub__common_8h" kind="file" language="C++">
+    <compoundname>vqueue_ub_common.h</compoundname>
+    <includedby refid="unbounded__queue__lf_8h" local="no">vsync/queue/unbounded_queue_lf.h</includedby>
+    <includedby refid="unbounded__queue__lf__recycle_8h" local="no">vsync/queue/unbounded_queue_lf_recycle.h</includedby>
+    <includedby refid="unbounded__queue__total_8h" local="no">vsync/queue/unbounded_queue_total.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/queue/internal/ub/vqueue_ub_common.h</label>
+        <link refid="vqueue__ub__common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/queue/unbounded_queue_lf.h</label>
+        <link refid="unbounded__queue__lf_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/queue/unbounded_queue_lf_recycle.h</label>
+        <link refid="unbounded__queue__lf__recycle_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/unbounded_queue_total.h</label>
+        <link refid="unbounded__queue__total_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vqueue__ub__common_8h_1ab1e71bc1da61354e27ae52eb00088c6b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* vqueue_ub_node_handler_t) (struct vqueue_ub_node_s *, void *)</definition>
+        <argsstring>)(struct vqueue_ub_node_s *, void *)</argsstring>
+        <name>vqueue_ub_node_handler_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/ub/vqueue_ub_common.h" line="10" column="9" bodyfile="vsync/queue/internal/ub/vqueue_ub_common.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_UB_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_UB_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*vqueue_ub_node_handler_t)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvqueue__ub__node__s" kindref="compound">vqueue_ub_node_s</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/internal/ub/vqueue_ub_common.h"/>
+  </compounddef>
+</doxygen>

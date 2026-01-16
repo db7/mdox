@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_bc3ccffa6b931a145fcce7b65d29e907" kind="dir">
+    <compoundname>vsync/queue/internal/bbq</compoundname>
+    <innerfile refid="common_8h">common.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/queue/internal/bbq/"/>
+  </compounddef>
+</doxygen>

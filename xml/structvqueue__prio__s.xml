@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvqueue__prio__s" kind="struct" language="C++" prot="public">
+    <compoundname>vqueue_prio_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvqueue__prio__s_1a2edefa62d401c4999555142fadbc87d6" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vqueue_prio_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>vqueue_prio_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="80" column="13" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a56442895b294402134680de9460c87f0" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_lock_t *</type>
+        <definition>vqueue_prio_lock_t* vqueue_prio_s::heap_lock</definition>
+        <argsstring></argsstring>
+        <name>heap_lock</name>
+        <qualifiedname>vqueue_prio_s::heap_lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="81" column="24" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a21512ffead24e601f04c4e5acf1f97be" prot="public" static="no" mutable="no">
+        <type><ref refid="structvstack__node__s" kindref="compound">vqueue_prio_node_t</ref></type>
+        <definition>vqueue_prio_node_t vqueue_prio_s::heap[VQUEUE_PRIO_HEAP_LEN]</definition>
+        <argsstring>[VQUEUE_PRIO_HEAP_LEN]</argsstring>
+        <name>heap</name>
+        <qualifiedname>vqueue_prio_s::heap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="83" column="9" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a95105c7270c62d32b542f71b8744d79f" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_fun_get_tid</type>
+        <definition>vqueue_prio_fun_get_tid vqueue_prio_s::get_tid_fun</definition>
+        <argsstring></argsstring>
+        <name>get_tid_fun</name>
+        <qualifiedname>vqueue_prio_s::get_tid_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_heap_based.h" line="88" column="29" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1ad35700f8851ad55c94f7abc10bbc7829" prot="public" static="no" mutable="no">
+        <type><ref refid="structvskiplist__s" kindref="compound">vskiplist_t</ref></type>
+        <definition>vskiplist_t vqueue_prio_s::lst</definition>
+        <argsstring></argsstring>
+        <name>lst</name>
+        <qualifiedname>vqueue_prio_s::lst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="46" column="17" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a9c1c0d9050c41a1658b087a17e41033b" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_handle_node_t</type>
+        <definition>vqueue_prio_handle_node_t vqueue_prio_s::retire_cb</definition>
+        <argsstring></argsstring>
+        <name>retire_cb</name>
+        <qualifiedname>vqueue_prio_s::retire_cb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="47" column="31" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a1a6d3f7d680c975266dc3fc35c41df8b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * vqueue_prio_s::retire_cb_arg</definition>
+        <argsstring></argsstring>
+        <name>retire_cb_arg</name>
+        <qualifiedname>vqueue_prio_s::retire_cb_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_skiplist_based.h" line="48" column="10" bodyfile="vsync/queue/vqueue_prio_skiplist_based.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1af2cbb09b0d01a18eca85e6cd4bd2d397" prot="public" static="no" mutable="no">
+        <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref></type>
+        <definition>vstack_t vqueue_prio_s::bin[VQUEUE_PRIO_PRIORITY_RANGE]</definition>
+        <argsstring>[VQUEUE_PRIO_PRIORITY_RANGE]</argsstring>
+        <name>bin</name>
+        <qualifiedname>vqueue_prio_s::bin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_array_based.h" line="50" column="14" bodyfile="vsync/queue/vqueue_prio_stack_array_based.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1ad35e59a45bbca3755e90ff2fe3b02c53" prot="public" static="no" mutable="no">
+        <type>vqueue_prio_handle_node_t</type>
+        <definition>vqueue_prio_handle_node_t vqueue_prio_s::retire_fun</definition>
+        <argsstring></argsstring>
+        <name>retire_fun</name>
+        <qualifiedname>vqueue_prio_s::retire_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_array_based.h" line="51" column="31" bodyfile="vsync/queue/vqueue_prio_stack_array_based.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1aca56bcfa0113f68b0135e9188403eac7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* vqueue_prio_s::retire_fun_arg</definition>
+        <argsstring></argsstring>
+        <name>retire_fun_arg</name>
+        <qualifiedname>vqueue_prio_s::retire_fun_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_array_based.h" line="52" column="10" bodyfile="vsync/queue/vqueue_prio_stack_array_based.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1af3884e96a350c50714f148c113cf98db" prot="public" static="no" mutable="no">
+        <type><ref refid="structvqueue__prio__tree__node__s" kindref="compound">vqueue_prio_tree_node_t</ref></type>
+        <definition>vqueue_prio_tree_node_t vqueue_prio_s::tree[VQUEUE_PRIO_STACK_TREE_LEN]</definition>
+        <argsstring>[VQUEUE_PRIO_STACK_TREE_LEN]</argsstring>
+        <name>tree</name>
+        <qualifiedname>vqueue_prio_s::tree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="66" column="29" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvqueue__prio__s_1a09c742d06da48d1cf58d46fc58aa9a7f" prot="public" static="no" mutable="no">
+        <type><ref refid="structvstack__s" kindref="compound">vstack_t</ref></type>
+        <definition>vstack_t vqueue_prio_s::leaves[VQUEUE_PRIO_PRIORITY_RANGE]</definition>
+        <argsstring>[VQUEUE_PRIO_PRIORITY_RANGE]</argsstring>
+        <name>leaves</name>
+        <qualifiedname>vqueue_prio_s::leaves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/vqueue_prio_stack_tree_based.h" line="67" column="14" bodyfile="vsync/queue/vqueue_prio_stack_tree_based.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>backoff_s</label>
+        <link refid="structbackoff__s"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>exchanger_s</label>
+        <link refid="structexchanger__s"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>slot</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>skiplist_seed_s</label>
+        <link refid="structskiplist__seed__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>seed</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="10">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+      <node id="5">
+        <label>vatomicsz_s</label>
+        <link refid="structvatomicsz__s"/>
+      </node>
+      <node id="2">
+        <label>vqueue_prio_heap_node_s</label>
+        <link refid="structvqueue__prio__heap__node__s"/>
+      </node>
+      <node id="1">
+        <label>vqueue_prio_s</label>
+        <link refid="structvqueue__prio__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>heap</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lst</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bin</edgelabel>
+          <edgelabel>leaves</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vqueue_prio_tree_node_s</label>
+        <link refid="structvqueue__prio__tree__node__s"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>counter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>bin</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vskiplist_node_s</label>
+        <link refid="structvskiplist__node__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>non_snipped_level</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vskiplist_s</label>
+        <link refid="structvskiplist__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>fun_cmp</edgelabel>
+          <edgelabel>fun_retire</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>seed</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vstack_core_s</label>
+        <link refid="structvstack__core__s"/>
+      </node>
+      <node id="7">
+        <label>vstack_s</label>
+        <link refid="structvstack__s"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>elimination_array</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>backoff</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/vqueue_prio_heap_based.h" line="79" column="1" bodyfile="vsync/queue/vqueue_prio_heap_based.h" bodystart="79" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structvqueue__prio__s_1af2cbb09b0d01a18eca85e6cd4bd2d397" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>bin</name></member>
+      <member refid="structvqueue__prio__s_1a95105c7270c62d32b542f71b8744d79f" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>get_tid_fun</name></member>
+      <member refid="structvqueue__prio__s_1a21512ffead24e601f04c4e5acf1f97be" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>heap</name></member>
+      <member refid="structvqueue__prio__s_1a56442895b294402134680de9460c87f0" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>heap_lock</name></member>
+      <member refid="structvqueue__prio__s_1a09c742d06da48d1cf58d46fc58aa9a7f" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>leaves</name></member>
+      <member refid="structvqueue__prio__s_1ad35700f8851ad55c94f7abc10bbc7829" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>lst</name></member>
+      <member refid="structvqueue__prio__s_1a2edefa62d401c4999555142fadbc87d6" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>next</name></member>
+      <member refid="structvqueue__prio__s_1a9c1c0d9050c41a1658b087a17e41033b" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>retire_cb</name></member>
+      <member refid="structvqueue__prio__s_1a1a6d3f7d680c975266dc3fc35c41df8b" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>retire_cb_arg</name></member>
+      <member refid="structvqueue__prio__s_1ad35e59a45bbca3755e90ff2fe3b02c53" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>retire_fun</name></member>
+      <member refid="structvqueue__prio__s_1aca56bcfa0113f68b0135e9188403eac7" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>retire_fun_arg</name></member>
+      <member refid="structvqueue__prio__s_1af3884e96a350c50714f148c113cf98db" prot="public" virt="non-virtual"><scope>vqueue_prio_s</scope><name>tree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a01909e94b5b9147c34d98a758e0ea29" kind="dir">
+    <compoundname>vsync/pool</compoundname>
+    <innerfile refid="cached__pool_8h">cached_pool.h</innerfile>
+    <briefdescription>
+<para>Memory pools. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/pool/"/>
+  </compounddef>
+</doxygen>

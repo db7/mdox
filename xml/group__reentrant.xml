@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__reentrant" kind="group">
+    <compoundname>reentrant</compoundname>
+    <title>Reentrant</title>
+    <innerfile refid="rec__seqlock_8h">rec_seqlock.h</innerfile>
+    <innerfile refid="rec__spinlock_8h">rec_spinlock.h</innerfile>
+    <innerfile refid="rec__ticketlock_8h">rec_ticketlock.h</innerfile>
+    <briefdescription>
+<para>Group of reentrant (recursive) locks. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bounded__ret_8h" kind="file" language="C++">
+    <compoundname>bounded_ret.h</compoundname>
+    <includedby refid="bounded__locked_8h" local="no">vsync/queue/bounded_locked.h</includedby>
+    <includedby refid="bounded__mpmc_8h" local="no">vsync/queue/bounded_mpmc.h</includedby>
+    <includedby refid="bounded__spsc_8h" local="no">vsync/queue/bounded_spsc.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/queue/bounded_locked.h</label>
+        <link refid="bounded__locked_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/queue/bounded_mpmc.h</label>
+        <link refid="bounded__mpmc_8h"/>
+      </node>
+      <node id="4">
+        <label>vsync/queue/bounded_spsc.h</label>
+        <link refid="bounded__spsc_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/queue/internal/bounded_ret.h</label>
+        <link refid="bounded__ret_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="bounded__ret_8h_1a170f6a0aa6422ef2abd589eaf0623ee7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>bounded_ret_t</name>
+        <enumvalue id="bounded__ret_8h_1a170f6a0aa6422ef2abd589eaf0623ee7abdd22d1b0effc079b1c94f4dd67020c0" prot="public">
+          <name>QUEUE_BOUNDED_OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bounded__ret_8h_1a170f6a0aa6422ef2abd589eaf0623ee7abffa5f171c95f3dc782ef6623ba28988" prot="public">
+          <name>QUEUE_BOUNDED_FULL</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bounded__ret_8h_1a170f6a0aa6422ef2abd589eaf0623ee7a1d4df27dcad0d3b8669467c0d402a4f5" prot="public">
+          <name>QUEUE_BOUNDED_EMPTY</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bounded__ret_8h_1a170f6a0aa6422ef2abd589eaf0623ee7a91c5a40684a8fd38551d88ddadf98b73" prot="public">
+          <name>QUEUE_BOUNDED_AGAIN</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bounded_ret.h" line="9" column="1" bodyfile="vsync/queue/internal/bounded_ret.h" bodystart="9" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VQUEUE_BOUNDED_RET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VQUEUE_BOUNDED_RET_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>QUEUE_BOUNDED_OK<sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>QUEUE_BOUNDED_FULL<sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>QUEUE_BOUNDED_EMPTY<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>QUEUE_BOUNDED_AGAIN<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<sp/>bounded_ret_t;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/internal/bounded_ret.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="treeset__alloc_8h" kind="file" language="C++">
+    <compoundname>treeset_alloc.h</compoundname>
+    <includedby refid="treeset__bst__coarse_8h" local="no">vsync/map/treeset_bst_coarse.h</includedby>
+    <includedby refid="treeset__bst__fine_8h" local="no">vsync/map/treeset_bst_fine.h</includedby>
+    <includedby refid="treeset__rb__coarse_8h" local="no">vsync/map/treeset_rb_coarse.h</includedby>
+    <includedby refid="treeset__rb__fine_8h" local="no">vsync/map/treeset_rb_fine.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/map/internal/treeset/treeset_alloc.h</label>
+        <link refid="treeset__alloc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/map/treeset_bst_coarse.h</label>
+        <link refid="treeset__bst__coarse_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/map/treeset_bst_fine.h</label>
+        <link refid="treeset__bst__fine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/map/treeset_rb_coarse.h</label>
+        <link refid="treeset__rb__coarse_8h"/>
+      </node>
+      <node id="5">
+        <label>vsync/map/treeset_rb_fine.h</label>
+        <link refid="treeset__rb__fine_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="treeset__alloc_8h_1a6da5f28a5ced1f20d33094ee2d1d31cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref> *</type>
+        <definition>static treeset_node_t * _treeset_get_node</definition>
+        <argsstring>(treeset_t *tree)</argsstring>
+        <name>_treeset_get_node</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_alloc.h" line="10" column="1" bodyfile="vsync/map/internal/treeset/treeset_alloc.h" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__alloc_8h_1aed111393a9f60adeaa7d9009907e2f0b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _treeset_put_node</definition>
+        <argsstring>(treeset_t *tree, treeset_node_t *node)</argsstring>
+        <name>_treeset_put_node</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/internal/treeset/treeset_alloc.h" line="16" column="1" bodyfile="vsync/map/internal/treeset/treeset_alloc.h" bodystart="16" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_TREESET_ALLOC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_TREESET_ALLOC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">_treeset_get_node(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tree-&gt;mem_lib.malloc_fun(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref>),<sp/>tree-&gt;mem_lib.arg);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">_treeset_put_node(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>tree-&gt;mem_lib.free_fun(node,<sp/>tree-&gt;mem_lib.arg);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/internal/treeset/treeset_alloc.h"/>
+  </compounddef>
+</doxygen>

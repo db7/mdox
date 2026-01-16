@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="mcslock_8h" kind="file" language="C++">
+    <compoundname>mcslock.h</compoundname>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includedby refid="rec__mcslock_8h" local="no">vsync/spinlock/rec_mcslock.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>vsync/spinlock/mcslock.h</label>
+        <link refid="mcslock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/spinlock/rec_mcslock.h</label>
+        <link refid="rec__mcslock_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmcs__node__s" prot="public">mcs_node_s</innerclass>
+    <innerclass refid="structmcslock__s" prot="public">mcslock_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="mcslock_8h_1a7fd9b357e561b8dcd29d9dd7165cafe4" prot="public" static="no">
+        <name>MCSLOCK_INIT</name>
+        <param></param>
+        <initializer>    {                                                                          \
+        .tail = <ref refid="core_8h_1a4b49095661aacea1b4e5230097bdee2e" kindref="member">VATOMIC_INIT</ref>(0)                                                \
+    }</initializer>
+        <briefdescription>
+<para>Initializer of <computeroutput>mcslock_t</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="43" column="9" bodyfile="vsync/spinlock/mcslock.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" prot="public" static="no">
+        <type>struct <ref refid="structmcs__node__s" kindref="compound">mcs_node_s</ref></type>
+        <definition>typedef struct mcs_node_s mcs_node_t</definition>
+        <argsstring></argsstring>
+        <name>mcs_node_t</name>
+        <briefdescription>
+<para>Node of a thread/core in the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="35" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" prot="public" static="no">
+        <type>struct <ref refid="structmcslock__s" kindref="compound">mcslock_s</ref></type>
+        <definition>typedef struct mcslock_s mcslock_t</definition>
+        <argsstring></argsstring>
+        <name>mcslock_t</name>
+        <briefdescription>
+<para>MCS lock data structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="40" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="mcslock_8h_1a17bb84ac2c853cf76966255d1c4cf1bc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mcslock_init</definition>
+        <argsstring>(mcslock_t *l)</argsstring>
+        <name>mcslock_init</name>
+        <param>
+          <type><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member">mcslock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcslock_t object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> alternatively use <computeroutput>MCSLOCK_INIT</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="56" column="1" bodyfile="vsync/spinlock/mcslock.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="mcslock_8h_1a1bfc09833d17550dfc548d2ce3b62dea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t mcslock_tryacquire</definition>
+        <argsstring>(mcslock_t *l, mcs_node_t *node)</argsstring>
+        <name>mcslock_tryacquire</name>
+        <param>
+          <type><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member">mcslock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" kindref="member">mcs_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Tries to acquire the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcs_node_t object, associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, on success. </para>
+</simplesect>
+<simplesect kind="return"><para>false, on fail. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="70" column="1" bodyfile="vsync/spinlock/mcslock.h" bodystart="70" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="mcslock_8h_1ab96f5a2d92b93eab1bb4e2285576db8d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mcslock_acquire</definition>
+        <argsstring>(mcslock_t *l, mcs_node_t *node)</argsstring>
+        <name>mcslock_acquire</name>
+        <param>
+          <type><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member">mcslock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" kindref="member">mcs_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcs_node_t object, associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="89" column="1" bodyfile="vsync/spinlock/mcslock.h" bodystart="89" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="mcslock_8h_1afa5f3cd95b2002de5603138754724d92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void mcslock_release</definition>
+        <argsstring>(mcslock_t *l, mcs_node_t *node)</argsstring>
+        <name>mcslock_release</name>
+        <param>
+          <type><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member">mcslock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" kindref="member">mcs_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Releases the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcs_node_t object, associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="110" column="1" bodyfile="vsync/spinlock/mcslock.h" bodystart="110" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="mcslock_8h_1ac281e48770df93fe79bc1755e6739158" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t mcslock_has_waiters</definition>
+        <argsstring>(mcslock_t *l, mcs_node_t *node)</argsstring>
+        <name>mcslock_has_waiters</name>
+        <param>
+          <type><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member">mcslock_t</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" kindref="member">mcs_node_t</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether there is a thread waiting to acquire the MCS lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should only be called by the current owner of the lock.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of mcs_node_t object, associated with the calling thread/core. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, if threads are waiting to acquire the lock. </para>
+</simplesect>
+<simplesect kind="return"><para>false, otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/mcslock.h" line="136" column="1" bodyfile="vsync/spinlock/mcslock.h" bodystart="136" bodyend="140"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Mellor-Crummey Scott Lock - the well-known scalable lock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>MCS lock is a scalable lock that guarantees FIFO order. The MCS lock forms a queue of waiting threads (each thread has one node in the queue), and lets them spin on local variables of their nodes.</para>
+<para>Note that this implementation is not reentrant.</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_mcslock.c"><codeline><highlight class="comment">/*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>The<sp/>following<sp/>example<sp/>shows<sp/>how<sp/>to<sp/>use<sp/>the<sp/>MCS<sp/>lock.<sp/>Each<sp/>threads<sp/>needs<sp/>a</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>context,<sp/>i.e.,<sp/>an<sp/>instance<sp/>of<sp/>`mcs_node_t`.<sp/>When<sp/>acquiring<sp/>or<sp/>releasing<sp/>the</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>lock,<sp/>one<sp/>needs<sp/>to<sp/>pass<sp/>the<sp/>lock<sp/>and<sp/>the<sp/>context<sp/>as<sp/>arguments.<sp/>The<sp/>context</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>of<sp/>a<sp/>thread<sp/>should<sp/>not<sp/>be<sp/>used<sp/>in<sp/>multiple<sp/>MCS<sp/>locks<sp/>at<sp/>the<sp/>same<sp/>time.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mcslock_8h" kindref="compound" tooltip="Mellor-Crummey Scott Lock - the well-known scalable lock.">vsync/spinlock/mcslock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_THREADS<sp/><sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>N</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>g_lock<sp/>=<sp/><ref refid="mcslock_8h_1a7fd9b357e561b8dcd29d9dd7165cafe4" kindref="member" tooltip="Initializer of mcslock_t.">MCSLOCK_INIT</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>g_msc_nodes[MAX_THREADS];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*node<sp/>=<sp/>&amp;g_msc_nodes[tid];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mcslock_8h_1ab96f5a2d92b93eab1bb4e2285576db8d" kindref="member" tooltip="Acquires the MCS lock.">mcslock_acquire</ref>(&amp;g_lock,<sp/>node);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mcslock_8h_1afa5f3cd95b2002de5603138754724d92" kindref="member" tooltip="Releases the MCS lock.">mcslock_release</ref>(&amp;g_lock,<sp/>node);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)args;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>J.Mellor-Crummey, M.L.Scott - [Algorithms for scalable synchronization on shared-memory multiprocessors. ACM Trans. on Computer Systems. 1991] </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2023-2024.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_MCSLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_MCSLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structmcs__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_s</ref><sp/>*)<sp/>next;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref><sp/>locked;</highlight></codeline>
+<codeline lineno="35" refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="mcslock_8h_1abc02579cf3ff394de7f0c54f170d2a57" kindref="member" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structmcslock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(<ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*)<sp/>tail;</highlight></codeline>
+<codeline lineno="40" refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="mcslock_8h_1a03423de6cfdb351fb1512ffbfe7e36f7" kindref="member" tooltip="MCS lock data structure.">mcslock_t</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="mcslock_8h_1a7fd9b357e561b8dcd29d9dd7165cafe4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MCSLOCK_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.tail<sp/>=<sp/>VATOMIC_INIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="mcslock_8h_1a17bb84ac2c853cf76966255d1c4cf1bc" refkind="member"><highlight class="normal"><ref refid="mcslock_8h_1a17bb84ac2c853cf76966255d1c4cf1bc" kindref="member" tooltip="Initializes the MCS lock.">mcslock_init</ref>(<ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>*l)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a305c975afa453b26d513aadbe0cc5dfc" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write</ref>(&amp;l-&gt;tail,<sp/>NULL);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="70" refid="mcslock_8h_1a1bfc09833d17550dfc548d2ce3b62dea" refkind="member"><highlight class="normal"><ref refid="mcslock_8h_1a1bfc09833d17550dfc548d2ce3b62dea" kindref="member" tooltip="Tries to acquire the MCS lock.">mcslock_tryacquire</ref>(<ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>*l,<sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*pred;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;node-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;node-&gt;locked,<sp/>1);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(&amp;l-&gt;tail,<sp/>NULL,<sp/>node);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pred<sp/>==<sp/>NULL;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="mcslock_8h_1ab96f5a2d92b93eab1bb4e2285576db8d" refkind="member"><highlight class="normal"><ref refid="mcslock_8h_1ab96f5a2d92b93eab1bb4e2285576db8d" kindref="member" tooltip="Acquires the MCS lock.">mcslock_acquire</ref>(<ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>*l,<sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*pred;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;node-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a4f8ef4d72d412c6461897077c48d4b52" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rlx</ref>(&amp;node-&gt;locked,<sp/>1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a274649a698a8a2c6a87e82c64d6968e9" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg</ref>(&amp;l-&gt;tail,<sp/>node);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1abea122b4023bf683adb30d72dba12c67" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rel</ref>(&amp;pred-&gt;next,<sp/>node);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="await__u32_8h_1abd427e63ba008c5acf2ce310c3048660" kindref="member" tooltip="Politely awaits the value pointed by a to be equal to v.">vatomic32_await_eq_acq</ref>(&amp;node-&gt;locked,<sp/>0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="mcslock_8h_1afa5f3cd95b2002de5603138754724d92" refkind="member"><highlight class="normal"><ref refid="mcslock_8h_1afa5f3cd95b2002de5603138754724d92" kindref="member" tooltip="Releases the MCS lock.">mcslock_release</ref>(<ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>*l,<sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;node-&gt;next)<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>=<sp/>(<ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1aca37d07a0eac3d5abdb833c773e1da92" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg_rel</ref>(&amp;l-&gt;tail,<sp/>node,<sp/>NULL);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(next<sp/>==<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="await__ptr_8h_1ac0ed226040d342bb02536cf8a867654e" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomicptr_await_neq_rlx</ref>(&amp;node-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>next<sp/>=<sp/>(<ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(&amp;node-&gt;next);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u32_8h_1a7a00b4d33223f43234b68a6b58c76244" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic32_write_rel</ref>(&amp;next-&gt;locked,<sp/>0);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="136" refid="mcslock_8h_1ac281e48770df93fe79bc1755e6739158" refkind="member"><highlight class="normal"><ref refid="mcslock_8h_1ac281e48770df93fe79bc1755e6739158" kindref="member" tooltip="Returns whether there is a thread waiting to acquire the MCS lock.">mcslock_has_waiters</ref>(<ref refid="structmcslock__s" kindref="compound" tooltip="MCS lock data structure.">mcslock_t</ref><sp/>*l,<sp/><ref refid="structmcs__node__s" kindref="compound" tooltip="Node of a thread/core in the MCS lock.">mcs_node_t</ref><sp/>*node)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(l);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1a7a54bd97f211a214f5ffdc2569cf9dce" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_rlx</ref>(&amp;node-&gt;next)<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/mcslock.h"/>
+  </compounddef>
+</doxygen>

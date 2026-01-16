@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcached__pool__config__s" kind="struct" language="C++" prot="public">
+    <compoundname>cached_pool_config_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcached__pool__config__s_1a39b32f03ac5cde7ccbd9f5d96917dbfc" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t cached_pool_config_s::entry_space</definition>
+        <argsstring></argsstring>
+        <name>entry_space</name>
+        <qualifiedname>cached_pool_config_s::entry_space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="27" column="13" bodyfile="vsync/pool/cached_pool.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__config__s_1a17e1c23ce65fa80a5e2b5f0f4a51acd2" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t cached_pool_config_s::buffer_mask</definition>
+        <argsstring></argsstring>
+        <name>buffer_mask</name>
+        <qualifiedname>cached_pool_config_s::buffer_mask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="28" column="15" bodyfile="vsync/pool/cached_pool.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__config__s_1a0cceea4e871eaa740118670f185ed358" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t cached_pool_config_s::threshold_init</definition>
+        <argsstring></argsstring>
+        <name>threshold_init</name>
+        <qualifiedname>cached_pool_config_s::threshold_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="29" column="15" bodyfile="vsync/pool/cached_pool.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__config__s_1ae0409ed9f5f3750696074dc209e03bd5" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t cached_pool_config_s::threshold_link</definition>
+        <argsstring></argsstring>
+        <name>threshold_link</name>
+        <qualifiedname>cached_pool_config_s::threshold_link</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="30" column="15" bodyfile="vsync/pool/cached_pool.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__config__s_1aefbacddeeb20b15b76c3162bdead629d" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t cached_pool_config_s::threshold_max</definition>
+        <argsstring></argsstring>
+        <name>threshold_max</name>
+        <qualifiedname>cached_pool_config_s::threshold_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="31" column="15" bodyfile="vsync/pool/cached_pool.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/pool/cached_pool.h" line="26" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="26" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structcached__pool__config__s_1a17e1c23ce65fa80a5e2b5f0f4a51acd2" prot="public" virt="non-virtual"><scope>cached_pool_config_s</scope><name>buffer_mask</name></member>
+      <member refid="structcached__pool__config__s_1a39b32f03ac5cde7ccbd9f5d96917dbfc" prot="public" virt="non-virtual"><scope>cached_pool_config_s</scope><name>entry_space</name></member>
+      <member refid="structcached__pool__config__s_1a0cceea4e871eaa740118670f185ed358" prot="public" virt="non-virtual"><scope>cached_pool_config_s</scope><name>threshold_init</name></member>
+      <member refid="structcached__pool__config__s_1ae0409ed9f5f3750696074dc209e03bd5" prot="public" virt="non-virtual"><scope>cached_pool_config_s</scope><name>threshold_link</name></member>
+      <member refid="structcached__pool__config__s_1aefbacddeeb20b15b76c3162bdead629d" prot="public" virt="non-virtual"><scope>cached_pool_config_s</scope><name>threshold_max</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

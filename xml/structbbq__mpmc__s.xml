@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structbbq__mpmc__s" kind="struct" language="C++" prot="public">
+    <compoundname>bbq_mpmc_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbbq__mpmc__s_1a86948e763118ad8bdac74d31588d0fc1" prot="public" static="no" mutable="no">
+        <type><ref refid="structbbq__config__s" kindref="compound">bbq_config_t</ref> config</type>
+        <definition>bbq_config_t config bbq_mpmc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_mpmc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="71" column="25" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__mpmc__s_1a79a43bf126c594d0cc2c3530c7473817" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> widx</type>
+        <definition>vatomic64_t widx bbq_mpmc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_mpmc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="72" column="22" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__mpmc__s_1ae739e068e911fe6a17e9010e0eb178fe" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ridx</type>
+        <definition>vatomic64_t ridx bbq_mpmc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_mpmc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="73" column="22" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbbq__mpmc__s_1a94db0e153b11d93b15e2b4c68a05b8bf" prot="public" static="no" mutable="no">
+        <type>vuint8_t blk[]</type>
+        <definition>vuint8_t blk [] bbq_mpmc_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>bbq_mpmc_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/bbq_mpmc.h" line="74" column="18" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>bbq_config_s</label>
+        <link refid="structbbq__config__s"/>
+      </node>
+      <node id="1">
+        <label>bbq_mpmc_s</label>
+        <link refid="structbbq__mpmc__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/bbq_mpmc.h" line="70" column="1" bodyfile="vsync/queue/bbq_mpmc.h" bodystart="70" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structbbq__mpmc__s_1a86948e763118ad8bdac74d31588d0fc1" prot="public" virt="non-virtual"><scope>bbq_mpmc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__mpmc__s_1a79a43bf126c594d0cc2c3530c7473817" prot="public" virt="non-virtual"><scope>bbq_mpmc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__mpmc__s_1ae739e068e911fe6a17e9010e0eb178fe" prot="public" virt="non-virtual"><scope>bbq_mpmc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structbbq__mpmc__s_1a94db0e153b11d93b15e2b4c68a05b8bf" prot="public" virt="non-virtual"><scope>bbq_mpmc_s</scope><name>VSYNC_CACHEALIGN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d5b0ab69e65e2c61d5bf76eab6798130" kind="dir">
+    <compoundname>vsync/common</compoundname>
+    <innerdir refid="dir_11d43ca70272bc84182aacb240600004">vsync/common/internal</innerdir>
+    <innerfile refid="assert_8h">assert.h</innerfile>
+    <innerfile refid="await__while_8h">await_while.h</innerfile>
+    <innerfile refid="cache_8h">cache.h</innerfile>
+    <innerfile refid="compiler_8h">compiler.h</innerfile>
+    <innerfile refid="dbg_8h">dbg.h</innerfile>
+    <innerfile refid="common_2macros_8h">macros.h</innerfile>
+    <innerfile refid="verify_8h">verify.h</innerfile>
+    <briefdescription>
+<para>Macros and helpers used throughout libvsync. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/common/"/>
+  </compounddef>
+</doxygen>

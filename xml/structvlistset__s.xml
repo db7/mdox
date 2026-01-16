@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvlistset__s" kind="struct" language="C++" prot="public">
+    <compoundname>vlistset_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvlistset__s_1ae04dd4459e548a6da06085f6ece4de9e" prot="public" static="no" mutable="no">
+        <type><ref refid="structvlistset__node__s" kindref="compound">vlistset_node_t</ref></type>
+        <definition>vlistset_node_t vlistset_s::head_sentinel</definition>
+        <argsstring></argsstring>
+        <name>head_sentinel</name>
+        <qualifiedname>vlistset_s::head_sentinel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="43" column="21" bodyfile="vsync/map/listset_coarse.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvlistset__s_1a3113b5b58d7088a7a7b62f49b642d890" prot="public" static="no" mutable="no">
+        <type><ref refid="structvlistset__node__s" kindref="compound">vlistset_node_t</ref></type>
+        <definition>vlistset_node_t vlistset_s::tail_sentinel</definition>
+        <argsstring></argsstring>
+        <name>tail_sentinel</name>
+        <qualifiedname>vlistset_s::tail_sentinel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="44" column="21" bodyfile="vsync/map/listset_coarse.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvlistset__s_1ade017745263a5b79a8c0ef0c818c830d" prot="public" static="no" mutable="no">
+        <type>vlistset_handle_node_t</type>
+        <definition>vlistset_handle_node_t vlistset_s::retire_fun</definition>
+        <argsstring></argsstring>
+        <name>retire_fun</name>
+        <qualifiedname>vlistset_s::retire_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="45" column="28" bodyfile="vsync/map/listset_coarse.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvlistset__s_1a48b1592f850eb8b6558ddfaa994242e9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void * vlistset_s::retire_fun_arg</definition>
+        <argsstring></argsstring>
+        <name>retire_fun_arg</name>
+        <qualifiedname>vlistset_s::retire_fun_arg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="46" column="10" bodyfile="vsync/map/listset_coarse.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvlistset__s_1a93931615de5dcfa15dbebd86036d2b63" prot="public" static="no" mutable="no">
+        <type>vlistset_cmp_key_t</type>
+        <definition>vlistset_cmp_key_t vlistset_s::cmp_fun</definition>
+        <argsstring></argsstring>
+        <name>cmp_fun</name>
+        <qualifiedname>vlistset_s::cmp_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="47" column="24" bodyfile="vsync/map/listset_coarse.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvlistset__s_1a27334b8d278765e03496ffb9092b03d0" prot="public" static="no" mutable="no">
+        <type>vlistset_lock_t</type>
+        <definition>vlistset_lock_t vlistset_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>vlistset_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/listset_coarse.h" line="48" column="21" bodyfile="vsync/map/listset_coarse.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vlistset_node_s</label>
+        <link refid="structvlistset__node__s"/>
+      </node>
+      <node id="1">
+        <label>vlistset_s</label>
+        <link refid="structvlistset__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cmp_fun</edgelabel>
+          <edgelabel>head_sentinel</edgelabel>
+          <edgelabel>retire_fun</edgelabel>
+          <edgelabel>tail_sentinel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/map/listset_coarse.h" line="42" column="1" bodyfile="vsync/map/listset_coarse.h" bodystart="42" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structvlistset__s_1a93931615de5dcfa15dbebd86036d2b63" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>cmp_fun</name></member>
+      <member refid="structvlistset__s_1ae04dd4459e548a6da06085f6ece4de9e" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>head_sentinel</name></member>
+      <member refid="structvlistset__s_1a27334b8d278765e03496ffb9092b03d0" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>lock</name></member>
+      <member refid="structvlistset__s_1ade017745263a5b79a8c0ef0c818c830d" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>retire_fun</name></member>
+      <member refid="structvlistset__s_1a48b1592f850eb8b6558ddfaa994242e9" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>retire_fun_arg</name></member>
+      <member refid="structvlistset__s_1a3113b5b58d7088a7a7b62f49b642d890" prot="public" virt="non-virtual"><scope>vlistset_s</scope><name>tail_sentinel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

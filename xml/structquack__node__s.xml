@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structquack__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>quack_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquack__node__s_1a515607d42e0d862e63e275da514b8c57" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structquack__node__s" kindref="compound">quack_node_s</ref> *</type>
+        <definition>struct quack_node_s* quack_node_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>quack_node_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/quack.h" line="49" column="23" bodyfile="vsync/stack/quack.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>quack_node_s</label>
+        <link refid="structquack__node__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/stack/quack.h" line="48" column="1" bodyfile="vsync/stack/quack.h" bodystart="48" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structquack__node__s_1a515607d42e0d862e63e275da514b8c57" prot="public" virt="non-virtual"><scope>quack_node_s</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

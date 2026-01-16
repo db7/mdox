@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvatomicsz__s" kind="struct" language="C++" prot="public">
+    <compoundname>vatomicsz_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvatomicsz__s_1aa5336698676a32b8f5095eaf95993e61" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t vatomicsz_s::_v</definition>
+        <argsstring></argsstring>
+        <name>_v</name>
+        <qualifiedname>vatomicsz_s::_v</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/atomic/internal/types.h" line="49" column="13" bodyfile="vsync/atomic/internal/types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/atomic/internal/types.h" line="48" column="1" bodyfile="vsync/atomic/internal/types.h" bodystart="48" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structvatomicsz__s_1aa5336698676a32b8f5095eaf95993e61" prot="public" virt="non-virtual"><scope>vatomicsz_s</scope><name>_v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

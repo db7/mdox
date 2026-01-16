@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcached__pool__buffer__s" kind="struct" language="C++" prot="public">
+    <compoundname>cached_pool_buffer_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcached__pool__buffer__s_1aebf7a1bc08eed7b0c185d7c233624cf3" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> phead</type>
+        <definition>vatomic64_t phead cached_pool_buffer_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_buffer_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="37" column="23" bodyfile="vsync/pool/cached_pool.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__buffer__s_1a48843cb3813bc58c219a4a50f06d7197" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ptail</type>
+        <definition>vatomic64_t ptail cached_pool_buffer_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_buffer_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="38" column="23" bodyfile="vsync/pool/cached_pool.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__buffer__s_1ac729e3e7edc16703f9a715446c987aae" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> chead</type>
+        <definition>vatomic64_t chead cached_pool_buffer_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_buffer_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="39" column="23" bodyfile="vsync/pool/cached_pool.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__buffer__s_1af298b3ab0e87d755f331e2e99c3307a8" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ctail</type>
+        <definition>vatomic64_t ctail cached_pool_buffer_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_buffer_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="40" column="23" bodyfile="vsync/pool/cached_pool.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcached__pool__buffer__s_1a9109877871980b6d8f5566b9dfda9b4d" prot="public" static="no" mutable="no">
+        <type>cached_pool_entry_t *nodes[]</type>
+        <definition>cached_pool_entry_t* nodes [] cached_pool_buffer_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cached_pool_buffer_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/pool/cached_pool.h" line="41" column="31" bodyfile="vsync/pool/cached_pool.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cached_pool_buffer_s</label>
+        <link refid="structcached__pool__buffer__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/pool/cached_pool.h" line="36" column="1" bodyfile="vsync/pool/cached_pool.h" bodystart="36" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structcached__pool__buffer__s_1aebf7a1bc08eed7b0c185d7c233624cf3" prot="public" virt="non-virtual"><scope>cached_pool_buffer_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__buffer__s_1a48843cb3813bc58c219a4a50f06d7197" prot="public" virt="non-virtual"><scope>cached_pool_buffer_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__buffer__s_1ac729e3e7edc16703f9a715446c987aae" prot="public" virt="non-virtual"><scope>cached_pool_buffer_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__buffer__s_1af298b3ab0e87d755f331e2e99c3307a8" prot="public" virt="non-virtual"><scope>cached_pool_buffer_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcached__pool__buffer__s_1a9109877871980b6d8f5566b9dfda9b4d" prot="public" virt="non-virtual"><scope>cached_pool_buffer_s</scope><name>VSYNC_CACHEALIGN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

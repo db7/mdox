@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_6bdb6f7525de4a4416e80cc15f7aab17" kind="dir">
+    <compoundname>vsync/map/internal/treeset</compoundname>
+    <innerfile refid="treeset__alloc_8h">treeset_alloc.h</innerfile>
+    <innerfile refid="treeset__common_8h">treeset_common.h</innerfile>
+    <innerfile refid="treeset__lock_8h">treeset_lock.h</innerfile>
+    <innerfile refid="treeset__lock__fake_8h">treeset_lock_fake.h</innerfile>
+    <innerfile refid="treeset__lock__pthread_8h">treeset_lock_pthread.h</innerfile>
+    <innerfile refid="treeset__lock__rw_8h">treeset_lock_rw.h</innerfile>
+    <innerfile refid="treeset__lock__ttas_8h">treeset_lock_ttas.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/internal/treeset/"/>
+  </compounddef>
+</doxygen>

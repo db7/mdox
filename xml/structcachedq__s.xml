@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcachedq__s" kind="struct" language="C++" prot="public">
+    <compoundname>cachedq_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcachedq__s_1a1c6e4553b6113e2f371832c36845eca2" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> phead</type>
+        <definition>vatomic64_t phead cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="26" column="23" bodyfile="vsync/queue/cachedq.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1adbb982ff499ce9d04d6c7fb436ea7e8c" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ptail</type>
+        <definition>vatomic64_t ptail cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="27" column="23" bodyfile="vsync/queue/cachedq.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1a00de57c10ed1e835aef72a83ad1150f7" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ptail_cached</type>
+        <definition>vatomic64_t ptail_cached cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="28" column="30" bodyfile="vsync/queue/cachedq.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1a7fc696d76003b88b09067d30057ba117" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> chead</type>
+        <definition>vatomic64_t chead cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="29" column="23" bodyfile="vsync/queue/cachedq.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1a549487e0923efbce2a9a15e90f88a74d" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ctail</type>
+        <definition>vatomic64_t ctail cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="30" column="23" bodyfile="vsync/queue/cachedq.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1a3cef1378cd53cb456ea01127fc5ee621" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> ctail_cached</type>
+        <definition>vatomic64_t ctail_cached cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="31" column="30" bodyfile="vsync/queue/cachedq.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1ab78198cf2eac9278cf76ce7beb3d092e" prot="public" static="no" mutable="no">
+        <type>vuint64_t size</type>
+        <definition>vuint64_t size cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="32" column="20" bodyfile="vsync/queue/cachedq.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcachedq__s_1a8329de18c16396ed6eb4b7b801e9b524" prot="public" static="no" mutable="no">
+        <type>vuint64_t entry[]</type>
+        <definition>vuint64_t entry [] cachedq_s::VSYNC_CACHEALIGN</definition>
+        <argsstring></argsstring>
+        <name>VSYNC_CACHEALIGN</name>
+        <qualifiedname>cachedq_s::VSYNC_CACHEALIGN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/cachedq.h" line="33" column="21" bodyfile="vsync/queue/cachedq.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>cachedq_s</label>
+        <link refid="structcachedq__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>VSYNC_CACHEALIGN</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/queue/cachedq.h" line="25" column="1" bodyfile="vsync/queue/cachedq.h" bodystart="25" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structcachedq__s_1a1c6e4553b6113e2f371832c36845eca2" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1adbb982ff499ce9d04d6c7fb436ea7e8c" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1a00de57c10ed1e835aef72a83ad1150f7" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1a7fc696d76003b88b09067d30057ba117" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1a549487e0923efbce2a9a15e90f88a74d" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1a3cef1378cd53cb456ea01127fc5ee621" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1ab78198cf2eac9278cf76ce7beb3d092e" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+      <member refid="structcachedq__s_1a8329de18c16396ed6eb4b7b801e9b524" prot="public" virt="non-virtual"><scope>cachedq_s</scope><name>VSYNC_CACHEALIGN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

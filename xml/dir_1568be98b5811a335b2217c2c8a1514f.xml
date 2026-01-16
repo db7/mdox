@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_1568be98b5811a335b2217c2c8a1514f" kind="dir">
+    <compoundname>vsync/map/internal/hashtable</compoundname>
+    <innerfile refid="hashtable__config_8h">hashtable_config.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/map/internal/hashtable/"/>
+  </compounddef>
+</doxygen>

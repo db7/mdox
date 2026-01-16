@@ -1,0 +1,1273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="hmcslock_8h" kind="file" language="C++">
+    <compoundname>hmcslock.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="atomic_8h" local="no">vsync/atomic.h</includes>
+    <includes refid="dbg_8h" local="no">vsync/common/dbg.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/atomic/await.h</label>
+        <link refid="await_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/atomic/await_ptr.h</label>
+        <link refid="await__ptr_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/atomic/await_u32.h</label>
+        <link refid="await__u32_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/atomic/await_u64.h</label>
+        <link refid="await__u64_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/atomic/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/atomic/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vsync/atomic/core_ptr.h</label>
+        <link refid="core__ptr_8h"/>
+      </node>
+      <node id="19">
+        <label>vsync/atomic/core_sz.h</label>
+        <link refid="core__sz_8h"/>
+      </node>
+      <node id="16">
+        <label>vsync/atomic/core_u16.h</label>
+        <link refid="core__u16_8h"/>
+      </node>
+      <node id="17">
+        <label>vsync/atomic/core_u32.h</label>
+        <link refid="core__u32_8h"/>
+      </node>
+      <node id="18">
+        <label>vsync/atomic/core_u64.h</label>
+        <link refid="core__u64_8h"/>
+      </node>
+      <node id="15">
+        <label>vsync/atomic/core_u8.h</label>
+        <link refid="core__u8_8h"/>
+      </node>
+      <node id="30">
+        <label>vsync/atomic/dispatch.h</label>
+        <link refid="dispatch_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>vsync/atomic/internal/builtins.h</label>
+        <link refid="builtins_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vsync/atomic/internal/dispatch.h</label>
+        <link refid="internal_2dispatch_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vsync/atomic/internal/fallback.h</label>
+        <link refid="fallback_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>macros.h</label>
+        <link refid="atomic_2internal_2macros_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>vsync/atomic/internal/remap_fnc_sc.h</label>
+        <link refid="remap__fnc__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vsync/atomic/internal/remap_ptr_sc.h</label>
+        <link refid="remap__ptr__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>vsync/atomic/internal/remap_sz_sc.h</label>
+        <link refid="remap__sz__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vsync/atomic/internal/remap_u16_sc.h</label>
+        <link refid="remap__u16__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vsync/atomic/internal/remap_u32_sc.h</label>
+        <link refid="remap__u32__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>vsync/atomic/internal/remap_u64_sc.h</label>
+        <link refid="remap__u64__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vsync/atomic/internal/remap_u8_sc.h</label>
+        <link refid="remap__u8__sc_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/atomic/internal/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>vsync/common/await_while.h</label>
+        <link refid="await__while_8h_source"/>
+      </node>
+      <node id="34">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="33">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/common/verify.h</label>
+        <link refid="verify_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>vsync/spinlock/hmcslock.h</label>
+        <link refid="hmcslock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structhmcs__node__s" prot="public">hmcs_node_s</innerclass>
+    <innerclass refid="structhmcslock__s" prot="public">hmcslock_s</innerclass>
+    <innerclass refid="structhmcs__level__spec__s" prot="public">hmcs_level_spec_s</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" prot="public" static="no">
+        <type>struct <ref refid="structhmcs__node__s" kindref="compound">hmcs_node_s</ref></type>
+        <definition>typedef struct hmcs_node_s hmcs_node_t</definition>
+        <argsstring></argsstring>
+        <name>hmcs_node_t</name>
+        <briefdescription>
+<para>MACROS/CONSTANTS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Data Types </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="62" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hmcslock_8h_1acde75b2525c95b0f5436f59afebf2698" prot="public" static="no">
+        <type>struct <ref refid="structhmcslock__s" kindref="compound">hmcslock_s</ref></type>
+        <definition>typedef struct hmcslock_s hmcslock_t</definition>
+        <argsstring></argsstring>
+        <name>hmcslock_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="70" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="hmcslock_8h_1a67efc2366f67dcbe6f4d4ec39a76fa15" prot="public" static="no">
+        <type>struct <ref refid="structhmcs__level__spec__s" kindref="compound">hmcs_level_spec_s</ref></type>
+        <definition>typedef struct hmcs_level_spec_s hmcslock_level_spec_t</definition>
+        <argsstring></argsstring>
+        <name>hmcslock_level_spec_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="75" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hmcslock_release_real</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode, vsize_t depth)</argsstring>
+        <name>_hmcslock_release_real</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Releases the lock on <computeroutput>depth &gt; 1</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Recursive function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current recursion depth. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="330" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="330" bodyend="356" declfile="vsync/spinlock/hmcslock.h" declline="79" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hmcslock_acquire_real</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode, vsize_t depth)</argsstring>
+        <name>_hmcslock_acquire_real</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the lock on <computeroutput>depth &gt; 1</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Recursive function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>current recursion depth. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="291" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="291" bodyend="319" declfile="vsync/spinlock/hmcslock.h" declline="82" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hmcslock_release_helper</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode, vuint64_t val)</argsstring>
+        <name>_hmcslock_release_helper</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vuint64_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Helps releasing the lock to the successor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new status of the successor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="244" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="244" bodyend="257" declfile="vsync/spinlock/hmcslock.h" declline="85" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a9815f3d952bc4a584eb1f7321eb1e1ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hmcslock_one_acquire_real</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode)</argsstring>
+        <name>_hmcslock_one_acquire_real</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <briefdescription>
+<para>Releases the lock on depth zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="265" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="265" bodyend="280" declfile="vsync/spinlock/hmcslock.h" declline="88" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void _hmcslock_init_level</definition>
+        <argsstring>(hmcslock_t *cur_parent, hmcslock_t *locks, vsize_t *idx, vsize_t cur_level, hmcslock_level_spec_t *level_specs, vsize_t num_levels)</argsstring>
+        <name>_hmcslock_init_level</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>cur_parent</declname>
+        </param>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>locks</declname>
+        </param>
+        <param>
+          <type>vsize_t *</type>
+          <declname>i</declname>
+          <defname>idx</defname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>cur_level</declname>
+        </param>
+        <param>
+          <type><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref> *</type>
+          <declname>level_specs</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>num_levels</declname>
+        </param>
+        <briefdescription>
+<para>Builds and initializes the locks array/tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cur_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. The parent lock of <computeroutput>cur_level</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>locks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in/out parameters, index of the current lock. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cur_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the current level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_specs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_level_spec_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of levels including machine level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> recursive function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="371" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="371" bodyend="398" declfile="vsync/spinlock/hmcslock.h" declline="91" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a4d120973a3816ea97e11455f765c2363" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+        <definition>static hmcslock_t * hmcslock_which_lock</definition>
+        <argsstring>(hmcslock_t *locks, vsize_t locks_len, hmcslock_level_spec_t *level_specs, vsize_t num_levels, vuint32_t cores_per_node, vuint32_t core_id)</argsstring>
+        <name>hmcslock_which_lock</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>locks</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>locks_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref> *</type>
+          <declname>level_specs</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>num_levels</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>cores_per_node</declname>
+        </param>
+        <param>
+          <type>vuint32_t</type>
+          <declname>core_id</declname>
+        </param>
+        <briefdescription>
+<para>Returns the address of the lock associated with the core id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>locks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>locks_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>locks</computeroutput> array length. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_specs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_level_spec_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the levels in hierarchy, same as the length of <computeroutput>level_specs</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cores_per_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of cores per leaf lock node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>core_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>core id of the calling thread.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>hmcslock_t* address of hmcslock_t object, which the calling thread should use to acquire the lock.</para>
+</simplesect>
+<simplesect kind="return"><para>NULL when <computeroutput>HMCS_MAX_THREADS</computeroutput> is too small. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="118" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="118" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a556612b74c6551a4bacf50ec1b9bcf65" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hmcslock_init</definition>
+        <argsstring>(hmcslock_t *locks, vsize_t locks_len, hmcslock_level_spec_t *level_specs, vsize_t num_levels)</argsstring>
+        <name>hmcslock_init</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>locks</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>locks_len</declname>
+        </param>
+        <param>
+          <type><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref> *</type>
+          <declname>level_specs</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>num_levels</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the locks array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>locks</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>locks_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>locks</computeroutput> array length. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level_specs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of hmcslock_level_spec_t objects. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of the levels in heirarchy, same as the length of <computeroutput>level_specs</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> e.g., say you have three levels, the machine, two NUMA nodes, and two caches per NUMA. Then <computeroutput>locks_len = 1(machine) + 2(NUMA) + 4 (2*2 caches) = 7</computeroutput>. <computeroutput>num_levels = 3</computeroutput> (including the machine level) define levels_spec as follows: <programlisting filename=".c"><codeline><highlight class="normal">level_specs[num_levels]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{1,<sp/>LEVEL_THRESHOLD},<sp/></highlight><highlight class="comment">//<sp/>1<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{2,<sp/>LEVEL_THRESHOLD},<sp/></highlight><highlight class="comment">//<sp/>2<sp/>NUMAs<sp/>per<sp/>machine</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>{2,<sp/>LEVEL_THRESHOLD},<sp/></highlight><highlight class="comment">//<sp/>2<sp/>caches<sp/>per<sp/>NUMA</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="174" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="174" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a0ff03790a290788ea709f7e5f31955e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hmcslock_acquire</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode, vsize_t num_levels)</argsstring>
+        <name>hmcslock_acquire</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>num_levels</declname>
+        </param>
+        <briefdescription>
+<para>Acquires the given lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of levels including machine level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> <computeroutput>lock</computeroutput> should be what <computeroutput>hmcslock_which_lock</computeroutput> returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="212" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="212" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="hmcslock_8h_1a2e2b0cbee957aaee47d8256c3d9b4544" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hmcslock_release</definition>
+        <argsstring>(hmcslock_t *lock, hmcs_node_t *qnode, vsize_t num_levels)</argsstring>
+        <name>hmcslock_release</name>
+        <param>
+          <type><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref> *</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+          <declname>qnode</declname>
+        </param>
+        <param>
+          <type>vsize_t</type>
+          <declname>num_levels</declname>
+        </param>
+        <briefdescription>
+<para>Releases the given lock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcslock_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>qnode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of hmcs_node_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of levels including machine level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+&gt; <bold>Note:</bold> <computeroutput>lock</computeroutput> should be what <computeroutput>hmcslock_which_lock</computeroutput> returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="229" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="229" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Hierarchical MCS lock for systems with NUMA Hierarchies. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+<para><programlisting filename="eg_hmcslock.c"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="hmcslock_8h" kindref="compound" tooltip="Hierarchical MCS lock for systems with NUMA Hierarchies.">vsync/spinlock/hmcslock.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>build<sp/>such<sp/>a<sp/>hierarchical<sp/>tree:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>R<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>/<sp/><sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>A<sp/><sp/><sp/><sp/><sp/>B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>/<sp/>\<sp/><sp/><sp/>/<sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>C<sp/><sp/><sp/>D<sp/><sp/>E<sp/><sp/>F<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>specs<sp/>are<sp/>needed:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>level<sp/>1,<sp/>has<sp/>a<sp/>root<sp/>(1<sp/>node)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>level<sp/>2,<sp/>has<sp/>two<sp/>nodes<sp/>connected<sp/>to<sp/>R<sp/>the<sp/>parent<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>level<sp/>3,<sp/>has<sp/>two<sp/>nodes<sp/>per<sp/>parent<sp/>(A/B)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>levels<sp/>=<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>locks<sp/><sp/>=<sp/>7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_LEVELS<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_1<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_2<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_3<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_1_THRESHOLD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_2_THRESHOLD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEVEL_3_THRESHOLD<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>g_level_specs[NUM_LEVELS]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{LEVEL_1,<sp/>LEVEL_1_THRESHOLD},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{LEVEL_2,<sp/>LEVEL_2_THRESHOLD},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{LEVEL_3,<sp/>LEVEL_3_THRESHOLD},</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_LOCKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((LEVEL_3<sp/>*<sp/>LEVEL_2<sp/>*<sp/>LEVEL_1)<sp/>+<sp/>(LEVEL_1<sp/>*<sp/>LEVEL_2)<sp/>+<sp/>(LEVEL_1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPECTED_VAL<sp/>(N)<sp/>*<sp/>(IT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_x<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">vuint32_t<sp/>g_y<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>g_locks[NUM_LOCKS];</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>g_qnode[N]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>the<sp/>thread<sp/>should<sp/>be<sp/>pinned<sp/>to<sp/>the<sp/>core<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>the<sp/>leaf<sp/>lock<sp/>associated<sp/>with<sp/>this<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock<sp/>=<sp/><ref refid="hmcslock_8h_1a4d120973a3816ea97e11455f765c2363" kindref="member" tooltip="Returns the address of the lock associated with the core id.">hmcslock_which_lock</ref>(g_locks,<sp/>NUM_LOCKS,<sp/>g_level_specs,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NUM_LEVELS,<sp/>LEVEL_3,<sp/>tid);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>IT;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a0ff03790a290788ea709f7e5f31955e1" kindref="member" tooltip="Acquires the given lock.">hmcslock_acquire</ref>(lock,<sp/>&amp;g_qnode[tid],<sp/>NUM_LEVELS);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_x++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g_y++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a2e2b0cbee957aaee47d8256c3d9b4544" kindref="member" tooltip="Releases the given lock.">hmcslock_release</ref>(lock,<sp/>&amp;g_qnode[tid],<sp/>NUM_LEVELS);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a556612b74c6551a4bacf50ec1b9bcf65" kindref="member" tooltip="Initializes the locks array.">hmcslock_init</ref>(g_locks,<sp/>NUM_LOCKS,<sp/>g_level_specs,<sp/>NUM_LEVELS);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Final<sp/>value<sp/>%u<sp/>%u\n&quot;</highlight><highlight class="normal">,<sp/>g_x,<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>EXPECTED_VAL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>assert(g_x<sp/>==<sp/>g_y);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>[High Performance Locks for Multi-level NUMA Systems] (<ulink url="https://dl.acm.org/doi/pdf/10.1145/2858788.2688503">https://dl.acm.org/doi/pdf/10.1145/2858788.2688503</ulink>)</para>
+<para><linebreak/>
+<linebreak/>
+### References:<linebreak/>
+<linebreak/>
+</para>
+<para>[Verifying and Optimizing the HMCS Lock for Arm Servers] (<ulink url="https://link.springer.com/chapter/10.1007/978-3-030-91014-3_17">https://link.springer.com/chapter/10.1007/978-3-030-91014-3_17</ulink>) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_HMCSLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_HMCSLOCK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound" tooltip="Rich interface of atomic operations and fences.">vsync/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/dbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_UNLOCKED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_LOCKED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_COHORT_START<sp/><sp/><sp/>0x1UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_ACQUIRE_PARENT<sp/>(HMCLOCK_MAX<sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HMCLOCK_WAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HMCLOCK_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HMCS_MAX_THREADS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>HMCS_MAX_THREADS<sp/>1024U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(NDEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>on<sp/>release<sp/>mode<sp/>make<sp/>all<sp/>assertions<sp/>void<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>HMCSLOCK_ASSERT(_c_)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>HMCS_ENABLE_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>HMCSLOCK_ASSERT(_c_)<sp/>ASSERT(_c_)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structhmcs__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_s</ref><sp/>*)<sp/>next;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>status;</highlight></codeline>
+<codeline lineno="62" refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" refkind="member"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structhmcslock__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhmcslock__s" kindref="compound">hmcslock_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a28b5a73b2359cacdfb53245d38b2a669" kindref="member" tooltip="Declares an atomic pointer type.">vatomicptr</ref>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<sp/>lock;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhmcslock__s" kindref="compound">hmcslock_s</ref><sp/>*parent;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>qnode;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>is_leaf;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/>VSYNC_CACHEALIGN<sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structhmcs__level__spec__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhmcs__level__spec__s" kindref="compound">hmcs_level_spec_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>num_nodes_per_parent;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint32_t<sp/>threshold;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/>Private<sp/>functions</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" kindref="member" tooltip="Releases the lock on depth &gt; 1.">_hmcslock_release_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>depth);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" kindref="member" tooltip="Acquires the lock on depth &gt; 1.">_hmcslock_acquire_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>depth);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" kindref="member" tooltip="Helps releasing the lock to the successor.">_hmcslock_release_helper</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vuint64_t<sp/>val);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hmcslock_8h_1a9815f3d952bc4a584eb1f7321eb1e1ad" kindref="member" tooltip="Releases the lock on depth zero.">_hmcslock_one_acquire_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" kindref="member" tooltip="Builds and initializes the locks array/tree.">_hmcslock_init_level</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*cur_parent,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*locks,<sp/>vsize_t<sp/>*i,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>cur_level,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>num_levels);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HMCS_ENABLE_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t<sp/>_hmcslock_count_nodes(<ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>num_levels);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*</highlight></codeline>
+<codeline lineno="118" refid="hmcslock_8h_1a4d120973a3816ea97e11455f765c2363" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a4d120973a3816ea97e11455f765c2363" kindref="member" tooltip="Returns the address of the lock associated with the core id.">hmcslock_which_lock</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*locks,<sp/>vsize_t<sp/>locks_len,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,<sp/>vsize_t<sp/>num_levels,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>cores_per_node,<sp/>vuint32_t<sp/>core_id)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>l<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>j<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>leaf_node_count<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>node_index<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*leaf_nodes[HMCS_MAX_THREADS];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(l<sp/>=<sp/>0;<sp/>l<sp/>&lt;<sp/>num_levels;<sp/>l++)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leaf_node_count<sp/>*=<sp/>level_specs[l].num_nodes_per_parent;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(leaf_node_count<sp/>&lt;=<sp/>HMCS_MAX_THREADS<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Compile<sp/>with<sp/>larger<sp/>N<sp/>in<sp/>-DHMCS_MAX_THREADS=N&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(leaf_node_count<sp/>&gt;<sp/>HMCS_MAX_THREADS)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>locks_len;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(j<sp/>&lt;<sp/>leaf_node_count<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;you<sp/>got<sp/>over<sp/>the<sp/>boundary<sp/>of<sp/>leaf<sp/>nodes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>map<sp/>the<sp/>thread<sp/>to<sp/>its<sp/>leaf<sp/>parent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(locks[i].is_leaf)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leaf_nodes[j++]<sp/>=<sp/>&amp;locks[i];</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>node_index<sp/>=<sp/>(core_id<sp/>/<sp/>cores_per_node)<sp/>%<sp/>leaf_node_count;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>leaf_nodes[node_index];</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="hmcslock_8h_1a556612b74c6551a4bacf50ec1b9bcf65" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a556612b74c6551a4bacf50ec1b9bcf65" kindref="member" tooltip="Initializes the locks array.">hmcslock_init</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*locks,<sp/>vsize_t<sp/>locks_len,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,<sp/>vsize_t<sp/>num_levels)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>level<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(locks);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(locks_len<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(num_levels<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HMCS_ENABLE_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>total_nodes<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(level_specs[0].num_nodes_per_parent<sp/>==<sp/>1<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;top<sp/>level<sp/>should<sp/>have<sp/>one<sp/>node&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>total_nodes<sp/>=<sp/>_hmcslock_count_nodes(level_specs,<sp/>num_levels);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(locks_len<sp/>&gt;=<sp/>total_nodes<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;insufficient<sp/>nodes,<sp/>or<sp/>too<sp/>many<sp/>nodes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>V_UNUSED(locks_len);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" kindref="member" tooltip="Builds and initializes the locks array/tree.">_hmcslock_init_level</ref>(NULL,<sp/>locks,<sp/>&amp;level,<sp/>0,<sp/>level_specs,<sp/>num_levels);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(level<sp/>==<sp/>locks_len<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;recursion<sp/>did<sp/>not<sp/>reach<sp/>the<sp/>expected<sp/>depth&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="hmcslock_8h_1a0ff03790a290788ea709f7e5f31955e1" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a0ff03790a290788ea709f7e5f31955e1" kindref="member" tooltip="Acquires the given lock.">hmcslock_acquire</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vsize_t<sp/>num_levels)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(lock);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(qnode);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(num_levels<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" kindref="member" tooltip="Acquires the lock on depth &gt; 1.">_hmcslock_acquire_real</ref>(lock,<sp/>qnode,<sp/>num_levels<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="hmcslock_8h_1a2e2b0cbee957aaee47d8256c3d9b4544" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a2e2b0cbee957aaee47d8256c3d9b4544" kindref="member" tooltip="Releases the given lock.">hmcslock_release</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vsize_t<sp/>num_levels)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(lock);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(qnode);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(num_levels<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" kindref="member" tooltip="Releases the lock on depth &gt; 1.">_hmcslock_release_real</ref>(lock,<sp/>qnode,<sp/>num_levels<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" kindref="member" tooltip="Helps releasing the lock to the successor.">_hmcslock_release_helper</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vuint64_t<sp/>val)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*succ<sp/>=<sp/>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(&amp;qnode-&gt;next);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(succ<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="core__ptr_8h_1a9a92dcdbf86fbc3990ad338aee1455f3" kindref="member" tooltip="Writes value v in a if e is the current value.">vatomicptr_cmpxchg</ref>(&amp;lock-&gt;lock,<sp/>qnode,<sp/>NULL)<sp/>==<sp/>qnode)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>await<sp/>till<sp/>there<sp/>is<sp/>a<sp/>successor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<ref refid="await__ptr_8h_1ac0ed226040d342bb02536cf8a867654e" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomicptr_await_neq_rlx</ref>(&amp;qnode-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>update<sp/>successor<sp/>status</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a22c81a0cc47810f80cba86100362a587" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rel</ref>(&amp;succ-&gt;status,<sp/>val);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="hmcslock_8h_1a9815f3d952bc4a584eb1f7321eb1e1ad" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a9815f3d952bc4a584eb1f7321eb1e1ad" kindref="member" tooltip="Releases the lock on depth zero.">_hmcslock_one_acquire_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*pred<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>the<sp/>node<sp/>for<sp/>use.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rlx</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_LOCKED);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;qnode-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a274649a698a8a2c6a87e82c64d6968e9" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg</ref>(&amp;lock-&gt;lock,<sp/>qnode);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spin<sp/>as<sp/>long<sp/>as<sp/>it&apos;s<sp/>locked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1abea122b4023bf683adb30d72dba12c67" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rel</ref>(&amp;pred-&gt;next,<sp/>qnode);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="await__u64_8h_1afd2bbaca521aa4f25eefa4ddff2f06c9" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomic64_await_neq_acq</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_LOCKED);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rlx</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_UNLOCKED);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291" refid="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" kindref="member" tooltip="Acquires the lock on depth &gt; 1.">_hmcslock_acquire_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vsize_t<sp/>depth)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*pred<sp/><sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>cur_status<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>the<sp/>node<sp/>for<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rlx</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_WAIT);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a503a2cb95440ac5ca0a9452f4f949ca7" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rlx</ref>(&amp;qnode-&gt;next,<sp/>NULL);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>pred<sp/>=<sp/>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1a274649a698a8a2c6a87e82c64d6968e9" kindref="member" tooltip="Writes v in a and returns old value.">vatomicptr_xchg</ref>(&amp;lock-&gt;lock,<sp/>qnode);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pred)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1abea122b4023bf683adb30d72dba12c67" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write_rel</ref>(&amp;pred-&gt;next,<sp/>qnode);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spin<sp/>as<sp/>long<sp/>as<sp/>the<sp/>status<sp/>is<sp/>wait</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_status<sp/>=<sp/><ref refid="await__u64_8h_1afd2bbaca521aa4f25eefa4ddff2f06c9" kindref="member" tooltip="Politely awaits the value pointed by a to be different than v.">vatomic64_await_neq_acq</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_WAIT);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>acquired,<sp/>enter<sp/>the<sp/>CS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur_status<sp/>&lt;<sp/>HMCLOCK_ACQUIRE_PARENT)<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rlx</ref>(&amp;qnode-&gt;status,<sp/>HMCLOCK_COHORT_START);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(lock-&gt;parent<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;parent<sp/>is<sp/>null&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(depth<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a9815f3d952bc4a584eb1f7321eb1e1ad" kindref="member" tooltip="Releases the lock on depth zero.">_hmcslock_one_acquire_real</ref>(lock-&gt;parent,<sp/>&amp;lock-&gt;qnode);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a107ef564d2d28e13db8e8f95747ae505" kindref="member" tooltip="Acquires the lock on depth &gt; 1.">_hmcslock_acquire_real</ref>(lock-&gt;parent,<sp/>&amp;lock-&gt;qnode,<sp/>depth<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" kindref="member" tooltip="Releases the lock on depth &gt; 1.">_hmcslock_release_real</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*lock,<sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*qnode,<sp/>vsize_t<sp/>depth)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>cur_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*succ<sp/><sp/><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>cur_count<sp/>=<sp/><ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomic64_read_rlx</ref>(&amp;qnode-&gt;status);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>HMCSLOCK_ASSERT(cur_count<sp/>&lt;=<sp/>lock-&gt;threshold);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lower<sp/>level<sp/>releases</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur_count<sp/>&lt;<sp/>lock-&gt;threshold)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Not<sp/>reached<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>succ<sp/>=<sp/>(<ref refid="structhmcs__node__s" kindref="compound" tooltip="MACROS/CONSTANTS.">hmcs_node_t</ref><sp/>*)<ref refid="core__ptr_8h_1ae9697a7dfe07ecf6168215818692640f" kindref="member" tooltip="Returns the value of the atomic variable pointed by a.">vatomicptr_read_acq</ref>(&amp;qnode-&gt;next);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(succ)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>pass<sp/>within<sp/>cohorts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1a22c81a0cc47810f80cba86100362a587" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomic64_write_rel</ref>(&amp;succ-&gt;status,<sp/>cur_count<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>if<sp/>succ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>threshold<sp/>not<sp/>reached</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>else:<sp/>No<sp/>known<sp/>successor<sp/>or<sp/>reached<sp/>threshold,<sp/>release<sp/>to<sp/>parent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(depth<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" kindref="member" tooltip="Helps releasing the lock to the successor.">_hmcslock_release_helper</ref>(lock-&gt;parent,<sp/>&amp;lock-&gt;qnode,<sp/>HMCLOCK_UNLOCKED);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1aa7708defcb123f1f5cc324ac2ec404b2" kindref="member" tooltip="Releases the lock on depth &gt; 1.">_hmcslock_release_real</ref>(lock-&gt;parent,<sp/>&amp;lock-&gt;qnode,<sp/>depth<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ask<sp/>successor<sp/>to<sp/>acquire<sp/>next<sp/>level<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1a224d23033e9971974de16a2a8de4d830" kindref="member" tooltip="Helps releasing the lock to the successor.">_hmcslock_release_helper</ref>(lock,<sp/>qnode,<sp/>HMCLOCK_ACQUIRE_PARENT);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" refkind="member"><highlight class="normal"><ref refid="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" kindref="member" tooltip="Builds and initializes the locks array/tree.">_hmcslock_init_level</ref>(<ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*cur_parent,<sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*locks,<sp/>vsize_t<sp/>*idx,</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>cur_level,<sp/><ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vsize_t<sp/>num_levels)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>p<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>cur_index<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>is_leaf<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhmcslock__s" kindref="compound">hmcslock_t</ref><sp/>*cur_child<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(num_levels<sp/>==<sp/>cur_level)<sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur_level<sp/>+<sp/>1<sp/>==<sp/>num_levels)<sp/>{</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>is_leaf<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(p<sp/>=<sp/>0;<sp/>p<sp/>&lt;<sp/>level_specs[cur_level].num_nodes_per_parent;<sp/>p++)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_index<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(*idx)++;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_child<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;locks[cur_index];</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_child-&gt;parent<sp/><sp/><sp/><sp/>=<sp/>cur_parent;</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_child-&gt;threshold<sp/>=<sp/>level_specs[cur_level].threshold;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cur_child-&gt;is_leaf<sp/><sp/><sp/>=<sp/>is_leaf;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="hmcslock_8h_1addf7d5295ba93e64f300a8fdb8d11aea" kindref="member" tooltip="Builds and initializes the locks array/tree.">_hmcslock_init_level</ref>(cur_child,<sp/>locks,<sp/>idx,<sp/>cur_level<sp/>+<sp/>1,<sp/>level_specs,</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_levels);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core__ptr_8h_1a305c975afa453b26d513aadbe0cc5dfc" kindref="member" tooltip="Writes value v in the atomic variable pointed by a.">vatomicptr_write</ref>(&amp;cur_child-&gt;lock,<sp/>NULL);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HMCS_ENABLE_DEBUG)</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vsize_t</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">_hmcslock_count_nodes(<ref refid="structhmcs__level__spec__s" kindref="compound">hmcslock_level_spec_t</ref><sp/>*level_specs,<sp/>vsize_t<sp/>num_levels)</highlight></codeline>
+<codeline lineno="411"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>i<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>nodes<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(num_levels<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_levels;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes<sp/>*=<sp/>level_specs[i].num_nodes_per_parent;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nodes<sp/>+<sp/>_hmcslock_count_nodes(level_specs,<sp/>num_levels<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_UNLOCKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_LOCKED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_COHORT_START</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_MAX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_ACQUIRE_PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCLOCK_WAIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>HMCSLOCK_ASSERT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(HMCS_ENABLE_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>HMCS_ENABLE_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/spinlock/hmcslock.h"/>
+  </compounddef>
+</doxygen>

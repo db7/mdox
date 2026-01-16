@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvstack__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>vstack_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvstack__node__s_1aefdf5c96e882806555c33321427f5916" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structvstack__node__s" kindref="compound">vstack_node_s</ref> *</type>
+        <definition>struct vstack_node_s* vstack_node_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>vstack_node_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/internal/stack_core.h" line="16" column="1" bodyfile="vsync/stack/internal/stack_core.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>vstack_node_s</label>
+        <link refid="structvstack__node__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/stack/internal/stack_core.h" line="14" column="1" bodyfile="vsync/stack/internal/stack_core.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structvstack__node__s_1aefdf5c96e882806555c33321427f5916" prot="public" virt="non-virtual"><scope>vstack_node_s</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

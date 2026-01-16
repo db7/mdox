@@ -1,0 +1,843 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="treeset__bst__coarse_8h" kind="file" language="C++">
+    <compoundname>treeset_bst_coarse.h</compoundname>
+    <includes refid="vtypes_8h" local="no">vsync/vtypes.h</includes>
+    <includes refid="assert_8h" local="no">vsync/common/assert.h</includes>
+    <includes refid="alloc_8h" local="no">vsync/utils/alloc.h</includes>
+    <includes refid="treeset__common_8h" local="no">vsync/map/internal/treeset/treeset_common.h</includes>
+    <includes refid="treeset__lock_8h" local="no">vsync/map/internal/treeset/treeset_lock.h</includes>
+    <includes refid="treeset__alloc_8h" local="no">vsync/map/internal/treeset/treeset_alloc.h</includes>
+    <includes refid="treeset__bst__fine_8h" local="no">vsync/map/treeset_bst_fine.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vsync/common/dbg.h</label>
+        <link refid="dbg_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="12">
+        <label>vsync/map/internal/treeset/treeset_alloc.h</label>
+        <link refid="treeset__alloc_8h_source"/>
+      </node>
+      <node id="7">
+        <label>vsync/map/internal/treeset/treeset_common.h</label>
+        <link refid="treeset__common_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vsync/map/internal/treeset/treeset_lock.h</label>
+        <link refid="treeset__lock_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/map/treeset_bst_coarse.h</label>
+        <link refid="treeset__bst__coarse_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>vsync/map/treeset_bst_fine.h</label>
+        <link refid="treeset__bst__fine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vsync/utils/alloc.h</label>
+        <link refid="alloc_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtreeset__node__s" prot="public">treeset_node_s</innerclass>
+    <innerclass refid="structtreeset__s" prot="public">treeset_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1af781055b0214e6ed62db988007ea61ef" prot="public" static="no">
+        <name>TREESET_REPLACE_HEADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="58" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a3998fa11b440c1fe23c89b2635892ede" prot="public" static="no">
+        <name>treeset_init</name>
+        <initializer>treeset_init_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="59" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a67f64acf317703e7db77d3671fa32f1f" prot="public" static="no">
+        <name>treeset_destroy</name>
+        <initializer>treeset_destroy_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="60" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a61c998658b5879458808a05c3f2119a6" prot="public" static="no">
+        <name>treeset_add</name>
+        <initializer>treeset_add_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="61" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1ae116590d2cca1fbf6cde41fbb34ab8b6" prot="public" static="no">
+        <name>treeset_remove</name>
+        <initializer>treeset_remove_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="62" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1af2177c962bd2ae507519a9c0c57f3609" prot="public" static="no">
+        <name>treeset_contains</name>
+        <initializer>treeset_contains_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="63" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a26350ea559c29833fd99e50219290527" prot="public" static="no">
+        <name>treeset_visit</name>
+        <initializer>treeset_visit_fine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="64" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a4e36d211b102512e0899fb2df6ffdd7b" prot="public" static="no">
+        <name>l_init</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="65" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1add0723914dd411770a3dd987a350d325" prot="public" static="no">
+        <name>l_destroy</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="66" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1ae5888bb930710b446bfa5da39cab26f4" prot="public" static="no">
+        <name>l_acquire</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="67" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a7c8e1c97b91efe6ed11dd84b24601fac" prot="public" static="no">
+        <name>l_release</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="68" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a574527e5f4c6f5331e47df981c3db613" prot="public" static="no">
+        <name>l_reader_acquire</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="69" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="treeset__bst__coarse_8h_1a5fcd958233e7babffa7c1441293bb60a" prot="public" static="no">
+        <name>l_reader_release</name>
+        <param><defname>l</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="70" column="9" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="treeset__bst__coarse_8h_1ace1928e958f8090482a4cc8f106cb2dd" prot="public" static="no">
+        <type>struct <ref refid="structtreeset__node__s" kindref="compound">treeset_node_s</ref></type>
+        <definition>typedef struct treeset_node_s treeset_node_t</definition>
+        <argsstring></argsstring>
+        <name>treeset_node_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="48" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="treeset__bst__coarse_8h_1a6edbe3fab38abd0a64704df1ba046429" prot="public" static="no">
+        <type>struct <ref refid="structtreeset__s" kindref="compound">treeset_s</ref></type>
+        <definition>typedef struct treeset_s treeset_t</definition>
+        <argsstring></argsstring>
+        <name>treeset_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="54" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a85e6eb3cf32267b7b2bc3878b29ba2e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void treeset_init</definition>
+        <argsstring>(treeset_t *tree, vmem_lib_t mem_lib)</argsstring>
+        <name>treeset_init</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type><ref refid="structvmem__lib__s" kindref="compound">vmem_lib_t</ref></type>
+          <declname>mem_lib</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the treeset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> must be called before threads access the treeset. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mem_lib</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object of type <computeroutput>vmem_lib_t</computeroutput> containing malloc/free functions to allocate/free internal nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="97" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a1f3180be25d0495f58c83312c8d4d478" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void treeset_destroy</definition>
+        <argsstring>(treeset_t *tree)</argsstring>
+        <name>treeset_destroy</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Destroys all the remaining nodes in the treeset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> call only after thread join, or after all threads finished accessing the treeset. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="113" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a7328293817bde7cd3bc72374e7deef53" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t treeset_add</definition>
+        <argsstring>(treeset_t *tree, treeset_key_t key, void *value, void **out_value)</argsstring>
+        <name>treeset_add</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>treeset_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>out_value</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to insert an element with a given key and value into the treeset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key to be inserted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to be associated with inserted key. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out parameter for the previous value associated with the key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true operation succeeded. </para>
+</simplesect>
+<simplesect kind="return"><para>false operation failed, since the given key was already in the treeset, in the <computeroutput>out_value</computeroutput> the value of this element is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="133" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a2a118568bd27c4ad13e931eef5ac54b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t treeset_remove</definition>
+        <argsstring>(treeset_t *tree, treeset_key_t key, void **out_value)</argsstring>
+        <name>treeset_remove</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>treeset_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>out_value</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to remove an element with a given key from the treeset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key to be removed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out parameter for the value associated with the key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true operation succeeded, in the <computeroutput>out_value</computeroutput> the value of the removed element is returned. </para>
+</simplesect>
+<simplesect kind="return"><para>false operation failed, there is no element with the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="153" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a812c839cc51fb88935f20b5758d93551" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vbool_t</type>
+        <definition>static vbool_t treeset_contains</definition>
+        <argsstring>(treeset_t *tree, treeset_key_t key, void **out_value)</argsstring>
+        <name>treeset_contains</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>treeset_key_t</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>out_value</declname>
+        </param>
+        <briefdescription>
+<para>Searches the treeset for an element with a given key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the key to be searched for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out parameter for the value associated with the key. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true operation succeeded, in the <computeroutput>out_value</computeroutput> the value of the found element is returned. </para>
+</simplesect>
+<simplesect kind="return"><para>false operation failed, there is no element with the given key. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="173" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="173" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="treeset__bst__coarse_8h_1a89c4c07b679946da7f766b445beab426" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void treeset_visit</definition>
+        <argsstring>(treeset_t *tree, treeset_visitor visitor, void *arg)</argsstring>
+        <name>treeset_visit</name>
+        <param>
+          <type><ref refid="structtreeset__s" kindref="compound">treeset_t</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>treeset_visitor</type>
+          <declname>visitor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Visits all elements in the treeset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; <bold>Note:</bold> call only after thread join, or after all threads finished accessing the treeset. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the treeset_t object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>address of the function to call on each element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the third argument to the visitor function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/map/treeset_bst_coarse.h" line="192" column="1" bodyfile="vsync/map/treeset_bst_coarse.h" bodystart="192" bodyend="196"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This implementation of treeset uses unbalanced binary search tree (BST) and coarse-grained locking. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A treeset is a binary search tree with nodes that are ordered by unique keys.</para>
+<para>Available implementations share the same interface, but differ in three orthogonal aspects:<itemizedlist>
+<listitem><para>balancing scheme: unbalanced binary search tree (BST) or balanced red-black tree (RB),</para>
+</listitem><listitem><para>synchronisation scheme: so far only coarse-grained locking and fine-grained locking,</para>
+</listitem><listitem><para>allocation scheme: so far only malloc-like allocation.</para>
+</listitem></itemizedlist>
+</para>
+<para>All implementations use external trees, where values are stored in external nodes (leaves) of the tree, and internal nodes are used only for routing.</para>
+<para>For lock-based implementations one need to choose desired lock implementation:<itemizedlist>
+<listitem><para><computeroutput>-DTREESET_LOCK_PTHREAD</computeroutput> (for pthread mutex),</para>
+</listitem><listitem><para><computeroutput>-DTREESET_LOCK_TTAS</computeroutput> (for libvsync TTAS lock),</para>
+</listitem><listitem><para><computeroutput>-DTREESET_LOCK_RW</computeroutput> (for libvsync readers-writer lock).</para>
+<para><linebreak/>
+<linebreak/>
+### Example:<linebreak/>
+<linebreak/>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename="eg_treeset_bst_coarse.c"><codeline><highlight class="preprocessor">#define<sp/>TREESET_LOCK_RW</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="treeset__bst__coarse_8h" kindref="compound" tooltip="This implementation of treeset uses unbalanced binary search tree (BST) and coarse-grained locking.">vsync/map/treeset_bst_coarse.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N<sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_KEY<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_KEY<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vuintptr_t<sp/>value_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>tree;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">run(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>vsize_t<sp/>tid<sp/>=<sp/>(vsize_t)args;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(treeset_key_t<sp/>key<sp/>=<sp/>MIN_KEY;<sp/>key<sp/>&lt;=<sp/>MAX_KEY;<sp/>key++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value_t<sp/>value<sp/>=<sp/>tid;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value_t<sp/>old_value;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insert</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbool_t<sp/>res<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>treeset_add(&amp;tree,<sp/>key,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)value,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)&amp;old_value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(res)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>insert<sp/>succeeded</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>inserted\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>not<sp/>inserted,<sp/>already<sp/>in<sp/>tree<sp/>with<sp/>value<sp/>%lu\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tid,<sp/>key,<sp/>old_value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>search</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>treeset_contains(&amp;tree,<sp/>key,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)&amp;old_value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(res)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>search<sp/>successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>in<sp/>tree<sp/>with<sp/>value<sp/>%lu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old_value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>not<sp/>in<sp/>tree\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res<sp/>=<sp/>treeset_remove(&amp;tree,<sp/>key,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)&amp;old_value);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(res)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>succeeded</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>removed,<sp/>old<sp/>value<sp/>was<sp/>%lu\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>old_value);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;[%lu]<sp/>key<sp/>%lu<sp/>not<sp/>removed\n&quot;</highlight><highlight class="normal">,<sp/>tid,<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal">malloc_cb(vsize_t<sp/>sz,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>malloc(sz);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">free_cb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free(ptr);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">free_visitor(treeset_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)key;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(void)arg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>free((value_t<sp/>*)value);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">main(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[N];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvmem__lib__s" kindref="compound">vmem_lib_t</ref><sp/>mem_lib<sp/>=<sp/>{.free_fun<sp/><sp/><sp/>=<sp/>free_cb,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.malloc_fun<sp/>=<sp/>malloc_cb,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.arg<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NULL};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_init(&amp;tree,<sp/>mem_lib);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_create(&amp;threads[i],<sp/>NULL,<sp/>run,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)i);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vsize_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>N;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pthread_join(threads[i],<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_visit(&amp;tree,<sp/>free_visitor,<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_destroy(&amp;tree);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2024-2025.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_TREESET_BST_COARSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_TREESET_BST_COARSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/vtypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/alloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/map/internal/treeset/treeset_common.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/map/internal/treeset/treeset_lock.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structtreeset__node__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtreeset__node__s" kindref="compound">treeset_node_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_key_t<sp/>key;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>external;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtreeset__node__s" kindref="compound">treeset_node_s</ref><sp/>*child[2];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structtreeset__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtreeset__s" kindref="compound">treeset_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structlock__s" kindref="compound">lock_t</ref><sp/>coarse_lock;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtreeset__node__s" kindref="compound">treeset_node_t</ref><sp/>head_sentinel;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structvmem__lib__s" kindref="compound">vmem_lib_t</ref><sp/>mem_lib;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}<sp/><ref refid="structtreeset__s" kindref="compound">treeset_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/map/internal/treeset/treeset_alloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TREESET_REPLACE_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_init<sp/><sp/><sp/><sp/><sp/>treeset_init_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_destroy<sp/><sp/>treeset_destroy_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_add<sp/><sp/><sp/><sp/><sp/><sp/>treeset_add_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_remove<sp/><sp/><sp/>treeset_remove_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_contains<sp/>treeset_contains_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>treeset_visit<sp/><sp/><sp/><sp/>treeset_visit_fine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_init(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_destroy(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_acquire(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_release(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_reader_acquire(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>l_reader_release(l)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="treeset__bst__fine_8h" kindref="compound" tooltip="This implementation of treeset uses unbalanced binary search tree (BST) and fine-grained locking.">vsync/map/treeset_bst_fine.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>TREESET_REPLACE_HEADER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_destroy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_add</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_remove</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_contains</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>treeset_visit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_destroy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_acquire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_reader_acquire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>l_reader_release</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="treeset__bst__coarse_8h_1a85e6eb3cf32267b7b2bc3878b29ba2e1" refkind="member"><highlight class="normal">treeset_init(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/><ref refid="structvmem__lib__s" kindref="compound">vmem_lib_t</ref><sp/>mem_lib)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(vmem_lib_not_null(&amp;mem_lib));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>l_init(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_init_fine(tree,<sp/>mem_lib);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="treeset__bst__coarse_8h_1a1f3180be25d0495f58c83312c8d4d478" refkind="member"><highlight class="normal">treeset_destroy(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>l_destroy(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_destroy_fine(tree);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="133" refid="treeset__bst__coarse_8h_1a7328293817bde7cd3bc72374e7deef53" refkind="member"><highlight class="normal">treeset_add(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/>treeset_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**out_value)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>l_acquire(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>result<sp/>=<sp/>treeset_add_fine(tree,<sp/>key,<sp/>value,<sp/>out_value);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>l_release(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="153" refid="treeset__bst__coarse_8h_1a2a118568bd27c4ad13e931eef5ac54b7" refkind="member"><highlight class="normal">treeset_remove(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/>treeset_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**out_value)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>l_acquire(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>result<sp/>=<sp/>treeset_remove_fine(tree,<sp/>key,<sp/>out_value);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>l_release(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>vbool_t</highlight></codeline>
+<codeline lineno="173" refid="treeset__bst__coarse_8h_1a812c839cc51fb88935f20b5758d93551" refkind="member"><highlight class="normal">treeset_contains(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/>treeset_key_t<sp/>key,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**out_value)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>l_reader_acquire(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>vbool_t<sp/>result<sp/>=<sp/>treeset_contains_fine(tree,<sp/>key,<sp/>out_value);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>l_reader_release(&amp;tree-&gt;coarse_lock);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="treeset__bst__coarse_8h_1a89c4c07b679946da7f766b445beab426" refkind="member"><highlight class="normal">treeset_visit(<ref refid="structtreeset__s" kindref="compound">treeset_t</ref><sp/>*tree,<sp/>treeset_visitor<sp/>visitor,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(tree);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>treeset_visit_fine(tree,<sp/>visitor,<sp/>arg);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="vsync/map/treeset_bst_coarse.h"/>
+  </compounddef>
+</doxygen>

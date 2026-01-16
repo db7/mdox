@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsmr__node__core__s" kind="struct" language="C++" prot="public">
+    <compoundname>smr_node_core_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmr__node__core__s_1a8d2c26bd2bbfc50fa5855cbe48fe963e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structsmr__node__core__s" kindref="compound">smr_node_core_s</ref> *</type>
+        <definition>struct smr_node_core_s* smr_node_core_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>smr_node_core_s::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="17" column="26" bodyfile="vsync/smr/internal/smr_node.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>smr_node_core_s</label>
+        <link refid="structsmr__node__core__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/internal/smr_node.h" line="16" column="1" bodyfile="vsync/smr/internal/smr_node.h" bodystart="16" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structsmr__node__core__s_1a8d2c26bd2bbfc50fa5855cbe48fe963e" prot="public" virt="non-virtual"><scope>smr_node_core_s</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

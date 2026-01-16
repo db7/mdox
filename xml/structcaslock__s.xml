@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structcaslock__s" kind="struct" language="C++" prot="public">
+    <compoundname>caslock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcaslock__s_1ac2b3082d62ee21454f5f0e967913b0f8" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t caslock_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>caslock_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/caslock.h" line="21" column="17" bodyfile="vsync/spinlock/caslock.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>caslock_s</label>
+        <link refid="structcaslock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/caslock.h" line="20" column="1" bodyfile="vsync/spinlock/caslock.h" bodystart="20" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structcaslock__s_1ac2b3082d62ee21454f5f0e967913b0f8" prot="public" virt="non-virtual"><scope>caslock_s</scope><name>lock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

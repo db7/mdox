@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvebr__s" kind="struct" language="C++" prot="public">
+    <compoundname>vebr_s</compoundname>
+    <includes refid="ebr_8h" local="no">vsync/smr/ebr.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvebr__s_1a60e8714ffe2df86a0d843278d2018f48" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref></type>
+        <definition>vatomic64_t vebr_s::epoch_global</definition>
+        <argsstring></argsstring>
+        <name>epoch_global</name>
+        <qualifiedname>vebr_s::epoch_global</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/ebr.h" line="77" column="17" bodyfile="vsync/smr/ebr.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvebr__s_1aa1143e80cc4fed92232754b680e06d81" prot="public" static="no" mutable="no">
+        <type><ref refid="structsmr__nodes__list__s" kindref="compound">smr_nodes_list_t</ref></type>
+        <definition>smr_nodes_list_t vebr_s::retired_lst[V_EBR_EPOCH_COUNT]</definition>
+        <argsstring>[V_EBR_EPOCH_COUNT]</argsstring>
+        <name>retired_lst</name>
+        <qualifiedname>vebr_s::retired_lst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/ebr.h" line="78" column="22" bodyfile="vsync/smr/ebr.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvebr__s_1ab611f918a23256d600aebe165da70ded" prot="public" static="no" mutable="no">
+        <type><ref refid="structdbl__list__s" kindref="compound">dbl_list_t</ref></type>
+        <definition>dbl_list_t vebr_s::threads</definition>
+        <argsstring></argsstring>
+        <name>threads</name>
+        <qualifiedname>vebr_s::threads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/ebr.h" line="79" column="16" bodyfile="vsync/smr/ebr.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvebr__s_1af879ceb5e0f00311d7c041c81efcda00" prot="public" static="no" mutable="no">
+        <type><ref refid="structsmr__lock__lib__s" kindref="compound">smr_lock_lib_t</ref></type>
+        <definition>smr_lock_lib_t vebr_s::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <qualifiedname>vebr_s::lock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/ebr.h" line="80" column="20" bodyfile="vsync/smr/ebr.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The global EBR object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>dbl_list_node_s</label>
+        <link refid="structdbl__list__node__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>next</edgelabel>
+          <edgelabel>prev</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dbl_list_s</label>
+        <link refid="structdbl__list__s"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>head</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>smr_lock_lib_s</label>
+        <link refid="structsmr__lock__lib__s"/>
+      </node>
+      <node id="3">
+        <label>smr_nodes_list_s</label>
+        <link refid="structsmr__nodes__list__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>count</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+      <node id="1">
+        <label>vebr_s</label>
+        <link refid="structvebr__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>epoch_global</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>retired_lst</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>threads</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/ebr.h" line="76" column="1" bodyfile="vsync/smr/ebr.h" bodystart="76" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structvebr__s_1a60e8714ffe2df86a0d843278d2018f48" prot="public" virt="non-virtual"><scope>vebr_s</scope><name>epoch_global</name></member>
+      <member refid="structvebr__s_1af879ceb5e0f00311d7c041c81efcda00" prot="public" virt="non-virtual"><scope>vebr_s</scope><name>lock</name></member>
+      <member refid="structvebr__s_1aa1143e80cc4fed92232754b680e06d81" prot="public" virt="non-virtual"><scope>vebr_s</scope><name>retired_lst</name></member>
+      <member refid="structvebr__s_1ab611f918a23256d600aebe165da70ded" prot="public" virt="non-virtual"><scope>vebr_s</scope><name>threads</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

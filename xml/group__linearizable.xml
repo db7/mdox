@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__linearizable" kind="group">
+    <compoundname>linearizable</compoundname>
+    <title>Linearizable</title>
+    <innerfile refid="hashtable__standard_8h">hashtable_standard.h</innerfile>
+    <innerfile refid="listset__coarse_8h">listset_coarse.h</innerfile>
+    <innerfile refid="listset__fine_8h">listset_fine.h</innerfile>
+    <innerfile refid="listset__lazy_8h">listset_lazy.h</innerfile>
+    <innerfile refid="listset__lf_8h">listset_lf.h</innerfile>
+    <innerfile refid="listset__opt_8h">listset_opt.h</innerfile>
+    <innerfile refid="simpleht_8h">simpleht.h</innerfile>
+    <innerfile refid="skiplist__lf_8h">skiplist_lf.h</innerfile>
+    <innerfile refid="treeset__bst__coarse_8h">treeset_bst_coarse.h</innerfile>
+    <innerfile refid="treeset__bst__fine_8h">treeset_bst_fine.h</innerfile>
+    <innerfile refid="treeset__rb__coarse_8h">treeset_rb_coarse.h</innerfile>
+    <innerfile refid="treeset__rb__fine_8h">treeset_rb_fine.h</innerfile>
+    <innerfile refid="bbq__spsc_8h">bbq_spsc.h</innerfile>
+    <innerfile refid="bounded__locked_8h">bounded_locked.h</innerfile>
+    <innerfile refid="bounded__mpmc_8h">bounded_mpmc.h</innerfile>
+    <innerfile refid="bounded__spsc_8h">bounded_spsc.h</innerfile>
+    <innerfile refid="cachedq_8h">cachedq.h</innerfile>
+    <innerfile refid="unbounded__queue__lf_8h">unbounded_queue_lf.h</innerfile>
+    <innerfile refid="unbounded__queue__lf__recycle_8h">unbounded_queue_lf_recycle.h</innerfile>
+    <innerfile refid="unbounded__queue__total_8h">unbounded_queue_total.h</innerfile>
+    <innerfile refid="vqueue__prio__heap__based_8h">vqueue_prio_heap_based.h</innerfile>
+    <innerfile refid="vqueue__prio__skiplist__based_8h">vqueue_prio_skiplist_based.h</innerfile>
+    <innerfile refid="vqueue__prio__stack__array__based_8h">vqueue_prio_stack_array_based.h</innerfile>
+    <innerfile refid="elimination__stack_8h">elimination_stack.h</innerfile>
+    <innerfile refid="quack_8h">quack.h</innerfile>
+    <innerfile refid="xbo__stack_8h">xbo_stack.h</innerfile>
+    <briefdescription>
+<para>Group of algorithms linearizable algorithms. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

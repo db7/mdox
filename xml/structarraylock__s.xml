@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structarraylock__s" kind="struct" language="C++" prot="public">
+    <compoundname>arraylock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structarraylock__s_1aef1d51d2533861c57c0b1bd9ef96ae45" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic8__s" kindref="compound">vatomic8_t</ref></type>
+        <definition>vatomic8_t arraylock_s::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>arraylock_s::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="41" column="16" bodyfile="vsync/spinlock/arraylock.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarraylock__s_1a5aacfa368d7eb298bf9c85f58e46fe14" prot="public" static="no" mutable="no">
+        <type><ref refid="structarraylock__flag__s" kindref="compound">arraylock_flag_t</ref> *</type>
+        <definition>arraylock_flag_t* arraylock_s::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <qualifiedname>arraylock_s::flags</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="43" column="22" bodyfile="vsync/spinlock/arraylock.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structarraylock__s_1ab36b0ae706849927c5dc0cdc783ffb82" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t arraylock_s::flags_len</definition>
+        <argsstring></argsstring>
+        <name>flags_len</name>
+        <qualifiedname>arraylock_s::flags_len</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/arraylock.h" line="45" column="15" bodyfile="vsync/spinlock/arraylock.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>arraylock_flag_s</label>
+        <link refid="structarraylock__flag__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>flag</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>arraylock_s</label>
+        <link refid="structarraylock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tail</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>flags</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic8_s</label>
+        <link refid="structvatomic8__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/arraylock.h" line="40" column="1" bodyfile="vsync/spinlock/arraylock.h" bodystart="40" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structarraylock__s_1a5aacfa368d7eb298bf9c85f58e46fe14" prot="public" virt="non-virtual"><scope>arraylock_s</scope><name>flags</name></member>
+      <member refid="structarraylock__s_1ab36b0ae706849927c5dc0cdc783ffb82" prot="public" virt="non-virtual"><scope>arraylock_s</scope><name>flags_len</name></member>
+      <member refid="structarraylock__s_1aef1d51d2533861c57c0b1bd9ef96ae45" prot="public" virt="non-virtual"><scope>arraylock_s</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

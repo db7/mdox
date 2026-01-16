@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvcond__s" kind="struct" language="C++" prot="public">
+    <compoundname>vcond_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvcond__s_1a395f1785d72ebf27a0b4fd2cfc2fc10d" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t vcond_s::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>vcond_s::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/thread/cond.h" line="33" column="17" bodyfile="vsync/thread/cond.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="1">
+        <label>vcond_s</label>
+        <link refid="structvcond__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/thread/cond.h" line="32" column="1" bodyfile="vsync/thread/cond.h" bodystart="32" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structvcond__s_1a395f1785d72ebf27a0b4fd2cfc2fc10d" prot="public" virt="non-virtual"><scope>vcond_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

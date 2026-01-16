@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structsmr__node__buff__s" kind="struct" language="C++" prot="public">
+    <compoundname>smr_node_buff_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsmr__node__buff__s_1ab63612ab5319d18d30e312f6665dfabd" prot="public" static="no" mutable="no">
+        <type><ref refid="structsmr__node__s" kindref="compound">smr_node_t</ref> *</type>
+        <definition>smr_node_t* smr_node_buff_s::buffer[V_SMR_NODE_BUFF_SIZE]</definition>
+        <argsstring>[V_SMR_NODE_BUFF_SIZE]</argsstring>
+        <name>buffer</name>
+        <qualifiedname>smr_node_buff_s::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="37" column="16" bodyfile="vsync/smr/internal/smr_node.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsmr__node__buff__s_1a68aa1d9cd02a993298bd371096a87914" prot="public" static="no" mutable="no">
+        <type>vsize_t</type>
+        <definition>vsize_t smr_node_buff_s::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <qualifiedname>smr_node_buff_s::idx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/smr/internal/smr_node.h" line="38" column="13" bodyfile="vsync/smr/internal/smr_node.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>smr_node_buff_s</label>
+        <link refid="structsmr__node__buff__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>smr_node_core_s</label>
+        <link refid="structsmr__node__core__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>smr_node_s</label>
+        <link refid="structsmr__node__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>destroy_fun</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/smr/internal/smr_node.h" line="36" column="1" bodyfile="vsync/smr/internal/smr_node.h" bodystart="36" bodyend="39"/>
+    <listofallmembers>
+      <member refid="structsmr__node__buff__s_1ab63612ab5319d18d30e312f6665dfabd" prot="public" virt="non-virtual"><scope>smr_node_buff_s</scope><name>buffer</name></member>
+      <member refid="structsmr__node__buff__s_1a68aa1d9cd02a993298bd371096a87914" prot="public" virt="non-virtual"><scope>smr_node_buff_s</scope><name>idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structhmcslock__s" kind="struct" language="C++" prot="public">
+    <compoundname>hmcslock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhmcslock__s_1af54bfb97c6913adaf9d3bb4f8323de68" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhmcslock__s" kindref="compound">hmcslock_s</ref> *</type>
+        <definition>struct hmcslock_s* hmcslock_s::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>hmcslock_s::parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="66" column="21" bodyfile="vsync/spinlock/hmcslock.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmcslock__s_1a2954a88142b2fd9e10dacffc6d07a05c" prot="public" static="no" mutable="no">
+        <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref></type>
+        <definition>hmcs_node_t hmcslock_s::qnode</definition>
+        <argsstring></argsstring>
+        <name>qnode</name>
+        <qualifiedname>hmcslock_s::qnode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="67" column="17" bodyfile="vsync/spinlock/hmcslock.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmcslock__s_1a64db7c5804f027fa11f9a39347d276ec" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t hmcslock_s::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>hmcslock_s::threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="68" column="15" bodyfile="vsync/spinlock/hmcslock.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhmcslock__s_1a76f393bf350d837b3bee8053a14a14ea" prot="public" static="no" mutable="no">
+        <type>vbool_t</type>
+        <definition>vbool_t hmcslock_s::is_leaf</definition>
+        <argsstring></argsstring>
+        <name>is_leaf</name>
+        <qualifiedname>hmcslock_s::is_leaf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="69" column="13" bodyfile="vsync/spinlock/hmcslock.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structhmcslock__s_1a04d8e2603ed0e5770824e1a2a3916aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hmcslock_s::vatomicptr</definition>
+        <argsstring>(hmcs_node_t *) lock</argsstring>
+        <name>vatomicptr</name>
+        <qualifiedname>hmcslock_s::vatomicptr</qualifiedname>
+        <param>
+          <type><ref refid="hmcslock_8h_1a63a5cb525ceda9a97b62ccf4040ae01c" kindref="member">hmcs_node_t</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/hmcslock.h" line="65" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>hmcs_node_s</label>
+        <link refid="structhmcs__node__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>status</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>hmcslock_s</label>
+        <link refid="structhmcslock__s"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>qnode</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic64_s</label>
+        <link refid="structvatomic64__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/hmcslock.h" line="64" column="1" bodyfile="vsync/spinlock/hmcslock.h" bodystart="64" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structhmcslock__s_1a76f393bf350d837b3bee8053a14a14ea" prot="public" virt="non-virtual"><scope>hmcslock_s</scope><name>is_leaf</name></member>
+      <member refid="structhmcslock__s_1af54bfb97c6913adaf9d3bb4f8323de68" prot="public" virt="non-virtual"><scope>hmcslock_s</scope><name>parent</name></member>
+      <member refid="structhmcslock__s_1a2954a88142b2fd9e10dacffc6d07a05c" prot="public" virt="non-virtual"><scope>hmcslock_s</scope><name>qnode</name></member>
+      <member refid="structhmcslock__s_1a64db7c5804f027fa11f9a39347d276ec" prot="public" virt="non-virtual"><scope>hmcslock_s</scope><name>threshold</name></member>
+      <member refid="structhmcslock__s_1a04d8e2603ed0e5770824e1a2a3916aa8" prot="public" virt="non-virtual"><scope>hmcslock_s</scope><name>vatomicptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

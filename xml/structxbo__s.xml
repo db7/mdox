@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structxbo__s" kind="struct" language="C++" prot="public">
+    <compoundname>xbo_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structxbo__s_1aeafeeb8a2e5a1c86960131f16a86cf4d" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t xbo_s::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <qualifiedname>xbo_s::min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/xbo.h" line="46" column="15" bodyfile="vsync/utils/xbo.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxbo__s_1a31ca2c8df84efc87fe62888852f462b7" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t xbo_s::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>xbo_s::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/xbo.h" line="46" column="19" bodyfile="vsync/utils/xbo.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxbo__s_1a4b0cb1c33175cdd4ecc4aa68e4cdb1b1" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t xbo_s::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>xbo_s::factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/xbo.h" line="47" column="15" bodyfile="vsync/utils/xbo.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structxbo__s_1adbfa27c463fe0058ada9e7332209e8ad" prot="public" static="no" mutable="no">
+        <type>vuint32_t</type>
+        <definition>vuint32_t xbo_s::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>xbo_s::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/utils/xbo.h" line="48" column="15" bodyfile="vsync/utils/xbo.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/utils/xbo.h" line="45" column="1" bodyfile="vsync/utils/xbo.h" bodystart="45" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structxbo__s_1a4b0cb1c33175cdd4ecc4aa68e4cdb1b1" prot="public" virt="non-virtual"><scope>xbo_s</scope><name>factor</name></member>
+      <member refid="structxbo__s_1a31ca2c8df84efc87fe62888852f462b7" prot="public" virt="non-virtual"><scope>xbo_s</scope><name>max</name></member>
+      <member refid="structxbo__s_1aeafeeb8a2e5a1c86960131f16a86cf4d" prot="public" virt="non-virtual"><scope>xbo_s</scope><name>min</name></member>
+      <member refid="structxbo__s_1adbfa27c463fe0058ada9e7332209e8ad" prot="public" virt="non-virtual"><scope>xbo_s</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

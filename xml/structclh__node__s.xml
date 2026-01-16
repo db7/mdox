@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structclh__node__s" kind="struct" language="C++" prot="public">
+    <compoundname>clh_node_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structclh__node__s_1aeb973e4d6675171d446b65921dae7629" prot="public" static="no" mutable="no">
+        <type><ref refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" kindref="member">clh_qnode_t</ref> *</type>
+        <definition>clh_qnode_t* clh_node_s::pred</definition>
+        <argsstring></argsstring>
+        <name>pred</name>
+        <qualifiedname>clh_node_s::pred</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="32" column="17" bodyfile="vsync/spinlock/clhlock.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structclh__node__s_1aa16a2f73a74185e2bbdaf3bd64cf5230" prot="public" static="no" mutable="no">
+        <type><ref refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" kindref="member">clh_qnode_t</ref> *</type>
+        <definition>clh_qnode_t* clh_node_s::qnode</definition>
+        <argsstring></argsstring>
+        <name>qnode</name>
+        <qualifiedname>clh_node_s::qnode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="33" column="17" bodyfile="vsync/spinlock/clhlock.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structclh__node__s_1aaa82563ee0b7f85a926faebd5f85214c" prot="public" static="no" mutable="no">
+        <type><ref refid="clhlock_8h_1a44a9072d1293fda86ee44abbe6e12ebd" kindref="member">clh_qnode_t</ref></type>
+        <definition>clh_qnode_t clh_node_s::_qnode</definition>
+        <argsstring></argsstring>
+        <name>_qnode</name>
+        <qualifiedname>clh_node_s::_qnode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/clhlock.h" line="34" column="17" bodyfile="vsync/spinlock/clhlock.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>clh_node_s</label>
+        <link refid="structclh__node__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_qnode</edgelabel>
+          <edgelabel>pred</edgelabel>
+          <edgelabel>qnode</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>clh_qnode_s</label>
+        <link refid="structclh__qnode__s"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>locked</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/clhlock.h" line="31" column="1" bodyfile="vsync/spinlock/clhlock.h" bodystart="31" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structclh__node__s_1aaa82563ee0b7f85a926faebd5f85214c" prot="public" virt="non-virtual"><scope>clh_node_s</scope><name>_qnode</name></member>
+      <member refid="structclh__node__s_1aeb973e4d6675171d446b65921dae7629" prot="public" virt="non-virtual"><scope>clh_node_s</scope><name>pred</name></member>
+      <member refid="structclh__node__s_1aa16a2f73a74185e2bbdaf3bd64cf5230" prot="public" virt="non-virtual"><scope>clh_node_s</scope><name>qnode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

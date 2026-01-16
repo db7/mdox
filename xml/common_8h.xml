@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includes refid="math_8h" local="no">vsync/utils/math.h</includes>
+    <includes refid="string_8h" local="no">vsync/utils/string.h</includes>
+    <includes refid="compiler_8h" local="no">vsync/common/compiler.h</includes>
+    <includes refid="cache_8h" local="no">vsync/common/cache.h</includes>
+    <includedby refid="bbq__mpmc_8h" local="no">vsync/queue/bbq_mpmc.h</includedby>
+    <includedby refid="bbq__spsc_8h" local="no">vsync/queue/bbq_spsc.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>vsync/common/assert.h</label>
+        <link refid="assert_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vsync/common/cache.h</label>
+        <link refid="cache_8h_source"/>
+      </node>
+      <node id="9">
+        <label>vsync/common/compiler.h</label>
+        <link refid="compiler_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vsync/common/macros.h</label>
+        <link refid="common_2macros_8h_source"/>
+      </node>
+      <node id="1">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vsync/utils/math.h</label>
+        <link refid="math_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vsync/utils/string.h</label>
+        <link refid="string_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>vsync/utils/string_helpers.h</label>
+        <link refid="string__helpers_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vsync/vtypes.h</label>
+        <link refid="vtypes_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vfreestanding.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>vsync/queue/bbq_mpmc.h</label>
+        <link refid="bbq__mpmc_8h"/>
+      </node>
+      <node id="3">
+        <label>vsync/queue/bbq_spsc.h</label>
+        <link refid="bbq__spsc_8h"/>
+      </node>
+      <node id="1">
+        <label>vsync/queue/internal/bbq/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structbbq__config__s" prot="public">bbq_config_s</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="common_8h_1aba9dcfc31c336dbccfee34e0e1661321" prot="public" static="no">
+        <name>BBQ_ENTRY_SIZE</name>
+        <initializer>(1ULL &lt;&lt; <ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member">BBQ_ENTRY_SIZE_LOG</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="18" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a693a8cae8b464259ea6e6bf8c7a116bd" prot="public" static="no">
+        <name>BBQ_MIN_BLOCK_NUM_LOG</name>
+        <initializer>0U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="19" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a1e95849d20e549a40e89045cde469292" prot="public" static="no">
+        <name>BBQ_MAX_BLOCK_NUM_LOG</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="20" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a84f94774ca98687a60bf4c112162a21b" prot="public" static="no">
+        <name>BBQ_MIN_ENTRY_SIZE</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="21" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a2398e7f84c28c7a8464fb1c622b70b30" prot="public" static="no">
+        <name>BBQ_MAX_ENTRY_SIZE</name>
+        <initializer>(1ULL &lt;&lt; (BBQ_MAX_BLOCK_SIZE_LOG - 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="22" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a6eed7f8a02b3ae8f93b728c7c2ca6209" prot="public" static="no">
+        <name>BBQ_MIN_BLOCK_SIZE_LOG</name>
+        <initializer>4U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="23" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ad37b4c52e329c90178805fb8d8fe0b4b" prot="public" static="no">
+        <name>BBQ_MAX_BLOCK_SIZE_LOG</name>
+        <initializer>16U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="24" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ab00b6a19a01bdbce735700616a3b0cf8" prot="public" static="no">
+        <name>BBQ_GLOBA_VERSION_BIT</name>
+        <initializer>44U /* 64 - 20 */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="28" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1aff90ac9fb4725f150ccba15bd6417d84" prot="public" static="no">
+        <name>BBQ_GLOBA_VERSION_MASK</name>
+        <initializer>((1ULL &lt;&lt; BBQ_GLOBA_VERSION_BIT) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="29" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ac0d54b2cb194e91c158ac4fdaeb0b6ac" prot="public" static="no">
+        <name>BBQ_GLOBAL_IDX</name>
+        <param><defname>v</defname></param>
+        <initializer>((v) &amp; ((1ULL &lt;&lt; <ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member">BBQ_BLOCK_NUM_LOG</ref>) - 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="30" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a11023e127f26f9c618b9778aaae46700" prot="public" static="no">
+        <name>BBQ_GLOBAL_VSN</name>
+        <param><defname>v</defname></param>
+        <initializer>(((v) &gt;&gt; <ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member">BBQ_BLOCK_NUM_LOG</ref>) &amp; BBQ_GLOBA_VERSION_MASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="31" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1afa078c278291883af7b0f57d1485b362" prot="public" static="no">
+        <name>BBQ_GLOBAL_COMPOSE</name>
+        <param><defname>h</defname></param>
+        <param><defname>l</defname></param>
+        <initializer>(((h) &lt;&lt; <ref refid="bbq__mpmc_8h_1a2e399a49e51bafe9c8cd0ab11623734a" kindref="member">BBQ_BLOCK_NUM_LOG</ref>) | (l))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="32" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a98dbd6de598f76a0a86ab1cadc35ef3c" prot="public" static="no">
+        <name>BBQ_LOCAL_SPACE_BIT</name>
+        <initializer>20U /* &gt;16 to provent the FAA overflow */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="35" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1af8903a13f739da9d04fdafdb2138976a" prot="public" static="no">
+        <name>BBQ_LOCAL_SPACE_MASK</name>
+        <initializer>((1ULL &lt;&lt; BBQ_LOCAL_SPACE_BIT) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="36" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a6ba2d8ebc25c327c70cf423a86b3ae23" prot="public" static="no">
+        <name>BBQ_LOCAL_IDX</name>
+        <param><defname>v</defname></param>
+        <initializer>((v)&amp;BBQ_LOCAL_SPACE_MASK)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="37" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1aa3a47dd6be1c2225e44e5d74a8db52b7" prot="public" static="no">
+        <name>BBQ_LOCAL_VSN</name>
+        <param><defname>v</defname></param>
+        <initializer>((v) &gt;&gt; BBQ_LOCAL_SPACE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="38" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1af1f5484338ccd1959f7941f26a375786" prot="public" static="no">
+        <name>BBQ_LOCAL_COMPOSE</name>
+        <param><defname>h</defname></param>
+        <param><defname>l</defname></param>
+        <initializer>(((h) &lt;&lt; BBQ_LOCAL_SPACE_BIT) | (l))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="39" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a9aae32e660e351f2f82845fd427156c1" prot="public" static="no">
+        <name>BBQ_BLOCK_INIT_VALUE</name>
+        <param><defname>S</defname></param>
+        <initializer>    ((sizeof(S) / BBQ_ENTRY_SIZE + 1) * BBQ_ENTRY_SIZE)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="46" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ac414dee20ce5e1c2c1a6915671439e5c" prot="public" static="no">
+        <name>BBQ_VERIFY_BLK_COUNT</name>
+        <param><defname>count</defname></param>
+        <initializer>        do {                                                                   \
+        } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="61" column="14" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ace2c4c3d8e339bda52de5ee73b3193b7" prot="public" static="no">
+        <name>BBQ_BLK_SZ_VERIFICATION</name>
+        <param><defname>name</defname></param>
+        <initializer>        do {                                                                   \
+        } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="64" column="13" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a99e65083d2697658259027558be9cf8a" prot="public" static="no">
+        <name>BBQ_GET_BLOCK</name>
+        <param><defname>rb</defname></param>
+        <param><defname>idx</defname></param>
+        <initializer>    (void *)((rb)-&gt;blk + ((idx) &lt;&lt; (rb)-&gt;config.blk_size_log))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="69" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="69" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a099e8d133e78fad30cf7bebacb002836" prot="public" static="no">
+        <name>BBQ_GET_NEXT_BLOCK</name>
+        <param><defname>rb</defname></param>
+        <param><defname>idx</defname></param>
+        <initializer>    (BBQ_GET_BLOCK(rb, BBQ_GLOBAL_IDX((idx) + 1)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="71" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="71" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1abe3b05d1a81d8164abbcc6be2757eb90" prot="public" static="no">
+        <name>BBQ_GET_ENTRY</name>
+        <param><defname>blk</defname></param>
+        <param><defname>offset</defname></param>
+        <initializer>    ((void *)(((vuintptr_t)(blk)) + (vuintptr_t)(offset)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="73" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="73" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a606059af0b076ff7a48ce582ae7357e7" prot="public" static="no">
+        <name>BBQ_BLOCK_FULLY_CONSUMED_WITH_VSN</name>
+        <param><defname>blk</defname></param>
+        <param><defname>sz</defname></param>
+        <param><defname>vsn</defname></param>
+        <initializer>    ({                                                                         \
+        vuint64_t consumed = <ref refid="core__u64_8h_1ab89b9411ca9f0fb17f4506129735d173" kindref="member">vatomic64_read_acq</ref>(&amp;(blk)-&gt;consumed);             \
+        (BBQ_LOCAL_IDX(consumed) == (sz) &amp;&amp;                                    \
+         BBQ_LOCAL_VSN(consumed) == (vsn)) ||                                  \
+            BBQ_LOCAL_VSN(consumed) &gt; (vsn);                                   \
+    })</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="76" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a48159bf7a59aadee340c5aab52b43e4b" prot="public" static="no">
+        <name>BBQ_RESET_BLOCK_CURSOR_LIGHT</name>
+        <param><defname>v</defname></param>
+        <param><defname>new_vsn</defname></param>
+        <param><defname>init_v</defname></param>
+        <initializer>    <ref refid="core__u64_8h_1ad57ea83fb143b7f56ea8504683dd668e" kindref="member">vatomic64_write_rlx</ref>(v, BBQ_LOCAL_COMPOSE(new_vsn, init_v))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="84" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="84" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1afe1bd265664501b001ad6add40159d9f" prot="public" static="no">
+        <name>BBQ_ADVANCE_HEAD</name>
+        <param><defname>v</defname></param>
+        <param><defname>old</defname></param>
+        <param><defname>new</defname></param>
+        <initializer><ref refid="core__u64_8h_1ac97fbf291b7ba460d8d3b68bd70b151c" kindref="member">vatomic64_max</ref>(v, new)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="95" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1ac98bea6d4f68a594b8897fd0aaeaa349" prot="public" static="no">
+        <name>BBQ_COUNT</name>
+        <param><defname>rb</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>name_uc</defname></param>
+        <initializer>    ({                                                                         \
+        vuint64_t ridx = BBQ_##name_uc##_READ_CONS((rb)-&gt;ridx);                \
+        struct bbq_##name##_block_s *rblk =                                    \
+            BBQ_GET_BLOCK(rb, BBQ_GLOBAL_IDX(ridx));                           \
+        vuintptr_t consumed_index =                                            \
+            BBQ_LOCAL_IDX(<ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member">vatomic64_read_rlx</ref>(&amp;rblk-&gt;consumed));                \
+                                                                               \
+        vuint64_t widx = BBQ_##name_uc##_READ_PROD((rb)-&gt;widx);                \
+        struct bbq_##name##_block_s *wblk =                                    \
+            BBQ_GET_BLOCK(rb, BBQ_GLOBAL_IDX(widx));                           \
+        vuintptr_t committed_index =                                           \
+            BBQ_LOCAL_IDX(<ref refid="core__u64_8h_1a0439a7df05e63874f0a154105fd08144" kindref="member">vatomic64_read_rlx</ref>(&amp;wblk-&gt;committed));               \
+                                                                               \
+        vuintptr_t block_size = (rb)-&gt;config.blk_size;                         \
+        ((((widx - ridx) *                                                     \
+           (block_size - BBQ_BLOCK_INIT_VALUE(struct bbq_##name##_block_s))) + \
+          (committed_index - consumed_index)) &gt;&gt;                               \
+         <ref refid="bbq__mpmc_8h_1a7c03e83e1a35f1d2209ff9f9ea579ccc" kindref="member">BBQ_ENTRY_SIZE_LOG</ref>);                                                  \
+    })</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="97" column="9" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="97" bodyend="116"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="common_8h_1afdd6240b682135261d40b23a2c0ef7f0" prot="public" static="no">
+        <type>struct <ref refid="structbbq__config__s" kindref="compound">bbq_config_s</ref></type>
+        <definition>typedef struct bbq_config_s bbq_config_t</definition>
+        <argsstring></argsstring>
+        <name>bbq_config_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="44" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="common_8h_1a78e43c93ee3c362a27f82182ba172369" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bbq_reset_block_cursor_heavy</definition>
+        <argsstring>(vatomic64_t *v, vuint64_t new_vsn, vuintptr_t init_v)</argsstring>
+        <name>bbq_reset_block_cursor_heavy</name>
+        <param>
+          <type><ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>vuint64_t</type>
+          <declname>new_vsn</declname>
+        </param>
+        <param>
+          <type>vuintptr_t</type>
+          <declname>init_v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/queue/internal/bbq/common.h" line="88" column="1" bodyfile="vsync/queue/internal/bbq/common.h" bodystart="88" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>Huawei<sp/>Technologies<sp/>Co.,<sp/>Ltd.<sp/>2026.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VSYNC_BBQ_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VSYNC_BBQ_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/utils/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/compiler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vsync/common/cache.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>utils<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>size<sp/>related<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>mininum<sp/>and<sp/>maxinum<sp/>entry<sp/>size,<sp/>block<sp/>size<sp/>and<sp/>block<sp/>number<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_ENTRY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1ULL<sp/>&lt;&lt;<sp/>BBQ_ENTRY_SIZE_LOG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MIN_BLOCK_NUM_LOG<sp/><sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MAX_BLOCK_NUM_LOG<sp/><sp/>16U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MIN_ENTRY_SIZE<sp/><sp/><sp/><sp/><sp/>4U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MAX_ENTRY_SIZE<sp/><sp/><sp/><sp/><sp/>(1ULL<sp/>&lt;&lt;<sp/>(BBQ_MAX_BLOCK_SIZE_LOG<sp/>-<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MIN_BLOCK_SIZE_LOG<sp/>4U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_MAX_BLOCK_SIZE_LOG<sp/>16U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>offset<sp/>and<sp/>mask<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>global<sp/>var<sp/>related<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GLOBA_VERSION_BIT<sp/><sp/><sp/><sp/>44U<sp/></highlight><highlight class="comment">/*<sp/>64<sp/>-<sp/>20<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GLOBA_VERSION_MASK<sp/><sp/><sp/>((1ULL<sp/>&lt;&lt;<sp/>BBQ_GLOBA_VERSION_BIT)<sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GLOBAL_IDX(v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((v)<sp/>&amp;<sp/>((1ULL<sp/>&lt;&lt;<sp/>BBQ_BLOCK_NUM_LOG)<sp/>-<sp/>1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GLOBAL_VSN(v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(((v)<sp/>&gt;&gt;<sp/>BBQ_BLOCK_NUM_LOG)<sp/>&amp;<sp/>BBQ_GLOBA_VERSION_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GLOBAL_COMPOSE(h,<sp/>l)<sp/>(((h)<sp/>&lt;&lt;<sp/>BBQ_BLOCK_NUM_LOG)<sp/>|<sp/>(l))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>local<sp/>var<sp/>related<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_LOCAL_SPACE_BIT<sp/><sp/><sp/><sp/><sp/>20U<sp/></highlight><highlight class="comment">/*<sp/>&gt;16<sp/>to<sp/>provent<sp/>the<sp/>FAA<sp/>overflow<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_LOCAL_SPACE_MASK<sp/><sp/><sp/><sp/>((1ULL<sp/>&lt;&lt;<sp/>BBQ_LOCAL_SPACE_BIT)<sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_LOCAL_IDX(v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((v)&amp;BBQ_LOCAL_SPACE_MASK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_LOCAL_VSN(v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((v)<sp/>&gt;&gt;<sp/>BBQ_LOCAL_SPACE_BIT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_LOCAL_COMPOSE(h,<sp/>l)<sp/>(((h)<sp/>&lt;&lt;<sp/>BBQ_LOCAL_SPACE_BIT)<sp/>|<sp/>(l))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structbbq__config__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbbq__config__s" kindref="compound">bbq_config_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>blk_size_log;<sp/></highlight><highlight class="comment">/*<sp/>total<sp/>size<sp/>of<sp/>each<sp/>block<sp/>(in<sp/>log)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint16_t<sp/>blk_size;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>total<sp/>size<sp/>of<sp/>each<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="structbbq__config__s" kindref="compound">bbq_config_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_BLOCK_INIT_VALUE(S)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((sizeof(S)<sp/>/<sp/>BBQ_ENTRY_SIZE<sp/>+<sp/>1)<sp/>*<sp/>BBQ_ENTRY_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>VSYNC_VERIFICATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>vuint32_t<sp/>g_verify_bbq_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_VERIFY_BLK_COUNT(count)<sp/>g_verify_bbq_count<sp/>=<sp/>(count)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_BLK_SZ_VERIFICATION(name)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ASSERT(g_verify_bbq_count<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>&quot;must<sp/>set<sp/>BBQ_COUNT&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint32_t<sp/>count_per_blk<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(g_verify_bbq_count)<sp/>&gt;&gt;<sp/>BBQ_BLOCK_NUM_LOG;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blk_size<sp/>=<sp/>BBQ_BLOCK_INIT_VALUE(struct<sp/>bbq_##name##_block_s)<sp/>+<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(count_per_blk<sp/>&lt;&lt;<sp/>BBQ_ENTRY_SIZE_LOG);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_VERIFY_BLK_COUNT(count)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>BBQ_BLK_SZ_VERIFICATION(name)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GET_BLOCK(rb,<sp/>idx)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(void<sp/>*)((rb)-&gt;blk<sp/>+<sp/>((idx)<sp/>&lt;&lt;<sp/>(rb)-&gt;config.blk_size_log))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GET_NEXT_BLOCK(rb,<sp/>idx)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(BBQ_GET_BLOCK(rb,<sp/>BBQ_GLOBAL_IDX((idx)<sp/>+<sp/>1)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_GET_ENTRY(blk,<sp/>offset)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((void<sp/>*)(((vuintptr_t)(blk))<sp/>+<sp/>(vuintptr_t)(offset)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_BLOCK_FULLY_CONSUMED_WITH_VSN(blk,<sp/>sz,<sp/>vsn)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>({<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>consumed<sp/>=<sp/>vatomic64_read_acq(&amp;(blk)-&gt;consumed);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(BBQ_LOCAL_IDX(consumed)<sp/>==<sp/>(sz)<sp/>&amp;&amp;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_LOCAL_VSN(consumed)<sp/>==<sp/>(vsn))<sp/>||<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_LOCAL_VSN(consumed)<sp/>&gt;<sp/>(vsn);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_RESET_BLOCK_CURSOR_LIGHT(v,<sp/>new_vsn,<sp/>init_v)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>vatomic64_write_rlx(v,<sp/>BBQ_LOCAL_COMPOSE(new_vsn,<sp/>init_v))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">bbq_reset_block_cursor_heavy(<ref refid="structvatomic64__s" kindref="compound">vatomic64_t</ref><sp/>*v,<sp/>vuint64_t<sp/>new_vsn,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuintptr_t<sp/>init_v)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vuint64_t<sp/>new_cursor<sp/>=<sp/>BBQ_LOCAL_COMPOSE(new_vsn,<sp/>init_v);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core__u64_8h_1ac97fbf291b7ba460d8d3b68bd70b151c" kindref="member" tooltip="Writes v to a if v is greater than *a.">vatomic64_max</ref>(v,<sp/>new_cursor);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_ADVANCE_HEAD(v,<sp/>old,<sp/>new)<sp/>vatomic64_max(v,<sp/>new)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BBQ_COUNT(rb,<sp/>name,<sp/>name_uc)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>({<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>ridx<sp/>=<sp/>BBQ_##name_uc##_READ_CONS((rb)-&gt;ridx);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>bbq_##name##_block_s<sp/>*rblk<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_GET_BLOCK(rb,<sp/>BBQ_GLOBAL_IDX(ridx));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuintptr_t<sp/>consumed_index<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_LOCAL_IDX(vatomic64_read_rlx(&amp;rblk-&gt;consumed));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuint64_t<sp/>widx<sp/>=<sp/>BBQ_##name_uc##_READ_PROD((rb)-&gt;widx);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>bbq_##name##_block_s<sp/>*wblk<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_GET_BLOCK(rb,<sp/>BBQ_GLOBAL_IDX(widx));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuintptr_t<sp/>committed_index<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_LOCAL_IDX(vatomic64_read_rlx(&amp;wblk-&gt;committed));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vuintptr_t<sp/>block_size<sp/>=<sp/>(rb)-&gt;config.blk_size;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((((widx<sp/>-<sp/>ridx)<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(block_size<sp/>-<sp/>BBQ_BLOCK_INIT_VALUE(struct<sp/>bbq_##name##_block_s)))<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(committed_index<sp/>-<sp/>consumed_index))<sp/>&gt;&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BBQ_ENTRY_SIZE_LOG);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>VSYNC_BBQ_COMMON_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="vsync/queue/internal/bbq/common.h"/>
+  </compounddef>
+</doxygen>

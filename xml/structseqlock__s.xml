@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structseqlock__s" kind="struct" language="C++" prot="public">
+    <compoundname>seqlock_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structseqlock__s_1affd900ec8d4176adc3acd44c545c9eab" prot="public" static="no" mutable="no">
+        <type><ref refid="structvatomic32__s" kindref="compound">vatomic32_t</ref></type>
+        <definition>vatomic32_t seqlock_s::seqcount</definition>
+        <argsstring></argsstring>
+        <name>seqcount</name>
+        <qualifiedname>seqlock_s::seqcount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/spinlock/seqlock.h" line="32" column="9" bodyfile="vsync/spinlock/seqlock.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>seqlock_s</label>
+        <link refid="structseqlock__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>seqcount</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/spinlock/seqlock.h" line="30" column="1" bodyfile="vsync/spinlock/seqlock.h" bodystart="30" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structseqlock__s_1affd900ec8d4176adc3acd44c545c9eab" prot="public" virt="non-virtual"><scope>seqlock_s</scope><name>seqcount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

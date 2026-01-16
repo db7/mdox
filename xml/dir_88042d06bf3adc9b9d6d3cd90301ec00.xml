@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_88042d06bf3adc9b9d6d3cd90301ec00" kind="dir">
+    <compoundname>vsync/thread/mutex</compoundname>
+    <innerfile refid="musl_8h">musl.h</innerfile>
+    <innerfile refid="slim_8h">slim.h</innerfile>
+    <innerfile refid="tristate_8h">tristate.h</innerfile>
+    <briefdescription>
+<para>Different implementations of user-space mutex. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="vsync/thread/mutex/"/>
+  </compounddef>
+</doxygen>

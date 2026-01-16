@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structvstack__s" kind="struct" language="C++" prot="public">
+    <compoundname>vstack_s</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvstack__s_1a2b378cbcae2d06c0c0fc197eb6c663b3" prot="public" static="no" mutable="no">
+        <type><ref refid="structvstack__core__s" kindref="compound">vstack_core_t</ref></type>
+        <definition>vstack_core_t vstack_s::core</definition>
+        <argsstring></argsstring>
+        <name>core</name>
+        <qualifiedname>vstack_s::core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="74" column="19" bodyfile="vsync/stack/elimination_stack.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvstack__s_1a3402cfa0295cf4f3a5d9dcbd689c4f3f" prot="public" static="no" mutable="no">
+        <type><ref refid="backoff_8h_1a02acb03657e320b7069b5d2333af9241" kindref="member">backoff_rand_fun_t</ref></type>
+        <definition>backoff_rand_fun_t vstack_s::rand_fun</definition>
+        <argsstring></argsstring>
+        <name>rand_fun</name>
+        <qualifiedname>vstack_s::rand_fun</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="75" column="24" bodyfile="vsync/stack/elimination_stack.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvstack__s_1a91863f4a015ac83bf730c2c4d6b8d2d7" prot="public" static="no" mutable="no">
+        <type><ref refid="structexchanger__s" kindref="compound">exchanger_t</ref></type>
+        <definition>exchanger_t vstack_s::elimination_array[VSTACK_XCHG_SLOTS_COUNT]</definition>
+        <argsstring>[VSTACK_XCHG_SLOTS_COUNT]</argsstring>
+        <name>elimination_array</name>
+        <qualifiedname>vstack_s::elimination_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/elimination_stack.h" line="76" column="17" bodyfile="vsync/stack/elimination_stack.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvstack__s_1a707c2cf4c0ec98207b374ffebc9e1341" prot="public" static="no" mutable="no">
+        <type><ref refid="structbackoff__s" kindref="compound">backoff_t</ref></type>
+        <definition>backoff_t vstack_s::backoff</definition>
+        <argsstring></argsstring>
+        <name>backoff</name>
+        <qualifiedname>vstack_s::backoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="vsync/stack/xbo_stack.h" line="34" column="15" bodyfile="vsync/stack/xbo_stack.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>backoff_s</label>
+        <link refid="structbackoff__s"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>limit</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>exchanger_s</label>
+        <link refid="structexchanger__s"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>slot</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vatomic32_s</label>
+        <link refid="structvatomic32__s"/>
+      </node>
+      <node id="4">
+        <label>vatomicptr_s</label>
+        <link refid="structvatomicptr__s"/>
+      </node>
+      <node id="2">
+        <label>vstack_core_s</label>
+        <link refid="structvstack__core__s"/>
+      </node>
+      <node id="1">
+        <label>vstack_s</label>
+        <link refid="structvstack__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elimination_array</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>backoff</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="vsync/stack/elimination_stack.h" line="73" column="1" bodyfile="vsync/stack/elimination_stack.h" bodystart="73" bodyend="77"/>
+    <listofallmembers>
+      <member refid="structvstack__s_1a707c2cf4c0ec98207b374ffebc9e1341" prot="public" virt="non-virtual"><scope>vstack_s</scope><name>backoff</name></member>
+      <member refid="structvstack__s_1a2b378cbcae2d06c0c0fc197eb6c663b3" prot="public" virt="non-virtual"><scope>vstack_s</scope><name>core</name></member>
+      <member refid="structvstack__s_1a91863f4a015ac83bf730c2c4d6b8d2d7" prot="public" virt="non-virtual"><scope>vstack_s</scope><name>elimination_array</name></member>
+      <member refid="structvstack__s_1a3402cfa0295cf4f3a5d9dcbd689c4f3f" prot="public" virt="non-virtual"><scope>vstack_s</scope><name>rand_fun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
